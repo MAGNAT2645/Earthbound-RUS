@@ -1,0 +1,3 @@
+# List all ranges which CoilSnake should not touch
+# Example:
+# - (0x350000, 0x350100)

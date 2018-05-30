@@ -1,0 +1,3987 @@
+0:
+  Action: 1
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 2
+  Help Text Pointer: data_02.l_0xc539c4
+  Misc Flags: []
+  Name: 'Null'
+  Type: 255
+1:
+  Action: 1
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_02.l_0xc53711
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7E][96][95][91][9D][C3][90][86][A2][91][9F][9C][9D][9A][9F][91]"#Franklin badge
+  Type: 0
+2:
+  Action: 1
+  Argument:
+  - 16
+  - 1
+  - 2
+  - 0
+  Cost: 178
+  Help Text Pointer: data_02.l_0xc53750
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[81][9D][C5][AA][96][93][C2][9B][90][9E][9A][AA][9C][91]"#Teddy bear
+  Type: 4
+3:
+  Action: 1
+  Argument:
+  - 17
+  - 1
+  - 1
+  - 0
+  Cost: 1198
+  Help Text Pointer: data_02.l_0xc53761
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[83][A5][A1][96][A2][90][9E][9A][AA][9C][91]"#Super plush bear
+  Type: 4
+4:
+  Action: 1
+  Argument:
+  - 0
+  - 1
+  - 131
+  - 0
+  Cost: 0
+  Help Text Pointer: data_02.l_0xc53772
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[82][91][99][92][9A][A4].[90][9E][96][A7][91][9F][9A][99][9E]"#Broken machine
+  Type: 8
+5:
+  Action: 1
+  Argument:
+  - 0
+  - 34
+  - 215
+  - 0
+  Cost: 109
+  Help Text Pointer: data_02.l_0xc537bc
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[83][9D][A0][9E].[90][94][91][95][98][96][A4]"#Broken gadget
+  Type: 8
+6:
+  Action: 1
+  Argument:
+  - 0
+  - 12
+  - 39
+  - 0
+  Cost: 0
+  Help Text Pointer: data_02.l_0xc53809
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7F][96][9A][A3][A1][A2].[90][A1][9A][A3][A4][A0][9D][96][A4]"#Broken air gun
+  Type: 8
+7:
+  Action: 1
+  Argument:
+  - 0
+  - 1
+  - 161
+  - 0
+  Cost: 189
+  Help Text Pointer: data_02.l_0xc5382a
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[83][9D][A0][9E].[90][92][91][9D][9D][A0][9F][A9][9A][9C]"#Broken spray can
+  Type: 8
+8:
+  Action: 1
+  Argument:
+  - 0
+  - 24
+  - 41
+  - 0
+  Cost: 0
+  Help Text Pointer: data_02.l_0xc5384d
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[83][9D][A0][9E].[90][9D][91][99][96][A2]"#Broken laser
+  Type: 8
+9:
+  Action: 1
+  Argument:
+  - 0
+  - 10
+  - 138
+  - 0
+  Cost: 149
+  Help Text Pointer: data_02.l_0xc53870
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[83][9D][A0][9E].[90][A5][A4][C5][94]"#Broken iron
+  Type: 8
+10:
+  Action: 1
+  Argument:
+  - 0
+  - 30
+  - 132
+  - 0
+  Cost: 0
+  Help Text Pointer: data_02.l_0xc53897
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7A][99][A0][94][9F].[90][A4][A2][A5][92][91]"#Broken pipe
+  Type: 8
+11:
+  Action: 1
+  Argument:
+  - 0
+  - 32
+  - 44
+  - 0
+  Cost: 218
+  Help Text Pointer: data_02.l_0xc538bc
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[83][9D][A0][9E].[90][A1][A5][AA][9C][91]"#Broken cannon
+  Type: 8
+12:
+  Action: 1
+  Argument:
+  - 0
+  - 36
+  - 136
+  - 0
+  Cost: 0
+  Help Text Pointer: data_02.l_0xc538e0
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[83][9D][A0][9E].[90][A4][A2][A5][92][9C][91]"#Broken tube
+  Type: 8
+13:
+  Action: 1
+  Argument:
+  - 0
+  - 45
+  - 134
+  - 0
+  Cost: 0
+  Help Text Pointer: data_02.l_0xc53908
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7F][96][9A][A3][A1][A2].[90][92][91][99][A5][9C][91]"#Broken bazooka
+  Type: 8
+14:
+  Action: 1
+  Argument:
+  - 0
+  - 40
+  - 157
+  - 0
+  Cost: 0
+  Help Text Pointer: data_02.l_0xc53929
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[83][9D][A0][9E].[90][A4][A2][A0][9E][92][A0][9F]"#Broken trumpet
+  Type: 8
+15:
+  Action: 1
+  Argument:
+  - 0
+  - 55
+  - 46
+  - 0
+  Cost: 0
+  Help Text Pointer: data_02.l_0xc53960
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[81][A0][9D][A0][9E].[90][94][A0][A2][9E][A0][AA][9C][91]"#Broken harmonica
+  Type: 8
+16:
+  Action: 1
+  Argument:
+  - 0
+  - 65
+  - 48
+  - 0
+  Cost: 0
+  Help Text Pointer: data_02.l_0xc5398e
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[83][9D][A0][9E].[90][91][9F][A4][96][9F][9F][91]"#Broken antenna
+  Type: 8
+17:
+  Action: 239
+  Argument:
+  - 4
+  - 0
+  - 0
+  - 1
+  Cost: 18
+  Help Text Pointer: data_02.l_0xc539c4
+  Misc Flags:
+  - ness can use
+  Name: "[84][A2][96][A3][9F].[90][92][9A][A4][91]"#Cracked bat
+  Type: 16
+18:
+  Action: 239
+  Argument:
+  - 8
+  - 0
+  - 0
+  - 1
+  Cost: 48
+  Help Text Pointer: data_02.l_0xc539d4
+  Misc Flags:
+  - ness can use
+  Name: "[75][96][A4][A3][9C][91][C6][90][92][9A][A4][91]"#Tee ball bat
+  Type: 16
+19:
+  Action: 239
+  Argument:
+  - 15
+  - 0
+  - 0
+  - 1
+  Cost: 98
+  Help Text Pointer: data_02.l_0xc539e4
+  Misc Flags:
+  - ness can use
+  Name: "[81][A5][A3][A4][C2][A2].[90][92][9A][A4][91]"#Sand lot bat
+  Type: 16
+20:
+  Action: 239
+  Argument:
+  - 26
+  - 0
+  - 0
+  - 1
+  Cost: 399
+  Help Text Pointer: data_02.l_0xc539f4
+  Misc Flags:
+  - ness can use
+  Name: "[72][9A][A4][91][90][9F][9A][99][AA].[9D][9A][94][9A]"#Minor league bat
+  Type: 16
+21:
+  Action: 239
+  Argument:
+  - 38
+  - 0
+  - 0
+  - 1
+  Cost: 498
+  Help Text Pointer: data_02.l_0xc53a04
+  Misc Flags:
+  - ness can use
+  Name: "[72][9A][A4][91][90][72][96][9B][A3][9E][C4][9F]"#Mr. Baseball bat
+  Type: 16
+22:
+  Action: 239
+  Argument:
+  - 54
+  - 0
+  - 0
+  - 1
+  Cost: 3080
+  Help Text Pointer: data_02.l_0xc53a14
+  Misc Flags:
+  - ness can use
+  Name: "[72][9A][A4][91][90][93][C2][A3][AA].[9D][9A][94][9A]"#Big league bat
+  Type: 16
+23:
+  Action: 239
+  Argument:
+  - 62
+  - 0
+  - 0
+  - 1
+  Cost: 1880
+  Help Text Pointer: data_02.l_0xc53a47
+  Misc Flags:
+  - ness can use
+  Name: "[72][9A][A4][91][90][99][91][9D][91][90][A3][9D][91][93][C2]"#Hall of fame bat
+  Type: 16
+24:
+  Action: 239
+  Argument:
+  - 80
+  - 0
+  - 0
+  - 1
+  Cost: 0
+  Help Text Pointer: data_02.l_0xc53a57
+  Misc Flags:
+  - ness can use
+  Name: "[72][9A][A4][91][90][7E][91][94][9A][9F][96][A4][91]"#Magicant bat
+  Type: 16
+25:
+  Action: 239
+  Argument:
+  - 110
+  - 0
+  - 0
+  - 1
+  Cost: 0
+  Help Text Pointer: data_02.l_0xc53a67
+  Misc Flags:
+  - ness can use
+  Name: "[7D][96][94][96][9F][95][91][A2][9F].[90][92][9A][A4][91]"#Legendary bat
+  Type: 16
+26:
+  Action: 239
+  Argument:
+  - 100
+  - 0
+  - 127
+  - 1
+  Cost: 2980
+  Help Text Pointer: data_02.l_0xc53a77
+  Misc Flags:
+  - ness can use
+  Name: "[72][96][A3][A3][A4][A2].[90][92][9A][A4][91]"#Gutsy bat
+  Type: 16
+27:
+  Action: 239
+  Argument:
+  - 125
+  - 0
+  - 0
+  - 12
+  Cost: 38
+  Help Text Pointer: data_02.l_0xc53a9f
+  Misc Flags:
+  - ness can use
+  Name: "[72][9A][A4][91][90][7C][96][9B][A3][9A]"#Casey bat
+  Type: 16
+28:
+  Action: 239
+  Argument:
+  - 10
+  - 0
+  - 0
+  - 1
+  Cost: 56
+  Help Text Pointer: data_02.l_0xc53ae6
+  Misc Flags:
+  - paula can use
+  Name: "[83][9C][A0][93][A0][A2][A0][95][9C][91]"#Fry pan
+  Type: 16
+29:
+  Action: 239
+  Argument:
+  - 20
+  - 0
+  - 0
+  - 1
+  Cost: 198
+  Help Text Pointer: data_02.l_0xc53af6
+  Misc Flags:
+  - paula can use
+  Name: "[84][A0][9D][A3][A4].[90][A3][9C][A0][93][A0][A2]."#Thick fry pan
+  Type: 16
+30:
+  Action: 239
+  Argument:
+  - 30
+  - 0
+  - 0
+  - 1
+  Cost: 598
+  Help Text Pointer: data_02.l_0xc53b06
+  Misc Flags:
+  - paula can use
+  Name: "[83][9C][A0][93][A0][A2].[90][75][96][9D][C5][9C][A3]"#Deluxe fry pan
+  Type: 16
+31:
+  Action: 239
+  Argument:
+  - 40
+  - 0
+  - 0
+  - 1
+  Cost: 1198
+  Help Text Pointer: data_02.l_0xc53b16
+  Misc Flags:
+  - paula can use
+  Name: "[83][9C][A0][93][A0][A2].[90][AA][96][A6][91]"#Chef's fry pan
+  Type: 16
+32:
+  Action: 239
+  Argument:
+  - 60
+  - 0
+  - 0
+  - 1
+  Cost: 1790
+  Help Text Pointer: data_02.l_0xc53b26
+  Misc Flags:
+  - paula can use
+  Name: "[86][A2][91][9F][A8].[90][A3][9C][A0][93][A0][A2]."#French fry pan
+  Type: 16
+33:
+  Action: 239
+  Argument:
+  - 50
+  - 0
+  - 100
+  - 4
+  Cost: 4790
+  Help Text Pointer: data_02.l_0xc53b36
+  Misc Flags:
+  - paula can use
+  Name: "[7E][91][94][9A][A9].[90][A3][9C][A0][93][A0][A2]."#Magic fry pan
+  Type: 16
+34:
+  Action: 239
+  Argument:
+  - 80
+  - 0
+  - 10
+  - 1
+  Cost: 3480
+  Help Text Pointer: data_02.l_0xc53b46
+  Misc Flags:
+  - paula can use
+  Name: "[83][93][C6][A4][91][C6][90][A3][9C][A0][93][A0][A2]."#Holy fry pan
+  Type: 16
+35:
+  Action: 239
+  Argument:
+  - 10
+  - 30
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_02.l_0xc53b56
+  Misc Flags:
+  - poo can use
+  Name: "[7E][96][A9][90][7C][A0][A2][A0][9D][96][9B]"#Sword of kings
+  Type: 16
+36:
+  Action: 239
+  Argument:
+  - 16
+  - 0
+  - 0
+  - 0
+  Cost: 110
+  Help Text Pointer: data_03.l_0xc53b76
+  Misc Flags:
+  - jeff can use
+  Name: "[81][A5][94][91][A9]"#Pop gun
+  Type: 17
+37:
+  Action: 239
+  Argument:
+  - 24
+  - 0
+  - 0
+  - 0
+  Cost: 150
+  Help Text Pointer: data_03.l_0xc53b86
+  Misc Flags:
+  - jeff can use
+  Name: "[B4][9D][96][9C][A4][A2][A0][AA][A0][9C][96][A2]"#Stun gun
+  Type: 17
+38:
+  Action: 239
+  Argument:
+  - 32
+  - 0
+  - 0
+  - 0
+  Cost: 215
+  Help Text Pointer: data_03.l_0xc53b96
+  Misc Flags:
+  - jeff can use
+  Name: "[7A][94][A2][A5][AA].[90][A1][9A][A3][A4][A0][9D][96][A4]"#Toy air gun
+  Type: 17
+39:
+  Action: 239
+  Argument:
+  - 36
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_03.l_0xc53ba6
+  Misc Flags:
+  - jeff can use
+  Name: "[81][9F][96][93].[90][7E][91][94][9F][A5][9E]"#Magnum air gun
+  Type: 17
+40:
+  Action: 239
+  Argument:
+  - 40
+  - 0
+  - 0
+  - 0
+  Cost: 425
+  Help Text Pointer: data_03.l_0xc53bb6
+  Misc Flags:
+  - jeff can use
+  Name: "[81][A0][A9][A4].[90][A1][9A][A3][A4][A0][9D]."#Zip gun
+  Type: 17
+41:
+  Action: 239
+  Argument:
+  - 48
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_03.l_0xc53bc6
+  Misc Flags:
+  - jeff can use
+  Name: "[7D][91][99][96][A2][9F].[90][A1][9A][A3][A4][A0][9D]."#Laser gun
+  Type: 17
+42:
+  Action: 239
+  Argument:
+  - 58
+  - 0
+  - 0
+  - 0
+  Cost: 850
+  Help Text Pointer: data_03.l_0xc53bd6
+  Misc Flags:
+  - jeff can use
+  Name: "[74][9A][A1][96][A2][90][9D][A5][A9]"#Hyper beam
+  Type: 17
+43:
+  Action: 239
+  Argument:
+  - 72
+  - 0
+  - 0
+  - 0
+  Cost: 1150
+  Help Text Pointer: data_03.l_0xc53be6
+  Misc Flags:
+  - jeff can use
+  Name: "[75][A2][A0][92][9A][9D][C3][9F].[90][9D][A5][A9]"#Crusher beam
+  Type: 17
+44:
+  Action: 239
+  Argument:
+  - 78
+  - 0
+  - 0
+  - 0
+  Cost: 1650
+  Help Text Pointer: data_03.l_0xc53bf6
+  Misc Flags:
+  - jeff can use
+  Name: "[83][A1][96][9C][A4][A2][91][9D][C3][9F].[90][9D][A5][A9]"#Spectrum beam
+  Type: 17
+45:
+  Action: 239
+  Argument:
+  - 90
+  - 0
+  - 0
+  - 0
+  Cost: 2300
+  Help Text Pointer: data_03.l_0xc53c06
+  Misc Flags:
+  - jeff can use
+  Name: "[83][9E][96][A2][A4][96][9D][C3][9F].[90][9D][A5][A9]"#Death ray
+  Type: 17
+46:
+  Action: 239
+  Argument:
+  - 98
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_03.l_0xc53c16
+  Misc Flags:
+  - jeff can use
+  Name: "[7E][96][94][91][90][9D][A5][A9]"#Baddest beam
+  Type: 17
+47:
+  Action: 239
+  Argument:
+  - 110
+  - 0
+  - 0
+  - 0
+  Cost: 4450
+  Help Text Pointer: data_03.l_0xc53c26
+  Misc Flags:
+  - jeff can use
+  Name: "[7D][A5][9F][A0][A1][A5][AA][9C][91]"#Moon beam gun
+  Type: 17
+48:
+  Action: 239
+  Argument:
+  - 125
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_03.l_0xc53c36
+  Misc Flags:
+  - jeff can use
+  Name: "[74][91][9B][C6][90][9D][A5][A9]"#Gaia beam
+  Type: 17
+49:
+  Action: 239
+  Argument:
+  - 6
+  - 250
+  - 0
+  - 3
+  Cost: 29
+  Help Text Pointer: data_03.l_0xc53c46
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7B][A0]-[9B][A0]"#Yo-yo
+  Type: 17
+50:
+  Action: 239
+  Argument:
+  - 12
+  - 244
+  - 0
+  - 3
+  Cost: 89
+  Help Text Pointer: data_03.l_0xc53c5f
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[82][A0][94][91][A4][9C][91]"#Slingshot
+  Type: 17
+51:
+  Action: 239
+  Argument:
+  - 32
+  - 224
+  - 0
+  - 3
+  Cost: 449
+  Help Text Pointer: data_03.l_0xc53c7a
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[72][9A][A0][9F][9A][A9].[90][A2][A0][94][91][A4][9C][91]"#Bionic slingshot
+  Type: 17
+52:
+  Action: 239
+  Argument:
+  - 46
+  - 210
+  - 0
+  - 3
+  Cost: 998
+  Help Text Pointer: data_03.l_0xc53c95
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[84][A2][C5][9C][A0][93][91][C6][90][9B][A0]-[9B][A0]"#Trick yo-yo
+  Type: 17
+53:
+  Action: 239
+  Argument:
+  - 54
+  - 202
+  - 0
+  - 3
+  Cost: 1148
+  Help Text Pointer: data_03.l_0xc53caf
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[72][A0][96][93][A0][96][90][9B][A0]-[9B][A0]"#Combat yo-yo
+  Type: 17
+54:
+  Action: 240
+  Argument:
+  - 0
+  - 216
+  - 0
+  - 64
+  Cost: 60
+  Help Text Pointer: data_03.l_0xc53cc8
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[75][A0][A2][A0][98][9F].[90][92][A2][96][9D][A0][9C]"#Travel charm
+  Type: 20
+55:
+  Action: 240
+  Argument:
+  - 1
+  - 216
+  - 5
+  - 128
+  Cost: 400
+  Help Text Pointer: data_03.l_0xc53cd8
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[73][96][9D][9A][9C][9A][9B][90][92][A2][96][9D][A0][9C]"#Great charm
+  Type: 20
+56:
+  Action: 240
+  Argument:
+  - 2
+  - 216
+  - 15
+  - 192
+  Cost: 600
+  Help Text Pointer: data_03.l_0xc53d00
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7C][A2][9A][A3][A4].[90][92][A2][96][9D][A0][9C]"#Crystal charm
+  Type: 20
+57:
+  Action: 240
+  Argument:
+  - 3
+  - 216
+  - 40
+  - 192
+  Cost: 1800
+  Help Text Pointer: data_03.l_0xc53d21
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7C][A2][A0][9D][9A][A9][C3][C6][90][9D][91][A1][91]"#Rabbit's foot
+  Type: 20
+58:
+  Action: 240
+  Argument:
+  - 15
+  - 216
+  - 0
+  - 3
+  Cost: 3000
+  Help Text Pointer: data_03.l_0xc53d46
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[81][9D][91][9E][96][9F][9F].[90][9C][A5][9D][A0][9F]"#Flame pendant
+  Type: 20
+59:
+  Action: 240
+  Argument:
+  - 15
+  - 216
+  - 0
+  - 12
+  Cost: 3000
+  Help Text Pointer: data_03.l_0xc53d6a
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[75][A0][98][95][96][93][A0][9B][90][9C][A5][9D][A0][9F]"#Rain pendant
+  Type: 20
+60:
+  Action: 240
+  Argument:
+  - 15
+  - 216
+  - 0
+  - 48
+  Cost: 3000
+  Help Text Pointer: data_03.l_0xc53d8f
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7F][A0][A9][9F][A0][9B][90][9C][A5][9D][A0][9F]"#Night pendant
+  Type: 20
+61:
+  Action: 240
+  Argument:
+  - 20
+  - 216
+  - 0
+  - 63
+  Cost: 5000
+  Help Text Pointer: data_03.l_0xc53db8
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7E][A0][A2][A3][9C][A0][9B][90][9C][A5][9D][A0][9F]"#Sea pendant
+  Type: 20
+62:
+  Action: 240
+  Argument:
+  - 30
+  - 216
+  - 0
+  - 255
+  Cost: 7000
+  Help Text Pointer: data_03.l_0xc53de8
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[79][93][97][99][95][9F].[90][9C][A5][9D][A0][9F]"#Star pendant
+  Type: 20
+63:
+  Action: 240
+  Argument:
+  - 176
+  - 20
+  - 40
+  - 0
+  Cost: 0
+  Help Text Pointer: data_03.l_0xc53e23
+  Misc Flags:
+  - poo can use
+  Name: "[81][9D][91][C0][90][7C][A0][A2][A0][9D][96][9B]"#Cloak of kings
+  Type: 20
+64:
+  Action: 240
+  Argument:
+  - 5
+  - 216
+  - 0
+  - 0
+  Cost: 98
+  Help Text Pointer: data_03.l_0xc53e4f
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[75][96][AA][97][93].[90][92][A2][91][A3][9D][96][A4]"#Cheap bracelet
+  Type: 24
+65:
+  Action: 240
+  Argument:
+  - 10
+  - 216
+  - 0
+  - 0
+  Cost: 349
+  Help Text Pointer: data_03.l_0xc53e5f
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7E][96][95][9F].[90][92][A2][91][A3][9D][96][A4]"#Copper bracelet
+  Type: 24
+66:
+  Action: 240
+  Argument:
+  - 15
+  - 216
+  - 0
+  - 0
+  Cost: 599
+  Help Text Pointer: data_03.l_0xc53e6f
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[83][96][A2][96][92].[90][92][A2][91][A3][9D][96][A4]"#Silver bracelet
+  Type: 24
+67:
+  Action: 240
+  Argument:
+  - 30
+  - 216
+  - 0
+  - 0
+  Cost: 2799
+  Help Text Pointer: data_03.l_0xc53e7f
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[79][A0][9D][A0][A4][A0][9B][90][92][A2][91][A3][9D][96][A4]"#Gold bracelet
+  Type: 24
+68:
+  Action: 240
+  Argument:
+  - 40
+  - 216
+  - 0
+  - 0
+  Cost: 6899
+  Help Text Pointer: data_03.l_0xc53e8f
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[81][9D][91][A4][9A][9F].[90][92][A2][91][A3][9D][96][A4]"#Platinum band
+  Type: 24
+69:
+  Action: 240
+  Argument:
+  - 50
+  - 216
+  - 0
+  - 0
+  Cost: 9998
+  Help Text Pointer: data_03.l_0xc53e9f
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[71][9D][9E][91][99][9F].[90][92][A2][91][A3][9D][96][A4]"#Diamond band
+  Type: 24
+70:
+  Action: 240
+  Argument:
+  - 60
+  - 216
+  - 10
+  - 1
+  Cost: 1590
+  Help Text Pointer: data_03.l_0xc53eaf
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[72][A2][91][A3][9D][96][A4][90][A6][96][9A]"#Pixie's bracelet
+  Type: 24
+71:
+  Action: 240
+  Argument:
+  - 70
+  - 216
+  - 20
+  - 2
+  Cost: 1790
+  Help Text Pointer: data_03.l_0xc53ec6
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7D][96][9F][A4][91][90][87][96][A2][A5][93][9A][9E][91]"#Cherub's band
+  Type: 24
+72:
+  Action: 240
+  Argument:
+  - 80
+  - 216
+  - 30
+  - 2
+  Cost: 1980
+  Help Text Pointer: data_03.l_0xc53edd
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7D][96][9F][A4][91][90][72][A0][94][9A][9F][9A]"#Goddess band
+  Type: 24
+73:
+  Action: 240
+  Argument:
+  - 216
+  - 30
+  - 35
+  - 2
+  Cost: 0
+  Help Text Pointer: data_03.l_0xc53ef4
+  Misc Flags:
+  - poo can use
+  Name: "[7F][91][A2][A5][A9][9A][90][7C][A0][A2][A0][9D][96][9B]"#Bracer of kings
+  Type: 24
+74:
+  Action: 240
+  Argument:
+  - 5
+  - 216
+  - 0
+  - 0
+  Cost: 19
+  Help Text Pointer: data_03.l_0xc53f58
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[72][96][9B][A3][92].[90][9C][96][A1][9C][91]"#Baseball cap
+  Type: 28
+75:
+  Action: 240
+  Argument:
+  - 10
+  - 216
+  - 0
+  - 0
+  Cost: 59
+  Help Text Pointer: data_03.l_0xc53f89
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[8A][9D][C6][A1][91][90][87][A0][9D][9E][A3]"#Holmes hat
+  Type: 28
+76:
+  Action: 240
+  Argument:
+  - 6
+  - 216
+  - 0
+  - 0
+  Cost: 199
+  Help Text Pointer: data_03.l_0xc53fc9
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7C][96][A1][9C][91][90][72][96][9B][A3][9E][C4][9F]"#Mr. Baseball cap
+  Type: 28
+77:
+  Action: 240
+  Argument:
+  - 15
+  - 216
+  - 0
+  - 0
+  Cost: 298
+  Help Text Pointer: data_03.l_0xc5400a
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[83][A4][A2][A0][9A][A4].[90][7C][91][A3][9C][91]"#Hard hat
+  Type: 28
+78:
+  Action: 240
+  Argument:
+  - 20
+  - 216
+  - 0
+  - 0
+  Cost: 89
+  Help Text Pointer: data_03.l_0xc54055
+  Misc Flags:
+  - paula can use
+  Name: "[7D][96][9F][A4][A0][A9][9C][91]"#Ribbon
+  Type: 28
+79:
+  Action: 240
+  Argument:
+  - 25
+  - 216
+  - 0
+  - 0
+  Cost: 179
+  Help Text Pointer: data_03.l_0xc54065
+  Misc Flags:
+  - paula can use
+  Name: "[7C][A2][91][A3][9F].[90][9D][96][9F][A4][A0][A9][9C][91]"#Red ribbon
+  Type: 28
+80:
+  Action: 240
+  Argument:
+  - 110
+  - 216
+  - 0
+  - 0
+  Cost: 6980
+  Help Text Pointer: data_03.l_0xc54075
+  Misc Flags:
+  - paula can use
+  Name: "[7D][96][9F][A4][91][90][92][A0][94][9A][9F][9A]"#Goddess ribbon
+  Type: 28
+81:
+  Action: 240
+  Argument:
+  - 30
+  - 216
+  - 10
+  - 0
+  Cost: 1500
+  Help Text Pointer: data_03.l_0xc54085
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7E][A0][9F][96][A4][91][90][A3][9F][91]"#Coin of slumber
+  Type: 28
+82:
+  Action: 240
+  Argument:
+  - 40
+  - 216
+  - 13
+  - 0
+  Cost: 2000
+  Help Text Pointer: data_03.l_0xc54095
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7E][A0][9F][96][A4][91][90][99][91][C0][9A][A4][C2]"#Coin of defense
+  Type: 28
+83:
+  Action: 240
+  Argument:
+  - 50
+  - 216
+  - 20
+  - 0
+  Cost: 6000
+  Help Text Pointer: data_03.l_0xc540a5
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7E][A0][9F][96][A4][91][90][A5][95][91][A9][9A]"#Lucky coin
+  Type: 28
+84:
+  Action: 240
+  Argument:
+  - 60
+  - 216
+  - 25
+  - 0
+  Cost: 3500
+  Help Text Pointer: data_03.l_0xc540b5
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7E][A0][9F][96][A4][91][90][A4][91][9D][9A][A3][9E][91][9F]"#Talisman coin
+  Type: 28
+85:
+  Action: 240
+  Argument:
+  - 70
+  - 216
+  - 30
+  - 0
+  Cost: 4000
+  Help Text Pointer: data_03.l_0xc540c5
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[72][9D][96][A3][A4].[90][9E][A0][9F][96][A4][91]"#Shiny coin
+  Type: 28
+86:
+  Action: 240
+  Argument:
+  - 80
+  - 216
+  - 35
+  - 0
+  Cost: 6000
+  Help Text Pointer: data_03.l_0xc540d5
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[83][A5][93][96][9F].[90][9E][A0][9F][96][A4][91]"#Souvenir coin
+  Type: 28
+87:
+  Action: 240
+  Argument:
+  - 216
+  - 20
+  - 30
+  - 85
+  Cost: 0
+  Help Text Pointer: data_03.l_0xc540e5
+  Misc Flags:
+  - poo can use
+  Name: "[75][9A][91][95][96][9E].[90][7C][A0][A2][A0][9D][96][9B]"#Diadem of kings
+  Type: 28
+88:
+  Action: 249
+  Argument:
+  - 0
+  - 1
+  - 1
+  - 0
+  Cost: 7
+  Help Text Pointer: data_03.l_0xc54106
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[81][96][A9][96][9F][C3][96]"#Cookie
+  Type: 32
+89:
+  Action: 249
+  Argument:
+  - 0
+  - 4
+  - 1
+  - 0
+  Cost: 8
+  Help Text Pointer: data_03.l_0xc5411c
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7C][91][A2][A4][A0][AA][9C][91][90][86][A2][9A]"#Bag of fries
+  Type: 32
+90:
+  Action: 249
+  Argument:
+  - 0
+  - 8
+  - 1
+  - 0
+  Cost: 14
+  Help Text Pointer: data_03.l_0xc54133
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[74][91][9E][92][A5][A2][94][96][A2]"#Hamburger
+  Type: 32
+91:
+  Action: 249
+  Argument:
+  - 0
+  - 7
+  - 1
+  - 0
+  Cost: 9
+  Help Text Pointer: data_03.l_0xc54156
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[73][91][A2][97][9F][A0][96][90][B6][9B][A8][A0]"#Boiled egg
+  Type: 32
+92:
+  Action: 249
+  Argument:
+  - 0
+  - 14
+  - 1
+  - 0
+  Cost: 12
+  Help Text Pointer: data_03.l_0xc5416d
+  Misc Flags:
+  - item can change
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[83][93][96][98][96][96][90][C6][9B][A8][A0]"#Fresh Egg
+  Type: 32
+93:
+  Action: 249
+  Argument:
+  - 0
+  - 14
+  - 1
+  - 0
+  Cost: 24
+  Help Text Pointer: data_03.l_0xc54197
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[81][9A][9C][9F][9A][9C]"#Picnic lunch
+  Type: 32
+94:
+  Action: 249
+  Argument:
+  - 0
+  - 18
+  - 1
+  - 0
+  Cost: 128
+  Help Text Pointer: data_03.l_0xc541cb
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[81][91][A3][A4][91][90][95][96][9D][C3][90][9E][91][A2]"#Pasta di Summers
+  Type: 32
+95:
+  Action: 249
+  Argument:
+  - 0
+  - 20
+  - 1
+  - 0
+  Cost: 48
+  Help Text Pointer: data_03.l_0xc54321
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[81][9A][A8][A8][91]"#Pizza
+  Type: 32
+96:
+  Action: 249
+  Argument:
+  - 0
+  - 36
+  - 1
+  - 0
+  Cost: 298
+  Help Text Pointer: data_03.l_0xc54339
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[83][A1][96][A8][92][9D][C5][95][A0][90][AA][96][A6][91]"#Chef's special
+  Type: 32
+97:
+  Action: 250
+  Argument:
+  - 0
+  - 40
+  - 1
+  - 0
+  Cost: 238
+  Help Text Pointer: data_03.l_0xc543a4
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[72][A0][9D][C3][AA][91][C6][90][A1][9A][A8][A8][91]"#Large pizza
+  Type: 44
+98:
+  Action: 249
+  Argument:
+  - 1
+  - 20
+  - 20
+  - 0
+  Cost: 100
+  Help Text Pointer: data_03.l_0xc543da
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7C][91][A2][91][9E][96][9D][C3][9C][91][90][81][83][7A]"#PSI caramel
+  Type: 32
+99:
+  Action: 249
+  Argument:
+  - 1
+  - 80
+  - 80
+  - 0
+  Cost: 298
+  Help Text Pointer: data_03.l_0xc543f5
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7E][91][94][9A][A9].[90][A4][A2][C5][A6][96][9D][C3]"#Magic truffle
+  Type: 32
+100:
+  Action: 249
+  Argument:
+  - 2
+  - 50
+  - 0
+  - 0
+  Cost: 800
+  Help Text Pointer: data_03.l_0xc54451
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[81][9A][C0][91][90][95][9D][C6][90][9E][A0][99][94][91]"#Brain food lunch
+  Type: 32
+101:
+  Action: 249
+  Argument:
+  - 3
+  - 1
+  - 1
+  - 0
+  Cost: 38
+  Help Text Pointer: data_03.l_0xc54471
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7D][96][95][96][9F][A8].[90][A1][91][9D][A0][A9][9C][91]"#Rock candy
+  Type: 32
+102:
+  Action: 249
+  Argument:
+  - 0
+  - 10
+  - 1
+  - 0
+  Cost: 18
+  Help Text Pointer: data_03.l_0xc544af
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7C][A2][A5][91][A3][A3][91][9F]"#Croissant
+  Type: 32
+103:
+  Action: 249
+  Argument:
+  - 0
+  - 5
+  - 1
+  - 0
+  Cost: 12
+  Help Text Pointer: data_03.l_0xc544c6
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[82][A5][9D][96][A4]"#Bread roll
+  Type: 32
+104:
+  Action: 188
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_03.l_0xc544dd
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[78][96][93][91][A4].[90][A2][96][99][9A][9F][9C][91]"#Pak of bubble gum
+  Type: 56
+105:
+  Action: 189
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_03.l_0xc5453e
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[72][91][9F][9C][91][90][7E][A5][A7][A0][9E][97][95][91]"#Jar of Fly Honey
+  Type: 53
+106:
+  Action: 249
+  Argument:
+  - 0
+  - 1
+  - 1
+  - 0
+  Cost: 4
+  Help Text Pointer: data_03.l_0xc545a1
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[86][A2][A5][9C][A4][A0][93][C2][9B][90][A3][A0][9C]"#Can of fruit juice
+  Type: 36
+107:
+  Action: 249
+  Argument:
+  - 0
+  - 10
+  - 1
+  - 0
+  Cost: 78
+  Help Text Pointer: data_03.l_0xc545b7
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7C][A0][A2][A0][9D].[90][A7][A0][9D].[90][A9][91][9B]"#Royal iced tea
+  Type: 36
+108:
+  Action: 249
+  Argument:
+  - 0
+  - 14
+  - 1
+  - 0
+  Cost: 38
+  Help Text Pointer: data_03.l_0xc54660
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[81][A2][A0][A4][96][9A][9F].[90][9F][91][A1][9A][A4][A0][9C]"#Protein drink
+  Type: 36
+109:
+  Action: 249
+  Argument:
+  - 0
+  - 0
+  - 1
+  - 0
+  Cost: 648
+  Help Text Pointer: data_03.l_0xc546bc
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[83][A5][A1][90][9A][99][90][7C][A2][91][9C][96][9F][91]"#Kraken soup
+  Type: 36
+110:
+  Action: 249
+  Argument:
+  - 1
+  - 1
+  - 10
+  - 0
+  Cost: 4
+  Help Text Pointer: data_03.l_0xc54733
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[72][A5][A4][C2][9D][9C][91][90][73][A0][95][C2]"#Bottle of water
+  Type: 36
+111:
+  Action: 249
+  Argument:
+  - 9
+  - 0
+  - 0
+  - 0
+  Cost: 22
+  Help Text Pointer: data_03.l_0xc5475a
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7C][91][A1][9D][9A][90][93][90][9F][A0][A3]"#Cold remedy
+  Type: 36
+112:
+  Action: 249
+  Argument:
+  - 10
+  - 0
+  - 0
+  - 0
+  Cost: 58
+  Help Text Pointer: data_03.l_0xc54789
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[86][9D][91][9C][A0][9F][90][A3][C2][93][A0][A2][A0][A4][9C][9A]"#Vial of serum
+  Type: 36
+113:
+  Action: 249
+  Argument:
+  - 4
+  - 1
+  - 1
+  - 0
+  Cost: 38
+  Help Text Pointer: data_03.l_0xc547b0
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7C][91][A1][A3][A5][9D][91][90][9A][9F][A4][96][9D]."#IQ capsule
+  Type: 36
+114:
+  Action: 249
+  Argument:
+  - 5
+  - 1
+  - 1
+  - 0
+  Cost: 38
+  Help Text Pointer: data_03.l_0xc547cb
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7C][91][A1][A3][A5][9D][91][90][93][C2][95][96][A2]."#Guts capsule
+  Type: 36
+115:
+  Action: 249
+  Argument:
+  - 6
+  - 1
+  - 1
+  - 0
+  Cost: 38
+  Help Text Pointer: data_03.l_0xc547e8
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7C][91][A1][A3][A5][9D][91][90][A3][9C][A0][A2][A0][A3][A4][9A]"#Speed capsule
+  Type: 36
+116:
+  Action: 249
+  Argument:
+  - 7
+  - 1
+  - 1
+  - 0
+  Cost: 38
+  Help Text Pointer: data_03.l_0xc54806
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7C][91][A1][A3][A5][9D][91][90][98][9A][93][A5][A9]."#Vital capsule
+  Type: 36
+117:
+  Action: 249
+  Argument:
+  - 8
+  - 1
+  - 1
+  - 0
+  Cost: 38
+  Help Text Pointer: data_03.l_0xc54826
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7C][91][A1][A3][A5][9D][91][90][A5][95][91][A9][9A]"#Luck capsule
+  Type: 36
+118:
+  Action: 249
+  Argument:
+  - 0
+  - 1
+  - 1
+  - 0
+  Cost: 2
+  Help Text Pointer: data_03.l_0xc54842
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[81][91][9C][96][A4][9A][9C][90][9C][96][A4][A9][A5][A1][91]"#Ketchup packet
+  Type: 40
+119:
+  Action: 249
+  Argument:
+  - 0
+  - 1
+  - 1
+  - 0
+  Cost: 3
+  Help Text Pointer: data_03.l_0xc54852
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[83][91][A7][91][A2][9F].[90][A1][91][9C][96][A4][9A][9C]"#Sugar packet
+  Type: 40
+120:
+  Action: 249
+  Argument:
+  - 0
+  - 1
+  - 1
+  - 0
+  Cost: 4
+  Help Text Pointer: data_03.l_0xc54862
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[72][91][9F][9C][91][90][9C][91][9C][91][A0]"#Tin of Cocoa
+  Type: 40
+121:
+  Action: 249
+  Argument:
+  - 0
+  - 1
+  - 1
+  - 0
+  Cost: 4
+  Help Text Pointer: data_03.l_0xc54872
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7C][A0][A2][A0][92][9C][91][90][A3][9D][9A][93][A0][9C]"#Carton of cream
+  Type: 40
+122:
+  Action: 249
+  Argument:
+  - 0
+  - 1
+  - 1
+  - 0
+  Cost: 2
+  Help Text Pointer: data_03.l_0xc54882
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[73][96][A4][A0][A9][9C][91][90][A1][96][A4][A2][A5][AA][9C][9A]"#"Sprig of parsley"
+  Type: 40
+123:
+  Action: 249
+  Argument:
+  - 0
+  - 1
+  - 1
+  - 0
+  Cost: 3
+  Help Text Pointer: data_03.l_0xc54892
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[72][91][9F][9C][91][90][A0][A3][A4][A2].[90][A3][A0][A5][A3][91]"#"Jar of hot sauce"
+  Type: 40
+124:
+  Action: 249
+  Argument:
+  - 0
+  - 1
+  - 1
+  - 0
+  Cost: 2
+  Help Text Pointer: data_03.l_0xc548a2
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[81][91][9C][96][A4][9A][9C][90][A3][A0][9D][9A]"#"Salt packet"
+  Type: 40
+125:
+  Action: 1
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_03.l_0xc548b2
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[81][A2][A0][A1][A5][A3][9C][90][99][91][9C][A5][9D][9A][A3][C2]"#"Backstage pass"
+  Type: 59
+126:
+  Action: 249
+  Argument:
+  - 0
+  - 1
+  - 1
+  - 0
+  Cost: 300
+  Help Text Pointer: data_03.l_0xc548fc
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[72][91][9F][9C][91][90][A1][A2][96][9D][96][A3][A0][A5][A3][91]"#"Jar of delisauce"
+  Type: 40
+127:
+  Action: 149
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 24
+  Help Text Pointer: data_03.l_0xc54952
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7E][A0][9C][A2][A0][96][90][A1][A0][9D][A0][A4][96][9F][A8][96]"#"Wet towel"
+  Type: 48
+128:
+  Action: 150
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 80
+  Help Text Pointer: data_03.l_0xc54979
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[80][A3][93][C6][98].[90][A2][91][A3][A4][96][9F][9A][96]"#"Refreshing herb"
+  Type: 48
+129:
+  Action: 151
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 380
+  Help Text Pointer: data_03.l_0xc549c3
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[84][91][9B][9F][A0][96][90][A2][91][A3][A4][96][9F][9A][96]"#"Secret herb"
+  Type: 48
+130:
+  Action: 152
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 1780
+  Help Text Pointer: data_03.l_0xc549ff
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[82][A0][94][90][98][9A][99][9F][9A]"#"Horn of life"
+  Type: 48
+131:
+  Action: 159
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_03.l_0xc54a3a
+  Misc Flags:
+  - jeff can use
+  Name: "[81][A2][9A][92][A0][A2][90][71][9F][A4][9A]-[81][83][7A]"#"Counter-PSI unit"
+  Type: 52
+132:
+  Action: 160
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_03.l_0xc54a6c
+  Misc Flags:
+  - jeff can use
+  Name: "[B0][9A][A4][A0][92][A0][9B]"#"Shield killer"
+  Type: 52
+133:
+  Action: 310
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 950
+  Help Text Pointer: data_03.l_0xc54aa1
+  Misc Flags:
+  - jeff can use
+  Name: "[72][91][99][A5][9C][91]"#"Bazooka"
+  Type: 52
+134:
+  Action: 311
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_03.l_0xc54af5
+  Misc Flags:
+  - jeff can use
+  Name: "[84][C6][98][97][9D][91][C6][90][92][91][99][A5][9C][91]"#"Heavy bazooka"
+  Type: 52
+135:
+  Action: 161
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 800
+  Help Text Pointer: data_04.l_0xc54b67
+  Misc Flags:
+  - jeff can use
+  Name: "[78][9A][99][9F][96][9C][A2][91][95]"#"HP-sucker"
+  Type: 52
+136:
+  Action: 176
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc54bb0
+  Misc Flags:
+  - jeff can use
+  Name: "[74][A0][9D][A0][95][9F].[90][98][9A][99][9F][96][9C][A2][91][95]"#"Hungry HP-sucker"
+  Type: 52
+137:
+  Action: 179
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 630
+  Help Text Pointer: data_04.l_0xc54bfa
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7A][A3][A4][A2][96][92][9D].[90][A3][A2][96][95][A3][A4][93][A0]"#"Xterminator spray"
+  Type: 52
+138:
+  Action: 169
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 420
+  Help Text Pointer: data_04.l_0xc54c32
+  Misc Flags:
+  - jeff can use
+  Name: "[74][96][9F][96][A2][91][A4][A0][A2][90][A3][9D][9A][99][9A]"#"Slime generator"
+  Type: 52
+139:
+  Action: 170
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc54c6d
+  Misc Flags:
+  - jeff can use
+  Name: "[82][91][99][95][91][A4][A9].[90][9B][A0][94][A5][A2][A4][91]"#"Yogurt dispenser"
+  Type: 52
+140:
+  Action: 186
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 2
+  Help Text Pointer: data_04.l_0xc54ceb
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7D][9A][9F][96][9B][9C][91]"#"Ruler"
+  Type: 48
+141:
+  Action: 171
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 98
+  Help Text Pointer: data_04.l_0xc54d10
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7E][96][AA][A0][9C][90][A3][A0][90][99][9E][96][C6][9E][9A]"#"Snake bag"
+  Type: 52
+142:
+  Action: 162
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 128
+  Help Text Pointer: data_04.l_0xc54d99
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[80][92][97][A2][A4][9C][9A][90][9E][A5][9E][9A][9A]"#"Mummy wrap"
+  Type: 52
+143:
+  Action: 187
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 2
+  Help Text Pointer: data_04.l_0xc54ddc
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[84][A2][91][9F][A3][A1][A0][A2][A4][9A][A2]"#"Protractor"
+  Type: 48
+144:
+  Action: 163
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 29
+  Help Text Pointer: data_04.l_0xc54e01
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  Name: "[82][91][9C][96][A4][91]"#"Bottle rocket"
+  Type: 52
+145:
+  Action: 164
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 139
+  Help Text Pointer: data_04.l_0xc54e20
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  Name: "[72][A0][9D][C3][AA][91][C6][90][A2][91][9C][96][A4][91]"#"Big bottle rocket"
+  Type: 52
+146:
+  Action: 165
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 2139
+  Help Text Pointer: data_04.l_0xc54e54
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  Name: "[7E][A5][9D][C3][A4][9A]`[A2][91][9C][96][A4][91]"#"Multi`bottle rocket"
+  Type: 52
+147:
+  Action: 167
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 149
+  Help Text Pointer: data_04.l_0xc54ea7
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[72][A0][9E][92][91]"#"Bomb"
+  Type: 52
+148:
+  Action: 168
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 399
+  Help Text Pointer: data_04.l_0xc54ef7
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[83][A5][A1][96][A2][90][92][A0][9E][92][91]"#"Super bomb"
+  Type: 52
+149:
+  Action: 178
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 19
+  Help Text Pointer: data_04.l_0xc54f6a
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7A][9F][A3][96][9C][A4][9A][A8][9A][95]"#"Insecticide spray"
+  Type: 52
+150:
+  Action: 180
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 89
+  Help Text Pointer: data_04.l_0xc54fa2
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[82][98][91][93][A0][9E][97][A4]"#"Rust promoter"
+  Type: 52
+151:
+  Action: 181
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 289
+  Help Text Pointer: data_04.l_0xc54ff0
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[82][98][91][93][A0][9E][97][A4][90][75][96][9D][C5][9C][A3]"#"Rust promoter DX"
+  Type: 52
+152:
+  Action: 172
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 2
+  Help Text Pointer: data_04.l_0xc55057
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[74][A2][C6][99][9F][C2][96][90][9F][A0][A3][9C][9A]"#"Pair`of dirty socks"
+  Type: 52
+153:
+  Action: 173
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 8
+  Help Text Pointer: data_04.l_0xc5509e
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[78][A5][9C]-[A2][A0][94][91][A9]"#"Stag beetle"
+  Type: 52
+154:
+  Action: 174
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 3
+  Help Text Pointer: data_04.l_0xc550e3
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[79][A5][92][9F][91][C6][90][C0][97][A4][9C][91]"#"Toothbrush"
+  Type: 52
+155:
+  Action: 166
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 39
+  Help Text Pointer: data_04.l_0xc55105
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[82][A5][A9][9C][91][90][A0][A4][90][A3][A5][9E][9C][9A]"#"Handbag strap"
+  Type: 52
+156:
+  Action: 175
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 290
+  Help Text Pointer: data_04.l_0xc5514f
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[81][A2][A0][9C][9D][C6][A4].[90][A6][91][A2][91][A0][9F][91]"#"Pharaoh's curse"
+  Type: 52
+157:
+  Action: 184
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc5519f
+  Misc Flags:
+  - jeff can use
+  Name: "[79][91][C0][9A][A4][9F].[90][95][A5][AA]"#"Defense shower"
+  Type: 53
+158:
+  Action: 287
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc551cd
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[81][9A][A3][C3][9E][A0][90][A0][A4][90][9E][91][9E][C2]"#"Letter from mom"
+  Type: 59
+159:
+  Action: 182
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 500
+  Help Text Pointer: data_04.l_0xc551ea
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7C][91][A1][A3].[90][93][9F][96][99].[93][C2][95][96][A2]."#"Sudden guts pill"
+  Type: 53
+160:
+  Action: 177
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 1000
+  Help Text Pointer: data_04.l_0xc55230
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7E][96][AA][A0][9C][90][75][A2][91][9C][A0][9F][9A][A4][91]"#"Bag of Dragonite"
+  Type: 53
+161:
+  Action: 183
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 500
+  Help Text Pointer: data_04.l_0xc5528d
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[79][91][C0][9A][A4][9F].[90][A3][A1][A2][96][9B]"#"Defense spray"
+  Type: 53
+162:
+  Action: 190
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 300
+  Help Text Pointer: data_04.l_0xc552c4
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[83][93][9A][9F][A0][9B][90][A1][C6][A4][91][A9][A0][9C]"#"Piggy nose"
+  Type: 56
+163:
+  Action: 191
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc553d7
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[79][9F][91][9C] <[81][A2][A0][95][91][97][A4][A3][C6]!>"#"For Sale sign"
+  Type: 56
+164:
+  Action: 192
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc55409
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7C][9F][9A][94][91][90][A0][90][99][91][A3][A4][96][9F][A9]."#"Shyness book"
+  Type: 59
+165:
+  Action: 193
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 2
+  Help Text Pointer: data_04.l_0xc55433
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[87][A5][95][A0][98][90][A0][A4][9C][A2][C2][A4][9C][91]"#"Picture postcard"
+  Type: 56
+166:
+  Action: 285
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc5546c
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7C][A0][A2][A0][9D][96][93][A3][9C].[90][92][91][9F][91][9F]"#"King banana"
+  Type: 56
+167:
+  Action: 288
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc55496
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[81][9A][A3][C3][9E][A0][90][A0][A4][90][84][A0][9F][9A]"#"Letter from Tony"
+  Type: 59
+168:
+  Action: 195
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 25
+  Help Text Pointer: data_04.l_0xc554b3
+  Misc Flags:
+  - item can change
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[88][C2][A1][9D][97][9F][A0][9C]"#"Chick"
+  Type: 56
+169:
+  Action: 196
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 220
+  Help Text Pointer: data_04.l_0xc554cf
+  Misc Flags:
+  - item can change
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7C][A5][A2][9A][A8][91]"#"Chicken"
+  Type: 56
+170:
+  Action: 1
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc554f6
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7C][9D][C5][A9][90][A0][A4][90][A7][9A][98][9A][9F][C2]"#"Key to the shack"
+  Type: 59
+171:
+  Action: 1
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc5551d
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7C][9D][C5][A9][90][A0][A4][90][9C][91][92][9A][9F][C2]"#"Key to the cabin"
+  Type: 59
+172:
+  Action: 1
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc55546
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[81][9D][A0][A7].[90][9C][9D][C5][A9].[90][91][A1][A1]."#"Bad key machine"
+  Type: 59
+173:
+  Action: 1
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc5558a
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[73][A2][96][9E][96][9F].[90][A4][A0][93][91][A2][C2]"#"Temporary goods"
+  Type: 56
+174:
+  Action: 198
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc555b8
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[72][A5][9E][91][94][91][90][A0][A4][90][99][A0][9E][92][9A]"#"Zombie paper"
+  Type: 58
+175:
+  Action: 199
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc55602
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[83][A0][9C][A0][9D][9A][9F].[90][94][9D][91][99]"#"Hawk eye"
+  Type: 58
+176:
+  Action: 200
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc55627
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[73][96][9D][A0][A3][9A][A1][96][95]"#"Bicycle"
+  Type: 58
+177:
+  Action: 197
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc5566b
+  Misc Flags:
+  - cannot be given away
+  - cannot be stored with escargo express
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[72][91][9F][9C][A0][93][A3][9C][91][C6][90][9C][91][A2][A4][91]"#"ATM card"
+  Type: 59
+178:
+  Action: 1
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 12
+  Help Text Pointer: data_04.l_0xc5569c
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[72][9A][9D][96][A4][90][9F][91][90][9C][A0][9F][A8][96][A2][A4]"#"Show ticket"
+  Type: 59
+179:
+  Action: 289
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc556c1
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[81][9A][A3][C3][9E][A0][90][A0][A4][90][95][96][A4][96][9B]"#"Letter from kids"
+  Type: 59
+180:
+  Action: 1
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc556e3
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[81][91][A9][9C][91][90][95][96][9F][96][94]"#"Wad of bills"
+  Type: 59
+181:
+  Action: 286
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc5570b
+  Misc Flags:
+  - cannot be given away
+  - cannot be stored with escargo express
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[82][91][95][9A][A0][A1][A2][9A][97][9E][9F][9A][9C]"#"Receiver phone"
+  Type: 59
+182:
+  Action: 1
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc55740
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[71][9D][9E][91][99]"#"Diamond"
+  Type: 59
+183:
+  Action: 1
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc5576a
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[81][A0][95][A1][9A][A3][91][9F][9F].[90][92][91][9F][91][9F]"#"Signed banana"
+  Type: 59
+184:
+  Action: 1
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc55794
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[83][A4][97][A2][9C][91][90][9C][91][A2][91][9F][95]."#"Pencil eraser"
+  Type: 59
+185:
+  Action: 270
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc557e7
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7C][A0][A1][9A][C6][90][9A][96][A2][A0][94][9D][9A][A6][A0][93]"#"Hieroglyph copy"
+  Type: 59
+186:
+  Action: 1
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 4000
+  Help Text Pointer: data_04.l_0xc55831
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7E][96][A4][96][A0][A4][9A][A4]"#"Meteotite"
+  Type: 56
+187:
+  Action: 1
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc5587e
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7C][A0][9F][A4][91][9C][A4][9F][C2][96][90][9D][9A][9F][99][C2]"#"Contact lens"
+  Type: 59
+188:
+  Action: 140
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 19
+  Help Text Pointer: data_04.l_0xc55897
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[82][A5][9C][A0][A1][9D][91][A3][A4][C2][A2][C3]"#"Hand-Aid"
+  Type: 48
+189:
+  Action: 249
+  Argument:
+  - 0
+  - 5
+  - 1
+  - 0
+  Cost: 48
+  Help Text Pointer: data_04.l_0xc558ca
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[86][A0][A2][96][9D][C3][9F].[90][9B][A0][94][A5][A2][A4]"#"Trout yogurt"
+  Type: 32
+190:
+  Action: 249
+  Argument:
+  - 0
+  - 4
+  - 1
+  - 0
+  Cost: 5
+  Help Text Pointer: data_04.l_0xc55915
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[72][91][9F][91][9F]"#"Banana"
+  Type: 32
+191:
+  Action: 249
+  Argument:
+  - 0
+  - 10
+  - 1
+  - 0
+  Cost: 18
+  Help Text Pointer: data_04.l_0xc5592c
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[87][9D][96][92][9F][91][C6][90][A1][91][9D][A0][A9][9C][91]"#"Calorie stick"
+  Type: 32
+192:
+  Action: 1
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc55943
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7C][9D][C5][A9][90][A0][A4][90][92][91][AA][9F][9A]"#"Key to the tower"
+  Type: 59
+193:
+  Action: 1
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc55957
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7C][A5][A3][A0][9C][90][9E][96][A4][96][A0][A2][9A][A4][91]"#"Meteorite piece"
+  Type: 59
+194:
+  Action: 240
+  Argument:
+  - 16
+  - 216
+  - 0
+  - 42
+  Cost: 4000
+  Help Text Pointer: data_04.l_0xc559a8
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[79][96][9E][9F][A0][9B][90][9C][A5][9D][A0][9F]"#"Earth pendant"
+  Type: 20
+195:
+  Action: 247
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc559d9
+  Misc Flags:
+  - jeff can use
+  Name: "[7F][96][9B][A4][A2][91][9D][9A][99][91][A4][A0][A2]"#"Neutralizer"
+  Type: 52
+196:
+  Action: 258
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc55ad5
+  Misc Flags:
+  - cannot be given away
+  - cannot be stored with escargo express
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[81][A0][C5][C0][9A][9B][90][9C][91][9E][96][9F][C3]"#"Sound Stone"
+  Type: 56
+197:
+  Action: 259
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc55b21
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7E][C2][AA][9C][91]-[A1][A5][A4][96][93][A0][95]."#"Exit mouse"
+  Type: 56
+198:
+  Action: 249
+  Argument:
+  - 0
+  - 5
+  - 1
+  - 0
+  Cost: 49
+  Help Text Pointer: data_04.l_0xc55b79
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[75][98][96][9D][91][A4][A0][90][95][C4][90][9C][A5][A2][A0][A2][A4]"#"Gelato de resort"
+  Type: 32
+199:
+  Action: 268
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 220
+  Help Text Pointer: data_04.l_0xc55bc1
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[79][9E][96][C6]"#"Snake"
+  Type: 52
+200:
+  Action: 269
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 550
+  Help Text Pointer: data_04.l_0xc55c03
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[74][91][95][C5][9C][91]"#"Viper"
+  Type: 52
+201:
+  Action: 1
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc55c46
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[74][A0][9D][A0][93][9F][A0][9B][90][9C][91][9E][96][9F][C3]"#"Brain stone"
+  Type: 56
+202:
+  Action: 271
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc55cce
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7C][91][A2][A4][91][90][74][A0][A2][A0][95][91]"#"Town map"
+  Type: 56
+203:
+  Action: 272
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc55d2e
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[73][9A][95][96][A0][90][A2][96][9D][91][9C][A3][91][9F][A4]"#"Video relaxant" #Can't be found normally in-game
+  Type: 56
+204:
+  Action: 281
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 50
+  Help Text Pointer: data_04.l_0xc55d46
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[83][A5][A1][A0][A2][9E][91]"#"Suporma" #Super Orange Machine
+  Type: 56
+205:
+  Action: 1
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc55d82
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7C][9D][C5][A9][90][A0][A4][90][AA][9C][91][A6][A9][9A][9C][91]"#"Key to the locker"
+  Type: 59
+206:
+  Action: 282
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 2
+  Help Text Pointer: data_04.l_0xc55da1
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7F][96][99][9F][91][A9][9A][A4].[90][93][96][C0][C3]"#"Insignificant item"
+  Type: 59
+207:
+  Action: 249
+  Argument:
+  - 1
+  - 20
+  - 20
+  - 0
+  Cost: 480
+  Help Text Pointer: data_04.l_0xc55dc8
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7E][91][94][9A][A9].[90][A4][A0][A2][A4][9A][9C]"#"Magic tart"
+  Type: 32
+208:
+  Action: 1
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc55de0
+  Misc Flags:
+  - cannot be given away
+  - cannot be stored with escargo express
+  - poo can use
+  Name: "[7C][A2][A0][AA][96][A9][9F].[90][A2][A5][92][9A][9F]"#"Tiny ruby"
+  Type: 59
+209:
+  Action: 283
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc55dfe
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[80][92][96][99][C3][C6][9F][C3][C6][90][9D][C5][92][A0][93][C3]"#"Monkey's love"
+  Type: 52
+210:
+  Action: 1
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc55e28
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7D][91][A3][A4].[90][A0][A4][90][9D][91][A3][A4][9A][9C][A0][93]"#"Eraser eraser"
+  Type: 59
+211:
+  Action: 284
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_04.l_0xc55e77
+  Misc Flags:
+  - cannot be stored with escargo express
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[84][96][9F][95][91][A1][A5][A3][A4][91]"#"Tendakraut"
+  Type: 59
+212:
+  Action: 239
+  Argument:
+  - 48
+  - 0
+  - 0
+  - 1
+  Cost: 698
+  Help Text Pointer: data_04.l_0xc55eab
+  Misc Flags:
+  - ness can use
+  Name: "[84][9A][A2][91][9F][9F][A0][92][9A][A4][91]"#"T-rex's bat"
+  Type: 16
+213:
+  Action: 239
+  Argument:
+  - 54
+  - 0
+  - 0
+  - 1
+  Cost: 1380
+  Help Text Pointer: data_04.l_0xc55ebb
+  Misc Flags:
+  - ness can use
+  Name: "[72][9A][A4][91][90][93][C2][A3][AA].[9D][9A][94][9A]"#"Big league bat"
+  Type: 16
+214:
+  Action: 239
+  Argument:
+  - 68
+  - 0
+  - 0
+  - 1
+  Cost: 2298
+  Help Text Pointer: data_04.l_0xc55ef6
+  Misc Flags:
+  - ness can use
+  Name: "[81][A2][96][93][A0][A3][A7].[90][92][9A][A4][91]"#"Ultimate bat"
+  Type: 16
+215:
+  Action: 239
+  Argument:
+  - 66
+  - 0
+  - 0
+  - 0
+  Cost: 1000
+  Help Text Pointer: data_04.l_0xc55f06
+  Misc Flags:
+  - jeff can use
+  Name: "[75][93][A0][9B][9F][A0][9B][90][9D][A5][A9]"#"Double beam"
+  Type: 17
+216:
+  Action: 240
+  Argument:
+  - 40
+  - 216
+  - 0
+  - 0
+  Cost: 3899
+  Help Text Pointer: data_04.l_0xc55f16
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[81][9D][91][A4][9A][9F].[90][92][A2][91][A3][9D][96][A4]"#"Platinum band"
+  Type: 24
+217:
+  Action: 240
+  Argument:
+  - 50
+  - 216
+  - 0
+  - 0
+  Cost: 5198
+  Help Text Pointer: data_03.l_0xc53e9f
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[71][9D][9E][91][99][9F].[90][92][A2][91][A3][9D][96][A4]"#"Diamond band"
+  Type: 24
+218:
+  Action: 240
+  Argument:
+  - 40
+  - 216
+  - 15
+  - 0
+  Cost: 389
+  Help Text Pointer: data_04.l_0xc55f36
+  Misc Flags:
+  - paula can use
+  Name: "[79][91][C0].[90][9D][96][9F][A4][A0][A9][9C][91]"#"Defense ribbon"
+  Type: 28
+219:
+  Action: 240
+  Argument:
+  - 60
+  - 216
+  - 25
+  - 0
+  Cost: 3500
+  Help Text Pointer: data_04.l_0xc55f5d
+  Misc Flags:
+  - paula can use
+  Name: "[7D][96][9F][A4][91]-[A4][91][9D][9A][A3][9E][91][9F]"#"Talisman ribbon"
+  Type: 28
+220:
+  Action: 240
+  Argument:
+  - 90
+  - 216
+  - 40
+  - 0
+  Cost: 3980
+  Help Text Pointer: data_04.l_0xc55f84
+  Misc Flags:
+  - paula can use
+  Name: "[7D][96][9F][A4][91][90][83][91][A4][A5][A2][9F][A0][93]"#"Saturn ribbon"
+  Type: 28
+221:
+  Action: 240
+  Argument:
+  - 45
+  - 216
+  - 16
+  - 0
+  Cost: 2500
+  Help Text Pointer: data_04.l_0xc55fcc
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7E][A0][9F][96][A4][91][90][92][96][99][9E][A0][9D]."#"Coin of silence"
+  Type: 28
+222:
+  Action: 240
+  Argument:
+  - 50
+  - 216
+  - 20
+  - 0
+  Cost: 3000
+  Help Text Pointer: data_04.l_0xc55fdc
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7E][A0][9F][96][A4][91][90][AA][91][A2][9E][91]"#"Charm coin"
+  Type: 28
+223:
+  Action: 249
+  Argument:
+  - 0
+  - 7
+  - 1
+  - 0
+  Cost: 98
+  Help Text Pointer: data_04.l_0xc55fec
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[84][91][A2][96][9D][9C][91][90][9D][91][A1][AA][9A]"#"Cup of noodles"
+  Type: 32
+224:
+  Action: 249
+  Argument:
+  - 0
+  - 1
+  - 1
+  - 100
+  Cost: 38
+  Help Text Pointer: data_04.l_0xc56011
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[72][C2][A3][A4][A2][A0][92][A2][A0][95]"#"Skip sandwich"
+  Type: 32
+225:
+  Action: 249
+  Argument:
+  - 0
+  - 1
+  - 1
+  - 200
+  Cost: 98
+  Help Text Pointer: data_04.l_0xc56054
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[72][C2][A3][A4][A2][A0][92][A2][A0][95][90][83][A5][A1][96][A2]"#"Skip sandwich DX"
+  Type: 32
+226:
+  Action: 249
+  Argument:
+  - 0
+  - 10
+  - 1
+  - 0
+  Cost: 128
+  Help Text Pointer: data_04.l_0xc56097
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[73][96][99][A5][A9].[90][92][A5][A4][96][A2][92][A2][A0][95]"#"Lucky sandwich"
+  Type: 32
+227:
+  Action: 249
+  Argument:
+  - 0
+  - 40
+  - 1
+  - 0
+  Cost: 128
+  Help Text Pointer: data_04.l_0xc560d3
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[73][96][99][A5][A9].[90][92][A5][A4][96][A2][92][A2][A0][95]"#"Lucky sandwich"
+  Type: 32
+228:
+  Action: 249
+  Argument:
+  - 0
+  - 0
+  - 1
+  - 0
+  Cost: 128
+  Help Text Pointer: data_04.l_0xc5610f
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[73][96][99][A5][A9].[90][92][A5][A4][96][A2][92][A2][A0][95]"#"Lucky sandwich"
+  Type: 32
+229:
+  Action: 249
+  Argument:
+  - 1
+  - 5
+  - 1
+  - 0
+  Cost: 128
+  Help Text Pointer: data_04.l_0xc5614b
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[73][96][99][A5][A9].[90][92][A5][A4][96][A2][92][A2][A0][95]"#"Lucky sandwich"
+  Type: 32
+230:
+  Action: 249
+  Argument:
+  - 1
+  - 20
+  - 1
+  - 0
+  Cost: 128
+  Help Text Pointer: data_04.l_0xc56187
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[73][96][99][A5][A9].[90][92][A5][A4][96][A2][92][A2][A0][95]"#"Lucky sandwich"
+  Type: 32
+231:
+  Action: 249
+  Argument:
+  - 2
+  - 0
+  - 1
+  - 0
+  Cost: 128
+  Help Text Pointer: data_04.l_0xc561c3
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[73][96][99][A5][A9].[90][92][A5][A4][96][A2][92][A2][A0][95]"#"Lucky sandwich"
+  Type: 32
+232:
+  Action: 249
+  Argument:
+  - 0
+  - 2
+  - 1
+  - 0
+  Cost: 6
+  Help Text Pointer: data_04.l_0xc561ff
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[84][91][A2][96][9D][9C][91][90][9C][A0][A6][96]"#"Cup of coffee"
+  Type: 36
+233:
+  Action: 249
+  Argument:
+  - 0
+  - 16
+  - 1
+  - 0
+  Cost: 24
+  Help Text Pointer: data_04.l_0xc56230
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[75][93][A0][9B][9F][A0][9B][90][92][A5][A2][94][96][A2]"#"Double burger"
+  Type: 32
+234:
+  Action: 249
+  Argument:
+  - 0
+  - 18
+  - 1
+  - 0
+  Cost: 22
+  Help Text Pointer: data_05.l_0xc56253
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[71][A2][91][A7][9A][A3].[90][A9][9A][99][9C][96][9B][9C]"#"Peanut cheese`bar"
+  Type: 32
+235:
+  Action: 249
+  Argument:
+  - 0
+  - 50
+  - 1
+  - 0
+  Cost: 222
+  Help Text Pointer: data_05.l_0xc5629b
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[87][A0][9D][A0][95][96][A8]"#"Piggy jelly"
+  Type: 32
+236:
+  Action: 249
+  Argument:
+  - 0
+  - 36
+  - 1
+  - 0
+  Cost: 88
+  Help Text Pointer: data_05.l_0xc562dd
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[84][91][A2][96][9D][9C][91][90][A2][9A][A3].[9C][91][AA][9A]"#"Bowl of rice gruel"
+  Type: 32
+237:
+  Action: 249
+  Argument:
+  - 0
+  - 7
+  - 1
+  - 0
+  Cost: 12
+  Help Text Pointer: data_05.l_0xc5630a
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[86][91][A3][A0][9D][96][93][C2][9B][90][9C][A2][A0][9C][96][A4]"#"Bean croquette"
+  Type: 32
+238:
+  Action: 249
+  Argument:
+  - 0
+  - 14
+  - 1
+  - 0
+  Cost: 20
+  Help Text Pointer: data_05.l_0xc563a9
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[83][A5][A1][90][9E][A0][9D][A0][A7][96][C6]"#"Molokheiya soup"
+  Type: 36
+239:
+  Action: 249
+  Argument:
+  - 0
+  - 14
+  - 1
+  - 0
+  Cost: 38
+  Help Text Pointer: data_05.l_0xc56417
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: ""#"Plain roll"
+  Type: 32
+240:
+  Action: 249
+  Argument:
+  - 0
+  - 21
+  - 1
+  - 0
+  Cost: 54
+  Help Text Pointer: data_05.l_0xc5645d
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7C][96][92][A0][92]"#"Kabob"
+  Type: 32
+241:
+  Action: 249
+  Argument:
+  - 0
+  - 28
+  - 1
+  - 0
+  Cost: 78
+  Help Text Pointer: data_05.l_0xc564d1
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7B][A0][94][A5][A2][A4]"#"Plain yogurt"
+  Type: 32
+242:
+  Action: 249
+  Argument:
+  - 0
+  - 25
+  - 1
+  - 0
+  Cost: 70
+  Help Text Pointer: data_05.l_0xc564ff
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[73][C6][9D][96][9F][91][C6][90][94][A0][93][C6][95][9A][9F][91]"#"Beef jerky"
+  Type: 32
+243:
+  Action: 249
+  Argument:
+  - 0
+  - 34
+  - 1
+  - 0
+  Cost: 98
+  Help Text Pointer: data_05.l_0xc565bc
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7E][91][9E][A0][9F][A4]-[92][A5][A2][94][96][A2]"#"Mammoth burger"
+  Type: 32
+244:
+  Action: 249
+  Argument:
+  - 0
+  - 42
+  - 1
+  - 0
+  Cost: 140
+  Help Text Pointer: data_05.l_0xc565d4
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[81][A2][C6][9F][A0][96][90][93][C6][9D][90][9E][C6][A3][A0]"#"Spicy jerky"
+  Type: 32
+245:
+  Action: 249
+  Argument:
+  - 0
+  - 50
+  - 1
+  - 0
+  Cost: 210
+  Help Text Pointer: data_05.l_0xc566b7
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[73][C6][9D][96][9F].[90][9E][C6][A3][A0][90][9D][C5][9C][A3]"#"Luxury jerky"
+  Type: 32
+246:
+  Action: 249
+  Argument:
+  - 1
+  - 1
+  - 40
+  - 0
+  Cost: 198
+  Help Text Pointer: data_05.l_0xc5678d
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[74][A0][A2][9F][91][C6][90][9E][9A][9F][96][A2][91][9D][9C][91]"#"Bottle of DXwater"
+  Type: 36
+247:
+  Action: 249
+  Argument:
+  - 1
+  - 40
+  - 40
+  - 0
+  Cost: 680
+  Help Text Pointer: data_05.l_0xc567dc
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7E][91][94][9A][A9].[90][A1][A5][95][95][9A][9F][94]"#"Magic pudding"
+  Type: 32
+248:
+  Action: 239
+  Argument:
+  - 50
+  - 0
+  - 0
+  - 1
+  Cost: 1490
+  Help Text Pointer: data_05.l_0xc567f4
+  Misc Flags:
+  - paula can use
+  Name: "[72][96][99][A1][A2][9A][94].[A3][9C][A0][93][A0][A2]."#"Non-stick frypan"
+  Type: 16
+249:
+  Action: 240
+  Argument:
+  - 47
+  - 216
+  - 18
+  - 0
+  Cost: 1000
+  Help Text Pointer: data_05.l_0xc56804
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7E][A0][9F][96][A4][91][90][83][91][A4][A5][A2][9F]"#"Mr. Saturn coin"
+  Type: 28
+250:
+  Action: 1
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 2000
+  Help Text Pointer: data_05.l_0xc5682e
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7E][96][A4][96][A0][A2][9A][9F][A5][9E]"#"Meteornium"
+  Type: 56
+251:
+  Action: 249
+  Argument:
+  - 0
+  - 3
+  - 1
+  - 0
+  Cost: 7
+  Help Text Pointer: data_05.l_0xc5687b
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[B4][A3][9C][9A][9E][A0]"#"Popsicle"
+  Type: 32
+252:
+  Action: 152
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 178
+  Help Text Pointer: data_05.l_0xc56892
+  Misc Flags:
+  - item disappears when used
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7D][91][A1][AA][91][90][98][9A][99][9F][9A]"#"Cup of Lifenoodles"
+  Type: 48
+253:
+  Action: 1
+  Argument:
+  - 0
+  - 0
+  - 0
+  - 0
+  Cost: 0
+  Help Text Pointer: data_05.l_0xc5689f
+  Misc Flags:
+  - jeff can use
+  - ness can use
+  - paula can use
+  - poo can use
+  Name: "[7E][A0][A2][9C][A0][93][9F].[90][9C][9D][C5][A9]"#"Carrot key"
+  Type: 59
