@@ -2338,7 +2338,7 @@
   Money: 3049
   Movement pattern: 29
   Music: 104
-  Name: '[7C][A2][91][9C][96][9F]'
+  Name: '[7C][A2][91][9C][96][9F]' # Кракен
   Offense: 105
   Overworld Sprite: 295
   PP: 176
@@ -2385,7 +2385,7 @@
   Money: 960
   Movement pattern: 23
   Music: 104
-  Name: '[72][9A][A0]-[7C][A2][91][9C][96][9F]'
+  Name: '[72][9A][A0]-[7C][A2][91][9C][96][9F]' # Био-Кракен
   Offense: 155
   Overworld Sprite: 306
   PP: 60
@@ -2432,7 +2432,7 @@
   Money: 21
   Movement pattern: 23
   Music: 97
-  Name: '[73][A2][91][C0][91][C5][C0][9A][9B][A3][C6] [82][A0][92][A0][A4]'
+  Name: '[73][A2][91][C0][91][C5][C0][9A][9B][A3][C6] [82][A0][92][A0][A4]' # Вращающийся Робот
   Offense: 21
   Overworld Sprite: 306
   PP: 17
@@ -2479,7 +2479,7 @@
   Money: 256
   Movement pattern: 23
   Music: 97
-  Name: '[73][96][A2][A4][C6][C0][9A][9B][A3][C6] [82][A0][92][A0][A4]'
+  Name: '[73][96][A2][A4][C6][C0][9A][9B][A3][C6] [82][A0][92][A0][A4]' # Вертящийся Робот
   Offense: 78
   Overworld Sprite: 306
   PP: 36
@@ -2526,7 +2526,7 @@
   Money: 756
   Movement pattern: 23
   Music: 97
-  Name: '[88][9A][A2][9C][A5][9D][9A][A2][A5][C5][C0][9A][9B][A3][C6] [82][A0][92][A0][A4]'
+  Name: '[88][9A][A2][9C][A5][9D][9A][A2][A5][C5][C0][9A][9B][A3][C6] [82][A0][92][A0][A4]' # Циркулирующийся Робот
   Offense: 122
   Overworld Sprite: 306
   PP: 83
@@ -2573,7 +2573,7 @@
   Money: 18
   Movement pattern: 21
   Music: 101
-  Name: '[7C][A0][A1]'
+  Name: '[7C][A0][A1]' # Коп
   Offense: 15
   Overworld Sprite: 386
   PP: 0
@@ -2620,7 +2620,7 @@
   Money: 4
   Movement pattern: 20
   Music: 96
-  Name: '[79][9E][96][C6]-[81][A2][A5][98][9A][9F][91]'
+  Name: '[79][9E][96][C6]-[81][A2][A5][98][9A][9F][91]' # Змея-Пружина
   Offense: 3
   Overworld Sprite: 283
   PP: 0
@@ -2667,7 +2667,7 @@
   Money: 276
   Movement pattern: 20
   Music: 96
-  Name: '[84][A0][9E][9A][9E][91][C6] [79][9E][96][C6]-[81][A2][A5][98][9A][9F][91]'
+  Name: '[84][A0][9E][9A][9E][91][C6] [79][9E][96][C6]-[81][A2][A5][98][9A][9F][91]' # Томимая Змея-Пружина
   Offense: 52
   Overworld Sprite: 283
   PP: 0
@@ -2714,7 +2714,7 @@
   Money: 30
   Movement pattern: 25
   Music: 96
-  Name: '[7E][A2]. [72][C4][A4][A4][9A]'
+  Name: '[7E][A2]. [72][C4][A4][A4][9A]' # Мр. Бэтти
   Offense: 25
   Overworld Sprite: 274
   PP: 0
@@ -2761,7 +2761,7 @@
   Money: 371
   Movement pattern: 25
   Music: 96
-  Name: '[83][A4][91][A2][AA][9A][9B] [72][C4][A4][A4][9A]'
+  Name: '[83][A4][91][A2][AA][9A][9B] [72][C4][A4][A4][9A]' # Старший Бэтти
   Offense: 66
   Overworld Sprite: 274
   PP: 0
@@ -2808,7 +2808,7 @@
   Money: 80
   Movement pattern: 20
   Music: 98
-  Name: '[84][91][A2][91][9C][91][9F]-[79][9D][C2][95][96][9F][C3]'
+  Name: '[84][91][A2][91][9C][91][9F]-[79][9D][C2][95][96][9F][C3]' # Таракан-Злыдень
   Offense: 30
   Overworld Sprite: 314
   PP: 0
@@ -2855,7 +2855,7 @@
   Money: 432
   Movement pattern: 20
   Music: 98
-  Name: '[74][91][95][9C][9A][9B] [84][91][A2][91][9C][91][9F]'
+  Name: '[74][91][95][9C][9A][9B] [84][91][A2][91][9C][91][9F]' # Гадкий Таракан
   Offense: 84
   Overworld Sprite: 314
   PP: 0
@@ -2902,7 +2902,7 @@
   Money: 244
   Movement pattern: 28
   Music: 98
-  Name: '[83][A5][9E][91][A3][AA][96][95][AA][9A][9B] [79][9F][91][9C]'
+  Name: '[83][A5][9E][91][A3][AA][96][95][AA][9A][9B] [79][9F][91][9C]' # Сумасшедший Знак
   Offense: 64
   Overworld Sprite: 309
   PP: 98
@@ -2949,7 +2949,7 @@
   Money: 458
   Movement pattern: 23
   Music: 97
-  Name: '[8A][91][9E][92][9D][96][A2]'
+  Name: '[8A][91][9E][92][9D][96][A2]' # Шамблер
   Offense: 81
   Overworld Sprite: 306
   PP: 140
@@ -2996,7 +2996,7 @@
   Money: 906
   Movement pattern: 23
   Music: 97
-  Name: '[72][96][AA][96][9F][C2][9B] [8A][91][9E][92][9D][96][A2]'
+  Name: '[72][96][AA][96][9F][C2][9B] [8A][91][9E][92][9D][96][A2]' # Бешеный Шамблер
   Offense: 144
   Overworld Sprite: 306
   PP: 212
@@ -3043,7 +3043,7 @@
   Money: 17
   Movement pattern: 21
   Music: 98
-  Name: '[81][91][9F][9C]-[83][9C][96][9B][A4][92][A0][A2][95][9A][A3][A4]'
+  Name: '[81][91][9F][9C]-[83][9C][96][9B][A4][92][A0][A2][95][9A][A3][A4]' # Панк-Скейтбордист
   Offense: 7
   Overworld Sprite: 284
   PP: 0
@@ -3090,7 +3090,7 @@
   Money: 140
   Movement pattern: 20
   Music: 102
-  Name: '[83][9C][96][9D][A1][9A][A0][9F]'
+  Name: '[83][9C][96][9D][A1][9A][A0][9F]' # Скелпион
   Offense: 41
   Overworld Sprite: 319
   PP: 21
@@ -3137,7 +3137,7 @@
   Money: 609
   Movement pattern: 20
   Music: 102
-  Name: '[74][A2][A0][99][9F][C2][9B] [83][9C][96][9D][A1][9A][A0][9F]'
+  Name: '[74][A2][A0][99][9F][C2][9B] [83][9C][96][9D][A1][9A][A0][9F]' # Грозный Скелпион
   Offense: 82
   Overworld Sprite: 319
   PP: 125
@@ -3184,7 +3184,7 @@
   Money: 720
   Movement pattern: 26
   Music: 97
-  Name: '[83][A4][91][A2][9E][96][9F]' #Starman
+  Name: '[83][A4][91][A2][9E][96][9F]' # Стармен
   Offense: 103
   Overworld Sprite: 303
   PP: 155
@@ -3231,7 +3231,7 @@
   Money: 735
   Movement pattern: 26
   Music: 97
-  Name: '[83][A5][A1][96][A2] [83][A4][91][A2][9E][96][9F]' #Starman Super
+  Name: '[83][A5][A1][96][A2] [83][A4][91][A2][9E][96][9F]' # Супер Стармен
   Offense: 112
   Overworld Sprite: 303
   PP: 310
@@ -3278,7 +3278,7 @@
   Money: 807
   Movement pattern: 23
   Music: 97
-  Name: '[81][A2][9A][99][A2][91][9C] [83][A4][91][A2][9E][96][9F][91]' #Ghost of Starman
+  Name: '[81][A2][9A][99][A2][91][9C] [83][A4][91][A2][9E][96][9F][91]' # Призрак Стармена
   Offense: 152
   Overworld Sprite: 306
   PP: 462
@@ -3325,7 +3325,7 @@
   Money: 191
   Movement pattern: 23
   Music: 104
-  Name: '[85][A7][9E][C2][9D][C6][C5][C0][91][C6][A3][C6] [83][A6][96][A2][91]' #Smilin' Sphere
+  Name: '[85][A7][9E][C2][9D][C6][C5][C0][91][C6][A3][C6] [83][A6][96][A2][91]' # Ухмыляющаяся Сфера
   Offense: 50
   Overworld Sprite: 302
   PP: 60
@@ -3372,7 +3372,7 @@
   Money: 796
   Movement pattern: 23
   Music: 104
-  Name: '[7F][96][9C][A0][9F][A4][A2][A0][9D][9A][A2][A5][96][9E][91][C6] [83][A6][96][A2][91]' #Uncontrollable Sphere
+  Name: '[7F][96][9C][A0][9F][A4][A2][A0][9D][9A][A2][A5][96][9E][91][C6] [83][A6][96][A2][91]' # Неконтролируемая Сфера
   Offense: 116
   Overworld Sprite: 302
   PP: 180
@@ -3419,7 +3419,7 @@
   Money: 628
   Movement pattern: 28
   Music: 102
-  Name: '[80][9C][91][9E][96][9F][96][93][AA][9A][9B] [83][A4][A2][91][98]' #Petrified Royal Guard
+  Name: '[80][9C][91][9E][96][9F][96][93][AA][9A][9B] [83][A4][A2][91][98]' # Окаменевший Страж
   Offense: 106
   Overworld Sprite: 322
   PP: 0
@@ -3466,7 +3466,7 @@
   Money: 3235
   Movement pattern: 28
   Music: 103
-  Name: '[74][9D][91][93][9F][C2][9B] [87][A2][91][9F][9A][A4][96][9D][C3]' #Guardian General
+  Name: '[74][9D][91][93][9F][C2][9B] [87][A2][91][9F][9A][A4][96][9D][C3]' # Главный Хранитель
   Offense: 109
   Overworld Sprite: 322
   PP: 6
@@ -3513,7 +3513,7 @@
   Money: 3827
   Movement pattern: 23
   Music: 97
-  Name: '[83][A4][91][A2][9E][96][9F] [75][96][9D][C5][9C][A3]' #Starman Deluxe
+  Name: '[83][A4][91][A2][9E][96][9F] [75][96][9D][C5][9C][A3]' # Стармен Делюкс
   Offense: 143
   Overworld Sprite: 306
   PP: 418
@@ -3560,7 +3560,7 @@
   Money: 915
   Movement pattern: 23
   Music: 97
-  Name: '[86][9A][9F][91][9D][C3][9F][C2][9B] [83][A4][91][A2][9E][96][9F]' #Final Starman
+  Name: '[86][9A][9F][91][9D][C3][9F][C2][9B] [83][A4][91][A2][9E][96][9F]' # Финальный Стармен
   Offense: 178
   Overworld Sprite: 306
   PP: 860
@@ -3607,7 +3607,7 @@
   Money: 58
   Movement pattern: 21
   Music: 96
-  Name: '[74][A0][A2][A0][95][A3][9C][A0][9B] [79][A0][9E][92][9A]' #Urban Zombie
+  Name: '[74][A0][A2][A0][95][A3][9C][A0][9B] [79][A0][9E][92][9A]' # Городской Зомби
   Offense: 31
   Overworld Sprite: 308
   PP: 0
@@ -3654,7 +3654,7 @@
   Money: 81
   Movement pattern: 27
   Music: 102
-  Name: '[7E][91][9F][9A][A1][A5][9D][9A][A2][A5][C5][C0][9A][9B] [81][A2][9A][99][A2][91][9C]' #Zombie Possessor
+  Name: '[7E][91][9F][9A][A1][A5][9D][9A][A2][A5][C5][C0][9A][9B] [81][A2][9A][99][A2][91][9C]' # Манипулирующий Призрак
   Offense: 28
   Overworld Sprite: 305
   PP: 0
@@ -3701,7 +3701,7 @@
   Money: 54
   Movement pattern: 22
   Music: 96
-  Name: '[79][A0][9E][92][9A]-[83][A0][92][91][9C][91]' #Zombie Dog
+  Name: '[79][A0][9E][92][9A]-[83][A0][92][91][9C][91]' # Зомби-Собака
   Offense: 39
   Overworld Sprite: 364
   PP: 0
@@ -3748,7 +3748,7 @@
   Money: 159
   Movement pattern: 21
   Music: 102
-  Name: '[7F][96][A9][96][A3][A4][9F][C2][9B] [7C][A0][A1]' #Crooked Cop
+  Name: '[7F][96][A9][96][A3][A4][9F][C2][9B] [7C][A0][A1]' # Нечестный Коп
   Offense: 20
   Overworld Sprite: 387
   PP: 0
@@ -3795,7 +3795,7 @@
   Money: 420
   Movement pattern: 21
   Music: 102
-  Name: '[85][A3][96][A2][95][9F][C2][9B] [7C][A0][A1]' #Over Zealous Cop
+  Name: '[85][A3][96][A2][95][9F][C2][9B] [7C][A0][A1]' # Усердный Коп
   Offense: 69
   Overworld Sprite: 387
   PP: 0
@@ -3842,7 +3842,7 @@
   Money: 29
   Movement pattern: 29
   Music: 96
-  Name: '[84][96][A2][A2][9A][A4][A0][A2][9A][91][9D][C3][9F][C2][9B] [75][A5][92]' #Territorial Oak
+  Name: '[84][96][A2][A2][9A][A4][A0][A2][9A][91][9D][C3][9F][C2][9B] [75][A5][92]' # Территориальный Дуб
   Offense: 26
   Overworld Sprite: 297
   PP: 41
@@ -3889,7 +3889,7 @@
   Money: 690
   Movement pattern: 29
   Music: 102
-  Name: '[79][9D][A0][9B] [83][A4][91][A2][C2][9B] [75][A5][92]' #Hostile Elder Oak
+  Name: '[79][9D][A0][9B] [83][A4][91][A2][C2][9B] [75][A5][92]' # Злой Старый Дуб
   Offense: 134
   Overworld Sprite: 297
   PP: 76
@@ -3936,7 +3936,7 @@
   Money: 6968
   Movement pattern: 23
   Music: 97
-  Name: '[71][9D][9E][91][99][9F][91][C6] [83][A0][92][91][9C][91]' #Diamond Dog
+  Name: '[71][9D][9E][91][99][9F][91][C6] [83][A0][92][91][9C][91]' # Алмазная Собака
   Offense: 167
   Overworld Sprite: 333
   PP: 154
@@ -3983,7 +3983,7 @@
   Money: 499
   Movement pattern: 23
   Music: 97
-  Name: '[80][A3][C3][9E][9A][92][A0][A4]-[7E][91][A2][A0][95][96][A2]' #Marauder Octobot
+  Name: '[80][A3][C3][9E][9A][92][A0][A4]-[7E][91][A2][A0][95][97][A2]' # Осьмибот-Мародёр
   Offense: 99
   Overworld Sprite: 306
   PP: 0
@@ -4030,7 +4030,7 @@
   Money: 637
   Movement pattern: 23
   Music: 97
-  Name: '[72][A0][96][93][A0][9B] [80][A3][C3][9E][9A][92][A0][A4]' #Military Octobot
+  Name: '[72][A0][96][93][A0][9B] [80][A3][C3][9E][9A][92][A0][A4]' # Боевой Осьмибот
   Offense: 138
   Overworld Sprite: 306
   PP: 0
@@ -4077,7 +4077,7 @@
   Money: 744
   Movement pattern: 23
   Music: 97
-  Name: '[7E][96][A7][91][9F][9A][A9][96][A3][9C][9A][9B] [80][A3][C3][9E][9A][92][A0][A4]' #Mechanical Octobot
+  Name: '[7E][96][A7][91][9F][9A][A9][96][A3][9C][9A][9B] [80][A3][C3][9E][9A][92][A0][A4]' # Механический Осьмибот
   Offense: 147
   Overworld Sprite: 306
   PP: 0
@@ -4124,7 +4124,7 @@
   Money: 815
   Movement pattern: 23
   Music: 97
-  Name: '[83][A5][A1][96][A2] [80][A3][C3][9E][9A][92][A0][A4]' #Ultimate Octobot
+  Name: '[83][A5][A1][96][A2] [80][A3][C3][9E][9A][92][A0][A4]' # Супер Осьмибот
   Offense: 163
   Overworld Sprite: 306
   PP: 0
@@ -4171,7 +4171,7 @@
   Money: 12
   Movement pattern: 21
   Music: 101
-  Name: '[83][A5][9E][91][A3][AA][96][95][AA][91][C6] [85][A4][9C][91]' #Mad Duck
+  Name: '[83][A5][9E][91][A3][AA][96][95][AA][91][C6] [85][A4][9C][91]' # Сумасшедшая Утка
   Offense: 12
   Overworld Sprite: 287
   PP: 0
@@ -4218,7 +4218,7 @@
   Money: 314
   Movement pattern: 27
   Music: 98
-  Name: '[89][91][A3][C2] [75][91][9D][9A]' #Dali's Clock
+  Name: '[89][91][A3][C2] [75][91][9D][9A]' # Часы Дали
   Offense: 65
   Overworld Sprite: 326
   PP: 0
@@ -4265,7 +4265,7 @@
   Money: 1358
   Movement pattern: 23
   Music: 103
-  Name: '[84][A2][9A][9D][9D][9A][A0][9F][A0][9D][96][A4][9F][9A][9B] [82][A0][A3][A4][A0][9C]' #Trillionage Sprout
+  Name: '[84][A2][9A][9D][9D][9A][A0][9F][9F][A0][9D][96][A4][9F][9A][9B] [82][A0][A3][A4][A0][9C]' # Триллионнолетний Росток
   Offense: 54
   Overworld Sprite: 333
   PP: 240
@@ -4359,7 +4359,7 @@
   Money: 114
   Movement pattern: 22
   Music: 96
-  Name: '[81][A5][A3][A4][C2][9F][9F][C2][9B] [73][A0][9D][9C]' #Desert Wolf
+  Name: '[81][A5][A3][A4][C2][9F][9F][C2][9B] [73][A0][9D][9C]' # Пустынный Волк
   Offense: 57
   Overworld Sprite: 330
   PP: 0
@@ -4406,7 +4406,7 @@
   Money: 664
   Movement pattern: 29
   Music: 99
-  Name: '[7E][91][A3][A4][96][A2] [72][C4][9D][A9]' #Master Belch
+  Name: '[7E][91][A3][A4][96][A2] [72][C4][9D][A9]' # Мастер Бэлч
   Offense: 50
   Overworld Sprite: 328
   PP: 0
@@ -4453,7 +4453,7 @@
   Money: 728
   Movement pattern: 29
   Music: 99
-  Name: '[72][A0][9D][C3][AA][91][C6] [7C][A5][A9][91] [82][93][A0][A4][C2]' #Big Pile of Puke
+  Name: '[72][A0][9D][C3][AA][91][C6] [7C][A5][A9][91] [82][93][A0][A4][C2]' # Большая Куча Слизи
   Offense: 120
   Overworld Sprite: 328
   PP: 0
@@ -4500,7 +4500,7 @@
   Money: 3536
   Movement pattern: 29
   Music: 99
-  Name: '[7E][91][A3][A4][96][A2] [72][91][A2][A6]' #Master Barf
+  Name: '[7E][91][A3][A4][96][A2] [72][91][A2][A6]' # Мастер Барф
   Offense: 136
   Overworld Sprite: 328
   PP: 0
@@ -4547,7 +4547,7 @@
   Money: 528
   Movement pattern: 23
   Music: 96
-  Name: '[81][A0][A8][96][9D][A5][9B] [83][9E][96][A2][A4][9A]' #Kiss of Death
+  Name: '[81][A0][A8][96][9D][A5][9B] [83][9E][96][A2][A4][9A]' # Поцелуй Смерти
   Offense: 91
   Overworld Sprite: 324
   PP: 0
@@ -4594,7 +4594,7 @@
   Money: 879
   Movement pattern: 27
   Music: 96
-  Name: '[86][A2][91][9F][A8][A5][99]. [81][A0][A8][96][9D][A5][9B] [83][9E][96][A2][A4][9A]' #French Kiss of Death
+  Name: '[86][A2][91][9F][A8][A5][99]. [81][A0][A8][96][9D][A5][9B] [83][9E][96][A2][A4][9A]' # Француз. Поцелуй Смерти
   Offense: 160
   Overworld Sprite: 277
   PP: 0
@@ -4641,7 +4641,7 @@
   Money: 93
   Movement pattern: 21
   Music: 98
-  Name: Foppy
+  Name: '[86][A0][A1][A1][9A]' # Фоппи
   Offense: 29
   Overworld Sprite: 278
   PP: 10
@@ -4688,7 +4688,7 @@
   Money: 620
   Movement pattern: 21
   Music: 98
-  Name: '[86][A0][92][92][9A]' #Fobby
+  Name: '[86][A0][92][92][9A]' # Фобби
   Offense: 98
   Overworld Sprite: 278
   PP: 19
@@ -4735,7 +4735,7 @@
   Money: 611
   Movement pattern: 20
   Music: 99
-  Name: '[B4][9D][96][9C][A4][A2][9A][A9][96][A3][9C][9A][9B] [85][94][A0][A2][C3]' #Zap Eel
+  Name: '[B4][9D][96][9C][A4][A2][9A][A9][96][A3][9C][9A][9B] [85][94][A0][A2][C3]' # Электрический Угорь
   Offense: 97
   Overworld Sprite: 301
   PP: 0
@@ -4782,7 +4782,7 @@
   Money: 572
   Movement pattern: 23
   Music: 98
-  Name: '[84][91][9F][94][A5]' #Tangoo
+  Name: '[84][91][9F][94][A5]' # Тангу
   Offense: 96
   Overworld Sprite: 324
   PP: 5
@@ -4829,7 +4829,7 @@
   Money: 407
   Movement pattern: 0
   Music: 102
-  Name: '[78][A5][A4][9C][9A][9B] [84][96][9F][A4]' #Boogey Tent
+  Name: '[78][A5][A4][9C][9A][9B] [84][96][9F][A4]' # Жуткий Тент
   Offense: 43
   Overworld Sprite: 0
   PP: 56
@@ -4876,7 +4876,7 @@
   Money: 897
   Movement pattern: 23
   Music: 102
-  Name: '[75][96][9E][A0][9F]-[83][9C][A5][A0][A4][A4][96][A2]' #Squatter Demon
+  Name: '[75][96][9E][A0][9F]-[83][9C][A5][A0][A4][A4][96][A2]' # Squatter Demon
   Offense: 158
   Overworld Sprite: 306
   PP: 60
@@ -5487,7 +5487,7 @@
   Money: 6564
   Movement pattern: 23
   Music: 104
-  Name: Electro Specter
+  Name: '[B4][9D][96][9C][A4][A2][A0]-[A3][A1][96][9C][A4][A2]' # Электро-спектр
   Offense: 148
   Overworld Sprite: 333
   PP: 80
@@ -6051,7 +6051,7 @@
   Money: 4736
   Movement pattern: 23
   Music: 104
-  Name: Thunder and Storm
+  Name: '[74][A2][A0][99][91] [9A] [8A][A4][A0][A2][9E]' # Гроза и Шторм
   Offense: 111
   Overworld Sprite: 333
   PP: 70
@@ -6145,7 +6145,7 @@
   Money: 31
   Movement pattern: 0
   Music: 102
-  Name: Frankystein Mark II
+  Name: '[86][A2][C4][9F][9C][9A][AA][A4][C4][9B][9F] 2' # Фрэнкиштэйн 2
   Offense: 15
   Overworld Sprite: 0
   PP: 0
@@ -6474,7 +6474,7 @@
   Money: 1852
   Movement pattern: 0
   Music: 148
-  Name: Evil Mani-Mani
+  Name: '[79][9D][91][C6] [7E][91][9F][9A]-[7E][91][9F][9A]' # Злая Мани-Мани
   Offense: 86
   Overworld Sprite: 293
   PP: 88
@@ -6662,7 +6662,7 @@
   Money: 0
   Movement pattern: 0
   Music: 0
-  Name: Heavily Armed Pokey
+  Name: '[83][9A][9D][C3][9F][A0] [73][A0][A0][A2][A5][98][97][9F][9F][C2][9B] [81][A0][9C][9A]' # Сильно Вооружённый Поки
   Offense: 150
   Overworld Sprite: 44
   PP: 999
@@ -6897,7 +6897,7 @@
   Money: 2081
   Movement pattern: 27
   Music: 148
-  Name: Clumsy Robot
+  Name: '[7F][96][A5][9C][9D][C5][98][9A][9B] [82][A0][92][A0][A4]' # Неуклюжий Робот
   Offense: 88
   Overworld Sprite: 275
   PP: 0
@@ -8777,7 +8777,7 @@
   Money: 807
   Movement pattern: 23
   Music: 97
-  Name: Ghost of Starman
+  Name: '[81][A2][9A][99][A2][91][9C] [83][A4][91][A2][9E][96][9F][91]' # Призрак Стармена
   Offense: 152
   Overworld Sprite: 306
   PP: 462
@@ -9341,7 +9341,7 @@
   Money: 897
   Movement pattern: 23
   Music: 102
-  Name: Squatter Demon
+  Name: '[75][96][9E][A0][9F]-[83][9C][A5][A0][A4][A4][96][A2]' # Демон-Скуоттер
   Offense: 158
   Overworld Sprite: 306
   PP: 60
@@ -9435,7 +9435,7 @@
   Money: 6564
   Movement pattern: 23
   Music: 104
-  Name: Electro Specter
+  Name: '[B4][9D][96][9C][A4][A2][A0]-[A3][A1][96][9C][A4][A2]' # Электро-спектр
   Offense: 148
   Overworld Sprite: 333
   PP: 80
@@ -9482,7 +9482,7 @@
   Money: 4736
   Movement pattern: 23
   Music: 104
-  Name: Thunder and Storm
+  Name: '[74][A2][A0][99][91] [9A] [8A][A4][A0][A2][9E]' # Гроза и Шторм
   Offense: 111
   Overworld Sprite: 333
   PP: 70
@@ -9529,7 +9529,7 @@
   Money: 31
   Movement pattern: 0
   Music: 102
-  Name: Frankystein Mark II
+  Name: '[86][A2][C4][9F][9C][9A][AA][A4][C4][9B][9F] 2' # Фрэнкиштэйн 2
   Offense: 15
   Overworld Sprite: 0
   PP: 0
@@ -9576,7 +9576,7 @@
   Money: 1852
   Movement pattern: 0
   Music: 148
-  Name: Evil Mani-Mani
+  Name: '[79][9D][91][C6] [7E][91][9F][9A]-[7E][91][9F][9A]' # Злая Мани-Мани
   Offense: 86
   Overworld Sprite: 293
   PP: 88
@@ -9623,7 +9623,7 @@
   Money: 0
   Movement pattern: 21
   Music: 0
-  Name: Heavily Armed Pokey
+  Name: '[83][9A][9D][C3][9F][A0] [73][A0][A0][A2][A5][98][97][9F][9F][C2][9B] [81][A0][9C][9A]' # Сильно Вооружённый Поки
   Offense: 150
   Overworld Sprite: 44
   PP: 999
@@ -9670,7 +9670,7 @@
   Money: 2081
   Movement pattern: 27
   Music: 148
-  Name: Clumsy Robot
+  Name: '[7F][96][A5][9C][9D][C5][98][9A][9B] [82][A0][92][A0][A4]' # Неуклюжий Робот
   Offense: 88
   Overworld Sprite: 275
   PP: 0
@@ -9764,7 +9764,7 @@
   Money: 93
   Movement pattern: 21
   Music: 98
-  Name: '[86][A0][A1][A1][9A]'
+  Name: '[86][A0][A1][A1][9A]' # Фоппи
   Offense: 29
   Overworld Sprite: 278
   PP: 10
@@ -9858,7 +9858,7 @@
   Money: 7
   Movement pattern: 20
   Music: 96
-  Name: '[89][96][A2][9F][C2][9B] [71][9F][A4][A0][9A][95]'
+  Name: '[89][97][A2][9F][C2][9B] [71][9F][A4][A0][9A][95]' # Чёрный Антоид
   Offense: 14
   Overworld Sprite: 316
   PP: 25
@@ -9952,7 +9952,7 @@
   Money: 3
   Movement pattern: 22
   Music: 101
-  Name: '[72][A2][A0][95][C6][A9][9A][9B] [81][96][A3]'
+  Name: '[72][A2][A0][95][C6][A9][9A][9B] [81][97][A3]' # Бродячий Пёс
   Offense: 4
   Overworld Sprite: 330
   PP: 0
@@ -10046,7 +10046,7 @@
   Money: 162
   Movement pattern: 0
   Music: 101
-  Name: Tiny Li'l Ghost
+  Name: '[7E][91][9D][96][9F][C3][9C][9A][9B] [81][A2][9A][99][A2][91][9C]' # Маленький Призрак
   Offense: 19
   Overworld Sprite: 0
   PP: 0
@@ -10093,7 +10093,7 @@
   Money: 20
   Movement pattern: 26
   Music: 148
-  Name: '[83][A4][91][A2][9E][96][9F] [83][A4][91][A2][AA][9A][9B]'
+  Name: '[83][A4][91][A2][9E][96][9F] [83][A4][91][A2][AA][9A][9B]' # Стармен Старший
   Offense: 11
   Overworld Sprite: 303
   PP: 999
@@ -10140,7 +10140,7 @@
   Money: 0
   Movement pattern: 0
   Music: 0
-  Name: '[72][91][99][99] [72][91][99][99]'
+  Name: '[72][91][99][99] [72][91][99][99]' # Базз Базз
   Offense: 40
   Overworld Sprite: 0
   PP: 999
@@ -10187,7 +10187,7 @@
   Money: 0
   Movement pattern: 0
   Music: 105
-  Name: '[83][9A][9D][C3][9F][A0] [73][A0][A0][A2][A5][98][96][9F][9F][C2][9B] [81][A0][9C][9A]'
+  Name: '[83][9A][9D][C3][9F][A0] [73][A0][A0][A2][A5][98][97][9F][9F][C2][9B] [81][A0][9C][9A]' # Сильно Вооружённый Поки
   Offense: 145
   Overworld Sprite: 44
   PP: 999
@@ -10234,7 +10234,7 @@
   Money: 0
   Movement pattern: 0
   Music: 72
-  Name: '[83][9A][9D][C3][9F][A0] [73][A0][A0][A2][A5][98][96][9F][9F][C2][9B] [81][A0][9C][9A]'
+  Name: '[83][9A][9D][C3][9F][A0] [73][A0][A0][A2][A5][98][97][9F][9F][C2][9B] [81][A0][9C][9A]' # Сильно Вооружённый Поки
   Offense: 150
   Overworld Sprite: 44
   PP: 999
@@ -10281,7 +10281,7 @@
   Money: 0
   Movement pattern: 0
   Music: 105
-  Name: '[74][9A][9B][94][91][A3]'
+  Name: '[74][9A][9B][94][91][A3]' # Гийгас
   Offense: 255
   Overworld Sprite: 0
   PP: 999
@@ -10328,7 +10328,7 @@
   Money: 0
   Movement pattern: 0
   Music: 72
-  Name: '[74][9A][9B][94][91][A3]'
+  Name: '[74][9A][9B][94][91][A3]' # Гийгас
   Offense: 255
   Overworld Sprite: 0
   PP: 0
@@ -10375,7 +10375,7 @@
   Money: 0
   Movement pattern: 0
   Music: 72
-  Name: '[74][9A][9B][94][91][A3]'
+  Name: '[74][9A][9B][94][91][A3]' # Гийгас
   Offense: 255
   Overworld Sprite: 0
   PP: 0
@@ -10422,7 +10422,7 @@
   Money: 0
   Movement pattern: 0
   Music: 73
-  Name: '[74][9A][9B][94][91][A3]'
+  Name: '[74][9A][9B][94][91][A3]' # Гийгас
   Offense: 255
   Overworld Sprite: 0
   PP: 0
@@ -10563,7 +10563,7 @@
   Money: 896
   Movement pattern: 23
   Music: 96
-  Name: Evil Eye
+  Name: '[79][9D][A0][92][9F][C2][9B] [74][9D][91][99]' # Злобный Глаз
   Offense: 141
   Overworld Sprite: 306
   PP: 400
@@ -10610,7 +10610,7 @@
   Money: 0
   Movement pattern: 32
   Music: 0
-  Name: Magic Butterfly
+  Name: '[7E][91][94][9A][A9][96][A3][9C][91][C6] [72][91][92][A0][A9][9C][91]' # Магическая Бабочка
   Offense: 2
   Overworld Sprite: 413
   PP: 0
@@ -10751,7 +10751,7 @@
   Money: 159
   Movement pattern: 21
   Music: 102
-  Name: Captain Strong
+  Name: '[7C][91][A1][9A][A4][91][9F] [83][A4][A2][A0][9F][94]' # Капитан Стронг
   Offense: 20
   Overworld Sprite: 387
   PP: 0
@@ -10845,7 +10845,7 @@
   Money: 2081
   Movement pattern: 27
   Music: 148
-  Name: '[7F][96][A5][9C][9D][C5][98][9A][9B] [82][A0][92][A0][A4]'
+  Name: '[7F][96][A5][9C][9D][C5][98][9A][9B] [82][A0][92][A0][A4]' # Неуклюжий Робот
   Offense: 88
   Overworld Sprite: 275
   PP: 0
