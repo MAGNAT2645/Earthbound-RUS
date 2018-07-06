@@ -1,0 +1,55 @@
+import asm65816
+
+//Allows you to change the text and the alignment of the text in the status menu.
+//Text is aligned using the "text_pos (x, y)" command.
+//x is the horizontal alignment, measured in pixels.
+//y is the vertical alignment, measured in rows (of 16 pixels each).
+
+
+ROM[0xC19551] = ASMLoadAddress0E(StatusNameAlign)
+
+StatusNameAlign:
+text_pos (8, 0)
+"[85][A2][A0][93].:" // Уров.:
+
+text_pos (18, 3)
+"[80][A9][9C][9A] [79][95][A0][A2][A0][93][C3][C6]:" // Очки Здоровья:
+
+text_pos (18, 4)
+"[80][A9][9C][9A] [81][83][7A]:" // Очки ПСИ:
+
+text_pos (18, 5)
+"[80][A9][9C][9A] [80][A1][C2][A4][91]:" // Очки Опыта:
+
+text_pos (56, 6)
+"[A0][A1][C2][A4][91] [95][A0] [A3][9D][96][95]. [A5][A2][A0][93][9F][C6]" // опыта до след. уровня
+
+text_pos (165, 0)
+"[71][A4][91][9C][91]:" // Атака:
+
+text_pos (158, 1)
+"[79][91][C0][9A][A4][91]:" // Защита:
+
+text_pos (151, 2)
+"[83][9C][A0][A2][A0][A3][A4][C3]:" // Скорость:
+
+text_pos (148, 3)
+"[73][C2][95][96][A2][98][9C][91]:" // Выдержка:
+
+text_pos (146, 4)
+"[78][9A][93][A5][A9][96][A3][A4][C3]:" // Живучесть:
+
+text_pos (149, 5)
+"[7A][9F][A4][96][9D][9D][96][9C][A4]:" // Интеллект:
+
+text_pos (165, 6)
+"[85][95][91][A9][91]:" // Удача:
+eob
+
+
+command ASMLoadAddress0E(Address) {
+  LDA_i (short[0] Address)
+  STA_d (0x0E)
+  LDA_i (short[1] Address)
+  STA_d (0x10)
+}
