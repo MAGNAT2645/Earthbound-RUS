@@ -1,0 +1,481 @@
+/*
+ * EarthBound Text Dump
+ * Time: 17:20:59 - 27/09/2015
+ * Generated using CCScriptWriter.
+ */
+
+command e(label) "{long label}"
+
+// Text Data
+l_0xc8f296:
+    "@The boy had a red cap...{pause(30)}  Hey!{pause(15)}  It was you!" end
+
+l_0xc8f2b7:
+    "@Thank you for bringing peace and happiness back to Threed.  Thanks!" next
+    "@Peace!{pause(20)}  Love!" end
+
+l_0xc8f2ef:
+    "@I really didn't think those kids could have saved the town." next
+    "@Who would have ever imagined it?" end
+
+l_0xc8f324:
+    "@I won't forget you." next
+    "@Won't you come back to Threed sometime?" end
+
+l_0xc8f344:
+    "@Since the leader of the monsters is gone," next
+    "@the ghosts in the tunnel have disappeared." next
+    "@The buses can get through the tunnel now." end
+
+l_0xc8f392:
+    "@I want to go through the desert and on to the big city." next
+    "@I want to see the city," linebreak
+    "  and I want to smell like the big city." next
+    "@I'm a real urban-type of guy." end
+
+l_0xc8f3eb:
+    "@From the bus stop at the hotel all the way to Fourside..." next
+    "@is how much?  Do you remember?" end
+
+l_0xc8f41f:
+    "[19 10 01]{rtoarg}@Thank you!" end
+
+l_0xc8f42a:
+    "@You're heroes.{pause(20)}  That rocks!" end
+
+l_0xc8f43f:
+    "@Sweet!" end
+
+l_0xc8f448:
+    "@All righty!" end
+
+l_0xc8f450:
+    "@I came from Fourside by bus." next
+    "@Buffalo?{pause(15)}  Oh yeah, I saw lots.{pause(20)}  It's awesome." end
+
+l_0xc8f48a:
+    "[06 92 00 {e(l_0xc8f4d8)}]@A girl in Fourside called me." next
+    "@There is a really popular band there now." next
+    "@I think they're called the <Runway Fire.>" end
+
+l_0xc8f4d8:
+    "@I told you the wrong band name before.  I said <Runway Fire.>" next
+    "@The real name is <Runaway Five.>" next
+    "@My girlfriend corrected me..." end
+
+l_0xc8f535:
+    "[06 49 00 {e(l_0xc8f590)}]@I heard there is a guy who is digging for buried treasure in Dusty Dunes desert." next
+    "@A share of that treasure <share> would be nice." end
+
+l_0xc8f590:
+    "@Hey!  I heard you got a share of the treasure found in the desert." next
+    "@It didn't seem to change you at all, though." end
+
+l_0xc8f5d0:
+    "@I'm a detective from Twoson." next
+    "@The statue called Mani Mani or something or other" next
+    "@was stolen from the Happy-Happyism headquarters." next
+    "@Do you have any clues for me?" linebreak
+    "[19 02]Yes" eob
+
+l_0xc8f638:
+    " [19 02]No" eob
+
+l_0xc8f63e:
+    "[1C 07 02][11]{clearline}[09 02 {e(l_0xc8f656)} {e(l_0xc8f64d)}]" goto(l_0xc8f64d)
+
+l_0xc8f64d:
+    "@Oh, I see..." end
+
+l_0xc8f656:
+    "@Don't try to feed me your lies!" end
+
+l_0xc8f66a:
+    "@If I try to get away, my body will just fall apart." next
+    "@It's because I'm a zombie..." end
+
+l_0xc8f69d:
+    "@I'll blame you for the rest of my <life.>" end
+
+l_0xc8f6b5:
+    "@I'll blame you after my <death.>" end
+
+l_0xc8f6ca:
+    "@You're the enemy of all zombies!" next
+    "@You monster!" end
+
+l_0xc8f6e2:
+    "@Could... you... help me?{pause(20)}  ...Maybe not." end
+
+l_0xc8f701:
+    "@You humans are such cowards!" end
+
+l_0xc8f715:
+    "@*Gasp* *Gasp*" end
+
+l_0xc8f725:
+    "@I don't care if I pass away..." next
+    "@Ha!  I'm dead already!" end
+
+l_0xc8f748:
+    "Message of the broken SkyWalker." goto(l_0xc8f75e)
+
+l_0xc8f75e:
+    "@(It's impossible to fix... for the time being.)" end
+
+l_0xc8f77d:
+    newline
+    "@[71][A4][91][9C][91] [A1][96][A2][A3][A0][9F][91][98][91] {target}" linebreak
+    "  [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] {delta}!{sound(40)}[03]" eob
+
+l_0xc8f79a:
+    newline
+    "@[79][91][C0][9A][A4][91] [A1][96][A2][A3][A0][9F][91][98][91] {target}" linebreak
+    "  [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] {delta}!{sound(40)}[03]" eob
+
+l_0xc8f7b8:
+    newline
+    "@[7A][9F][A4][96][9D][9D][96][9C][A4] [A1][96][A2][A3][A0][9F][91][98][91] {target}" linebreak
+    "  [A5][93][96][9D][9A][A9][9A][9D][A3][C6] [9F][91] {delta}!{sound(40)}[03]" eob
+
+l_0xc8f7d2:
+    newline
+    "@[73][C2][95][96][A2][98][9C][91] [A1][96][A2][A3][A0][9F][91][98][91] {target}" linebreak
+    "  [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] {delta}!{sound(40)}[03]" eob
+
+l_0xc8f7ee:
+    newline
+    "@[73][C2][95][96][A2][98][9C][91] [A1][96][A2][A3][A0][9F][91][98][91] {target}" linebreak
+    "  [A3][9F][9A][99][9A][9D][91][A3][C3] [9F][91] {delta}!{sound(41)}[03]" eob
+
+l_0xc8f80a:
+    newline
+    "@Amazingly enough," linebreak
+    "  {target}'s guts became {delta}!{sound(40)}[03]" eob
+
+l_0xc8f82f:
+    newline
+    "@[83][9C][A0][A2][A0][A3][A4][C3] [A1][96][A2][A3][A0][9F][91][98][91] {target}" linebreak
+    "  [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] {delta}!{sound(40)}[03]" eob
+
+l_0xc8f84c:
+    newline
+    "@[78][9A][93][A5][A9][96][A3][A4][C3] [A1][96][A2][A3][A0][9F][91][98][91] {target}" linebreak
+    "  [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] {delta}!{sound(40)}[03]" eob
+
+l_0xc8f86b:
+    newline
+    "@[85][95][91][A9][91] [A1][96][A2][A3][A0][9F][91][98][91] {target}" linebreak
+    "  [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] {delta}!{sound(40)}[03]" eob
+
+l_0xc8f885:
+    newline
+    "@[71][A4][91][9C][91] [A1][96][A2][A3][A0][9F][91][98][91] {target}" linebreak
+    "  [A3][9F][9A][99][9A][9D][91][A3][C3] [9F][91] {delta}!{sound(41)}[03]" eob
+
+l_0xc8f8a2:
+    newline
+    "@[79][91][C0][9A][A4][91] [A1][96][A2][A3][A0][9F][91][98][91] {target}" linebreak
+    "  [A3][9F][9A][99][9A][9D][91][A3][C3] [9F][91] {delta}!{sound(41)}[03]" eob
+
+l_0xc8f8c0:
+    newline
+    "@{user} opened" linebreak
+    "  the jar of <Fly Honey>!" next
+    "@Master Belch grabbed" linebreak
+    "  the <Fly Honey>![03]" eob
+
+l_0xc8f8fd:
+    newline
+    "@{user} opened" linebreak
+    "  the jar of <Fly Honey>!" next
+    "@It didn't smell like" linebreak
+    "  something " call(data_36.l_0xc7e602) " would like![03]" eob
+
+l_0xc8f935:
+    newline
+    "@A mysterious light enveloped" linebreak
+    "  " call(data_37.l_0xc7e6d7) "![03]" eob
+
+l_0xc8f956:
+    newline
+    "@A warm light surrounded" linebreak
+    "  " call(data_37.l_0xc7e6d7) "![03]" eob
+
+l_0xc8f973:
+    newline
+    "@A dazzling light enveloped" linebreak
+    "  " call(data_37.l_0xc7e6d7) "![03]" eob
+
+l_0xc8f992:
+    newline
+    "@Some heavy air flowed" linebreak
+    "  into the area![03]" eob
+
+l_0xc8f9b3:
+    newline
+    "@The dazzling light chased" linebreak
+    "  the enemy![03]" eob
+
+l_0xc8f9ce:
+    newline
+    "@A very subtle light engulfed" linebreak
+    "  " call(data_37.l_0xc7e6d7) "![03]" eob
+
+l_0xc8f9f0:
+    newline
+    "@A golden light poured" linebreak
+    "  over the area![03]" eob
+
+l_0xc8fa0d:
+    newline
+    "@Rainbow colored light" linebreak
+    "  shone into the area![03]" eob
+
+l_0xc8fa2f:
+    newline
+    "@A mysterious aroma wafted" linebreak
+    "  into the area![03]" eob
+
+l_0xc8fa51:
+    newline
+    "@A terrible, heaven rending sound," linebreak
+    "  echoed in the area![03]" eob
+
+l_0xc8fa7b:
+    newline
+    "@" call(data_37.l_0xc7e6d7) " lost their PP![03]" eob
+
+l_0xc8fa90:
+    newline
+    "@" call(data_37.l_0xc7e6d7) " recovered" linebreak
+    "  completely![03]" eob
+
+l_0xc8faaa:
+    newline
+    "@[7F][96][95][A0][A3][A4][91][A4][A0][A9][9F][A0] [80][83]![03]" eob
+
+l_0xc8fab8:
+    newline
+    "[1F 41 08][1B 02 {e(l_0xc8faca)}]{sound(55)}" goto(l_0xc8facd)
+
+l_0xc8faca:
+    "{sound(29)}" goto(l_0xc8facd)
+
+l_0xc8facd:
+    "@{user}[19 1F]{swap} [A1][A2][A0][92][A5][96][A4] [9A][A3][A1][A0][9D][C3][99][A0][93][91][A4][C3]" linebreak
+    "  [1C 12 00]!" next
+    "@[7F][A0], " call(data_36.l_0xc7e602) " [9F][96] [A7][93][91][A4][91][96][A4] [80][83].[03]" eob
+
+l_0xc8faf6:
+    newline
+    "@[B4][A4][A0] [9F][9A][9C][A0][94][A0] [9F][96] [A5][95][91][A2][9A][9D][A0]![03]" eob
+
+l_0xc8fb05:
+    newline
+    "@{target}" linebreak
+    "  [9F][96] [9A][9E][96][96][A4] [80][83]![03]" eob
+
+l_0xc8fb1b:
+    "{window_closetop}{pause(40)}{window_open(1)}" newline
+    "[1F 62 00]@[B6] [A1][A0][9F][9A][9E][91][C5], [93][C2], [A2][96][92][C6][A4][91], [A5][98][96] [99][91][C6][93][9D][C6][96][A4][96] [A3][96][92][C6] [94][96][A2][A0][C6][9E][9A].{prompt}" linebreak
+    "@[7F][A5], [95][9D][C6] [93][91][A3] [C4][A4][A0] [A3][9D][9A][AA][9C][A0][9E] [A2][91][9F][A0], [A9][A4][A0][92][C2] [93][C2][A3][A4][A5][A1][91][A4][C3] [A1][A2][A0][A4][9A][93] [74][9A][9B][94][91][A3][91]!{prompt}" linebreak
+    "@[73][C2] [95][A0][9D][98][9F][C2] [A9][A5][93][A3][A4][93][A0][93][91][A4][C3] [A3][96][92][C6] [94][9D][A5][A1][A0], [A9][A4][A0][92][C2] [A3][A2][91][98][91][A4][C3][A3][C6], [95][91][98][96] [9F][96] [99][9F][91][C6]{prompt}" linebreak
+    "@[9C][91][9C] [74][9A][9B][94][91][A3] [93][C2][94][9D][C6][95][9A][A4]!{prompt}" linebreak
+    "@[76][A3][9D][9A] [92][C2] [93][C2] [9C][A0][94][95][91]-[9D][9A][92][A0] [93][9A][95][96][9D][9A] [74][9A][9B][94][91][A3][91], [93][C2] [92][C2][9D][9A] [92][C2] [9F][91][A3][A4][A0][9D][C3][9C][A0] [A0][AA][96][9D][A0][9E][9D][96][9F][C2] [A3][A4][A2][91][A7][A0][9E],{prompt}" linebreak
+    "@[A9][A4][A0] [9F][9A][9C][A0][94][95][91] [9F][96] [A3][9E][A0][94][9D][9A] [92][C2] [A5][92][96][98][91][A4][C3]!{prompt}" linebreak
+    "@...[73][A0][A4] [9C][91][9C][A0][9B] [A0][9F] [A3][A4][A2][91][AA][9F][C2][9B]!{prompt}" linebreak
+    "@[7A][A4][91][9C], [93][C2] [A7][A0][A4][9A][A4][96], [A9][A4][A0][92][C2] [C6] [A0][A4][9C][9D][C5][A9][9A][9D] <[7E][91][AA][9A][9F][A5] [75][C3][C6][93][A0][9D][91]>?{prompt}" linebreak
+    "@[89][A4][A0][98], [A1][A2][9A][94][A0][A4][A0][93][C3][A4][96][A3][C3] [A5][95][9A][93][9D][C6][A4][C3][A3][C6]!{sound(74)}{pause(150)}{window_closetop}" eob
+
+l_0xc8fc2e:
+    newline
+    "{pause(80)}{window_open(1)}[1F 62 00]@[7A][A4][91][9C], [A2][91][99][93][96] [C4][A4][A0] [9F][96] [A5][98][91][A3][91][C5][C0][96]?{pause(30)}" linebreak
+    "  [B6] [A4][A0][98][96] [93] [A5][98][91][A3][96].{prompt}" linebreak
+    "@[74][9A][9B][94][91][A3] [92][A0][9D][C3][AA][96] [9F][96] [9E][A0][98][96][A4] [9E][C2][A3][9D][9A][A4][C3] [A2][91][A8][9A][A0][9F][91][9D][C3][9F][A0],{prompt}" linebreak
+    "@[9A] [A0][9F] [95][91][98][96] [9F][96] [99][9F][91][96][A4], [A9][A4][A0] [A3][91][9E] [A3][96][9B][A9][91][A3] [95][96][9D][91][96][A4].{prompt}" linebreak
+    "@[76][94][A0] [A3][A0][92][A3][A4][93][96][9F][9F][C2][9B] [A2][91][99][A5][9E] [92][C2][9D] [A5][9F][9A][A9][A4][A0][98][96][9F] [96][94][A0] [98][96] [A3][9A][9D][A0][9B].{prompt}" linebreak
+    "@[7C][91][9C][A0][9B] [9E][A0][94][A5][A9][9A][9B] [9A][95][9A][A0][A4]!{pause(30)}{prompt}" linebreak
+    "@[75][91], [93][A0][A4] [9C][A4][A0] [A0][9F]!{prompt}" linebreak
+    "@[87][96]-[A7][96]-[A7][96]-[A7][96]...{pause(30)}" linebreak
+    "  [9A] [93][C2]... [93][C2] [92][A5][95][96][A4][96]...{pause(30)}" linebreak
+    "  [A0][A9][96][A2][96][95][9F][A0][9B] [A1][9A][C0][96][9B] [95][9D][C6] [9F][96][94][A0]!{pause(150)}{window_closetop}{window_open(14)}" eob
+
+l_0xc8fd11:
+    "{window_closetop}{pause(60)}{window_open(1)}[1F 62 00]" newline
+    "@[87][96]-[A7][96]-[A7][96]-[A7][96].{pause(30)}" linebreak
+    "  [73][C2] [95][96][9B][A3][A4][93][9A][A4][96][9D][C3][9F][A0] [95][A0][9D][98][9F][C2] [92][C2][A4][C3]" linebreak
+    "  [93] [9C][A0][9F][A8][96] [93][91][AA][96][9B] [93][96][A2][97][93][9C][9A].{prompt}" linebreak
+    "@[73] [C4][A4][A0][9E] [A3][A4][A2][91][9F][9F][A0][9E] [9A][99][9E][96][A2][96][9F][9A][9A]," linebreak
+    "  [93][C2] [A9][96][A4][93][96][A2][A0] - [96][95][9A][9F][A3][A4][93][96][9F][9F][91][C6] [A3][9A][9D][91], [A3][A2][91][98][91][C5][C0][91][C6][A3][C6] [99][91] [A3][A1][A2][91][93][96][95][9D][9A][93][A0][A3][A4][C3]...{prompt}" linebreak
+    "@[7A] [93][A0][A4] [93][C2] [A3][A4][A0][9A][A4][96],{prompt}" linebreak
+    "@[A0][98][9A][95][91][C6], [A9][A4][A0] [93][91][A3] [A3][A0][98][94][A5][A4] [A3][A0] [93][A3][96][9E] [A0][A3][A4][91][9D][C3][9F][C2][9E] [9E][A5][A3][A0][A2][A0][9E] [C4][A4][A0][9B] [93][A3][96][9D][96][9F][9F][A0][9B]...{prompt}" linebreak
+    "@[87][91][91][91][91][91][91]!{pause(30)}" linebreak
+    "  [B4][A4][A0] [A4][91][9C] [94][A2][A5][A3][A4][9F][A0]. [B6] [9F][96] [9E][A0][94][A5] [A1][A0][9E][A0][A9][C3]," linebreak
+    "  [9F][A0] [A1][A2][A0][9D][9A][9D] [A3][9D][96][99][A5].{prompt}" linebreak
+    "@[79][9F][91][96][A4][96], [9E][A0][97] [A3][96][A2][95][A8][96] [92][C3][97][A4][A3][C6] [9F][96][93][96][A2][A0][C6][A4][9F][A0] [92][C2][A3][A4][A2][A0],{pause(30)}" linebreak
+    "{prompt}" linebreak
+    "@...[B6] [95][A0][9D][98][96][9F] [9A][A3][A1][C2][A4][C2][93][91][A4][C3] [91][92][A3][A0][9D][C5][A4][9F][C2][9B] [A5][98][91][A3]!{prompt}" linebreak
+    "@[73][C2] [A7][A0][A4][9A][A4][96] [A1][A0][9C][A2][9A][A9][91][A4][C3]" linebreak
+    "  [A0] [A1][A0][9E][A0][C0][9A] [99][95][96][A3][C3], [93] [A4][96][9E][9F][A0][A4][96]?!{prompt}" linebreak
+    "@[87][91]-[A7][91]-[A7][91]-[A7][91]-[A7][91]!{prompt}" linebreak
+    "@[81][A0][A9][96][9E][A5] [92][C2] [9F][96] [A1][A0][99][93][91][A4][C3] [A3][93][A0][C5] [9E][91][9E][A5]," linebreak
+    "  [1C 01 08]!{prompt}" linebreak
+    "@[83][9C][91][98][9A], <[7E][91][9E][A0][A9][9C][91]!  [81][91][A1][A0][A9][9C][91]!" linebreak
+    "  [B6] [A4][91][9C] [9F][91][A1][A5][94][91][9F]!  {pause(30)}[C6] [95][A5][9E][91][C5], [A9][A4][A0]" linebreak
+    "  [C6] [92][A5][95][A5] [9E][A0][A9][9A][A4][C3][A3][C6] [93] [AA][A4][91][9F][C2]!>{prompt}" linebreak
+    "@[B6] [99][9F][91][C5], [A9][A4][A0] [A5] [93][91][A3] [96][A3][A4][C3] [A4][96][9D][96][A1][91][A4][9A][C6] [9A][9D][9A] [A9][A4][A0]-[A4][A0] [96][C0][97], [A1][A0][C4][A4][A0][9E][A5] [A1][A2][A0][A3][A4][A0] [A1][A0][A1][A2][A0][92][A5][9B][A4][96] [A1][A0][99][93][91][A4][C3] [9F][91] [A1][A0][9E][A0][C0][C3],{prompt}" linebreak
+    "@[93][C2], [A1][91][A4][96][A4][9A][A9][96][A3][9C][9A] [A3][9D][91][92][C2][96]" linebreak
+    "  [94][96][A2][A0][9A] [A4][91][9C] [9F][91][99][C2][93][91][96][9E][A0][94][A0] [A1][A2][91][93][A0][A3][A5][95][9A][C6]!{prompt}" linebreak
+    "@[7F][9A][9C][A4][A0] [93][91][9E] [9F][96] [A1][A0][9E][A0][98][96][A4] [A3][96][9B][A9][91][A3]!{prompt}" linebreak
+    "@[87][91]-[A7][91]-[A7][91]-[A7][91][91]...{prompt}" linebreak
+    "@[7F][96] [92][96][A3][A1][A0][9C][A0][9B][A4][96][A3][C3], [93][91][AA][9A] [98][91][9D][9C][9A][96] [A3][A4][A2][91][95][91][9F][9A][C6] [A3][9C][A0][A2][A0] [99][91][9C][A0][9F][A9][91][A4][A3][C6]!{pause(150)}{window_closetop}{window_open(14)}" eob
+
+l_0xc8ff31:
+    "{window_closetop}{pause(60)}{window_open(1)}[1F 62 00]@[1C 01 08]!{pause(30)} [84][96][A1][96][A2][C3], [C6]..." linebreak
+    "  [A9][A4][A0][98]... {pause(20)}[C4][A4][A0] [A1][A0][A7][A0][98][96] [9F][91] [A4][A0], [A9][A4][A0]" linebreak
+    "  [C6] [A3][92][96][94][91][C5].{prompt}" linebreak
+    "@[7F][A0], [93][A0][99][9E][A0][98][9F][A0], [C6] [A1][A2][A0][A3][A4][A0] [A1][A0][A1][91][95][A5] [93] [95][A2][A5][94][A5][C5] [C4][A1][A0][A7][A5], [A9][A4][A0][92][C2] [A1][A0][95][A5][9E][91][A4][C3] [A0] [9E][A0][97][9E] [A3][9D][96][95][A5][C5][C0][96][9E] [A1][9D][91][9F][96].{prompt}" linebreak
+    "@[75][96][A2][98][A5] [A1][91][A2][9A], [A9][A4][A0] [9E][C2] [A3][9F][A0][93][91] [A5][93][9A][95][9A][9E][A3][C6]...{prompt}{pause(30)}" linebreak
+    "@[80][A4][9D][9A][A9][9F][A0]! [85][93][9A][95][9A][9E][A3][C6]!{prompt}" linebreak
+    "@[7A][A4][91][9C], [9C][A4][A0] [9A][99] [9F][91][A3] [A4][96][A1][96][A2][C3], [A1][A0] [93][91][AA][96][9E][A5] [9E][9F][96][9F][9A][C5], [9C][A2][A5][A4][A0][9B] [A1][91][A2][96][9F][C3]?!{pause(150)}{sound(65)}{window_closetop}" eob
+
+l_0xc90000:
+    "{counter(20)}" call(data_48.l_0xc90fec) eob
+
+l_0xc90008:
+    "{counter(30)}" call(data_48.l_0xc90fec) eob
+
+l_0xc90010:
+    "{counter(35)}[06 44 00 {e(l_0xc90025)}]@Blue... blue." next
+    goto(l_0xc90025)
+
+l_0xc90025:
+    call(data_48.l_0xc90fec) eob
+
+l_0xc9002b:
+    "{counter(40)}" call(data_48.l_0xc90fec) eob
+
+l_0xc90033:
+    "{counter(45)}@I'm a roaming doctor." linebreak
+    "  Let me know if you're not feeling well." next
+    call(data_48.l_0xc90fec) eob
+
+l_0xc90067:
+    "{counter(60)}" call(data_48.l_0xc90fec) eob
+
+l_0xc9006f:
+    "{counter(70)}" call(data_48.l_0xc90fec) eob
+
+l_0xc90077:
+    "{counter(80)}" call(data_48.l_0xc90fec) eob
+
+l_0xc9007f:
+    "{counter(60)}{set(flag 659)}" call(data_48.l_0xc90fec) "{unset(flag 659)}" eob
+
+l_0xc9008d:
+    "{counter(50)}" call(data_48.l_0xc9128d) eob
+
+l_0xc90095:
+    "{counter(100)}" call(data_48.l_0xc9128d) eob
+
+l_0xc9009d:
+    "{set(flag 10)}{counter(110)}[06 44 00 {e(l_0xc900b7)}]@Blue... blue..." next
+    goto(l_0xc900b7)
+
+l_0xc900b7:
+    call(data_48.l_0xc9128d) eob
+
+l_0xc900bd:
+    "{counter(120)}" call(data_48.l_0xc9128d) eob
+
+l_0xc900c5:
+    "{counter(135)}" call(data_48.l_0xc9128d) eob
+
+l_0xc900cd:
+    "{counter(150)}" call(data_48.l_0xc9128d) eob
+
+l_0xc900d5:
+    "{counter(180)}" call(data_48.l_0xc9128d) eob
+
+l_0xc900dd:
+    "{set(flag 10)}{counter(200)}" call(data_48.l_0xc9128d) eob
+
+l_0xc900e8:
+    "{set(flag 10)}{set(flag 659)}{counter(150)}" call(data_48.l_0xc9128d) "{unset(flag 659)}" eob
+
+l_0xc900f9:
+    "@Humm dee dum dum dum." linebreak
+    "  I'm hunting for mushrooms!" next
+    call(data_49.l_0xc91a91) "[1B 02 {e(l_0xc901a8)}]@Hey!  Would you be willing to sell that mushroom on your head for $50?" next
+    call(data_36.l_0xc7dd4b) "[11]{clearline}[09 02 {e(l_0xc9017f)} {e(l_0xc90165)}]" goto(l_0xc90165)
+
+l_0xc90165:
+    "@Ohhh..." linebreak
+    "  It's your special mushroom." end
+
+l_0xc9017f:
+    call(data_49.l_0xc91b6f) newline
+    "@Thank you." linebreak
+    "  Such a great mushroom." linebreak
+    "  I'm so happy I got it." end
+
+l_0xc901a8:
+    "@I'm going to collect a ton!" end
+
+l_0xc901bb:
+    newline
+    "{font_saturn}[06 02 00 {e(l_0xc9029f)}]@I'm" linebreak
+    "  Dr. Saturn." linebreak
+    "  Zoom!" next
+    "@and I can" linebreak
+    "  repair" linebreak
+    "  your body." next
+    "@Boing!" next
+    "@Do you" linebreak
+    "  want me" next
+    "@to operate" linebreak
+    "  on you?" linebreak
+    "  Ding?" next
+    "{font_normal}[19 02]Yes" eob
+
+l_0xc90229:
+    "[19 02]No" eob
+
+l_0xc9022e:
+    "[1C 07 02][11]{clearline}[09 02 {e(l_0xc9026f)} {e(l_0xc9023d)}]" goto(l_0xc9023d)
+
+l_0xc9023d:
+    "{font_saturn}@Are you" linebreak
+    "  kay-o?" next
+    "@If you" linebreak
+    "  all right," linebreak
+    "  that's great." next
+    "@zoomer!{wait}{font_normal}" eob
+
+l_0xc9026f:
+    call(data_49.l_0xc9162c) "{font_saturn}@You aaaaaaall" linebreak
+    "  fixed up." next
+    "@Goody!" linebreak
+    "  Boing!{wait}{font_normal}{set(flag 2)}" eob
+
+l_0xc9029f:
+    "@Healthy," linebreak
+    "  healthy.{wait}{font_normal}" eob
+
+l_0xc902b5:
+    "@<Goodnight Bench>" next
+    "@Your fatigue will leave you, and your energy and power will return.{wait}" call(data_49.l_0xc91693) eob
+
+l_0xc902f2:
+    "@Hi!  How are you today?" linebreak
+    "  Oh, you're not feeling well?" linebreak
+    "  Be healthy!" end
+
+l_0xc90322:
+    "@(This is a $healstone.){wait}" call(data_49.l_0xc915e1) eob
+
+l_0xc90339:
+    "[06 7F 01 {e(data_48.l_0xc9038d)}][1D 15 23 00]{swap}@Welcome to Hotel Onett." next
+    call(data_48.l_0xc90f3b) "[11]{clearline}[09 02 {e(data_48.l_0xc9036b)} {e(data_48.l_0xc90365)}]" goto(data_48.l_0xc90365)
+

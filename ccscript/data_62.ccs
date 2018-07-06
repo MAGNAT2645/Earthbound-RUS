@@ -1,0 +1,495 @@
+/*
+ * EarthBound Text Dump
+ * Time: 17:20:59 - 27/09/2015
+ * Generated using CCScriptWriter.
+ */
+
+command e(label) "{long label}"
+
+// Text Data
+l_0xef6bef:
+    /* "@Тело персонажа {target}" linebreak */
+    /* "  застывает!{sound(83)}[03]" eob */
+    newline
+    "@[84][96][9D][A0] [A1][96][A2][A3][A0][9F][91][98][91] {target}" linebreak
+    "  [99][91][A3][A4][C2][93][91][96][A4]!{sound(83)}[03]" eob
+
+l_0xef6c0b:
+    /* "@{target}" linebreak */
+    /* "  не может сконцентрироваться!{sound(83)}" next */
+    /* "@{target}" linebreak */
+    /* "  не может использовать ПСИ![03]" eob */
+    newline
+    "@{target}" linebreak
+    "  [9F][96] [9E][A0][98][96][A4] [A3][9C][A0][9F][A8][96][9F][A4][A2][9A][A2][A0][93][91][A4][C3][A3][C6]!{sound(83)}" next
+    "@{target}" linebreak
+    "  [9F][96] [9E][A0][98][96][A4] [9A][A3][A1][A0][9D][C3][99][A0][93][91][A4][C3] [81][83][7A]![03]" eob
+
+l_0xef6c3a:
+    /* "@{target} чувствует" linebreak */
+    /* "  себя немного странно...{sound(83)}[03]" eob */
+    newline
+    "@{target} [A9][A5][93][A3][A4][93][A5][96][A4]" linebreak
+    "  [A3][96][92][C6] [9F][96][9E][9F][A0][94][A0] [A3][A4][A2][91][9F][9F][A0]...{sound(83)}[03]" eob
+
+l_0xef6c55:
+    /* "@{target} засыпает!{sound(83)}[03]" eob */
+    newline
+    "@{target} [99][91][A3][C2][A1][91][96][A4]!{sound(83)}[03]" eob
+
+l_0xef6c6b:
+    /* "@Тело персонажа {target}" linebreak */
+    /* "пострадало и рухнуло...{sound(32)}[03]" eob */
+    newline
+    "@[84][96][9D][A0] [A1][96][A2][A3][A0][9F][91][98][91] {target}" linebreak
+    "  [A1][A0][A3][A4][A2][91][95][91][9D][A0] [9A] [A2][A5][A7][9F][A5][9D][A0]...{sound(32)}[03]" eob
+
+l_0xef6c84:
+    /* "@Тело персонажа {target}" linebreak */
+    /* "  пострадало и рухнуло...{sound(32)}{unset(flag 587)}" next */
+    newline
+    "@[84][96][9D][A0] [A1][96][A2][A3][A0][9F][91][98][91] {target}" linebreak
+    "  [A1][A0][A3][A4][A2][91][95][91][9D][A0] [9A] [A2][A5][A7][9F][A5][9D][A0]...{sound(32)}{unset(flag 587)}" next
+    "[06 CF 00 {e(l_0xef6ce2)}][06 CE 00 {e(l_0xef6cd9)}][06 CD 00 {e(l_0xef6cd0)}][06 CC 00 {e(l_0xef6cc7)}]{set(flag 204)}" call(l_0xef6ceb) eob
+
+l_0xef6cc7:
+    "{set(flag 205)}" call(l_0xef6ceb) eob
+
+l_0xef6cd0:
+    "{set(flag 206)}" call(l_0xef6ceb) eob
+
+l_0xef6cd9:
+    "{set(flag 207)}" call(l_0xef6ceb) eob
+
+l_0xef6ce2:
+    "{set(flag 208)}" call(l_0xef6ceb) eob
+
+l_0xef6ceb:
+    "[19 10 02]{store_registers}{result_is(11)}[1B 02 {e(l_0xef6cfc)}][1F 12 0B]" eob
+
+l_0xef6cfc:
+    "{load_registers}{result_is(12)}[1B 02 {e(l_0xef6d0a)}][1F 12 0C]" eob
+
+l_0xef6d0a:
+    "{load_registers}{result_is(13)}[1B 02 {e(l_0xef6d18)}][1F 12 0D]" eob
+
+l_0xef6d18:
+    "{load_registers}{result_is(14)}[1B 02 {e(l_0xef6d26)}][1F 12 0E]" eob
+
+l_0xef6d26:
+    "[1F 12 0F]" eob
+
+l_0xef6d2a:
+    /* "@{target} превращается" linebreak */
+    /* "  в кучу пуха...{sound(32)}" next */
+    newline
+    "@{target} [A1][A2][96][93][A2][91][C0][91][96][A4][A3][C6]" linebreak
+    "  [93] [9C][A5][A9][A5] [A1][A5][A7][91]...{sound(32)}" next
+    "[1D 01 FF 02]" eob
+
+l_0xef6d4c:
+    newline
+    "@{target} [A1][A2][96][93][A2][91][C0][91][96][A4][A3][C6]" linebreak
+    "  [93] [92][A0][9D][C3][AA][A5][C5] [9C][A5][A9][A5] [A1][A5][A7][91]...{sound(32)}" next
+    "[1D 01 FF 03]" eob
+
+l_0xef6d71:
+    newline
+    "@{target} [92][C2][9D] [A1][A0][92][96][98][95][96][9F]!{sound(33)}" eob
+
+l_0xef6d83:
+    newline
+    "@{target} [A0][A3][A4][91][9F][A0][93][9A][9D][A3][C6]!{sound(33)}" eob
+
+l_0xef6d96:
+    newline
+    "@{target} [A5][A3][A1][A0][9C][A0][9A][9D][A3][C6]!{sound(33)}" eob
+
+l_0xef6da7:
+    newline
+    "@{target} [9A][A3][A9][96][99]!{sound(33)}" eob
+
+l_0xef6db8:
+    newline
+    "@[86][9A][94][A5][A2][91] {target} [A2][91][A3][A1][9D][91][93][9A][9D][91][A3][C3] [93] [93][A0][99][95][A5][A7][96]!{sound(33)}" eob
+
+l_0xef6dd8:
+    newline
+    "@{target} [92][C2][9D] [A2][91][99][92][9A][A4] [9F][91] [9C][A5][A3][9C][9A]!{sound(33)}" eob
+
+l_0xef6df0:
+    newline
+    "@{target} [92][C2][9D] [A1][A0][92][96][98][95][96][9F]!{sound(33)}" eob
+
+l_0xef6e03:
+    newline
+    "@{target} [92][C2][9D] [A1][A0][9D][9F][A0][A3][A4][C3][C5] [A3][9D][A0][9E][91][9F]!{sound(33)}" eob
+
+l_0xef6e19:
+    newline
+    "@{target} [93][96][A2][9F][A5][9D][A3][C6] [93] [9F][A0][A2][9E][91][9D][C3][9F][A0][96] [A3][A0][A3][A4][A0][C6][9F][9A][96]!{sound(33)}" eob
+
+l_0xef6e31:
+    newline
+    "@{target} [93][96][A2][9F][A5][9D][A3][C6] [93] [A1][A2][91][A7] [99][96][9E][9D][9A]!{sound(33)}" eob
+
+l_0xef6e4a:
+    newline
+    "@[84][96][9D][A0] {target}" linebreak
+    "  [93][96][A2][9F][A5][9D][A0][A3][C3] [93] [9F][A0][A2][9E][91][9D][C3][9F][A0][96] [A3][A0][A3][A4][A0][C6][9F][9A][96]!{sound(37)}[03]" eob
+
+l_0xef6e67:
+    newline
+    "@[80][9F][96][9E][96][9F][9A][96] {target}" linebreak
+    "  [A5][AA][9D][A0]!{sound(37)}[03]" eob
+
+l_0xef6e81:
+    newline
+    "@{target} [A9][A5][93][A3][A4][93][A5][96][A4]" linebreak
+    "  [A3][96][92][C6] [9F][91][9E][9F][A0][94][A0] [9D][A5][A9][AA][96]!{sound(37)}[03]" eob
+
+l_0xef6e97:
+    newline
+    "@[B6][95] [92][C2][9D] [A5][95][91][9D][96][9F] [9A][99]" linebreak
+    "  [A4][96][9D][91] {target}!{sound(37)}[03]" eob
+
+l_0xef6ebc:
+    newline
+    "@{target} [9A][99][92][91][93][9D][C6][96][A4][A3][C6] [A0][A4]" linebreak
+    "  [A1][A2][A0][A3][A4][A5][95][C2]!{sound(37)}[03]" eob
+
+l_0xef6ed1:
+    newline
+    "@{target} [93] [9C][A0][9F][A8][96] [9C][A0][9F][A8][A0][93]" linebreak
+    "  [A1][96][A2][96][A3][A4][91][96][A4] [A1][9D][91][9C][91][A4][C3]...{sound(37)}[03]" eob
+
+l_0xef6eed:
+    newline
+    "@[84][96][9D][A0] {target}" linebreak
+    "  [A3][9F][A0][93][91] [99][91][95][93][9A][94][91][9D][A0][A3][C3]!{sound(37)}[03]" eob
+
+l_0xef6f0b:
+    newline
+    "@{target} [9E][A0][98][96][A4]" linebreak
+    "  [95][93][9A][94][91][A4][C3][A3][C6]!{sound(37)}[03]" eob
+
+l_0xef6f1e:
+    newline
+    "@{target} [93][A0][99][93][A2][91][C0][91][96][A4][A3][C6]" linebreak
+    "  [93] [9F][A0][A2][9E][91][9D][C3][9F][A0][96] [A3][A0][A3][A4][A0][C6][9F][9A][96]!{sound(37)}[03]" eob
+
+l_0xef6f38:
+    newline
+    "@{target}" linebreak
+    "  [9A][99][92][91][93][9D][C6][96][A4][A3][C6] [A0][A4] [A3][A0][9D][9F][96][A9][9F][A0][94][A0] [A5][95][91][A2][91]!{sound(37)}[03]" eob
+
+l_0xef6f54:
+    newline
+    "@{target} [A1][A2][A0][A3][C2][A1][91][96][A4][A3][C6]!{sound(37)}[03]" eob
+
+l_0xef6f64:
+    newline
+    "@{target} [9E][A0][98][96][A4]" linebreak
+    "  [A3][9C][A0][9F][A8][96][9F][A4][A2][9A][A2][A0][93][91][A4][C3][A3][C6]!{sound(37)}[03]" eob
+
+l_0xef6f7c:
+    newline
+    "@{target} [93][A0][99][A2][A0][98][95][91][96][A4][A3][C6]!{sound(37)}[03]" eob
+
+l_0xef6f8e:
+    /* "@Это не сработало...[03]" eob */
+    newline
+    "@[B4][A4][A0] [9F][96] [A3][A2][91][92][A0][A4][91][9D][A0]...[03]" eob
+
+l_0xef6f9a:
+    /* "@Тело персонажа {target} защищено щитом света![03]" eob */
+    newline
+    "@[84][96][9D][A0] [A1][96][A2][A3][A0][9F][91][98][91] {target} [99][91][C0][9A][C0][96][9F][A0] [C0][9A][A4][A0][9E] [A3][93][96][A4][91]![03]" eob
+
+l_0xef6fbd:
+    /* "@Щит персонажа {target} стал сильнее![03]" eob */
+    newline
+    "@[B0][9A][A4] [A1][96][A2][A3][A0][9F][91][98][91] {target} [A3][A4][91][9D] [A3][9A][9D][C3][9F][96][96]![03]" eob
+
+l_0xef6fd3:
+    /* "@Тело персонажа {target} защищено силовым щитом![03]" eob */
+    newline
+    "@[84][96][9D][A0] [A1][96][A2][A3][A0][9F][91][98][91] {target} [99][91][C0][9A][C0][96][9F][A0] [A3][9A][9D][A0][93][C2][9E] [C0][9A][A4][A0][9E]![03]" eob
+
+l_0xef6ff4:
+    /* "@Силовой щит персонажа {target} стал сильнее![03]" eob */
+    newline
+    "@[83][9A][9D][A0][93][A0][9B] [C0][9A][A4] [A1][96][A2][A3][A0][9F][91][98][91] {target} [A3][A4][91][9D] [A3][9A][9D][C3][9F][96][96]![03]" eob
+
+l_0xef700c:
+    /* "@Тело персонажа {target} защищено ПСИ щитом![03]" eob */
+    newline
+    "@[84][96][9D][A0] [A1][96][A2][A3][A0][9F][91][98][91] {target} [99][91][C0][9A][C0][96][9F][A0] [81][83][7A] [C0][9A][A4][A0][9E]![03]" eob
+
+l_0xef7032:
+    /* "@ПСИ щит персонажа {target} стал сильнее![03]" eob */
+    newline
+    "@[81][83][7A] [C0][9A][A4] [A1][96][A2][A3][A0][9F][91][98][91] {target} [A3][A4][91][9D] [A3][9A][9D][C3][9F][96][96]![03]" eob
+
+l_0xef7050:
+    /* "@Тело персонажа {target} защищено" next */
+    /* "  ПСИ силовым щитом![03]" eob */
+    newline
+    "@[84][96][9D][A0] [A1][96][A2][A3][A0][9F][91][98][91] {target} [99][91][C0][9A][C0][96][9F][A0]" next
+    "  [81][83][7A] [A3][9A][9D][A0][93][C2][9E] [C0][9A][A4][A0][9E]![03]" eob
+
+l_0xef707a:
+    newline
+    "@[81][A3][9A][A7][9A][A9][96][A3][9C][9A][9B] [A3][9A][9D][A0][93][A0][9B] [C0][9A][A4] {target} [A3][A4][91][9D] [A3][9A][9D][C3][9F][96][96]![03]" eob
+
+l_0xef7099:
+    newline
+    "@[B0][9A][A4] [A1][96][A2][A3][A0][9F][91][98][91] {target}" linebreak
+    "  [9A][A3][A9][96][99]![03]" eob
+
+l_0xef70b1:
+    newline
+    "@[83][9A][9D][A0][93][A0][9B] [C0][9A][A4]" linebreak
+    "  [A0][A4][9C][9D][A0][9F][9A][9D] [91][A4][91][9C][A5]!{sound(93)}{pause(30)}[03]" eob
+
+l_0xef70d2:
+    newline
+    "@The psychic power shield" linebreak
+    "[19 1F]{swap}  deflected [1C 12 00]!{sound(93)}[03]" eob
+
+l_0xef70fa:
+    newline
+    "@{target}'s psychic shield made[19 1F]{swap} [1C 12 00] disappear![03]" eob
+
+l_0xef7123:
+    newline
+    "@The effects of PSI on" linebreak
+    "  {target} is gone!{sound(41)}[03]" eob
+
+l_0xef7142:
+    newline
+    "@[1C 01 4A] returned" linebreak
+    "  to his original form![03]" eob
+
+l_0xef7160:
+    newline
+    "@[7E][96][95][91][9D][C3] [86][A2][91][9F][9C][9D][9A][9F][91] [A0][A4][A2][91][99][9A][9D][91]" linebreak
+    "  [9E][A0][9D][9F][9A][C5]!{sound(93)}[03]" eob
+
+l_0xef7186:
+    newline
+    "@{user} [9F][96] [9E][A0][98][96][A4] [95][93][9A][94][91][A4][C3][A3][C6]![03]" eob
+
+l_0xef7192:
+    newline
+    "@{user}'s body is" linebreak
+    "  numb and " call(data_36.l_0xc7e602) " can't move![03]" eob
+
+l_0xef71b4:
+    newline
+    "@{user} feels" linebreak
+    "  too sick to move...[03]" eob
+
+l_0xef71cc:
+    newline
+    "@{target} is" linebreak
+    "  poisoned![03]" eob
+
+l_0xef71df:
+    newline
+    "@{user} has" linebreak
+    "  fallen asleep![03]" eob
+
+l_0xef71f6:
+    newline
+    "@{user} cannot" linebreak
+    "  move around![03]" eob
+
+l_0xef720c:
+    newline
+    "[1F 41 08][1B 02 {e(l_0xef721e)}]{sound(55)}" goto(l_0xef7221)
+
+l_0xef721e:
+    "{sound(29)}" goto(l_0xef7221)
+
+l_0xef7221:
+    "@{user}[19 1F]{swap} tried" linebreak
+    "  [1C 12 00]!{sound(87)}" next
+    "@But it didn't work very well![03]" eob
+
+l_0xef7249:
+    newline
+    "@{target}" linebreak
+    "  [A0][A7][A2][91][9F][C6][96][A4][A3][C6]![03]" eob
+
+l_0xef725a:
+    newline
+    "@{user} lost" linebreak
+    "  his mind by wolfing down <Fly Honey>![03]" eob
+
+l_0xef727f:
+    "[1D 21 03][09 03 {e(l_0xef72a0)} {e(l_0xef72b9)} {e(l_0xef72db)}]" newline
+    "@{user} misses home.[03]" eob
+
+l_0xef72a0:
+    newline
+    "@{user} suddenly thought about his Mom.[03]" eob
+
+l_0xef72b9:
+    newline
+    "@{user} thought about eating some [1C 01 04] and started craving it.[03]" eob
+
+l_0xef72db:
+    newline
+    "@{user} lost all motivation" linebreak
+    "  in battle.[03]" eob
+
+l_0xef72f6:
+    eob
+
+l_0xef72f7:
+    newline
+    "@Black smoke poured from" linebreak
+    "  {user}'s body!{prompt}" linebreak
+    "@" call(data_37.l_0xc7e6d7) " was" linebreak
+    "  overcome by the smoke!{prompt}" linebreak
+    "@You can't see a thing!{prompt}" eob
+
+l_0xef733d:
+    newline
+    "@All of a sudden," linebreak
+    "  some guys rushed into the room!{prompt}{music(149)}{pause(60)}" newline
+    "@It was the Runaway Five!{prompt}{window_closetop}{pause(30)}{window_open(1)}" newline
+    "[1F 62 00]@Lucky quickly ducked behind the robot!{prompt}{sound(11)}{pause(60)}{window_clear}@<I flipped the switch, and it stopped. >" next
+    "@<Ha ha ha hah..." linebreak
+    "  Geez, what a loser robot.  It was so easy to stop!>{pause(20)}{prompt}{window_clear}@<That was quick thinking!>{prompt}{pause(60)}[1F 62 01]{window_closetop}{window_open(14)}{set(flag 318)}" eob
+
+l_0xef7415:
+    "[1F 71 04 02]" newline
+    "@Suddenly, [1C 02 04] swooped down" linebreak
+    "  from the sky!" eob
+
+l_0xef743b:
+    newline
+    "@[1C 02 04] [9A][A3][A1][A0][9D][C3][99][A5][96][A4] [A3][93][A0][C5] [9F][A0][93][A5][C5] [A3][9A][9D][A5],{prompt}" linebreak
+    "  [81][83][7A] [79][93][96][99][95][A0][A1][91][95]!{prompt}" linebreak
+    eob
+
+l_0xef745f:
+    "[1D 21 08][09 08 {e(l_0xef749d)} {e(l_0xef74b0)} {e(l_0xef74c9)} {e(l_0xef74e6)} {e(l_0xef74fa)} {e(l_0xef7514)} {e(l_0xef7530)} {e(l_0xef7548)}]" newline
+    "@Pokey used [1C 01 08]" linebreak
+    "  as a shield![03]" eob
+
+l_0xef749d:
+    newline
+    "@Pokey played dead![03]" eob
+
+l_0xef74b0:
+    newline
+    "@Pokey pretended" linebreak
+    "  to cry![03]" eob
+
+l_0xef74c9:
+    newline
+    "@Pokey apologized" linebreak
+    "  profusely![03]" eob
+
+l_0xef74e6:
+    newline
+    "@Pokey thought" linebreak
+    "  to himself![03]" eob
+
+l_0xef74fa:
+    newline
+    "@Pokey acted" linebreak
+    "  all innocent![03]" eob
+
+l_0xef7514:
+    newline
+    "@Pokey smiled" linebreak
+    "  insincerely![03]" eob
+
+l_0xef7530:
+    newline
+    "@Pokey complained" linebreak
+    "  to [1C 01 08]![03]" eob
+
+l_0xef7548:
+    newline
+    "@Pokey tried to" linebreak
+    "  edge closer to the enemy![03]" eob
+
+l_0xef7569:
+    newline
+    "@{user}" linebreak
+    "  [9D][91][96][A4]![03]" eob
+
+l_0xef7579:
+    newline
+    "@{user}" linebreak
+    "  [93][A0][A3][A1][96][93][91][96][A4] [9E][91][94][9A][A9][96][A3][9C][A0][96] [99][91][9C][9D][9A][9F][91][9F][9A][96]![03]" eob
+
+l_0xef7591:
+    newline
+    eob
+
+l_0xef7593:
+    newline
+    "@{user}" linebreak
+    "  [A9][96][AA][96][A4] [A3][93][A0][C5] [94][A0][9D][A0][93][A5]![03]" eob
+
+l_0xef75ab:
+    newline
+    "{sound(46)}@{target} [A1][A0][9D][A5][A9][91][96][A4]" linebreak
+    "  {delta} [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]![03]" eob
+
+l_0xef75c2:
+    newline
+    "{sound(30)}@{target} [A1][A0][9D][A5][A9][91][96][A4]" linebreak
+    "  {delta} [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]![03]" eob
+
+l_0xef75d9:
+    newline
+    "{sound(46)}@{target} [A1][A0][9D][A5][A9][91][96][A4]" linebreak
+    "  {delta} [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]![03]" eob
+
+l_0xef75f0:
+    newline
+    "{sound(30)}@{target} [A1][A0][9D][A5][A9][91][96][A4]" linebreak
+    "  {delta} [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]![03]" eob
+
+l_0xef7607:
+    newline
+    "{sound(47)}@{target} [A1][A0][9D][A5][A9][91][96][A4]" linebreak
+    "  {delta} [A0][A9][9C][A0][93] [A3][9E][96][A2][A4][96][9D][C3][9F][A0][94][A0] [A5][A2][A0][9F][91]![03]" eob
+
+l_0xef7624:
+    newline
+    "{sound(31)}  [1C 08 01]" linebreak
+    "[03]" eob
+
+l_0xef7630:
+    newline
+    "  [1C 08 01]" linebreak
+    "{sound(47)}[03]" eob
+
+l_0xef763c:
+    newline
+    "{sound(35)}@{target} [92][C2][A3][A4][A2][A0]" linebreak
+    "  [A5][9C][9D][A0][9F][C6][96][A4][A3][C6]![03]" eob
+
+l_0xef7655:
+    newline
+    "{sound(35)}@{target} [92][C2][A3][A4][A2][A0]" linebreak
+    "  [A5][9C][9D][A0][9F][C6][96][A4][A3][C6]![03]" eob
+
+l_0xef766e:
+    newline
+    "@[B4][A4][A0] [9F][96] [A3][A2][91][92][A0][A4][91][9D][A0]" linebreak
+    "  [9F][91] {target}![03]" eob
+
+l_0xef7682:
+    newline
+    "@[B4][A4][A0] [9F][96] [A3][A2][91][92][A0][A4][91][9D][A0]" linebreak
+    "  [9F][91] {target}![03]" eob
+

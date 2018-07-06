@@ -1,0 +1,568 @@
+/*
+ * EarthBound Text Dump
+ * Time: 17:20:59 - 27/09/2015
+ * Generated using CCScriptWriter.
+ */
+
+command e(label) "{long label}"
+
+// Text Data
+l_0xc7546f:
+  "@Okay...{wait}{window_closeall}" call(data_24.l_0xc695ba) eob
+
+l_0xc7547d:
+  "[06 F1 02 {e(l_0xc755ad)}][06 83 02 {e(l_0xc755c4)}]@Wow,{pause(10)} you've become such a strong,{pause(10)} young man." next
+  "@I'd like to hear all of your stories," next
+  "@but I don't want to annoy you as soon as you walk through the door." next
+  "[06 7E 02 {e(l_0xc7552d)}]@I want to have a chance to get to know your little girlfriend." next
+  "@It's good to meet you,{pause(15)} [1C 02 02]." next
+  goto(l_0xc7552d)
+
+l_0xc7552d:
+  "@After all your chats with people you met on your adventure are finally over," next
+  "@please come back here." next
+  "@The photo-man brought an album by." next
+  "@I'd like to look at it with you...{wait}{window_closeall}{set(flag 643)}{isset(flag 654)}[1B 02 {e(data_55.l_0xc9992f)}]{pause(60)}[1F F1 15 00 29 00]{set(flag 753)}" eob
+
+l_0xc755ad:
+  "@[1C 02 01],{pause(15)} could you get the phone?" end
+
+l_0xc755c4:
+  "@Did you finish doing everything that you wanted to?" next
+  "[19 02]Yes" eob
+
+l_0xc755e6:
+  " [19 02]No" eob
+
+l_0xc755ec:
+  "[1C 07 02][11]{clearline}[09 02 {e(l_0xc7562f)} {e(l_0xc755fb)}]" goto(l_0xc755fb)
+
+l_0xc755fb:
+  "@You'd better do everything,{pause(15)} because once you start looking at the album," next
+  " @you can't stop!" end
+
+l_0xc7562f:
+  "@Okay!{pause(20)}  Now you can finally share your incredible experiences with me..." next
+  "@You did so well![03]{window_closeall}" call(data_24.l_0xc69082) call(data_36.l_0xc7dd6b) "{music(94)}[1F 14 05][06 7E 02 {e(l_0xc75695)}][1F EB 02 06][1F 15 02 00 0D 03 01]{pause(1)}[1F F2 02 00 0A 00]" goto(l_0xc75695)
+
+l_0xc75695:
+  "[1F EB 01 06][1F 15 01 00 0C 03 01]{pause(1)}[1F F2 01 00 0A 00][1F 16 0E 00 05][1F F1 0E 00 0A 00][1F 16 12 00 05][1F F1 12 00 0A 00]{pause(120)}{pause(120)}{pause(120)}{pause(120)}{pause(120)}{pause(60)}[1F 15 92 00 06 03 01]{pause(60)}{pause(100)}[1F 15 6A 00 7A 02 01][1F 61][1F 41 0B]" call(data_36.l_0xc7dd6b) "[1F EB FF 06][1F 21 E1]{music(95)}[1F 15 8F 00 F8 02 01][1F 61][1F 15 58 01 F9 02 01][1F 61][1F 15 C1 01 FA 02 01][1F 61][1F 41 0C]{pause(60)}" call(data_58.l_0xc9c7fa) eob
+
+/*l_0xc75717:
+  "[06 49 00 {e(l_0xc75899)}][06 4A 00 {e(l_0xc75865)}]{isset(flag 469)}[1B 02 {e(l_0xc7576b)}][06 64 00 {e(l_0xc75827)}][06 5E 00 {e(l_0xc7579e)}]@(I've got fleas sucking me dry,{pause(15)} so I'm just going to lie still for now.)" end
+  */
+l_0xc75717:
+  "[06 49 00 {e(l_0xc75899)}][06 4A 00 {e(l_0xc75865)}]{isset(flag 469)}[1B 02 {e(l_0xc7576b)}][06 64 00 {e(l_0xc75827)}][06 5E 00 {e(l_0xc7579e)}]@([7E][96][9F][C6] [92][9D][A0][A7][9A] [A0][92][A3][91][A3][C2][93][91][C5][A4],{pause(15)} [A1][A0][C4][A4][A0][9E][A5] [C6] [A1][A2][A0][A3][A4][A0] [92][A5][95][A5] [9D][96][98][91][A4][C3] [A3][9E][9A][A2][9F][A0].)" end
+
+/*l_0xc7576b:
+  "@(Besides humans,{pause(15)} dogs also sleep at night.{pause(20)}  Why aren't you asleep?)" end*/
+l_0xc7576b:
+  "@([81][A0][9E][9A][9E][A0] [9D][C5][95][96][9B],{pause(15)} [A3][A0][92][91][9C][9A] [A4][A0][98][96] [A3][A1][C6][A4] [9F][A0][A9][C3][C5].{pause(20)}  [81][A0][A9][96][9E][A5] [A4][C2] [9F][96] [A3][A1][9A][AA][C3]?)" end
+
+/*
+l_0xc7579e:
+  "@(Do you want me to go with you?)" linebreak
+  "  [19 02]Yes" eob
+
+l_0xc757b6:
+  "  [19 02]No" eob
+*/
+l_0xc7579e:
+  "@([84][C2] [A7][A0][A9][96][AA][C3], [A9][A4][A0][92][C2] [C6] [A1][A0][AA][97][9D] [A3] [A4][A0][92][A0][9B]?)" linebreak
+  "  [19 02][75][91]" eob
+
+l_0xc757b6:
+  "  [19 02][7F][96][A4]" eob
+
+l_0xc757bd:
+  " [1C 07 02][11]{clearline}[09 02 {e(l_0xc757fb)} {e(l_0xc757cd)}]" goto(l_0xc757cd)
+
+/*l_0xc757cd:
+  "@(Oh,{pause(10)} I get it.{pause(20)}  You just wanted to talk to me because I'm so lovable.)" end*/
+l_0xc757cd:
+  "@([71],{pause(10)} [C6] [A1][A0][9F][C6][9D].{pause(20)}  [84][C2] [A1][A2][A0][A3][A4][A0] [99][91][A7][A0][A4][96][9D] [A3][A0] [9E][9F][A0][9B] [A1][A0][94][A0][93][A0][A2][9A][A4][C3] [A1][A0][A4][A0][9E][A5] [A9][A4][A0] [C6] [9E][9A][9D][91][AA][9C][91].)" end
+
+/*l_0xc757fb:
+  "@(I guess I have no choice.{pause(20)}  Let's go.)[03]{sound(16)}" call(data_22.l_0xc680f2) "{unset(flag 304)}{set(flag 444)}" eob*/
+l_0xc757fb:
+  "@([81][A0][A7][A0][95][A5] [A5] [9E][96][9F][C6] [9F][96][A4][A5] [93][C2][92][A0][A2][91].{pause(20)}  [81][A0][AA][9D][9A].)[03]{sound(16)}" call(data_22.l_0xc680f2) "{unset(flag 304)}{set(flag 444)}" eob
+
+/*l_0xc75827:
+  "{isset(flag 444)}[1B 02 {e(l_0xc758cc)}]@(I don't wanna go out anymore." next
+  "@I don't care if everyone thinks I'm a stubborn mutt.)" end*/
+l_0xc75827:
+  "{isset(flag 444)}[1B 02 {e(l_0xc758cc)}]@([B6] [92][A0][9D][C3][AA][96] [9F][96] [A7][A0][A9][A5] [93][C2][A7][A0][95][9A][A4][C3]." next
+  "@[7E][96][9F][C6] [9F][96] [93][A0][9D][9F][A5][96][A4], [96][A3][9D][9A] [9E][96][9F][C6] [A0][92][99][C2][93][91][C5][A4] [A5][A1][A2][C6][9E][C2][9E] [A1][A3][A0][9E].)" end
+
+/*l_0xc75865:
+  "@(At this point,{pause(15)} you guys just might be the strongest force in the world," next
+  "@don't you think?)" end*/
+l_0xc75865:
+  "@([81][A0][A7][A0][98][96],{pause(15)} [A9][A4][A0] [93][C2],{pause(10)} [A2][96][92][C6][A4][91],{pause(10)} [93][A0][99][9E][A0][98][9F][A0] [C6][93][9D][C6][96][A4][96][A3][C3] [A3][91][9E][C2][9E][9A] [A3][9A][9D][C3][9F][C2][9E][9A] [93][A0] [93][A3][97][9E] [9E][9A][A2][96]," next
+  "@[93][91][9E] [A4][91][9C] [9F][96] [9C][91][98][96][A4][A3][C6]?)" end
+
+/*l_0xc75899:
+  "@(Other dogs haven't figured it out yet," next
+  "@but I know that you guys saved the world!)" end*/
+l_0xc75899:
+  "@([75][A2][A5][94][9A][96] [A3][A0][92][91][9C][9A] [96][C0][97] [9F][96] [95][A0][94][91][95][91][9D][9A][A3][C3]," next
+  "@[9F][A0] [C6] [99][9F][91][C5], [A9][A4][A0] [93][C2] [A3][A1][91][A3][9D][9A] [9E][9A][A2]!)" end
+
+/*l_0xc758cc:
+  "@(I like being at home,{pause(10)} relaxing quietly..." next
+  "@Can't ya see--{pause(15)}I don't wanna go outside!)" end*/
+l_0xc758cc:
+  "@([7E][9F][96] [9F][A2][91][93][9A][A4][A3][C6] [92][C2][A4][C3] [95][A0][9E][91],{pause(10)} [A3][A1][A0][9C][A0][9B][9F][A0] [A3][9D][A0][9F][C6][C6][A3][C3]..." next
+  "@[84][C2] [A9][96][94][A0], [96][C0][97] [9F][96] [A1][A0][9F][C6][9D]--{pause(15)}[B6] [9F][96] [A7][A0][A9][A5] [93][C2][A7][A0][95][9A][A4][C3] [9F][91] [A5][9D][9A][A8][A5]!)" end
+
+l_0xc75909:
+  "[06 49 00 {e(l_0xc75b0f)}]" goto(l_0xc75910)
+
+l_0xc75910:
+  "{unset(flag 200)}{unset(flag 201)}[06 62 00 {e(data_22.l_0xc68017)}][06 5F 00 {e(l_0xc75936)}]{sound(11)}{pause(20)}" goto(l_0xc75929)
+
+/*l_0xc75929:
+  "@Beeeep...{wait}{sound(11)}" eob*/
+l_0xc75929:
+  "@[72][9A][9A][9A][9A][A1]...{wait}{sound(11)}" eob
+
+/*l_0xc75936:
+  "@[1C 01 08] answered the phone." next
+  "{sound(11)}{pause(20)}" call(data_16.l_0xc5e812) "@Hello,{pause(10)} it's your dad." next
+  "@<Work to exhaustion when you're young...>" next
+  "@Have you ever heard of a weird saying like this?" next
+  "@Just remember,{pause(15)} I'm always behind you 100%.  Don't be afraid." next
+  "@I know that you're brave.{pause(20)}  You can do it!" next
+  "@Don't forget to call me periodically during your adventure." next
+  "@I can make a record of your progress when you call me." next
+  "@Oh yeah,{pause(15)} I deposited $30 into your bank account." next
+  "@Do you have your ATM card?" next
+  "@Withdraw your money from any cash machine and buy whatever you need." next
+  "@Good Luck,{pause(15)} m'boy!{pause(20)}  I feel like such a hero!" next
+  "@What?{pause(10)}  Well,{pause(10)} the father of a hero,{pause(10)} at least.  Wa ha ha!" next
+  "@Slam!{pause(20)}  Beeeeeeeep!{wait}{sound(11)}{set(flag 98)}{unset(flag 95)}{unset(flag 753)}{unset(flag 467)}{set(flag 199)}[1D 06 1E 00 00 00]{save}[19 26 01]" eob*/
+l_0xc75936:
+  "@[1C 01 08] [A1][A0][95][9F][C6][9D] [A4][A2][A5][92][9C][A5]." next
+  "{sound(11)}{pause(20)}" call(data_16.l_0xc5e812) "@[81][A2][9A][93][96][A4],{pause(10)} [C4][A4][A0] [C6],{pause(10)} [A4][93][A0][9B] [A0][A4][96][A8]." next
+  "@<[82][91][92][A0][A4][91][9B] [95][A0] [9A][99][9F][96][9E][A0][98][96][9F][9A][C6], [A1][A0][9C][91] [A4][C2] [9E][A0][9D][A0][95]...>" next
+  "@[84][C2] [9C][A0][94][95][91]-[9F][9A][92][A5][95][C3] [A3][9D][C2][AA][91][9D] [A0] [A4][91][9C][A0][9B] [A3][A4][A2][91][9F][9F][A0][9B] [A1][A0][94][A0][93][A0][A2][9C][96]?" next
+  "@[81][A2][A0][A3][A4][A0] [99][91][A1][A0][9E][9F][9A],{pause(15)} [C6] [93][A3][96][94][95][91] [A3] [A4][A0][92][A0][9B] [9F][91] [93][A3][96] [A3][A4][A0]. [7F][9A][A9][96][94][A0] [9F][96] [92][A0][9B][A3][C6]." next
+  "@[B6] [99][9F][91][C5], [A9][A4][A0] [A4][C2] [A7][A2][91][92][A2][C2][9B].{pause(20)}  [84][C2] [A3][95][96][9D][91][96][AA][C3] [C4][A4][A0]!" next
+  "@[7F][96] [99][91][92][A5][95][C3] [9E][9F][96] [9A][9F][A0][94][95][91] [99][93][A0][9F][9A][A4][C3] [93][A0] [93][A2][96][9E][C6] [A3][93][A0][96][94][A0] [A1][A2][9A][9C][9D][C5][A9][96][9F][9A][C6]." next
+  "@[B6] [9E][A0][94][A5] [99][91][A1][9A][A3][C2][93][91][A4][C3] [A4][93][A0][9B] [A1][A2][A0][94][A2][96][A3][A3] [A1][A2][9A] [9C][91][98][95][A0][9E] [99][93][A0][9F][9C][96]." next
+  "@[71][A7] [95][91],{pause(15)} [C6] [93][9F][97][A3] $30 [9F][91] [A4][93][A0][C5] [92][91][9F][9C][A0][93][A3][9C][A5][C5] [9C][91][A2][A4][A5]." next
+  "@[85] [A4][96][92][C6] [98][96] [9C][91][A2][A4][91] [A3] [A3][A0][92][A0][9B]?" next
+  "@[83][9F][9A][9E][9A] [C4][A4][9A] [95][96][9F][C3][94][9A] [A9][96][A2][96][99] [9D][C5][92][A0][9B] [92][91][9F][9C][A0][9E][91][A4] [9A] [9C][A5][A1][9A] [93][A3][97], [A9][A4][A0] [A4][96][92][96] [9F][91][95][A0]." next
+  "@[85][95][91][A9][9A],{pause(15)} [A3][C2][9F][A0][9C]!{pause(20)}  [B6] [A9][A5][93][A3][A4][93][A5][C5] [A3][96][92][C6] [A4][91][9C][9A][9E] [94][96][A2][A0][96][9E]!" next
+  "@[89][A4][A0]?{pause(10)}  [7F][A5],{pause(10)} [A0][A4][A8][A0][9E] [94][96][A2][A0][C6],{pause(10)} [A1][A0] [9C][A2][91][9B][9F][96][9B] [9E][96][A2][96].  [73][91][A7] [A7][91][A7] [A7][91][A7]!" next
+  "@[87][9D][A0][A1]!{pause(20)}  [72][9A][9A][9A][9A][9A][9A][9A][9A][A1]!{wait}{sound(11)}{set(flag 98)}{unset(flag 95)}{unset(flag 753)}{unset(flag 467)}{set(flag 199)}[1D 06 1E 00 00 00]{save}[19 26 01]" eob
+
+l_0xc75b0f:
+  "{isset(flag 753)}[1B 02 {e(l_0xc75910)}]{isset(flag 654)}[1B 02 {e(l_0xc75910)}]{sound(11)}{pause(20)}" call(data_16.l_0xc5e812) "{window_open(1)}@Hello?{pause(20)}  Is this [1C 02 01]'s residence?{pause(20)}  Is [1C 02 01] around?" next
+  "@Ah!{pause(20)}  You're [1C 02 01],{pause(15)} right?" next
+  "@It's me,{pause(15)} the tough business man!" next
+  "@You remember--{pause(15)}from the Deep Darkness." next
+  "@I never got the money back that you borrowed," next
+  "@but,{pause(15)} lucky you,{pause(15)} I bumped into your dad and he paid the debt for you." next
+  "@I just wanted to let you know." next
+  "@Gotta go now--{pause(15)}busy,{pause(10)} busy,{pause(10)} busy!" next
+  "@Slam.{pause(20)}  Beeeeep!{wait}{sound(11)}{window_closeall}{unset(flag 654)}{unset(flag 753)}" eob
+
+/*l_0xc75c33:
+  "[06 60 00 {e(l_0xc75f3b)}]{window_closeall}{pause(30)}{music(177)}{pause(120)}{pause(120)}{music_resume}{window_open(1)}@Hey!{pause(15)}  L-{pause(15)}L-{pause(15)}Listen to what I've got to say!" next
+  "@When I took Picky to the place where the meteorite landed..." next
+  "[19 23 11 00 02 0E 00][1F 16 11 00 00]@Oh!{pause(20)}  Good evening ma'am.{pause(20)}  You're looking lovely as usual.  *snicker*" next
+  "[19 23 11 00 01 01 00][1F 16 11 00 00]@Anyway,{pause(15)} as I was saying," next
+  "@the police that were guarding the meteorite landing left suddenly" next
+  "@to deal with the Sharks.{pause(15)}  You know the Sharks,{pause(10)} they're the local ruffians," next
+  "@and they were really going wild.{pause(20)}  Suddenly,{pause(20)} I noticed that Picky was gone." next
+  "@I blame the cops... it certainly wasn't my fault at all." next
+  "@When my dad gets back,{pause(15)} I know I'm gonna get it..." next
+  "@You're my bestest friend.{pause(20)}  Won't YOU help me find Picky?" next
+  "[19 02]Yes" eob
+l_0xc75e07:
+  " [19 02]No" eob*/
+l_0xc75c33:
+  "[06 60 00 {e(l_0xc75f3b)}]{window_closeall}{pause(30)}{music(177)}{pause(120)}{pause(120)}{music_resume}{window_open(1)}@[B4][9B]!{pause(15)}  [81]-{pause(15)}[81]-{pause(15)}[81][A0][A3][9D][A5][AA][91][9B], [A9][A4][A0] [C6] [A7][A0][A9][A5] [A3][9C][91][99][91][A4][C3]!" next
+  "@[7C][A0][94][95][91] [C6] [A0][A4][93][97][9D] [81][9A][9C][9A] [A4][A5][95][91], [94][95][96] [A5][A1][91][9D] [9E][96][A4][96][A0][A2][9A][A4]..." next
+  "[19 23 11 00 02 0E 00][1F 16 11 00 00]@[71][A7]!{pause(20)}  [75][A0][92][A2][C2][9B] [93][96][A9][96][A2], [9E][91][95][91][9E].{pause(20)}  [73][C2] [93][C2][94][9D][C6][95][9A][A4][96] [9C][91][9C] [93][A3][96][94][95][91] [A1][A2][96][9C][A2][91][A3][9F][A0].  *[A3][9E][96][AA][A0][9C]*" next
+  "[19 23 11 00 01 01 00][1F 16 11 00 00]@[7F][A5] [95][91] [9D][91][95][9F][A0],{pause(15)} [9C][91][9C] [C6] [94][A0][93][A0][A2][9A][9D]," next
+  "@[A1][A0][9D][9A][A8][96][9B][A3][9C][9A][96], [A9][A4][A0] [A0][A7][A2][91][9F][C6][9D][9A] [9E][96][A4][96][A0][A2][9A][A4], [93][9F][96][99][91][A1][9F][A0] [A5][96][A7][91][9D][9A]" next
+  "@[A9][A4][A0][92][C2] [A2][91][99][A0][92][A2][91][A4][C3][A3][C6] [A3] [71][9C][A5][9D][91][9E][9A].{pause(15)}  [84][C2] [99][9F][91][96][AA][C3] [71][9C][A5][9D],{pause(10)} [A0][9F][9A] [9E][96][A3][A4][9F][C2][96] [A7][A5][9D][9A][94][91][9F][C2]," next
+  "@[9A] [A0][9F][9A] [A3][A0][93][A3][96][9E] [A0][95][9A][A9][91][9D][9A].{pause(20)}  [73][95][A2][A5][94],{pause(20)} [C6] [99][91][9E][96][A4][9A][9D],{pause(10)} [A9][A4][A0] [81][9A][9C][9A] [A1][A2][A0][A1][91][9D]." next
+  "@[B6] [93][9A][9F][C5] [9C][A0][A1][A0][93]... [93] [C4][A4][A0][9E] [9F][96][A4] [9F][9A] [9C][91][A1][9D][9A] [9E][A0][96][9B] [93][9A][9F][C2]." next
+  "@[7C][A0][94][95][91] [9E][A0][9B] [A0][A4][96][A8] [93][96][A2][9F][97][A4][A3][C6],{pause(15)} [C6] [A1][A0][9D][A5][A9][A5] [A1][A0] [A1][A0][9D][9F][A0][9B]..." next
+  "@[84][C2] [9E][A0][9B] [9F][91][9A][9D][A5][A9][AA][9A][9B] [9D][A5][A9][AA][9A][9B] [95][A2][A5][94].{pause(20)}  [84][B2] [98][96] [9E][9F][96] [A1][A0][9E][A0][98][96][AA][C3] [9F][91][9B][A4][9A] [81][9A][9C][9A]?" next
+  "[19 02][75][91]" eob
+l_0xc75e07:
+  " [19 02][7F][96][A4]" eob
+
+l_0xc75e0d:
+  "[1C 07 02][11]{clearline}[09 02 {e(l_0xc75ebc)} {e(l_0xc75e1c)}]" goto(l_0xc75e1c)
+
+/*l_0xc75e1c:
+  "@If you refuse me,{pause(15)} I'll say something that'll cut you like a knife." next
+  "@Will you come with me?" linebreak
+  "[19 02]Yes" eob
+
+l_0xc75e58:
+  " [19 02]No" eob
+*/
+l_0xc75e1c:
+  "@[76][A3][9D][9A] [A4][C2] [9E][9F][96] [A0][A4][9C][91][98][96][AA][C3],{pause(15)} [C6] [A4][96][92][96] [A4][91][9C] [A3][A0][A3][A4][A2][C5]!{pause(20)} [80][A3][A4][A2][A0]!{pause(10)} [7C][91][9C] [9F][A0][98]!" next
+  "@[84][C2] [98][96] [A1][A0][9B][95][97][AA][C3] [A3][A0] [9E][9F][A0][9B]?" linebreak
+  "[19 02][75][91]" eob
+
+l_0xc75e58:
+  " [19 02][7F][96][A4]" eob
+
+l_0xc75e5e:
+  "[1C 07 02][11]{clearline}[09 02 {e(l_0xc75ebc)} {e(l_0xc75e6d)}]" goto(l_0xc75e6d)
+
+/*l_0xc75e6d:
+  "@Okay, okay... I won't say anything to hurt you." next
+  "@Will you please come with me?" linebreak
+  "[19 02]Yes" eob
+
+l_0xc75ea2:
+  " [19 02]No" eob*/
+l_0xc75e6d:
+  "@[7D][91][95][9F][A0], [9D][91][95][9F][A0]... [C6] [9F][96] [92][A5][95][A5] [A4][96][92][C6] [A0][92][9A][98][91][A4][C3]." next
+  "@[81][A0][98][91][9D][A5][9B][A3][A4][91], [A4][C2] [A1][A0][9B][95][97][AA][C3] [A3][A0] [9E][9F][A0][9B]?" linebreak
+  "[19 02][75][91]" eob
+
+l_0xc75ea2:
+  " [19 02][7F][96][A4]" eob
+
+l_0xc75ea8:
+  "[1C 07 02][11]{clearline}[09 02 {e(l_0xc75ebc)} {e(l_0xc75e1c)}]" goto(l_0xc75e1c)
+
+/*l_0xc75ebc:
+  "{set(flag 96)}@Ok,{pause(15)} good buddy!{pause(20)}  Let's blow this popsicle stand..." next
+  "@Before we go,{pause(15)} why don't you say <goodbye> to your mom.{pause(15)}" linebreak
+  "[19 23 11 00 02 0E 00][1F 16 11 00 00]  Don't you agree,{pause(15)} ma'am?[03]{window_closeall}{pause(1)}[1F F1 0E 00 2B 00]" eob*/
+l_0xc75ebc:
+  "{set(flag 96)}@[80][A4][9D][9A][A9][9F][A0],{pause(15)} [A1][A2][9A][C6][A4][96][9D][C3]!{pause(20)}  [75][91][93][91][9B] [A3][9E][A0][96][9E][A3][C6] [A0][A4][A3][C5][95][91]..." next
+  "@[81][A0][9C][91] [9E][C2] [96][C0][97] [99][95][96][A3][C3],{pause(15)} [A1][A0][A9][96][9E][A5] [92][C2] [A4][96][92][96] [9F][96] [A1][A0][A1][A2][A0][C0][91][A4][C3][A3][C6] [A3][A0] [A3][93][A0][96][9B] [9E][91][9E][A0][9B]?{pause(15)}" linebreak
+  "[19 23 11 00 02 0E 00][1F 16 11 00 00]  [82][91][99][93][96] [C6] [9F][96] [A1][A2][91][93],{pause(15)} [9E][91][95][91][9E]?[03]{window_closeall}{pause(1)}[1F F1 0E 00 2B 00]" eob
+
+/*l_0xc75f3b:
+  "[06 5E 00 {e(l_0xc75f73)}]@Before we go,{pause(15)} why don't you say <goodbye> to your mom.{wait}{window_closeall}{pause(1)}[1F F1 13 00 2B 00]" eob
+*/
+l_0xc75f3b:
+  "[06 5E 00 {e(l_0xc75f73)}]@[81][A0][9C][91] [9E][C2] [96][C0][97] [99][95][96][A3][C3],{pause(15)} [A1][A0][A9][96][9E][A5] [92][C2] [A4][96][92][96] [9F][96] [A1][A0][A1][A2][A0][C0][91][A4][C3][A3][C6] [A3][A0] [A3][93][A0][96][9B] [9E][91][9E][A0][9B]?{wait}{window_closeall}{pause(1)}[1F F1 13 00 2B 00]" eob
+
+/*l_0xc75f73:
+  "[1D 04 01 11][1B 03 {e(l_0xc760b7)}][06 25 03 {e(l_0xc75fb6)}]@You're not taking anything on our big adventure?" next
+  "@Why don't you look around for your [1C 05 11] or something?" end*/
+l_0xc75f73:
+  "[1D 04 01 11][1B 03 {e(l_0xc760b7)}][06 25 03 {e(l_0xc75fb6)}]@[84][C2] [9F][9A][A9][96][94][A0] [9F][96] [92][96][A2][97][AA][C3] [9F][91] [9F][91][AA][96] [92][A0][9D][C3][AA][A0][96] [A1][A2][9A][9C][9D][C5][A9][96][9F][9A][96]?" next
+  "@[81][A0][A9][96][9E][A5] [92][C2] [A4][96][92][96] [9F][96] [9F][91][9B][A4][9A] [A3][93][A0][C5] <[1C 05 11]>?" end
+
+/*l_0xc75fb6:
+  "@Sorry about giving you this game-type advice,{pause(15)}[19 22 01 03 2C 00][1F 13 01 00] but you should equip your weapon!" next
+  "@Do you know what <equip> means?" linebreak
+  "[19 02]Yes" eob
+
+l_0xc76005:
+  " [19 02]No" eob
+*/
+l_0xc75fb6:
+  "@[7A][99][93][9A][9F][9A], [A9][A4][A0] [C6] [A4][96][92][96] [95][91][C5] [C4][A4][A0][A4] [A0][A9][96][9F][C3] [9A][94][A2][A0][93][A0][9B] [A3][A0][93][96][A4],{pause(15)}[19 22 01 03 2C 00][1F 13 01 00]" next
+  "@[9F][A0] [A4][96][92][96] [A3][A4][A0][9A][A4] [C4][9C][9A][A1][9A][A2][A0][93][91][A4][C3] [A3][93][A0][97] [A0][A2][A5][98][9A][96]!" next
+  "@[84][C2] [98][96] [99][9F][91][96][AA][C3], [A9][A4][A0] [99][9F][91][A9][9A][A4] <[C4][9C][9A][A1][9A][A2][A0][93][91][A4][C3]>?" linebreak
+  "[19 02][75][91]" eob
+
+l_0xc76005:
+  " [19 02][7F][96][A4]" eob
+
+l_0xc7600b:
+  "[1C 07 02][11]{clearline}[09 02 {e(l_0xc76080)} {e(l_0xc7601a)}]" goto(l_0xc7601a)
+
+/*l_0xc7601a:
+  "@It means <use> or <wear.>" next
+  "@You must equip items in order to use or wear them." next
+  "@<Equip> is used a lot in games like this," next
+  "@but you already knew that...[03]" goto(l_0xc760b7)*/
+l_0xc7601a:
+  "@[B4][A4][A0] [99][9F][91][A9][9A][A4] <[93][99][C6][A4][C3] [93] [A2][A5][9C][9A]> [9A][9D][9A] <[9F][91][95][96][A4][C3]> [A9][A4][A0]-[9D][9A][92][A0] [9F][91] [A3][96][92][C6]." next
+  "@[84][96][92][96] [9F][A5][98][9F][A0] [9F][91][95][96][93][91][A4][C3] [9F][91] [A3][96][92][C6] [93][96][C0][9A], [A9][A4][A0][92][C2] [9A][A7] [9A][A3][A1][A0][9D][C3][99][A0][93][91][A4][C3]." next
+  "@<[B4][9C][9A][A1][9A][A2][A0][93][91][A4][C3]> [A9][91][A3][A4][A0] [9A][A3][A1][A0][9D][C3][99][A5][96][A4][A3][C6] [93] [9A][94][A2][91][A7] [A4][91][9C][A0][94][A0] [A4][9A][A1][91]," next
+  "@[9F][A0] [A4][C2] [A5][98][96] [C4][A4][A0] [99][9F][91][9D]...[03]" goto(l_0xc760b7)
+
+/*l_0xc76080:
+  "@Okay,{pause(15)} that's good.{pause(20)}  Be sure to pay attention to details like that." next
+  goto(l_0xc760b7)*/
+l_0xc76080:
+  "@[80][9C][96][9B],{pause(15)} [C4][A4][A0] [A7][A0][A2][A0][AA][A0].{pause(20)}  [7F][96] [99][91][92][C2][93][91][9B] [A0][92][A2][91][C0][91][A4][C3] [A3][93][A0][97] [93][9F][9A][9E][91][9F][9A][96] [9F][91] [A4][91][9C][9A][96] [95][96][A4][91][9D][9A]." next
+  goto(l_0xc760b7)
+
+/*
+l_0xc760b7:
+  newline
+  "@All right!{pause(20)}  You go out in front,{pause(15)} and I'll follow at a safe distance." next
+  "@Let's get going![03]{window_closeall}{set(flag 30)}{set(flag 21)}{set(flag 466)}" call(data_22.l_0xc68174) "{unset(flag 310)}{unset(flag 301)}{unset(flag 530)}{unset(flag 531)}" eob
+*/
+l_0xc760b7:
+  newline
+  "@[80][A4][9D][9A][A9][9F][A0]!{pause(20)}  [84][C2] [9A][95][9A] [93][A1][96][A2][97][95],{pause(15)} [C6] [92][A5][95][A5] [A3][9D][96][95][A0][93][91][A4][C3] [99][91] [A4][A0][92][A0][9B] [9F][91] [92][96][99][A0][A1][91][A3][9F][A0][9E] [A2][91][A3][A3][A4][A0][C6][9F][9A][9A]." next
+  "@[81][A0][AA][9D][9A] [A5][98][96]![03]{window_closeall}{set(flag 30)}{set(flag 21)}{set(flag 466)}" call(data_22.l_0xc68174) "{unset(flag 310)}{unset(flag 301)}{unset(flag 530)}{unset(flag 531)}" eob
+
+/*l_0xc76112:
+  "[06 49 00 {e(l_0xc7625e)}][06 73 02 {e(l_0xc761eb)}][06 4C 00 {e(data_19.l_0xc64672)}]@I'll do everything I can to help you!{pause(20)}  Good luck on your adventure." next
+  "@You might get hungry along the way,{pause(15)} so here is a [1C 05 58]." next
+  "[1D 03 FF][1B 02 {e(l_0xc761dd)}][1D 0E 00 58]{set(flag 76)}" call(data_36.l_0xc7dccf) next
+  "@You can also leave anything you don't need with me." next
+  "@Do you want me to hang on to something?" linebreak
+  "[19 02]Yes" eob
+
+l_0xc761b7:
+  " [19 02]No" eob
+*/
+l_0xc76112:
+  "[06 49 00 {e(l_0xc7625e)}][06 73 02 {e(l_0xc761eb)}][06 4C 00 {e(data_19.l_0xc64672)}]@[B6] [A3][95][96][9D][91][C5] [93][A3][97], [A9][A4][A0][92][C2] [A4][96][92][96] [A1][A0][9E][A0][A9][C3]!{pause(20)}  [85][95][91][A9][9A] [9F][91] [A3][93][A0][97][9E] [A1][A2][9A][9C][9D][C5][A9][96][9F][9A][9A]." next
+  "@[84][C2] [9E][A0][98][96][AA][C3] [A1][A2][A0][94][A0][9D][A0][95][91][A4][C3][A3][C6] [A1][A0] [A1][A5][A4][9A],{pause(15)} [A1][A0][C4][A4][A0][9E][A5] [93][A0][99][C3][9E][9A] [1C 05 58]." next
+  "[1D 03 FF][1B 02 {e(l_0xc761dd)}][1D 0E 00 58]{set(flag 76)}" call(data_36.l_0xc7dccf) next
+  "@[76][C0][97] [C6] [9E][A0][94][A5] [A1][A2][9A][A3][9E][A0][A4][A2][96][A4][C3] [99][91] [A4][93][A0][9A][9E][9A] [93][96][C0][91][9E][9A]." next
+  "@[84][C2] [A7][A0][A9][96][AA][C3] [9E][9F][96] [A9][A4][A0]-[9D][9A][92][A0] [A0][A4][95][91][A4][C3]?" linebreak
+  "[19 02][75][91]" eob
+
+l_0xc761b7:
+  " [19 02][7F][96][A4]" eob
+
+l_0xc761bd:
+  "[1C 07 02][11]{clearline}[09 02 {e(l_0xc761d7)} {e(l_0xc761cc)}]" goto(l_0xc761cc)
+
+/*l_0xc761cc:
+  "@Be careful!" end*/
+l_0xc761cc:
+  "@[72][A5][95][C3] [A0][A3][A4][A0][A2][A0][98][96][9F]!" end
+
+l_0xc761d7:
+  call(data_20.l_0xc6474f) eob
+
+/*l_0xc761dd:
+  newline
+  "{sound(5)}@You have too much stuff." end*/
+l_0xc761dd:
+  newline
+  "{sound(5)}@[85] [A4][96][92][C6] [A3][9D][9A][AA][9C][A0][9E] [9E][9F][A0][94][A0] [93][96][C0][96][9B]." end
+
+l_0xc761eb:
+  "@What?{pause(20)}  The Sound Stone?" next
+  "@I wonder when I got this from you?{pause(20)}  Let me give it back to you..." next
+  "[1D 03 FF][1B 02 {e(l_0xc7623e)}][1D 0E 00 C4]{set(flag 76)}" call(data_36.l_0xc7dcb6) "{wait}{unset(flag 627)}" eob
+
+l_0xc7623e:
+  "@Ooops!{pause(20)}  You seem to be carrying too much stuff already!" end
+
+l_0xc7625e:
+  "[06 01 03 {e(l_0xc76357)}]@Goody!{pause(20)}  My brother is back!" next
+  "@You've got a lot of catching up to do with your schoolwork, *Hyork*!" next
+  "@If you have any problems with your assignments,{pause(15)} I'll help you." next
+  "@Don't get freaked out." next
+  "@Did Escargo Express,{pause(15)} my old company,{pause(15)} help you?" next
+  "@I've saved some money,{pause(15)} so we'll do the lunch thing sometime." next
+  "@You also got a new girlfriend?[03]@Your adventure must have been pretty good!" next
+  goto(l_0xc76357)
+
+l_0xc76357:
+  "@Do you need help with anything other than your schoolwork?" next
+  "[19 02]Yes" eob
+
+l_0xc7637c:
+  " [19 02]No" eob
+
+l_0xc76382:
+  "[1C 07 02][11]{clearline}[09 02 {e(data_19.l_0xc646ae)} {e(l_0xc76391)}]" goto(l_0xc76391)
+
+l_0xc76391:
+  "@Okay,{pause(15)} you relax now." end
+
+l_0xc763a3:
+  "[06 03 00 {e(l_0xc763b0)}]" call(data_13.l_0xc5d263) eob
+
+l_0xc763b0:
+  "@If you buy something from me," next
+  "@I'll give you a big discount,{pause(15)} tee hee hee." end
+
+l_0xc763dc:
+  "[06 02 00 {e(l_0xc763b0)}]" call(data_13.l_0xc5d26f) eob
+
+l_0xc763e9:
+  "@It seems like I'm always here...{pause(20)}  I hope you don't mind!" end
+
+l_0xc7640b:
+  "@I'm so much more relaxed here..." next
+  "@They never ask me{pause(30)} <Would you like fries with that shake?>" end
+
+l_0xc76443:
+  call(data_13.l_0xc5d27b) eob
+
+l_0xc76449:
+  "[06 49 00 {e(l_0xc765cf)}][06 DA 02 {e(l_0xc7659c)}][06 02 00 {e(l_0xc7654c)}]@I want to tell you the story of the creature from the vegetable soup," next
+  "@but I won't because I don't want to bother you with a story" next
+  "@that has nothing to do with your adventure." next
+  "@If I keep talking about unrelated stuff," next
+  "@you might start ignoring important messages." next
+  "@It's important for you to talk to people." next
+  "@Also,{pause(15)} a person might give you a different message," next
+  "@depending on when you speak to them.{wait}{set(flag 2)}" eob
+
+l_0xc7654c:
+  "@Thank you for taking the time to talk to me again." next
+  "@Ah!{pause(30)}  So you see what I mean!{pause(15)}  It's important to take time out to talk with many people.{wait}{set(flag 730)}" eob
+
+l_0xc7659c:
+  "@Yes!{pause(15)}  Keep the lines of communication open.{pause(15)}  Just like you are doing now." end
+
+l_0xc765cf:
+  "@Isn't it nice to talk to so many people?[06 DA 02 {e(l_0xc765ef)}]" end
+
+l_0xc765ef:
+  next
+  "@I gave you some advice when I spoke to you the first time,{pause(15)} right?" end
+
+l_0xc7661b:
+  "@I like cottage cheese on bread!" next
+  "@You haven't tried it?{pause(20)}  It's the latest craze in culinary circles!" end
+
+l_0xc76663:
+  "[06 49 00 {e(l_0xc766c5)}][06 15 00 {e(l_0xc76689)}]@My husband is very soft-hearted." end
+
+l_0xc76689:
+  "@Where in sam hill have you boys been?" next
+  "@I'll have to think of a suitable punishment!" end
+
+l_0xc766c5:
+  "@As usual,{pause(15)} you're wearing your grubbies!{pause(20)}  So,{pause(10)} what do you want?" next
+  "@My son isn't at home now.{pause(20)}  He's walking around somewhere." next
+  "@My husband is also gone.{pause(30)}  Oh yes,{pause(15)} this is Mr. Prettyman." next
+  "@He always has great advice.{pause(15)}  He's a real gentleman,{pause(10)} he is." next
+  "@You'll be happy that you met him." end
+
+l_0xc7678a:
+  "@Salutations!{pause(20)}  You're the boy living next door." next
+  "@I heard that your family is in debt.{pause(20)}  Ms. Minch told me about it." next
+  "@Well, live and learn.{pause(20)}  You just have to keep plugging away." end
+
+l_0xc76804:
+  "@My dad really got after me." next
+  "@He said I get no dessert for the rest of the decade..." end
+
+l_0xc7683a:
+  "[06 49 00 {e(l_0xc7685a)}]@I don't wanna look at the meteorite anymore." end
+
+l_0xc7685a:
+  "@I haven't seen you in a while.{pause(20)}  You look cool." next
+  "@I'm nowhere near as cool as you.{pause(20)}  I'm just average cool." end
+
+l_0xc7689d:
+  eob
+
+l_0xc7689e:
+  "@Our nightly rate is not cheap," next
+  "@but we have clean sheets, and the rooms are secure." next
+  "@I'm sure you understand that this keeps us very busy." end
+
+l_0xc768f4:
+  "@You look like you'd be a real target for the Sharks." next
+  "@You'd better be careful." end
+
+l_0xc76924:
+  "@Can you believe it?" next
+  "@A group of ruffians spit their gum on me as I was passing by..." end
+
+l_0xc7695f:
+  "@Do you actually think you can just come up and talk to me anytime you want?" end
+
+l_0xc76980:
+  "@I've seen you around a lot lately.  He he he." end
+
+l_0xc7699e:
+  "[06 49 00 {e(l_0xc76b36)}][06 69 00 {e(l_0xc76b0b)}][06 B6 00 {e(l_0xc76a1f)}]@The townspeople are in a state of confusion." next
+  "@At times like this,{pause(15)} riots break out,{pause(15)} or people start acting wild," next
+  "@so we police are being ultra cautious." end
+
+l_0xc76a1f:
+  "@Why is the road to Twoson closed?{pause(20)}  An emergency,{pause(10)} of course." next
+  "@At times like this,{pause(15)} kids like you should be playing Nintendo games." next
+  "@Anyway,{pause(15)} are you sure you want to go to Twoson?" linebreak
+  "[19 02]Yes" eob
+
+l_0xc76a92:
+  " [19 02]No" eob
+
+l_0xc76a98:
+  "[1C 07 02][11]{clearline}[09 02 {e(l_0xc76ad6)} {e(l_0xc76aa7)}]" goto(l_0xc76aa7)
+
+l_0xc76aa7:
+  "@Well then,{pause(15)} perhaps you should just crawl back to your shack,{pause(15)} little mister." end
+
+l_0xc76ad6:
+  "@Okay, *chortle*{pause(15)}  Follow me.[03]{set(flag 38)}{unset(flag 289)}{unset(flag 290)}{unset(flag 291)}{unset(flag 292)}{unset(flag 293)}{window_closeall}" goto(data_16.l_0xc5f859)
+
+l_0xc76b0a:
+  eob
+
+l_0xc76b0b:
+  "@I've been playing <EarthBound> lately...{pause(20)}  I'm having a tough time." end
+
+l_0xc76b36:
+  "@So you've traveled all over the world." next
+  "@I bet you didn't meet anyone stronger than I,{pause(10)} did you?" next
+  "@I know that you didn't...  Wa ha ha ha!" end
+
+l_0xc76b87:
+  "[06 69 00 {e(l_0xc76bd2)}]@I would rather be working as a parking meter cop..." next
+  "@It's just been too busy lately.{pause(15)}  I'm sick of it." end
+
+l_0xc76bd2:
+  "@Well,{pause(15)} the riot's over.{pause(15)}  Now I can move on to parking enforcement!" next
+  "@Hooray!{pause(15)}  Life is good.{pause(20)}  Dum dee dee dee..." end
+
+l_0xc76c29:
+  "[06 69 00 {e(l_0xc76c55)}]@Man,{pause(15)} am I steamed...{pause(20)}  Don't even try talking to me." end
+
+l_0xc76c55:
+  "@Why are you asking about a driver's license?" next
+  "@You're way too young to even think about getting behind the wheel,{pause(15)} you little pest." end
+
+l_0xc76ca1:
+  "[06 02 00 {e(l_0xc76d3d)}]@So here you are." next
+  "@You're the little delinquent that came back from Giant Step!" next
+  "@Now you listen here..." next
+  "@<Don't Enter> means just that--{pause(30)} DO NOT ENTER!{pause(10)}  You got that?" next
+  "@And furthermore..." next
+  "@Blah{pause(10)} blah" next
+  "@Blah{pause(10)} blah" next
+  goto(l_0xc76d3d)
+
+l_0xc76d3d:
+  "@It's usually those tax evaders who..." next
+  "@Blah blah" next
+  "@Blah blah" next
+  "@We don't enjoy blocking off the roads,{pause(15)} you know..." next
+  "@Blah blah" next
+  "@Blah blah" next
+  "@It's usually the local whiners that make a big deal about emergencies and meteorites!" next
+  "@Blah blah" next
+  "@Blah blah" next
+  "@Blah blah{wait}{set(flag 2)}" eob
+
+l_0xc76e0c:
+  "@Didn't you see the <Don't Enter> sign?" next
+  "@That means I'm there to stop you when you're on your way out!" next
+  "@So pay attention next time..." next
+  "@And furthermore..." next
+  "@Blah,{pause(10)} blah" next
+  "@Blah,{pause(10)} blah {wait}{set(flag 109)}" eob
+
+l_0xc76e92:
+  "@Psst!{pause(20)}  I'm not really one of the gang." next
+  "@I'm a cop,{pause(15)} even if I don't look like it." end
+
+l_0xc76ec5:
+  "@Let's go,{pause(15)} go{pause(10)} og!{pause(15)}  Oops!{pause(15)}  My mistake,{pause(10)} go!{wait}" call(data_23.l_0xc6845d) "[1B 03 {e(data_23.l_0xc683de)}]{window_open(1)}" newline
+  "@'scuse me!{pause(20)}  Uuuuuh... yeah.{wait}{set(flag 293)}" eob
+
