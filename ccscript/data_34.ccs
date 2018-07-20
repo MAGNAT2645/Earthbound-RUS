@@ -241,13 +241,23 @@ l_0xc7a959:
     "@So... have a good time in the desert!...{wait}{window_closeall}" eob
 
 l_0xc7ab3f:
-    "[06 FE 01 {e(data_55.l_0xc9992f)}]" call(data_36.l_0xc7dd74) "{music(88)}{pause(180)}{pause(60)}[1F 15 8F 00 C0 01 01]          [1F 61]                                      [1F 15 58 01 C1 01 01]  [1F 61][1F E7 8F 00][19 10 01][19 22 00 03 8F 00][1F 14 00]{window_open(1)}[1F 41 12]@Pictures taken instantaneously!" next
-    "@I'm a photographic genius,{pause(15)}" linebreak
-    "  if I do say so myself!" next
-    "@Okay,{pause(15)} get ready for an instant memory!" next
-    "@Look at the camera...{pause(20)}" linebreak
-    "  Ready..." next
-    "@Say,{pause(15)} <fuzzy pickles.>" next
+    /*
+    "[06 FE 01 {e(data_55.l_0xc9992f)}]" call(data_36.l_0xc7dd74) "{music(88)}{pause(180)}{pause(60)}[1F 15 8F 00 C0 01 01]          [1F 61]                                      [1F 15 58 01 C1 01 01]  [1F 61][1F E7 8F 00][19 10 01][19 22 00 03 8F 00][1F 14 00]{window_open(1)}[1F 41 12]@Снимки, сделанные мгновенно!" next
+    "@Я гениальный фотограф,{pause(15)}" linebreak
+    "  если можно так сказать!" next
+    "@Хорошо,{pause(15)} приготовьтесь к мгновенной памяти!" next
+    "@Посмотрите в камеру...{pause(20)}" linebreak
+    "  Готовьтесь..." next
+    "@Скажите,{pause(15)} <пушистые пикули.>" next
+    "{window_closeall}[1F EB 01 06][06 FD 01 {e(l_0xc7ac3a)}][1F 15 0E 00 C2 01 01] " goto(l_0xc7ac42)
+    */
+    "[06 FE 01 {e(data_55.l_0xc9992f)}]" call(data_36.l_0xc7dd74) "{music(88)}{pause(180)}{pause(60)}[1F 15 8F 00 C0 01 01]          [1F 61]                                      [1F 15 58 01 C1 01 01]  [1F 61][1F E7 8F 00][19 10 01][19 22 00 03 8F 00][1F 14 00]{window_open(1)}[1F 41 12]@[83][9F][9A][9E][9C][9A], [A3][95][96][9D][91][9F][9F][C2][96] [9E][94][9F][A0][93][96][9F][9F][A0]!" next
+    "@[B6] [94][96][9F][9A][91][9D][C3][9F][C2][9B] [A6][A0][A4][A0][94][A2][91][A6],{pause(15)}" linebreak
+    "  [96][A3][9D][9A] [9E][A0][98][9F][A0] [A4][91][9C] [A3][9C][91][99][91][A4][C3]!" next
+    "@[87][A0][A2][A0][AA][A0],{pause(15)} [A1][A2][9A][94][A0][A4][A0][93][C3][A4][96][A3][C3] [9C] [9E][94][9F][A0][93][96][9F][9F][A0][9B] [A1][91][9E][C6][A4][9A]!" next
+    "@[81][A0][A3][9E][A0][A4][A2][9A][A4][96] [93] [9C][91][9E][96][A2][A5]...{pause(20)}" linebreak
+    "  [74][A0][A4][A0][93][C3][A4][96][A3][C3]..." next
+    "@[83][9C][91][98][9A][A4][96],{pause(15)} <[A1][A5][AA][9A][A3][A4][C2][96] [A1][9A][9C][A5][9D][9A].>" next
     "{window_closeall}[1F EB 01 06][06 FD 01 {e(l_0xc7ac3a)}][1F 15 0E 00 C2 01 01] " goto(l_0xc7ac42)
 
 l_0xc7ac3a:

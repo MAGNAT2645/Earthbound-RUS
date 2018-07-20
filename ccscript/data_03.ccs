@@ -361,7 +361,7 @@ l_0xc543f5:
 l_0xc54451:
     newline
     " <[1C 05 64]>" next
-    call(data_05.l_0xc56cb5) "300 HP and about 50 PP." end
+    call(data_05.l_0xc56cb5) "300 [80][79] [9A] [A0][9C][A0][9D][A0] 50 [80][81]." end
 
 l_0xc54471:
     newline

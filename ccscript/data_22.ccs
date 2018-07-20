@@ -197,7 +197,7 @@ l_0xc67229:
     "@He's driving me nuts.{pause(20)}  Are you two friends?" linebreak
     "[19 02]Yes" eob*/
 l_0xc67237:
-    "@[7C][91][9C] [A2][91][99] [9C][A3][A4][91][A4][9A],{pause(15)} [1C 02 01].{pause(20)}  [7E][A0][98][96][AA][C3] [A3][95][96][9D][91][A4][C3] [A9][A4][A0]-[9F][9A][92][A5][95][C3] [A3] [81][A0][A2][9C][9A]?" next
+    "@[7C][91][9C] [A2][91][99] [9C][A3][A4][91][A4][9A],{pause(15)} [1C 02 01].{pause(20)}  [7E][A0][98][96][AA][C3] [A3][95][96][9D][91][A4][C3] [A9][A4][A0]-[9F][9A][92][A5][95][C3] [A3] [81][A0][9C][9A]?" next
     "@[80][9F] [9E][96][9F][C6] [A3] [A5][9E][91] [A3][93][A0][95][9A][A4].{pause(20)}  [73][C2] [98][96] [95][A2][A5][99][C3][C6], [95][91]?" linebreak
     "[19 02][75][91]" eob
 
@@ -248,7 +248,7 @@ l_0xc67349:
     "@I'm fine here,{pause(15)} but you're bugging the officers!" end*/
 l_0xc6739f:
     "@[84][C2] [9E][A0][98][96][AA][C3] [9A][95][A4][9A] [95][A0][9E][A0][9B]." next
-    "@[79][91][93][A4][A2][91]{pause(5)} [B6],{pause(15)} [81][A0][A2][9C][9A],{pause(15)} [A2][91][A3][A3][9C][91][98][A5] [A4][96][92][96] [93][A3][97] [A0] [A3][A4][A2][91][9F][9F][A0][9E] [9E][96][A4][96][A0][A2][9A][A4][96]." next
+    "@[79][91][93][A4][A2][91]{pause(5)} [B6],{pause(15)} [81][A0][9C][9A],{pause(15)} [A2][91][A3][A3][9C][91][98][A5] [A4][96][92][96] [93][A3][97] [A0] [A3][A4][A2][91][9F][9F][A0][9E] [9E][96][A4][96][A0][A2][9A][A4][96]." next
     "@[83][A0] [9E][9F][A0][9B] [93][A3][97] [93][A1][A0][A2][C6][95][9C][96],{pause(15)} [9F][A0] [A4][C2] [A2][91][99][95][A2][91][98][91][96][AA][C3] [A1][A0][9D][9A][A8][96][9B][A3][9C][9A][A7]!" end
 
 //Picky
@@ -264,7 +264,7 @@ l_0xc673f9:
     "@He said{pause(5)} <Picky,{pause(15)} you should stay home.>{pause(15)}  So I'm home watching our house." next
     "@Mom and Dad aren't home yet.{pause(20)}  They went out to an elegant restaurant.{wait}{set(flag 2)}" eob*/
 l_0xc67412:
-    "@[81][A0][A2][9C][9A],{pause(5)} [9E][A0][9B] [92][A2][91][A4], [93][C2][92][96][98][91][9D] [A0][A4][A3][C5][95][91] [9A] [A1][A0][94][9F][91][9D][A3][C6] [99][91] [A1][A0][9D][9A][A8][96][9B][A3][9C][A0][9B] [9E][91][AA][9A][9F][A0][9B]." next
+    "@[81][A0][9C][9A],{pause(5)} [9E][A0][9B] [92][A2][91][A4], [93][C2][92][96][98][91][9D] [A0][A4][A3][C5][95][91] [9A] [A1][A0][94][9F][91][9D][A3][C6] [99][91] [A1][A0][9D][9A][A8][96][9B][A3][9C][A0][9B] [9E][91][AA][9A][9F][A0][9B]." next
     "@[80][9F] [A3][9C][91][99][91][9D]{pause(5)} <[81][9A][9C][9A],{pause(15)} [A4][96][92][96] [A3][A4][A0][9A][A4] [A0][A3][A4][91][A4][C3][A3][C6] [95][A0][9E][91].>{pause(15)}  [7A] [93][A0][A4] [C6] [99][91] [95][A0][9E][A0][9E] [A3][9E][A0][A4][A2][C5]." next
     "@[7E][91][9E][C2] [9A] [A1][91][A1][C2] [96][C0][97] [9F][96][A4] [95][A0][9E][91].{pause(20)}  [80][9F][9A] [A1][A0][AA][9D][9A] [93] [C4][9D][96][94][91][9F][A4][9F][C2][9B] [A2][96][A3][A4][A0][A2][91][9F].{wait}{set(flag 2)}" eob
 
@@ -275,23 +275,39 @@ l_0xc67412:
 l_0xc674aa:
     "@[B6] [A0][A9][96][9F][C3] [A3][A0][9F][9F][C2][9B]..." next
     "@[7E][91][9E][91] [9A] [81][91][A1][91] [96][C0][97] [9F][96] [93][96][A2][9F][A5][9D][9A][A3][C3] [9A][99] [94][A0][A2][A0][95][91]." next
-    "@[81][A0][A2][9C][9A] [A5][92][96][98][91][9D],{pause(15)} [9A] [A0][9F] [96][C0][97] [9F][96] [93][96][A2][9F][A5][9D][A3][C6].{pause(20)}  [B6] [9F][91][95][A5][9E][C2][93][91][C5] [A1][A0][9B][A4][9A] [A1][A0][A3][A1][91][A4][C3]." end
+    "@[81][A0][9C][9A] [A5][92][96][98][91][9D],{pause(15)} [9A] [A0][9F] [96][C0][97] [9F][96] [93][96][A2][9F][A5][9D][A3][C6].{pause(20)}  [B6] [9F][91][95][A5][9E][C2][93][91][C5] [A1][A0][9B][A4][9A] [A1][A0][A3][A1][91][A4][C3]." end
 
 l_0xc67501:
-    "{music(124)}[1F 15 2F 01 6E 02 01][1F 61]{pause(30)}{window_open(1)}{music(155)}@It's been a long time,{pause(15)}" linebreak
-    "  Buzz Buzz. " next
-    "@You've been successful at foiling Master Giygas' plans." next
-    "@But...{pause(20)}  Buzz Buzz,{pause(15)} you must now surrender." next
-    "@You're no longer a hero,{pause(15)} but just a useless insect." next
-    "@I'll stomp you hard!" next
-    "{window_closeall}" call(data_23.l_0xc685b4) "[1B 03 {e(data_23.l_0xc683de)}]{pause(1)}[1F F2 2F 01 7B 02]{pause(60)}[1F EA 5B 01]{window_open(1)}@Whew!...{pause(20)}  I was taking a big chance there..." next
-    "@He came from 10 years in the future to kill me,{pause(15)} so we can't relax yet!" next
-    "@From now on,{pause(15)} you'll be fighting enemies sent by Giygas," next
-    "@as well as humans who have evil thoughts." next
-    "@They'll definitely make trouble during your adventure!" next
-    "@Animals are also becoming violent" next
-    "@due to Giygas' influence over the evil in their minds!" next
-    "@It is the truth,{pause(15)} so listen!{wait}{window_closeall}" eob
+    /*
+    "{music(124)}[1F 15 2F 01 6E 02 01][1F 61]{pause(30)}{window_open(1)}{music(155)}@Это было давно,{pause(15)}" linebreak
+    "  Базз Базз. " next
+    "@Ты успешно справился с планами Мастера Гийгаса." next
+    "@Но...{pause(20)}  Базз Базз,{pause(15)} теперь ты должен сдаться." next
+    "@Ты больше не герой,{pause(15)} а просто бесполезное насекомое." next
+    "@Я буду сильно давить тебя!" next
+    "{window_closeall}" call(data_23.l_0xc685b4) "[1B 03 {e(data_23.l_0xc683de)}]{pause(1)}[1F F2 2F 01 7B 02]{pause(60)}[1F EA 5B 01]{window_open(1)}@Фух!...{pause(20)}  У меня был большой шанс..." next
+    "@Он пришёл из 10 лет в будущем, чтобы убить меня,{pause(15)} поэтому мы ещё не можем расслабляться!" next
+    "@Впредь,{pause(15)} ты будешь сражаться с врагами, посланными Гийгасом," next
+    "@а также людьми со злыми мыслями." next
+    "@Они определённо будут беспокоить тебя во время путешествия!" next
+    "@Животные также становяться жестокими" next
+    "@из-зи злого влияния Гийгаса в их мыслях!" next
+    "@Это правда,{pause(15)} поэтому послушай!{wait}{window_closeall}" eob
+    */
+    "{music(124)}[1F 15 2F 01 6E 02 01][1F 61]{pause(30)}{window_open(1)}{music(155)}@[B4][A4][A0] [92][C2][9D][A0] [95][91][93][9F][A0],{pause(15)}" linebreak
+    "  [72][91][99][99] [72][91][99][99]. " next
+    "@[84][C2] [A5][A3][A1][96][AA][9F][A0] [A3][A1][A2][91][93][9A][9D][A3][C6] [A3] [A1][9D][91][9F][91][9E][9A] [7E][91][A3][A4][96][A2][91] [74][9A][9B][94][91][A3][91]." next
+    "@[7F][A0]...{pause(20)}  [72][91][99][99] [72][91][99][99],{pause(15)} [A4][96][A1][96][A2][C3] [A4][C2] [95][A0][9D][98][96][9F] [A3][95][91][A4][C3][A3][C6]." next
+    "@[84][C2] [92][A0][9D][C3][AA][96] [9F][96] [94][96][A2][A0][9B],{pause(15)} [91] [A1][A2][A0][A3][A4][A0] [92][96][A3][A1][A0][9D][96][99][9F][A0][96] [9F][91][A3][96][9C][A0][9E][A0][96]." next
+    "@[B6] [92][A5][95][A5] [A3][9A][9D][C3][9F][A0] [95][91][93][9A][A4][C3] [A4][96][92][C6]!" next
+    "{window_closeall}" call(data_23.l_0xc685b4) "[1B 03 {e(data_23.l_0xc683de)}]{pause(1)}[1F F2 2F 01 7B 02]{pause(60)}[1F EA 5B 01]{window_open(1)}@[86][A5][A7]!...{pause(20)}  [85] [9E][96][9F][C6] [92][C2][9D] [92][A0][9D][C3][AA][A0][9B] [AA][91][9F][A3]..." next
+    "@[80][9F] [A1][A2][9A][AA][97][9D] [9A][99] 10 [9D][96][A4] [93] [92][A5][95][A5][C0][96][9E], [A9][A4][A0][92][C2] [A5][92][9A][A4][C3] [9E][96][9F][C6],{pause(15)} [A1][A0][C4][A4][A0][9E][A5] [9E][C2] [96][C0][97] [9F][96] [9E][A0][98][96][9E] [A2][91][A3][A3][9D][91][92][9D][C6][A4][C3][A3][C6]!" next
+    "@[73][A1][A2][96][95][C3],{pause(15)} [A4][C2] [92][A5][95][96][AA][C3] [A3][A2][91][98][91][A4][C3][A3][C6] [A3] [93][A2][91][94][91][9E][9A], [A1][A0][A3][9D][91][9F][9F][C2][9E][9A] [74][9A][9B][94][91][A3][A0][9E]," next
+    "@[91] [A4][91][9C][98][96] [9D][C5][95][C3][9E][9A] [A3][A0] [99][9D][C2][9E][9A] [9E][C2][A3][9D][C6][9E][9A]." next
+    "@[80][9F][9A] [A0][A1][A2][96][95][96][9D][97][9F][9F][A0] [92][A5][95][A5][A4] [92][96][A3][A1][A0][9C][A0][9A][A4][C3] [A4][96][92][C6] [93][A0] [93][A2][96][9E][C6] [A1][A5][A4][96][AA][96][A3][A4][93][9A][C6]!" next
+    "@[78][9A][93][A0][A4][9F][C2][96] [A4][91][9C][98][96] [A3][A4][91][9F][A0][93][C6][A4][C3][A3][C6] [98][96][A3][A4][A0][9C][9A][9E][9A]" next
+    "@[9A][99]-[99][9A] [99][9D][A0][94][A0] [93][9D][9A][C6][9F][9A][C6] [74][9A][9B][94][91][A3][91] [93] [9A][A7] [9E][C2][A3][9D][C6][A7]!" next
+    "@[B4][A4][A0] [A1][A2][91][93][95][91],{pause(15)} [A1][A0][C4][A4][A0][9E][A5] [A1][A0][A3][9D][A5][AA][91][9B]!{wait}{window_closeall}" eob
 
 l_0xc676d4:
     "@(Please take my son along." next
@@ -522,12 +538,12 @@ l_0xc68139:
     "{window_closeall}[1F 11 05][1F EB 05 06][06 2D 01 {e(l_0xc681b5)}][1F F1 13 00 2F 00][1F 61][1F 1E 13 00 06][1F EC 05 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@(Pokey joins you.)[03]{window_closeall}" eob
 */
 l_0xc68174:
-    "{window_closeall}[1F 11 05][1F EB 05 06][06 2D 01 {e(l_0xc681b5)}][1F F1 13 00 2F 00][1F 61][1F 1E 13 00 06][1F EC 05 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@([81][A0][A2][9C][9A] [A1][A2][9A][A3][A0][96][95][9A][9F][C6][96][A4][A3][C6] [9C] [A4][96][92][96].)[03]{window_closeall}" eob
+    "{window_closeall}[1F 11 05][1F EB 05 06][06 2D 01 {e(l_0xc681b5)}][1F F1 13 00 2F 00][1F 61][1F 1E 13 00 06][1F EC 05 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@([81][A0][9C][9A] [A1][A2][9A][A3][A0][96][95][9A][9F][C6][96][A4][A3][C6] [9C] [A4][96][92][96].)[03]{window_closeall}" eob
 
 /*l_0xc681b5:
     "[1F F1 11 00 2F 00][1F 61][1F 1E 11 00 06][1F EC 05 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@(Pokey joins you.)[03]{window_closeall}" eob*/
 l_0xc681b5:
-    "[1F F1 11 00 2F 00][1F 61][1F 1E 11 00 06][1F EC 05 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@([81][A0][A2][9C][9A] [A1][A2][9A][A3][A0][96][95][9A][9F][C6][96][A4][A3][C6] [9C] [A4][96][92][96].)[03]{window_closeall}" eob
+    "[1F F1 11 00 2F 00][1F 61][1F 1E 11 00 06][1F EC 05 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@([81][A0][9C][9A] [A1][A2][9A][A3][A0][96][95][9A][9F][C6][96][A4][A3][C6] [9C] [A4][96][92][96].)[03]{window_closeall}" eob
 
 l_0xc681e6:
     newline

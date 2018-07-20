@@ -240,32 +240,60 @@ l_0xc7786e:
     "@It takes you to the truth about yourself.{wait}[1F E1 1F 06 3C]" eob
 
 l_0xc7794c:
-    "[06 4A 00 {e(data_35.l_0xc7c588)}]@(I'm the evil part of your brain." next
-    "@You can't beat me." next
-    "@Because you are the one who forced me into being...)[03]" call(data_23.l_0xc6857c) "[1B 03 {e(data_23.l_0xc683de)}]{set(flag 74)}{pause(1)}[1F F1 4E 05 7B 02]{pause(40)}[1F 15 6A 00 00 03 01][1F 61][1F E7 6A 00]{window_open(1)}@([1C 02 01] heard a familiar voice at the center of the Sea of Eden.)" next
-    call(l_0xc77c50) "@Giygas' goal is" linebreak
-    "  to destroy you." next
-    call(l_0xc77c50) "@Listen carefully!" next
-    call(l_0xc77c50) "@Everything in the unverse could be destroyed at the hands of Giygas." next
-    call(l_0xc77c50) "@But he and his followers are also in trouble." next
-    call(l_0xc77c50) "@The Apple of Enlightenment has foretold" next
-    call(l_0xc77c50) "@that Giygas' attempt will fail." next
-    call(l_0xc77c50) "@It is because of the existence of a boy named [1C 02 01]." next
-    call(l_0xc77c50) "@...That's me!" next
-    call(l_0xc77c50) "@Listen." next
-    call(l_0xc77c50) "@Free your mind and KNOW what you must do!" next
-    call(l_0xc77c50) "@Your destiny has already been decided." next
-    call(l_0xc77c50) "@You...{pause(20)} I...{pause(20)} where should we go?" next
-    call(l_0xc77c50) "@You know deep within the reaches of your mind." next
-    call(l_0xc77c50) "@...S{pause(15)} ...Sat...{pause(20)}" linebreak
-    "  ...Saturn" next
+    /*
+    "[06 4A 00 {e(data_35.l_0xc7c588)}]@(Я - злая часть твоего мозга." next
+    "@Ты не можешь победить меня." next
+    "@Потому что ты тот, кто заставил меня быть...)[03]" call(data_23.l_0xc6857c) "[1B 03 {e(data_23.l_0xc683de)}]{set(flag 74)}{pause(1)}[1F F1 4E 05 7B 02]{pause(40)}[1F 15 6A 00 00 03 01][1F 61][1F E7 6A 00]{window_open(1)}@([1C 02 01] услышал знакомый голос в центре Райского Моря.)" next
+    call(l_0xc77c50) "@Целью Гийгаса является" linebreak
+    "  твоё уничтожение." next
+    call(l_0xc77c50) "@Слушай внимательно!" next
+    call(l_0xc77c50) "@Всё во вселенной может быть уничтожено в руках Гийгаса." next
+    call(l_0xc77c50) "@Но он и его последователи тоже в беде." next
+    call(l_0xc77c50) "@Яблоком Просвещения предсказано," next
+    call(l_0xc77c50) "@что попытка Гийгаса провалится." next
+    call(l_0xc77c50) "@Это будет из-за существования мальчика по имени [1C 02 01]." next
+    call(l_0xc77c50) "@...Это я!" next
+    call(l_0xc77c50) "@Послушай." next
+    call(l_0xc77c50) "@Освободи свой разум и УЗНАЙ, что ты должен делать!" next
+    call(l_0xc77c50) "@Твоя судьба уже решена." next
+    call(l_0xc77c50) "@Ты...{pause(20)} Я...{pause(20)} куда мы пойдём?" next
+    call(l_0xc77c50) "@Ты знаешь глубину в пределах своего разума." next
+    call(l_0xc77c50) "@...С{pause(15)} ...Сат...{pause(20)}" linebreak
+    "  ...Сатурн" next
     "@....." next
-    call(l_0xc77c50) "@Saturn Valley...{pause(20)} yes..." next
-    call(l_0xc77c50) "@Go to the valley where the Mr. Saturn live." next
-    call(l_0xc77c50) "@...You'll get something new there." next
-    call(l_0xc77c50) "@Soon, Magicant will be no more.{pause(20)}  We must be quick![03]" call(l_0xc77c50) "{window_closetop}{pause(120)}{window_open(1)}@([1C 02 01] really heard his own voice." next
-    "@Go to Saturn Valley!" next
-    "@Go to Saturn Valley now!){wait}{window_closetop}[1F 07 03]" call(l_0xc77c50) "{pause(60)}" goto(data_36.l_0xc7dfbe)
+    call(l_0xc77c50) "@Долина Сатурн...{pause(20)} да..." next
+    call(l_0xc77c50) "@Иди в долину, где живёт Мр. Сатурн." next
+    call(l_0xc77c50) "@...Ты получишь что-то новое." next
+    call(l_0xc77c50) "@Скоро, Магиканта больше не будет.{pause(20)}  Мы должны быть быстрыми![03]" call(l_0xc77c50) "{window_closetop}{pause(120)}{window_open(1)}@([1C 02 01] действительно услышал свой голос." next
+    "@Иди в Долину Сатурн!" next
+    "@Иди в Долину Сатурн сейчас!){wait}{window_closetop}[1F 07 03]" call(l_0xc77c50) "{pause(60)}" goto(data_36.l_0xc7dfbe)
+    */
+    "[06 4A 00 {e(data_35.l_0xc7c588)}]@([B6] - [99][9D][91][C6] [A9][91][A3][A4][C3] [A4][93][A0][96][94][A0] [9E][A0][99][94][91]." next
+    "@[84][C2] [9F][96] [9E][A0][98][96][AA][C3] [A1][A0][92][96][95][9A][A4][C3] [9E][96][9F][C6]." next
+    "@[81][A0][A4][A0][9E][A5] [A9][A4][A0] [A4][C2] [A4][A0][A4], [9C][A4][A0] [99][91][A3][A4][91][93][9A][9D] [9E][96][9F][C6] [92][C2][A4][C3]...)[03]" call(data_23.l_0xc6857c) "[1B 03 {e(data_23.l_0xc683de)}]{set(flag 74)}{pause(1)}[1F F1 4E 05 7B 02]{pause(40)}[1F 15 6A 00 00 03 01][1F 61][1F E7 6A 00]{window_open(1)}@([1C 02 01] [A5][A3][9D][C2][AA][91][9D] [99][9F][91][9C][A0][9E][C2][9B] [94][A0][9D][A0][A3] [93] [A8][96][9F][A4][A2][96] [82][91][9B][A3][9C][A0][94][A0] [7E][A0][A2][C6].)" next
+    call(l_0xc77c50) "@[88][96][9D][C3][C5] [74][9A][9B][94][91][A3][91] [C6][93][9D][C6][96][A4][A3][C6]" linebreak
+    "  [A4][93][A0][97] [A5][9F][9A][A9][A4][A0][98][96][9F][9A][96]." next
+    call(l_0xc77c50) "@[83][9D][A5][AA][91][9B] [93][9F][9A][9E][91][A4][96][9D][C3][9F][A0]!" next
+    call(l_0xc77c50) "@[73][A3][97] [93][A0] [93][A3][96][9D][96][9F][9F][A0][9B] [9E][A0][98][96][A4] [92][C2][A4][C3] [A5][9F][9A][A9][A4][A0][98][96][9F][A0] [93] [A2][A5][9C][91][A7] [74][9A][9B][94][91][A3][91]." next
+    call(l_0xc77c50) "@[7F][A0] [A0][9F] [9A] [96][94][A0] [A1][A0][A3][9D][96][95][A0][93][91][A4][96][9D][9A] [A4][A0][98][96] [93] [92][96][95][96]." next
+    call(l_0xc77c50) "@[B6][92][9D][A0][9C][A0][9E] [81][A2][A0][A3][93][96][C0][96][9F][9A][C6] [A1][A2][96][95][A3][9C][91][99][91][9F][A0]," next
+    call(l_0xc77c50) "@[A9][A4][A0] [A1][A0][A1][C2][A4][9C][91] [74][9A][9B][94][91][A3][91] [A1][A2][A0][93][91][9D][9A][A4][A3][C6]." next
+    call(l_0xc77c50) "@[B4][A4][A0] [92][A5][95][96][A4] [9A][99]-[99][91] [A3][A5][C0][96][A3][A4][93][A0][93][91][9F][9A][C6] [9E][91][9D][C3][A9][9A][9C][91] [A1][A0] [9A][9E][96][9F][9A] [1C 02 01]." next
+    call(l_0xc77c50) "@...[B4][A4][A0] [C6]!" next
+    call(l_0xc77c50) "@[81][A0][A3][9D][A5][AA][91][9B]." next
+    call(l_0xc77c50) "@[80][A3][93][A0][92][A0][95][9A] [A3][93][A0][9B] [A2][91][99][A5][9E] [9A] [85][79][7F][71][7B], [A9][A4][A0] [A4][C2] [95][A0][9D][98][96][9F] [95][96][9D][91][A4][C3]!" next
+    call(l_0xc77c50) "@[84][93][A0][C6] [A3][A5][95][C3][92][91] [A5][98][96] [A2][96][AA][96][9F][91]." next
+    call(l_0xc77c50) "@[84][C2]...{pause(20)} [B6]...{pause(20)} [9C][A5][95][91] [9E][C2] [A1][A0][9B][95][97][9E]?" next
+    call(l_0xc77c50) "@[84][C2] [99][9F][91][96][AA][C3] [94][9D][A5][92][9A][9F][A5] [93] [A1][A2][96][95][96][9D][91][A7] [A3][93][A0][96][94][A0] [A2][91][99][A5][9E][91]." next
+    call(l_0xc77c50) "@...[83]{pause(15)} ...[83][91][A4]...{pause(20)}" linebreak
+    "  ...[83][91][A4][A5][A2][9F]" next
+    "@....." next
+    call(l_0xc77c50) "@[75][A0][9D][9A][9F][91] [83][91][A4][A5][A2][9F]...{pause(20)} [95][91]..." next
+    call(l_0xc77c50) "@[7A][95][9A] [93] [95][A0][9D][9A][9F][A5], [94][95][96] [98][9A][93][97][A4] [7E][A2]. [83][91][A4][A5][A2][9F]." next
+    call(l_0xc77c50) "@...[84][C2] [A1][A0][9D][A5][A9][9A][AA][C3] [A9][A4][A0]-[A4][A0] [9F][A0][93][A0][96]." next
+    call(l_0xc77c50) "@[83][9C][A0][A2][A0], [7E][91][94][9A][9C][91][9F][A4][91] [92][A0][9D][C3][AA][96] [9F][96] [92][A5][95][96][A4].{pause(20)}  [7E][C2] [95][A0][9D][98][9F][C2] [92][C2][A4][C3] [92][C2][A3][A4][A2][C2][9E][9A]![03]" call(l_0xc77c50) "{window_closetop}{pause(120)}{window_open(1)}@([1C 02 01] [95][96][9B][A3][A4][93][9A][A4][96][9D][C3][9F][A0] [A5][A3][9D][C2][AA][91][9D] [A3][93][A0][9B] [94][A0][9D][A0][A3]." next
+    "@[7A][95][9A] [93] [75][A0][9D][9A][9F][A5] [83][91][A4][A5][A2][9F]!" next
+    "@[7A][95][9A] [93] [75][A0][9D][9A][9F][A5] [83][91][A4][A5][A2][9F] [A3][96][9B][A9][91][A3]!){wait}{window_closetop}[1F 07 03]" call(l_0xc77c50) "{pause(60)}" goto(data_36.l_0xc7dfbe)
 
 l_0xc77c4f:
     eob

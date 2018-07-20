@@ -329,35 +329,66 @@ l_0xc7dfb9:
     "{counter(1)}{ctoarg}" eob
 
 l_0xc7dfbe:
-    "[1F 13 01 02]{pause(16)}[1F 13 01 03]{pause(12)}[1F 13 01 04]{pause(8)}[1F 13 01 05]{pause(60)}{music(79)}[1F EA 6A 00][1F 61][1F E7 6A 00]{open_hp}[1F 41 0D]{window_open(1)}@[1C 01 08] was filled with the Power of the Giant Step!" next
-    "@[1C 01 08]'s Speed increased by 5!{sound(40)}[1E 0C 01 05]" next
-    "@[1C 01 08]'s Vitality increased by 5!{sound(40)}[1E 0D 01 05]" next
-    "@[1C 01 08] was filled with the Power of the Lilliput Steps!" next
-    "@[1C 01 08]'s Guts increased by 5!{sound(40)}[1E 0B 01 05]" next
-    "@[1C 01 08]'s Luck increased by 5!{sound(40)}[1E 0E 01 05]" next
-    "@[1C 01 08] was filled with the Power of the Milky Well!" next
-    "@[1C 01 08]'s Speed increased by 5!{sound(40)}[1E 0C 01 05]" next
-    "@[1C 01 08]'s IQ increased by 5!{sound(40)}[1E 0A 01 05]" next
-    "@[1C 01 08] was filled with the Power of the Magnet Hill!" next
-    "@[1C 01 08]'s Vitality increased by 5!{sound(40)}[1E 0D 01 05]" next
-    "@[1C 01 08]'s Luck increased by 5!{sound(40)}[1E 0E 01 05]" next
-    "@[1C 01 08] was filled with the Power of the Rainy Circle!" next
-    "@[1C 01 08]'s Guts increased by 5!{sound(40)}[1E 0B 01 05]" next
-    "@[1C 01 08]'s IQ increased by 5!{sound(40)}[1E 0A 01 05]" next
-    "@[1C 01 08] was filled with the Power of the Pink Cloud!" next
-    "@[1C 01 08]'s Speed increased by 5!{sound(40)}[1E 0C 01 05]" next
-    "@[1C 01 08]'s Guts increased by 5!{sound(40)}[1E 0B 01 05]" next
-    "@[1C 01 08] was filled with the Power of the Lumine Hole!" next
-    "@[1C 01 08]'s Luck increased by 5!{sound(40)}[1E 0E 01 05]" next
-    "@[1C 01 08]'s IQ increased by 5!{sound(40)}[1E 0A 01 05]" next
-    "@[1C 01 08] was filled with the Power of the Fire Spring!" next
-    "@[1C 01 08]'s Speed increased by 5!{sound(40)}[1E 0C 01 05]" next
-    "@[1C 01 08]'s Luck increased by 5!{sound(40)}[1E 0E 01 05][03]{window_closeall}[1F 41 0E]{pause(60)}{window_open(1)}@Instantly, [1C 01 08]'s mind cleared," next
-    "@and he realized that he had possessed great power!" next
-    "@At that moment, [1C 01 08]'s psychic powers radically expanded!{sound(40)}{set(flag 74)}[03]{window_closeall}{pause(30)}{window_open(14)}@[1C 01 08] gained 200,000 exp.[03][1E 09 01 40 0D 03]" linebreak
+    /*
+    "[1F 13 01 02]{pause(16)}[1F 13 01 03]{pause(12)}[1F 13 01 04]{pause(8)}[1F 13 01 05]{pause(60)}{music(79)}[1F EA 6A 00][1F 61][1F E7 6A 00]{open_hp}[1F 41 0D]{window_open(1)}@[1C 01 08] наполняется силой Следа Гиганта!" next
+    "@Скорость персонажа [1C 01 08] увеличилась 5!{sound(40)}[1E 0C 01 05]" next
+    "@Живучесть персонажа [1C 01 08] увеличилась на 5!{sound(40)}[1E 0D 01 05]" next
+    "@[1C 01 08] наполняется силой Шагов Лилипута!" next
+    "@Выдержка персонажа [1C 01 08] увеличилась на 5!{sound(40)}[1E 0B 01 05]" next
+    "@Удача персонажа [1C 01 08] увеличилась на 5!{sound(40)}[1E 0E 01 05]" next
+    "@[1C 01 08] наполняется силой Млечного Пруда!" next
+    "@Скорость персонажа [1C 01 08] увеличилась на 5!{sound(40)}[1E 0C 01 05]" next
+    "@Интеллект персонажа [1C 01 08] увеличился на 5!{sound(40)}[1E 0A 01 05]" next
+    "@[1C 01 08] наполняется силой Магнитной Горки!" next
+    "@Живучесть персонажа [1C 01 08] увеличилась на 5!{sound(40)}[1E 0D 01 05]" next
+    "@Удача персонажа [1C 01 08] увеличилась на 5!{sound(40)}[1E 0E 01 05]" next
+    "@[1C 01 08] наполняется силой Дождевого Округа!" next
+    "@Выдержка персонажа [1C 01 08] увеличилась на 5!{sound(40)}[1E 0B 01 05]" next
+    "@Интеллект персонажа [1C 01 08] увеличился на 5!{sound(40)}[1E 0A 01 05]" next
+    "@[1C 01 08] наполняется силой Розового Облака!" next
+    "@Скорость персонажа [1C 01 08] увеличилась на 5!{sound(40)}[1E 0C 01 05]" next
+    "@Выдержка персонажа [1C 01 08] увеличилась на 5!{sound(40)}[1E 0B 01 05]" next
+    "@[1C 01 08] наполняется силой Светящегося Коридора!" next
+    "@Удача персонажа [1C 01 08] увеличилась на 5!{sound(40)}[1E 0E 01 05]" next
+    "@Интеллект персонажа [1C 01 08] увеличился на 5!{sound(40)}[1E 0A 01 05]" next
+    "@[1C 01 08] наполняется силой Огненных Источников!" next
+    "@Скорость персонажа [1C 01 08] увеличилась на 5!{sound(40)}[1E 0C 01 05]" next
+    "@Удача персонажа [1C 01 08] увеличилась на 5!{sound(40)}[1E 0E 01 05][03]{window_closeall}[1F 41 0E]{pause(60)}{window_open(1)}@Тотчас, разум персонажа [1C 01 08] очищен," next
+    "@и он понял, что обладает великой силой!" next
+    "@Теперь, психические силы персонажа [1C 01 08] радикально расширены!{sound(40)}{set(flag 74)}[03]{window_closeall}{pause(30)}{window_open(14)}@[1C 01 08] получает 200,000 опыта.[03][1E 09 01 40 0D 03]" linebreak
     "[1F 04 03]" newline
-    "@And finally, he realized{sound(103)} he had the power of Teleport [8C].[1F 71 01 01][1F 71 01 04]{prompt}[1F 04 01]{window_closeall}{pause(120)}{pause(180)}{pause(10)}[1F EB 01 06][1F E5 FF][1F 15 01 00 05 03 01]{pause(10)}[1F EA 6A 00][1F 61]{window_open(1)}@[1C 01 08] made all of the hidden powers his own." next
-    "@[1C 01 08] absorbed the power of the land into his heart, and Magicant was no more.[03]{window_closeall}" goto(data_57.l_0xc9b4c9)
+    "@И наконец, он осознает{sound(103)} силу Телепорта [8C].[1F 71 01 01][1F 71 01 04]{prompt}[1F 04 01]{window_closeall}{pause(120)}{pause(180)}{pause(10)}[1F EB 01 06][1F E5 FF][1F 15 01 00 05 03 01]{pause(10)}[1F EA 6A 00][1F 61]{window_open(1)}@[1C 01 08] сделал все скрытые силы своими." next
+    "@[1C 01 08] поглотил власть Земли в своё сердце, и Магиканта больше нет.[03]{window_closeall}" goto(data_57.l_0xc9b4c9)
+    */
+    "[1F 13 01 02]{pause(16)}[1F 13 01 03]{pause(12)}[1F 13 01 04]{pause(8)}[1F 13 01 05]{pause(60)}{music(79)}[1F EA 6A 00][1F 61][1F E7 6A 00]{open_hp}[1F 41 0D]{window_open(1)}@[1C 01 08] [9F][91][A1][A0][9D][9F][C6][96][A4][A3][C6] [A3][9A][9D][A0][9B] [83][9D][96][95][91] [74][9A][94][91][9F][A4][91]!" next
+    "@[83][9C][A0][A2][A0][A3][A4][C3] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] 5!{sound(40)}[1E 0C 01 05]" next
+    "@[78][9A][93][A5][A9][96][A3][A4][C3] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] 5!{sound(40)}[1E 0D 01 05]" next
+    "@[1C 01 08] [9F][91][A1][A0][9D][9F][C6][96][A4][A3][C6] [A3][9A][9D][A0][9B] [8A][91][94][A0][93] [7D][9A][9D][9A][A1][A5][A4][91]!" next
+    "@[73][C2][95][96][A2][98][9C][91] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] 5!{sound(40)}[1E 0B 01 05]" next
+    "@[85][95][91][A9][91] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] 5!{sound(40)}[1E 0E 01 05]" next
+    "@[1C 01 08] [9F][91][A1][A0][9D][9F][C6][96][A4][A3][C6] [A3][9A][9D][A0][9B] [7E][9D][96][A9][9F][A0][94][A0] [81][A2][A5][95][91]!" next
+    "@[83][9C][A0][A2][A0][A3][A4][C3] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] 5!{sound(40)}[1E 0C 01 05]" next
+    "@[7A][9F][A4][96][9D][9D][96][9C][A4] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A5][93][96][9D][9A][A9][9A][9D][A3][C6] [9F][91] 5!{sound(40)}[1E 0A 01 05]" next
+    "@[1C 01 08] [9F][91][A1][A0][9D][9F][C6][96][A4][A3][C6] [A3][9A][9D][A0][9B] [7E][91][94][9F][9A][A4][9F][A0][9B] [74][A0][A2][9C][9A]!" next
+    "@[78][9A][93][A5][A9][96][A3][A4][C3] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] 5!{sound(40)}[1E 0D 01 05]" next
+    "@[85][95][91][A9][91] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] 5!{sound(40)}[1E 0E 01 05]" next
+    "@[1C 01 08] [9F][91][A1][A0][9D][9F][C6][96][A4][A3][C6] [A3][9A][9D][A0][9B] [75][A0][98][95][96][93][A0][94][A0] [80][9C][A2][A5][94][91]!" next
+    "@[73][C2][95][96][A2][98][9C][91] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] 5!{sound(40)}[1E 0B 01 05]" next
+    "@[7A][9F][A4][96][9D][9D][96][9C][A4] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A5][93][96][9D][9A][A9][9A][9D][A3][C6] [9F][91] 5!{sound(40)}[1E 0A 01 05]" next
+    "@[1C 01 08] [9F][91][A1][A0][9D][9F][C6][96][A4][A3][C6] [A3][9A][9D][A0][9B] [82][A0][99][A0][93][A0][94][A0] [80][92][9D][91][9C][91]!" next
+    "@[83][9C][A0][A2][A0][A3][A4][C3] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] 5!{sound(40)}[1E 0C 01 05]" next
+    "@[73][C2][95][96][A2][98][9C][91] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] 5!{sound(40)}[1E 0B 01 05]" next
+    "@[1C 01 08] [9F][91][A1][A0][9D][9F][C6][96][A4][A3][C6] [A3][9A][9D][A0][9B] [83][93][96][A4][C6][C0][96][94][A0][A3][C6] [7C][A0][A2][9A][95][A0][A2][91]!" next
+    "@[85][95][91][A9][91] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] 5!{sound(40)}[1E 0E 01 05]" next
+    "@[7A][9F][A4][96][9D][9D][96][9C][A4] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A5][93][96][9D][9A][A9][9A][9D][A3][C6] [9F][91] 5!{sound(40)}[1E 0A 01 05]" next
+    "@[1C 01 08] [9F][91][A1][A0][9D][9F][C6][96][A4][A3][C6] [A3][9A][9D][A0][9B] [80][94][9F][96][9F][9F][C2][A7] [7A][A3][A4][A0][A9][9F][9A][9C][A0][93]!" next
+    "@[83][9C][A0][A2][A0][A3][A4][C3] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] 5!{sound(40)}[1E 0C 01 05]" next
+    "@[85][95][91][A9][91] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] 5!{sound(40)}[1E 0E 01 05][03]{window_closeall}[1F 41 0E]{pause(60)}{window_open(1)}@[84][A0][A4][A9][91][A3], [A2][91][99][A5][9E] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A0][A9][9A][C0][96][9F]," next
+    "@[9A] [A0][9F] [A1][A0][9F][C6][9D], [A9][A4][A0] [A0][92][9D][91][95][91][96][A4] [93][96][9D][9A][9C][A0][9B] [A3][9A][9D][A0][9B]!" next
+    "@[84][96][A1][96][A2][C3], [A1][A3][9A][A7][9A][A9][96][A3][9C][9A][96] [A3][9A][9D][C2] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A2][91][95][9A][9C][91][9D][C3][9F][A0] [A2][91][A3][AA][9A][A2][96][9F][C2]!{sound(40)}{set(flag 74)}[03]{window_closeall}{pause(30)}{window_open(14)}@[1C 01 08] [A1][A0][9D][A5][A9][91][96][A4] 200,000 [A0][A1][C2][A4][91].[03][1E 09 01 40 0D 03]" linebreak
+    "[1F 04 03]" newline
+    "@[7A] [9F][91][9C][A0][9F][96][A8], [A0][9F] [A0][A3][A0][99][9F][91][96][A4]{sound(103)} [A3][9A][9D][A5] [84][96][9D][96][A1][A0][A2][A4][91] [8C].[1F 71 01 01][1F 71 01 04]{prompt}[1F 04 01]{window_closeall}{pause(120)}{pause(180)}{pause(10)}[1F EB 01 06][1F E5 FF][1F 15 01 00 05 03 01]{pause(10)}[1F EA 6A 00][1F 61]{window_open(1)}@[1C 01 08] [A3][95][96][9D][91][9D] [93][A3][96] [A3][9C][A2][C2][A4][C2][96] [A3][9A][9D][C2] [A3][93][A0][9A][9E][9A]." next
+    "@[1C 01 08] [A1][A0][94][9D][A0][A4][9A][9D] [93][9D][91][A3][A4][C3] [79][96][9E][9D][9A] [93] [A3][93][A0][97] [A3][96][A2][95][A8][96], [9A] [7E][91][94][9A][9C][91][9F][A4][91] [92][A0][9D][C3][AA][96] [9F][96][A4].[03]{window_closeall}" goto(data_57.l_0xc9b4c9)
 
 l_0xc7e3f9:
     eob

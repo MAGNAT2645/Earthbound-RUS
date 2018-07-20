@@ -132,11 +132,17 @@ l_0xc97cc9:
     eob
 
 l_0xc97cca:
+    /*
+    "@{user}[19 1F]{swap} сыпает" linebreak
+    "  [1C 05 00] над головой персонажа " call(data_37.l_0xc7e66e) "." next
+    "@Ух ты!! Персонаж {user}" linebreak
+    "  превратился в гигантского огнедышащего дракона![03]" eob
+    */
     newline
-    "@{user}[19 1F]{swap} sprinkled" linebreak
-    "  the [1C 05 00] over " call(data_37.l_0xc7e66e) " head." next
-    "@Yoicks!! {user} turned" linebreak
-    "  into a gigantic, fire-breathing dragon![03]" eob
+    "@{user}[19 1F]{swap} [A3][C2][A1][91][96][A4]" linebreak
+    "  [1C 05 00] [9F][91][95] [94][A0][9D][A0][93][A0][9B] [A1][96][A2][A3][A0][9F][91][98][91] " call(data_37.l_0xc7e66e) "." next
+    "@[85][A7] [A4][C2]!! [81][96][A2][A3][A0][9F][91][98] {user}" linebreak
+    "  [A1][A2][96][93][A2][91][A4][9A][9D][A3][C6] [93] [94][9A][94][91][9F][A4][A3][9C][A0][94][A0] [A0][94][9F][96][95][C2][AA][91][C0][96][94][A0] [95][A2][91][9C][A0][9F][91]![03]" eob
 
 l_0xc97d21:
     newline

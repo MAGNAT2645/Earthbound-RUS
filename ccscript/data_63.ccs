@@ -50,7 +50,7 @@ l_0xef7729:
     "  from {target}![03]" eob*/
 l_0xef773f:
     newline
-    "@[81][A0][9D][A5][A9][96][9F][A0] {delta} [80][83]" linebreak
+    "@[81][A0][9D][A5][A9][96][9F][A0] {delta} [80][81]" linebreak
     "  [A3] {target}![03]" eob
 
 /*l_0xef7755:
@@ -60,7 +60,7 @@ l_0xef773f:
 l_0xef7755:
     newline
     "@{target} [A4][96][A2][C6][96][A4]" linebreak
-    "  {delta} [80][83]![03]" eob
+    "  {delta} [80][81]![03]" eob
 
 /*l_0xef7768:
     newline
@@ -296,7 +296,7 @@ l_0xef7b28:
 
 l_0xef7b46:
     newline
-    "@" call(l_0xef7ba0) "[7E][91][9C][A3][9A][9E][91][9D][C3][9F][C2][96] [80][83] [A5][93][96][9D][9A][A9][9A][9D][9A][A3][C3] [9F][91] {delta}!{prompt}" eob
+    "@" call(l_0xef7ba0) "[7E][91][9C][A3][9A][9E][91][9D][C3][9F][C2][96] [80][81] [A5][93][96][9D][9A][A9][9A][9D][9A][A3][C3] [9F][91] {delta}!{prompt}" eob
 
 l_0xef7b64:
     newline
