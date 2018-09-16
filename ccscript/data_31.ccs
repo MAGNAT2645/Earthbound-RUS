@@ -485,22 +485,31 @@ l_0xc7699e:
   "@so we police are being ultra cautious." end
 
 l_0xc76a1f:
-  "@Why is the road to Twoson closed?{pause(20)}  An emergency,{pause(10)} of course." next
-  "@At times like this,{pause(15)} kids like you should be playing Nintendo games." next
-  "@Anyway,{pause(15)} are you sure you want to go to Twoson?" linebreak
-  "[19 02]Yes" eob
+  /*
+  "@Почему дорога в Тусон закрыта?{pause(20)}  Авария,{pause(10)} конечно же." next
+  "@В такие дни,{pause(15)} дети, как ты, должны играть в игры от Нинтендо." next
+  "@Так или иначе,{pause(15)} ты уверен, что хочешь пойти в Тусон?" linebreak
+  "[19 02]Да" eob
+  */
+  "@[81][A0][A9][96][9E][A5] [95][A0][A2][A0][94][91] [93] [84][A5][A3][A0][9F] [99][91][9C][A2][C2][A4][91]?{pause(20)}  [71][93][91][A2][9A][C6],{pause(10)} [9C][A0][9F][96][A9][9F][A0] [98][96]." next
+  "@[73] [A4][91][9C][9A][96] [95][9F][9A],{pause(15)} [95][96][A4][9A], [9C][91][9C] [A4][C2], [95][A0][9D][98][9F][C2] [9A][94][A2][91][A4][C3] [93] [9A][94][A2][C2] [A0][A4] [7F][9A][9F][A4][96][9F][95][A0]." next
+  "@[84][91][9C] [9A][9D][9A] [9A][9F][91][A9][96],{pause(15)} [A4][C2] [A5][93][96][A2][96][9F], [A9][A4][A0] [A7][A0][A9][96][AA][C3] [A1][A0][9B][A4][9A] [93] [84][A5][A3][A0][9F]?" linebreak
+  "[19 02][75][91]" eob
 
 l_0xc76a92:
-  " [19 02]No" eob
+//  " [19 02]Нет" eob
+  " [19 02][7F][96][A4]" eob
 
 l_0xc76a98:
   "[1C 07 02][11]{clearline}[09 02 {e(l_0xc76ad6)} {e(l_0xc76aa7)}]" goto(l_0xc76aa7)
 
 l_0xc76aa7:
-  "@Well then,{pause(15)} perhaps you should just crawl back to your shack,{pause(15)} little mister." end
+//  "@Ну тогда,{pause(15)} тебе следует ползти обратно в свою лачугу,{pause(15)} маленький мистер." end
+  "@[7F][A5] [A4][A0][94][95][91],{pause(15)} [A4][96][92][96] [A3][9D][96][95][A5][96][A4] [A1][A0][9D][99][A4][9A] [A0][92][A2][91][A4][9F][A0] [93] [A3][93][A0][C5] [9D][91][A9][A5][94][A5],{pause(15)} [9E][91][9D][96][9F][C3][9C][9A][9B] [9E][9A][A3][A4][96][A2]." end
 
 l_0xc76ad6:
-  "@Okay, *chortle*{pause(15)}  Follow me.[03]{set(flag 38)}{unset(flag 289)}{unset(flag 290)}{unset(flag 291)}{unset(flag 292)}{unset(flag 293)}{window_closeall}" goto(data_16.l_0xc5f859)
+//  "@Окей, *хихикает*{pause(15)}  Следуй за мной.[03]{set(flag 38)}{unset(flag 289)}{unset(flag 290)}{unset(flag 291)}{unset(flag 292)}{unset(flag 293)}{window_closeall}" goto(data_16.l_0xc5f859)
+  "@[80][9C][96][9B], *[A7][9A][A7][9A][9C][91][96][A4]*{pause(15)}  [83][9D][96][95][A5][9B] [99][91] [9E][9F][A0][9B].[03]{set(flag 38)}{unset(flag 289)}{unset(flag 290)}{unset(flag 291)}{unset(flag 292)}{unset(flag 293)}{window_closeall}" goto(data_16.l_0xc5f859)
 
 l_0xc76b0a:
   eob

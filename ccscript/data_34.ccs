@@ -466,8 +466,12 @@ l_0xc7beb9:
     ":---------------------[1F 15 6A 00 60 01 01]    {unset(flag 2)}               " call(data_36.l_0xc7dd6b) "{music(32)}" call(data_35.l_0xc7c54b) "{set(flag 2)}               [1F 61]                      {counter(1)}" call(data_36.l_0xc7dc7f) "[1B 02 {e(l_0xc7bf1e)}]{window_open(1)}@The power of Giant Step" call(data_35.l_0xc7c55d) goto(l_0xc7bf1e)
 
 l_0xc7bf1e:
-    call(data_35.l_0xc7c57d) "{set(flag 4)}{music_resume}[06 B6 00 {e(l_0xc7bf94)}]{window_open(1)}@[1C 02 01] caught a glimpse of a small, cute puppy.[03]{pause(60)}" linebreak
-    "@[1C 02 01]'s Sound Stone recorded the melody of the Giant Step.{wait}{set(flag 182)}{set(flag 36)}{set(flag 449)}{set(flag 450)}{set(flag 634)}{window_closetop}" goto(l_0xc7bf94)
+    /*
+    call(data_35.l_0xc7c57d) "{set(flag 4)}{music_resume}[06 B6 00 {e(l_0xc7bf94)}]{window_open(1)}@[1C 02 01] мельком увидел маленького, милого щеночка.[03]{pause(60)}" linebreak
+    "@Поющий Камень персонажа [1C 02 01] записал мелодию Гигантского Шага.{wait}{set(flag 182)}{set(flag 36)}{set(flag 449)}{set(flag 450)}{set(flag 634)}{window_closetop}" goto(l_0xc7bf94)
+    */
+    call(data_35.l_0xc7c57d) "{set(flag 4)}{music_resume}[06 B6 00 {e(l_0xc7bf94)}]{window_open(1)}@[1C 02 01] [9E][96][9D][C3][9C][A0][9E] [A5][93][9A][95][96][9D] [9E][91][9D][96][9F][C3][9C][A0][94][A0], [9E][9A][9D][A0][94][A0] [C0][96][9F][A0][A9][9C][91].[03]{pause(60)}" linebreak
+    "@[81][A0][C5][C0][9A][9B] [7C][91][9E][96][9F][C3] [A1][96][A2][A3][A0][9F][91][98][91] [1C 02 01] [99][91][A1][9A][A3][91][9D] [9E][96][9D][A0][95][9A][C5] [74][9A][94][91][9F][A4][A3][9C][A0][94][A0] [8A][91][94][91].{wait}{set(flag 182)}{set(flag 36)}{set(flag 449)}{set(flag 450)}{set(flag 634)}{window_closetop}" goto(l_0xc7bf94)
 
 l_0xc7bf94:
     eob

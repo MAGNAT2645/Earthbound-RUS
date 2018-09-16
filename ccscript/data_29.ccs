@@ -109,42 +109,68 @@ l_0xc72ad6:
     "@What was I thinking--{pause(15)} you did something really big!" end
 
 l_0xc72af8:
-    "[06 49 00 {e(l_0xc72e08)}][06 50 00 {e(l_0xc72dd0)}]@Hey{pause(10)} hey{pause(10)} hey!{pause(15)}  I'm Mayor B.H. Pirkle.{pause(15)}  It's so nice to meet you." next
-    "@You beat up the town bullies," next
-    "@punched them out big time,{pause(10)} kicked their butts,{pause(10)} bit their heads off," next
-    "@spit in their eyes,{pause(30)} and made them wet their pants." next
-    "@Then you forced them to promise not to make any more trouble.{pause(15)}  Thank you!" next
-    "@What?{pause(15)}" linebreak
-    "  You want a key to the touring entertainers' shack?" next
-    "@For someone as great as you,{pause(15)} giving you the key could help keep the town peaceful." next
-    "@However,{pause(15)} if you encounter a dangerous situation," next
-    "@please don't ask me to take any responsibility." next
-    "@I'll be able to avoid any responsibility, right?" next
-    "[19 02]Yes" eob
+    /*
+    "[06 49 00 {e(l_0xc72e08)}][06 50 00 {e(l_0xc72dd0)}]@Эй{pause(10)}-эй{pause(10)}-эй!{pause(15)}  Я Мэр Б. Х. Пиркл.{pause(15)}  Приятно познакомиться." next
+    "@Ты повалил городских хулиганов," next
+    "@выбил их большим временем,{pause(10)} надрал им задницы,{pause(10)} отколол им головы," next
+    "@плюнул им в глаза,{pause(30)} и заставил их намочить свои штаны." next
+    "@Затем ты заставил их пообещать, что они не будут создавать проблем.{pause(15)}  Спасибо!" next
+    "@Что?{pause(15)}" linebreak
+    "  Тебе нужен ключ от хижины артистов?" next
+    "@Для кого-то, такого же как ты,{pause(15)} выдача ключа может помочь сохранить город мирным." next
+    "@Однако,{pause(15)} если ты попадёшь в опасную ситуацию," next
+    "@пожалуйста, не проси меня взять на себя какую-либо ответственность." next
+    "@Я могу избежать ответственности, верно?" next
+    "[19 02]Да" eob
+    */
+    "[06 49 00 {e(l_0xc72e08)}][06 50 00 {e(l_0xc72dd0)}]@[B4][9B]{pause(10)}-[C4][9B]{pause(10)}-[C4][9B]!{pause(15)}  [B6] [7E][C4][A2] [72]. [87]. [81][9A][A2][9C][9D].{pause(15)}  [81][A2][9A][C6][A4][9F][A0] [A1][A0][99][9F][91][9C][A0][9E][9A][A4][C3][A3][C6]." next
+    "@[84][C2] [A1][A0][93][91][9D][9A][9D] [94][A0][A2][A0][95][A3][9C][9A][A7] [A7][A5][9D][9A][94][91][9F][A0][93]," next
+    "@[93][C2][92][9A][9D] [9A][A7] [92][A0][9D][C3][AA][9A][9E] [93][A2][96][9E][96][9F][96][9E],{pause(10)} [9F][91][95][A2][91][9D] [9A][9E] [99][91][95][9F][9A][A8][C2],{pause(10)} [A0][A4][9C][A0][9D][A0][9D] [9A][9E] [94][A0][9D][A0][93][C2]," next
+    "@[A1][9D][C5][9F][A5][9D] [9A][9E] [93] [94][9D][91][99][91],{pause(30)} [9A] [99][91][A3][A4][91][93][9A][9D] [9A][A7] [9F][91][9E][A0][A9][9A][A4][C3] [A3][93][A0][9A] [AA][A4][91][9F][C2]." next
+    "@[79][91][A4][96][9E] [A4][C2] [99][91][A3][A4][91][93][9A][9D] [9A][A7] [A1][A0][A0][92][96][C0][91][A4][C3], [A9][A4][A0] [A0][9F][9A] [9F][96] [92][A5][95][A5][A4] [A3][A0][99][95][91][93][91][A4][C3] [A1][A2][A0][92][9D][96][9E].{pause(15)}  [83][A1][91][A3][9A][92][A0]!" next
+    "@[89][A4][A0]?{pause(15)}" linebreak
+    "  [84][96][92][96] [9F][A5][98][96][9F] [9C][9D][C5][A9] [A0][A4] [A7][9A][98][9A][9F][C2] [91][A2][A4][9A][A3][A4][A0][93]?" next
+    "@[75][9D][C6] [9C][A0][94][A0]-[A4][A0], [A4][91][9C][A0][94][A0] [98][96] [9C][91][9C] [A4][C2],{pause(15)} [93][C2][95][91][A9][91] [9C][9D][C5][A9][91] [9E][A0][98][96][A4] [A1][A0][9E][A0][A9][C3] [A3][A0][A7][A2][91][9F][9A][A4][C3] [94][A0][A2][A0][95] [9E][9A][A2][9F][C2][9E]." next
+    "@[80][95][9F][91][9C][A0],{pause(15)} [96][A3][9D][9A] [A4][C2] [A1][A0][A1][91][95][97][AA][C3] [93] [A0][A1][91][A3][9F][A5][C5] [A3][9A][A4][A5][91][A8][9A][C5]," next
+    "@[A1][A0][98][91][9D][A5][9B][A3][A4][91], [9F][96] [A1][A2][A0][A3][9A] [9E][96][9F][C6] [93][99][C6][A4][C3] [9F][91] [A3][96][92][C6] [9C][91][9C][A5][C5]-[9D][9A][92][A0] [A0][A4][93][96][A4][A3][A4][93][96][9F][9F][A0][A3][A4][C3]." next
+    "@[B6] [9E][A0][94][A5] [9A][99][92][96][98][91][A4][C3] [A0][A4][93][96][A4][A3][A4][93][96][9F][9F][A0][A3][A4][9A], [93][96][A2][9F][A0]?" next
+    "[19 02][75][91]" eob
 
 l_0xc72c98:
-    "[19 02]No" eob
+//    "[19 02]Нет" eob
+    "[19 02][7F][96][A4]" eob
 
 l_0xc72c9d:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xc72d2f)} {e(l_0xc72cac)}]" goto(l_0xc72cac)
 
 l_0xc72cac:
-    "@I'm a very important man in these parts." next
-    "@Do you think I'm important?" linebreak
-    "[19 02]Yes" eob
+    /*
+    "@Я очень важный человек в этих краях." next
+    "@Думаешь ли ты, что я важен?" linebreak
+    "[19 02]Да" eob
+    */
+    "@[B6] [A0][A9][96][9F][C3] [93][91][98][9F][C2][9B] [A9][96][9D][A0][93][96][9C] [93] [C4][A4][9A][A7] [9C][A2][91][C6][A7]." next
+    "@[75][A5][9E][91][96][AA][C3] [9D][9A] [A4][C2], [A9][A4][A0] [C6] [93][91][98][96][9F]?" linebreak
+    "[19 02][75][91]" eob
 
 l_0xc72cda:
-    "[19 02]No" eob
+//    "[19 02]Нет" eob
+    "[19 02][7F][96][A4]" eob
 
 l_0xc72cdf:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xc72d2f)} {e(l_0xc72cee)}]" goto(l_0xc72cee)
 
 l_0xc72cee:
-    "@Look,{pause(10)} I'm the big cheese around here," next
-    "@and a brat like you should realize when someone is trying to be nice." end
+    /*
+    "@Послушай,{pause(10)} я здесь большая шишка," next
+    "@и такой ребёнок как ты, должен понимать, когда кто-то пытается быть хорошим." end
+    */
+    "@[81][A0][A3][9D][A5][AA][91][9B],{pause(10)} [C6] [99][95][96][A3][C3] [92][A0][9D][C3][AA][91][C6] [AA][9A][AA][9C][91]," next
+    "@[9A] [A4][91][9C][A0][9B] [A2][96][92][97][9F][A0][9C] [9C][91][9C] [A4][C2], [95][A0][9D][98][96][9F] [A1][A0][9F][9A][9E][91][A4][C3], [9C][A0][94][95][91] [9C][A4][A0]-[A4][A0] [A1][C2][A4][91][96][A4][A3][C6] [92][C2][A4][C3] [A7][A0][A2][A0][AA][9A][9E]." end
 
 l_0xc72d2f:
-    "@You're such a smart kid...{pause(20)}  Here's the key to the shack." next
+//    "@Ты такой умный малыш...{pause(20)}  Вот ключ от хижины." next
+    "@[84][C2] [A4][91][9C][A0][9B] [A5][9E][9F][C2][9B] [9E][91][9D][C2][AA]...{pause(20)}  [73][A0][A4] [9C][9D][C5][A9] [A0][A4] [A7][9A][98][9A][9F][C2]." next
     "[1D 03 FF][1B 02 {e(l_0xc72d6e)}][1D 0E 00 AA][1B 05]" call(data_36.l_0xc7dcb6) "{set(flag 80)}" end
 
 l_0xc72d6e:

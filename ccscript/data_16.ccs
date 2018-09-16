@@ -444,48 +444,91 @@ l_0xc5f83b:
     "[1F 13 01 03]{pause(30)}[1F F1 7E 00 85 00][1F 61][1F E6 7E 00]" call(data_30.l_0xc743b0) "[1F E9 7E 00]{pause(80)}" eob
 
 l_0xc5f859:
-    "{unset(flag 449)}[1F F1 47 00 DE 00][1F 15 6A 00 E1 00 01]" call(data_57.l_0xc9b4b8) "[1F 15 4B 00 DF 00 FF][1F 21 43][1F 15 6A 00 E2 00 01]" call(data_57.l_0xc9b4b8) "[1F 15 4B 00 E0 00 FF][1F 21 44][1F 15 6A 00 E3 00 01]" call(data_57.l_0xc9b4b8) "[1F 1F 6A 00 06][1F E7 4B 00][1F 07 02]{pause(10)}{window_open(1)}@Show me what you got..." next
+    /*
+    "{unset(flag 449)}[1F F1 47 00 DE 00][1F 15 6A 00 E1 00 01]" call(data_57.l_0xc9b4b8) "[1F 15 4B 00 DF 00 FF][1F 21 43][1F 15 6A 00 E2 00 01]" call(data_57.l_0xc9b4b8) "[1F 15 4B 00 E0 00 FF][1F 21 44][1F 15 6A 00 E3 00 01]" call(data_57.l_0xc9b4b8) "[1F 1F 6A 00 06][1F E7 4B 00][1F 07 02]{pause(10)}{window_open(1)}@Покажи мне, на что ты способен..." next
+    "{set(flag 6)}{music_resume}@Посмотрим, сможешь ли ты пройти через 5 моих лучших парней...[03]{window_closeall}[1F EA 4B 00][1F 61][1F F1 4D 00 E8 00][1F F1 4C 00 E7 00][1F F1 4B 00 E6 00][1F F1 4A 00 E5 00][1F F1 49 00 E4 00][1F 61]{pause(30)}[1F F1 49 00 E9 00][1F 61]{window_open(1)}" goto(l_0xc5f914)
+    */
+    "{unset(flag 449)}[1F F1 47 00 DE 00][1F 15 6A 00 E1 00 01]" call(data_57.l_0xc9b4b8) "[1F 15 4B 00 DF 00 FF][1F 21 43][1F 15 6A 00 E2 00 01]" call(data_57.l_0xc9b4b8) "[1F 15 4B 00 E0 00 FF][1F 21 44][1F 15 6A 00 E3 00 01]" call(data_57.l_0xc9b4b8) "[1F 1F 6A 00 06][1F E7 4B 00][1F 07 02]{pause(10)}{window_open(1)}@[81][A0][9C][91][98][9A] [9E][9F][96], [9F][91] [A9][A4][A0] [A4][C2] [A3][A1][A0][A3][A0][92][96][9F]..." next
     "{pause(20)}" linebreak
-    "{set(flag 6)}{music_resume}@See if you can get past five of my best men...[03]{window_closeall}[1F EA 4B 00][1F 61][1F F1 4D 00 E8 00][1F F1 4C 00 E7 00][1F F1 4B 00 E6 00][1F F1 4A 00 E5 00][1F F1 49 00 E4 00][1F 61]{pause(30)}[1F F1 49 00 E9 00][1F 61]{window_open(1)}" goto(l_0xc5f914)
+    "{set(flag 6)}{music_resume}@[81][A0][A3][9E][A0][A4][A2][9A][9E], [A3][9E][A0][98][96][AA][C3] [9D][9A] [A4][C2] [A1][A2][A0][9B][A4][9A] [A9][96][A2][96][99] 5 [9E][A0][9A][A7] [9D][A5][A9][AA][9A][A7] [A1][91][A2][9F][96][9B]...[03]{window_closeall}[1F EA 4B 00][1F 61][1F F1 4D 00 E8 00][1F F1 4C 00 E7 00][1F F1 4B 00 E6 00][1F F1 4A 00 E5 00][1F F1 49 00 E4 00][1F 61]{pause(30)}[1F F1 49 00 E9 00][1F 61]{window_open(1)}" goto(l_0xc5f914)
 
 l_0xc5f914:
-    "@Eeeeyah!" next
-    "@Hey, small fry!" linebreak
-    "  You must be shaking in your boots![03]" call(data_23.l_0xc68441) "[1B 03 {e(data_23.l_0xc683de)}]{window_open(1)}" newline
-    "@You're tough.  You should join the police force!{wait}{set(flag 289)}{window_closeall}[1F F1 49 00 EE 00][1F 61]{pause(30)}[1F F1 4A 00 EA 00][1F 61]{window_open(1)}" goto(l_0xc5f984)
+    /*
+    "@Иииях!" next
+    "@Эй, мелюзга!" linebreak
+    "  У тебя должна быть дрож в обуви![03]" call(data_23.l_0xc68441) "[1B 03 {e(data_23.l_0xc683de)}]{window_open(1)}" newline
+    "@Ты крепкий.  Ты должен присоединиться к полиции!{wait}{set(flag 289)}{window_closeall}[1F F1 49 00 EE 00][1F 61]{pause(30)}[1F F1 4A 00 EA 00][1F 61]{window_open(1)}" goto(l_0xc5f984)
+    */
+    "@[7A][9A][9A][C6][A7]!" next
+    "@[B4][9B], [9E][96][9D][C5][99][94][91]!" linebreak
+    "  [85] [A4][96][92][C6] [95][A0][9D][98][9F][91] [92][C2][A4][C3] [95][A2][A0][98] [93] [A0][92][A5][93][9A]![03]" call(data_23.l_0xc68441) "[1B 03 {e(data_23.l_0xc683de)}]{window_open(1)}" newline
+    "@[84][C2] [9C][A2][96][A1][9C][9A][9B].  [84][C2] [95][A0][9D][98][96][9F] [A1][A2][9A][A3][A0][96][95][9A][9F][9A][A4][C3][A3][C6] [9C] [A1][A0][9D][9A][A8][9A][9A]!{wait}{set(flag 289)}{window_closeall}[1F F1 49 00 EE 00][1F 61]{pause(30)}[1F F1 4A 00 EA 00][1F 61]{window_open(1)}" goto(l_0xc5f984)
 
 l_0xc5f984:
-    "@Your average policeman is stronger than any super hero![03]" call(data_23.l_0xc68448) "[1B 03 {e(data_23.l_0xc683de)}]{window_open(1)}" newline
-    "@Oh... you won...{wait}{set(flag 290)}{window_closeall}[1F F1 4A 00 EE 00][1F 61]{pause(30)}[1F F1 4B 00 EB 00][1F 61]{window_open(1)}" goto(l_0xc5f9dd)
+    /*
+    "@Ваш обычный полицейский сильнее любого супергероя![03]" call(data_23.l_0xc68448) "[1B 03 {e(data_23.l_0xc683de)}]{window_open(1)}" newline
+    "@Ох... ты победил...{wait}{set(flag 290)}{window_closeall}[1F F1 4A 00 EE 00][1F 61]{pause(30)}[1F F1 4B 00 EB 00][1F 61]{window_open(1)}" goto(l_0xc5f9dd)
+    */
+    "@[73][91][AA] [A0][92][C2][A9][9F][C2][9B] [A1][A0][9D][9A][A8][96][9B][A3][9C][9A][9B] [A3][9A][9D][C3][9F][96][96] [9D][C5][92][A0][94][A0] [A3][A5][A1][96][A2][94][96][A2][A0][C6]![03]" call(data_23.l_0xc68448) "[1B 03 {e(data_23.l_0xc683de)}]{window_open(1)}" newline
+    "@[80][A7]... [A4][C2] [A1][A0][92][96][95][9A][9D]...{wait}{set(flag 290)}{window_closeall}[1F F1 4A 00 EE 00][1F 61]{pause(30)}[1F F1 4B 00 EB 00][1F 61]{window_open(1)}" goto(l_0xc5f9dd)
 
 l_0xc5f9dd:
-    "@Don't let the Mayor's compliments give you a big head..." next
-    "@Bring it on, fat boy![03]" call(data_23.l_0xc6844f) "[1B 03 {e(data_23.l_0xc683de)}]{window_open(1)}" newline
-    "@Let's do this again sometime..." next
-    "@Next time, I'll take you out with my nuclear suplex attack!{wait}{set(flag 291)}{window_closeall}[1F F1 4B 00 EE 00][1F 61]{pause(30)}[1F F1 4C 00 EC 00][1F 61]{window_open(1)}" goto(l_0xc5fa72)
+    /*
+    "@Не позволяй комплиментам Мэра забивать свою голову..." next
+    "@Ну давай, толстячок![03]" call(data_23.l_0xc6844f) "[1B 03 {e(data_23.l_0xc683de)}]{window_open(1)}" newline
+    "@Давай сделаем это снова когда-нибудь..." next
+    "@В следующий раз, я поборю тебя своей ядерной суплексной атакой!{wait}{set(flag 291)}{window_closeall}[1F F1 4B 00 EE 00][1F 61]{pause(30)}[1F F1 4C 00 EC 00][1F 61]{window_open(1)}" goto(l_0xc5fa72)
+    */
+    "@[7F][96] [A1][A0][99][93][A0][9D][C6][9B] [9C][A0][9E][A1][9D][9A][9E][96][9F][A4][91][9E] [7E][C4][A2][91] [99][91][92][9A][93][91][A4][C3] [A3][93][A0][C5] [94][A0][9D][A0][93][A5]..." next
+    "@[7F][A5] [95][91][93][91][9B], [A4][A0][9D][A3][A4][C6][A9][A0][9C]![03]" call(data_23.l_0xc6844f) "[1B 03 {e(data_23.l_0xc683de)}]{window_open(1)}" newline
+    "@[75][91][93][91][9B] [A3][95][96][9D][91][96][9E] [C4][A4][A0] [A3][9F][A0][93][91] [9C][A0][94][95][91]-[9F][9A][92][A5][95][C3]..." next
+    "@[73] [A3][9D][96][95][A5][C5][C0][9A][9B] [A2][91][99], [C6] [A1][A0][92][A0][A2][C5] [A4][96][92][C6] [A3][93][A0][96][9B] [C6][95][96][A2][9F][A0][9B] [A3][A5][A1][9D][96][9C][A3][9F][A0][9B] [91][A4][91][9C][A0][9B]!{wait}{set(flag 291)}{window_closeall}[1F F1 4B 00 EE 00][1F 61]{pause(30)}[1F F1 4C 00 EC 00][1F 61]{window_open(1)}" goto(l_0xc5fa72)
 
 l_0xc5fa72:
-    "@C'mon!" linebreak
-    "  I'm going to take you apart right here, right now, baby![03]" call(data_23.l_0xc68456) "[1B 03 {e(data_23.l_0xc683de)}]{window_open(1)}" newline
-    "@Grrr..." linebreak
-    "  I lost...{wait}{set(flag 292)}{window_closeall}[1F F1 4C 00 EE 00][1F 61]{pause(30)}[1F F1 4D 00 ED 00][1F 61]{window_open(1)}@That's it, buddy..." next
-    "@You can forget about me, I'm going to call for my boss!" next
-    "{set(flag 293)}{window_closeall}[1F F1 4D 00 EE 00][1F 61]{pause(30)}[1F F2 4B 00 EF 00][1F 61]{window_open(1)}@There is no way I can beat you in a straight competition, so..." next
-    "@get ready for my <Super Ultra Mambo-Tango-Foxtrot martial arts!>{wait}" call(data_23.l_0xc68464) "[1B 03 {e(data_23.l_0xc683de)}][1F 01 00]{pause(60)}{window_open(1)}" newline
-    "@I didn't think you would do so well against the mighty Onett police force..." next
-    "@You want me to open the road to Twoson?" next
-    "@Hang on for a sec, I'll radio my staff and give them the word..." next
-    "{window_closeall}{unset(flag 38)}{unset(flag 39)}[1F E4 4B 00 05][1F F3 4B 00 02]{pause(60)}{window_open(1)}@*Beep, beep* ...*Click*... *Rrrr*" next
-    "@*Click*  Strong here... do you read me?" next
-    "@...*Krrrr* ...Hey!..." next
-    "@...It's me, Captain Strong!..." next
-    "@Okay, listen, a kid named [1C 02 01] will be there in a few minutes..." next
-    "@He's a kid in a red cap... I want you to open the road to Twoson for him..." next
-    "@I know that..." next
-    "@I know that!..." next
-    "@Don't ask me why, just do it!  That's an order! ...Strong out...{wait}{window_closeall}{pause(60)}[1F F4 4B 00]{pause(30)}{unset(flag 6)}{music_resume}{pause(60)}[19 24 4B 00 01 01 00][1F E4 4B 00 00]{window_open(1)}@Well kid, I'm not going to question you now," next
-    "@but I do want to see you again..." next
-    "@Good luck!{wait}{window_closeall}[1F F2 4B 00 6B 02][1F 61]{set(flag 105)}{unset(flag 450)}{unset(flag 35)}{unset(flag 37)}{unset(flag 742)}" eob
+    /*
+    "@Давай!" linebreak
+    "  Я разберу тебя на части прямо здесь, прямо сейчас, детка![03]" call(data_23.l_0xc68456) "[1B 03 {e(data_23.l_0xc683de)}]{window_open(1)}" newline
+    "@Гррр..." linebreak
+    "  я проиграл...{wait}{set(flag 292)}{window_closeall}[1F F1 4C 00 EE 00][1F 61]{pause(30)}[1F F1 4D 00 ED 00][1F 61]{window_open(1)}@Вот и всё, приятель..." next
+    "@Ты можешь забыть про меня, я позвоню своему боссу!" next
+    "{set(flag 293)}{window_closeall}[1F F1 4D 00 EE 00][1F 61]{pause(30)}[1F F2 4B 00 EF 00][1F 61]{window_open(1)}@Я не могу победить тебя в прямом соревновании, так что..." next
+    "@приготовься к моему <Супер Ультра Мамбо-Танго-Фокстрот> боевому стилю!{wait}" call(data_23.l_0xc68464) "[1B 03 {e(data_23.l_0xc683de)}][1F 01 00]{pause(60)}{window_open(1)}" newline
+    "@Я не думал, что ты так хорошо справишься с могущественной полицией Онетта..." next
+    "@Ты хочешь, чтобы я открыл дорогу в Тусон?" next
+    "@Подожди секунду, я передам своему персоналу..." next
+    "{window_closeall}{unset(flag 38)}{unset(flag 39)}[1F E4 4B 00 05][1F F3 4B 00 02]{pause(60)}{window_open(1)}@*Бип-бип* ...*Щелчок*... *Рррр*" next
+    "@*Щелчок*  Это Стронг... вы меня понимаете?" next
+    "@...*Кррр* ...Эй!..." next
+    "@...Это я, Капитан Стронг!..." next
+    "@Хорошо, слушайте, паренёк по имени [1C 02 01] будет у вас через пару минут..." next
+    "@Он - ребёнок в красной кепке... Я хочу, чтобы вы открыли дорогу в Тусон для него..." next
+    "@Я знаю это..." next
+    "@Я знаю это!..." next
+    "@Не спрашивайте зачем, просто сделайте!  Это приказ! ...Конец связи...{wait}{window_closeall}{pause(60)}[1F F4 4B 00]{pause(30)}{unset(flag 6)}{music_resume}{pause(60)}[19 24 4B 00 01 01 00][1F E4 4B 00 00]{window_open(1)}@Что ж малыш, я не стану расспрашивать тебя сейчас," next
+    "@но хочу тебя увидеть снова..." next
+    "@Удачи!{wait}{window_closeall}[1F F2 4B 00 6B 02][1F 61]{set(flag 105)}{unset(flag 450)}{unset(flag 35)}{unset(flag 37)}{unset(flag 742)}" eob
+    */
+    "@[75][91][93][91][9B]!" linebreak
+    "  [B6] [A2][91][99][92][96][A2][A5] [A4][96][92][C6] [9F][91] [A9][91][A3][A4][9A] [A1][A2][C6][9E][A0] [99][95][96][A3][C3], [A1][A2][C6][9E][A0] [A3][96][9B][A9][91][A3], [95][96][A4][9C][91]![03]" call(data_23.l_0xc68456) "[1B 03 {e(data_23.l_0xc683de)}]{window_open(1)}" newline
+    "@[74][A2][A2][A2]..." linebreak
+    "  [C6] [A1][A2][A0][9A][94][A2][91][9D]...{wait}{set(flag 292)}{window_closeall}[1F F1 4C 00 EE 00][1F 61]{pause(30)}[1F F1 4D 00 ED 00][1F 61]{window_open(1)}@[73][A0][A4] [9A] [93][A3][97], [A1][A2][9A][C6][A4][96][9D][C3]..." next
+    "@[84][C2] [9E][A0][98][96][AA][C3] [99][91][92][C2][A4][C3] [A1][A2][A0] [9E][96][9F][C6], [C6] [A1][A0][99][93][A0][9F][C5] [A3][93][A0][96][9E][A5] [92][A0][A3][A3][A5]!" next
+    "{set(flag 293)}{window_closeall}[1F F1 4D 00 EE 00][1F 61]{pause(30)}[1F F2 4B 00 EF 00][1F 61]{window_open(1)}@[B6] [9F][96] [9E][A0][94][A5] [A1][A0][92][96][95][9A][A4][C3] [A4][96][92][C6] [93] [A1][A2][C6][9E][A0][9E] [A3][A0][A2][96][93][9F][A0][93][91][9F][9A][9A], [A4][91][9C] [A9][A4][A0]..." next
+    "@[A1][A2][9A][94][A0][A4][A0][93][C3][A3][C6] [9C] [9E][A0][96][9E][A5] <[83][A5][A1][96][A2] [85][9D][C3][A4][A2][91] [7E][91][9E][92][A0]-[84][91][9F][94][A0]-[86][A0][9C][A3][A4][A2][A0][A4]> [92][A0][96][93][A0][9E][A5] [A3][A4][9A][9D][C5]!{wait}" call(data_23.l_0xc68464) "[1B 03 {e(data_23.l_0xc683de)}][1F 01 00]{pause(60)}{window_open(1)}" newline
+    "@[B6] [9F][96] [95][A5][9E][91][9D], [A9][A4][A0] [A4][C2] [A4][91][9C] [A7][A0][A2][A0][AA][A0] [A3][A1][A2][91][93][9A][AA][C3][A3][C6] [A3] [9E][A0][94][A5][C0][96][A3][A4][93][96][9F][9F][A0][9B] [A1][A0][9D][9A][A8][9A][96][9B] [80][9F][96][A4][A4][91]..." next
+    "@[84][C2] [A7][A0][A9][96][AA][C3], [A9][A4][A0][92][C2] [C6] [A0][A4][9C][A2][C2][9D] [95][A0][A2][A0][94][A5] [93] [84][A5][A3][A0][9F]?" next
+    "@[81][A0][95][A0][98][95][9A] [A3][96][9C][A5][9F][95][A5], [C6] [A1][96][A2][96][95][91][9E] [A3][93][A0][96][9E][A5] [A1][96][A2][A3][A0][9F][91][9D][A5]..." next
+    "{window_closeall}{unset(flag 38)}{unset(flag 39)}[1F E4 4B 00 05][1F F3 4B 00 02]{pause(60)}{window_open(1)}@*[72][9A][A1]-[92][9A][A1]* ...*[B0][96][9D][A9][A0][9C]*... *[82][A2][A2][A2]*" next
+    "@*[B0][96][9D][A9][A0][9C]*  [B4][A4][A0] [83][A4][A2][A0][9F][94]... [93][C2] [9E][96][9F][C6] [A1][A0][9F][9A][9E][91][96][A4][96]?" next
+    "@...*[7C][A2][A2][A2]* ...[B4][9B]!..." next
+    "@...[B4][A4][A0] [C6], [7C][91][A1][9A][A4][91][9F] [83][A4][A2][A0][9F][94]!..." next
+    "@[87][A0][A2][A0][AA][A0], [A3][9D][A5][AA][91][9B][A4][96], [A1][91][A2][96][9F][97][9C] [A1][A0] [9A][9E][96][9F][9A] [1C 02 01] [92][A5][95][96][A4] [A5] [93][91][A3] [A9][96][A2][96][99] [A1][91][A2][A5] [9E][9A][9F][A5][A4]..." next
+    "@[80][9F] - [A2][96][92][97][9F][A0][9C] [93] [9C][A2][91][A3][9F][A0][9B] [9C][96][A1][9C][96]... [B6] [A7][A0][A9][A5], [A9][A4][A0][92][C2] [93][C2] [A0][A4][9C][A2][C2][9D][9A] [95][A0][A2][A0][94][A5] [93] [84][A5][A3][A0][9F] [95][9D][C6] [9F][96][94][A0]..." next
+    "@[B6] [99][9F][91][C5] [C4][A4][A0]..." next
+    "@[B6] [99][9F][91][C5] [C4][A4][A0]!..." next
+    "@[7F][96] [A3][A1][A2][91][AA][9A][93][91][9B][A4][96] [99][91][A9][96][9E], [A1][A2][A0][A3][A4][A0] [A3][95][96][9D][91][9B][A4][96]!  [B4][A4][A0] [A1][A2][9A][9C][91][99]! ...[7C][A0][9F][96][A8] [A3][93][C6][99][9A]...{wait}{window_closeall}{pause(60)}[1F F4 4B 00]{pause(30)}{unset(flag 6)}{music_resume}{pause(60)}[19 24 4B 00 01 01 00][1F E4 4B 00 00]{window_open(1)}@[89][A4][A0] [98] [9E][91][9D][C2][AA], [C6] [9F][96] [A3][A4][91][9F][A5] [A2][91][A3][A3][A1][A2][91][AA][9A][93][91][A4][C3] [A4][96][92][C6] [A3][96][9B][A9][91][A3]," next
+    "@[9F][A0] [A7][A0][A9][A5] [A4][96][92][C6] [A5][93][9A][95][96][A4][C3] [A3][9F][A0][93][91]..." next
+    "@[85][95][91][A9][9A]!{wait}{window_closeall}[1F F2 4B 00 6B 02][1F 61]{set(flag 105)}{unset(flag 450)}{unset(flag 35)}{unset(flag 37)}{unset(flag 742)}" eob
 
 l_0xc5fd72:
     call(l_0xc5ff12) "[1B 03 {e(l_0xc5ff4e)}][19 10 01]{rtoarg}@([1C 02 00] checked the bus schedule.)" next

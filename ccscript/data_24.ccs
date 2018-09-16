@@ -100,6 +100,14 @@ l_0xc68b7d:
     "@*Beeeeep*{wait}{window_closeall}{sound(11)}{set(flag 539)}{music_resume}[1F 41 06]" eob
 
 l_0xc68c3f:
+    /*
+    "@Я друг, с которым ты не виделся раньше..." next
+    "@Моё имя - [1C 02 02]." next
+    next
+    "{pause(60)}" linebreak
+    "@Ты слышишь мой зов?" next
+    "@Я [1C 02 02]..." next
+    */
     "{window_open(1)}@....." next
     "@[1C 02 01]?" next
     "@..." next
@@ -107,12 +115,12 @@ l_0xc68c3f:
     "{pause(60)}" linebreak
     "{pause(60)}" linebreak
     "@...[1C 02 01]..." next
-    "@I'm a friend who you have never met before..." next
-    "@My name is [1C 02 02]." next
+    "@[B6] [95][A2][A5][94], [A3] [9C][A0][A4][A0][A2][C2][9E] [A4][C2] [9F][96] [93][9A][95][96][9D][A3][C6] [A2][91][9F][C3][AA][96]..." next
+    "@[7E][A0][97] [9A][9E][C6] - [1C 02 02]." next
     next
     "{pause(60)}" linebreak
-    "@Can you hear me calling you?" next
-    "@I am [1C 02 02]..." next
+    "@[84][C2] [A3][9D][C2][AA][9A][AA][C3] [9E][A0][9B] [99][A0][93]?" next
+    "@[B6] [1C 02 02]..." next
     "@..." next
     "{pause(60)}" linebreak
     "{pause(60)}" linebreak

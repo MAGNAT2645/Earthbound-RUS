@@ -141,17 +141,23 @@ l_0xc7436c:
   "@[84][C2] [9E][A0][98][96][AA][C3] [A1][A2][9A][9B][A4][9A] [9C][A0] [9E][9F][96] [A1][A0][A1][A0][99][98][96],{pause(15)} [93] [A0][95][9A][9F][A0][A9][9C][A5]?{sound(114)}" end
 
 l_0xc743b0:
-  "{unset(flag 36)}{set(flag 39)}{window_open(1)}@Hey you,{pause(15)} the board says{pause(15)} <Do Not Enter.>{pause(20)}  Couldn't you read it?" next
-  "[19 02]Yes" eob
+   /*
+  "{unset(flag 36)}{set(flag 39)}{window_open(1)}@Эй ты,{pause(15)} на доске написано{pause(15)} <Не Входить>.{pause(20)}  Ты не можешь её прочитать?" next
+  "[19 02]Да" eob
+  */
+  "{unset(flag 36)}{set(flag 39)}{window_open(1)}@[B4][9B] [A4][C2],{pause(15)} [9F][91] [95][A0][A3][9C][96] [9F][91][A1][9A][A3][91][9F][A0]{pause(15)} <[7F][96] [73][A7][A0][95][9A][A4][C3]>.{pause(20)}  [84][C2] [9F][96] [9E][A0][98][96][AA][C3] [96][97] [A1][A2][A0][A9][9A][A4][91][A4][C3]?" next
+  "[19 02][75][91]" eob
 
 l_0xc743ef:
-  "[19 02]No" eob
+//  "[19 02]Нет" eob
+  "[19 02][7F][96][A4]" eob
 
 l_0xc743f4:
   "[1C 07 02][11]{clearline}[09 02 {e(l_0xc74431)} {e(l_0xc74403)}]" goto(l_0xc74403)
 
 l_0xc74403:
-  "@What a rebellious kid!{pause(15)}  Come to the Onett Police Station later!{wait}{window_closeall}" eob
+//  "@Какой упорный малыш!{pause(15)}  Подойди позже в <ПолУпр>,{pause(15)} полицейский участок Онетта!{wait}{window_closeall}" eob
+  "@[7C][91][9C][A0][9B] [A5][A1][A0][A2][9F][C2][9B] [9E][91][9D][C2][AA]!{pause(15)}  [81][A0][95][A0][9B][95][9A] [A1][A0][99][98][96] [93] <[81][A0][9D][85][A1][A2]>,{pause(15)} [A1][A0][9D][9A][A8][96][9B][A3][9C][9A][9B] [A5][A9][91][A3][A4][A0][9C] [80][9F][96][A4][A4][91]!{wait}{window_closeall}" eob
 
 l_0xc74431:
   "@So you just didn't want to read the sign, huh kid..." next
@@ -297,23 +303,31 @@ l_0xc74ba9:
   "@You might want to visit him." end
 
 l_0xc74c07:
-  "[06 28 00 {e(data_35.l_0xc7c588)}][06 40 00 {e(l_0xc74c85)}]@Hey kid!{pause(20)}  Do you wanna become a member?" linebreak
-  "[19 02]Yes" eob
+  /*
+  "[06 28 00 {e(data_35.l_0xc7c588)}][06 40 00 {e(l_0xc74c85)}]@Эй, малой!{pause(20)}  Хочешь стать нашим участником?" linebreak
+  "[19 02]Да" eob
+  */
+  "[06 28 00 {e(data_35.l_0xc7c588)}][06 40 00 {e(l_0xc74c85)}]@[B4][9B], [9E][91][9D][A0][9B]!{pause(20)}  [87][A0][A9][96][AA][C3] [A3][A4][91][A4][C3] [9F][91][AA][9A][9E] [A5][A9][91][A3][A4][9F][9A][9C][A0][9E]?" linebreak
+  "[19 02][75][91]" eob
 
 l_0xc74c35:
-  "[19 02]No" eob
+//  "[19 02]Нет" eob
+  "[19 02][7F][96][A4]" eob
 
 l_0xc74c3a:
   "[1C 07 02][11]{clearline}[09 02 {e(l_0xc74c6c)} {e(l_0xc74c49)}]" goto(l_0xc74c49)
 
 l_0xc74c49:
-  "@Don't be such a snob![03]" call(data_23.l_0xc683f4) "[1B 03 {e(data_23.l_0xc683de)}][1F 1E 01 00 06]{set(flag 40)}" eob
+//  "@Не будь таким снобом![03]" call(data_23.l_0xc683f4) "[1B 03 {e(data_23.l_0xc683de)}][1F 1E 01 00 06]{set(flag 40)}" eob
+  "@[7F][96] [92][A5][95][C3] [A4][91][9C][9A][9E] [A3][9F][A0][92][A0][9E]![03]" call(data_23.l_0xc683f4) "[1B 03 {e(data_23.l_0xc683de)}][1F 1E 01 00 06]{set(flag 40)}" eob
 
 l_0xc74c6c:
-  "@Come back after you finish EarthBound!" end
+//  "@Возвращайся, когда пройдёшь ЭрфБаунд!" end
+  "@[73][A0][99][93][A2][91][C0][91][9B][A3][C6], [9C][A0][94][95][91] [A1][A2][A0][9B][95][97][AA][C3] [B4][A2][A6][72][91][A5][9F][95]!" end
 
 l_0xc74c85:
-  "@Hello!" end
+//  "@Привет!" end
+  "@[81][A2][9A][93][96][A4]!" end
 
 l_0xc74c8a:
   "[06 6D 01 {e(data_35.l_0xc7c588)}]{window_open(1)}[06 40 00 {e(l_0xc74ce8)}]@It was you!{pause(20)}  YOU beat up my buddy,{pause(15)} didn't you?" next
