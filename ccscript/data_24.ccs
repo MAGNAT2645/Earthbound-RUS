@@ -130,18 +130,30 @@ l_0xc68cc2:
     eob
 
 l_0xc68cc3:
-    "{window_open(1)}@....." next
-    "@[1C 02 01]!" next
-    "@I...[1C 02 02]..." next
-    "@I am [1C 02 02]..." next
-    "@Can you hear me calling you?" next
-    "@Help!" next
-    "@Come and help me!" next
-    "@Um, I don't know where I am..." next
-    "@I can hear water running in the distance..." next
+    /*
+    "@Я...[1C 02 02]..." next
+    "@Я [1C 02 02]..." next
+    "@Ты слышишь мой зов?" next
+    "@Помоги!" next
+    "@Приходи и помоги мне!" next
+    "@Эм, я не знаю где я..." next
+    "@Я слышу как течёт вода на расстоянии..." next
     "{pause(20)}" linebreak
     "{pause(60)}" linebreak
-    "@[1C 02 01], please help me!{wait}{window_closeall}{pause(1)}{unset(flag 635)}" goto(data_48.l_0xc90f90)
+    "@[1C 02 01], пожалуйста, помоги мне!{wait}{window_closeall}{pause(1)}{unset(flag 635)}" goto(data_48.l_0xc90f90)
+    */
+    "{window_open(1)}@....." next
+    "@[1C 02 01]!" next
+    "@[B6]...[1C 02 02]..." next
+    "@[B6] [1C 02 02]..." next
+    "@[84][C2] [A3][9D][C2][AA][9A][AA][C3] [9E][A0][9B] [99][A0][93]?" next
+    "@[81][A0][9E][A0][94][9A]!" next
+    "@[81][A2][9A][A7][A0][95][9A] [9A] [A1][A0][9E][A0][94][9A] [9E][9F][96]!" next
+    "@[B4][9E], [C6] [9F][96] [99][9F][91][C5] [94][95][96] [C6]..." next
+    "@[B6] [A3][9D][C2][AA][A5] [9C][91][9C] [A4][96][A9][97][A4] [93][A0][95][91] [9F][91] [A2][91][A3][A3][A4][A0][C6][9F][9A][9A]..." next
+    "{pause(20)}" linebreak
+    "{pause(60)}" linebreak
+    "@[1C 02 01], [A1][A0][98][91][9D][A5][9B][A3][A4][91], [A1][A0][9E][A0][94][9A] [9E][9F][96]!{wait}{window_closeall}{pause(1)}{unset(flag 635)}" goto(data_48.l_0xc90f90)
 
 l_0xc68d59:
     eob

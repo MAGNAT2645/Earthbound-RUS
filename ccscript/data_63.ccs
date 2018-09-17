@@ -258,9 +258,13 @@ l_0xef7a4d:
     "{pause(10)}{music(7)}@" call(data_37.l_0xc7e6d7) " [A1][A2][A0][9A][94][A2][C2][93][91][96][A4] [92][9A][A4][93][A5]...{prompt}" eob
 
 l_0xef7a66:
+    /*
+    "@Уровень персонажа {target} linebreak"
+    "  был повышен до {delta}!{prompt}" eob
+    */
     newline
-    "@[85][A2][A0][93][96][9F][C3] [A1][96][A2][A3][A0][9F][91][98][91] {target}" linebreak 	/* Уровень персонажа {target} */
-    "  [92][C2][9D] [A1][A0][93][C2][AA][96][9F] [95][A0] {delta}!{prompt}" eob 				/* был повышен до {delta}! */
+    "@[85][A2][A0][93][96][9F][C3] [A1][96][A2][A3][A0][9F][91][98][91] {target}" linebreak
+    "  [92][C2][9D] [A1][A0][93][C2][AA][96][9F] [95][A0] {delta}!{prompt}" eob
 
 l_0xef7a7d:
     newline

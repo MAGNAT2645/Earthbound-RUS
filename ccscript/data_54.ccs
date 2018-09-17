@@ -235,37 +235,61 @@ l_0xc98000:
     "@(The Mani Mani Statue is glowing strangely...){wait}{sound(113)}" eob
 
 l_0xc98024:
-    "[06 7A 00 {e(l_0xc981c6)}][06 44 00 {e(l_0xc982b3)}]{set(flag 744)}@Thanks for coming!{pause(15)}  I've been waiting for you." next
-    "@I need your assistance to help make the world blue" next
-    "@and change it into a happy and peaceful society." next
-    "@Will you be my right-hand assistant?" linebreak
-    "  [19 02]Yes" eob
+    /*
+    "[06 7A 00 {e(l_0xc981c6)}][06 44 00 {e(l_0xc982b3)}]{set(flag 744)}@Спасибо, что пришёл!{pause(15)}  Я ждал тебя." next
+    "@Мне нужна твоя помощь, чтобы сделать мир синим" next
+    "@и превратить его в счастливое и мирное общество." next
+    "@Будешь моей правой рукой?" linebreak
+    "  [19 02]Да" eob
+    */
+    "[06 7A 00 {e(l_0xc981c6)}][06 44 00 {e(l_0xc982b3)}]{set(flag 744)}@[83][A1][91][A3][9A][92][A0], [A9][A4][A0] [A1][A2][9A][AA][97][9D]!{pause(15)}  [B6] [98][95][91][9D] [A4][96][92][C6]." next
+    "@[7E][9F][96] [9F][A5][98][9F][91] [A4][93][A0][C6] [A1][A0][9E][A0][C0][C3], [A9][A4][A0][92][C2] [A3][95][96][9D][91][A4][C3] [9E][9A][A2] [A3][9A][9F][9A][9E]" next
+    "@[9A] [A1][A2][96][93][A2][91][A4][9A][A4][C3] [96][94][A0] [93] [A3][A9][91][A3][A4][9D][9A][93][A0][96] [9A] [9E][9A][A2][9F][A0][96] [A0][92][C0][96][A3][A4][93][A0]." next
+    "@[72][A5][95][96][AA][C3] [9E][A0][96][9B] [A1][A2][91][93][A0][9B] [A2][A5][9C][A0][9B]?" linebreak
+    "  [19 02][75][91]" eob
 
 l_0xc980ab:
-    "  [19 02]No" eob
+//    "  [19 02]Нет" eob
+    "  [19 02][7F][96][A4]" eob
 
 l_0xc980b2:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xc98148)} {e(l_0xc980c1)}]" goto(l_0xc980c1)
 
 l_0xc980c1:
-    "@If you don't want to be my right hand,{pause(15)} my left would be just fine..." next
-    "@Just kidding!{pause(20)}  Your existence is a problem for me and my religion." next
-    "@Defy me,{pause(15)} and I'll end your pitiful game![03]" call(data_23.l_0xc6847a) "[1B 03 {e(data_23.l_0xc683de)}][1D 05 FF 01][1B 03 {e(l_0xc9817a)}]" eob
+    /*
+    "@Если не хочешь быть моей правой рукой,{pause(15)} левая была бы лучше..." next
+    "@Просто шучу!{pause(20)}  Твоё существование - проблема для меня и моей религии." next
+    "@Бросай мне вызов,{pause(15)} и я закончу твою жалкую игру![03]" call(data_23.l_0xc6847a) "[1B 03 {e(data_23.l_0xc683de)}][1D 05 FF 01][1B 03 {e(l_0xc9817a)}]" eob
+    */
+    "@[76][A3][9D][9A] [9F][96] [A7][A0][A9][96][AA][C3] [92][C2][A4][C3] [9E][A0][96][9B] [A1][A2][91][93][A0][9B] [A2][A5][9C][A0][9B],{pause(15)} [9D][96][93][91][C6] [92][C2][9D][91] [92][C2] [9D][A5][A9][AA][96]..." next
+    "@[81][A2][A0][A3][A4][A0] [AA][A5][A9][A5]!{pause(20)}  [84][93][A0][97] [A3][A5][C0][96][A3][A4][93][A0][93][91][9F][9A][96] - [A1][A2][A0][92][9D][96][9E][91] [95][9D][C6] [9E][96][9F][C6] [9A] [9E][A0][96][9B] [A2][96][9D][9A][94][9A][9A]." next
+    "@[72][A2][A0][A3][91][9B] [9E][9F][96] [93][C2][99][A0][93],{pause(15)} [9A] [C6] [99][91][9C][A0][9F][A9][A5] [A4][93][A0][C5] [98][91][9D][9C][A5][C5] [9A][94][A2][A5]![03]" call(data_23.l_0xc6847a) "[1B 03 {e(data_23.l_0xc683de)}][1D 05 FF 01][1B 03 {e(l_0xc9817a)}]" eob
 
 l_0xc98148:
-    "@You fool,{pause(20)} I have drawn you into my trap.{wait}" call(data_23.l_0xc6847a) "[1B 03 {e(data_23.l_0xc683de)}][1D 05 FF 01][1B 03 {e(l_0xc9817a)}]" eob
+//    "@Ты глупец,{pause(20)} я привлёк тебя в свою ловушку.{wait}" call(data_23.l_0xc6847a) "[1B 03 {e(data_23.l_0xc683de)}][1D 05 FF 01][1B 03 {e(l_0xc9817a)}]" eob
+    "@[84][C2] [94][9D][A5][A1][96][A8],{pause(20)} [C6] [A1][A2][9A][93][9D][97][9C] [A4][96][92][C6] [93] [A3][93][A0][C5] [9D][A0][93][A5][AA][9C][A5].{wait}" call(data_23.l_0xc6847a) "[1B 03 {e(data_23.l_0xc683de)}][1D 05 FF 01][1B 03 {e(l_0xc9817a)}]" eob
 
 l_0xc9817a:
+    /*
+    "@Видишь Статую Мани Мани взади меня..." next
+    "@С тех пор как я получил статую,{pause(15)} я творил странные вещи." next
+    */
     "{window_open(1)}" newline
-    "@Do you see the Mani Mani Statue behind me..." next
-    "@Since I got the statue,{pause(15)} I have been doing peculiar things." next
+    "@[73][9A][95][9A][AA][C3] [83][A4][91][A4][A5][C5] [7E][91][9F][9A] [7E][91][9F][9A] [93][99][91][95][9A] [9E][96][9F][C6]..." next
+    "@[83] [A4][96][A7] [A1][A0][A2] [9C][91][9C] [C6] [A1][A0][9D][A5][A9][9A][9D] [A3][A4][91][A4][A5][C5],{pause(15)} [C6] [A4][93][A0][A2][9A][9D] [A3][A4][A2][91][9F][9F][C2][96] [93][96][C0][9A]." next
     "{set(flag 44)}" goto(l_0xc981c6)
 
 l_0xc981c6:
-    "@Please forgive me, if you can...{pause(20)}  I just wanted to have a normal life." next
-    "@I apologize{pause(20)} to everyone." next
-    "@Here's the key to open the jail in the mountain cabin where [1C 02 02] is being held." next
-    "@Take the key and go." next
+    /*
+    "@Пожалуйста, прости меня, если можешь...{pause(20)}  Я просто хотел жить нормальной жизнью." next
+    "@Я извиняюсь{pause(20)} перед всеми." next
+    "@Вот ключ, чтобы открыть тюрьму в горной хижине, где сидит [1C 02 02]." next
+    "@Бери ключ и иди." next
+    */
+    "@[81][A0][98][91][9D][A5][9B][A3][A4][91], [A1][A2][A0][A3][A4][9A] [9E][96][9F][C6], [96][A3][9D][9A] [9E][A0][98][96][AA][C3]...{pause(20)}  [B6] [A1][A2][A0][A3][A4][A0] [A7][A0][A4][96][9D] [98][9A][A4][C3] [9F][A0][A2][9E][91][9D][C3][9F][A0][9B] [98][9A][99][9F][C3][C5]." next
+    "@[B6] [9A][99][93][9A][9F][C6][C5][A3][C3]{pause(20)} [A1][96][A2][96][95] [93][A3][96][9E][9A]." next
+    "@[73][A0][A4] [9C][9D][C5][A9], [A9][A4][A0][92][C2] [A0][A4][9C][A2][C2][A4][C3] [A4][C5][A2][C3][9E][A5] [93] [94][A0][A2][9F][A0][9B] [A7][9A][98][9A][9F][96], [94][95][96] [A3][9A][95][9A][A4] [1C 02 02]." next
+    "@[72][96][A2][9A] [9C][9D][C5][A9] [9A] [9A][95][9A]." next
     "{set(flag 68)}{unset(flag 175)}{unset(flag 45)}{set(flag 351)}{set(flag 352)}{set(flag 353)}{set(flag 354)}{set(flag 355)}{set(flag 356)}[1D 03 FF][1B 02 {e(l_0xc9827c)}][1D 0E 00 AB]" call(data_36.l_0xc7dcb6) "{wait}{window_closeall}{unset(flag 122)}" eob
 
 l_0xc9827c:
@@ -466,10 +490,16 @@ l_0xc98cc1:
     "@You really think I was a bad boy?" end
 
 l_0xc98cd3:
-    "[1F F1 9B 01 6F 02] [1F 61][1F E6 9B 01]{window_open(1)}@What a horrible nightmare.{pause(20)}  I somehow woke up." next
-    "@[1C 02 01],{pause(15)} let's be friends again." next
-    "@Please answer me.  I promise to be good.{pause(60)} ...uh ...okay?" next
-    "{window_closeall}[1F E9 9B 01][1F 61][1F E6 9B 01]{window_open(1)}@Hah!  I lied!{pause(20)}  See you, sucker![03]{window_closeall}[1F E9 9B 01]{unset(flag 44)}[1F 41 06]" eob
+    /*
+    "[1F F1 9B 01 6F 02] [1F 61][1F E6 9B 01]{window_open(1)}@Какой ужасный кошмар.{pause(20)}  Я проснулся каким-то образом." next
+    "@[1C 02 01],{pause(15)} давай снова будем друзьями." next
+    "@Пожалуйста, ответь мне.  Я обещаю быть хорошим.{pause(60)} ...Эм ...хорошо?" next
+    "{window_closeall}[1F E9 9B 01][1F 61][1F E6 9B 01]{window_open(1)}@Ха!  Я наврал!{pause(20)}  Увидимся, молокосос![03]{window_closeall}[1F E9 9B 01]{unset(flag 44)}[1F 41 06]" eob
+    */
+    "[1F F1 9B 01 6F 02] [1F 61][1F E6 9B 01]{window_open(1)}@[7C][91][9C][A0][9B] [A5][98][91][A3][9F][C2][9B] [9C][A0][AA][9E][91][A2].{pause(20)}  [B6] [A1][A2][A0][A3][9F][A5][9D][A3][C6] [9C][91][9C][9A][9E]-[A4][A0] [A0][92][A2][91][99][A0][9E]." next
+    "@[1C 02 01],{pause(15)} [95][91][93][91][9B] [A3][9F][A0][93][91] [92][A5][95][96][9E] [95][A2][A5][99][C3][C6][9E][9A]." next
+    "@[81][A0][98][91][9D][A5][9B][A3][A4][91], [A0][A4][93][96][A4][C3] [9E][9F][96].  [B6] [A0][92][96][C0][91][C5] [92][C2][A4][C3] [A7][A0][A2][A0][AA][9A][9E].{pause(60)} ...[B4][9E] ...[A7][A0][A2][A0][AA][A0]?" next
+    "{window_closeall}[1F E9 9B 01][1F 61][1F E6 9B 01]{window_open(1)}@[87][91]!  [B6] [9F][91][93][A2][91][9D]!{pause(20)}  [85][93][9A][95][9A][9E][A3][C6], [9E][A0][9D][A0][9C][A0][A3][A0][A3]![03]{window_closeall}[1F E9 9B 01]{unset(flag 44)}[1F 41 06]" eob
 
 l_0xc98d78:
     "[06 49 00 {e(data_55.l_0xc98e5e)}][06 44 00 {e(data_55.l_0xc98e33)}][06 43 00 {e(data_55.l_0xc98df9)}]@I'm monitoring those who don't pay at the food stand.[06 78 00 {e(data_55.l_0xc98db4)}]" end

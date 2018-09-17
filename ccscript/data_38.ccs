@@ -427,30 +427,51 @@ l_0xc80bf2:
     "@Then,{pause(20)} later I'll be old lady [1C 02 02]." end
 
 l_0xc80c31:
-    "[06 49 00 {e(l_0xc81087)}][06 55 00 {e(l_0xc80e61)}][06 0C 00 {e(data_33.l_0xc798bf)}][06 0D 00 {e(data_33.l_0xc7970b)}][06 76 00 {e(l_0xc80e03)}][06 42 01 {e(l_0xc80dd8)}]@So,{pause(15)} you wanna see [1C 02 02]?" next
-    "@Many come here to see her miraculous powers,{pause(15)} but they're just leeches." next
-    "@So... are you from a TV station, or what?" linebreak
-    "[19 02]Yes" eob
+    /*
+    "[06 49 00 {e(l_0xc81087)}][06 55 00 {e(l_0xc80e61)}][06 0C 00 {e(data_33.l_0xc798bf)}][06 0D 00 {e(data_33.l_0xc7970b)}][06 76 00 {e(l_0xc80e03)}][06 42 01 {e(l_0xc80dd8)}]@Итак,{pause(15)} ты хочешь увидеть мою дочь?" next
+    "@Многие приходят сюда, чтобы увидеть её чудесную силу,{pause(15)} но они просто пиявки." next
+    "@Так... ты с ТВ станции, или что?" linebreak
+    "[19 02]Да" eob
+    */
+    "[06 49 00 {e(l_0xc81087)}][06 55 00 {e(l_0xc80e61)}][06 0C 00 {e(data_33.l_0xc798bf)}][06 0D 00 {e(data_33.l_0xc7970b)}][06 76 00 {e(l_0xc80e03)}][06 42 01 {e(l_0xc80dd8)}]@[7A][A4][91][9C],{pause(15)} [A4][C2] [A7][A0][A9][96][AA][C3] [A5][93][9A][95][96][A4][C3] [9E][A0][C5] [95][A0][A9][C3]?" next
+    "@[7E][9F][A0][94][9A][96] [A1][A2][9A][A7][A0][95][C6][A4] [A3][C5][95][91], [A9][A4][A0][92][C2] [A5][93][9A][95][96][A4][C3] [96][97] [A9][A5][95][96][A3][9F][A5][C5] [A3][9A][9D][A5],{pause(15)} [9F][A0] [A0][9F][9A] [A1][A2][A0][A3][A4][A0] [A1][9A][C6][93][9C][9A]." next
+    "@[84][91][9C]... [A4][C2] [A3] [84][73] [A3][A4][91][9F][A8][9A][9A], [9A][9D][9A] [A9][A4][A0]?" linebreak
+    "[19 02][75][91]" eob
 
 l_0xc80cbf:
-    " [19 02]No" eob
+//    " [19 02]Нет" eob
+    " [19 02][7F][96][A4]" eob
 
 l_0xc80cc5:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xc80dab)} {e(l_0xc80cd4)}]" goto(l_0xc80cd4)
 
 l_0xc80cd4:
-    "@To meet you or not to meet you can only be decided by [1C 02 02]." next
-    "@[1C 02 02] has said that she would only meet with a boy named [1C 02 01]." next
-    "@So you're [1C 02 01]!" next
-    "@You're the one that was in" linebreak
-    "  [1C 02 02]'s dream." next
-    "@You will save the world!" next
-    "@Let me go call [1C 02 02].[03]" call(data_33.l_0xc7903b) "@She doesn't seem to be here." next
-    "@I wonder where she went?{pause(20)}  I'm sorry,{pause(20)} could you come back later?{wait}{set(flag 322)}{set(flag 635)}" eob
+    /*
+    "@Встречаться с тобой или нет, может решить только [1C 02 02]." next
+    "@[1C 02 02] сказала, что она встретится только с мальчиком по имени [1C 02 01]." next
+    "@Так ты [1C 02 01]!" next
+    "@Ты тот, кто был в" linebreak
+    "  её сне." next
+    "@Ты спасёшь мир!" next
+    "@Давай я позову её.[03]" call(data_33.l_0xc7903b) "@Кажется, её здесь нет." next
+    "@Интересно, куда она ушла?{pause(20)}  Извини,{pause(20)} не мог бы ты вернуться позже?{wait}{set(flag 322)}{set(flag 635)}" eob
+    */
+    "@[73][A3][A4][A2][96][A9][91][A4][C3][A3][C6] [A3] [A4][A0][92][A0][9B] [9A][9D][9A] [9F][96][A4], [9E][A0][98][96][A4] [A2][96][AA][9A][A4][C3] [A4][A0][9D][C3][9C][A0] [1C 02 02]." next
+    "@[1C 02 02] [A3][9C][91][99][91][9D][91], [A9][A4][A0] [A0][9F][91] [93][A3][A4][A2][96][A4][9A][A4][A3][C6] [A4][A0][9D][C3][9C][A0] [A3] [9E][91][9D][C3][A9][9A][9C][A0][9E] [A1][A0] [9A][9E][96][9F][9A] [1C 02 01]." next
+    "@[84][91][9C] [A4][C2] [1C 02 01]!" next
+    "@[84][C2] [A4][A0][A4], [9C][A4][A0] [92][C2][9D] [93]" linebreak
+    "  [96][97] [A3][9F][96]." next
+    "@[84][C2] [A3][A1][91][A3][97][AA][C3] [9E][9A][A2]!" next
+    "@[75][91][93][91][9B] [C6] [A1][A0][99][A0][93][A5] [96][97].[03]" call(data_33.l_0xc7903b) "@[7C][91][98][96][A4][A3][C6], [96][97] [99][95][96][A3][C3] [9F][96][A4]." next
+    "@[7A][9F][A4][96][A2][96][A3][9F][A0], [9C][A5][95][91] [A0][9F][91] [A5][AA][9D][91]?{pause(20)}  [7A][99][93][9A][9F][9A],{pause(20)} [9F][96] [9E][A0][94] [92][C2] [A4][C2] [93][96][A2][9F][A5][A4][C3][A3][C6] [A1][A0][99][98][96]?{wait}{set(flag 322)}{set(flag 635)}" eob
 
 l_0xc80dab:
-    "@Please leave." next
-    "@My daughter doesn't want to talk to media monkeys like you." end
+    /*
+    "@Пожалуйста, уходи." next
+    "@Моя дочь не хочет разговаривать с обезьянами из СМИ вроде тебя." end
+    */
+    "@[81][A0][98][91][9D][A5][9B][A3][A4][91], [A5][A7][A0][95][9A]." next
+    "@[7E][A0][C6] [95][A0][A9][C3] [9F][96] [A7][A0][A9][96][A4] [A2][91][99][94][A0][93][91][A2][9A][93][91][A4][C3] [A3] [A0][92][96][99][C3][C6][9F][91][9E][9A] [9A][99] [83][7E][7A] [93][A2][A0][95][96] [A4][96][92][C6]." end
 
 l_0xc80dd8:
     "@Now where did she go?" next

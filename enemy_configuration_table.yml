@@ -161,7 +161,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: female
   Guts: 5
   HP: 202
   Hypnosis/Brainshock vulnerability: 50%
@@ -255,7 +255,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 3
   HP: 34
   Hypnosis/Brainshock vulnerability: 100%
@@ -302,7 +302,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 4
   HP: 112
   Hypnosis/Brainshock vulnerability: 100%
@@ -349,7 +349,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 5
   HP: 60
   Hypnosis/Brainshock vulnerability: 0%
@@ -396,7 +396,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 7
   HP: 157
   Hypnosis/Brainshock vulnerability: 0%
@@ -443,7 +443,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 5
   HP: 79
   Hypnosis/Brainshock vulnerability: 0%
@@ -490,7 +490,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 6
   HP: 179
   Hypnosis/Brainshock vulnerability: 0%
@@ -537,7 +537,7 @@
   Fire vulnerability: 5%
   Flash vulnerability: 5%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 5
   HP: 309
   Hypnosis/Brainshock vulnerability: 0%
@@ -584,7 +584,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 5%
   Freeze vulnerability: 70%
-  Gender: neutral
+  Gender: female
   Guts: 12
   HP: 263
   Hypnosis/Brainshock vulnerability: 0%
@@ -631,7 +631,7 @@
   Fire vulnerability: 5%
   Flash vulnerability: 40%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 8
   HP: 594
   Hypnosis/Brainshock vulnerability: 10%
@@ -678,7 +678,7 @@
   Fire vulnerability: 5%
   Flash vulnerability: 40%
   Freeze vulnerability: 70%
-  Gender: neutral
+  Gender: male
   Guts: 8
   HP: 798
   Hypnosis/Brainshock vulnerability: 10%
@@ -725,7 +725,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 40%
-  Gender: neutral
+  Gender: male
   Guts: 20
   HP: 470
   Hypnosis/Brainshock vulnerability: 100%
@@ -772,7 +772,7 @@
   Fire vulnerability: 40%
   Flash vulnerability: 70%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 5
   HP: 458
   Hypnosis/Brainshock vulnerability: 100%
@@ -819,7 +819,7 @@
   Fire vulnerability: 40%
   Flash vulnerability: 100%
   Freeze vulnerability: 70%
-  Gender: neutral
+  Gender: male
   Guts: 5
   HP: 543
   Hypnosis/Brainshock vulnerability: 50%
@@ -960,7 +960,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 100%
   Freeze vulnerability: 5%
-  Gender: neutral
+  Gender: male
   Guts: 7
   HP: 564
   Hypnosis/Brainshock vulnerability: 100%
@@ -1007,7 +1007,7 @@
   Fire vulnerability: 70%
   Flash vulnerability: 40%
   Freeze vulnerability: 40%
-  Gender: neutral
+  Gender: male
   Guts: 1
   HP: 1654
   Hypnosis/Brainshock vulnerability: 50%
@@ -1289,7 +1289,7 @@
   Fire vulnerability: 5%
   Flash vulnerability: 70%
   Freeze vulnerability: 40%
-  Gender: male
+  Gender: female
   Guts: 52
   HP: 1672
   Hypnosis/Brainshock vulnerability: 10%
@@ -1477,7 +1477,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 5%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 13
   HP: 293
   Hypnosis/Brainshock vulnerability: 50%
@@ -1665,7 +1665,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 70%
-  Gender: neutral
+  Gender: male
   Guts: 2
   HP: 1030
   Hypnosis/Brainshock vulnerability: 50%
@@ -1712,7 +1712,7 @@
   Fire vulnerability: 5%
   Flash vulnerability: 70%
   Freeze vulnerability: 70%
-  Gender: neutral
+  Gender: male
   Guts: 3
   HP: 1288
   Hypnosis/Brainshock vulnerability: 50%
@@ -1759,7 +1759,7 @@
   Fire vulnerability: 40%
   Flash vulnerability: 40%
   Freeze vulnerability: 40%
-  Gender: neutral
+  Gender: male
   Guts: 9
   HP: 235
   Hypnosis/Brainshock vulnerability: 50%
@@ -1806,7 +1806,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 5
   HP: 308
   Hypnosis/Brainshock vulnerability: 50%
@@ -1853,7 +1853,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 40%
-  Gender: neutral
+  Gender: male
   Guts: 32
   HP: 1700
   Hypnosis/Brainshock vulnerability: 50%
@@ -1900,7 +1900,7 @@
   Fire vulnerability: 70%
   Flash vulnerability: 70%
   Freeze vulnerability: 40%
-  Gender: male
+  Gender: female
   Guts: 250
   HP: 1827
   Hypnosis/Brainshock vulnerability: 10%
@@ -2041,7 +2041,7 @@
   Fire vulnerability: 40%
   Flash vulnerability: 40%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: female
   Guts: 5
   HP: 190
   Hypnosis/Brainshock vulnerability: 10%
@@ -2088,7 +2088,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 40%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: female
   Guts: 75
   HP: 307
   Hypnosis/Brainshock vulnerability: 0%
@@ -2135,7 +2135,7 @@
   Fire vulnerability: 70%
   Flash vulnerability: 70%
   Freeze vulnerability: 70%
-  Gender: neutral
+  Gender: female
   Guts: 7
   HP: 224
   Hypnosis/Brainshock vulnerability: 50%
@@ -2182,7 +2182,7 @@
   Fire vulnerability: 70%
   Flash vulnerability: 70%
   Freeze vulnerability: 70%
-  Gender: neutral
+  Gender: female
   Guts: 9
   HP: 326
   Hypnosis/Brainshock vulnerability: 50%
@@ -2229,7 +2229,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 3
   HP: 216
   Hypnosis/Brainshock vulnerability: 0%
@@ -2276,7 +2276,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 4
   HP: 344
   Hypnosis/Brainshock vulnerability: 0%
@@ -2323,7 +2323,7 @@
   Fire vulnerability: 40%
   Flash vulnerability: 70%
   Freeze vulnerability: 40%
-  Gender: neutral
+  Gender: male
   Guts: 1
   HP: 1097
   Hypnosis/Brainshock vulnerability: 10%
@@ -2370,7 +2370,7 @@
   Fire vulnerability: 40%
   Flash vulnerability: 70%
   Freeze vulnerability: 70%
-  Gender: neutral
+  Gender: male
   Guts: 1
   HP: 900
   Hypnosis/Brainshock vulnerability: 10%
@@ -2417,7 +2417,7 @@
   Fire vulnerability: 5%
   Flash vulnerability: 70%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 5
   HP: 113
   Hypnosis/Brainshock vulnerability: 50%
@@ -2464,7 +2464,7 @@
   Fire vulnerability: 5%
   Flash vulnerability: 70%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 5
   HP: 374
   Hypnosis/Brainshock vulnerability: 50%
@@ -2511,7 +2511,7 @@
   Fire vulnerability: 5%
   Flash vulnerability: 70%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 5
   HP: 553
   Hypnosis/Brainshock vulnerability: 50%
@@ -2605,7 +2605,7 @@
   Fire vulnerability: 70%
   Flash vulnerability: 70%
   Freeze vulnerability: 100%
-  Gender: male
+  Gender: female
   Guts: 0
   HP: 18
   Hypnosis/Brainshock vulnerability: 100%
@@ -2652,7 +2652,7 @@
   Fire vulnerability: 70%
   Flash vulnerability: 70%
   Freeze vulnerability: 100%
-  Gender: male
+  Gender: female
   Guts: 5
   HP: 270
   Hypnosis/Brainshock vulnerability: 50%
@@ -2793,7 +2793,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 9
   HP: 209
   Hypnosis/Brainshock vulnerability: 0%
@@ -2840,7 +2840,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 9
   HP: 399
   Hypnosis/Brainshock vulnerability: 0%
@@ -2887,7 +2887,7 @@
   Fire vulnerability: 40%
   Flash vulnerability: 5%
   Freeze vulnerability: 70%
-  Gender: neutral
+  Gender: male
   Guts: 5
   HP: 295
   Hypnosis/Brainshock vulnerability: 100%
@@ -2934,7 +2934,7 @@
   Fire vulnerability: 40%
   Flash vulnerability: 70%
   Freeze vulnerability: 70%
-  Gender: neutral
+  Gender: male
   Guts: 5
   HP: 391
   Hypnosis/Brainshock vulnerability: 50%
@@ -2981,7 +2981,7 @@
   Fire vulnerability: 40%
   Flash vulnerability: 70%
   Freeze vulnerability: 70%
-  Gender: neutral
+  Gender: male
   Guts: 5
   HP: 722
   Hypnosis/Brainshock vulnerability: 50%
@@ -3075,7 +3075,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 80
   HP: 137
   Hypnosis/Brainshock vulnerability: 100%
@@ -3122,7 +3122,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 88
   HP: 214
   Hypnosis/Brainshock vulnerability: 100%
@@ -3310,7 +3310,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 5%
   Freeze vulnerability: 5%
-  Gender: neutral
+  Gender: female
   Guts: 5
   HP: 233
   Hypnosis/Brainshock vulnerability: 100%
@@ -3357,7 +3357,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 5%
   Freeze vulnerability: 5%
-  Gender: neutral
+  Gender: female
   Guts: 5
   HP: 577
   Hypnosis/Brainshock vulnerability: 100%
@@ -3592,7 +3592,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 100%
   Freeze vulnerability: 5%
-  Gender: neutral
+  Gender: male
   Guts: 15
   HP: 171
   Hypnosis/Brainshock vulnerability: 50%
@@ -3639,7 +3639,7 @@
   Fire vulnerability: 5%
   Flash vulnerability: 100%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 9
   HP: 176
   Hypnosis/Brainshock vulnerability: 50%
@@ -3686,7 +3686,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 100%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: female
   Guts: 10
   HP: 210
   Hypnosis/Brainshock vulnerability: 100%
@@ -3921,7 +3921,7 @@
   Fire vulnerability: 40%
   Flash vulnerability: 5%
   Freeze vulnerability: 40%
-  Gender: male
+  Gender: female
   Guts: 10
   HP: 3344
   Hypnosis/Brainshock vulnerability: 10%
@@ -3968,7 +3968,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 5%
   Freeze vulnerability: 40%
-  Gender: neutral
+  Gender: male
   Guts: 8
   HP: 482
   Hypnosis/Brainshock vulnerability: 10%
@@ -4015,7 +4015,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 5%
   Freeze vulnerability: 40%
-  Gender: neutral
+  Gender: male
   Guts: 8
   HP: 604
   Hypnosis/Brainshock vulnerability: 10%
@@ -4062,7 +4062,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 5%
   Freeze vulnerability: 40%
-  Gender: neutral
+  Gender: male
   Guts: 8
   HP: 768
   Hypnosis/Brainshock vulnerability: 10%
@@ -4109,7 +4109,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 5%
   Freeze vulnerability: 40%
-  Gender: neutral
+  Gender: male
   Guts: 8
   HP: 792
   Hypnosis/Brainshock vulnerability: 10%
@@ -4156,7 +4156,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 100%
-  Gender: male
+  Gender: female
   Guts: 5
   HP: 51
   Hypnosis/Brainshock vulnerability: 10%
@@ -4250,7 +4250,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 40%
-  Gender: neutral
+  Gender: male
   Guts: 21
   HP: 1048
   Hypnosis/Brainshock vulnerability: 10%
@@ -4297,7 +4297,7 @@
   Fire vulnerability: 70%
   Flash vulnerability: 40%
   Freeze vulnerability: 70%
-  Gender: neutral
+  Gender: female
   Guts: 20
   HP: 292
   Hypnosis/Brainshock vulnerability: 50%
@@ -4438,7 +4438,7 @@
   Fire vulnerability: 70%
   Flash vulnerability: 70%
   Freeze vulnerability: 40%
-  Gender: neutral
+  Gender: female
   Guts: 26
   HP: 631
   Hypnosis/Brainshock vulnerability: 10%
@@ -4532,7 +4532,7 @@
   Fire vulnerability: 70%
   Flash vulnerability: 40%
   Freeze vulnerability: 70%
-  Gender: female
+  Gender: male
   Guts: 7
   HP: 333
   Hypnosis/Brainshock vulnerability: 100%
@@ -4579,7 +4579,7 @@
   Fire vulnerability: 70%
   Flash vulnerability: 40%
   Freeze vulnerability: 70%
-  Gender: female
+  Gender: male
   Guts: 7
   HP: 588
   Hypnosis/Brainshock vulnerability: 100%
@@ -4720,7 +4720,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 70%
-  Gender: neutral
+  Gender: male
   Guts: 5
   HP: 370
   Hypnosis/Brainshock vulnerability: 10%
@@ -4814,7 +4814,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 5%
-  Gender: neutral
+  Gender: male
   Guts: 16
   HP: 579
   Hypnosis/Brainshock vulnerability: 10%
@@ -4861,7 +4861,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 5%
-  Gender: neutral
+  Gender: male
   Guts: 25
   HP: 774
   Hypnosis/Brainshock vulnerability: 10%
@@ -5002,7 +5002,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 5%
-  Gender: neutral
+  Gender: male
   Guts: 7
   HP: 401
   Hypnosis/Brainshock vulnerability: 100%
@@ -5049,7 +5049,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 5%
-  Gender: neutral
+  Gender: male
   Guts: 7
   HP: 501
   Hypnosis/Brainshock vulnerability: 100%
@@ -5096,7 +5096,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 100%
   Freeze vulnerability: 40%
-  Gender: neutral
+  Gender: male
   Guts: 2
   HP: 194
   Hypnosis/Brainshock vulnerability: 100%
@@ -5143,7 +5143,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 100%
   Freeze vulnerability: 40%
-  Gender: neutral
+  Gender: male
   Guts: 4
   HP: 444
   Hypnosis/Brainshock vulnerability: 100%
@@ -5237,7 +5237,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 0
   HP: 30
   Hypnosis/Brainshock vulnerability: 0%
@@ -5284,7 +5284,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 5
   HP: 217
   Hypnosis/Brainshock vulnerability: 0%
@@ -5331,7 +5331,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 100%
-  Gender: male
+  Gender: female
   Guts: 225
   HP: 36
   Hypnosis/Brainshock vulnerability: 10%
@@ -5378,7 +5378,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 70%
-  Gender: male
+  Gender: female
   Guts: 225
   HP: 416
   Hypnosis/Brainshock vulnerability: 10%
@@ -5425,7 +5425,7 @@
   Fire vulnerability: 40%
   Flash vulnerability: 70%
   Freeze vulnerability: 70%
-  Gender: neutral
+  Gender: female
   Guts: 15
   HP: 504
   Hypnosis/Brainshock vulnerability: 10%
@@ -5613,7 +5613,7 @@
   Fire vulnerability: 5%
   Flash vulnerability: 70%
   Freeze vulnerability: 70%
-  Gender: male
+  Gender: female
   Guts: 9
   HP: 500
   Hypnosis/Brainshock vulnerability: 10%
@@ -5895,7 +5895,7 @@
   Fire vulnerability: 40%
   Flash vulnerability: 70%
   Freeze vulnerability: 70%
-  Gender: male
+  Gender: female
   Guts: 25
   HP: 694
   Hypnosis/Brainshock vulnerability: 50%
@@ -5942,7 +5942,7 @@
   Fire vulnerability: 40%
   Flash vulnerability: 70%
   Freeze vulnerability: 70%
-  Gender: male
+  Gender: female
   Guts: 5
   HP: 516
   Hypnosis/Brainshock vulnerability: 50%
@@ -5989,7 +5989,7 @@
   Fire vulnerability: 40%
   Flash vulnerability: 40%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: female
   Guts: 1
   HP: 592
   Hypnosis/Brainshock vulnerability: 10%
@@ -6130,7 +6130,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 40%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 0
   HP: 91
   Hypnosis/Brainshock vulnerability: 10%
@@ -6224,7 +6224,7 @@
   Fire vulnerability: 40%
   Flash vulnerability: 40%
   Freeze vulnerability: 40%
-  Gender: neutral
+  Gender: male
   Guts: 1
   HP: 162
   Hypnosis/Brainshock vulnerability: 0%
@@ -6271,7 +6271,7 @@
   Fire vulnerability: 40%
   Flash vulnerability: 40%
   Freeze vulnerability: 40%
-  Gender: neutral
+  Gender: male
   Guts: 1
   HP: 339
   Hypnosis/Brainshock vulnerability: 0%
@@ -6506,7 +6506,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 40%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: female
   Guts: 5
   HP: 280
   Hypnosis/Brainshock vulnerability: 0%
@@ -6553,7 +6553,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 0
   HP: 38
   Hypnosis/Brainshock vulnerability: 0%
@@ -6600,7 +6600,7 @@
   Fire vulnerability: 40%
   Flash vulnerability: 5%
   Freeze vulnerability: 40%
-  Gender: neutral
+  Gender: male
   Guts: 10
   HP: 372
   Hypnosis/Brainshock vulnerability: 50%
@@ -6882,7 +6882,7 @@
   Fire vulnerability: 40%
   Flash vulnerability: 40%
   Freeze vulnerability: 40%
-  Gender: neutral
+  Gender: male
   Guts: 30
   HP: 962
   Hypnosis/Brainshock vulnerability: 10%
@@ -6929,7 +6929,7 @@
   Fire vulnerability: 5%
   Flash vulnerability: 70%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 14
   HP: 602
   Hypnosis/Brainshock vulnerability: 10%
@@ -7070,7 +7070,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 40%
   Freeze vulnerability: 70%
-  Gender: neutral
+  Gender: male
   Guts: 13
   HP: 82
   Hypnosis/Brainshock vulnerability: 0%
@@ -7117,7 +7117,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 40%
   Freeze vulnerability: 70%
-  Gender: neutral
+  Gender: male
   Guts: 15
   HP: 433
   Hypnosis/Brainshock vulnerability: 0%
@@ -7164,7 +7164,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 40%
-  Gender: neutral
+  Gender: female
   Guts: 5
   HP: 231
   Hypnosis/Brainshock vulnerability: 0%
@@ -7211,7 +7211,7 @@
   Fire vulnerability: 40%
   Flash vulnerability: 40%
   Freeze vulnerability: 40%
-  Gender: neutral
+  Gender: male
   Guts: 5
   HP: 431
   Hypnosis/Brainshock vulnerability: 10%
@@ -7258,7 +7258,7 @@
   Fire vulnerability: 40%
   Flash vulnerability: 70%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 1
   HP: 234
   Hypnosis/Brainshock vulnerability: 50%
@@ -7305,7 +7305,7 @@
   Fire vulnerability: 70%
   Flash vulnerability: 70%
   Freeze vulnerability: 70%
-  Gender: neutral
+  Gender: male
   Guts: 5
   HP: 417
   Hypnosis/Brainshock vulnerability: 50%
@@ -7352,7 +7352,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 70%
-  Gender: neutral
+  Gender: male
   Guts: 10
   HP: 522
   Hypnosis/Brainshock vulnerability: 50%
@@ -7399,7 +7399,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: female
   Guts: 3
   HP: 100
   Hypnosis/Brainshock vulnerability: 0%
@@ -7446,7 +7446,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: female
   Guts: 4
   HP: 141
   Hypnosis/Brainshock vulnerability: 10%
@@ -7681,7 +7681,7 @@
   Fire vulnerability: 70%
   Flash vulnerability: 70%
   Freeze vulnerability: 70%
-  Gender: neutral
+  Gender: male
   Guts: 20
   HP: 999
   Hypnosis/Brainshock vulnerability: 50%
@@ -7728,7 +7728,7 @@
   Fire vulnerability: 70%
   Flash vulnerability: 70%
   Freeze vulnerability: 70%
-  Gender: male
+  Gender: female
   Guts: 5
   HP: 999
   Hypnosis/Brainshock vulnerability: 10%
@@ -7869,7 +7869,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 40%
-  Gender: neutral
+  Gender: male
   Guts: 5
   HP: 100
   Hypnosis/Brainshock vulnerability: 0%
@@ -7916,7 +7916,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 40%
-  Gender: neutral
+  Gender: male
   Guts: 5
   HP: 400
   Hypnosis/Brainshock vulnerability: 0%
@@ -8104,7 +8104,7 @@
   Fire vulnerability: 70%
   Flash vulnerability: 40%
   Freeze vulnerability: 40%
-  Gender: neutral
+  Gender: male
   Guts: 1
   HP: 1654
   Hypnosis/Brainshock vulnerability: 50%
@@ -8198,7 +8198,7 @@
   Fire vulnerability: 5%
   Flash vulnerability: 70%
   Freeze vulnerability: 40%
-  Gender: male
+  Gender: female
   Guts: 52
   HP: 1672
   Hypnosis/Brainshock vulnerability: 10%
@@ -8245,7 +8245,7 @@
   Fire vulnerability: 5%
   Flash vulnerability: 70%
   Freeze vulnerability: 70%
-  Gender: neutral
+  Gender: male
   Guts: 3
   HP: 1288
   Hypnosis/Brainshock vulnerability: 50%
@@ -8292,7 +8292,7 @@
   Fire vulnerability: 40%
   Flash vulnerability: 40%
   Freeze vulnerability: 40%
-  Gender: neutral
+  Gender: male
   Guts: 9
   HP: 235
   Hypnosis/Brainshock vulnerability: 50%
@@ -8339,7 +8339,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 5
   HP: 308
   Hypnosis/Brainshock vulnerability: 50%
@@ -8386,7 +8386,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 40%
-  Gender: neutral
+  Gender: male
   Guts: 32
   HP: 1700
   Hypnosis/Brainshock vulnerability: 50%
@@ -8433,7 +8433,7 @@
   Fire vulnerability: 70%
   Flash vulnerability: 70%
   Freeze vulnerability: 40%
-  Gender: male
+  Gender: female
   Guts: 250
   HP: 1827
   Hypnosis/Brainshock vulnerability: 10%
@@ -8574,7 +8574,7 @@
   Fire vulnerability: 40%
   Flash vulnerability: 70%
   Freeze vulnerability: 40%
-  Gender: neutral
+  Gender: male
   Guts: 1
   HP: 1097
   Hypnosis/Brainshock vulnerability: 10%
@@ -8621,7 +8621,7 @@
   Fire vulnerability: 40%
   Flash vulnerability: 70%
   Freeze vulnerability: 70%
-  Gender: neutral
+  Gender: male
   Guts: 1
   HP: 900
   Hypnosis/Brainshock vulnerability: 10%
@@ -8903,7 +8903,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 100%
   Freeze vulnerability: 5%
-  Gender: neutral
+  Gender: male
   Guts: 15
   HP: 171
   Hypnosis/Brainshock vulnerability: 50%
@@ -8950,7 +8950,7 @@
   Fire vulnerability: 40%
   Flash vulnerability: 5%
   Freeze vulnerability: 40%
-  Gender: male
+  Gender: female
   Guts: 10
   HP: 3344
   Hypnosis/Brainshock vulnerability: 10%
@@ -8997,7 +8997,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 40%
-  Gender: neutral
+  Gender: male
   Guts: 21
   HP: 1048
   Hypnosis/Brainshock vulnerability: 10%
@@ -9091,7 +9091,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 40%
-  Gender: neutral
+  Gender: female
   Guts: 11
   HP: 609
   Hypnosis/Brainshock vulnerability: 50%
@@ -9185,7 +9185,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 40%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: female
   Guts: 75
   HP: 307
   Hypnosis/Brainshock vulnerability: 0%
@@ -9279,7 +9279,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 5%
-  Gender: neutral
+  Gender: male
   Guts: 16
   HP: 579
   Hypnosis/Brainshock vulnerability: 10%
@@ -9326,7 +9326,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 5%
-  Gender: neutral
+  Gender: male
   Guts: 25
   HP: 774
   Hypnosis/Brainshock vulnerability: 10%
@@ -9514,7 +9514,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 40%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 0
   HP: 91
   Hypnosis/Brainshock vulnerability: 10%
@@ -9655,7 +9655,7 @@
   Fire vulnerability: 40%
   Flash vulnerability: 40%
   Freeze vulnerability: 40%
-  Gender: neutral
+  Gender: male
   Guts: 30
   HP: 962
   Hypnosis/Brainshock vulnerability: 10%
@@ -9702,7 +9702,7 @@
   Fire vulnerability: 40%
   Flash vulnerability: 40%
   Freeze vulnerability: 40%
-  Gender: neutral
+  Gender: male
   Guts: 5
   HP: 431
   Hypnosis/Brainshock vulnerability: 10%
@@ -9843,7 +9843,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 3
   HP: 34
   Hypnosis/Brainshock vulnerability: 100%
@@ -9890,7 +9890,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 5
   HP: 60
   Hypnosis/Brainshock vulnerability: 0%
@@ -10031,7 +10031,7 @@
   Fire vulnerability: 70%
   Flash vulnerability: 100%
   Freeze vulnerability: 70%
-  Gender: neutral
+  Gender: male
   Guts: 25
   HP: 90
   Hypnosis/Brainshock vulnerability: 100%
@@ -10454,7 +10454,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 100%
   Freeze vulnerability: 5%
-  Gender: neutral
+  Gender: male
   Guts: 15
   HP: 171
   Hypnosis/Brainshock vulnerability: 50%
@@ -10501,7 +10501,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 100%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: female
   Guts: 0
   HP: 250
   Hypnosis/Brainshock vulnerability: 100%
@@ -10548,7 +10548,7 @@
   Fire vulnerability: 5%
   Flash vulnerability: 5%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 25
   HP: 720
   Hypnosis/Brainshock vulnerability: 50%
@@ -10642,7 +10642,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 70%
   Freeze vulnerability: 5%
-  Gender: neutral
+  Gender: male
   Guts: 19
   HP: 616
   Hypnosis/Brainshock vulnerability: 10%
@@ -10689,7 +10689,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 100%
   Freeze vulnerability: 100%
-  Gender: neutral
+  Gender: male
   Guts: 0
   HP: 377
   Hypnosis/Brainshock vulnerability: 100%
@@ -10830,7 +10830,7 @@
   Fire vulnerability: 40%
   Flash vulnerability: 40%
   Freeze vulnerability: 40%
-  Gender: neutral
+  Gender: male
   Guts: 30
   HP: 962
   Hypnosis/Brainshock vulnerability: 10%
