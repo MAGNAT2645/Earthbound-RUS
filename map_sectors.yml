@@ -1,6 +1,6 @@
 0:
   Item: 0
-  Palette: 2
+  Palette: 0
   Town Map X: 0
   Town Map Y: 0
   Town Map Arrow: none
@@ -9,7 +9,7 @@
   Town Map Image: none
   Town Map: onett
   Teleport: disabled
-  Tileset: 30
+  Tileset: 1
 1:
   Item: 0
   Palette: 2
