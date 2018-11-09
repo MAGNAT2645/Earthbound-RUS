@@ -73,29 +73,34 @@ l_0xc53c36:
     call(data_05.l_0xc56ba0) end
 
 l_0xc53c46:
+//  "@Так себе оружие." end
     newline
     " <[1C 05 31]>" next
-    "@A so-so weapon." end
+    "@[84][91][9C] [A3][96][92][96] [A0][A2][A5][98][9A][96]." end
 
 l_0xc53c5f:
+//  "@Приличное маленькое оружие." end
     newline
     " <[1C 05 32]>" next
-    "@A decent little weapon." end
+    "@[81][A2][9A][9D][9A][A9][9F][A0][96] [9E][91][9D][96][9F][C3][9C][A0][96] [A0][A2][A5][98][9A][96]." end
 
 l_0xc53c7a:
+//  "@Довольно мощное оружие." end
     newline
     " <[1C 05 33]>" next
-    "@A pretty powerful weapon." end
+    "@[75][A0][93][A0][9D][C3][9F][A0] [9E][A0][C0][9F][A0][96] [A0][A2][A5][98][9A][96]." end
 
 l_0xc53c95:
+//  "@Тяжёлое, сильное оружие!" end
     newline
     " <[1C 05 34]>" next
-    "@A tough, strong weapon!" end
+    "@[84][C6][98][97][9D][A0][96], [A3][9A][9D][C3][9F][A0][96] [A0][A2][A5][98][9A][96]!" end
 
 l_0xc53caf:
+//  "@Это одно из крутых, наверняка." end
     newline
     " <[1C 05 35]>" next
-    "@This one rocks, for sure." end
+    "@[B4][A4][A0] [A0][95][9F][A0] [9A][99] [9C][A2][A5][A4][C2][A7], [9F][91][93][96][A2][9F][C6][9C][91]." end
 
 l_0xc53cc8:
     newline
@@ -103,53 +108,65 @@ l_0xc53cc8:
     call(data_05.l_0xc56bc0) end
 
 l_0xc53cd8:
+//  "@Также, немного добавляет Скорости." end
     newline
     " <[1C 05 37]>" next
     call(data_05.l_0xc56bc0) next
-    "@Also, it adds a bit of Speed." end
+    "@[84][91][9C][98][96], [9F][96][9E][9F][A0][94][A0] [95][A0][92][91][93][9D][C6][96][A4] [83][9C][A0][A2][A0][A3][A4][9A]." end
 
 l_0xc53d00:
+//  "@Также увеличивает твою Скорость." end
     newline
     " <[1C 05 38]>" next
     call(data_05.l_0xc56bc0) next
-    "@It also increases your Speed." end
+    "@[84][91][9C][98][96] [A5][93][96][9D][9A][A9][9A][93][91][96][A4] [A4][93][A0][C5] [83][9C][A0][A2][A0][A3][A4][C3]." end
 
 l_0xc53d21:
+//  "@Значительно увеличивает твою Скорость." end
     newline
     " <[1C 05 39]>" next
     call(data_05.l_0xc56bc0) next
-    "@It increases your Speed in a big way." end
+    "@[79][9F][91][A9][9A][A4][96][9D][C3][9F][A0] [A5][93][96][9D][9A][A9][9A][93][91][96][A4] [A4][93][A0][C5] [83][9C][A0][A2][A0][A3][A4][C3]." end
 
 l_0xc53d46:
+//  call(data_05.l_0xc56bdf) "@Защищает от огненных атак." end
     newline
     " <[1C 05 3A]>" next
-    call(data_05.l_0xc56bdf) "@It protects you from fire attacks." end
+    call(data_05.l_0xc56bdf) "@[79][91][C0][9A][C0][91][96][A4] [A0][A4] [A0][94][9F][96][9F][9F][C2][A7] [91][A4][91][9C]." end
 
 l_0xc53d6a:
+//  call(data_05.l_0xc56bdf) "@Защищает от морозных атак." end
     newline
     " <[1C 05 3B]>" next
-    call(data_05.l_0xc56bdf) "@It protects you from freeze attacks." end
+    call(data_05.l_0xc56bdf) "@[79][91][C0][9A][C0][91][96][A4] [A0][A4] [9E][A0][A2][A0][99][9F][C2][A7] [91][A4][91][9C]." end
 
 l_0xc53d8f:
+//  call(data_05.l_0xc56bdf) "@Поглощает свет атаки вспышкой." end
     newline
     " <[1C 05 3C]>" next
-    call(data_05.l_0xc56bdf) "@It absorbs the light of a flash attack." end
+    call(data_05.l_0xc56bdf) "@[81][A0][94][9D][A0][C0][91][96][A4] [A3][93][96][A4] [91][A4][91][9C][9A] [93][A3][A1][C2][AA][9C][A0][9B]." end
 
 l_0xc53db8:
+//  call(data_05.l_0xc56bdf) "@Защита от вспышки, огненных и морозных атак." end
     newline
     " <[1C 05 3D]>" next
-    call(data_05.l_0xc56bdf) "@It protects you from fire, freeze and flash attacks." end
+    call(data_05.l_0xc56bdf) "@[79][91][C0][9A][A4][91] [A0][A4] [93][A3][A1][C2][AA][9C][9A], [A0][94][9F][96][9F][9F][C2][A7] [9A] [9E][A0][A2][A0][99][9F][C2][A7] [91][A4][91][9C]." end
 
 l_0xc53de8:
+//  call(data_05.l_0xc56bdf) "@Защита от вспышки, огненных, морозных и парализующих атак." end
     newline
     " <[1C 05 3E]>" next
-    call(data_05.l_0xc56bdf) "@It protects you from fire, freeze, flash and paralysis attacks." end
+    call(data_05.l_0xc56bdf) "@[79][91][C0][9A][A4][91] [A0][A4] [93][A3][A1][C2][AA][9C][9A], [A0][94][9F][96][9F][9F][C2][A7], [9E][A0][A2][A0][99][9F][C2][A7] [9A] [A1][91][A2][91][9D][9A][99][A5][C5][C0][9A][A7] [91][A4][91][9C]." end
 
 l_0xc53e23:
+    /*
+    "@Экипировка для тела персонажа [1C 02 04]." next
+    "@Повышает его Защиту." end
+    */
     newline
     " <[1C 05 3F]>" next
-    "@[1C 02 04]'s body equipment." next
-    "@It increases his Defense." end
+    "@[B4][9C][9A][A1][9A][A2][A0][93][9C][91] [95][9D][C6] [A4][96][9D][91] [A1][96][A2][A3][A0][9F][91][98][91] [1C 02 04]." next
+    "@[81][A0][93][C2][AA][91][96][A4] [96][94][A0] [79][91][C0][9A][A4][A5]." end
 
 l_0xc53e4f:
     newline
@@ -200,12 +217,18 @@ l_0xc53edd:
     call(data_05.l_0xc56c16) end
 
 l_0xc53ef4:
+    /*
+    "@Экипируется на руку" linebreak
+    "  персонажа [1C 02 04]." next
+    "@Помогает противостоять гипнозу, и повышает Удачу." next
+    "@Конечно же, Защита тоже повышается." end
+    */
     newline
     " <[1C 05 49]>" next
-    "@To be equipped on" linebreak
-    "  [1C 02 04]'s arm." next
-    "@Helps protect from being hypnotized, and Luck goes up." next
-    "@Of course, Defense also goes up." end
+    "@[B4][9C][9A][A1][9A][A2][A5][96][A4][A3][C6] [9F][91] [A2][A5][9C][A5]" linebreak
+    "  [A1][96][A2][A3][A0][9F][91][98][91] [1C 02 04]." next
+    "@[81][A0][9E][A0][94][91][96][A4] [A1][A2][A0][A4][9A][93][A0][A3][A4][A0][C6][A4][C3] [94][9A][A1][9F][A0][99][A5], [9A] [A1][A0][93][C2][AA][91][96][A4] [85][95][91][A9][A5]." next
+    "@[7C][A0][9F][96][A9][9F][A0] [98][96], [79][91][C0][9A][A4][91] [A4][A0][98][96] [A1][A0][93][C2][AA][91][96][A4][A3][C6]." end
 
 l_0xc53f58:
     newline

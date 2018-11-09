@@ -305,10 +305,12 @@ l_0xc8ebdd:
     "{unset(flag 11)}{set(flag 49)}" eob
 
 l_0xc8ebe4:
-    "{window_open(1)}@(He stares into your soul.)[03]{window_closeall}[06 0E 00 {e(data_55.l_0xc9992f)}]{set(flag 46)}{set(flag 433)}{set(flag 588)}" eob
+//  "{window_open(1)}@(Он смотрит в вашу душу.)[03]{window_closeall}[06 0E 00 {e(data_55.l_0xc9992f)}]{set(flag 46)}{set(flag 433)}{set(flag 588)}" eob
+    "{window_open(1)}@([80][9F] [A3][9E][A0][A4][A2][9A][A4] [93] [93][91][AA][A5] [95][A5][AA][A5].)[03]{window_closeall}[06 0E 00 {e(data_55.l_0xc9992f)}]{set(flag 46)}{set(flag 433)}{set(flag 588)}" eob
 
 l_0xc8ec0f:
-    "[19 23 16 02 01 FF 00][1F 16 16 02 00][1F 1A 16 02 03]{pause(30)}[1F 1B 16 02]{window_open(1)}@(He stares into your soul.)[03]{window_closeall}{sound(114)}{pause(60)}[1F F1 17 02 F7 02][1F 61][1F E6 17 02][19 23 17 02 01 01 00][1F 16 17 02 00][1F 1A 17 02 03]{pause(30)}[1F 1B 17 02]{window_open(1)}@(He looks you over.)[03]{window_closeall}[1F E9 17 02][06 0E 00 {e(data_55.l_0xc9992f)}]{set(flag 46)}{set(flag 433)}{set(flag 588)}" eob
+//  "[19 23 16 02 01 FF 00][1F 16 16 02 00][1F 1A 16 02 03]{pause(30)}[1F 1B 16 02]{window_open(1)}@(Он смотрит в вашу душу.)[03]{window_closeall}{sound(114)}{pause(60)}[1F F1 17 02 F7 02][1F 61][1F E6 17 02][19 23 17 02 01 01 00][1F 16 17 02 00][1F 1A 17 02 03]{pause(30)}[1F 1B 17 02]{window_open(1)}@(Он смотрит на вас.)[03]{window_closeall}[1F E9 17 02][06 0E 00 {e(data_55.l_0xc9992f)}]{set(flag 46)}{set(flag 433)}{set(flag 588)}" eob
+    "[19 23 16 02 01 FF 00][1F 16 16 02 00][1F 1A 16 02 03]{pause(30)}[1F 1B 16 02]{window_open(1)}@([80][9F] [A3][9E][A0][A4][A2][9A][A4] [93] [93][91][AA][A5] [95][A5][AA][A5].)[03]{window_closeall}{sound(114)}{pause(60)}[1F F1 17 02 F7 02][1F 61][1F E6 17 02][19 23 17 02 01 01 00][1F 16 17 02 00][1F 1A 17 02 03]{pause(30)}[1F 1B 17 02]{window_open(1)}@([80][9F] [A3][9E][A0][A4][A2][9A][A4] [9F][91] [93][91][A3].)[03]{window_closeall}[1F E9 17 02][06 0E 00 {e(data_55.l_0xc9992f)}]{set(flag 46)}{set(flag 433)}{set(flag 588)}" eob
 
 l_0xc8ec90:
     "{window_open(1)}@(He looks you over.)[03]{window_closeall}[06 0E 00 {e(data_55.l_0xc9992f)}]{set(flag 46)}{set(flag 433)}{set(flag 588)}" eob

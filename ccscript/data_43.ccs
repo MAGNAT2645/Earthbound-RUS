@@ -358,8 +358,12 @@ l_0xc87eee:
     "@                      ...Brick Road" end
 
 l_0xc88000:
-    "{isset(flag 22)}[1B 02 {e(l_0xc8807d)}]@(The bubble monkey took a piece of bubble gum," next
-    "@chewed it and started blowing.)[03]{window_closeall}[06 52 01 {e(l_0xc8824a)}][1F EB 09 06][1F 15 31 00 FD 00 01][1F 61]{sound(14)}[1F 1F 31 00 06][1F 15 32 00 FE 00 01][1F 15 58 01 FF 00 01][1F 61][1F 1F 32 00 06][1F 1F 58 01 06][1F EC 09 01]" eob
+    /*
+    "{isset(flag 22)}[1B 02 {e(l_0xc8807d)}]@(Обезьяна-Пузырь взяла кусок жвачки," next
+    "@разжевала её и начала надувать.)[03]{window_closeall}[06 52 01 {e(l_0xc8824a)}][1F EB 09 06][1F 15 31 00 FD 00 01][1F 61]{sound(14)}[1F 1F 31 00 06][1F 15 32 00 FE 00 01][1F 15 58 01 FF 00 01][1F 61][1F 1F 32 00 06][1F 1F 58 01 06][1F EC 09 01]" eob
+    */
+    "{isset(flag 22)}[1B 02 {e(l_0xc8807d)}]@([80][92][96][99][C3][C6][9F][91]-[81][A5][99][C2][A2][C3] [93][99][C6][9D][91] [9C][A5][A3][A0][9C] [98][93][91][A9][9C][9A]," next
+    "@[A2][91][99][98][96][93][91][9D][91] [96][97] [9A] [9F][91][A9][91][9D][91] [9F][91][95][A5][93][91][A4][C3].)[03]{window_closeall}[06 52 01 {e(l_0xc8824a)}][1F EB 09 06][1F 15 31 00 FD 00 01][1F 61]{sound(14)}[1F 1F 31 00 06][1F 15 32 00 FE 00 01][1F 15 58 01 FF 00 01][1F 61][1F 1F 32 00 06][1F 1F 58 01 06][1F EC 09 01]" eob
 
 l_0xc8807d:
     "[19 10 01]{rtoarg}@[1C 02 00] chewed a piece of bubble gum,{pause(15)} but it wasn't as satisfying as food." end
@@ -374,10 +378,16 @@ l_0xc8824a:
     "[1F EB 09 06][1F 15 31 00 FD 00 01][1F 61][1F 1F 31 00 06][1F 15 32 00 05 01 01][1F 15 58 01 FF 00 01] [1F 61][1F F2 58 01 06 01] [1F 61][1F 1F 32 00 06][1F 1F 58 01 06][1F 15 2E 00 07 01 01] [1F 61][1F 1E A5 02 06][1F 61][1F 1F 2E 00 06][1F 15 2F 00 08 01 01][1F 61][1F 1F 2F 00 06][1F 15 2E 00 09 01 01][1F 61][1F 1F 2E 00 06][1F EC 09 01]{unset(flag 338)}{set(flag 311)}" eob
 
 l_0xc882bd:
-    "[1F E6 78 02] [1F 13 09 05][1F 1C 09 03]{pause(60)}[1F 1D 09]{window_open(1)}@Kye uki kukyi" linebreak
-    "  (Now she's my type...)" next
-    "@Ki kukkyo uke" linebreak
-    "  (I think I'll ask her for a date!)[03]{window_closeall}[1F 12 09][1F 15 2E 00 1D 01 01]{pause(4)}[1F E9 78 02] [1F 61]{unset(flag 22)}" eob
+    /*
+    "[1F E6 78 02] [1F 13 09 05][1F 1C 09 03]{pause(60)}[1F 1D 09]{window_open(1)}@Куе Юки Кюкуи" linebreak
+    "  (Теперь она в моём вкусе...)" next
+    "@Ки Кюккуо Юке" linebreak
+    "  (Я думаю, что позову её на свидание!)[03]{window_closeall}[1F 12 09][1F 15 2E 00 1D 01 01]{pause(4)}[1F E9 78 02] [1F 61]{unset(flag 22)}" eob
+    */
+    "[1F E6 78 02] [1F 13 09 05][1F 1C 09 03]{pause(60)}[1F 1D 09]{window_open(1)}@[7C][A5][96] [B5][9C][9A] [7C][C5][9C][A5][9A]" linebreak
+    "  ([84][96][A1][96][A2][C3] [A0][9F][91] [93] [9E][A0][97][9E] [93][9C][A5][A3][96]...)" next
+    "@[7C][9A] [7C][C5][9C][9C][A5][A0] [B5][9C][96]" linebreak
+    "  ([B6] [95][A5][9E][91][C5], [A9][A4][A0] [A1][A0][99][A0][93][A5] [96][97] [9F][91] [A3][93][9A][95][91][9F][9A][96]!)[03]{window_closeall}[1F 12 09][1F 15 2E 00 1D 01 01]{pause(4)}[1F E9 78 02] [1F 61]{unset(flag 22)}" eob
 
 l_0xc88332:
     "{set(flag 11)}[1F 41 05]" call(data_24.l_0xc69082) "[1F 15 6A 00 91 00 01][1F EF 6A 00][1F E8 FF][1F 61][1F EB FF 06]" call(data_36.l_0xc7dd6b) "{set(flag 655)}{music_resume}[1F ED][1F E5 FF][1F F1 67 02 8B 00][1F 61][06 B8 00 {e(l_0xc88386)}]{unset(flag 9)}[1F F1 67 02 8C 00][1F 61][06 09 00 {e(l_0xc88386)}]" call(data_44.l_0xc886f9) goto(l_0xc88386)
@@ -389,19 +399,32 @@ l_0xc88387:
     "[1F 15 B9 01 09 03 01][1F E9 6F 02][1F 61]{pause(30)}[1F 1E 6D 02 06][1F 61][1F 15 D1 00 92 00 FF][1F 21 BA][1F E8 FF]{pause(1)}[1F 61][1F ED][1F 15 D1 00 93 00 FF][1F 21 BC][1F EF D1 00][1F E8 FF]{pause(1)}[1F 61][1F ED][1F 15 D1 00 99 00 FF][1F 15 E6 00 9B 00 FF][1F 21 BD][1F EF E6 00][1F E8 FF]{pause(1)}[1F 61][1F ED][1F 15 D1 00 94 00 FF][1F 21 BC][1F EF D1 00][1F E8 FF]{pause(1)}[1F 61][1F ED][1F 15 D1 00 9D 00 FF][1F 15 E6 00 9F 00 FF][1F 21 BF][1F EF E6 00][1F E8 FF]{pause(1)}[1F 61][1F ED][1F 15 D1 00 95 00 FF][1F 21 BC][1F EF D1 00][1F E8 FF]{pause(1)}[1F 61][1F ED][1F 15 D1 00 A1 00 FF][1F 15 E6 00 A4 00 FF][1F 21 C1][1F EF E6 00][1F 61][1F E7 D1 00][1F E7 E6 00]" call(data_44.l_0xc886d7) "{pause(15)}" call(data_44.l_0xc886d7) "[1F EA D1 00][1F EA E6 00][1F 61][1F E7 D1 00][1F E7 E6 00]{unset(flag 655)}{music(110)}[1F E8 FF][1F EA D1 00][1F EA E6 00][1F 61][1F ED][1F E5 FF][1F 11 01][1F 11 02][1F 12 03]" call(data_49.l_0xc915f4) "{set(flag 47)}[1F 15 0D 00 B0 00 FF][1F 21 4D]{music_resume}[1F 15 6A 00 AF 00 01]{pause(1)}[1F EF 6A 00][1F E8 FF][1F 61][1F ED][1F E5 FF][1F 1F 0D 00 06][1F 15 03 00 B1 00 01]{pause(1)}[1F E7 03 00]{window_open(1)}" goto(l_0xc884d0)
 
 l_0xc884d0:
-    "@Man,{pause(15)} oh,{pause(5)} man,{pause(20)} did that ever scare me!..." next
-    "@The Sky Runner...{pause(20)}  I guess it took a little damage while landing..." next
-    "@Oh well...[03]{window_closeall}[1F EA 03 00][1F 61]{window_open(1)}" newline
-    "@You don't have to explain a thing...{pause(20)}  I'm [1C 02 03]." next
-    "@I came because you" linebreak
-    "  called me." next
-    "@I'm not very strong,{pause(15)} really near-sighted,{pause(15)} kind of shy," next
-    "@and I tend to be a little reckless.{pause(20)}  This is just the way I am..." next
-    "@I hope you want me to be your friend... okay?" linebreak
-    "[19 02]Yes" eob
+    /*
+    "@Боже,{pause(15)} ох,{pause(5)} Боже,{pause(20)} это меня даже напугало!..." next
+    "@Небесный Бегун...{pause(20)}  полагаю, он получил небольшой урон при посадке..." next
+    "@Ну что ж...[03]{window_closeall}[1F EA 03 00][1F 61]{window_open(1)}" newline
+    "@Тебе не нужно объяснять что-либо...{pause(20)}  Я [1C 02 03]." next
+    "@Я пришёл, потому что ты" linebreak
+    "  звала меня." next
+    "@Я не очень сильный,{pause(15)} довольно близорукий,{pause(15)} немного застенчив," next
+    "@и я склонен быть немного безрассудным.{pause(20)}  Я так устроен..." next
+    "@Я надеюсь, ты хочешь быть моим другом... хорошо?" linebreak
+    "[19 02]Да" eob
+    */
+    "@[72][A0][98][96],{pause(15)} [A0][A7],{pause(5)} [72][A0][98][96],{pause(20)} [C4][A4][A0] [9E][96][9F][C6] [95][91][98][96] [9F][91][A1][A5][94][91][9D][A0]!..." next
+    "@[7F][96][92][96][A3][9F][C2][9B] [72][96][94][A5][9F]...{pause(20)}  [A1][A0][9D][91][94][91][C5], [A0][9F] [A1][A0][9D][A5][A9][9A][9D] [9F][96][92][A0][9D][C3][AA][A0][9B] [A5][A2][A0][9F] [A1][A2][9A] [A1][A0][A3][91][95][9C][96]..." next
+    "@[7F][A5] [A9][A4][A0] [98]...[03]{window_closeall}[1F EA 03 00][1F 61]{window_open(1)}" newline
+    "@[84][96][92][96] [9F][96] [9F][A5][98][9F][A0] [A0][92][C1][C6][A3][9F][C6][A4][C3] [A9][A4][A0]-[9D][9A][92][A0]...{pause(20)}  [B6] [1C 02 03]." next
+    "@[B6] [A1][A2][9A][AA][97][9D], [A1][A0][A4][A0][9E][A5] [A9][A4][A0] [A4][C2]" linebreak
+    "  [99][93][91][9D][91] [9E][96][9F][C6]." next
+    "@[B6] [9F][96] [A0][A9][96][9F][C3] [A3][9A][9D][C3][9F][C2][9B],{pause(15)} [95][A0][93][A0][9D][C3][9F][A0] [92][9D][9A][99][A0][A2][A5][9C][9A][9B],{pause(15)} [9F][96][9E][9F][A0][94][A0] [99][91][A3][A4][96][9F][A9][9A][93]," next
+    "@[9A] [C6] [A3][9C][9D][A0][9F][96][9F] [92][C2][A4][C3] [9F][96][9E][9F][A0][94][A0] [92][96][99][A2][91][A3][A3][A5][95][9F][C2][9E].{pause(20)}  [B6] [A4][91][9C] [A5][A3][A4][A2][A0][96][9F]..." next
+    "@[B6] [9F][91][95][96][C5][A3][C3], [A4][C2] [A7][A0][A9][96][AA][C3] [92][C2][A4][C3] [9E][A0][9A][9E] [95][A2][A5][94][A0][9E]... [A7][A0][A2][A0][AA][A0]?" linebreak
+    "[19 02][75][91]" eob
 
 l_0xc885cb:
-    " [19 02]No" eob
+//  " [19 02]Нет" eob
+    " [19 02][7F][96][A4]" eob
 
 l_0xc885d1:
     "[1C 07 02][11]{clearline}[09 02 {e(data_44.l_0xc88650)} {e(l_0xc885e0)}]" goto(l_0xc885e0)

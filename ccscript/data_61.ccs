@@ -8,80 +8,122 @@ command e(label) "{long label}"
 
 // Text Data
 l_0xef5428:
-    "@[79][91][C0][9A][C0][91][96][A4] [93][A3][96][A7] [A3][9A][9D][A0][93][C2][9E] [C0][9A][A4][A0][9E]." linebreak
-    "@[85][9E][96][9F][C3][AA][91][96][A4] [A5][A2][A0][9F] [93] [95][93][91] [A2][91][99][91], [9A] [A9][91][A3][A4][C3] [A5][A2][A0][9F][91] [93][A0][99][93][A2][91][C0][91][96][A4][A3][C6] [93][A2][91][94][A5]." linebreak
-    "@[7A][A3][A1][A0][9D][C3][99][A0][93][91][9F][9A][96] [95][A2][A5][94][A0][94][A0] [C0][9A][A4][91] [A0][A4][9E][96][9F][C6][96][A4] [C4][A4][9A] [C4][A6][A6][96][9C][A4][C2]." eob
+    /*
+    "@Защищает всех друзей силовым щитом." linebreak
+    "@Уменьшает получ. урон в 2 раза, и часть возвращает врагу." linebreak
+    "@Другой щит отменяет эти эффекты." eob
+    */
+    "@[79][91][C0][9A][C0][91][96][A4] [93][A3][96][A7] [95][A2][A5][99][96][9B] [A3][9A][9D][A0][93][C2][9E] [C0][9A][A4][A0][9E]." linebreak
+    "@[85][9E][96][9F][C3][AA][91][96][A4] [A1][A0][9D][A5][A9]. [A5][A2][A0][9F] [93] 2 [A2][91][99][91], [9A] [A9][91][A3][A4][C3] [93][A0][99][93][A2][91][C0][91][96][A4] [93][A2][91][94][A5]." linebreak
+    "@[75][A2][A5][94][A0][9B] [C0][9A][A4] [A0][A4][9E][96][9F][C6][96][A4] [C4][A4][9A] [C4][A6][A6][96][9C][A4][C2]." eob
 
 l_0xef548f:
-    "@Protects one person with a psychic shield." linebreak
-    "@It blocks an enemy's PSI attack." linebreak
-    "@Using a different shield will cancel these effects." eob
+    /*
+    "@Защищает одного друга ПСИ щитом." linebreak
+    "@Блокирует вражескую ПСИ атаку." linebreak
+    "@Использование другого щита отменяет эти эффекты." eob
+    */
+    "@[79][91][C0][9A][C0][91][96][A4] [A0][95][9F][A0][94][A0] [95][A2][A5][94][91] [81][83][7A] [C0][9A][A4][A0][9E]." linebreak
+    "@[72][9D][A0][9C][9A][A2][A5][96][A4] [93][A2][91][98][96][A3][9C][A5][C5] [81][83][7A] [91][A4][91][9C][A5]." linebreak
+    "@[7A][A3][A1][A0][9D][C3][99][A0][93][91][9F][9A][96] [95][A2][A5][94][A0][94][A0] [C0][9A][A4][91] [A0][A4][9E][96][9F][C6][96][A4] [C4][A4][9A] [C4][A6][A6][96][9C][A4][C2]." eob
 
 l_0xef54e6:
-    "@Protects everyone with a psychic shield." linebreak
-    "@It blocks an enemy's PSI attack." linebreak
-    "@Using a different shield will cancel these effects." eob
+    /*
+    "@Защищает всех друзей ПСИ щитом." linebreak
+    "@Блокирует вражескую ПСИ атаку." linebreak
+    "@Использование другого щита отменяет эти эффекты." eob
+    */
+    "@[79][91][C0][9A][C0][91][96][A4] [93][A3][96][A7] [95][A2][A5][99][96][9B] [81][83][7A] [C0][9A][A4][A0][9E]." linebreak
+    "@[72][9D][A0][9C][9A][A2][A5][96][A4] [93][A2][91][98][96][A3][9C][A5][C5] [81][83][7A] [91][A4][91][9C][A5]." linebreak
+    "@[7A][A3][A1][A0][9D][C3][99][A0][93][91][9F][9A][96] [95][A2][A5][94][A0][94][A0] [C0][9A][A4][91] [A0][A4][9E][96][9F][C6][96][A4] [C4][A4][9A] [C4][A6][A6][96][9C][A4][C2]." eob
 
 l_0xef553c:
-    "@Protects one person with a psychic power shield." linebreak
-    "@It reflects an enemy's PSI attack back at the attacker." linebreak
-    "@Using a different shield will cancel these effects." eob
+    /*
+    "@Защищает одного друга ПСИ силовым щитом." linebreak
+    "@Отражает ПСИ атаку обратно в атакующего." linebreak
+    "@Использование другого щита отменяет эти эффекты." eob
+    */
+    "@[79][91][C0][9A][C0][91][96][A4] [A0][95][9F][A0][94][A0] [95][A2][A5][94][91] [81][83][7A] [A3][9A][9D][A0][93][C2][9E] [C0][9A][A4][A0][9E]." linebreak
+    "@[80][A4][A2][91][98][91][96][A4] [81][83][7A] [91][A4][91][9C][A5] [A0][92][A2][91][A4][9F][A0] [93] [91][A4][91][9C][A5][C5][C0][96][94][A0]." linebreak
+    "@[7A][A3][A1][A0][9D][C3][99][A0][93][91][9F][9A][96] [95][A2][A5][94][A0][94][A0] [C0][9A][A4][91] [A0][A4][9E][96][9F][C6][96][A4] [C4][A4][9A] [C4][A6][A6][96][9C][A4][C2]." eob
 
 l_0xef55a0:
-    "@Protects everyone with a psychic power shield." linebreak
-    "@It reflects an enemy's PSI attack back at the attacker." linebreak
-    "@Using a different shield will cancel these effects." eob
+    /*
+    "@Защищает всех друзей ПСИ силовым щитом." linebreak
+    "@Отражает ПСИ атаку обратно в атакующего." linebreak
+    "@Использование другого щита отменяет эти эффекты." eob
+    */
+    "@[79][91][C0][9A][C0][91][96][A4] [93][A3][96][A7] [95][A2][A5][99][96][9B] [81][83][7A] [A3][9A][9D][A0][93][C2][9E] [C0][9A][A4][A0][9E]." linebreak
+    "@[80][A4][A2][91][98][91][96][A4] [81][83][7A] [91][A4][91][9C][A5] [A0][92][A2][91][A4][9F][A0] [93] [91][A4][91][9C][A5][C5][C0][96][94][A0]." linebreak
+    "@[7A][A3][A1][A0][9D][C3][99][A0][93][91][9F][9A][96] [95][A2][A5][94][A0][94][A0] [C0][9A][A4][91] [A0][A4][9E][96][9F][C6][96][A4] [C4][A4][9A] [C4][A6][A6][96][9C][A4][C2]." eob
 
 l_0xef5603:
-    "@Increase one person's Offense for the duration of the current battle." linebreak
+//  "@Повышает Атаку одного друга до конца текущей битвы." linebreak
+    "@[81][A0][93][C2][AA][91][96][A4] [71][A4][91][9C][A5] [A0][95][9F][A0][94][A0] [95][A2][A5][94][91] [95][A0] [9C][A0][9F][A8][91] [A4][96][9C][A5][C0][96][9B] [92][9A][A4][93][C2]." linebreak
     call(data_05.l_0xc56b0d) eob
 
 l_0xef562e:
-    "@Increase everyone's Offense for the duration of the current battle." linebreak
+//  "@Повышает Атаку всех друзей до конца текущей битвы." linebreak
+    "@[81][A0][93][C2][AA][91][96][A4] [71][A4][91][9C][A5] [93][A3][96][A7] [95][A2][A5][99][96][9B] [95][A0] [9C][A0][9F][A8][91] [A4][96][9C][A5][C0][96][9B] [92][9A][A4][93][C2]." linebreak
     call(data_05.l_0xc56b0d) eob
 
 l_0xef5658:
-    "@Decreases the Defense of one enemy for the duration of the current battle." linebreak
+//  "@Уменьшает Защиту одного врага до конца текущей битвы." linebreak
+    "@[85][9E][96][9F][C3][AA][91][96][A4] [79][91][C0][9A][A4][A5] [A0][95][9F][A0][94][A0] [93][A2][91][94][91] [95][A0] [9C][A0][9F][A8][91] [A4][96][9C][A5][C0][96][9B] [92][9A][A4][93][C2]." linebreak
     call(data_05.l_0xc56b0d) eob
 
 l_0xef5687:
-    "@Decreases the Defense of all enemies for the duration of the current battle." linebreak
+//  "@Уменьшает Защиту всех врагов до конца текущей битвы." linebreak
+    "@[85][9E][96][9F][C3][AA][91][96][A4] [79][91][C0][9A][A4][A5] [93][A3][96][A7] [93][A2][91][94][A0][93] [95][A0] [9C][A0][9F][A8][91] [A4][96][9C][A5][C0][96][9B] [92][9A][A4][93][C2]." linebreak
     call(data_05.l_0xc56b0d) eob
 
 l_0xef56b9:
+//  "@Усыпляет одного врага." linebreak
     "@[85][A3][C2][A1][9D][C6][96][A4] [A0][95][9F][A0][94][A0] [93][A2][91][94][91]." linebreak
     call(data_05.l_0xc56ac0) eob
 
 l_0xef56d0:
-    "@Puts all of the enemies to sleep." linebreak
+//  "@Усыпляет всех врагов." linebreak
+    "@[85][A3][C2][A1][9D][C6][96][A4] [93][A3][96][A7] [93][A2][91][94][A0][93]." linebreak
     call(data_05.l_0xc56ac0) eob
 
 l_0xef56eb:
-    "@Grabs 2-8 points of PP from one enemy and adds it to your own." eob
+//  "@Забирает 2-8 ОП у врага и добавляет к вашим." eob
+    "@[79][91][92][9A][A2][91][96][A4] 2-8 [80][81] [A5] [93][A2][91][94][91] [9A] [95][A0][92][91][93][9D][C6][96][A4] [9C] [93][91][AA][9A][9E]." eob
 
 l_0xef5712:
-    "@Grabs 2-8 points of PP from each enemy and adds it to your own." eob
+//  "@Забирает 2-8 ОП у каждого врага и добавляет к вашим." eob
+    "@[79][91][92][9A][A2][91][96][A4] 2-8 [80][81] [A5] [9C][91][98][95][A0][94][A0] [93][A2][91][94][91] [9A] [95][A0][92][91][93][9D][C6][96][A4] [9C] [93][91][AA][9A][9E]." eob
 
 l_0xef5739:
-    "@Forces one enemy into" call(data_05.l_0xc56ac2) eob
+//  "@Заставляет одного врага попасть в" call(data_05.l_0xc56ac2) eob
+    "@[79][91][A3][A4][91][93][9D][C6][96][A4] [A0][95][9F][A0][94][A0] [93][A2][91][94][91] [A1][A0][A1][91][A3][A4][C3] [93]" call(data_05.l_0xc56ac2) eob
 
 l_0xef574e:
-    "@Forces all enemies into" call(data_05.l_0xc56ac2) eob
+//  "@Заставляет всех врагов попасть в" call(data_05.l_0xc56ac2) eob
+    "@[79][91][A3][A4][91][93][9D][C6][96][A4] [93][A3][96][A7] [93][A2][91][94][A0][93] [A1][A0][A1][91][A3][A4][C3] [93]" call(data_05.l_0xc56ac2) eob
 
 l_0xef5766:
-    "@Makes one enemy feels strange." eob
+//  "@Заставляет одного врага чувствовать себя странно." eob
+    "@[79][91][A3][A4][91][93][9D][C6][96][A4] [A0][95][9F][A0][94][A0] [93][A2][91][94][91] [A9][A5][93][A3][A4][93][A0][93][91][A4][C3] [A3][96][92][C6] [A3][A4][A2][91][9F][9F][A0]." eob
 
 l_0xef5777:
-    "@Makes all of the enemies feel strange." eob
+//  "@Заставляет всех врагов чувствовать себя странно." eob
+    "@[79][91][A3][A4][91][93][9D][C6][96][A4] [93][A3][96][A7] [93][A2][91][94][A0][93] [A9][A5][93][A3][A4][93][A0][93][91][A4][C3] [A3][96][92][C6] [A3][A4][A2][91][9F][9F][A0]." eob
 
 l_0xef578b:
+//  "@Вам нужно хорошо разогнаться, чтобы это сработало." eob
     call(data_05.l_0xc56ae4) newline
-    "@You need a good running approach for this to work." eob
+    "@[73][91][9E] [9F][A5][98][9F][A0] [A7][A0][A2][A0][AA][A0] [A2][91][99][A0][94][9F][91][A4][C3][A3][C6], [A9][A4][A0][92][C2] [C4][A4][A0] [A3][A2][91][92][A0][A4][91][9D][A0]." eob
 
 l_0xef57ae:
+    /*
+    "@Для использования вам не нужно разгоняться." linebreak
+    "@Также называется <Торнадный Телепорт>." eob
+    */
     call(data_05.l_0xc56ae4) newline
-    "@You don't need a running approach to use this." linebreak
-    "@It is also called the <Tornado Teleport.>" eob
+    "@[75][9D][C6] [9A][A3][A1][A0][9D][C3][99][A0][93][91][9F][9A][C6] [93][91][9E] [9F][96] [9F][A5][98][9F][A0] [A2][91][99][94][A0][9F][C6][A4][C3][A3][C6]." linebreak
+    "@[84][91][9C][98][96] [9F][91][99][C2][93][91][96][A4][A3][C6] <[84][A0][A2][9F][91][95][9F][C2][9B] [84][96][9D][96][A1][A0][A2][A4]>." eob
 
 l_0xef57eb:
     "[06 C5 00 {e(data_35.l_0xc7c588)}]{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(data_24.l_0xc690a6)}]{music(155)}@You finally got here." next

@@ -233,38 +233,36 @@ l_0xe10000:
 l_0xe10652:
     "[ 09 ][ 09 ][ 01 0C ]Like a great tapestry, vertical and[ 09 ][ 01 0C ]horizontal threads have met and[ 09 ][ 01 0C ]become intertwined, creating a[ 09 ][ 01 0C ]huge, beautiful image.[ 09 ][ 09 ][ 09 ][ 09 ][ 09 ][ 01 0C ]You may have cursed this never-[ 09 ][ 01 0C ]ending journey.  You have known[ 09 ][ 01 0C ]injury and defeat, but you have[ 09 ][ 01 0C ]struggled on to reach this place.[ 09 ][ 01 0C ]Your in-born intelligence and[ 09 ][ 01 0C ]courage have helped bring you[ 09 ][ 01 0C ]here.  You have believed in your[ 09 ][ 01 0C ]friends, and as a group, you have[ 09 ][ 01 0C ]supported each other.  Have you[ 09 ][ 01 0C ]ever stopped to consider how[ 09 ][ 01 0C ]much your power has grown?[ 09 ][ 01 0C ]Now, you could fell enemies in[ 09 ][ 01 0C ]Onett and Twoson with one[ 09 ][ 01 0C ]blow.  As you certainly know,[ 09 ][ 01 0C ]you cannot turn back.  Giygas,[ 09 ][ 01 0C ]the arch fiend of the universe, is[ 09 ][ 01 0C ]growing frightened of you and[ 09 ][ 01 0C ]your power.  He is searching for[ 09 ][ 01 0C ]ways to end your journey.[ 09 ][ 09 ][ 09 ][ 09 ][ 09 ][ 01 0C ]From here, the challenge grows[ 09 ][ 01 0C ]and your adventure will take you[ 09 ][ 01 0C ]beyond anything you ever[ 09 ][ 01 0C ]imagined.  You are drawing near[ 09 ][ 01 0C ]to Giygas.  Remember, when you[ 09 ][ 01 0C ]are suffering hardships, your[ 09 ][ 01 0C ]enemy is also struggling.[ 09 ][ 09 ][ 09 ][ 09 ][ 09 ][ 01 0C ]By the way, do you know where[ 09 ][ 01 0C ]Pokey went?  When this cup of[ 09 ][ 01 0C ]tea is finished, your adventure will[ 09 ][ 01 0C ]continue.  Your destiny pulls you[ 09 ][ 01 0C ]in the right direction.  Believe in[ 09 ][ 01 0C ]yourself and press forward.[ 09 ][ 09 ][ 09 ][ 09 ][ 09 ][ 01 02 ][ 08 01 ]![ 09 ][ 01 02 ]           [ 08 02 ]![ 09 ][ 01 02 ]                      [ 08 03 ]![ 09 ][ 01 02 ]                                 [ 08 04 ]![ 09 ][ 09 ][ 09 ][ 01 0C ]I wish you luck...[ 09 ][ 09 ][ 09 ][ 09 ][ 09 ][ 09 ][ 09 ][ 09 ][ 09 ][ 00 ]"
 
-/*l_0xe10b86:
-    "[ 02 0C ][ 01 32 ]The year is 199X[ 09 ][ 00 ]"*/
 l_0xe10b86:
+//  "[ 02 0C ][ 01 32 ]199Х год[ 09 ][ 00 ]"
     "[ 02 0C ][ 01 32 ]199[87] [94][A0][95][ 09 ][ 00 ]"
 
 l_0xe10b9c:
-    /* "[ 02 0C ][ 01 0C ]Онетт, городок в Игллэнде[ 09 ][ 00 ]" */
+//  "[ 02 0C ][ 01 0C ]Онетт, городок в Игллэнде[ 09 ][ 00 ]"
     "[ 02 0C ][ 01 0C ][80][9F][96][A4][A4], [94][A0][A2][A0][95][A0][9C] [93] [7A][94][9D][9D][C4][9F][95][96][ 09 ][ 00 ]"
 
-/*l_0xe10bc2:
-    "[ 02 0C ][ 01 3D ][ 08 01 ]'s house[ 09 ][ 00 ]"*/
 l_0xe10bc2:
+//  "[ 02 0C ][ 01 3D ]Дом, где живёт [ 08 01 ][ 09 ][ 00 ]"
     "[ 02 0C ][ 01 3D ][75][A0][9E], [94][95][96] [98][9A][93][97][A4] [ 08 01 ][ 09 ][ 00 ]"
 
 l_0xe10bd2:
-    /* "[ 02 0C ][ 01 00 ]Уинтерс, маленькая страна на севере[ 09 ][ 00 ]" */
+//  "[ 02 0C ][ 01 00 ]Уинтерс, маленькая страна на севере[ 09 ][ 00 ]"
     "[ 02 0C ][ 01 00 ][85][9A][9F][A4][96][A2][A3], [9E][91][9D][96][9F][C3][9C][91][C6] [A3][A4][A2][91][9F][91] [9F][91] [A3][96][93][96][A2][96][ 09 ][ 00 ]"
 
 l_0xe10bfd:
-    "[ 02 0C ][ 01 15 ]Snow Wood Boarding House[ 09 ][ 00 ]"
+//  "[ 02 0C ][ 01 15 ]Пансионат в снежном лесу[ 09 ][ 00 ]"
+    "[ 02 0C ][ 01 15 ][81][91][9F][A3][9A][A0][9F][91][A4] [93] [A3][9F][96][98][9F][A0][9E] [9D][96][A3][A5][ 09 ][ 00 ]"
 
 l_0xe10c1b:
-    /* "[ 02 0C ][ 01 23 ]Далаам, на Дальнем Востоке[ 09 ][ 00 ]" */
+//  "[ 02 0C ][ 01 23 ]Далаам, на Дальнем Востоке[ 09 ][ 00 ]"
     "[ 02 0C ][ 01 23 ][75][91][9D][91][91][9E], [9F][91] [75][91][9D][C3][9F][96][9E] [73][A0][A3][A4][A0][9C][96][ 09 ][ 00 ]"
 
 l_0xe10c38:
-    /* "[ 02 0B ][ 01 25 ]Дворец [ 08 04 ][ 09 ][ 01 30 ]Наследного Принца[ 09 ][ 00 ]" */
+//  "[ 02 0B ][ 01 25 ]Дворец [ 08 04 ][ 09 ][ 01 30 ]Наследного Принца[ 09 ][ 00 ]"
     "[ 02 0B ][ 01 25 ][75][93][A0][A2][96][A8] [ 08 04 ][ 09 ][ 01 30 ][7F][91][A3][9D][96][95][9F][A0][94][A0] [81][A2][9A][9F][A8][91][ 09 ][ 00 ]"
 
-/*l_0xe10c61:
-    "[ 02 0C ][ 01 30 ]Later that night...[ 09 ][ 00 ]"*/
 l_0xe10c61:
+//  "[ 02 0C ][ 01 30 ]Этой же ночью...[ 09 ][ 00 ]"
     "[ 02 0C ][ 01 30 ][B4][A4][A0][9B] [98][96] [9F][A0][A9][C3][C5]...[ 09 ][ 00 ]"
 
 l_0xe1413f:
@@ -461,123 +459,171 @@ l_0xe1413f:
     "[ 04 ][ 03 0D ][ FF ]"
 
 l_0xef4e20:
-    call(data_05.l_0xc568c9) " [9C][91][98][95][A0][9E][A5] [93][A2][91][94][A5] [A0][9C][A0][9D][A0] 50 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]." eob
+//  call(data_05.l_0xc568c9) " каждому врагу ~50 очков урона." eob
+    call(data_05.l_0xc568c9) " [9C][91][98][95][A0][9E][A5] [93][A2][91][94][A5] ~50 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]." eob
 
 l_0xef4e38:
-    call(data_05.l_0xc568c9) " [9C][91][98][95][A0][9E][A5] [93][A2][91][94][A5] [A0][9C][A0][9D][A0] 180 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]." eob
+//  call(data_05.l_0xc568c9) " каждому врагу ~180 очков урона." eob
+    call(data_05.l_0xc568c9) " [9C][91][98][95][A0][9E][A5] [93][A2][91][94][A5] ~180 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]." eob
 
 l_0xef4e51:
-    call(data_05.l_0xc568c9) " [9C][91][98][95][A0][9E][A5] [93][A2][91][94][A5] [A0][9C][A0][9D][A0] 320 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]." eob
+//  call(data_05.l_0xc568c9) " каждому врагу ~320 очков урона." eob
+    call(data_05.l_0xc568c9) " [9C][91][98][95][A0][9E][A5] [93][A2][91][94][A5] ~320 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]." eob
 
 l_0xef4e6a:
-    call(data_05.l_0xc568c9) " [9C][91][98][95][A0][9E][A5] [93][A2][91][94][A5] [A0][9C][A0][9D][A0] 640 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]." eob
+//  call(data_05.l_0xc568c9) " каждому врагу ~640 очков урона." eob
+    call(data_05.l_0xc568c9) " [9C][91][98][95][A0][9E][A5] [93][A2][91][94][A5] ~640 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]." eob
 
 l_0xef4e83:
-    call(data_05.l_0xc56913) " [A0][9C][A0][9D][A0] 80 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]." eob
+//  call(data_05.l_0xc56913) " ~80 очков урона." eob
+    call(data_05.l_0xc56913) " ~80 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]." eob
 
 l_0xef4e99:
-    call(data_05.l_0xc56913) " [A0][9C][A0][9D][A0] 160 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]." eob
+//  call(data_05.l_0xc56913) " ~160 очков урона." eob
+    call(data_05.l_0xc56913) " ~160 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]." eob
 
 l_0xef4eb0:
-    call(data_05.l_0xc56913) " [A0][9C][A0][9D][A0] 240 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]." eob
+//  call(data_05.l_0xc56913) " ~240 очков урона." eob
+    call(data_05.l_0xc56913) " ~240 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]." eob
 
 l_0xef4ec7:
-    call(data_05.l_0xc56913) " [A0][9C][A0][9D][A0] 320 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]." eob
+//  call(data_05.l_0xc56913) " ~320 очков урона." eob
+    call(data_05.l_0xc56913) " ~320 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]." eob
 
 l_0xef4ede:
-    call(data_05.l_0xc56935) " inflicting about 180 points of damage." linebreak
+//  call(data_05.l_0xc56935) " нанося ~180 очков урона." linebreak
+    call(data_05.l_0xc56935) " [9F][91][9F][A0][A3][C6] ~180 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]." linebreak
     call(data_05.l_0xc56955) newline
     call(data_05.l_0xc56b3e) eob
 
 l_0xef4f06:
-    call(data_05.l_0xc56935) " inflicting about 360 points of damage." linebreak
+//  call(data_05.l_0xc56935) " нанося ~360 очков урона." linebreak
+    call(data_05.l_0xc56935) " [9F][91][9F][A0][A3][C6] ~360 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]." linebreak
     call(data_05.l_0xc56955) newline
     call(data_05.l_0xc56b3e) eob
 
 l_0xef4f2e:
-    call(data_05.l_0xc56935) " inflicting about 540 points of damage." linebreak
+//  call(data_05.l_0xc56935) " нанося ~540 очков урона." linebreak
+    call(data_05.l_0xc56935) " [9F][91][9F][A0][A3][C6] ~540 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]." linebreak
     call(data_05.l_0xc56955) newline
     call(data_05.l_0xc56b3e) eob
 
 l_0xef4f56:
-    call(data_05.l_0xc56935) " inflicting about 720 points of damage." linebreak
+//  call(data_05.l_0xc56935) " нанося ~720 очков урона." linebreak
+    call(data_05.l_0xc56935) " [9F][91][9F][A0][A3][C6] ~720 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]." linebreak
     call(data_05.l_0xc56955) linebreak
     call(data_05.l_0xc56b3e) eob
 
 l_0xef4f7e:
-    "@The enemy is thunder struck for about 120 points of damage." linebreak
+//  "@Врага поражает молния, нанося ~120 очков урона." linebreak
+    "@[73][A2][91][94][91] [A1][A0][A2][91][98][91][96][A4] [9E][A0][9D][9F][9A][C6], [9F][91][9F][A0][A3][C6] ~120 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]." linebreak
     call(data_05.l_0xc5696c) eob
 
 l_0xef4fa6:
-    "@The enemy is thunder struck for about 120 points of damage two separate times." linebreak
+//  "@Врага поражает молния, нанося ~120 очков урона 2 раза подряд." linebreak
+    "@[73][A2][91][94][91] [A1][A0][A2][91][98][91][96][A4] [9E][A0][9D][9F][9A][C6], [9F][91][9F][A0][A3][C6] ~120 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91] 2 [A2][91][99][91] [A1][A0][95][A2][C6][95]." linebreak
     call(data_05.l_0xc5696c) eob
 
 l_0xef4fdc:
-    "@The enemy is thunder struck for about 200 points of damage three separate times." linebreak
+//  "@Врага поражает молния, нанося ~200 очков урона 3 раза подряд." linebreak
+    "@[73][A2][91][94][91] [A1][A0][A2][91][98][91][96][A4] [9E][A0][9D][9F][9A][C6], [9F][91][9F][A0][A3][C6] ~200 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91] 3 [A2][91][99][91] [A1][A0][95][A2][C6][95]." linebreak
     call(data_05.l_0xc5696c) eob
 
 l_0xef5013:
-    "@The enemy is thunder struck for about 200 points of damage four separate times." linebreak
+//  "@Врага поражает молния, нанося ~200 очков урона 4 раза подряд." linebreak
+    "@[73][A2][91][94][91] [A1][A0][A2][91][98][91][96][A4] [9E][A0][9D][9F][9A][C6], [9F][91][9F][A0][A3][C6] ~200 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91] 4 [A2][91][99][91] [A1][A0][95][A2][C6][95]." linebreak
     call(data_05.l_0xc5696c) eob
 
 l_0xef5049:
-    call(data_05.l_0xc569a9) call(data_05.l_0xc569ca) ", and in some circumstances, feel strange." eob
+//  call(data_05.l_0xc569a9) call(data_05.l_0xc569ca) ", и, иногда, странно себя чувствовать." eob
+    call(data_05.l_0xc569a9) call(data_05.l_0xc569ca) ", [9A], [9A][9F][A0][94][95][91], [A3][A4][A2][91][9F][9F][A0] [A3][96][92][C6] [A9][A5][93][A3][A4][93][A0][93][91][A4][C3]." eob
 
 l_0xef506b:
-    call(data_05.l_0xc569a9) call(data_05.l_0xc569ca) ", and in some circumstances, can make the enemy feel strange, become numb, or even be destroyed." eob
+//  call(data_05.l_0xc569a9) call(data_05.l_0xc569ca) ", и, иногда, чувствовать себя странно, онеметь, или даже уничтожить себя." eob
+    call(data_05.l_0xc569a9) call(data_05.l_0xc569ca) ", [9A], [9A][9F][A0][94][95][91], [A9][A5][93][A3][A4][93][A0][93][91][A4][C3] [A3][96][92][C6] [A3][A4][A2][91][9F][9F][A0], [A0][9F][96][9E][96][A4][C3], [9A][9D][9A] [95][91][98][96] [A5][9F][9A][A9][A4][A0][98][9A][A4][C3] [A3][96][92][C6]." eob
 
 l_0xef50af:
+//  "@Зачастую, уничтожает врага одним ударом." eob
     call(data_05.l_0xc569a9) call(data_05.l_0xc569ca) "." linebreak
-    "@Often, it will destroy an enemy in a single strike." eob
+    "@[79][91][A9][91][A3][A4][A5][C5], [A5][9F][9A][A9][A4][A0][98][91][96][A4] [93][A2][91][94][91] [A0][95][9F][9A][9E] [A5][95][91][A2][A0][9E]." eob
 
 l_0xef50e1:
-    "@It generates glorious rays that have a high probability of destroying all the enemies on the scene in a single strike." eob
+//  "@Генерирует славные лучи, которые имеют высокую вероятность уничтожения всех врагов одним ударом." eob
+    "@[74][96][9F][96][A2][9A][A2][A5][96][A4] [A3][9D][91][93][9F][C2][96] [9D][A5][A9][9A], [9C][A0][A4][A0][A2][C2][96] [9A][9E][96][C5][A4] [93][C2][A3][A0][9C][A5][C5] [93][96][A2][A0][C6][A4][9F][A0][A3][A4][C3] [A5][9F][9A][A9][A4][A0][98][96][9F][9A][C6] [93][A3][96][A7] [93][A2][91][94][A0][93] [A0][95][9F][9A][9E] [A5][95][91][A2][A0][9E]." eob
 
 l_0xef5131:
+//  "@Наносит ~360 очков урона каждому врагу." eob
     call(data_05.l_0xc569df) newline
-    "@It deals about 360 points of damage to each enemy." eob
+    "@[7F][91][9F][A0][A3][9A][A4] ~360 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91] [9C][91][98][95][A0][9E][A5] [93][A2][91][94][A5]." eob
 
 l_0xef5152:
+//  "@Наносит ~720 очков урона каждому врагу." eob
     call(data_05.l_0xc569df) newline
-    "@It deals about 720 points of damage to each enemy." eob
+    "@[7F][91][9F][A0][A3][9A][A4] ~720 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91] [9C][91][98][95][A0][9E][A5] [93][A2][91][94][A5]." eob
 
 l_0xef5173:
-    "@Restores 100 HP to one person." eob
+//  "@Восстанавливает 100 ОЗ одному другу." eob
+    "@[73][A0][A3][A3][A4][91][9F][91][93][9D][9A][93][91][96][A4] 100 [80][79] [A0][95][9F][A0][9E][A5] [95][A2][A5][94][A5]." eob
 
 l_0xef5189:
-    "@Restores 300 HP to one person." eob
+//  "@Восстанавливает 300 ОЗ одному другу." eob
+    "@[73][A0][A3][A3][A4][91][9F][91][93][9D][9A][93][91][96][A4] 300 [80][79] [A0][95][9F][A0][9E][A5] [95][A2][A5][94][A5]." eob
 
 l_0xef519f:
-    "@Completely restores the HP of one person." eob
+//  "@Полностью восстанавливает ОЗ одного друга." eob
+    "@[81][A0][9D][9F][A0][A3][A4][C3][C5] [93][A0][A3][A3][A4][91][9F][91][93][9D][9A][93][91][96][A4] [80][79] [A0][95][9F][A0][94][A0] [95][A2][A5][94][91]." eob
 
 l_0xef51bb:
-    "@Restores 400 HP to everyone." eob
+//  "@Восстанавливает 400 ОЗ всем друзьям." eob
+    "@[73][A0][A3][A3][A4][91][9F][91][93][9D][9A][93][91][96][A4] 400 [80][79] [93][A3][96][9E] [95][A2][A5][99][C3][C6][9E]." eob
 
 l_0xef51cf:
-    "@Cures a cold, sunstroke or sleep conditions." eob
+//  "@Лечит простуду, солнечный удар или состояние сна." eob
+    "@[7D][96][A9][9A][A4] [A1][A2][A0][A3][A4][A5][95][A5], [A3][A0][9D][9F][96][A9][9F][C2][9B] [A5][95][91][A2] [9A][9D][9A] [A3][A0][A3][A4][A0][C6][9F][9A][96] [A3][9F][91]." eob
 
 l_0xef51f0:
-    "@In addition to the effects of Healing [8B], this cures poisonings, nausea, feeling strange and uncontrollable crying." eob
+//  "@В дополнение к эффектам Лечения [8B], лечит отравление, тошноту, странное самочувствие и неконтролируемый плач." eob
+    "@[73] [95][A0][A1][A0][9D][9F][96][9F][9A][96] [9C] [C4][A6][A6][96][9C][A4][91][9E] [7D][96][A9][96][9F][9A][C6] [8B], [9D][96][A9][9A][A4] [A0][A4][A2][91][93][9D][96][9F][9A][96], [A4][A0][AA][9F][A0][A4][A5], [A3][A4][A2][91][9F][9F][A0][96] [A3][91][9E][A0][A9][A5][93][A3][A4][93][9A][96] [9A] [9F][96][9C][A0][9F][A4][A2][A0][9D][9A][A2][A5][96][9E][C2][9B] [A1][9D][91][A9]." eob
 
 l_0xef5239:
-    "@In addition to the effects of Healing [8C], this cures being diamondized and paralysis." linebreak
-    "@It also revives a friend who has become unconscious, though HP is not maxed out." eob
+    /*
+    "@В дополнение к эффектам Лечения [8C], лечит кристаллизацию и паралич." linebreak
+    "@Также оживляет друга, который без сознания, хотя ОЗ не восстанавливаются полностью." eob
+    */
+    "@[73] [95][A0][A1][A0][9D][9F][96][9F][9A][96] [9C] [C4][A6][A6][96][9C][A4][91][9E] [7D][96][A9][96][9F][9A][C6] [8C], [9D][96][A9][9A][A4] [9C][A2][9A][A3][A4][91][9D][9D][9A][99][91][A8][9A][C5] [9A] [A1][91][A2][91][9D][9A][A9]." linebreak
+    "@[84][91][9C][98][96] [A0][98][9A][93][9D][C6][96][A4] [95][A2][A5][94][91], [9C][A0][A4][A0][A2][C2][9B] [92][96][99] [A3][A0][99][9F][91][9F][9A][C6], [A7][A0][A4][C6] [80][79] [9F][96] [93][A0][A3][A3][A4][91][9F][91][93][9D][9A][93][91][C5][A4][A3][C6] [A1][A0][9D][9F][A0][A3][A4][C3][C5]." eob
 
 l_0xef52a5:
-    "@In addition to the effects of Healing [8D], this revives a friend who has become unconscious, and it completely maxes out that person's HP when revived." eob
+//  "@В дополнение к эффектам Лечения [8D], оживляет друга, который без сознания, и полностью восстанавливает его ОЗ." eob
+    "@[73] [95][A0][A1][A0][9D][9F][96][9F][9A][96] [9C] [C4][A6][A6][96][9C][A4][91][9E] [7D][96][A9][96][9F][9A][C6] [8D], [A0][98][9A][93][9D][C6][96][A4] [95][A2][A5][94][91], [9C][A0][A4][A0][A2][C2][9B] [92][96][99] [A3][A0][99][9F][91][9F][9A][C6], [9A] [A1][A0][9D][9F][A0][A3][A4][C3][C5] [93][A0][A3][A3][A4][91][9F][91][93][9D][9A][93][91][96][A4] [96][94][A0] [80][79]." eob
 
 l_0xef5301:
-    "@Protect one person with the shield of light." linebreak
-    "@It reduces the damage caused by an enemy's attack by 50%." linebreak
-    "@Using a different shield will cancel these effects." eob
+    /*
+    "@Защищает одного друга щитом света." linebreak
+    "@Уменьшает получаемый врагом урон на 50%." linebreak
+    "@Использование другого щита отменяет эти эффекты." eob
+    */
+    "@[79][91][C0][9A][C0][91][96][A4] [A0][95][9F][A0][94][A0] [95][A2][A5][94][91] [C0][9A][A4][A0][9E] [A3][93][96][A4][91]." linebreak
+    "@[85][9E][96][9F][C3][AA][91][96][A4] [A1][A0][9D][A5][A9][91][96][9E][C2][9B] [93][A2][91][94][A0][9E] [A5][A2][A0][9F] [9F][91] 50%." linebreak
+    "@[7A][A3][A1][A0][9D][C3][99][A0][93][91][9F][9A][96] [95][A2][A5][94][A0][94][A0] [C0][9A][A4][91] [A0][A4][9E][96][9F][C6][96][A4] [C4][A4][9A] [C4][A6][A6][96][9C][A4][C2]." eob
 
 l_0xef5361:
-    "@Protect everyone with the shield of light." linebreak
-    "@It reduces the damage caused by an enemy's attack by 50%." linebreak
-    "@Using a different shield will cancel these effects." eob
+    /*
+    "@Защищает всех друзей щитом света." linebreak
+    "@Уменьшает получаемый врагом урон на 50%." linebreak
+    "@Использование другого щита отменяет эти эффекты." eob
+    */
+    "@[79][91][C0][9A][C0][91][96][A4] [93][A3][96][A7] [95][A2][A5][99][96][9B] [C0][9A][A4][A0][9E] [A3][93][96][A4][91]." linebreak
+    "@[85][9E][96][9F][C3][AA][91][96][A4] [A1][A0][9D][A5][A9][91][96][9E][C2][9B] [93][A2][91][94][A0][9E] [A5][A2][A0][9F] [9F][91] 50%." linebreak
+    "@[7A][A3][A1][A0][9D][C3][99][A0][93][91][9F][9A][96] [95][A2][A5][94][A0][94][A0] [C0][9A][A4][91] [A0][A4][9E][96][9F][C6][96][A4] [C4][A4][9A] [C4][A6][A6][96][9C][A4][C2]." eob
 
 l_0xef53c0:
-    "@Protects one person with a power shield." linebreak
-    "@Cuts damage in half and some of the blocked damage is dealt back to the enemy." linebreak
-    "@Using a different shield will cancel these effects." eob
+    /*
+    "@Защищает одного друга силовым щитом." linebreak
+    "@Уменьшает получ. урон на 50% и часть возвращает врагу." linebreak
+    "@Другой щит отменяет эти эффекты." eob
+    */
+    "@[79][91][C0][9A][C0][91][96][A4] [A0][95][9F][A0][94][A0] [95][A2][A5][94][91] [A3][9A][9D][A0][93][C2][9E] [C0][9A][A4][A0][9E]." linebreak
+    "@[85][9E][96][9F][C3][AA][91][96][A4] [A1][A0][9D][A5][A9]. [A5][A2][A0][9F] [9F][91] 50% [9A] [A9][91][A3][A4][C3] [93][A0][99][93][A2][91][C0][91][96][A4] [93][A2][91][94][A5]." linebreak
+    "@[75][A2][A5][94][A0][9B] [C0][9A][A4] [A0][A4][9E][96][9F][C6][96][A4] [C4][A4][9A] [C4][A6][A6][96][9C][A4][C2]." eob
 

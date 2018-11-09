@@ -449,8 +449,9 @@ l_0xc6fa2e:
     "[1D 03 FF][1B 02 {e(l_0xc6fab4)}]{store_registers}[1D 0E 00 00]{load_registers}{swap}@[1C 02 00]{swap} got it.{wait}{sound(116)}{pause(1)}" eob
 
 l_0xc6fa68:
+//  "@(Ключ согнут и не входит в отверстие замка!){wait}{set(flag 605)}" eob
     "{load_registers}" newline
-    "@(The key is bent and doesn't fit into the key hole!){wait}{set(flag 605)}" eob
+    "@([7C][9D][C5][A9] [A3][A0][94][9F][A5][A4] [9A] [9F][96] [93][A7][A0][95][9A][A4] [93] [A0][A4][93][96][A2][A3][A4][9A][96] [99][91][9E][9C][91]!){wait}{set(flag 605)}" eob
 
 l_0xc6fa93:
     "@(Unfortunately, there is nothing in this locker.)" end
@@ -466,7 +467,8 @@ l_0xc6fb02:
     "{store_registers}[19 19 00 00]{swap}{result_is(172)}[1B 02 {e(l_0xc6fb5d)}]" call(l_0xc6fb33) "[1F 1E DF 01 06]{set(flag 541)}" eob
 
 l_0xc6fb20:
-    "{window_open(1)}@The door is locked.{wait}{window_closeall}" eob
+//  "{window_open(1)}@Дверь закрыта.{wait}{window_closeall}" eob
+    "{window_open(1)}@[75][93][96][A2][C3] [99][91][9C][A2][C2][A4][91].{wait}{window_closeall}" eob
 
 l_0xc6fb33:
     "{load_registers}[19 19 00 00]{swap}@[1C 02 00]{swap} used" linebreak

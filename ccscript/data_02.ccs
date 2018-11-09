@@ -8,36 +8,56 @@ command e(label) "{long label}"
 
 // Text Data
 l_0xc52dcc:
-    "@Will that be all?" linebreak
-    "  Good luck, buddy!" end
+    /*
+    "@На этом всё?" linebreak
+    "  Удачи, приятель!" end
+    */
+    "@[7F][91] [C4][A4][A0][9E] [93][A3][97]?" linebreak
+    "  [85][95][91][A9][9A], [A1][A2][9A][C6][A4][96][9D][C3]!" end
 
 l_0xc52de8:
-    "@So that's everything?" linebreak
-    "  Keep on the watch for bad guys." end
+    /*
+    "@Так это всё?" linebreak
+    "  Следите за плохими парнями." end
+    */
+    "@[84][91][9C] [C4][A4][A0] [93][A3][97]?" linebreak
+    "  [83][9D][96][95][9A][A4][96] [99][91] [A1][9D][A0][A7][9A][9E][9A] [A1][91][A2][9F][C6][9E][9A]." end
 
 l_0xc52e0d:
-    "@I've got what you need.[03]" eob
+//  "@У меня есть то, что вам нужно.[03]" eob
+    "@[85] [9E][96][9F][C6] [96][A3][A4][C3] [A4][A0], [A9][A4][A0] [93][91][9E] [9F][A5][98][9F][A0].[03]" eob
 
 l_0xc52e1c:
     "@[1C 05 00]?" next
     eob
 
 l_0xc52e24:
-    "@Who's gonna lug this around?[03]" eob
+//  "@Кто возьмёт это?[03]" eob
+    "@[7C][A4][A0] [93][A0][99][C3][9E][97][A4] [C4][A4][A0]?[03]" eob
 
 l_0xc52e3a:
-    "@OK.  I suppose you're going to want to equip it here?" linebreak
+//  "@ОК.  Я полагаю, ты хочешь экипировать это здесь?" linebreak
+    "@[80][7C].  [B6] [A1][A0][9D][91][94][91][C5], [A4][C2] [A7][A0][A9][96][AA][C3] [C4][9C][9A][A1][9A][A2][A0][93][91][A4][C3] [C4][A4][A0] [99][95][96][A3][C3]?" linebreak
     eob
 
 l_0xc52e59:
-    "@The [1C 05 00]...?" linebreak
-    "  I'd say about {swap}$[1C 0A 00 00 00 00]." next
-    "@Take it or leave it." linebreak
+    /*
+    "@[1C 05 00]...?" linebreak
+    "  Я бы сказал {swap}$[1C 0A 00 00 00 00]." next
+    "@Возьми это или оставь." linebreak
+    */
+    "@[1C 05 00]...?" linebreak
+    "  [B6] [92][C2] [A3][9C][91][99][91][9D] {swap}$[1C 0A 00 00 00 00]." next
+    "@[73][A0][99][C3][9E][9A] [C4][A4][A0] [9A][9D][9A] [A0][A3][A4][91][93][C3]." linebreak
     eob
 
 l_0xc52e85:
-    "@[1C 02 00] won't be able to equip this." next
-    "@Are you intent on purchasing it anyway?" linebreak
+    /*
+    "@[1C 02 00] не сможет экипировать это." next
+    "@Вы всё равно намерены это купить?" linebreak
+    */
+    "@[1C 02 00] [9F][96] [A3][9E][A0][98][96][A4] [C4][9C][9A][A1][9A][A2][A0][93][91][A4][C3] [C4][A4][A0]." next
+    "@[73][C2] [93][A3][97] [A2][91][93][9F][A0] [9F][91][9E][96][A2][96][9F][C2] [C4][A4][A0] [9C][A5][A1][9A][A4][C3]?" linebreak
     eob
 
 l_0xc52eb2:
@@ -342,10 +362,14 @@ l_0xc536e1:
     eob
 
 l_0xc53711:
+    /*
+    "@Храня её как один из ваших предметов," next
+    "@способна отражать атаку молнией обратно в атакующего." end
+    */
     newline
     " <[1C 05 01]>" next
-    "@By keeping it as one of your items," next
-    "@it deflects a lightning attack back at the attacker." end
+    "@[87][A2][91][9F][C6] [96][97] [9C][91][9C] [A0][95][9A][9F] [9A][99] [93][91][AA][9A][A7] [A1][A2][96][95][9E][96][A4][A0][93]," next
+    "@[A3][A1][A0][A3][A0][92][9F][91] [A0][A4][A2][91][98][91][A4][C3] [91][A4][91][9C][A5] [9E][A0][9D][9F][9A][96][9B] [A0][92][A2][91][A4][9F][A0] [93] [91][A4][91][9C][A5][C5][C0][96][94][A0]." end
 
 l_0xc53750:
     newline
@@ -358,83 +382,102 @@ l_0xc53761:
     "@" call(data_05.l_0xc56b5d) end
 
 l_0xc53772:
+    /*
+    "@Невозможно узнать о его первоначальном использовании." next
+    "@Это просто какой-то сломанный гаджет." next
+    */
     newline
     " <[1C 05 04]>" next
-    "@There's no way of knowing its original use." next
-    "@It's just some kind of broken gadget." next
+    "@[7F][96][93][A0][99][9E][A0][98][9F][A0] [A5][99][9F][91][A4][C3] [A0] [96][94][A0] [A1][96][A2][93][A0][9F][91][A9][91][9D][C3][9F][A0][9E] [9A][A3][A1][A0][9D][C3][99][A0][93][91][9F][9A][9A]." next
+    "@[B4][A4][A0] [A1][A2][A0][A3][A4][A0] [9C][91][9C][A0][9B]-[A4][A0] [A3][9D][A0][9E][91][9F][9F][C2][9B] [94][91][95][98][96][A4]." next
     call(data_05.l_0xc56b6f) end
 
 l_0xc537bc:
+    /*
+    "@Невозможно узнать о его первоначальном использовании." next
+    "@Это просто какой-то сломанный механизм." next
+    */
     newline
     " <[1C 05 05]>" next
-    "@There's no way of knowing its original use." next
-    "@It's just some kind of broken mechanism." next
+    "@[7F][96][93][A0][99][9E][A0][98][9F][A0] [A5][99][9F][91][A4][C3] [A0] [96][94][A0] [A1][96][A2][93][A0][9F][91][A9][91][9D][C3][9F][A0][9E] [9A][A3][A1][A0][9D][C3][99][A0][93][91][9F][9A][9A]." next
+    "@[B4][A4][A0] [A1][A2][A0][A3][A4][A0] [9C][91][9C][A0][9B]-[A4][A0] [A3][9D][A0][9E][91][9F][9F][C2][9B] [9E][96][A7][91][9F][9A][99][9E]." next
     call(data_05.l_0xc56b6f) end
 
 l_0xc53809:
+//  "@Неисправный пневматический пистолет." next
     newline
     " <[1C 05 06]>" next
-    "@A broken air gun." next
+    "@[7F][96][9A][A3][A1][A2][91][93][9F][C2][9B] [A1][9F][96][93][9E][91][A4][9A][A9][96][A3][9C][9A][9B] [A1][9A][A3][A4][A0][9D][96][A4]." next
     call(data_05.l_0xc56b6f) end
 
 l_0xc5382a:
+//  "@Сломанный балончик." next
     newline
     " <[1C 05 07]>" next
-    "@A broken spray can." next
+    "@[83][9D][A0][9E][91][9F][9F][C2][9B] [92][91][9D][A0][9F][A9][9A][9C]." next
     call(data_05.l_0xc56b6f) end
 
 l_0xc5384d:
+//  "@Сломанный лазерный пистолет." next
     newline
     " <[1C 05 08]>" next
-    "@A broken laser gun." next
+    "@[83][9D][A0][9E][91][9F][9F][C2][9B] [9D][91][99][96][A2][9F][C2][9B] [A1][9A][A3][A4][A0][9D][96][A4]." next
     call(data_05.l_0xc56b6f) end
 
 l_0xc53870:
+//  "@Штуковина, похожая на утюг." next
     newline
     " <[1C 05 09]>" next
-    "@A contraption that looks like an iron." next
+    "@[8A][A4][A5][9C][A0][93][9A][9F][91], [A1][A0][A7][A0][98][91][C6] [9F][91] [A5][A4][C5][94]." next
     call(data_05.l_0xc56b6f) end
 
 l_0xc53897:
+//  "@Похожа на лопнувшую водопроводную трубу." next
     newline
     " <[1C 05 0A]>" next
-    "@It looks like a busted water pipe." next
+    "@[81][A0][A7][A0][98][91] [9F][91] [9D][A0][A1][9F][A5][93][AA][A5][C5] [93][A0][95][A0][A1][A2][A0][93][A0][95][9F][A5][C5] [A4][A2][A5][92][A5]." next
     call(data_05.l_0xc56b6f) end
 
 l_0xc538bc:
+//  "@Сломанная пушка." next
     newline
     " <[1C 05 0B]>" next
-    "@A broken beam cannon." next
+    "@[83][9D][A0][9E][91][9F][9F][91][C6] [A1][A5][AA][9C][91]." next
     call(data_05.l_0xc56b6f) end
 
 l_0xc538e0:
+//  "@Сломанный трубчатый предмет." next
     newline
     " <[1C 05 0C]>" next
-    "@A broken tube-shaped item." next
+    "@[83][9D][A0][9E][91][9F][9F][C2][9B] [A4][A2][A5][92][A9][91][A4][C2][9B] [A1][A2][96][95][9E][96][A4]." next
     call(data_05.l_0xc56b6f) end
 
 l_0xc53908:
+//  "@Неисправная базука." next
     newline
     " <[1C 05 0D]>" next
-    "@A broken bazooka." next
+    "@[7F][96][9A][A3][A1][A2][91][93][9F][91][C6] [92][91][99][A5][9C][91]." next
     call(data_05.l_0xc56b6f) end
 
 l_0xc53929:
+//  "@Сломанный аппарат, похожий на тромбон." next
     newline
     " <[1C 05 0E]>" next
-    "@A broken apparatus that is shaped like a trumpet." next
+    "@[83][9D][A0][9E][91][9F][9F][C2][9B] [91][A1][A1][91][A2][91][A4], [A1][A0][A7][A0][98][9A][9B] [9F][91] [A4][A2][A0][9E][92][A0][9F]." next
     call(data_05.l_0xc56b6f) end
 
 l_0xc53960:
+//  "@Сломанное устройство, похожее на гормошку." next
     newline
     " <[1C 05 0F]>" next
-    "@A broken device that looks like a harmonica." next
+    "@[83][9D][A0][9E][91][9F][9F][A0][96] [A5][A3][A4][A2][A0][9B][A3][A4][93][A0], [A1][A0][A7][A0][98][96][96] [9F][91] [94][A0][A2][9E][A0][AA][9C][A5]." next
     call(data_05.l_0xc56b6f) end
 
 l_0xc5398e:
+//  "@Часть сломанного оборудования, похожая на спутниковую антенну." next
     newline
     " <[1C 05 10]>" next
-    "@A piece of broken equipment that looks like a satellite dish." next
+    "@[89][91][A3][A4][C3] [A3][9D][A0][9E][91][9F][9F][A0][94][A0] [A0][92][A0][A2][A5][95][A0][93][91][9F][9A][C6], [A1][A0][A7][A0][98][91][C6] [9F][91] [A3][A1][A5][A4][9F][9A][9C][A0][93][A5][C5] [91][9F][A4][96][9F][9F][A5]." next
     call(data_05.l_0xc56b6f) end
 
 l_0xc539c4:
@@ -463,10 +506,11 @@ l_0xc53a04:
     call(data_05.l_0xc56b8e) end
 
 l_0xc53a14:
+//  "@Этот предмет выглядит так, как будто бы пробка пробилась в сердце!" end
     newline
     " <[1C 05 16]>" next
     call(data_05.l_0xc56b8e) next
-    "@This item looks like it could have had cork put into the core!" end
+    "@[B4][A4][A0][A4] [A1][A2][96][95][9E][96][A4] [93][C2][94][9D][C6][95][9A][A4] [A4][91][9C], [9C][91][9C] [92][A5][95][A4][A0] [92][C2] [A1][A2][A0][92][9C][91] [A1][A2][A0][92][9A][9D][91][A3][C3] [93] [A3][96][A2][95][A8][96]!" end
 
 l_0xc53a47:
     newline
@@ -484,17 +528,22 @@ l_0xc53a67:
     call(data_05.l_0xc56b8e) end
 
 l_0xc53a77:
+//  "@Когда экипировано, повышает твою выдержку." end
     newline
     " <[1C 05 1A]>" next
     call(data_05.l_0xc56b8e) next
-    "@When equipped, it increases your guts." end
+    "@[7C][A0][94][95][91] [C4][9C][9A][A1][9A][A2][A0][93][91][9F][A0], [A1][A0][93][C2][AA][91][96][A4] [A4][93][A0][C5] [93][C2][95][96][A2][98][9C][A5]." end
 
 l_0xc53a9f:
+    /*
+    "@Вы не можете помочь, но способны размахивать этой битой изо всех сил." next
+    "@Есть хороший шанс, что вы можете просто слегка попыхивать." end
+    */
     newline
     " <[1C 05 1B]>" next
     call(data_05.l_0xc56b8e) next
-    "@You can't help but swing this bat with all your might." next
-    "@There's a good chance that you may just whiff." end
+    "@[73][C2] [9F][96] [9E][A0][98][96][A4][96] [A1][A0][9E][A0][A9][C3], [9F][A0] [A3][A1][A0][A3][A0][92][9F][C2] [A2][91][99][9E][91][A7][9A][93][91][A4][C3] [C4][A4][A0][9B] [92][9A][A4][A0][9B] [9A][99][A0] [93][A3][96][A7] [A3][9A][9D]." next
+    "@[76][A3][A4][C3] [A7][A0][A2][A0][AA][9A][9B] [AA][91][9F][A3], [A9][A4][A0] [93][C2] [9E][A0][98][96][A4][96] [A1][A2][A0][A3][A4][A0] [A3][9D][96][94][9C][91] [A1][A0][A1][C2][A7][9A][93][91][A4][C3]." end
 
 l_0xc53ae6:
     newline
@@ -532,8 +581,9 @@ l_0xc53b46:
     call(data_05.l_0xc56b97) end
 
 l_0xc53b56:
+//  "@Повышает твою атаку." end
     newline
     " <[1C 05 23]>" next
     call(data_05.l_0xc56ba9) next
-    "@It increases your offense." end
+    "@[81][A0][93][C2][AA][91][96][A4] [A4][93][A0][C5] [91][A4][91][9C][A5]." end
 

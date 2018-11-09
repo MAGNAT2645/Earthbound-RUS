@@ -17,8 +17,12 @@ l_0xc886f5:
     "{unset(flag 626)}" eob
 
 l_0xc886f9:
-    "{window_open(1)}@What happened?{pause(20)}  It's not moving!" next
-    "@Hey!  Why don't you try pressing the button on the controller![03]{window_closeall}" eob
+    /*
+    "{window_open(1)}@Что произошло?{pause(20)}  Оно не двигается!" next
+    "@Эй!  Почему бы тебе не попробовать нажать кнопку на контроллере![03]{window_closeall}" eob
+    */
+    "{window_open(1)}@[89][A4][A0] [A1][A2][A0][9A][99][A0][AA][9D][A0]?{pause(20)}  [80][9F][A0] [9F][96] [95][93][9A][94][91][96][A4][A3][C6]!" next
+    "@[B4][9B]!  [81][A0][A9][96][9E][A5] [92][C2] [A4][96][92][96] [9F][96] [A1][A0][A1][A2][A0][92][A0][93][91][A4][C3] [9F][91][98][91][A4][C3] [9C][9F][A0][A1][9C][A5] [9F][91] [9C][A0][9F][A4][A2][A0][9D][9D][96][A2][96]![03]{window_closeall}" eob
 
 l_0xc88739:
     call(data_36.l_0xc7dd74) "{sound(96)}{music(155)}{set(flag 11)}[1F F1 13 02 07 00][1F F1 14 02 07 00][1F F1 15 02 07 00]{pause(120)}" goto(data_46.l_0xc8eb75)

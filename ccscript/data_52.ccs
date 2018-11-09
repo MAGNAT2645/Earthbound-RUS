@@ -8,7 +8,8 @@ command e(label) "{long label}"
 
 // Text Data
 l_0xc94b32:
-    "@Oh yeah!{pause(15)}  Let's go!{pause(20)}  Get on the bus!{wait}[1F F1 75 01 B5 00]" eob
+//  "@О да!{pause(15)}  Поехали!{pause(20)}  Залезайте в автобус!{wait}[1F F1 75 01 B5 00]" eob
+    "@[80] [95][91]!{pause(15)}  [81][A0][96][A7][91][9D][9A]!{pause(20)}  [79][91][9D][96][99][91][9B][A4][96] [93] [91][93][A4][A0][92][A5][A3]!{wait}[1F F1 75 01 B5 00]" eob
 
 l_0xc94b57:
     "[06 D3 00 {e(l_0xc94bad)}][06 0D 00 {e(l_0xc94b8e)}][06 0C 00 {e(l_0xc94b8e)}]@I heard [1C 02 02] was kidnapped, but it's still unconfirmed." end
@@ -243,7 +244,8 @@ l_0xc9594d:
     "@I want more dough all the time." end
 
 l_0xc95988:
-    "@I didn't make a spectacle of myself, did I?" end
+//  "@Я не сделал зрелища о себе, не так ли?" end
+    "@[B6] [9F][96] [A3][95][96][9D][91][9D] [99][A2][96][9D][9A][C0][91] [A0] [A3][96][92][96], [9F][96] [A4][91][9C] [9D][9A]?" end
 
 l_0xc959a5:
     "[19 19 00 00]{swap}{result_is(180)}[1B 02 {e(data_35.l_0xc7c6b6)}]@That is exactly what I want." next
@@ -266,9 +268,14 @@ l_0xc95a8d:
     "[19 19 00 00]{swap}{result_is(180)}[1B 03 {e(l_0xc95aa0)}]" goto(data_35.l_0xc7c6b6)
 
 l_0xc95aa0:
-    "{isset(flag 319)}[1B 02 {e(l_0xc95ba0)}][19 10 01][19 22 00 02 FD 00]{swap}{store_registers}{result_is(1)}[1B 03 {e(l_0xc95b64)}]{load_registers}{result_is(2)}[1B 03 {e(l_0xc95b64)}]{load_registers}{result_is(8)}[1B 03 {e(l_0xc95b64)}]{sound(118)}[19 23 FD 00 01 01 00][1F 16 FD 00 00]@Yipes!{pause(60)}  You surprised me.{pause(20)}  Now I'm not sure what to do." next
-    "[1D 01 FF B4]@I got the money, of course,{pause(15)} and now the Runaway Five are free to leave." next
-    "@I've got no complaints now that I have my money.[03]{set(flag 119)}{set(flag 309)}{unset(flag 624)}" goto(data_34.l_0xc799d7)
+    /*
+    "{isset(flag 319)}[1B 02 {e(l_0xc95ba0)}][19 10 01][19 22 00 02 FD 00]{swap}{store_registers}{result_is(1)}[1B 03 {e(l_0xc95b64)}]{load_registers}{result_is(2)}[1B 03 {e(l_0xc95b64)}]{load_registers}{result_is(8)}[1B 03 {e(l_0xc95b64)}]{sound(118)}[19 23 FD 00 01 01 00][1F 16 FD 00 00]@Ух!{pause(60)}  Ты меня удивил.{pause(20)}  Теперь я не уверен, что делать." next
+    "[1D 01 FF B4]@Конечно{pause(15)}, я получил деньги,{pause(15)} и теперь Беглая Пятёрка может уйти." next
+    "@Теперь у меня нет жалоб на отсутствие денег.[03]{set(flag 119)}{set(flag 309)}{unset(flag 624)}" goto(data_34.l_0xc799d7)
+    */
+    "{isset(flag 319)}[1B 02 {e(l_0xc95ba0)}][19 10 01][19 22 00 02 FD 00]{swap}{store_registers}{result_is(1)}[1B 03 {e(l_0xc95b64)}]{load_registers}{result_is(2)}[1B 03 {e(l_0xc95b64)}]{load_registers}{result_is(8)}[1B 03 {e(l_0xc95b64)}]{sound(118)}[19 23 FD 00 01 01 00][1F 16 FD 00 00]@[85][A7]!{pause(60)}  [84][C2] [9E][96][9F][C6] [A5][95][9A][93][9A][9D].{pause(20)}  [84][96][A1][96][A2][C3] [C6] [9F][96] [A5][93][96][A2][96][9F], [A9][A4][A0] [95][96][9D][91][A4][C3]." next
+    "[1D 01 FF B4]@[7C][A0][9F][96][A9][9F][A0]{pause(15)}, [C6] [A1][A0][9D][A5][A9][9A][9D] [95][96][9F][C3][94][9A],{pause(15)} [9A] [A4][96][A1][96][A2][C3] [72][96][94][9D][91][C6] [81][C6][A4][97][A2][9C][91] [9E][A0][98][96][A4] [A5][9B][A4][9A]." next
+    "@[84][96][A1][96][A2][C3] [A5] [9E][96][9F][C6] [9F][96][A4] [98][91][9D][A0][92] [9F][91] [A0][A4][A3][A5][A4][A3][A4][93][9A][96] [95][96][9F][96][94].[03]{set(flag 119)}{set(flag 309)}{unset(flag 624)}" goto(data_34.l_0xc799d7)
 
 l_0xc95b63:
     eob
@@ -331,15 +338,26 @@ l_0xc95ea5:
     "@Come back when you've accomplished something." end
 
 l_0xc95f0a:
-    "{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc960ab)}]@I was going to ask you to be my partner," next
-    "@but I know you'll refuse.{pause(20)}  It's written all over your face." next
-    "@If you accepted,{pause(15)} I was going to give you some money." next
-    "@Actually, I can't keep the money now anyway.{pause(20)}  Let me give this to you." next
-    "@It's 10,000 dollars." next
-    "@Use the money any way you like.{pause(20)}  You cannot refuse my generosity.{pause(20)}  Just accept it." next
-    "@Now I plan on looking for the evil Mani Mani Statue" next
-    "@that Lier X. Agerate unearthed in Onett." next
-    "@I'll see you at another time, in another space.[03][1D 03 FF][1B 02 {e(l_0xc9605d)}][1D 0E 00 B4]" call(data_36.l_0xc7dcb6) "{set(flag 85)}" end
+    /*
+    "{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc960ab)}]@Я собирался попросить тебя стать моим партнёром," next
+    "@но я знаю, что ты откажешься.{pause(20)}  Это написано на твоём лице." next
+    "@Если бы ты принял,{pause(15)} я собирался дать тебе немного денег." next
+    "@На самом деле, я не могу держать деньги сейчас.{pause(20)}  Позволь мне дать это тебе." next
+    "@Это 10,000 долларов." next
+    "@Используй деньги как захочешь.{pause(20)}  Ты не можешь отказаться от моей щедрости.{pause(20)}  Просто прими это." next
+    "@Теперь я планирую искать злую Статую Мани Мани," next
+    "  которую Лер X. Агарт раскопал в Онетте." next
+    "@Увидимся в другой раз, в другом пространстве.[03][1D 03 FF][1B 02 {e(l_0xc9605d)}][1D 0E 00 B4]" call(data_36.l_0xc7dcb6) "{set(flag 85)}" end
+    */
+    "{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc960ab)}]@[B6] [A3][A0][92][9A][A2][91][9D][A3][C6] [A1][A0][A1][A2][A0][A3][9A][A4][C3] [A4][96][92][C6] [A3][A4][91][A4][C3] [9E][A0][9A][9E] [A1][91][A2][A4][9F][97][A2][A0][9E]," next
+    "@[9F][A0] [C6] [99][9F][91][C5], [A9][A4][A0] [A4][C2] [A0][A4][9C][91][98][96][AA][C3][A3][C6].{pause(20)}  [B4][A4][A0] [9F][91][A1][9A][A3][91][9F][A0] [9F][91] [A4][93][A0][97][9E] [9D][9A][A8][96]." next
+    "@[76][A3][9D][9A] [92][C2] [A4][C2] [A1][A2][9A][9F][C6][9D],{pause(15)} [C6] [A3][A0][92][9A][A2][91][9D][A3][C6] [95][91][A4][C3] [A4][96][92][96] [9F][96][9E][9F][A0][94][A0] [95][96][9F][96][94]." next
+    "@[7F][91] [A3][91][9E][A0][9E] [95][96][9D][96], [C6] [9F][96] [9E][A0][94][A5] [95][96][A2][98][91][A4][C3] [95][96][9F][C3][94][9A] [A3][96][9B][A9][91][A3].{pause(20)}  [81][A0][99][93][A0][9D][C3] [9E][9F][96] [95][91][A4][C3] [C4][A4][A0] [A4][96][92][96]." next
+    "@[B4][A4][A0] 10,000 [95][A0][9D][9D][91][A2][A0][93]." next
+    "@[7A][A3][A1][A0][9D][C3][99][A5][9B] [95][96][9F][C3][94][9A] [9C][91][9C] [99][91][A7][A0][A9][96][AA][C3].{pause(20)}  [84][C2] [9F][96] [9E][A0][98][96][AA][C3] [A0][A4][9C][91][99][91][A4][C3][A3][C6] [A0][A4] [9E][A0][96][9B] [C0][96][95][A2][A0][A3][A4][9A].{pause(20)}  [81][A2][A0][A3][A4][A0] [A1][A2][9A][9E][9A] [C4][A4][A0]." next
+    "@[84][96][A1][96][A2][C3] [C6] [A1][9D][91][9F][9A][A2][A5][C5] [9A][A3][9C][91][A4][C3] [99][9D][A5][C5] [83][A4][91][A4][A5][C5] [7E][91][9F][9A] [7E][91][9F][9A]," next
+    "  [9C][A0][A4][A0][A2][A5][C5] [7D][96][A2] X. [71][94][91][A2][A4] [A2][91][A3][9C][A0][A1][91][9D] [93] [80][9F][96][A4][A4][96]." next
+    "@[85][93][9A][95][9A][9E][A3][C6] [93] [95][A2][A5][94][A0][9B] [A2][91][99], [93] [95][A2][A5][94][A0][9E] [A1][A2][A0][A3][A4][A2][91][9F][A3][A4][93][96].[03][1D 03 FF][1B 02 {e(l_0xc9605d)}][1D 0E 00 B4]" call(data_36.l_0xc7dcb6) "{set(flag 85)}" end
 
 l_0xc9605d:
     "{pause(60)}" linebreak

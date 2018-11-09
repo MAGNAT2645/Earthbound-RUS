@@ -159,11 +159,18 @@ l_0xc68d59:
     eob
 
 l_0xc68d5a:
-    "{window_open(1)}@You are a friend who I have never met before..." next
+    /*
+    "{window_open(1)}@Ты друг, которого я не встречала раньше..." next
     "@[1C 02 03]..." next
-    "@Head south..." next
-    "@I am [1C 01 1E]..." next
-    "@If you hear this message, go to the south...{wait}{window_closeall}{unset(flag 636)}" goto(data_48.l_0xc90f90)
+    "@Иди на юг..." next
+    "@Я [1C 01 1E]..." next
+    "@Если ты слышишь это сообщение, иди на юг...{wait}{window_closeall}{unset(flag 636)}" goto(data_48.l_0xc90f90)
+    */
+    "{window_open(1)}@[84][C2] [95][A2][A5][94], [9C][A0][A4][A0][A2][A0][94][A0] [C6] [9F][96] [93][A3][A4][A2][96][A9][91][9D][91] [A2][91][9F][C3][AA][96]..." next
+    "@[1C 02 03]..." next
+    "@[7A][95][9A] [9F][91] [C5][94]..." next
+    "@[B6] [1C 01 1E]..." next
+    "@[76][A3][9D][9A] [A4][C2] [A3][9D][C2][AA][9A][AA][C3] [C4][A4][A0] [A3][A0][A0][92][C0][96][9F][9A][96], [9A][95][9A] [9F][91] [C5][94]...{wait}{window_closeall}{unset(flag 636)}" goto(data_48.l_0xc90f90)
 
 l_0xc68db4:
     eob
