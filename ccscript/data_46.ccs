@@ -299,7 +299,8 @@ l_0xc8eb2c:
     "@I think he's the bee's knees,{pause(15)} oops, I mean way cool.{pause(20)}  He used to be in a band." end
 
 l_0xc8eb75:
-    "{window_open(1)}@Ga{pause(5)}a{pause(5)}o{pause(5)}o{pause(1)}o{pause(1)}o{pause(1)}r{pause(1)}r{pause(1)}g{pause(1)}g!!![03]{window_closeall}{pause(1)}{unset(flag 49)}" call(data_23.l_0xc68538) "[1B 03 {e(l_0xc8ebdd)}][1F 1E 13 02 09][1F 1E 14 02 09][1F 1E 15 02 09]{pause(120)}{set(flag 669)}{set(flag 69)}{unset(flag 373)}{pause(1)}[1F 21 A0]{pause(1)}[1F E5 FF]" call(data_44.l_0xc88761) "{unset(flag 11)}" goto(data_34.l_0xc7a2f7)
+//  "{window_open(1)}@Рра{pause(5)}а{pause(5)}о{pause(5)}о{pause(1)}о{pause(1)}о{pause(1)}р{pause(1)}р{pause(1)}г{pause(1)}х!!![03]{window_closeall}{pause(1)}{unset(flag 49)}" call(data_23.l_0xc68538) "[1B 03 {e(l_0xc8ebdd)}][1F 1E 13 02 09][1F 1E 14 02 09][1F 1E 15 02 09]{pause(120)}{set(flag 669)}{set(flag 69)}{unset(flag 373)}{pause(1)}[1F 21 A0]{pause(1)}[1F E5 FF]" call(data_44.l_0xc88761) "{unset(flag 11)}" goto(data_34.l_0xc7a2f7)
+    "{window_open(1)}@[82][A2][91]{pause(5)}[91]{pause(5)}[A0]{pause(5)}[A0]{pause(1)}[A0]{pause(1)}[A0]{pause(1)}[A2]{pause(1)}[A2]{pause(1)}[94]{pause(1)}[A7]!!![03]{window_closeall}{pause(1)}{unset(flag 49)}" call(data_23.l_0xc68538) "[1B 03 {e(l_0xc8ebdd)}][1F 1E 13 02 09][1F 1E 14 02 09][1F 1E 15 02 09]{pause(120)}{set(flag 669)}{set(flag 69)}{unset(flag 373)}{pause(1)}[1F 21 A0]{pause(1)}[1F E5 FF]" call(data_44.l_0xc88761) "{unset(flag 11)}" goto(data_34.l_0xc7a2f7)
 
 l_0xc8ebdd:
     "{unset(flag 11)}{set(flag 49)}" eob

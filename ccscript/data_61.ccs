@@ -260,18 +260,25 @@ l_0xef6157:
     "@(In case of danger, evacuate here!{pause(20)}  The Boss)" end
 
 l_0xef617b:
-    "[06 6E 01 {e(data_35.l_0xc7c588)}]{window_open(1)}@Did you bring some <Fly Honey>?" next
-    "@It's Master Belch's favorite." linebreak
-    "[19 02]Yes" eob
+    /*
+    "[06 6E 01 {e(data_35.l_0xc7c588)}]{window_open(1)}@Ты принёс немного <Мушиного Мёда>?" next
+    "@Мастер Бэлч любит его." linebreak
+    "[19 02]Да" eob
+    */
+    "[06 6E 01 {e(data_35.l_0xc7c588)}]{window_open(1)}@[84][C2] [A1][A2][9A][9F][97][A3] [9F][96][9E][9F][A0][94][A0] <[7E][A5][AA][9A][9F][A0][94][A0] [7E][97][95][91]>?" next
+    "@[7E][91][A3][A4][96][A2] [72][C4][9D][A9] [9D][C5][92][9A][A4] [96][94][A0]." linebreak
+    "[19 02][75][91]" eob
 
 l_0xef61b6:
-    " [19 02]No" eob
+//  " [19 02]Нет" eob
+    " [19 02][7F][96][A4]" eob
 
 l_0xef61bc:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xef61f3)} {e(l_0xef61cb)}]" goto(l_0xef61cb)
 
 l_0xef61cb:
-    "@Then, why are you here?![03]{window_closeall}" call(data_23.l_0xc6853f) "[1B 03 {e(data_23.l_0xc683de)}]{pause(1)}[1F F1 B0 02 7B 02]{set(flag 366)}" eob
+//  "@Тогда, зачем ты здесь?![03]{window_closeall}" call(data_23.l_0xc6853f) "[1B 03 {e(data_23.l_0xc683de)}]{pause(1)}[1F F1 B0 02 7B 02]{set(flag 366)}" eob
+    "@[84][A0][94][95][91], [99][91][A9][96][9E] [A4][C2] [99][95][96][A3][C3]?![03]{window_closeall}" call(data_23.l_0xc6853f) "[1B 03 {e(data_23.l_0xc683de)}]{pause(1)}[1F F1 B0 02 7B 02]{set(flag 366)}" eob
 
 l_0xef61f3:
     "[1D 05 FF 69][1B 03 {e(l_0xef6247)}]@You didn't bring it?{pause(20)}  You seem kind of suspicious to me..." next
@@ -309,29 +316,52 @@ l_0xef6419:
     "@Smile.  Boing!{wait}{font_normal}" eob
 
 l_0xef6446:
-    "[06 47 00 {e(data_35.l_0xc7c588)}]{music(134)}{sound(78)}@Buuurp!" next
-    "@So you are [1C 02 01]?" next
-    "{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xef66ca)}]@...I see...  Gyork!{pause(15)}  Gyork!{pause(15)}  Gyork!" next
-    "@There's a prophecy that a boy will destroy Master Giygas." next
-    "@Heeg!  Heeg!  Heeg!" linebreak
-    "  You make me laugh so hard..." next
-    "@If Master Giygas is scared of someone..." next
-    "{sound(78)}@he would have to be worse than the greatest evil..." next
-    "@Garg!  Ga!  Garg!  Ga!  Ga!  Ga!" next
-    "@I'll take you down big time, so get ready for the worst fight of your life!" next
+    /*
+    "[06 47 00 {e(data_35.l_0xc7c588)}]{music(134)}{sound(78)}@*Отрыжка*" next
+    "@Так ты [1C 02 01]?" next
+    "{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xef66ca)}]@...Я вижу...  Гуорк!{pause(15)}  Гуорк!{pause(15)}  Гуорк!" next
+    "@Есть пророчество о том, что мальчик уничтожит Мастера Гийгаса." next
+    "@Хе!  Хе!  Хе!" linebreak
+    "  Ты меня смешишь так сильно..." next
+    "@Если Мастер Гийгас боится кого-то..." next
+    "{sound(78)}@он должен был быть хуже величайшего зла..." next
+    "@Гарх!  Га!  Гарх!  Га!  Га!  Га!" next
+    "@Я унижу тебя с большим удовольствием, так что будь готов к худшему сражению в своей жизни!" next
+    */
+    "[06 47 00 {e(data_35.l_0xc7c588)}]{music(134)}{sound(78)}@*[80][A4][A2][C2][98][9C][91]*" next
+    "@[84][91][9C] [A4][C2] [1C 02 01]?" next
+    "{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xef66ca)}]@...[B6] [93][9A][98][A5]...  [74][A5][A0][A2][9C]!{pause(15)}  [74][A5][A0][A2][9C]!{pause(15)}  [74][A5][A0][A2][9C]!" next
+    "@[76][A3][A4][C3] [A1][A2][A0][A2][A0][A9][96][A3][A4][93][A0] [A0] [A4][A0][9E], [A9][A4][A0] [9E][91][9D][C3][A9][9A][9C] [A5][9F][9A][A9][A4][A0][98][9A][A4] [7E][91][A3][A4][96][A2][91] [74][9A][9B][94][91][A3][91]." next
+    "@[87][96]!  [87][96]!  [87][96]!" linebreak
+    "  [84][C2] [9E][96][9F][C6] [A3][9E][96][AA][9A][AA][C3] [A4][91][9C] [A3][9A][9D][C3][9F][A0]..." next
+    "@[76][A3][9D][9A] [7E][91][A3][A4][96][A2] [74][9A][9B][94][91][A3] [92][A0][9A][A4][A3][C6] [9C][A0][94][A0]-[A4][A0]..." next
+    "{sound(78)}@[A0][9F] [95][A0][9D][98][96][9F] [92][C2][9D] [92][C2][A4][C3] [A7][A5][98][96] [93][96][9D][9A][A9][91][9B][AA][96][94][A0] [99][9D][91]..." next
+    "@[74][91][A2][A7]!  [74][91]!  [74][91][A2][A7]!  [74][91]!  [74][91]!  [74][91]!" next
+    "@[B6] [A5][9F][9A][98][A5] [A4][96][92][C6] [A3] [92][A0][9D][C3][AA][9A][9E] [A5][95][A0][93][A0][9D][C3][A3][A4][93][9A][96][9E], [A4][91][9C] [A9][A4][A0] [92][A5][95][C3] [94][A0][A4][A0][93] [9C] [A7][A5][95][AA][96][9E][A5] [A3][A2][91][98][96][9F][9A][C5] [93] [A3][93][A0][96][9B] [98][9A][99][9F][9A]!" next
     "{sound(78)}{pause(40)}" linebreak
     goto(l_0xef6569)
 
 l_0xef6569:
-    "@Gha Gha Gha!" linebreak
-    "  Get ready to feel the pain of true nausea!" next
-    "{sound(78)}{pause(40)}@Ghe Ghe!" linebreak
-    "  Come on, let's go![03]" call(data_23.l_0xc68554) "[1B 03 {e(data_23.l_0xc683de)}]{window_open(1)}{music(134)}@{sound(78)}{pause(40)}Looks like it was an even fight...{pause(20)}  Buurp!" next
-    "@But, Master Giygas has managed to get the Mani Mani statue into Fourside.{pause(20)}{sound(78)}{pause(40)}" next
-    "@The city will soon be in worse condition than living in your own puke!" next
-    "@Suffer, spanky!{pause(20)}{sound(78)}" linebreak
-    "  {pause(40)}Gha, Gha, Gha, Gha, Gha!" next
-    "@Bu{pause(5)}u{pause(5)}u{pause(5)}urp!{sound(78)}{pause(40)}" next
+    /*
+    "@Гха Гха Гха!" linebreak
+    "  Приготовьтесь почувствовать боль от истинной тошноты!" next
+    "{sound(78)}{pause(40)}@Гхе Гхе!" linebreak
+    "  Ну же, давай![03]" call(data_23.l_0xc68554) "[1B 03 {e(data_23.l_0xc683de)}]{window_open(1)}{music(134)}@{sound(78)}{pause(40)}Похоже это был равный бой...{pause(20)}  *Отрыжка!*" next
+    "@Но, Мастер Гийгас сумел получить статую Мани Мани в Фоурсайд.{pause(20)}{sound(78)}{pause(40)}" next
+    "@Скоро город будет в состоянии хуже, чем жизнь в собственной рвоте!" next
+    "@Страдайте, спэнки!{pause(20)}{sound(78)}" linebreak
+    "  {pause(40)}Гха, Гха, Гха, Гха, Гха!" next
+    "@*Отр{pause(5)}ы{pause(5)}ы{pause(5)}жка!*{sound(78)}{pause(40)}" next
+    */
+    "@[74][A7][91] [74][A7][91] [74][A7][91]!" linebreak
+    "  [81][A2][9A][94][A0][A4][A0][93][C3][A4][96][A3][C3] [A1][A0][A9][A5][93][A3][A4][93][A0][93][91][A4][C3] [92][A0][9D][C3] [A0][A4] [9A][A3][A4][9A][9F][9F][A0][9B] [A4][A0][AA][9F][A0][A4][C2]!" next
+    "{sound(78)}{pause(40)}@[74][A7][96] [74][A7][96]!" linebreak
+    "  [7F][A5] [98][96], [95][91][93][91][9B]![03]" call(data_23.l_0xc68554) "[1B 03 {e(data_23.l_0xc683de)}]{window_open(1)}{music(134)}@{sound(78)}{pause(40)}[81][A0][A7][A0][98][96] [C4][A4][A0] [92][C2][9D] [A2][91][93][9F][C2][9B] [92][A0][9B]...{pause(20)}  *[80][A4][A2][C2][98][9C][91]!*" next
+    "@[7F][A0], [7E][91][A3][A4][96][A2] [74][9A][9B][94][91][A3] [A3][A5][9E][96][9D] [A1][A0][9D][A5][A9][9A][A4][C3] [A3][A4][91][A4][A5][C5] [7E][91][9F][9A] [7E][91][9F][9A] [93] [86][A0][A5][A2][A3][91][9B][95].{pause(20)}{sound(78)}{pause(40)}" next
+    "@[83][9C][A0][A2][A0] [94][A0][A2][A0][95] [92][A5][95][96][A4] [93] [A3][A0][A3][A4][A0][C6][9F][9A][9A] [A7][A5][98][96], [A9][96][9E] [98][9A][99][9F][C3] [93] [A3][A0][92][A3][A4][93][96][9F][9F][A0][9B] [A2][93][A0][A4][96]!" next
+    "@[83][A4][A2][91][95][91][9B][A4][96], [A3][A1][C4][9F][9C][9A]!{pause(20)}{sound(78)}" linebreak
+    "  {pause(40)}[74][A7][91], [74][A7][91], [74][A7][91], [74][A7][91], [74][A7][91]!" next
+    "@*[80][A4][A2]{pause(5)}[C2]{pause(5)}[C2]{pause(5)}[98][9C][91]!*{sound(78)}{pause(40)}" next
     "{window_closeall}{pause(1)}[1F F1 B9 02 7B 02]{set(flag 71)}{set(flag 366)}{set(flag 367)}{set(flag 368)}{set(flag 590)}{set(flag 623)}{set(flag 629)}{set(flag 489)}{set(flag 490)}{unset(flag 125)}{unset(flag 773)}{unset(flag 761)}[19 26 04]{music_resume}" eob
 
 l_0xef66ca:
@@ -354,119 +384,187 @@ l_0xef6814:
     call(data_13.l_0xc5d36b) eob
 
 l_0xef681a:
-    "[1D 05 FF 69][1B 03 {e(l_0xef6874)}]@Gyork Gyork!" next
-    "@Hey you, commoner!{pause(20)}  You there wandering around without any <Fly Honey>..." next
-    "@I am the mortal enemy of your kind.[03]" eob
+    /*
+    "[1D 05 FF 69][1B 03 {e(l_0xef6874)}]@Гуорк Гуорк!" next
+    "@Эй ты, человек!{pause(20)}  Ты разгуливаешь здесь без <Мушиного Мёда>..." next
+    "@Я беспощадный враг твоего рода.[03]" eob
+    */
+    "[1D 05 FF 69][1B 03 {e(l_0xef6874)}]@[74][A5][A0][A2][9C] [74][A5][A0][A2][9C]!" next
+    "@[B4][9B] [A4][C2], [A9][96][9D][A0][93][96][9C]!{pause(20)}  [84][C2] [A2][91][99][94][A5][9D][9A][93][91][96][AA][C3] [99][95][96][A3][C3] [92][96][99] <[7E][A5][AA][9A][9F][A0][94][A0] [7E][97][95][91]>..." next
+    "@[B6] [92][96][A3][A1][A0][C0][91][95][9F][C2][9B] [93][A2][91][94] [A4][93][A0][96][94][A0] [A2][A0][95][91].[03]" eob
 
 l_0xef6874:
-    "@Gyork!  Gyork!" next
-    "@Since you had <Fly Honey,> I considered you a friend." next
-    "@But actually, you're just a commoner!{pause(20)}  I am the mortal enemy of your kind.[03]" eob
+    /*
+    "@Гуоркг!  Гуоркг!" next
+    "@Так как у тебя есть <Мушиный Мёд>, я посчитал тебя другом." next
+    "@Но на самом деле, ты просто человек!{pause(20)}  Я беспощадный враг твоего рода.[03]" eob
+    */
+    "@[74][A5][A0][A2][9C][94]!  [74][A5][A0][A2][9C][94]!" next
+    "@[84][91][9C] [9C][91][9C] [A5] [A4][96][92][C6] [96][A3][A4][C3] <[7E][A5][AA][9A][9F][C2][9B] [7E][97][95]>, [C6] [A1][A0][A3][A9][9A][A4][91][9D] [A4][96][92][C6] [95][A2][A5][94][A0][9E]." next
+    "@[7F][A0] [9F][91] [A3][91][9E][A0][9E] [95][96][9D][96], [A4][C2] [A1][A2][A0][A3][A4][A0] [A9][96][9D][A0][93][96][9C]!{pause(20)}  [B6] [92][96][A3][A1][A0][C0][91][95][9F][C2][9B] [93][A2][91][94] [A4][93][A0][96][94][A0] [A2][A0][95][91].[03]" eob
 
 l_0xef68d7:
-    "{window_open(1)}[1D 05 FF 69][1B 03 {e(l_0xef6954)}]@You have defeated me..." next
-    "@Allow me to eat some Fly Honey for the last time..." next
-    "@Master Belch hates people like you." next
-    "@...You see, those who don't have <Fly Honey> are our mortal enemies...[03]{window_closeall}" eob
+    /*
+    "{window_open(1)}[1D 05 FF 69][1B 03 {e(l_0xef6954)}]@Вы победили меня..." next
+    "@Позвольте мне поесть немного Мушиного Мёда напоследок..." next
+    "@Мастер Бэлч ненавидит таких, как вы." next
+    "@...Как видите, те, у кого нет <Мушиного Мёда>, являются нашими смертными врагами...[03]{window_closeall}" eob
+    */
+    "{window_open(1)}[1D 05 FF 69][1B 03 {e(l_0xef6954)}]@[73][C2] [A1][A0][92][96][95][9A][9D][9A] [9E][96][9F][C6]..." next
+    "@[81][A0][99][93][A0][9D][C3][A4][96] [9E][9F][96] [A1][A0][96][A3][A4][C3] [9F][96][9E][9F][A0][94][A0] [7E][A5][AA][9A][9F][A0][94][A0] [7E][97][95][91] [9F][91][A1][A0][A3][9D][96][95][A0][9C]..." next
+    "@[7E][91][A3][A4][96][A2] [72][C4][9D][A9] [9F][96][9F][91][93][9A][95][9A][A4] [A4][91][9C][9A][A7], [9C][91][9C] [93][C2]." next
+    "@...[7C][91][9C] [93][9A][95][9A][A4][96], [A4][96], [A5] [9C][A0][94][A0] [9F][96][A4] <[7E][A5][AA][9A][9F][A0][94][A0] [7E][97][95][91]>, [C6][93][9D][C6][C5][A4][A3][C6] [9F][91][AA][9A][9E][9A] [A3][9E][96][A2][A4][9F][C2][9E][9A] [93][A2][91][94][91][9E][9A]...[03]{window_closeall}" eob
 
 l_0xef6954:
-    "@I wanted to get your Fly Honey and gulp it down." next
-    "@Master Belch and I love Fly Honey.{pause(20)}" linebreak
-    "  Gyorg Gyorg!...[03]{window_closeall}" eob
+    /*
+    "@Я хотел получить твой Мушиный Мёд и проглотить его." next
+    "@Мастер Бэлч и я любим Мушиный Мёд.{pause(20)}" linebreak
+    "  Гуорг Гуорг!...[03]{window_closeall}" eob
+    */
+    "@[B6] [A7][A0][A4][96][9D] [A1][A0][9D][A5][A9][9A][A4][C3] [A4][93][A0][9B] [7E][A5][AA][9A][9F][C2][9B] [7E][97][95] [9A] [A1][A2][A0][94][9D][A0][A4][9A][A4][C3] [96][94][A0]." next
+    "@[7E][91][A3][A4][96][A2] [72][C4][9D][A9] [9A] [C6] [9D][C5][92][9A][9E] [7E][A5][AA][9A][9F][C2][9B] [7E][97][95].{pause(20)}" linebreak
+    "  [74][A5][A0][A2][94] [74][A5][A0][A2][94]!...[03]{window_closeall}" eob
 
 l_0xef69a1:
+    /*
+    "@ОЗ персонажа {target}" linebreak
+    "  полностью восстановлены!{sound(36)}[03]" eob
+    */
     newline
-    "@{target}'s HP are" linebreak
-    "  maxed out!{sound(36)}[03]" eob
+    "@[80][79] [A1][96][A2][A3][A0][9F][91][98][91] {target}" linebreak
+    "  [A1][A0][9D][9F][A0][A3][A4][C3][C5] [93][A0][A3][A3][A4][91][9F][A0][93][9D][96][9F][C2]!{sound(36)}[03]" eob
 
 l_0xef69ba:
+    /*
+    "@{target} восстанавливает" linebreak
+    "  {delta} ОЗ!{sound(36)}[03]" eob
+    */
     newline
-    "@{target} recovered" linebreak
-    "  {delta} HP!{sound(36)}[03]" eob
+    "@{target} [93][A0][A3][A3][A4][91][9F][91][93][9D][9A][93][91][96][A4]" linebreak
+    "  {delta} [80][79]!{sound(36)}[03]" eob
 
 l_0xef69d2:
+    /*
+    "@{target} восстанавливает" linebreak
+    "  {delta} ОП!{sound(36)}[03]" eob
+    */
     newline
-    "@{target} recovered" linebreak
-    "  {delta} PP!{sound(36)}[03]" eob
+    "@{target} [93][A0][A3][A3][A4][91][9F][91][93][9D][9A][93][91][96][A4]" linebreak
+    "  {delta} [80][81]!{sound(36)}[03]" eob
 
 l_0xef69ea:
+    /*
+    "@Атака персонажа {target}:" linebreak
+    "  {delta}![03]" eob
+    */
     newline
-    "@{target}'s" linebreak
-    "  Offense is {delta}![03]" eob
+    "@[71][A4][91][9C][91] [A1][96][A2][A3][A0][9F][91][98][91] {target}:" linebreak
+    "  {delta}![03]" eob
 
 l_0xef69ff:
+//  "@Защита: {delta}![03]" eob
     newline
-    "@Defense is {delta}![03]" eob
+    "@[79][91][C0][9A][A4][91]: {delta}![03]" eob
 
 l_0xef6a0d:
+//  "@Уязвимость к ПСИ Огонь![03]" eob
     newline
-    "@Vulnerable to PSI Fire![03]" eob
+    "@[85][C6][99][93][9A][9E][A0][A3][A4][C3] [9C] [81][83][7A] [80][94][A0][9F][C3]![03]" eob
 
 l_0xef6a24:
+//  "@Уязвимость к ПСИ Мороз![03]" eob
     newline
-    "@Vulnerable to PSI Freeze![03]" eob
+    "@[85][C6][99][93][9A][9E][A0][A3][A4][C3] [9C] [81][83][7A] [7E][A0][A2][A0][99]![03]" eob
 
 l_0xef6a3c:
+//  "@Уязвимость к ПСИ Вспышка![03]" eob
     newline
-    "@Vulnerable to PSI Flash![03]" eob
+    "@[85][C6][99][93][9A][9E][A0][A3][A4][C3] [9C] [81][83][7A] [73][A3][A1][C2][AA][9C][91]![03]" eob
 
 l_0xef6a54:
+//  "@Уязвимость к Параличу![03]" eob
     newline
-    "@Vulnerable to Paralysis![03]" eob
+    "@[85][C6][99][93][9A][9E][A0][A3][A4][C3] [9C] [81][91][A2][91][9D][9A][A9][A5]![03]" eob
 
 l_0xef6a6c:
+//  "@Открытость для Гипноза![03]" eob
     newline
-    "@Open to Hypnosis![03]" eob
+    "@[80][A4][9C][A2][C2][A4][A0][A3][A4][C3] [95][9D][C6] [74][9A][A1][9F][A0][99][91]![03]" eob
 
 l_0xef6a7f:
+//  "@Чувствительность к Мозголому.[03]" eob
     newline
-    "@Susceptible to Brain Shock.[03]" eob
+    "@[89][A5][93][A3][A4][93][9A][A4][96][9D][C3][9F][A0][A3][A4][C3] [9C] [7E][A0][99][94][A0][9D][A0][9E][A5].[03]" eob
 
 l_0xef6a99:
+    /*
+    "@Хлоп! {user} превращается" linebreak
+    "  в {target}![03]" eob
+    */
     newline
-    "@Yikes! {user} turned into" linebreak
-    "  {target}![03]" eob
+    "@[87][9D][A0][A1]! {user} [A1][A2][96][93][A2][91][C0][91][96][A4][A3][C6]" linebreak
+    "  [93] {target}![03]" eob
 
 l_0xef6ab3:
+    /*
+    "@{user} не может превратиться" linebreak
+    "  в {target}![03]" eob
+    */
     newline
-    "@{user} could not turn" linebreak
-    "  into {target}![03]" eob
+    "@{user} [9F][96] [9E][A0][98][96][A4] [A1][A2][96][93][A2][91][A4][9A][A4][C3][A3][C6]" linebreak
+    "  [93] {target}![03]" eob
 
 l_0xef6ac7:
+    /*
+    "@Тело персонажа {target}" linebreak
+    "  было кристаллизовано!{sound(83)}[03]" eob
+    */
     newline
-    "@{target} was" linebreak
-    "  diamondized!{sound(83)}[03]" eob
+    "@[84][96][9D][A0] [A1][96][A2][A3][A0][9F][91][98][91] {target}" linebreak
+    "  [92][C2][9D][A0] [9C][A2][9A][A3][A4][91][9D][9D][9A][99][A0][93][91][9F][A0]!{sound(83)}[03]" eob
 
 l_0xef6ae0:
+    /*
+    "@Тело персонажа {target}" linebreak
+    "  было парализовано!{sound(83)}[03]" eob
+    */
     newline
-    "@{target}'s body" linebreak
-    "  became numb!{sound(83)}[03]" eob
+    "@[84][96][9D][A0] [A1][96][A2][A3][A0][9F][91][98][91] {target}" linebreak
+    "  [92][C2][9D][A0] [A1][91][A2][91][9D][9A][99][A0][93][91][9F][A0]!{sound(83)}[03]" eob
 
 l_0xef6afb:
+    /*
+    "@{target} чувствует себя" linebreak
+    "  немного тошнотворно...{sound(83)}[03]" eob
+    */
     newline
-    "@{target} felt" linebreak
-    "  somewhat nauseous...{sound(83)}[03]" eob
+    "@{target} [A9][A5][93][A3][A4][93][A5][96][A4] [A3][96][92][C6]" linebreak
+    "  [9F][96][9E][9F][A0][94][A0] [A4][A0][AA][9F][A0][A4][93][A0][A2][9F][A0]...{sound(83)}[03]" eob
 
 l_0xef6b18:
+//  "@{target} получает отравление!{sound(83)}[03]" eob
     newline
-    "@{target} got" linebreak
-    "  poisoned!{sound(83)}[03]" eob
+    "@{target} [A1][A0][9D][A5][A9][91][96][A4] [A0][A4][A2][91][93][9D][96][9F][9A][96]!{sound(83)}[03]" eob
 
 l_0xef6b2f:
+//  "@{target} подхватывает простуду!{sound(83)}[03]" eob
     newline
-    "@{target} caught a cold!{sound(83)}[03]" eob
+    "@{target} [A1][A0][95][A7][93][91][A4][C2][93][91][96][A4] [A1][A2][A0][A3][A4][A5][95][A5]!{sound(83)}[03]" eob
 
 l_0xef6b43:
     "[1C 15 01][09 03 {e(l_0xef6b54)} {e(l_0xef6b59)} {e(l_0xef6b5f)}]" goto(l_0xef6b54)
 
 l_0xef6b54:
-    "(he)" eob
+//  "(он)" eob
+    "([A0][9F])" eob
 
 l_0xef6b59:
-    "(she)" eob
+//  "(она)" eob
+    "([A0][9F][91])" eob
 
 l_0xef6b5f:
-    "(it)" eob
+//  "(оно)" eob
+    "([A0][9F][A0])" eob
 
 l_0xef6b64:
     "[1C 15 02][09 03 {e(l_0xef6b75)} {e(l_0xef6b79)} {e(l_0xef6b7d)}]" goto(l_0xef6b75)
@@ -481,9 +579,13 @@ l_0xef6b7d:
     "(3)" eob
 
 l_0xef6b81:
+    /*
+    "@{target} чувствует" linebreak
+    "  себя странно!{sound(83)}[03]" eob
+    */
     newline
-    "@{target} began to" linebreak
-    "  feel strange!{sound(83)}[03]" eob
+    "@{target} [A9][A5][93][A3][A4][93][A5][96][A4]" linebreak
+    "  [A3][96][92][C6] [A3][A4][A2][91][9F][9F][A0]!{sound(83)}[03]" eob
 
 l_0xef6b98:
     newline
@@ -491,12 +593,20 @@ l_0xef6b98:
     "  possessed by a mini-ghost!{sound(83)}[03]" eob
 
 l_0xef6bbb:
+    /*
+    "@{target} не может" linebreak
+    "  перестать плакать!{sound(83)}[03]" eob
+    */
     newline
-    "@{target} could not" linebreak
-    "  stop crying!{sound(83)}[03]" eob
+    "@{target} [9F][96] [9E][A0][98][96][A4]" linebreak
+    "  [A1][96][A2][96][A3][A4][91][A4][C3] [A1][9D][91][9C][91][A4][C3]!{sound(83)}[03]" eob
 
 l_0xef6bd3:
+    /*
+    "@Внезапно, {target}" linebreak
+    "  не может двигаться!{sound(83)}[03]" eob
+    */
     newline
-    "@{target} suddenly" linebreak
-    "  could not move!{sound(83)}[03]" eob
+    "@[73][9F][96][99][91][A1][9F][A0], {target}" linebreak
+    "  [9F][96] [9E][A0][98][96][A4] [95][93][9A][94][91][A4][C3][A3][C6]!{sound(83)}[03]" eob
 
