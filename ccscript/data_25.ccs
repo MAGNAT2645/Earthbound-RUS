@@ -339,20 +339,32 @@ l_0xc6b516:
     goto(l_0xc6b523)
 
 l_0xc6b523:
+    /*
+    "@[1C 02 03] иногда мочится в постель.{pause(15)}  Но в остальном он хороший мальчик." next
+    "@Береги себя и его!..." next
+    */
     newline
-    "@[1C 02 03] wets his bed sometimes.{pause(15)}  But other than that, he's a good boy." next
-    "@Take care of yourself" linebreak
-    "  and [1C 02 03]!..." next
+    "@[1C 02 03] [9A][9F][A0][94][95][91] [9E][A0][A9][9A][A4][A3][C6] [93] [A1][A0][A3][A4][96][9D][C3].{pause(15)}  [7F][A0] [93] [A0][A3][A4][91][9D][C3][9F][A0][9E] [A0][9F] [A7][A0][A2][A0][AA][9A][9B] [9E][91][9D][C3][A9][9A][9C]." next
+    "@[72][96][A2][96][94][9A] [A3][96][92][C6] [9A] [96][94][A0]!..." next
     goto(l_0xc6b56e)
 
 l_0xc6b56e:
-    "{isset(flag 215)}[1B 02 {e(l_0xc6b60b)}][06 10 00 {e(l_0xc6b5b4)}]@Appokid?" next
-    "@No, I've never tried it before, or, I mean,{pause(15)} I've never met him..." end
+    /*
+    "{isset(flag 215)}[1B 02 {e(l_0xc6b60b)}][06 10 00 {e(l_0xc6b5b4)}]@Эппокид?" next
+    "@Нет, я никогда не пробовал раньше, или, я имею в виду,{pause(15)} я никогда не видел его..." end
+    */
+    "{isset(flag 215)}[1B 02 {e(l_0xc6b60b)}][06 10 00 {e(l_0xc6b5b4)}]@[B4][A1][A1][A0][9C][9A][95]?" next
+    "@[7F][96][A4], [C6] [9F][9A][9C][A0][94][95][91] [9F][96] [A1][A2][A0][92][A0][93][91][9D] [A2][91][9F][C3][AA][96], [9A][9D][9A], [C6] [9A][9E][96][C5] [93] [93][9A][95][A5],{pause(15)} [C6] [9F][9A][9C][A0][94][95][91] [9F][96] [93][9A][95][96][9D] [96][94][A0]..." end
 
 l_0xc6b5b4:
-    "@A boy named Apple Kid called." next
-    "@I don't know how he got the phone number...{pause(15)}  He's sounds very smart." next
-    "@Don't worry, he's on his way here." end
+    /*
+    "@Позвонил мальчик по имени Эпл Кид." next
+    "@Не знаю, откуда у него номер телефона...{pause(15)}  Он звучит очень умно." next
+    "@Не волнуйся, он уже идёт сюда." end
+    */
+    "@[81][A0][99][93][A0][9F][9A][9D] [9E][91][9D][C3][A9][9A][9C] [A1][A0] [9A][9E][96][9F][9A] [B4][A1][9D] [7C][9A][95]." next
+    "@[7F][96] [99][9F][91][C5], [A0][A4][9C][A5][95][91] [A5] [9F][96][94][A0] [9F][A0][9E][96][A2] [A4][96][9D][96][A6][A0][9F][91]...{pause(15)}  [80][9F] [99][93][A5][A9][9A][A4] [A0][A9][96][9F][C3] [A5][9E][9F][A0]." next
+    "@[7F][96] [93][A0][9D][9F][A5][9B][A3][C6], [A0][9F] [A5][98][96] [9A][95][97][A4] [A3][C5][95][91]." end
 
 l_0xc6b60b:
     "[06 B8 00 {e(l_0xc6b75b)}]@The Bubble Monkey said there's a cave north of Stonehenge." next
@@ -505,9 +517,14 @@ l_0xc6bdd3:
     "@Yes,{pause(15)} THAT Stonehenge." end
 
 l_0xc6be74:
-    "[06 C0 00 {e(data_35.l_0xc7c588)}][19 10 01]{result_is(1)}[1B 02 {e(data_24.l_0xc690a6)}]{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(data_24.l_0xc690a6)}]{music(155)}@You finally got here." next
-    "@This is the fourth <Your Sanctuary> location.{pause(20)}  But it's mine now." next
-    "@Take it from me,{pause(30)} if you dare...[03]" call(data_23.l_0xc68417) "[1B 03 {e(data_23.l_0xc683de)}][1F 1E A4 02 08]{pause(120)}{set(flag 192)}" eob
+    /*
+    "[06 C0 00 {e(data_35.l_0xc7c588)}][19 10 01]{result_is(1)}[1B 02 {e(data_24.l_0xc690a6)}]{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(data_24.l_0xc690a6)}]{music(155)}@Ты наконец-то добрался сюда." next
+    "@Это четвёртая локация <Твоего Храма>.{pause(20)}  Но сейчас она моя." next
+    "@Отбери её у меня,{pause(30)} если посмеешь...[03]" call(data_23.l_0xc68417) "[1B 03 {e(data_23.l_0xc683de)}][1F 1E A4 02 08]{pause(120)}{set(flag 192)}" eob
+    */
+    "[06 C0 00 {e(data_35.l_0xc7c588)}][19 10 01]{result_is(1)}[1B 02 {e(data_24.l_0xc690a6)}]{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(data_24.l_0xc690a6)}]{music(155)}@[84][C2] [9F][91][9C][A0][9F][96][A8]-[A4][A0] [95][A0][92][A2][91][9D][A3][C6] [A3][C5][95][91]." next
+    "@[B4][A4][A0] [A9][96][A4][93][97][A2][A4][91][C6] [9D][A0][9C][91][A8][9A][C6] <[84][93][A0][96][94][A0] [87][A2][91][9E][91]>.{pause(20)}  [7F][A0] [A3][96][9B][A9][91][A3] [A0][9F][91] [9E][A0][C6]." next
+    "@[80][A4][92][96][A2][9A] [96][97] [A5] [9E][96][9F][C6],{pause(30)} [96][A3][9D][9A] [A1][A0][A3][9E][96][96][AA][C3]...[03]" call(data_23.l_0xc68417) "[1B 03 {e(data_23.l_0xc683de)}][1F 1E A4 02 08]{pause(120)}{set(flag 192)}" eob
 
 l_0xc6bef9:
     "@(There's no response.)" end

@@ -222,18 +222,32 @@ l_0xc6d133:
     "@Where...{pause(15)} is...{pause(15)} [1C 02 03]...  *Bloop*" end
 
 l_0xc6d19c:
-    "[06 D7 00 {e(l_0xc6d325)}][06 92 00 {e(l_0xc6d2e8)}]@So, you're a Runaway Five fan, huh?" next
-    "@What?" next
-    "@Excuse me?" next
-    "@No, no!" next
-    "@This band owes me a million bucks." next
-    "@If they break their contract,{pause(15)} they'll be in deep doodoo with the police." next
-    "@The police would probably say,{pause(15)} <Hey, you guys!> or something like that..." next
-    "@Unless you're able to pay a million dollars on their behalf?" next
-    "@You'd have to find buried gold," next
-    "@or you would never be able to pay such a huge sum of money." next
-    "@Ho ho ho..." next
-    "@Ho ho ho ho ho ho ho!{wait}{set(flag 607)}[06 89 00 {e(l_0xc6d2e4)}]" eob
+    /*
+    "[06 D7 00 {e(l_0xc6d325)}][06 92 00 {e(l_0xc6d2e8)}]@Итак, ты фанат Беглой Пятёрки, да?" next
+    "@Что?" next
+    "@Простите?" next
+    "@Нет, нет!" next
+    "@Эта группа должна мне миллион баксов." next
+    "@Если они нарушат свой контракт,{pause(15)} то будут в глубоком ДуДу с полицией." next
+    "@Полиция может сказать,{pause(15)} <Эй вы, ребята!> или что-то типа того..." next
+    "@Если ты в состоянии заплатить миллион долларов от их имени?" next
+    "@Тебе следует найти зарытое золото," next
+    "@иначе ты никогда не сможешь заплатить такую огромную сумму денег." next
+    "@Хо хо хо..." next
+    "@Хо хо хо хо хо хо хо!{wait}{set(flag 607)}[06 89 00 {e(l_0xc6d2e4)}]" eob
+    */
+    "[06 D7 00 {e(l_0xc6d325)}][06 92 00 {e(l_0xc6d2e8)}]@[7A][A4][91][9C], [A4][C2] [A6][91][9F][91][A4] [72][96][94][9D][A0][9B] [81][C6][A4][97][A2][9C][9A], [95][91]?" next
+    "@[89][A4][A0]?" next
+    "@[81][A2][A0][A3][A4][9A][A4][96]?" next
+    "@[7F][96][A4], [9F][96][A4]!" next
+    "@[B4][A4][91] [94][A2][A5][A1][A1][91] [95][A0][9D][98][9F][91] [9E][9F][96] [9E][9A][9D][9D][9A][A0][9F] [92][91][9C][A3][A0][93]." next
+    "@[76][A3][9D][9A] [A0][9F][9A] [9F][91][A2][A5][AA][91][A4] [A3][93][A0][9B] [9C][A0][9F][A4][A2][91][9C][A4],{pause(15)} [A4][A0] [92][A5][95][A5][A4] [93] [94][9D][A5][92][A0][9C][A0][9E] [75][A5][75][A5] [A3] [A1][A0][9D][9A][A8][9A][96][9B]." next
+    "@[81][A0][9D][9A][A8][9A][C6] [9E][A0][98][96][A4] [A3][9C][91][99][91][A4][C3],{pause(15)} <[B4][9B] [93][C2], [A2][96][92][C6][A4][91]!> [9A][9D][9A] [A9][A4][A0]-[A4][A0] [A4][9A][A1][91] [A4][A0][94][A0]..." next
+    "@[76][A3][9D][9A] [A4][C2] [93] [A3][A0][A3][A4][A0][C6][9F][9A][9A] [99][91][A1][9D][91][A4][9A][A4][C3] [9E][9A][9D][9D][9A][A0][9F] [95][A0][9D][9D][91][A2][A0][93] [A0][A4] [9A][A7] [9A][9E][96][9F][9A]?" next
+    "@[84][96][92][96] [A3][9D][96][95][A5][96][A4] [9F][91][9B][A4][9A] [99][91][A2][C2][A4][A0][96] [99][A0][9D][A0][A4][A0]," next
+    "@[9A][9F][91][A9][96] [A4][C2] [9F][9A][9C][A0][94][95][91] [9F][96] [A3][9E][A0][98][96][AA][C3] [99][91][A1][9D][91][A4][9A][A4][C3] [A4][91][9C][A5][C5] [A0][94][A2][A0][9E][9F][A5][C5] [A3][A5][9E][9E][A5] [95][96][9F][96][94]." next
+    "@[87][A0] [A7][A0] [A7][A0]..." next
+    "@[87][A0] [A7][A0] [A7][A0] [A7][A0] [A7][A0] [A7][A0] [A7][A0]!{wait}{set(flag 607)}[06 89 00 {e(l_0xc6d2e4)}]" eob
 
 l_0xc6d2e4:
     "{set(flag 174)}" eob
@@ -253,18 +267,32 @@ l_0xc6d37e:
     "[19 19 00 00]{swap}{result_is(182)}[1B 03 {e(l_0xc6d391)}]" goto(data_35.l_0xc7c6b6)
 
 l_0xc6d391:
-    "[19 10 01][19 22 00 02 47 03]{swap}{store_registers}{result_is(1)}[1B 03 {e(l_0xc6d4d6)}]{load_registers}{result_is(2)}[1B 03 {e(l_0xc6d4d6)}]{load_registers}{result_is(8)}[1B 03 {e(l_0xc6d4d6)}][1D 01 FF B6][1F 41 05]{sound(118)}[19 23 47 03 01 01 00][1F 16 47 03 00]@Yaaaieeee!!" next
-    "@That that that [1C 05 B6]... you're going to pay with that [1C 05 B6]?!" next
-    "@O... o... okay, th... that's fine.{pause(20)}  I'll rip up this contract." next
-    "@*rrrrrip!*" next
-    "@Don't tell anyone about the [1C 05 B6]..." next
-    "@Now the Runaway Five are free!" next
-    "@...You should thank me." next
-    "@That [1C 05 B6] is worth maybe...  MAYBE... $50." next
-    "@So I gave you a bargain." next
-    "@(Thump, thump..." linebreak
-    "  Thump, thump!" next
-    "@I made lots of money...){wait}{set(flag 146)}{set(flag 594)}" goto(data_44.l_0xc88b6d)
+    /*
+    "[19 10 01][19 22 00 02 47 03]{swap}{store_registers}{result_is(1)}[1B 03 {e(l_0xc6d4d6)}]{load_registers}{result_is(2)}[1B 03 {e(l_0xc6d4d6)}]{load_registers}{result_is(8)}[1B 03 {e(l_0xc6d4d6)}][1D 01 FF B6][1F 41 05]{sound(118)}[19 23 47 03 01 01 00][1F 16 47 03 00]@Уууух ты!!" next
+    "@Этот... этот... этот [1C 05 B6]... ты хочешь заплатить им?!" next
+    "@Х... х... хорошо, э... это правильно.{pause(20)}  Я разорву этот контракт." next
+    "@*Звук разорванного контракта*" next
+    "@Никому не говори про [1C 05 B6]..." next
+    "@Теперь Беглая Пятёрка свобода!" next
+    "@...Тебе следует поблагодарить меня." next
+    "@Этот [1C 05 B6] может стоить...  МОЖЕТ БЫТЬ... $50." next
+    "@Поэтому я предложил тебе сделку." next
+    "@(Хлопок, хлопок..." linebreak
+    "  Хлопок, хлопок!" next
+    "@Я заработал много денег...){wait}{set(flag 146)}{set(flag 594)}" goto(data_44.l_0xc88b6d)
+    */
+    "[19 10 01][19 22 00 02 47 03]{swap}{store_registers}{result_is(1)}[1B 03 {e(l_0xc6d4d6)}]{load_registers}{result_is(2)}[1B 03 {e(l_0xc6d4d6)}]{load_registers}{result_is(8)}[1B 03 {e(l_0xc6d4d6)}][1D 01 FF B6][1F 41 05]{sound(118)}[19 23 47 03 01 01 00][1F 16 47 03 00]@[85][A5][A5][A5][A7] [A4][C2]!!" next
+    "@[B4][A4][A0][A4]... [C4][A4][A0][A4]... [C4][A4][A0][A4] [1C 05 B6]... [A4][C2] [A7][A0][A9][96][AA][C3] [99][91][A1][9D][91][A4][9A][A4][C3] [9A][9E]?!" next
+    "@[87]... [A7]... [A7][A0][A2][A0][AA][A0], [C4]... [C4][A4][A0] [A1][A2][91][93][9A][9D][C3][9F][A0].{pause(20)}  [B6] [A2][91][99][A0][A2][93][A5] [C4][A4][A0][A4] [9C][A0][9F][A4][A2][91][9C][A4]." next
+    "@*[79][93][A5][9C] [A2][91][99][A0][A2][93][91][9F][9F][A0][94][A0] [9C][A0][9F][A4][A2][91][9C][A4][91]*" next
+    "@[7F][9A][9C][A0][9E][A5] [9F][96] [94][A0][93][A0][A2][9A] [A1][A2][A0] [1C 05 B6]..." next
+    "@[84][96][A1][96][A2][C3] [72][96][94][9D][91][C6] [81][C6][A4][97][A2][9C][91] [A3][93][A0][92][A0][95][91]!" next
+    "@...[84][96][92][96] [A3][9D][96][95][A5][96][A4] [A1][A0][92][9D][91][94][A0][95][91][A2][9A][A4][C3] [9E][96][9F][C6]." next
+    "@[B4][A4][A0][A4] [1C 05 B6] [9E][A0][98][96][A4] [A3][A4][A0][9A][A4][C3]...  [7E][80][78][76][84] [72][B2][84][B3]... $50." next
+    "@[81][A0][C4][A4][A0][9E][A5] [C6] [A1][A2][96][95][9D][A0][98][9A][9D] [A4][96][92][96] [A3][95][96][9D][9C][A5]." next
+    "@([87][9D][A0][A1][A0][9C], [A7][9D][A0][A1][A0][9C]..." linebreak
+    "  [87][9D][A0][A1][A0][9C], [A7][9D][A0][A1][A0][9C]!" next
+    "@[B6] [99][91][A2][91][92][A0][A4][91][9D] [9E][9F][A0][94][A0] [95][96][9F][96][94]...){wait}{set(flag 146)}{set(flag 594)}" goto(data_44.l_0xc88b6d)
 
 l_0xc6d4d5:
     eob
@@ -280,8 +308,12 @@ l_0xc6d50a:
     "@Back stage is right behind this door." end
 
 l_0xc6d561:
-    "@When [1C 02 01] arrives,{pause(15)} the Runaway Five told me to let him in." next
-    "@So please come in.[03]{window_closeall}[1F F1 48 03 F2 00][1F 61][1F 1E 48 03 06][1F 17 49 03 08 00 01]{set(flag 374)}{set(flag 10)}" eob
+    /*
+    "@Когда появится [1C 02 01],{pause(15)} Беглая Пятёрка сказала мне впустить его." next
+    "@Поэтому, заходи.[03]{window_closeall}[1F F1 48 03 F2 00][1F 61][1F 1E 48 03 06][1F 17 49 03 08 00 01]{set(flag 374)}{set(flag 10)}" eob
+    */
+    "@[7C][A0][94][95][91] [A1][A0][C6][93][9A][A4][A3][C6] [1C 02 01],{pause(15)} [72][96][94][9D][91][C6] [81][C6][A4][97][A2][9C][91] [A3][9C][91][99][91][9D][91] [9E][9F][96] [93][A1][A5][A3][A4][9A][A4][C3] [96][94][A0]." next
+    "@[81][A0][C4][A4][A0][9E][A5], [99][91][A7][A0][95][9A].[03]{window_closeall}[1F F1 48 03 F2 00][1F 61][1F 1E 48 03 06][1F 17 49 03 08 00 01]{set(flag 374)}{set(flag 10)}" eob
 
 l_0xc6d5ae:
     "@Ah, you're a friend of the Runaway Five..." next

@@ -376,7 +376,8 @@ l_0xc8b8c0:
     "@Fsst Fsst." end
 
 l_0xc8b8cd:
-    "@Meow." end
+//  "@Мяу." end
+    "@[7E][C6][A5]." end
 
 l_0xc8b8d5:
     "@I've finally awakened the inner me, the true self." next

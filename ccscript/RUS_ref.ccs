@@ -1,0 +1,80 @@
+command e(label) "{long label}"
+
+// его/её
+l_gender:
+    "[1C 14 01][09 03 {e(l_gender_male)} {e(l_gender_female)} {e(l_gender_male)}]" eob
+l_gender_male:
+//  "его" eob
+    "[96][94][A0]" eob
+l_gender_female:
+//  "её" eob
+    "[96][97]" eob
+
+gain_exp_multi:
+//  "[1D 19 02][1B 03 {e(gain_exp_single)}][19 10 02][1D 0D 00 01 02][1B 03 {e(gain_exp_single)}] получают" eob
+    "[1D 19 02][1B 03 {e(gain_exp_single)}][19 10 02][1D 0D 00 01 02][1B 03 {e(gain_exp_single)}] [A1][A0][9D][A5][A9][91][C5][A4]" eob
+gain_exp_single:
+//  "получает" eob
+    "[A1][A0][9D][A5][A9][91][96][A4]" eob
+
+can_multi:
+//  "[1D 19 02][1B 03 {e(can_single)}][19 10 02][1D 0D 00 01 02][1B 03 {e(can_single)}]могут" eob
+    "[1D 19 02][1B 03 {e(can_single)}][19 10 02][1D 0D 00 01 02][1B 03 {e(can_single)}][9E][A0][94][A5][A4]" eob
+can_single:
+//  "может" eob
+    "[9E][A0][98][96][A4]" eob
+
+abandoned_multi:
+//  "[1D 19 02][1B 03 {e(abandoned_single)}][19 10 02][1D 0D 00 01 02][1B 03 {e(abandoned_single)}]отказываются" eob
+    "[1D 19 02][1B 03 {e(abandoned_single)}][19 10 02][1D 0D 00 01 02][1B 03 {e(abandoned_single)}][A0][A4][9C][91][99][C2][93][91][C5][A4][A3][C6]" eob
+abandoned_single:
+//  "отказывается" eob
+    "[A0][A4][9C][91][99][C2][93][91][96][A4][A3][C6]" eob
+
+l_encounter_end:
+//  "[1C 14 02][09 03 {e(l_enc_end2)} {e(l_enc_end3)} {e(l_enc_end3)}]ют" eob
+    "[1C 14 02][09 03 {e(l_enc_end2)} {e(l_enc_end3)} {e(l_enc_end3)}][C5][A4]" eob
+l_enc_end2:
+//  "ет" eob
+    "[96][A4]" eob
+l_enc_end3:
+//  "ют" eob
+    "[C5][A4]" eob
+
+l_encounter_end2:
+//  "[1C 14 02][09 03 {e(l_enc_end2_2)} {e(l_enc_end2_3)} {e(l_enc_end2_3)}]ят" eob
+    "[1C 14 02][09 03 {e(l_enc_end2_2)} {e(l_enc_end2_3)} {e(l_enc_end2_3)}][C6][A4]" eob
+l_enc_end2_2:
+//  "ит" eob
+    "[9A][A4]" eob
+l_enc_end2_3:
+//  "ят" eob
+    "[C6][A4]" eob
+
+l_encounter_came:
+//  "[1C 14 02][09 03 {e(l_enc_came2)} {e(l_enc_came3)} {e(l_enc_came3)}]пришли" eob
+    "[1C 14 02][09 03 {e(l_enc_came2)} {e(l_enc_came3)} {e(l_enc_came3)}][A1][A2][9A][AA][9D][9A]" eob
+l_enc_came2:
+    "{call(data_gender.l_gender_came)}" eob
+l_enc_came3:
+//  "пришли" eob
+    "[A1][A2][9A][AA][9D][9A]" eob
+
+// Вывод имён персонажей, например "Волшебная бабочка расслабила персонажа Несс и его друзей"
+l_print_players:
+    "[19 10 01]{swap}[1C 02 00]{counter(1)}" goto(l_print_players_init)
+l_print_players_init:
+    "{inc}{ctoarg}[1D 19 00][1B 03 {e(l_print_players_load)}][19 10 00][1D 0D 00 01 02][1B 03 {e(l_print_players_load)}][19 10 00][1D 0D 00 01 03][1B 03 {e(l_print_players_load)}]" goto(l_print_players_init)
+l_print_players_load:
+    "{ctoarg}{swap}[09 05 {e(l_print_players_nil)} {e(l_print_players_nil)} {e(l_print_players_and)} {e(l_print_players_his_friends)} {e(l_print_players_his_friends)}]" eob
+l_print_players_nil:
+    eob
+l_print_players_and:
+//  "[19 10 02]{swap} и [1C 02 00]" eob
+    "[19 10 02]{swap} [9A] [1C 02 00]" eob
+l_print_players_his_friends:
+//  " и [19 10 01]{result_is(2)}[1B 03 {e(l_print_players_her_friends)}]его друзей" eob
+    " [9A] [19 10 01]{result_is(2)}[1B 03 {e(l_print_players_her_friends)}][96][94][A0] [95][A2][A5][99][96][9B]" eob
+l_print_players_her_friends:
+//  "её друзей" eob
+    "[96][97] [95][A2][A5][99][96][9B]" eob

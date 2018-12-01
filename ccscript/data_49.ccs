@@ -203,22 +203,30 @@ l_0xc9181f:
     call(data_36.l_0xc7dd4f) call(data_36.l_0xc7dd5e) "[09 02 {e(l_0xc91838)} {e(l_0xc919f6)}]" goto(l_0xc919f6)
 
 l_0xc91838:
-    "@What do you want me to do?" linebreak
-    "[18 02]{open_hp}{window_open(37)}[19 02]Soften" eob
+    /*
+    "@Что мне сделать для тебя?" linebreak
+    "[18 02]{open_hp}{window_open(37)}[19 02]Смягчить" eob
+    */
+    "@[89][A4][A0] [9E][9F][96] [A3][95][96][9D][91][A4][C3] [95][9D][C6] [A4][96][92][C6]?" linebreak
+    "[18 02]{open_hp}{window_open(37)}[19 02][83][9E][C6][94][A9][9A][A4][C3]" eob
 
 l_0xc91855:
-    "[19 02]Restore feeling" eob
+//  "[19 02]Восстановить чувство" eob
+    "[19 02][73][A0][A3][A3][A4][91][9F][A0][93][9A][A4][C3] [A9][A5][93][A3][A4][93][A0]" eob
 
 l_0xc91867:
-    "[19 02]Purify" eob
+//  "[19 02]Очистить" eob
+    "[19 02][80][A9][9A][A3][A4][9A][A4][C3]" eob
 
 l_0xc91870:
-    "[1C 0C 01][11][1B 05]{window_closetop}{window_switch(1)}[1B 06][1B 02 {e(l_0xc919f6)}][1F C0 03 {e(l_0xc91709)} {e(l_0xc9175d)} {e(l_0xc917b1)}]{ctoarg}@I need to charge you $[1C 0A 00 00 00 00]." linebreak
+//  "[1C 0C 01][11][1B 05]{window_closetop}{window_switch(1)}[1B 06][1B 02 {e(l_0xc919f6)}][1F C0 03 {e(l_0xc91709)} {e(l_0xc9175d)} {e(l_0xc917b1)}]{ctoarg}@Мне нужно взять с вас $[1C 0A 00 00 00 00]." linebreak
+    "[1C 0C 01][11][1B 05]{window_closetop}{window_switch(1)}[1B 06][1B 02 {e(l_0xc919f6)}][1F C0 03 {e(l_0xc91709)} {e(l_0xc9175d)} {e(l_0xc917b1)}]{ctoarg}@[7E][9F][96] [9F][A5][98][9F][A0] [93][99][C6][A4][C3] [A3] [93][91][A3] $[1C 0A 00 00 00 00]." linebreak
     call(data_36.l_0xc7dd4d) call(data_36.l_0xc7dd5e) "[09 02 {e(l_0xc918da)} {e(l_0xc918be)}]" goto(l_0xc918be)
 
 l_0xc918be:
+//  "@Возвращайтесь, когда понадобится.{wait}" call(l_0xc91bae) eob
     newline
-    "@Mmm, come back when necessary.{wait}" call(l_0xc91bae) eob
+    "@[73][A0][99][93][A2][91][C0][91][9B][A4][96][A3][C3], [9C][A0][94][95][91] [A1][A0][9F][91][95][A0][92][9A][A4][A3][C6].{wait}" call(l_0xc91bae) eob
 
 l_0xc918da:
     "[1D 14 00 00 00 00][1B 03 {e(l_0xc91a11)}][1D 19 02][1B 02 {e(l_0xc918f7)}][19 10 01]" goto(l_0xc9191e)
@@ -242,20 +250,24 @@ l_0xc91966:
     "[1D 0D 00 02 03][1B 02 {e(l_0xc919b5)}]{load_registers}[19 05 00 02 01]" call(l_0xc91a51) eob
 
 l_0xc9197e:
+//  "@[1C 02 00] не в состоянии кристаллизации." goto(l_0xc919ce)
     "{load_registers}{swap}" newline
-    "@[1C 02 00] isn't hard like a diamond." goto(l_0xc919ce)
+    "@[1C 02 00] [9F][96] [93] [A3][A0][A3][A4][A0][C6][9F][9A][9A] [9C][A2][9A][A3][A4][91][9D][9D][9A][99][91][A8][9A][9A]." goto(l_0xc919ce)
 
 l_0xc9199e:
+//  "@[1C 02 00] не в состоянии паралича." goto(l_0xc919ce)
     "{load_registers}{swap}" newline
-    "@[1C 02 00] isn't numb." goto(l_0xc919ce)
+    "@[1C 02 00] [9F][96] [93] [A3][A0][A3][A4][A0][C6][9F][9A][9A] [A1][91][A2][91][9D][9A][A9][91]." goto(l_0xc919ce)
 
 l_0xc919b5:
+//  "@[1C 02 00] не в состоянии отравления." goto(l_0xc919ce)
     "{load_registers}{swap}" newline
-    "@[1C 02 00] isn't possessed." goto(l_0xc919ce)
+    "@[1C 02 00] [9F][96] [93] [A3][A0][A3][A4][A0][C6][9F][9A][9A] [A0][A4][A2][91][93][9D][96][9F][9A][C6]." goto(l_0xc919ce)
 
 l_0xc919ce:
+//  "  Кто нуждается в исцелении?" goto(l_0xc91905)
     "{swap}[1D 19 02][1B 03 {e(l_0xc919ef)}]" newline
-    "  Who needs to be healed?" goto(l_0xc91905)
+    "  [7C][A4][A0] [9F][A5][98][95][91][96][A4][A3][C6] [93] [9A][A3][A8][96][9D][96][9F][9A][9A]?" goto(l_0xc91905)
 
 l_0xc919ef:
     "{wait}" call(l_0xc91bae) eob
@@ -288,25 +300,41 @@ l_0xc91abb:
     "{result_is(0)}" eob
 
 l_0xc91abe:
-    "@Hey, now that I notice," next
-    "@could you sell me the mushroom growing on top of your head?" next
-    "@Come on, let's make a deal." next
-    "[19 02]Sell" eob
+    /*
+    "@Эй, теперь, когда я заметил," next
+    "@не могли бы вы продать мне гриб, растущий у вас на голове?" next
+    "@Давайте заключим сделку." next
+    "[19 02]Продать" eob
+    */
+    "@[B4][9B], [A4][96][A1][96][A2][C3], [9C][A0][94][95][91] [C6] [99][91][9E][96][A4][9A][9D]," next
+    "@[9F][96] [9E][A0][94][9D][9A] [92][C2] [93][C2] [A1][A2][A0][95][91][A4][C3] [9E][9F][96] [94][A2][9A][92], [A2][91][A3][A4][A5][C0][9A][9B] [A5] [93][91][A3] [9F][91] [94][A0][9D][A0][93][96]?" next
+    "@[75][91][93][91][9B][A4][96] [99][91][9C][9D][C5][A9][9A][9E] [A3][95][96][9D][9C][A5]." next
+    "[19 02][81][A2][A0][95][91][A4][C3]" eob
 
 l_0xc91b0e:
-    "[19 02]No" eob
+//  "[19 02]Нет" eob
+    "[19 02][7F][96][A4]" eob
 
 l_0xc91b13:
     "{open_wallet}[1C 07 02][11]{clearline}[09 02 {e(l_0xc91b3d)} {e(l_0xc91b24)}]" goto(l_0xc91b24)
 
 l_0xc91b24:
-    "@Hmmmmm....." linebreak
-    "  That's too bad.[03]" eob
+    /*
+    "@Хмммммм....." linebreak
+    "  Это очень плохо.[03]" eob
+    */
+    "@[87][9E][9E][9E][9E][9E][9E]....." linebreak
+    "  [B4][A4][A0] [A0][A9][96][9F][C3] [A1][9D][A0][A7][A0].[03]" eob
 
 l_0xc91b3d:
-    "@Thanks." linebreak
-    "  I'll pay you $50 for each mushroom." next
-    "@All right, let's do it![03]" call(l_0xc91b6f) eob
+    /*
+    "@Спасибо." linebreak
+    "  Я заплачу $50 за каждый гриб." next
+    "@Ладно, сделаем это![03]" call(l_0xc91b6f) eob
+    */
+    "@[83][A1][91][A3][9A][92][A0]." linebreak
+    "  [B6] [99][91][A1][9D][91][A9][A5] $50 [99][91] [9C][91][98][95][C2][9B] [94][A2][9A][92]." next
+    "@[7D][91][95][9F][A0], [A3][95][96][9D][91][96][9E] [C4][A4][A0]![03]" call(l_0xc91b6f) eob
 
 l_0xc91b6f:
     "{counter(1)}" goto(l_0xc91b71)
@@ -325,18 +353,25 @@ l_0xc91bae:
     "{unset(flag 176)}{unset(flag 178)}{unset(flag 177)}" eob
 
 l_0xc91bb8:
-    "@Though you may not believe it, I'm a healer." next
-    "@If you have some illness that can not be treated at the hospital," next
-    "@it's my job to cure you." next
+    /*
+    "@Хотя вы можете не верить этому, я целитель." next
+    "@Если у вас есть болезни, которые не лечатся в госпитале," next
+    "@моя работа - вылечить вас." next
+    */
+    "@[87][A0][A4][C6] [93][C2] [9E][A0][98][96][A4][96] [9F][96] [93][96][A2][9A][A4][C3] [C4][A4][A0][9E][A5], [C6] [A8][96][9D][9A][A4][96][9D][C3]." next
+    "@[76][A3][9D][9A] [A5] [93][91][A3] [96][A3][A4][C3] [92][A0][9D][96][99][9F][9A], [9C][A0][A4][A0][A2][C2][96] [9F][96] [9D][96][A9][91][A4][A3][C6] [93] [94][A0][A3][A1][9A][A4][91][9D][96]," next
+    "@[9E][A0][C6] [A2][91][92][A0][A4][91] - [93][C2][9D][96][A9][9A][A4][C3] [93][91][A3]." next
     eob
 
 l_0xc91c0f:
+//  "@Вам нужна помощь?" linebreak
     newline
-    "@Do you need any help?" linebreak
+    "@[73][91][9E] [9F][A5][98][9F][91] [A1][A0][9E][A0][C0][C3]?" linebreak
     eob
 
 l_0xc91c1b:
+//  "@Кстати, вам нужна помощь?" linebreak
     newline
-    "@By the way, do you need any help?" linebreak
+    "@[7C][A3][A4][91][A4][9A], [93][91][9E] [9F][A5][98][9F][91] [A1][A0][9E][A0][C0][C3]?" linebreak
     eob
 

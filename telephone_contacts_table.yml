@@ -1,22 +1,22 @@
 0:
   Event Flag: 0xc7
-  Name: '[81][91][A1][91]'
+  Name: '[81][91][A1][91]' # Папа
   Text Pointer: data_18.l_0xc63229
 1:
   Event Flag: 0xc8
-  Name: '[7E][91][9E][91]'
+  Name: '[7E][91][9E][91]' # Мама
   Text Pointer: data_35.l_0xc7cb5f
 2:
   Event Flag: 0xc9
-  Name: '[B4][A3][9C][91][A2][94][A0] [B4][9C][A3][A1][A2][96][A3][A3]'
+  Name: '[B4][A3][9C][91][A2][94][A0] [B4][9C][A3][A1][A2][96][A3][A3]' # Эскарго Экспресс
   Text Pointer: data_19.l_0xc636e5
 3:
   Event Flag: 0xca
-  Name: '[83][9C][A0][A2][91][C6] [81][9A][A8][A8][91]'
+  Name: '[83][9C][A0][A2][91][C6] [81][9A][A8][A8][91]' # Скорая Пицца
   Text Pointer: data_20.l_0xc64a1c
 4:
   Event Flag: 0xcb
-  Name: '[7C][9D][A5][92] [83][A4][A0][9A][9C]'
+  Name: '[7C][9D][A5][92] [83][A4][A0][9A][9C]' # Клуб Стоик
   Text Pointer: data_35.l_0xc7c9a8
 5:
   Event Flag: 0x0

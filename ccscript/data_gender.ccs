@@ -4,51 +4,68 @@
 //    It returns 01 if the enemy is Male
 //    It returns 02 if the enemy is Female
 //    It returns 03 if the enemy if neutral
-command e(label) "{long label}" 
+command e(label) "{long label}"
 
-/* его/её */
+// его/её
 l_gender:
-    /* "{result_is(2)}[1B 03 {e(l_female)}]его" eob */
+//  "{result_is(2)}[1B 03 {e(l_female)}]его" eob
     "{result_is(2)}[1B 03 {e(l_female)}][96][94][A0]" eob
 l_female:
-    /* "её" eob */
+//  "её" eob
     "[96][97]" eob
 
-/* он/она */
+//  он/она
 l_gender2:
-    /* "{result_is(2)}[1B 03 {e(l_female2)}]он" eob */
+//  "{result_is(2)}[1B 03 {e(l_female2)}]он" eob
     "{result_is(2)}[1B 03 {e(l_female2)}][A0][9F]" eob
 l_female2:
-    /* "она" eob */
+//  "она" eob
     "[A0][9F][91]" eob
 
-/* Него/неё */
+// него/неё
 l_gender3:
-    /* "{result_is(2)}[1B 03 {e(l_female3)}]него" eob */
+//  "{result_is(2)}[1B 03 {e(l_female3)}]него" eob
     "{result_is(2)}[1B 03 {e(l_female3)}][9F][96][94][A0]" eob
 l_female3:
-    /* "неё" eob */
+//  "неё" eob
     "[9F][96][97]" eob
 
-/* Подстановка 'а' в конце, например: украл(а)
-   Только у женского пола добавляется суффикс, остальное не должно быть тронуто */
+// Подстановка 'а' в конце, например: украл(а)
+// Только у женского пола добавляется суффикс, остальное не должно быть тронуто
 l_gendersuffix:
     "{result_is(2)}[1B 03 {e(l_femalesuffix)}]" eob
 l_femalesuffix:
-    /* "а" eob */
+//  "а" eob
     "[91]" eob
 
-/* ся/ась */
+// ся/ась
 l_gendersuffix2:
-    /* "{result_is(2)}[1B 03 {e(l_femalesuffix2)}]ся" eob */
+//  "{result_is(2)}[1B 03 {e(l_femalesuffix2)}]ся" eob
     "{result_is(2)}[1B 03 {e(l_femalesuffix2)}][A3][C6]" eob
 l_femalesuffix2:
-    /* "ась" eob */
+//  "ась" eob
     "[91][A3][C3]" eob
 
-/* Подстановка 'ла' в конце, используется в 'исчез(ла)' */
+// -ел / -ла
 l_gendersuffix3:
-    "{result_is(2)}[1B 03 {e(l_femalesuffix3)}]" eob
+//  "{result_is(2)}[1B 03 {e(l_femalesuffix2)}]ел" eob
+    "{result_is(2)}[1B 03 {e(l_femalesuffix3)}][96][9D]" eob
 l_femalesuffix3:
-    /* "ла" eob */
+//  "ла" eob
     "[9D][91]" eob
+
+// Переплёлся/переплелась
+l_gender_interwine:
+//  "{result_is(2)}[1B 03 {e(l_female_interwine)}]ёлся" eob
+    "{result_is(2)}[1B 03 {e(l_female_interwine)}][97][9D][A3][C6]" eob
+l_female_interwine:
+//  "елась" eob
+    "[96][9D][91][A3][C3]" eob
+
+// Используется для "пришёл/пришла за вами."
+l_gender_came:
+//  "{result_is(2)}[1B 03 {e(l_female_came)}]пришёл" eob
+    "{result_is(2)}[1B 03 {e(l_female_came)}][A1][A2][9A][AA][97][9D]" eob
+l_female_came:
+//  "пришла" eob
+    "[A1][A2][9A][AA][9D][91]" eob

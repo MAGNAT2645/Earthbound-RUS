@@ -131,8 +131,12 @@ l_0xc5e26a:
     "{load_registers}[1D 0E 00 00][1B 05][1D 11 00 00]" eob
 
 l_0xc5e277:
-    "{load_registers}{rtoarg}@([1C 02 00]'s[06 92 02 {e(l_0xc5e2c4)}][06 92 02 {e(l_0xc5e2c4)}] defense" linebreak
-    "  changed [09 04 {e(l_0xc5e2b0)} {e(l_0xc5e2b5)} {e(l_0xc5e2ba)} {e(l_0xc5e2bf)}]" goto(l_0xc5e2b0)
+    /*
+    "{load_registers}{rtoarg}@([06 92 02 {e(l_0xc5e2c4)}][06 92 02 {e(l_0xc5e2c4)}]Защита персонажа [1C 02 00]" linebreak
+    "  изменилась с [09 04 {e(l_0xc5e2b0)} {e(l_0xc5e2b5)} {e(l_0xc5e2ba)} {e(l_0xc5e2bf)}]" goto(l_0xc5e2b0)
+    */
+    "{load_registers}{rtoarg}@([06 92 02 {e(l_0xc5e2c4)}][06 92 02 {e(l_0xc5e2c4)}][79][91][C0][9A][A4][91] [A1][96][A2][A3][A0][9F][91][98][91] [1C 02 00]" linebreak
+    "  [9A][99][9E][96][9F][9A][9D][91][A3][C3] [A3] [09 04 {e(l_0xc5e2b0)} {e(l_0xc5e2b5)} {e(l_0xc5e2ba)} {e(l_0xc5e2bf)}]" goto(l_0xc5e2b0)
 
 l_0xc5e2b0:
     " [1C 01 12]" eob
@@ -147,8 +151,12 @@ l_0xc5e2bf:
     " [1C 01 54]" eob
 
 l_0xc5e2c4:
-    " offense" linebreak
-    "  changed [09 04 {e(l_0xc5e2e3)} {e(l_0xc5e2e8)} {e(l_0xc5e2ed)} {e(l_0xc5e2f2)}]" goto(l_0xc5e2e3)
+    /*
+    "Атака персонажа [1C 02 00]" linebreak
+    "  изменилась с [09 04 {e(l_0xc5e2e3)} {e(l_0xc5e2e8)} {e(l_0xc5e2ed)} {e(l_0xc5e2f2)}]" goto(l_0xc5e2e3)
+    */
+    "[71][A4][91][9C][91] [A1][96][A2][A3][A0][9F][91][98][91] [1C 02 00]" linebreak
+    "  [9A][99][9E][96][9F][9A][9D][91][A3][C3] [A3] [09 04 {e(l_0xc5e2e3)} {e(l_0xc5e2e8)} {e(l_0xc5e2ed)} {e(l_0xc5e2f2)}]" goto(l_0xc5e2e3)
 
 l_0xc5e2e3:
     " [1C 01 11]" eob
@@ -163,7 +171,8 @@ l_0xc5e2f2:
     " [1C 01 53]" eob
 
 l_0xc5e2f7:
-    " to{rtoarg}[06 92 02 {e(l_0xc5e338)}][09 04 {e(l_0xc5e314)} {e(l_0xc5e31d)} {e(l_0xc5e326)} {e(l_0xc5e32f)}]" goto(l_0xc5e314)
+//  " до{rtoarg}[06 92 02 {e(l_0xc5e338)}][09 04 {e(l_0xc5e314)} {e(l_0xc5e31d)} {e(l_0xc5e326)} {e(l_0xc5e32f)}]" goto(l_0xc5e314)
+    " [95][A0]{rtoarg}[06 92 02 {e(l_0xc5e338)}][09 04 {e(l_0xc5e314)} {e(l_0xc5e31d)} {e(l_0xc5e326)} {e(l_0xc5e32f)}]" goto(l_0xc5e314)
 
 l_0xc5e314:
     "  [1C 01 12])" next

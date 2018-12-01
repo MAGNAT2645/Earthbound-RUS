@@ -400,27 +400,39 @@ l_0xc962c8:
     "@You must be quite a rich boy to stay at such a nice,{pause(15)} first class hotel like this one." end
 
 l_0xc96304:
-    "[06 01 00 {e(l_0xc963ce)}]@Do I have a mushroom on my head?" linebreak
-    "  [19 02]Yes" eob
+    /*
+    "[06 01 00 {e(l_0xc963ce)}]@У меня гриб на голове?" linebreak
+    "  [19 02]Да" eob
+    */
+    "[06 01 00 {e(l_0xc963ce)}]@[85] [9E][96][9F][C6] [94][A2][9A][92] [9F][91] [94][A0][9D][A0][93][96]?" linebreak
+    "  [19 02][75][91]" eob
 
 l_0xc96328:
-    "  [19 02]No" eob
+//  "  [19 02]Нет" eob
+    "  [19 02][7F][96][A4]" eob
 
 l_0xc9632f:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xc9633e)} {e(l_0xc9639f)}]" goto(l_0xc9633e)
 
 l_0xc9633e:
+    /*
+    "{set(flag 1)}@Так я и думал..." next
+    "@В последнее время,{pause(15)} я не мог нормально ходить.{pause(20)}  Так было из-за этого гриба." next
+    "@Это, на самом деле, даже весело, поэтому я оставлю его там." end
+    */
     newline
-    "{set(flag 1)}@That's what I thought..." next
-    "@Recently,{pause(15)} I couldn't walk quite right.{pause(20)}  It was because of this mushroom." next
-    "@It's actually kind of fun, so I'll leave it there." end
+    "{set(flag 1)}@[84][91][9C] [C6] [9A] [95][A5][9E][91][9D]..." next
+    "@[73] [A1][A0][A3][9D][96][95][9F][96][96] [93][A2][96][9E][C6],{pause(15)} [C6] [9F][96] [9E][A0][94] [9F][A0][A2][9E][91][9D][C3][9F][A0] [A7][A0][95][9A][A4][C3].{pause(20)}  [84][91][9C] [92][C2][9D][A0] [9A][99]-[99][91] [C4][A4][A0][94][A0] [94][A2][9A][92][91]." next
+    "@[B4][A4][A0], [9F][91] [A3][91][9E][A0][9E] [95][96][9D][96], [95][91][98][96] [93][96][A3][96][9D][A0], [A1][A0][C4][A4][A0][9E][A5] [C6] [A0][A3][A4][91][93][9D][C5] [96][94][A0] [A4][91][9E]." end
 
 l_0xc9639f:
+//  "@Ты один из тех, кто говорят <нет> сразу на любой вопрос, верно?" end
     newline
-    "@You're one of those people that says <no> right off the bat to any question, right?" end
+    "@[84][C2] [A0][95][9A][9F] [9A][99] [A4][96][A7], [9C][A4][A0] [94][A0][93][A0][A2][C6][A4] <[9F][96][A4]> [A3][A2][91][99][A5] [9F][91] [9D][C5][92][A0][9B] [93][A0][A1][A2][A0][A3], [93][96][A2][9F][A0]?" end
 
 l_0xc963ce:
-    "@Don't you think I look stylish with the mushroom?" end
+//  "@Тебе не кажется, что я стильно выгляжу с грибом?" end
+    "@[84][96][92][96] [9F][96] [9C][91][98][96][A4][A3][C6], [A9][A4][A0] [C6] [A3][A4][9A][9D][C3][9F][A0] [93][C2][94][9D][C6][98][A5] [A3] [94][A2][9A][92][A0][9E]?" end
 
 l_0xc963ea:
     call(data_47.l_0xc90095) eob

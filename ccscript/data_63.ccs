@@ -8,23 +8,32 @@ command e(label) "{long label}"
 
 // Text Data
 l_0xef7696:
+    /*
+    "@Никакого видимого эффекта" linebreak
+    "  на персонаже {target}![03]" eob
+    */
     newline
-    "@It had no visible effect" linebreak
-    "  on {target}![03]" eob
+    "@[7F][9A][9C][91][9C][A0][94][A0] [93][9A][95][9A][9E][A0][94][A0] [C4][A6][A6][96][9C][A4][91]" linebreak
+    "  [9F][91] [A1][96][A2][A3][A0][9F][91][98][96] {target}![03]" eob
 
 l_0xef76b3:
+    /*
+    "@Это не сработало на персонаже" linebreak
+    "  {target}![03]" eob
+    */
     newline
-    "@It did not work" linebreak
-    "  on {target}![03]" eob
+    "@[B4][A4][A0] [9F][96] [A3][A2][91][92][A0][A4][91][9D][A0] [9F][91] [A1][96][A2][A3][A0][9F][91][98][96]" linebreak
+    "  {target}![03]" eob
 
 l_0xef76c7:
+//  "{sound(34)}@Мимо![03]" eob
     newline
-    "{sound(34)}@Just missed![03]" eob
+    "{sound(34)}@[7E][9A][9E][A0]![03]" eob
 
 l_0xef76d8:
+//  "{sound(34)}@...удар чуть не попал в цель![03]" eob
     newline
-    "{sound(34)}@...narrowly missed" linebreak
-    "  hitting the target![03]" eob
+    "{sound(34)}@...[A5][95][91][A2] [A9][A5][A4][C3] [9F][96] [A1][A0][A1][91][9D] [93] [A8][96][9D][C3]![03]" eob
 
 l_0xef76fd:
     newline
@@ -35,29 +44,29 @@ l_0xef7710:
     newline
     "@{user} drained " call(data_37.l_0xc7e66e) " own HP![03]" eob
 
-/*l_0xef7729:
-    newline
-    "@Drained {delta} HP" linebreak
-    "  from {target}![03]" eob*/
 l_0xef7729:
+    /*
+    "@Получено {delta} ОЗ" linebreak
+    "  с {target}![03]" eob
+    */
     newline
     "@[81][A0][9D][A5][A9][96][9F][A0] {delta} [80][79]" linebreak
     "  [A3] {target}![03]" eob
 
-/*l_0xef773f:
-    newline
-    "@Drained {delta} PP" linebreak
-    "  from {target}![03]" eob*/
 l_0xef773f:
+    /*
+    "@Получено {delta} ОП" linebreak
+    "  с {target}![03]" eob
+    */
     newline
     "@[81][A0][9D][A5][A9][96][9F][A0] {delta} [80][81]" linebreak
     "  [A3] {target}![03]" eob
 
-/*l_0xef7755:
-    newline
-    "@{target} lost" linebreak
-    "  {delta} PP![03]" eob*/
 l_0xef7755:
+    /*
+    "@{target} теряет" linebreak
+    "  {delta} ОП![03]" eob
+    */
     newline
     "@{target} [A4][96][A2][C6][96][A4]" linebreak
     "  {delta} [80][81]![03]" eob
@@ -130,102 +139,120 @@ l_0xef7843:
     "{music(98)}" newline
     "@Time started again.[03]" eob
 
-/*l_0xef7858:
-    newline
-    "@" call(l_0xef790b) " attacked![03]" eob*/
 l_0xef7858:
+//  "@" call(l_0xef790b) " напада(ет/ют)![03]" eob
     newline
-    "@" call(l_0xef790b) " [9F][91][A1][91][95][91][96][A4]![03]" eob
+    "@" call(l_0xef790b) " [9F][91][A1][91][95][91]{call(RUS_ref.l_encounter_end)}![03]" eob
 
-/*l_0xef7866:
-    newline
-    "@" call(l_0xef790b) " blocked the way![03]" eob*/
 l_0xef7866:
+//  "@" call(l_0xef790b) " блокиру(ет/ют) путь![03]" eob
     newline
-    "@" call(l_0xef790b) " [92][9D][A0][9C][9A][A2][A5][96][A4] [A1][A5][A4][C3]![03]" eob
+    "@" call(l_0xef790b) " [92][9D][A0][9C][9A][A2][A5]{call(RUS_ref.l_encounter_end)} [A1][A5][A4][C3]![03]" eob
 
 l_0xef7879:
+//  "@" call(l_0xef790b) " пришёл/пришла/пришли за вами![03]" eob
     newline
-    "@" call(l_0xef790b) " came after you![03]" eob
+    "@" call(l_0xef790b) " {call(RUS_ref.l_encounter_came)} [99][91] [93][91][9E][9A]![03]" eob
 
-/*l_0xef788b:
-    newline
-    "@" call(l_0xef790b) " trapped you![03]" eob*/
 l_0xef788b:
+//  "@" call(l_0xef790b) " лов(ит/ят) вас![03]" eob
     newline
-    "@" call(l_0xef790b) " [9D][A0][93][9A][A4] [93][91][A3]![03]" eob
+    "@" call(l_0xef790b) " [9D][A0][93]{call(RUS_ref.l_encounter_end2)} [93][91][A3]![03]" eob
 
-/*l_0xef789c:
-    "@You encounter " call(l_0xef794b) "[03]" eob*/
 l_0xef789c:
-    "@[73][C2] [A3][A4][A0][9D][9C][9F][A5][9D][9A][A3][C3] [A3] " call(l_0xef794b) "[03]" eob
+    /*
+    "@Вы столкнулись с персонажем" linebreak
+    "  {call(l_0xef794b)}[03]" eob
+    */
+    "@[73][C2] [A3][A4][A0][9D][9C][9F][A5][9D][9A][A3][C3] [A3] [A1][96][A2][A3][A0][9F][91][98][96][9E]" linebreak
+    "  {call(l_0xef794b)}[03]" eob
 
-/*l_0xef78ab:
-    "@You meet " call(l_0xef794b) "[03]" eob*/
 l_0xef78ab:
-    "@[73][C2] [93][A3][A4][A2][96][A4][9A][9D][9A][A3][C3] [A3] " call(l_0xef794b) "[03]" eob
+    /*
+    "@Вы встретились с персонажем" linebreak
+    "  {call(l_0xef794b)}[03]" eob
+    */
+    "@[73][C2] [93][A3][A4][A2][96][A4][9A][9D][9A][A3][C3] [A3] [A1][96][A2][A3][A0][9F][91][98][96][9E]" linebreak
+    "  {call(l_0xef794b)}[03]" eob
 
-/*l_0xef78b8:
-    "@You engage " call(l_0xef794b) "[03]" eob*/
 l_0xef78b8:
-    "@[73][C2] [A1][A2][9A][93][9D][96][9C][9D][9A] " call(l_0xef794b) "[03]" eob
+    /*
+    "@Вы привлекли персонажа" linebreak
+    "  {call(l_0xef798f)}[03]" eob
+    */
+    "@[73][C2] [A1][A2][9A][93][9D][96][9C][9D][9A] [A1][96][A2][A3][A0][9F][91][98][91]" linebreak
+    "  {call(l_0xef798f)}[03]" eob
 
-/*l_0xef78c7:
-    "@You confront " call(l_0xef794b) "[03]" eob*/
 l_0xef78c7:
-    "@[73][C2] [A3][A4][A0][9D][9C][9F][A5][9D][9A][A3][C3] [A3] " call(l_0xef794b) "[03]" eob
+    /*
+    "@Вы столкнулись с персонажем" linebreak
+    "  {call(l_0xef794b)}[03]" eob
+    */
+    "@[73][C2] [A3][A4][A0][9D][9C][9F][A5][9D][9A][A3][C3] [A3] [A1][96][A2][A3][A0][9F][91][98][96][9E]" linebreak
+    "  {call(l_0xef794b)}[03]" eob
 
-/*l_0xef78d8:
-    newline
-    "@Here is a chance" linebreak
-    "  for a surprise opening attack![03]" eob*/
 l_0xef78d8:
+    /*
+    "@У вас есть шанс" linebreak
+    "  для внезапной атаки![03]" eob
+    */
     newline
     "@[85] [93][91][A3] [96][A3][A4][C3] [AA][91][9F][A3]" linebreak
     "  [95][9D][C6] [93][9F][96][99][91][A1][9F][A0][9B] [91][A4][91][9C][9A]![03]" eob
 
-/*l_0xef78f7:
-    newline
-    "@Here is " call(l_0xef798f) " opening attack![03]" eob*/
 l_0xef78f7:
+    /*
+    "@Внезапная атака персонажа" linebreak
+    "  {call(l_0xef798f)}![03]" eob
+    */
     newline
-    "@" call(l_0xef798f) " [91][A4][91][9C][A5][96][A4] [93][9F][96][99][91][A1][9F][A0]![03]" eob
+    "@[73][9F][96][99][91][A1][9F][91][C6] [91][A4][91][9C][91] [A1][96][A2][A3][A0][9F][91][98][91]" linebreak
+    "  {call(l_0xef798f)}![03]" eob
 
 l_0xef790b:
-    "[1C 14 02][09 03 {e(l_0xef792b)} {e(l_0xef792e)} {e(l_0xef793c)}]{user} [9A] [A3][A4][A0][A2][A0][9F][9F][9A][9C][9A]" eob
+//  "[1C 14 02][09 03 {e(l_0xef792b)} {e(l_0xef792e)} {e(l_0xef793c)}]{user} и его/её сторонники" eob
+    "[1C 14 02][09 03 {e(l_0xef792b)} {e(l_0xef792e)} {e(l_0xef793c)}]{user} [9A] {call(RUS_ref.l_gender)} [A3][A4][A0][A2][A0][9F][9F][9A][9C][9A]" eob
 
 l_0xef792b:
     "{user}" eob
 
 l_0xef792e:
-    "{user} [9A] [A3][A4][A0][A2][A0][9F][9F][9A][9C]" eob
+//  "{user} и его/её сторонник" eob
+    "{user} [9A] {call(RUS_ref.l_gender)} [A3][A4][A0][A2][A0][9F][9F][9A][9C]" eob
 
 l_0xef793c:
-    "{user} [9A] [A3][A4][A0][A2][A0][9F][9F][9A][9C][9A]" eob
+//  "{user} и его/её сторонники" eob
+    "{user} [9A] {call(RUS_ref.l_gender)} [A3][A4][A0][A2][A0][9F][9F][9A][9C][9A]" eob
 
 l_0xef794b:
-    "[1C 14 02][09 03 {e(l_0xef796c)} {e(l_0xef7970)} {e(l_0xef797f)}]{user} [9A] [A3][A4][A0][A2][A0][9F][9F][9A][9C][9A]." eob
+//  "[1C 14 02][09 03 {e(l_0xef796c)} {e(l_0xef7970)} {e(l_0xef797f)}]{user} и его/её сторонниками." eob
+    "[1C 14 02][09 03 {e(l_0xef796c)} {e(l_0xef7970)} {e(l_0xef797f)}]{user} [9A] {call(RUS_ref.l_gender)} [A3][A4][A0][A2][A0][9F][9F][9A][9C][91][9E][9A]." eob
 
 l_0xef796c:
     "{user}." eob
 
 l_0xef7970:
-    "{user} [9A] [A3][A4][A0][A2][A0][9F][9F][9A][9C]." eob
+//  "{user} и его/её сторонником." eob
+    "{user} [9A] {call(RUS_ref.l_gender)} [A3][A4][A0][A2][A0][9F][9F][9A][9C][A0][9E]." eob
 
 l_0xef797f:
-    "{user} [9A] [A3][A4][A0][A2][A0][9F][9F][9A][9C][9A]." eob
+//  "{user} и его/её сторонниками." eob
+    "{user} [9A] {call(RUS_ref.l_gender)} [A3][A4][A0][A2][A0][9F][9F][9A][9C][91][9E][9A]." eob
 
 l_0xef798f:
-    "[1C 14 02][09 03 {e(l_0xef79b1)} {e(l_0xef79b6)} {e(l_0xef79c6)}]{user} and its cohorts's" eob
+//  "[1C 14 02][09 03 {e(l_0xef79b1)} {e(l_0xef79b6)} {e(l_0xef79c6)}]{user} и его/её сторонников" eob
+    "[1C 14 02][09 03 {e(l_0xef79b1)} {e(l_0xef79b6)} {e(l_0xef79c6)}]{user} [9A] {call(RUS_ref.l_gender)} [A3][A4][A0][A2][A0][9F][9F][9A][9C][A0][93]" eob
 
 l_0xef79b1:
-    "{user}'s" eob
+    "{user}" eob
 
 l_0xef79b6:
-    "{user} and its cohort's" eob
+//  "{user} и его/её сторонника" eob
+    "{user} [9A] {call(RUS_ref.l_gender)} [A3][A4][A0][A2][A0][9F][9F][9A][9C][91]" eob
 
 l_0xef79c6:
-    "{user} and its cohorts's" eob
+//  "{user} и его/её сторонников" eob
+    "{user} [9A] {call(RUS_ref.l_gender)} [A3][A4][A0][A2][A0][9F][9F][9A][9C][A0][93]" eob
 
 l_0xef79d7:
     "{window_clear}{music(5)}" linebreak
@@ -236,8 +263,9 @@ l_0xef79e6:
     "[1F 41 11][1B 03 {e(l_0xef7a0a)}]" goto(l_0xef79ef)
 
 l_0xef79ef:
+//  "@{call(data_37.l_0xc7e6d7)} {call(RUS_ref.gain_exp_multi)} {delta} опыта" call(data_65.l_0xef8fad) "{prompt}" eob
     next
-    "@" call(data_37.l_0xc7e6d7) " [A1][A0][9D][A5][A9][91][96][A4] {delta} [A0][A1][C2][A4][91]" call(data_65.l_0xef8fad) "{prompt}" eob
+    "@{call(data_37.l_0xc7e6d7)} {call(RUS_ref.gain_exp_multi)} {delta} [A0][A1][C2][A4][91]" call(data_65.l_0xef8fad) "{prompt}" eob
 
 l_0xef7a0a:
     "[19 05 01 06 02]" goto(l_0xef79ef)
@@ -329,52 +357,86 @@ l_0xef7bdc:
     "{load_registers}" eob
 
 l_0xef7bdf:
+    /*
+    "@Враг оставил подарок!{prompt}" linebreak
+    "{sound(16)}{pause(1)}@В подарке находится" linebreak
+    "[19 1F]{swap}  [1C 05 00]!{prompt}" linebreak
+    "[1D 03 FF][1B 02 {e(l_0xef7c73)}]{store_registers}" call(data_36.l_0xc7dc85) "[1B 03 {e(l_0xef7c42)}]{load_registers}{swap}@[1C 02 00]{swap} забирает это.[1D 0E 00 00]{sound(116)}{prompt}" eob
+    */
     newline
     "@[73][A2][91][94] [A0][A3][A4][91][93][9A][9D] [A1][A0][95][91][A2][A0][9C]!{prompt}" linebreak
-    "{sound(16)}{pause(1)}@[73] [A1][A0][95][91][A2][9C][96]," linebreak
-    "[19 1F]{swap}  [9F][91][A7][A0][95][9A][A4][A3][C6] [1C 05 00]!{prompt}" linebreak
-    "[1D 03 FF][1B 02 {e(l_0xef7c73)}]{store_registers}" call(data_36.l_0xc7dc85) "[1B 03 {e(l_0xef7c42)}]{load_registers}{swap}@[1C 02 00]{swap} [9C][9D][91][95][97][A4] [C4][A4][A0] [93] [A2][C5][9C][99][91][9C].[1D 0E 00 00]{sound(116)}{prompt}" eob
+    "{sound(16)}{pause(1)}@[73] [A1][A0][95][91][A2][9C][96] [9F][91][A7][A0][95][9A][A4][A3][C6]" linebreak
+    "[19 1F]{swap}  [1C 05 00]!{prompt}" linebreak
+    "[1D 03 FF][1B 02 {e(l_0xef7c73)}]{store_registers}" call(data_36.l_0xc7dc85) "[1B 03 {e(l_0xef7c42)}]{load_registers}{swap}@[1C 02 00]{swap} [99][91][92][9A][A2][91][96][A4] [C4][A4][A0].[1D 0E 00 00]{sound(116)}{prompt}" eob
 
 l_0xef7c42:
+    /*
+    "@[1C 02 00] кладёт{load_registers} [1C 05 00]" linebreak
+    "  {swap}к вещам персонажа [1C 02 00].{swap}[1D 0E 00 00]{sound(116)}{prompt}" eob
+    */
     "[19 10 01]{swap}" newline
-    "@[1C 02 00] [A1][96][A2][96][9C][9D][91][95][C2][93][91][96][A4]{load_registers} [1C 05 00]" linebreak
-    "  {swap}[93] [A2][C5][9C][99][91][9C] [9C] [1C 02 00].{swap}[1D 0E 00 00]{sound(116)}{prompt}" eob
+    "@[1C 02 00] [9C][9D][91][95][97][A4]{load_registers} [1C 05 00]" linebreak
+    "  {swap}[9C] [93][96][C0][91][9E] [A1][96][A2][A3][A0][9F][91][98][91] [1C 02 00].{swap}[1D 0E 00 00]{sound(116)}{prompt}" eob
 
 l_0xef7c73:
-    "@But, " call(data_37.l_0xc7e6d7) " [92][A0][9D][C3][AA][96] [9F][96] [9E][A0][98][96][A4] [9F][A0][A3][9A][A4][C3] [93][96][C0][96][9B].{prompt}" linebreak
+//  "@Но, " call(data_37.l_0xc7e6d7) " не может/могут взять больше вещей.{prompt}" linebreak
+    "@[7F][A0], " call(data_37.l_0xc7e6d7) " [9F][96] {call(RUS_ref.can_multi)} [93][99][C6][A4][C3] [92][A0][9D][C3][AA][96] [93][96][C0][96][9B].{prompt}" linebreak
     goto(l_0xef7c89)
 
 l_0xef7c89:
+    /*
+    "@Вы хотите выбросить" linebreak
+    "  что-нибудь?{prompt}" linebreak
+    "[19 02]Да" eob
+    */
     "@[73][C2] [A7][A0][A4][9A][A4][96] [93][C2][92][A2][A0][A3][9A][A4][C3]" linebreak
     "  [A9][A4][A0]-[9F][9A][92][A5][95][C3]?{prompt}" linebreak
     "[19 02][75][91]" eob
 
 l_0xef7c9e:
+//  "  [19 02]Нет" eob
     "  [19 02][7F][96][A4]" eob
 
 l_0xef7ca5:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xef7d0f)} {e(l_0xef7cb4)}]" goto(l_0xef7cb4)
 
 l_0xef7cb4:
+    /*
+    "[19 1F]{swap}@Тогда, вы оставите" linebreak
+    "  [1C 05 00] позади?{prompt}" linebreak
+    "[19 02]Да" eob
+    */
     "[19 1F]{swap}@[84][A0][94][95][91], [93][C2] [A0][A3][A4][91][93][9A][A4][96]" linebreak
     "  [1C 05 00] [A1][A0][99][91][95][9A]?{prompt}" linebreak
     "[19 02][75][91]" eob
 
 l_0xef7cd9:
+//  "[19 02]Нет" eob
     "[19 02][7F][96][A4]" eob
 
 l_0xef7cde:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xef7cf8)} {e(l_0xef7ced)}]" goto(l_0xef7ced)
 
 l_0xef7ced:
+//  "@Тогда,{prompt}" linebreak
     "@[84][A0][94][95][91],{prompt}" linebreak
     goto(l_0xef7c89)
 
 l_0xef7cf8:
-    "@" call(data_37.l_0xc7e74e) " [A0][A4][9C][91][99][C2][93][91][96][A4][A3][C6]" linebreak
+    /*
+    "@" call(data_37.l_0xc7e74e) " отказыва(-ется/-ются)" linebreak
+    "  от [1C 05 00].{prompt}" eob
+    */
+    "@" call(data_37.l_0xc7e74e) " {call(RUS_ref.abandoned_multi)}" linebreak
     "  [A0][A4] [1C 05 00].{prompt}" eob
 
 l_0xef7d0f:
+    /*
+    "@Что вы хотите выбросить?{prompt}" call(data_15.l_0xc5e4c3) newline
+    "[1B 02 {e(l_0xef7cb4)}]{store_registers}[19 19 00 00][1D 0B 00][1B 02 {e(l_0xef7dbe)}]{load_registers}[19 19 00 00]@Итак, вы хотите" linebreak
+    "  выбросить [1C 05 00]?{prompt}" linebreak
+    "[19 02]Выбросить" eob
+    */
     newline
     "@[89][A4][A0] [93][C2] [A7][A0][A4][9A][A4][96] [93][C2][92][A2][A0][A3][9A][A4][C3]?{prompt}" call(data_15.l_0xc5e4c3) newline
     "[1B 02 {e(l_0xef7cb4)}]{store_registers}[19 19 00 00][1D 0B 00][1B 02 {e(l_0xef7dbe)}]{load_registers}[19 19 00 00]@[7A][A4][91][9C], [93][C2] [A7][A0][A4][9A][A4][96]" linebreak
@@ -382,117 +444,198 @@ l_0xef7d0f:
     "[19 02][73][C2][92][A2][A0][A3][9A][A4][C3]" eob
 
 l_0xef7d61:
+//  "[19 02]Не делать этого" eob
     "[19 02][7F][96] [95][96][9D][91][A4][C3] [C4][A4][A0][94][A0]" eob
 
 l_0xef7d6f:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xef7d83)} {e(l_0xef7cb4)}]" goto(l_0xef7cb4)
 
 l_0xef7d83:
+    /*
+    "{load_registers}[1D 0F 00 00]{swap}@[1C 02 00]{swap} выбрасывает [1C 05 00]{prompt}" linebreak
+    "{swap}[19 1F]{swap}@и кладёт [1C 05 00] в рюкзак.[1D 0E 00 00]{sound(116)}{pause(1)}[03]" eob
+    */
     "{load_registers}[1D 0F 00 00]{swap}@[1C 02 00]{swap} [93][C2][92][A2][91][A3][C2][93][91][96][A4] [1C 05 00]{prompt}" linebreak
     "{swap}[19 1F]{swap}@[9A] [9C][9D][91][95][97][A4] [1C 05 00] [93] [A2][C5][9C][99][91][9C].[1D 0E 00 00]{sound(116)}{pause(1)}[03]" eob
 
 l_0xef7dbe:
+//  "@Не выбрасывай [1C 05 00].{prompt}" goto(l_0xef7d0f)
     "@[7F][96] [93][C2][92][A2][91][A3][C2][93][91][9B] [1C 05 00].{prompt}" goto(l_0xef7d0f)
 
 l_0xef7dd5:
+    /*
+    "@{user} увидел(-а)" linebreak
+    "  подарок за спиной врага." next
+    "{sound(16)}@В подарке находится" linebreak
+    "[19 1F]{swap}  [1C 05 00]." next
+    "@[1C 02 03] забирает это.[1D 0E 03 00]{sound(116)}[03]" eob
+    */
     newline
-    "@{user} saw" linebreak
-    "  a present behind the enemy." next
-    "{sound(16)}@Inside the present," linebreak
-    "[19 1F]{swap}  there was a [1C 05 00]." next
-    "@[1C 02 03] takes it.[1D 0E 03 00]{sound(116)}[03]" eob
+    "@{user} [A5][93][9A][95][96][9D]{call(data_gender.l_gendersuffix)}" linebreak
+    "  [A1][A0][95][91][A2][A0][9C] [99][91] [A3][A1][9A][9F][A0][9B] [93][A2][91][94][91]." next
+    "{sound(16)}@[73] [A1][A0][95][91][A2][9C][96] [9F][91][A7][A0][95][9A][A4][A3][C6]" linebreak
+    "[19 1F]{swap}  [1C 05 00]." next
+    "@[1C 02 03] [99][91][92][9A][A2][91][96][A4] [C4][A4][A0].[1D 0E 03 00]{sound(116)}[03]" eob
 
 l_0xef7e25:
+    /*
+    "{sound(25)}@{user} заставил(-а)" linebreak
+    "  что-то вертеться вокруг![03]" eob
+    */
     newline
-    "{sound(25)}@{user} made" linebreak
-    "  something spin around![03]" eob
+    "{sound(25)}@{user} [99][91][A3][A4][91][93][9A][9D]{call(data_gender.l_gendersuffix)}" linebreak
+    "  [A9][A4][A0]-[A4][A0] [93][96][A2][A4][96][A4][C3][A3][C6] [93][A0][9C][A2][A5][94]![03]" eob
 
 l_0xef7e3e:
+    /*
+    "{sound(25)}@{user} вышел" linebreak
+    "  из себя![03]" eob
+    */
     newline
-    "{sound(25)}@{user} lost" linebreak
-    "  his temper![03]" eob
+    "{sound(25)}@{user} [93][C2][AA][96][9D]" linebreak
+    "  [9A][99] [A3][96][92][C6]![03]" eob
 
 l_0xef7e55:
+    /*
+    "{sound(25)}@{user} сказал(-а)" linebreak
+    "  что-то дурное!{sound(84)}[03]{pause(1)}" eob
+    */
     newline
-    "{sound(25)}@{user} said" linebreak
-    "  something nasty!{sound(84)}[03]{pause(1)}" eob
+    "{sound(25)}@{user} [A3][9C][91][99][91][9D]{call(data_gender.l_gendersuffix)}" linebreak
+    "  [A9][A4][A0]-[A4][A0] [95][A5][A2][9F][A0][96]!{sound(84)}[03]{pause(1)}" eob
 
 l_0xef7e70:
+    /*
+    "{sound(25)}@{user} использовал(-а)" linebreak
+    "  вакуумную атаку![03]" eob
+    */
     newline
-    "{sound(25)}@{user} used a" linebreak
-    "  vacuum attack![03]" eob
+    "{sound(25)}@{user} [9A][A3][A1][A0][9D][C3][99][A0][93][91][9D]{call(data_gender.l_gendersuffix)}" linebreak
+    "  [93][91][9C][A5][A5][9E][9F][A5][C5] [91][A4][91][9C][A5]![03]" eob
 
 l_0xef7e88:
+//  "{sound(25)}@{user} пополнил(-а) запас топлива!{sound(89)}[03]{pause(1)}" eob
     newline
-    "{sound(25)}@{user} replenished a fuel supply!{sound(89)}[03]{pause(1)}" eob
+    "{sound(25)}@{user} [A1][A0][A1][A0][9D][9F][9A][9D]{call(data_gender.l_gendersuffix)} [99][91][A1][91][A3] [A4][A0][A1][9D][9A][93][91]!{sound(89)}[03]{pause(1)}" eob
 
 l_0xef7eac:
+    /*
+    "{sound(25)}@{user} сделал(-а)" linebreak
+    "  укус своими ядовитыми клыками![03]" eob
+    */
     newline
-    "{sound(25)}@{user} took a bite" linebreak
-    "  using its poisonous fangs![03]" eob
+    "{sound(25)}@{user} [A3][95][96][9D][91][9D]{call(data_gender.l_gendersuffix)}" linebreak
+    "  [A5][9C][A5][A3] [A3][93][A0][9A][9E][9A] [C6][95][A0][93][9A][A4][C2][9E][9A] [9C][9D][C2][9C][91][9E][9A]![03]" eob
 
 l_0xef7ed5:
+    /*
+    "{sound(25)}@{user} запустил(-а)" linebreak
+    "  головокружительную ракету.{sound(70)}[03]{pause(1)}" eob
+    */
     newline
-    "{sound(25)}@{user} fired" linebreak
-    "  a missile, making itself dizzy.{sound(70)}[03]{pause(1)}" eob
+    "{sound(25)}@{user} [99][91][A1][A5][A3][A4][9A][9D]{call(data_gender.l_gendersuffix)}" linebreak
+    "  [94][A0][9D][A0][93][A0][9C][A2][A5][98][9A][A4][96][9D][C3][9F][A5][C5] [A2][91][9C][96][A4][A5].{sound(70)}[03]{pause(1)}" eob
 
 l_0xef7f02:
+    /*
+    "{sound(25)}@{user} начал(-а)" linebreak
+    "  продолжительную атаку![03]" eob
+    */
     newline
-    "{sound(25)}@{user} started a" linebreak
-    "  continuous attack![03]" eob
+    "{sound(25)}@{user} [9F][91][A9][91][9D]{call(data_gender.l_gendersuffix)}" linebreak
+    "  [A1][A2][A0][95][A0][9D][98][9A][A4][96][9D][C3][9F][A5][C5] [91][A4][91][9C][A5]![03]" eob
 
 l_0xef7f1e:
+//  "{sound(25)}@{user} под защитой.[03]" eob
     newline
-    "{sound(25)}@{user} is" linebreak
-    "  on guard.[03]" eob
+    "{sound(25)}@{user} [A1][A0][95] [99][91][C0][9A][A4][A0][9B].[03]" eob
 
 l_0xef7f32:
+    /*
+    "{sound(25)}@{user} извергнул(-а)" linebreak
+    "  пылающий шар!{sound(75)}[03]{pause(1)}" eob
+    */
     newline
-    "{sound(25)}@{user} spewed out" linebreak
-    "  a flaming fireball!{sound(75)}[03]{pause(1)}" eob
+    "{sound(25)}@{user} [9A][99][93][96][A2][94][9F][A5][9D]{call(data_gender.l_gendersuffix)}" linebreak
+    "  [A1][C2][9D][91][C5][C0][9A][9B] [AA][91][A2]!{sound(75)}[03]{pause(1)}" eob
 
 l_0xef7f5a:
+    /*
+l_0xef7f5a:
     newline
-    "{sound(25)}@{user} rushed in," linebreak
-    "  and intertwined with you![03]" eob
+    "{sound(25)}@{user} набросил(-ся/-ась)," linebreak
+    "  и перепл(-ёлся/-елась) с вами![03]" eob
+    */
+    newline
+    "{sound(25)}@{user} [9F][91][92][A2][A0][A3][9A][9D]{call(data_gender.l_gendersuffix2)}," linebreak
+    "  [9A] [A1][96][A2][96][A1][9D]{call(data_gender.l_gender_interwine)} [A3] [93][91][9E][9A]![03]" eob
 
 l_0xef7f7b:
+    /*
+    "{sound(25)}@{user} атаковал(-а)" linebreak
+    "  рубящим ударом![03]" eob
+    */
     newline
-    "{sound(25)}@{user} attacked" linebreak
-    "  with a crushing chop![03]" eob
+    "{sound(25)}@{user} [91][A4][91][9C][A0][93][91][9D]{call(data_gender.l_gendersuffix)}" linebreak
+    "  [A2][A5][92][C6][C0][9A][9E] [A5][95][91][A2][A0][9E]![03]" eob
 
 l_0xef7f9a:
+    /*
+    "{sound(25)}@{user} схватился" linebreak
+    "  и использовал свой приём![03]" eob
+    */
     newline
-    "{sound(25)}@{user} grappled and used" linebreak
-    "  his submission hold![03]" eob
+    "{sound(25)}@{user} [A3][A7][93][91][A4][9A][9D][A3][C6]" linebreak
+    "  [9A] [9A][A3][A1][A0][9D][C3][99][A0][93][91][9D] [A3][93][A0][9B] [A1][A2][9A][97][9E]![03]" eob
 
 l_0xef7fc3:
+//  "{sound(25)}@{user} взревел(-а) и ускорил(-ся/-ась)!" linebreak
     newline
-    "{sound(25)}@{user} revved and accelerated!" linebreak
+    "{sound(25)}@{user} [93][99][A2][96][93][96][9D]{call(data_gender.l_gendersuffix)} [9A] [A5][A3][9C][A0][A2][9A][9D]{call(data_gender.l_gendersuffix2)}!" linebreak
     "[03]" eob
 
 l_0xef7fe0:
+    /*
+    "{sound(25)}@{user} размахнул(-ся/-ась)" linebreak
+    "  ножом![03]" eob
+    */
     newline
-    "{sound(25)}@{user} brandished" linebreak
-    "  a knife![03]" eob
+    "{sound(25)}@{user} [A2][91][99][9E][91][A7][9F][A5][9D]{call(data_gender.l_gendersuffix2)}" linebreak
+    "  [9F][A0][98][A0][9E]![03]" eob
 
 l_0xef7ffc:
+    /*
+    "{sound(25)}@{user} пронзил(-а)" linebreak
+    "  вас![03]" eob
+    */
     newline
-    "{sound(25)}@{user} tore" linebreak
-    "  into you![03]" eob
+    "{sound(25)}@{user} [A1][A2][A0][9F][99][9A][9D]{call(data_gender.l_gendersuffix)}" linebreak
+    "  [93][91][A3]![03]" eob
 
 l_0xef8010:
+    /*
+    "{sound(25)}@{user} использовал{call(data_gender.l_gendersuffix)}" linebreak
+    "  кусачую атаку![03]" eob
+    */
     newline
-    "{sound(25)}@{user} used a" linebreak
-    "  biting attack![03]" eob
+    "{sound(25)}@{user} [9A][A3][A1][A0][9D][C3][99][A0][93][91][9D]{call(data_gender.l_gendersuffix)}" linebreak
+    "  [9C][A5][A3][91][A9][A5][C5] [91][A4][91][9C][A5]![03]" eob
 
 l_0xef8026:
+    /*
+    "{sound(25)}@{user} вцепил(-ся/-ась)" linebreak
+    "  своими острыми ногтями![03]" eob
+    */
     newline
-    "{sound(25)}@{user} clawed" linebreak
-    "  with " call(data_37.l_0xc7e66e) " sharp nails![03]" eob
+    "{sound(25)}@{user} [93][A8][96][A1][9A][9D]{call(data_gender.l_gendersuffix2)}" linebreak
+    "  [A3][93][A0][9A][9E][9A] [A0][A3][A4][A2][C2][9E][9A] [9F][A0][94][A4][C6][9E][9A]![03]" eob
 
 l_0xef804b:
+    /*
+    "{sound(25)}@{user} сильно взмахнул(-а)" linebreak
+    "  своим хвостом![03]" eob
+    */
     newline
-    "{sound(25)}@{user} swung" linebreak
-    "  " call(data_37.l_0xc7e66e) " tail very hard![03]" eob
+    "{sound(25)}@{user} [A3][9A][9D][C3][9F][A0] [93][99][9E][91][A7][9F][A5][9D]{call(data_gender.l_gendersuffix)}" linebreak
+    "  [A3][93][A0][9A][9E] [A7][93][A0][A3][A4][A0][9E]![03]" eob
 

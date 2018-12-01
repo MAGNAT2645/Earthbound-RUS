@@ -74,13 +74,16 @@ l_0xc7e729:
     eob
 
 l_0xc7e72a:
-    "[19 10 02]{swap} and [1C 02 00]" eob
+//  "[19 10 02]{swap} и [1C 02 00]" eob
+    "[19 10 02]{swap} [9A] [1C 02 00]" eob
 
 l_0xc7e735:
-    " and [19 10 01]{result_is(2)}[1B 03 {e(l_0xc7e748)}]his friends" eob
+//  " и [19 10 01]{result_is(2)}[1B 03 {e(l_0xc7e748)}]его друзья" eob
+    " [9A] [19 10 01]{result_is(2)}[1B 03 {e(l_0xc7e748)}][96][94][A0] [95][A2][A5][99][C3][C6]" eob
 
 l_0xc7e748:
-    "her friends" eob
+//  "её друзья" eob
+    "[96][97] [95][A2][A5][99][C3][C6]" eob
 
 l_0xc7e74e:
     "{store_registers}" call(l_0xc7e6d7) "{load_registers}" eob
@@ -355,27 +358,45 @@ l_0xc7edd9:
     "  love...{wait}{font_normal}" eob
 
 l_0xc7edf1:
-    "{font_saturn}@Drink coffee" linebreak
-    "  before go?" next
-    "@Say yes" linebreak
-    "  to me?" next
-    "@Say no" linebreak
-    "  to me?" linebreak
-    "[19 02]Yes" eob
+    /*
+    "{font_saturn}@Выпьешь кофе" linebreak
+    "  перед уходом?" next
+    "@Скажи мне" linebreak
+    "  да?" next
+    "@Скажи мне" linebreak
+    "  нет?" linebreak
+    "[19 02]Да" eob
+    */
+    "{font_saturn}@[73][C2][A1][C3][96][AA][C3] [9C][A0][A6][96]" linebreak
+    "  [A1][96][A2][96][95] [A5][A7][A0][95][A0][9E]?" next
+    "@[83][9C][91][98][9A] [9E][9F][96]" linebreak
+    "  [95][91]?" next
+    "@[83][9C][91][98][9A] [9E][9F][96]" linebreak
+    "  [9F][96][A4]?" linebreak
+    "[19 02][75][91]" eob
 
 l_0xc7ee28:
-    "[19 02]No" eob
+//  "[19 02]Нет" eob
+    "[19 02][7F][96][A4]" eob
 
 l_0xc7ee2d:
     "{font_normal}[1C 07 02][11]{clearline}[09 02 {e(l_0xc7ee4f)} {e(l_0xc7ee3e)}]" goto(l_0xc7ee3e)
 
 l_0xc7ee3e:
-    "{font_saturn}@Why you" linebreak
-    "  say no?{wait}{font_normal}" eob
+    /*
+    "{font_saturn}@Почему ты" linebreak
+    "  сказал нет?{wait}{font_normal}" eob
+    */
+    "{font_saturn}@[81][A0][A9][96][9E][A5] [A4][C2]" linebreak
+    "  [A3][9C][91][99][91][9D] [9F][96][A4]?{wait}{font_normal}" eob
 
 l_0xc7ee4f:
-    "{font_saturn}@Bottoms up!" linebreak
-    "  Boing!{wait}{font_normal}{window_closeall}[06 DC 00 {e(data_55.l_0xc9992f)}]" call(data_36.l_0xc7dd74) "{music(92)}[1F 41 01]" eob
+    /*
+    "{font_saturn}@Пейте до дна!" linebreak
+    "  Буньк!{wait}{font_normal}{window_closeall}[06 DC 00 {e(data_55.l_0xc9992f)}]" call(data_36.l_0xc7dd74) "{music(92)}[1F 41 01]" eob
+    */
+    "{font_saturn}@[81][96][9B][A4][96] [95][A0] [95][9F][91]!" linebreak
+    "  [72][A5][9F][C3][9C]!{wait}{font_normal}{window_closeall}[06 DC 00 {e(data_55.l_0xc9992f)}]" call(data_36.l_0xc7dd74) "{music(92)}[1F 41 01]" eob
 
 l_0xc7ee7b:
     "{font_saturn}[06 47 00 {e(l_0xc7eeb1)}]@Why?  Why?" next

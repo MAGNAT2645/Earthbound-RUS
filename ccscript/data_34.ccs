@@ -615,7 +615,12 @@ l_0xc7c12a:
     "[1F 15 6A 00 60 01 01]    {unset(flag 2)}               " call(data_36.l_0xc7dd6b) "{music(35)}" call(data_35.l_0xc7c54b) "{set(flag 2)}               [1F 61]                      {counter(1)}" call(data_36.l_0xc7dc7f) "[1B 02 {e(l_0xc7c17b)}]{window_open(1)}@The power of Milkey Well" call(data_35.l_0xc7c55d) goto(l_0xc7c17b)
 
 l_0xc7c17b:
-    call(data_35.l_0xc7c57d) "{set(flag 4)}{music_resume}[06 B9 00 {e(data_35.l_0xc7c1f7)}]{window_open(1)}@[1C 02 01] thought he heard his mother from far away... she said" next
-    "@<Be a thoughtful, strong boy...>[03]{pause(60)}" linebreak
-    "@[1C 02 01]'s Sound Stone recorded the melody of the Milky Well.{wait}{set(flag 185)}{window_closetop}" goto(data_35.l_0xc7c1f7)
+    /*
+    call(data_35.l_0xc7c57d) "{set(flag 4)}{music_resume}[06 B9 00 {e(data_35.l_0xc7c1f7)}]{window_open(1)}@Персонажу [1C 02 01] показалось, что он услышал мать издалека... она сказала" next
+    "@<Будь вдумчивым, сильным мальчиком...>[03]{pause(60)}" linebreak
+    "@Звуковой камень персонажа [1C 02 01] записал мелодию Млечного Пруда.{wait}{set(flag 185)}{window_closetop}" goto(data_35.l_0xc7c1f7)
+    */
+    call(data_35.l_0xc7c57d) "{set(flag 4)}{music_resume}[06 B9 00 {e(data_35.l_0xc7c1f7)}]{window_open(1)}@[81][96][A2][A3][A0][9F][91][98][A5] [1C 02 01] [A1][A0][9C][91][99][91][9D][A0][A3][C3], [A9][A4][A0] [A0][9F] [A5][A3][9D][C2][AA][91][9D] [9E][91][A4][C3] [9A][99][95][91][9D][96][9C][91]... [A0][9F][91] [A3][9C][91][99][91][9D][91]" next
+    "@<[72][A5][95][C3] [93][95][A5][9E][A9][9A][93][C2][9E], [A3][9A][9D][C3][9F][C2][9E] [9E][91][9D][C3][A9][9A][9C][A0][9E]...>[03]{pause(60)}" linebreak
+    "@[79][93][A5][9C][A0][93][A0][9B] [9C][91][9E][96][9F][C3] [A1][96][A2][A3][A0][9F][91][98][91] [1C 02 01] [99][91][A1][9A][A3][91][9D] [9E][96][9D][A0][95][9A][C5] [7E][9D][96][A9][9F][A0][94][A0] [81][A2][A5][95][91].{wait}{set(flag 185)}{window_closetop}" goto(data_35.l_0xc7c1f7)
 

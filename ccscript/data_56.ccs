@@ -355,7 +355,8 @@ l_0xc9ab53:
     "@And yet, I've heard that it's a gourmet dish.{pause(20)}  I just don't get it!{wait}{window_closeall}" eob
 
 l_0xc9abbd:
-    "{sound(111)}{pause(40)}{window_open(1)}@Meow.{wait}{window_closetop}" eob
+//  "{sound(111)}{pause(40)}{window_open(1)}@Мяу.{wait}{window_closetop}" eob
+    "{sound(111)}{pause(40)}{window_open(1)}@[7E][C6][A5].{wait}{window_closetop}" eob
 
 l_0xc9abcf:
     "{sound(111)}{pause(40)}{window_open(1)}@*Groan*...{wait}{window_closetop}" eob

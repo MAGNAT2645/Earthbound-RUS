@@ -152,7 +152,7 @@
   Action Order: 0
   Boss Flag: 'false'
   Death Sound: normal
-  Death Text Pointer: data_62.l_0xef6d96
+  Death Text Pointer: data_62.l_0xef6d96_f
   Defense: 108
   Encounter Text Pointer: data_63.l_0xef78b8
   Experience points: 1566
@@ -575,7 +575,7 @@
   Action Order: 3
   Boss Flag: 'false'
   Death Sound: normal
-  Death Text Pointer: data_62.l_0xef6d83
+  Death Text Pointer: data_62.l_0xef6d83_f
   Defense: 78
   Encounter Text Pointer: data_63.l_0xef78b8
   Experience points: 2736
@@ -1280,7 +1280,7 @@
   Action Order: 1
   Boss Flag: 'true'
   Death Sound: boss
-  Death Text Pointer: data_62.l_0xef6d96
+  Death Text Pointer: data_62.l_0xef6d96_f
   Defense: 174
   Encounter Text Pointer: data_63.l_0xef7858
   Experience points: 0
@@ -1515,7 +1515,7 @@
   Action Order: 1
   Boss Flag: 'false'
   Death Sound: normal
-  Death Text Pointer: data_62.l_0xef6e19
+  Death Text Pointer: data_62.l_0xef6e19_f
   Defense: 18
   Encounter Text Pointer: data_63.l_0xef78ab
   Experience points: 200
@@ -1562,7 +1562,7 @@
   Action Order: 0
   Boss Flag: 'false'
   Death Sound: normal
-  Death Text Pointer: data_62.l_0xef6e19
+  Death Text Pointer: data_62.l_0xef6e19_f
   Defense: 70
   Encounter Text Pointer: data_63.l_0xef78ab
   Experience points: 3651
@@ -1891,7 +1891,7 @@
   Action Order: 1
   Boss Flag: 'true'
   Death Sound: boss
-  Death Text Pointer: data_62.l_0xef6d96
+  Death Text Pointer: data_62.l_0xef6d96_f
   Defense: 180
   Encounter Text Pointer: data_63.l_0xef7858
   Experience points: 115272
@@ -2032,7 +2032,7 @@
   Action Order: 0
   Boss Flag: 'false'
   Death Sound: normal
-  Death Text Pointer: data_62.l_0xef6d83
+  Death Text Pointer: data_62.l_0xef6d83_f
   Defense: 20
   Encounter Text Pointer: data_63.l_0xef78b8
   Experience points: 2462
@@ -2079,7 +2079,7 @@
   Action Order: 0
   Boss Flag: 'false'
   Death Sound: normal
-  Death Text Pointer: data_62.l_0xef6d96
+  Death Text Pointer: data_62.l_0xef6d96_f
   Defense: 113
   Encounter Text Pointer: data_63.l_0xef78b8
   Experience points: 10672
@@ -2126,7 +2126,7 @@
   Action Order: 1
   Boss Flag: 'true'
   Death Sound: normal
-  Death Text Pointer: data_62.l_0xef6d71
+  Death Text Pointer: data_62.l_0xef6d71_f
   Defense: 61
   Encounter Text Pointer: data_63.l_0xef789c
   Experience points: 1978
@@ -2173,7 +2173,7 @@
   Action Order: 1
   Boss Flag: 'false'
   Death Sound: normal
-  Death Text Pointer: data_62.l_0xef6d71
+  Death Text Pointer: data_62.l_0xef6d71_f
   Defense: 101
   Encounter Text Pointer: data_63.l_0xef789c
   Experience points: 15075
@@ -2596,7 +2596,7 @@
   Action Order: 1
   Boss Flag: 'false'
   Death Sound: normal
-  Death Text Pointer: data_62.l_0xef6d96
+  Death Text Pointer: data_62.l_0xef6d96_f
   Defense: 4
   Encounter Text Pointer: data_63.l_0xef78b8
   Experience points: 1
@@ -2643,7 +2643,7 @@
   Action Order: 1
   Boss Flag: 'false'
   Death Sound: normal
-  Death Text Pointer: data_62.l_0xef6d96
+  Death Text Pointer: data_62.l_0xef6d96_f
   Defense: 80
   Encounter Text Pointer: data_63.l_0xef78b8
   Experience points: 2786
@@ -3301,7 +3301,7 @@
   Action Order: 1
   Boss Flag: 'false'
   Death Sound: normal
-  Death Text Pointer: data_62.l_0xef6e03
+  Death Text Pointer: data_62.l_0xef6e03_f
   Defense: 65
   Encounter Text Pointer: data_63.l_0xef789c
   Experience points: 2218
@@ -3348,7 +3348,7 @@
   Action Order: 1
   Boss Flag: 'false'
   Death Sound: normal
-  Death Text Pointer: data_62.l_0xef6e03
+  Death Text Pointer: data_62.l_0xef6e03_f
   Defense: 134
   Encounter Text Pointer: data_63.l_0xef789c
   Experience points: 20389
@@ -3677,7 +3677,7 @@
   Action Order: 1
   Boss Flag: 'false'
   Death Sound: normal
-  Death Text Pointer: data_62.l_0xef6e31
+  Death Text Pointer: data_62.l_0xef6e31_f
   Defense: 51
   Encounter Text Pointer: data_63.l_0xef78b8
   Experience points: 1354
@@ -3912,7 +3912,7 @@
   Action Order: 0
   Boss Flag: 'true'
   Death Sound: boss
-  Death Text Pointer: data_62.l_0xef6d96
+  Death Text Pointer: data_62.l_0xef6d96_f
   Defense: 230
   Encounter Text Pointer: data_63.l_0xef7858
   Experience points: 337738
@@ -4147,7 +4147,7 @@
   Action Order: 0
   Boss Flag: 'false'
   Death Sound: normal
-  Death Text Pointer: data_62.l_0xef6d96
+  Death Text Pointer: data_62.l_0xef6d96_f
   Defense: 24
   Encounter Text Pointer: data_63.l_0xef78b8
   Experience points: 41
@@ -4288,7 +4288,7 @@
   Action Order: 1
   Boss Flag: 'false'
   Death Sound: normal
-  Death Text Pointer: data_62.l_0xef6d83
+  Death Text Pointer: data_62.l_0xef6d83_f
   Defense: 85
   Encounter Text Pointer: data_63.l_0xef78b8
   Experience points: 3748
@@ -4429,7 +4429,7 @@
   Action Order: 1
   Boss Flag: 'false'
   Death Sound: normal
-  Death Text Pointer: data_62.l_0xef6d71
+  Death Text Pointer: data_62.l_0xef6d71_f
   Defense: 158
   Encounter Text Pointer: data_63.l_0xef78c7
   Experience points: 19659
@@ -5322,7 +5322,7 @@
   Action Order: 1
   Boss Flag: 'false'
   Death Sound: normal
-  Death Text Pointer: data_62.l_0xef6d96
+  Death Text Pointer: data_62.l_0xef6d96_f
   Defense: 20
   Encounter Text Pointer: data_63.l_0xef78b8
   Experience points: 34
@@ -5369,7 +5369,7 @@
   Action Order: 0
   Boss Flag: 'false'
   Death Sound: normal
-  Death Text Pointer: data_62.l_0xef6d96
+  Death Text Pointer: data_62.l_0xef6d96_f
   Defense: 98
   Encounter Text Pointer: data_63.l_0xef78b8
   Experience points: 9225
@@ -5416,7 +5416,7 @@
   Action Order: 0
   Boss Flag: 'false'
   Death Sound: normal
-  Death Text Pointer: data_62.l_0xef6dd8
+  Death Text Pointer: data_62.l_0xef6dd8_f
   Defense: 215
   Encounter Text Pointer: data_63.l_0xef789c
   Experience points: 14941
@@ -5604,7 +5604,7 @@
   Action Order: 1
   Boss Flag: 'false'
   Death Sound: normal
-  Death Text Pointer: data_62.l_0xef6d71
+  Death Text Pointer: data_62.l_0xef6d71_f
   Defense: 114
   Encounter Text Pointer: data_63.l_0xef78ab
   Experience points: 15826
@@ -5886,7 +5886,7 @@
   Action Order: 1
   Boss Flag: 'true'
   Death Sound: normal
-  Death Text Pointer: data_62.l_0xef6d71
+  Death Text Pointer: data_62.l_0xef6d71_f
   Defense: 138
   Encounter Text Pointer: data_63.l_0xef7858
   Experience points: 44690
@@ -5933,7 +5933,7 @@
   Action Order: 1
   Boss Flag: 'false'
   Death Sound: normal
-  Death Text Pointer: data_62.l_0xef6d71
+  Death Text Pointer: data_62.l_0xef6d71_f
   Defense: 116
   Encounter Text Pointer: data_63.l_0xef78b8
   Experience points: 17423
@@ -5980,7 +5980,7 @@
   Action Order: 0
   Boss Flag: 'false'
   Death Sound: normal
-  Death Text Pointer: data_62.l_0xef6d83
+  Death Text Pointer: data_62.l_0xef6d83_f
   Defense: 140
   Encounter Text Pointer: data_63.l_0xef78c7
   Experience points: 24180
@@ -6506,7 +6506,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 40%
   Freeze vulnerability: 100%
-  Gender: female
+  Gender: male
   Guts: 5
   HP: 280
   Hypnosis/Brainshock vulnerability: 0%
@@ -6967,7 +6967,7 @@
   Action Order: 1
   Boss Flag: 'false'
   Death Sound: normal
-  Death Text Pointer: data_62.l_0xef6d96
+  Death Text Pointer: data_62.l_0xef6d96_f
   Defense: 111
   Encounter Text Pointer: data_63.l_0xef78b8
   Experience points: 15171
@@ -7155,7 +7155,7 @@
   Action Order: 1
   Boss Flag: 'false'
   Death Sound: normal
-  Death Text Pointer: data_62.l_0xef6d96
+  Death Text Pointer: data_62.l_0xef6d96_f
   Defense: 52
   Encounter Text Pointer: data_63.l_0xef78c7
   Experience points: 1990
@@ -7390,7 +7390,7 @@
   Action Order: 1
   Boss Flag: 'false'
   Death Sound: normal
-  Death Text Pointer: data_62.l_0xef6d96
+  Death Text Pointer: data_62.l_0xef6d96_f
   Defense: 13
   Encounter Text Pointer: data_63.l_0xef78b8
   Experience points: 415
@@ -7437,7 +7437,7 @@
   Action Order: 1
   Boss Flag: 'false'
   Death Sound: normal
-  Death Text Pointer: data_62.l_0xef6d96
+  Death Text Pointer: data_62.l_0xef6d96_f
   Defense: 16
   Encounter Text Pointer: data_63.l_0xef78b8
   Experience points: 1116
@@ -8189,7 +8189,7 @@
   Action Order: 1
   Boss Flag: 'true'
   Death Sound: boss
-  Death Text Pointer: data_62.l_0xef6d96
+  Death Text Pointer: data_62.l_0xef6d96_f
   Defense: 174
   Encounter Text Pointer: data_63.l_0xef7858
   Experience points: 0
@@ -8424,7 +8424,7 @@
   Action Order: 0
   Boss Flag: 'true'
   Death Sound: boss
-  Death Text Pointer: data_62.l_0xef6d96
+  Death Text Pointer: data_62.l_0xef6d96_f
   Defense: 180
   Encounter Text Pointer: data_63.l_0xef7858
   Experience points: 115272
@@ -8941,7 +8941,7 @@
   Action Order: 0
   Boss Flag: 'true'
   Death Sound: boss
-  Death Text Pointer: data_62.l_0xef6d96
+  Death Text Pointer: data_62.l_0xef6d96_f
   Defense: 230
   Encounter Text Pointer: data_63.l_0xef7858
   Experience points: 337738
@@ -9082,7 +9082,7 @@
   Action Order: 0
   Boss Flag: 'false'
   Death Sound: normal
-  Death Text Pointer: data_62.l_0xef6d71
+  Death Text Pointer: data_62.l_0xef6d71_f
   Defense: 146
   Encounter Text Pointer: data_63.l_0xef78c7
   Experience points: 17567
@@ -9176,7 +9176,7 @@
   Action Order: 0
   Boss Flag: 'false'
   Death Sound: normal
-  Death Text Pointer: data_62.l_0xef6d96
+  Death Text Pointer: data_62.l_0xef6d96_f
   Defense: 113
   Encounter Text Pointer: data_63.l_0xef78b8
   Experience points: 10672
@@ -10492,7 +10492,7 @@
   Action Order: 0
   Boss Flag: 'false'
   Death Sound: normal
-  Death Text Pointer: data_62.l_0xef6d96
+  Death Text Pointer: data_62.l_0xef6d96_f
   Defense: 16
   Encounter Text Pointer: data_63.l_0xef78b8
   Experience points: 30384

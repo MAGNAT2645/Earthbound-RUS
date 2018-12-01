@@ -152,27 +152,43 @@ l_0xef8e9e:
     "  [1C 05 00]!{pause(30)}{sound(99)}[1C 13 00 1B]{pause(60)}[03]" eob
 
 l_0xef8ebe:
+    /*
+    "{sound(25)}@{user} выпустил{call(data_gender.l_gendersuffix)}" linebreak
+    "  очень вонючий газ![03]" eob
+    */
     newline
-    "{sound(25)}@{user} discharged" linebreak
-    "  a very stinky gas![03]" eob
+    "{sound(25)}@{user} [93][C2][A1][A5][A3][A4][9A][9D]{call(data_gender.l_gendersuffix)}" linebreak
+    "  [A0][A9][96][9F][C3] [93][A0][9F][C5][A9][9A][9B] [94][91][99]![03]" eob
 
 l_0xef8ee2:
-    call(data_59.l_0xc9ee2f) "{pause(40)}{window_clear}@You cannot grasp the true form" linebreak
-    "  of {user}' attack![1C 13 31 00][1C 13 36 00]{sound(81)}{pause(40)}{sound(81)}" eob
+    /*
+    call(data_59.l_0xc9ee2f) "{pause(40)}{window_clear}@Вы не можете постичь истинную форму" linebreak
+    "  атаки персонажа {user}![1C 13 31 00][1C 13 36 00]{sound(81)}{pause(40)}{sound(81)}" eob
+    */
+    call(data_59.l_0xc9ee2f) "{pause(40)}{window_clear}@[73][C2] [9F][96] [9E][A0][98][96][A4][96] [A1][A0][A3][A4][9A][A9][C3] [9A][A3][A4][9A][9F][9F][A5][C5] [A6][A0][A2][9E][A5]" linebreak
+    "  [91][A4][91][9C][9A] [A1][96][A2][A3][A0][9F][91][98][91] {user}![1C 13 31 00][1C 13 36 00]{sound(81)}{pause(40)}{sound(81)}" eob
 
 l_0xef8f17:
-    call(data_59.l_0xc9ee68) "{window_clear}@You cannot grasp the true form" linebreak
-    "  of {user}' attack![1C 13 31 00][1C 13 36 00]{sound(81)}{pause(40)}{sound(81)}" eob
+    /*
+    call(data_59.l_0xc9ee68) "{window_clear}@Вы не можете постичь истинную форму" linebreak
+    "  атаки персонажа {user}![1C 13 31 00][1C 13 36 00]{sound(81)}{pause(40)}{sound(81)}" eob
+    */
+    call(data_59.l_0xc9ee68) "{window_clear}@[73][C2] [9F][96] [9E][A0][98][96][A4][96] [A1][A0][A3][A4][9A][A9][C3] [9A][A3][A4][9A][9F][9F][A5][C5] [A6][A0][A2][9E][A5]" linebreak
+    "  [91][A4][91][9C][9A] [A1][96][A2][A3][A0][9F][91][98][91] {user}![1C 13 31 00][1C 13 36 00]{sound(81)}{pause(40)}{sound(81)}" eob
 
 l_0xef8f4a:
-    call(data_59.l_0xc9ee2f) "{pause(40)}{window_clear}" call(data_59.l_0xc9ee2f) "{pause(40)}{window_clear}" call(data_59.l_0xc9ee2f) "{pause(40)}{window_clear}@You cannot grasp the true form" linebreak
-    "  of {user}' attack![1C 13 31 00][1C 13 36 00]{sound(81)}{pause(40)}{sound(81)}" eob
+    /*
+    call(data_59.l_0xc9ee2f) "{pause(40)}{window_clear}" call(data_59.l_0xc9ee2f) "{pause(40)}{window_clear}" call(data_59.l_0xc9ee2f) "{pause(40)}{window_clear}@Вы не можете постичь истинную форму" linebreak
+    "  атаки персонажа {user}![1C 13 31 00][1C 13 36 00]{sound(81)}{pause(40)}{sound(81)}" eob
+    */
+    call(data_59.l_0xc9ee2f) "{pause(40)}{window_clear}" call(data_59.l_0xc9ee2f) "{pause(40)}{window_clear}" call(data_59.l_0xc9ee2f) "{pause(40)}{window_clear}@[73][C2] [9F][96] [9E][A0][98][96][A4][96] [A1][A0][A3][A4][9A][A9][C3] [9A][A3][A4][9A][9F][9F][A5][C5] [A6][A0][A2][9E][A5]" linebreak
+    "  [91][A4][91][9C][9A] [A1][96][A2][A3][A0][9F][91][98][91] {user}![1C 13 31 00][1C 13 36 00]{sound(81)}{pause(40)}{sound(81)}" eob
 
 l_0xef8f91:
     call(data_59.l_0xc9ee2f) "{pause(40)}{window_clear}" call(data_59.l_0xc9ee2f) "{pause(40)}{window_clear}" call(data_59.l_0xc9ee2f) "{pause(40)}{window_clear}" eob
 
 l_0xef8fad:
-//    "[1D 19 02][1B 03 {e(l_0xef8fc9)}][19 10 02][1D 0D 00 01 02][1B 03 {e(l_0xef8fc9)}] каждый." eob
+//  "[1D 19 02][1B 03 {e(l_0xef8fc9)}][19 10 02][1D 0D 00 01 02][1B 03 {e(l_0xef8fc9)}] каждый." eob
     "[1D 19 02][1B 03 {e(l_0xef8fc9)}][19 10 02][1D 0D 00 01 02][1B 03 {e(l_0xef8fc9)}] [9C][91][98][95][C2][9B]." eob
 
 l_0xef8fc9:
@@ -374,9 +390,14 @@ l_0xef9785:
     "@(Cross bridge to Happy-Happy Village)" end
 
 l_0xef97a2:
-    "[06 BF 00 {e(data_35.l_0xc7c588)}]{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(data_24.l_0xc690a6)}]{music(155)}@You finally got here." next
-    "@This is the second <Your Sanctuary> location.{pause(20)}  But it's mine now." next
-    "@Take it from me,{pause(30)} if you dare...[03]" call(data_23.l_0xc68410) "[1B 03 {e(data_23.l_0xc683de)}][1F 1E C3 01 08]{pause(120)}{set(flag 191)}" eob
+    /*
+    "[06 BF 00 {e(data_35.l_0xc7c588)}]{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(data_24.l_0xc690a6)}]{music(155)}@Ты наконец-то добрался сюда." next
+    "@Это вторая локация <Твоего Храма>.{pause(20)}  Но сейчас она моя." next
+    "@Отбери её у меня,{pause(30)} если посмеешь...[03]" call(data_23.l_0xc68410) "[1B 03 {e(data_23.l_0xc683de)}][1F 1E C3 01 08]{pause(120)}{set(flag 191)}" eob
+    */
+    "[06 BF 00 {e(data_35.l_0xc7c588)}]{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(data_24.l_0xc690a6)}]{music(155)}@[84][C2] [9F][91][9C][A0][9F][96][A8]-[A4][A0] [95][A0][92][A2][91][9D][A3][C6] [A3][C5][95][91]." next
+    "@[B4][A4][A0] [93][A4][A0][A2][91][C6] [9D][A0][9C][91][A8][9A][C6] <[84][93][A0][96][94][A0] [87][A2][91][9E][91]>.{pause(20)}  [7F][A0] [A3][96][9B][A9][91][A3] [A0][9F][91] [9E][A0][C6]." next
+    "@[80][A4][92][96][A2][9A] [96][97] [A5] [9E][96][9F][C6],{pause(30)} [96][A3][9D][9A] [A1][A0][A3][9E][96][96][AA][C3]...[03]" call(data_23.l_0xc68410) "[1B 03 {e(data_23.l_0xc683de)}][1F 1E C3 01 08]{pause(120)}{set(flag 191)}" eob
 
 l_0xef981c:
     call(data_47.l_0xc900f9) eob

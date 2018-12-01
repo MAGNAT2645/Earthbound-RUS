@@ -8,39 +8,67 @@ command e(label) "{long label}"
 
 // Text Data
 l_0xef806d:
+    /*
+    "{sound(25)}@{user} зарычал{call(data_gender.l_gendersuffix)}" linebreak
+    "  и бросил{call(data_gender.l_gendersuffix2)} вперёд![03]" eob
+    */
     newline
-    "{sound(25)}@{user} growled" linebreak
-    "  and lunged forward![03]" eob
+    "{sound(25)}@{user} [99][91][A2][C2][A9][91][9D]{call(data_gender.l_gendersuffix)}" linebreak
+    "  [9A] [92][A2][A0][A3][9A][9D]{call(data_gender.l_gendersuffix2)} [93][A1][96][A2][97][95]![03]" eob
 
 l_0xef808d:
+    /*
+    "{sound(25)}@{user} размахнул{call(data_gender.l_gendersuffix2)}" linebreak
+    "  сумкой для покупок![03]" eob
+    */
     newline
-    "{sound(25)}@{user} wielded" linebreak
-    "  a shopping bag![03]" eob
+    "{sound(25)}@{user} [A2][91][99][9E][91][A7][9F][A5][9D]{call(data_gender.l_gendersuffix2)}" linebreak
+    "  [A3][A5][9E][9C][A0][9B] [95][9D][C6] [A1][A0][9C][A5][A1][A0][9C]![03]" eob
 
 l_0xef80ac:
+    /*
+    "{sound(25)}@{user} размахнул{call(data_gender.l_gendersuffix2)}" linebreak
+    "  дубинкой![03]" eob
+    */
     newline
-    "{sound(25)}@{user} swung" linebreak
-    "  a club![03]" eob
+    "{sound(25)}@{user} [A2][91][99][9E][91][A7][9F][A5][9D]{call(data_gender.l_gendersuffix2)}" linebreak
+    "  [95][A5][92][9A][9F][9C][A0][9B]![03]" eob
 
 l_0xef80c4:
+    /*
+    "{sound(25)}@{user} сгенерировал{call(data_gender.l_gendersuffix)}" linebreak
+    "  торнадо!{sound(90)}[03]" eob
+    */
     newline
-    "{sound(25)}@{user} generated" linebreak
-    "  a tornado!{sound(90)}[03]" eob
+    "{sound(25)}@{user} [A3][94][96][9F][96][A2][9A][A2][A0][93][91][9D]{call(data_gender.l_gendersuffix)}" linebreak
+    "  [A4][A0][A2][9F][91][95][A0]!{sound(90)}[03]" eob
 
 l_0xef80e4:
+    /*
+    "{sound(25)}@{user} разбрызгнул{call(data_gender.l_gendersuffix)}" linebreak
+    "  огромную струю воды[03]" eob
+    */
     newline
-    "{sound(25)}@{user} sprayed a gigantic blast of water!" linebreak
-    "[03]" eob
+    "{sound(25)}@{user} [A2][91][99][92][A2][C2][99][94][9F][A5][9D]{call(data_gender.l_gendersuffix)}" linebreak
+    "  [A0][94][A2][A0][9E][9F][A5][C5] [A3][A4][A2][A5][C5] [93][A0][95][C2][03]" eob
 
 l_0xef8109:
+    /*
+    "{sound(25)}@{user} угрожающе" linebreak
+    "  улыбнул{call(data_gender.l_gendersuffix2)}![03]" eob
+    */
     newline
-    "{sound(25)}@{user} flashed" linebreak
-    "  a menacing smile![03]" eob
+    "{sound(25)}@{user} [A5][94][A2][A0][98][91][C5][C0][96]" linebreak
+    "  [A5][9D][C2][92][9F][A5][9D]{call(data_gender.l_gendersuffix2)}![03]" eob
 
 l_0xef812b:
+    /*
+    "{sound(25)}@{user} начал{call(data_gender.l_gendersuffix)}" linebreak
+    "  истерически смеяться![03]" eob
+    */
     newline
-    "{sound(25)}@{user} started" linebreak
-    "  laughing hysterically![03]" eob
+    "{sound(25)}@{user} [9F][91][A9][91][9D]{call(data_gender.l_gendersuffix)}" linebreak
+    "  [9A][A3][A4][96][A2][9A][A9][96][A3][9C][9A] [A3][9E][96][C6][A4][C3][A3][C6]![03]" eob
 
 l_0xef814f:
     newline

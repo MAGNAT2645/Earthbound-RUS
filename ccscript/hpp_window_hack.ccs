@@ -1,9 +1,0 @@
-import asm65816
-
-// Shift HPP label inside HP/PP Window
-ROM[0xC3E3FC] = "[08 0A 18 1A]"
-
-// Change PSI to ПСИ (ShadowOne333's fix)
-ROM[0xC1FE38] = byte [0] 0x81
-ROM[0xC1FE3D] = byte [0] 0x83
-ROM[0xC1FE42] = byte [0] 0x7A

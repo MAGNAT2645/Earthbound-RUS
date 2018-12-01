@@ -84,15 +84,26 @@ l_0xc82c48:
     "@Certainly, it's very dangerous living in the city." end
 
 l_0xc82c6b:
-    "[06 8B 00 {e(data_35.l_0xc7c588)}]{music(155)}@Gwaaagh, Gwarrrgh!." next
-    "@You finally made it." next
-    "@This department store is gonna be your grave!{pause(20)}  Gwaaagh." next
-    "@You will be gone, and you'll be burning in..." next
-    "@Well, you'll go to heaven![03]" call(data_23.l_0xc6855b) "[1B 03 {e(data_23.l_0xc683de)}][1F 01 00]{window_open(1)}@...Even though you could beat me..." next
-    "@Master Giygas will avenge me..." next
+    /*
+    "[06 8B 00 {e(data_35.l_0xc7c588)}]{music(155)}@Граааарх, Граррррх!." next
+    "@Наконец-то у тебя получилось." next
+    "@Этот универмаг будет твоей могилой!{pause(20)}  Gwaaagh." next
+    "@Ты пропадёшь, и ты будешь гореть в..." next
+    "@Что ж, ты попадёшь на небеса![03]" call(data_23.l_0xc6855b) "[1B 03 {e(data_23.l_0xc683de)}][1F 01 00]{window_open(1)}@...Даже если ты можешь победить меня..." next
+    "@Мастер Гийгас отомстит за меня..." next
     "{pause(60)}" linebreak
-    "@At this moment, [1C 02 02] should be...Monotoli..." next
-    "@Gwaaaaarrrrgh!![03]{window_closeall}{pause(60)}{set(flag 139)}{set(flag 556)}{unset(flag 57)}{pause(1)}[1F F1 AD 03 7B 02]{set(flag 497)}[1F 41 05]" eob
+    "@В данный момент, [1C 02 02] должна быть...Монотоли..." next
+    "@Граааррррх!![03]{window_closeall}{pause(60)}{set(flag 139)}{set(flag 556)}{unset(flag 57)}{pause(1)}[1F F1 AD 03 7B 02]{set(flag 497)}[1F 41 05]" eob
+    */
+    "[06 8B 00 {e(data_35.l_0xc7c588)}]{music(155)}@[74][A2][91][91][91][91][A2][A7], [74][A2][91][A2][A2][A2][A2][A7]!." next
+    "@[7F][91][9C][A0][9F][96][A8]-[A4][A0] [A5] [A4][96][92][C6] [A1][A0][9D][A5][A9][9A][9D][A0][A3][C3]." next
+    "@[B4][A4][A0][A4] [A5][9F][9A][93][96][A2][9E][91][94] [92][A5][95][96][A4] [A4][93][A0][96][9B] [9E][A0][94][9A][9D][A0][9B]!{pause(20)}  Gwaaagh." next
+    "@[84][C2] [A1][A2][A0][A1][91][95][97][AA][C3], [9A] [A4][C2] [92][A5][95][96][AA][C3] [94][A0][A2][96][A4][C3] [93]..." next
+    "@[89][A4][A0] [98], [A4][C2] [A1][A0][A1][91][95][97][AA][C3] [9F][91] [9F][96][92][96][A3][91]![03]" call(data_23.l_0xc6855b) "[1B 03 {e(data_23.l_0xc683de)}][1F 01 00]{window_open(1)}@...[75][91][98][96] [96][A3][9D][9A] [A4][C2] [9E][A0][98][96][AA][C3] [A1][A0][92][96][95][9A][A4][C3] [9E][96][9F][C6]..." next
+    "@[7E][91][A3][A4][96][A2] [74][9A][9B][94][91][A3] [A0][A4][A0][9E][A3][A4][9A][A4] [99][91] [9E][96][9F][C6]..." next
+    "{pause(60)}" linebreak
+    "@[73] [95][91][9F][9F][C2][9B] [9E][A0][9E][96][9F][A4], [1C 02 02] [95][A0][9D][98][9F][91] [92][C2][A4][C3]...[7E][A0][9F][A0][A4][A0][9D][9A]..." next
+    "@[74][A2][91][91][91][A2][A2][A2][A2][A7]!![03]{window_closeall}{pause(60)}{set(flag 139)}{set(flag 556)}{unset(flag 57)}{pause(1)}[1F F1 AD 03 7B 02]{set(flag 497)}[1F 41 05]" eob
 
 l_0xc82d6c:
     "[06 49 00 {e(l_0xc82dea)}][06 8F 00 {e(l_0xc82dc7)}]@The city of Fourside has developed quite a bit" next
@@ -226,71 +237,127 @@ l_0xc8361b:
     eob
 
 l_0xc8361c:
+    /*
     "@....." next
-    "@*Wheeze, wheeze*..." next
+    "@*Хрипит, хрипит*..." next
     "@....." next
-    "@Aren't you [1C 02 01]...?" next
-    "@...I can't see too well..." next
-    "@Everything's blurry...{pause(20)}  You are [1C 02 01], aren't you?" next
-    "@It's me, we met in Twoson...{pause(20)}  Everdred from Burglin Park." next
-    "@You must remember.{pause(20)}  I'm the best thief around." next
-    "@That... Carpainter in Happy Happy Village was hiding something..." next
-    "@*wheeze, wheeze*... strange." next
-    "@I stole it, and thought about selling it in the big city..." next
-    "@An old, city-wise man called it Mani Mani." next
-    "@It's a strange-colored, doll-looking thing." next
-    "@...Ohh... *wheeze*,{pause(20)}" linebreak
-    "  I'm in pain." next
-    "@...and" next
+    "@Ты не [1C 02 01]...?" next
+    "@...Я не очень хорошо вижу..." next
+    "@Всё размыто...{pause(20)}  Ты [1C 02 01], не так ли?" next
+    "@Это я, мы познакомились в Тусоне...{pause(20)}  Эвердред из Бурглин Парка." next
+    "@Ты должен помнить.{pause(20)}  Я лучший вор в округе." next
+    "@Этот... Карпейнтер из Счастливой Счастливой Деревни скрывал что-то..." next
+    "@*хрипит, хрипит*... странное." next
+    "@Я украл это, и подумывал продать в большом городе..." next
+    "@Старый, мудрый городской назвал эту штуку Мани Мани." next
+    "@Это кукла странного цвета." next
+    "@...Охх... *хрипит*,{pause(20)}" linebreak
+    "  Мне больно." next
+    "@...и" next
     "@....." next
-    "@Monotoli tricked me and stole it...{pause(30)} from me!" next
-    "@He tricked a thief!" next
-    "@He wanted me out of the way because I know his secret..." next
-    "@He gets his evil power from that statue!" next
-    "@...Listen!" next
-    "@I'll tell you only once." next
-    "@At the cafe,{pause(15)} check...{pause(15)} behind...{pause(15)} the counter..." next
-    "@...*Gasp*..." next
-    "[06 09 00 {e(l_0xc838b9)}]{set(flag 9)}@I said I'd tell you only once..." next
-    "@But if you insist, I'll tell you once more..." next
-    "@...*gasp, gasp*" next
-    "@Do{pause(5)} do{pause(5)} do you wanna hear it again?" linebreak
-    "[19 02]Yes" eob
+    "@Монотоли обманул меня и украл её...{pause(30)} у меня!" next
+    "@Он обманул вора!" next
+    "@Он хотел выгнать меня, потому что я знаю его секрет..." next
+    "@Он получает злобную силу от этой статуи!" next
+    "@...Послушай!" next
+    "@Я расскажу тебе только один раз." next
+    "@В кафе,{pause(15)} проверь...{pause(15)} за...{pause(15)} стойкой..." next
+    "@...*Задыхается*..." next
+    "[06 09 00 {e(l_0xc838b9)}]{set(flag 9)}@Я говорил, что расскажу тебе только один раз..." next
+    "@Но если ты настаиваешь, я расскажу ещё раз..." next
+    "@...*задыхается, задыхается*" next
+    "@Ты...{pause(5)} ты...{pause(5)} ты хочешь услышать снова?" linebreak
+    "[19 02]Да" eob
+    */
+    "@....." next
+    "@*[87][A2][9A][A1][9A][A4], [A7][A2][9A][A1][9A][A4]*..." next
+    "@....." next
+    "@[84][C2] [9F][96] [1C 02 01]...?" next
+    "@...[B6] [9F][96] [A0][A9][96][9F][C3] [A7][A0][A2][A0][AA][A0] [93][9A][98][A5]..." next
+    "@[73][A3][97] [A2][91][99][9E][C2][A4][A0]...{pause(20)}  [84][C2] [1C 02 01], [9F][96] [A4][91][9C] [9D][9A]?" next
+    "@[B4][A4][A0] [C6], [9E][C2] [A1][A0][99][9F][91][9C][A0][9E][9A][9D][9A][A3][C3] [93] [84][A5][A3][A0][9F][96]...{pause(20)}  [B4][93][96][A2][95][A2][96][95] [9A][99] [72][A5][A2][94][9D][9A][9F] [81][91][A2][9C][91]." next
+    "@[84][C2] [95][A0][9D][98][96][9F] [A1][A0][9E][9F][9A][A4][C3].{pause(20)}  [B6] [9D][A5][A9][AA][9A][9B] [93][A0][A2] [93] [A0][9C][A2][A5][94][96]." next
+    "@[B4][A4][A0][A4]... [7C][91][A2][A1][96][9B][9F][A4][96][A2] [9A][99] [83][A9][91][A3][A4][9D][9A][93][A0][9B] [83][A9][91][A3][A4][9D][9A][93][A0][9B] [75][96][A2][96][93][9F][9A] [A3][9C][A2][C2][93][91][9D] [A9][A4][A0]-[A4][A0]..." next
+    "@*[A7][A2][9A][A1][9A][A4], [A7][A2][9A][A1][9A][A4]*... [A3][A4][A2][91][9F][9F][A0][96]." next
+    "@[B6] [A5][9C][A2][91][9D] [C4][A4][A0], [9A] [A1][A0][95][A5][9E][C2][93][91][9D] [A1][A2][A0][95][91][A4][C3] [93] [92][A0][9D][C3][AA][A0][9E] [94][A0][A2][A0][95][96]..." next
+    "@[83][A4][91][A2][C2][9B], [9E][A5][95][A2][C2][9B] [94][A0][A2][A0][95][A3][9C][A0][9B] [9F][91][99][93][91][9D] [C4][A4][A5] [AA][A4][A5][9C][A5] [7E][91][9F][9A] [7E][91][9F][9A]." next
+    "@[B4][A4][A0] [9C][A5][9C][9D][91] [A3][A4][A2][91][9F][9F][A0][94][A0] [A8][93][96][A4][91]." next
+    "@...[80][A7][A7]... *[A7][A2][9A][A1][9A][A4]*,{pause(20)}" linebreak
+    "  [7E][9F][96] [92][A0][9D][C3][9F][A0]." next
+    "@...[9A]" next
+    "@....." next
+    "@[7E][A0][9F][A0][A4][A0][9D][9A] [A0][92][9E][91][9F][A5][9D] [9E][96][9F][C6] [9A] [A5][9C][A2][91][9D] [96][97]...{pause(30)} [A5] [9E][96][9F][C6]!" next
+    "@[80][9F] [A0][92][9E][91][9F][A5][9D] [93][A0][A2][91]!" next
+    "@[80][9F] [A7][A0][A4][96][9D] [93][C2][94][9F][91][A4][C3] [9E][96][9F][C6], [A1][A0][A4][A0][9E][A5] [A9][A4][A0] [C6] [99][9F][91][C5] [96][94][A0] [A3][96][9C][A2][96][A4]..." next
+    "@[80][9F] [A1][A0][9D][A5][A9][91][96][A4] [99][9D][A0][92][9F][A5][C5] [A3][9A][9D][A5] [A0][A4] [C4][A4][A0][9B] [A3][A4][91][A4][A5][9A]!" next
+    "@...[81][A0][A3][9D][A5][AA][91][9B]!" next
+    "@[B6] [A2][91][A3][A3][9C][91][98][A5] [A4][96][92][96] [A4][A0][9D][C3][9C][A0] [A0][95][9A][9F] [A2][91][99]." next
+    "@[73] [9C][91][A6][96],{pause(15)} [A1][A2][A0][93][96][A2][C3]...{pause(15)} [99][91]...{pause(15)} [A3][A4][A0][9B][9C][A0][9B]..." next
+    "@...*[79][91][95][C2][A7][91][96][A4][A3][C6]*..." next
+    "[06 09 00 {e(l_0xc838b9)}]{set(flag 9)}@[B6] [94][A0][93][A0][A2][9A][9D], [A9][A4][A0] [A2][91][A3][A3][9C][91][98][A5] [A4][96][92][96] [A4][A0][9D][C3][9C][A0] [A0][95][9A][9F] [A2][91][99]..." next
+    "@[7F][A0] [96][A3][9D][9A] [A4][C2] [9F][91][A3][A4][91][9A][93][91][96][AA][C3], [C6] [A2][91][A3][A3][9C][91][98][A5] [96][C0][97] [A2][91][99]..." next
+    "@...*[99][91][95][C2][A7][91][96][A4][A3][C6], [99][91][95][C2][A7][91][96][A4][A3][C6]*" next
+    "@[84][C2]...{pause(5)} [A4][C2]...{pause(5)} [A4][C2] [A7][A0][A9][96][AA][C3] [A5][A3][9D][C2][AA][91][A4][C3] [A3][9F][A0][93][91]?" linebreak
+    "[19 02][75][91]" eob
 
 l_0xc838a0:
-    "[19 02]No" eob
+//  "[19 02]Нет" eob
+    "[19 02][7F][96][A4]" eob
 
 l_0xc838a5:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xc8361c)} {e(l_0xc83957)}]" goto(l_0xc83957)
 
 l_0xc838b9:
-    "@I've told you twice already..." next
-    "@But if you wanna hear one more time..." next
-    "@I'll tell you once more..." next
-    "@D...{pause(15)} D...{pause(15)} do... you wanna hear it again?" linebreak
-    "[19 02]Yes" eob
+    /*
+    "@Я уже рассказал тебе дважды..." next
+    "@Но если ты хочешь услышать ещё раз..." next
+    "@Я расскажу тебе ещё один раз..." next
+    "@Ты...{pause(15)} ты...{pause(15)} ты... ты хочешь услышать снова?" linebreak
+    "[19 02]Да" eob
+    */
+    "@[B6] [A5][98][96] [A2][91][A3][A3][9C][91][99][91][9D] [A4][96][92][96] [95][93][91][98][95][C2]..." next
+    "@[7F][A0] [96][A3][9D][9A] [A4][C2] [A7][A0][A9][96][AA][C3] [A5][A3][9D][C2][AA][91][A4][C3] [96][C0][97] [A2][91][99]..." next
+    "@[B6] [A2][91][A3][A3][9C][91][98][A5] [A4][96][92][96] [96][C0][97] [A0][95][9A][9F] [A2][91][99]..." next
+    "@[84][C2]...{pause(15)} [A4][C2]...{pause(15)} [A4][C2]... [A4][C2] [A7][A0][A9][96][AA][C3] [A5][A3][9D][C2][AA][91][A4][C3] [A3][9F][A0][93][91]?" linebreak
+    "[19 02][75][91]" eob
 
 l_0xc83916:
-    "[19 02]No" eob
+//  "[19 02]Нет" eob
+    "[19 02][7F][96][A4]" eob
 
 l_0xc8391b:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xc8392f)} {e(l_0xc83957)}]" goto(l_0xc83957)
 
 l_0xc8392f:
-    "@I'm not that nice of a guy.{pause(20)}  Besides." next
-    "@I'm slipping away..." next
+    /*
+    "@Я не настолько хороший парень.{pause(20)}  Кроме того." next
+    "@Я ускользаю..." next
+    */
+    "@[B6] [9F][96] [9F][91][A3][A4][A0][9D][C3][9C][A0] [A7][A0][A2][A0][AA][9A][9B] [A1][91][A2][96][9F][C3].{pause(20)}  [7C][A2][A0][9E][96] [A4][A0][94][A0]." next
+    "@[B6] [A5][A3][9C][A0][9D][C3][99][91][C5]..." next
     goto(l_0xc83957)
 
 l_0xc83957:
-    "@...Before I go, here's my last haiku poem:" next
-    "@When on your way out" next
-    "@Be sure that you say goodbye" next
-    "@then lock the door tight." next
-    "@This is my final request...{pause(20)}" linebreak
-    "  Don't follow me." next
-    "@I must be on my way..." next
-    "@Whoa..." next
-    "@So...{pause(15)} long!{wait}{set(flag 145)}{unset(flag 60)}" call(data_44.l_0xc8983b) eob
+    /*
+    "@...Прежде чем я уйду, вот моя последняя поэма хайку:" next
+    "@Когда вы выходите" next
+    "@Будьте уверены, что вы попрощались," next
+    "@затем заприте дверь плотно." next
+    "@Это моя последняя просьба...{pause(20)}" linebreak
+    "  Не следуйте за мной." next
+    "@Я должен быть на своём пути..." next
+    "@Вуа..." next
+    "@До...{pause(15)} свидания!{wait}{set(flag 145)}{unset(flag 60)}" call(data_44.l_0xc8983b) eob
+    */
+    "@...[81][A2][96][98][95][96] [A9][96][9E] [C6] [A5][9B][95][A5], [93][A0][A4] [9E][A0][C6] [A1][A0][A3][9D][96][95][9F][C6][C6] [A1][A0][C4][9E][91] [A7][91][9B][9C][A5]:" next
+    "@[7C][A0][94][95][91] [93][C2] [93][C2][A7][A0][95][9A][A4][96]" next
+    "@[72][A5][95][C3][A4][96] [A5][93][96][A2][96][9F][C2], [A9][A4][A0] [93][C2] [A1][A0][A1][A2][A0][C0][91][9D][9A][A3][C3]," next
+    "@[99][91][A4][96][9E] [99][91][A1][A2][9A][A4][96] [95][93][96][A2][C3] [A1][9D][A0][A4][9F][A0]." next
+    "@[B4][A4][A0] [9E][A0][C6] [A1][A0][A3][9D][96][95][9F][C6][C6] [A1][A2][A0][A3][C3][92][91]...{pause(20)}" linebreak
+    "  [7F][96] [A3][9D][96][95][A5][9B][A4][96] [99][91] [9E][9F][A0][9B]." next
+    "@[B6] [95][A0][9D][98][96][9F] [92][C2][A4][C3] [9F][91] [A3][93][A0][97][9E] [A1][A5][A4][9A]..." next
+    "@[73][A5][91]..." next
+    "@[75][A0]...{pause(15)} [A3][93][9A][95][91][9F][9A][C6]!{wait}{set(flag 145)}{unset(flag 60)}" call(data_44.l_0xc8983b) eob
 
 l_0xc839f7:
     "[06 91 00 {e(l_0xc83a24)}]@There's a person lying on the ground." next
@@ -316,42 +383,62 @@ l_0xc83ab3:
     "@I'll bet you're on your way to Jackie's Cafe right now!" end
 
 l_0xc83aee:
-    "[06 91 00 {e(l_0xc83c5d)}][06 02 00 {e(l_0xc83c1e)}]@Don't cut in front of me!" next
-    "@If you give me somethin', I'll let you have my spot." next
-    "@Will you give me somethin'?" linebreak
-    "[19 02]Yes" eob
+    /*
+    "[06 91 00 {e(l_0xc83c5d)}][06 02 00 {e(l_0xc83c1e)}]@Не прорывайся вперёд меня!" next
+    "@Если дашь мне чего-нибудь, я разрешу быть на моём месте." next
+    "@Ты дашь мне чего-нибудь?" linebreak
+    "[19 02]Да" eob
+    */
+    "[06 91 00 {e(l_0xc83c5d)}][06 02 00 {e(l_0xc83c1e)}]@[7F][96] [A1][A2][A0][A2][C2][93][91][9B][A3][C6] [93][A1][96][A2][97][95] [9E][96][9F][C6]!" next
+    "@[76][A3][9D][9A] [95][91][AA][C3] [9E][9F][96] [A9][96][94][A0]-[9F][9A][92][A5][95][C3], [C6] [A2][91][99][A2][96][AA][A5] [92][C2][A4][C3] [9F][91] [9E][A0][97][9E] [9E][96][A3][A4][96]." next
+    "@[84][C2] [95][91][AA][C3] [9E][9F][96] [A9][96][94][A0]-[9F][9A][92][A5][95][C3]?" linebreak
+    "[19 02][75][91]" eob
 
 l_0xc83b46:
-    "[19 02]No" eob
+//  "[19 02]Нет" eob
+    "[19 02][7F][96][A4]" eob
 
 l_0xc83b4b:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xc83b7b)} {e(l_0xc83b5a)}]" goto(l_0xc83b5a)
 
 l_0xc83b5a:
+//  "@Тогда стой там, где ты слишком мал, чтобы увидеть что-либо!" end
     newline
-    "@Then stay right there where you're too short to see a thing!" end
+    "@[84][A0][94][95][91] [A3][A4][A0][9B] [A4][91][9E], [94][95][96] [A4][C2] [A3][9D][9A][AA][9C][A0][9E] [9E][91][9D], [A9][A4][A0][92][C2] [A5][93][9A][95][96][A4][C3] [A9][A4][A0]-[9D][9A][92][A0]!" end
 
 l_0xc83b7b:
-    "@So, what do I get?" call(data_15.l_0xc5e456) "{pause(60)}" newline
-    "[1B 02 {e(l_0xc83b5a)}]{store_registers}[19 19 00 00][1D 0B 00][1B 02 {e(l_0xc83c2d)}]@Are you sure?" linebreak
-    "[19 02]Yes" eob
+    /*
+    "@Так, что я получу?" call(data_15.l_0xc5e456) "{pause(60)}" newline
+    "[1B 02 {e(l_0xc83b5a)}]{store_registers}[19 19 00 00][1D 0B 00][1B 02 {e(l_0xc83c2d)}]@Уверен?" linebreak
+    "[19 02]Да" eob
+    */
+    "@[84][91][9C], [A9][A4][A0] [C6] [A1][A0][9D][A5][A9][A5]?" call(data_15.l_0xc5e456) "{pause(60)}" newline
+    "[1B 02 {e(l_0xc83b5a)}]{store_registers}[19 19 00 00][1D 0B 00][1B 02 {e(l_0xc83c2d)}]@[85][93][96][A2][96][9F]?" linebreak
+    "[19 02][75][91]" eob
 
 l_0xc83baf:
-    "[19 02]No" eob
+//  "[19 02]Нет" eob
+    "[19 02][7F][96][A4]" eob
 
 l_0xc83bb4:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xc83bfc)} {e(l_0xc83bc3)}]" goto(l_0xc83bc3)
 
 l_0xc83bc3:
-    "@If you don't want to give me somethin'," next
-    "@don't say you're gonna give me somethin'..." next
+    /*
+    "@Если ты не хочешь отдавать мне что-либо," next
+    "@не говори, что отдашь мне что-либо..." next
+    */
+    "@[76][A3][9D][9A] [A4][C2] [9F][96] [A7][A0][A9][96][AA][C3] [A0][A4][95][91][93][91][A4][C3] [9E][9F][96] [A9][A4][A0]-[9D][9A][92][A0]," next
+    "@[9F][96] [94][A0][93][A0][A2][9A], [A9][A4][A0] [A0][A4][95][91][AA][C3] [9E][9F][96] [A9][A4][A0]-[9D][9A][92][A0]..." next
     goto(l_0xc83b7b)
 
 l_0xc83bfc:
-    "{load_registers}[1D 0F 00 00]{sound(118)}{pause(1)}@All right, take my place.{wait}{set(flag 2)}" call(data_44.l_0xc8982a) eob
+//  "{load_registers}[1D 0F 00 00]{sound(118)}{pause(1)}@Ладно, забирай моё место.{wait}{set(flag 2)}" call(data_44.l_0xc8982a) eob
+    "{load_registers}[1D 0F 00 00]{sound(118)}{pause(1)}@[7D][91][95][9F][A0], [99][91][92][9A][A2][91][9B] [9E][A0][97] [9E][96][A3][A4][A0].{wait}{set(flag 2)}" call(data_44.l_0xc8982a) eob
 
 l_0xc83c1e:
-    "@All right, take my place." end
+//  "@Ладно, забирай моё место." end
+    "@[7D][91][95][9F][A0], [99][91][92][9A][A2][91][9B] [9E][A0][97] [9E][96][A3][A4][A0]." end
 
 l_0xc83c2d:
     "@Give me somethin' that makes me really happy!" next
@@ -382,9 +469,14 @@ l_0xc83d1e:
     call(data_13.l_0xc5d44f) eob
 
 l_0xc83d24:
-    "[06 C2 00 {e(data_35.l_0xc7c588)}]{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(data_24.l_0xc690a6)}]{music(155)}@You finally got here." next
-    "@This is the fifth <Your Sanctuary> location.{pause(20)}  But it's mine now." next
-    "@Take it from me,{pause(30)} if you dare...[03]" call(data_23.l_0xc68425) "[1B 03 {e(data_23.l_0xc683de)}][1F 1E E3 03 08]{pause(120)}{set(flag 194)}" eob
+    /*
+    "[06 C2 00 {e(data_35.l_0xc7c588)}]{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(data_24.l_0xc690a6)}]{music(155)}@Ты наконец-то добрался сюда." next
+    "@Это пятая локация <Твоего Храма>.{pause(20)}  Но сейчас она моя." next
+    "@Отбери её у меня,{pause(30)} если посмеешь...[03]" call(data_23.l_0xc68425) "[1B 03 {e(data_23.l_0xc683de)}][1F 1E E3 03 08]{pause(120)}{set(flag 194)}" eob
+    */
+    "[06 C2 00 {e(data_35.l_0xc7c588)}]{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(data_24.l_0xc690a6)}]{music(155)}@[84][C2] [9F][91][9C][A0][9F][96][A8]-[A4][A0] [95][A0][92][A2][91][9D][A3][C6] [A3][C5][95][91]." next
+    "@[B4][A4][A0] [A1][C6][A4][91][C6] [9D][A0][9C][91][A8][9A][C6] <[84][93][A0][96][94][A0] [87][A2][91][9E][91]>.{pause(20)}  [7F][A0] [A3][96][9B][A9][91][A3] [A0][9F][91] [9E][A0][C6]." next
+    "@[80][A4][92][96][A2][9A] [96][97] [A5] [9E][96][9F][C6],{pause(30)} [96][A3][9D][9A] [A1][A0][A3][9E][96][96][AA][C3]...[03]" call(data_23.l_0xc68425) "[1B 03 {e(data_23.l_0xc683de)}][1F 1E E3 03 08]{pause(120)}{set(flag 194)}" eob
 
 l_0xc83d9e:
     "[06 5A 00 {e(l_0xc83e3c)}]@What happened to those guys digging for the buried gold?" next
