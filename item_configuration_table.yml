@@ -550,7 +550,7 @@
   Help Text Pointer: data_03.l_0xc53b96
   Misc Flags:
   - jeff can use
-  Name: "[7A][94][A2][A5][AA].[90][A1][9A][A3][A4][A0][9D][96][A4]"#Toy air gun
+  Name: "[7A][94][A2][A5][AA].[90][A1][9A][A3][A4][A0][9D][96][A4]" # Игруш.[90]пистолет
   Type: 17
 39:
   Action: 239
@@ -563,7 +563,7 @@
   Help Text Pointer: data_03.l_0xc53ba6
   Misc Flags:
   - jeff can use
-  Name: "[81][9F][96][93].[90][7E][91][94][9F][A5][9E]"#Magnum air gun
+  Name: "[81][9F][96][93].[90][7E][91][94][9F][A5][9E]" # Пнев.[90]Магнум
   Type: 17
 40:
   Action: 239
@@ -576,7 +576,7 @@
   Help Text Pointer: data_03.l_0xc53bb6
   Misc Flags:
   - jeff can use
-  Name: "[81][A0][A9][A4].[90][A1][9A][A3][A4][A0][9D]."#Zip gun
+  Name: "[81][A0][A9][A4].[90][A1][9A][A3][A4][A0][9D]." # Почт.[90]пистол.
   Type: 17
 41:
   Action: 239
@@ -589,7 +589,7 @@
   Help Text Pointer: data_03.l_0xc53bc6
   Misc Flags:
   - jeff can use
-  Name: "[7D][91][99][96][A2][9F].[90][A1][9A][A3][A4][A0][9D]."#Laser gun
+  Name: "[7D][91][99][96][A2][9F].[90][A1][9A][A3][A4][A0][9D]." # Лазерн.[90]пистол.
   Type: 17
 42:
   Action: 239
@@ -602,7 +602,7 @@
   Help Text Pointer: data_03.l_0xc53bd6
   Misc Flags:
   - jeff can use
-  Name: "[74][9A][A1][96][A2][90][9D][A5][A9]"#Hyper beam
+  Name: "[74][9A][A1][96][A2][90][9D][A5][A9]" # Гипер[90]луч
   Type: 17
 43:
   Action: 239
@@ -615,7 +615,7 @@
   Help Text Pointer: data_03.l_0xc53be6
   Misc Flags:
   - jeff can use
-  Name: "[75][A2][A0][92][9A][9D][C3][9F].[90][9D][A5][A9]"#Crusher beam
+  Name: "[75][A2][A0][92][9A][9D][C3][9F].[90][9D][A5][A9]" # Дробильн.[90]луч
   Type: 17
 44:
   Action: 239
@@ -628,7 +628,7 @@
   Help Text Pointer: data_03.l_0xc53bf6
   Misc Flags:
   - jeff can use
-  Name: "[83][A1][96][9C][A4][A2][91][9D][C3][9F].[90][9D][A5][A9]"#Spectrum beam
+  Name: "[83][A1][96][9C][A4][A2][91][9D][C3][9F].[90][9D][A5][A9]" # Спектральн.[90]луч
   Type: 17
 45:
   Action: 239
@@ -641,7 +641,7 @@
   Help Text Pointer: data_03.l_0xc53c06
   Misc Flags:
   - jeff can use
-  Name: "[83][9E][96][A2][A4][96][9D][C3][9F].[90][9D][A5][A9]"#Death ray
+  Name: "[83][9E][96][A2][A4][96][9D][C3][9F].[90][9D][A5][A9]" # Смертельн.[90]луч
   Type: 17
 46:
   Action: 239
@@ -654,7 +654,7 @@
   Help Text Pointer: data_03.l_0xc53c16
   Misc Flags:
   - jeff can use
-  Name: "[7E][96][94][91][90][9D][A5][A9]"#Baddest beam
+  Name: "[7E][96][94][91][90][9D][A5][A9]" # Мега[90]луч
   Type: 17
 47:
   Action: 239
@@ -667,7 +667,7 @@
   Help Text Pointer: data_03.l_0xc53c26
   Misc Flags:
   - jeff can use
-  Name: "[7D][A5][9F][A0][A1][A5][AA][9C][91]"#Moon beam gun
+  Name: "[7D][A5][9F][A0][A1][A5][AA][9C][91]" # Лунопушка
   Type: 17
 48:
   Action: 239
@@ -680,7 +680,7 @@
   Help Text Pointer: data_03.l_0xc53c36
   Misc Flags:
   - jeff can use
-  Name: "[74][91][9B][C6][90][9D][A5][A9]"#Gaia beam
+  Name: "[74][91][9B][C6][90][9D][A5][A9]" # Гайя[90]луч
   Type: 17
 49:
   Action: 239
@@ -696,7 +696,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7B][A0]-[9B][A0]"#Yo-yo
+  Name: "[7B][A0]-[9B][A0]" # Йо-йо
   Type: 17
 50:
   Action: 239
@@ -712,7 +712,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[82][A0][94][91][A4][9C][91]"#Slingshot
+  Name: "[82][A0][94][91][A4][9C][91]" # Рогатка
   Type: 17
 51:
   Action: 239
@@ -728,7 +728,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[72][9A][A0][9F][9A][A9].[90][A2][A0][94][91][A4][9C][91]"#Bionic slingshot
+  Name: "[72][9A][A0][9F][9A][A9].[90][A2][A0][94][91][A4][9C][91]" # Бионич.[90]рогатка
   Type: 17
 52:
   Action: 239
@@ -744,7 +744,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[84][A2][C5][9C][A0][93][91][C6][90][9B][A0]-[9B][A0]"#Trick yo-yo
+  Name: "[84][A2][C5][9C][A0][93][91][C6][90][9B][A0]-[9B][A0]" # Трюковая[90]йо-йо
   Type: 17
 53:
   Action: 239
@@ -760,7 +760,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[72][A0][96][93][A0][96][90][9B][A0]-[9B][A0]"#Combat yo-yo
+  Name: "[72][A0][96][93][A0][96][90][9B][A0]-[9B][A0]" # Боевое[90]йо-йо
   Type: 17
 54:
   Action: 240
@@ -776,7 +776,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[75][A0][A2][A0][98][9F].[90][92][A2][96][9D][A0][9C]"#Travel charm
+  Name: "[75][A0][A2][A0][98][9F].[90][92][A2][96][9D][A0][9C]" # Дорожн.[90]брелок
   Type: 20
 55:
   Action: 240
@@ -792,7 +792,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[73][96][9D][9A][9C][9A][9B][90][92][A2][96][9D][A0][9C]"#Great charm
+  Name: "[73][96][9D][9A][9C][9A][9B][90][92][A2][96][9D][A0][9C]" # Великий[90]брелок
   Type: 20
 56:
   Action: 240
@@ -808,7 +808,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7C][A2][9A][A3][A4].[90][92][A2][96][9D][A0][9C]"#Crystal charm
+  Name: "[7C][A2][9A][A3][A4].[90][92][A2][96][9D][A0][9C]" # Крист.[90]брелок
   Type: 20
 57:
   Action: 240
@@ -824,7 +824,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7C][A2][A0][9D][9A][A9][C3][C6][90][9D][91][A1][91]"#Rabbit's foot
+  Name: "[7C][A2][A0][9D][9A][A9][C3][C6][90][9D][91][A1][91]" # Кроличья[90]лапа
   Type: 20
 58:
   Action: 240
@@ -840,7 +840,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[81][9D][91][9E][96][9F][9F].[90][9C][A5][9D][A0][9F]"#Flame pendant
+  Name: "[81][9D][91][9E][96][9F][9F].[90][9C][A5][9D][A0][9F]" # Пламенн.[90]кулон
   Type: 20
 59:
   Action: 240
@@ -856,7 +856,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[75][A0][98][95][96][93][A0][9B][90][9C][A5][9D][A0][9F]"#Rain pendant
+  Name: "[75][A0][98][95][96][93][A0][9B][90][9C][A5][9D][A0][9F]" # Дождевой[90]кулон
   Type: 20
 60:
   Action: 240
@@ -872,7 +872,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7F][A0][A9][9F][A0][9B][90][9C][A5][9D][A0][9F]"#Night pendant
+  Name: "[7F][A0][A9][9F][A0][9B][90][9C][A5][9D][A0][9F]" # Ночной[90]кулон
   Type: 20
 61:
   Action: 240
@@ -888,7 +888,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7E][A0][A2][A3][9C][A0][9B][90][9C][A5][9D][A0][9F]"#Sea pendant
+  Name: "[7E][A0][A2][A3][9C][A0][9B][90][9C][A5][9D][A0][9F]" # Морской[90]кулон
   Type: 20
 62:
   Action: 240
@@ -904,7 +904,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[79][93][97][99][95][9F].[90][9C][A5][9D][A0][9F]"#Star pendant
+  Name: "[79][93][97][99][95][9F].[90][9C][A5][9D][A0][9F]" # Звёздн.[90]кулон
   Type: 20
 63:
   Action: 240
@@ -917,7 +917,7 @@
   Help Text Pointer: data_03.l_0xc53e23
   Misc Flags:
   - poo can use
-  Name: "[81][9D][91][C0][90][7C][A0][A2][A0][9D][96][9B]"#Cloak of kings
+  Name: "[81][9D][91][C0][90][7C][A0][A2][A0][9D][96][9B]" # Плащ[90]Королей
   Type: 20
 64:
   Action: 240
@@ -933,7 +933,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[75][96][AA][97][93].[90][92][A2][91][A3][9D][96][A4]"#Cheap bracelet
+  Name: "[75][96][AA][97][93].[90][92][A2][91][A3][9D][96][A4]" # Дешёв.[90]браслет
   Type: 24
 65:
   Action: 240
@@ -2151,7 +2151,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7D][9A][9F][96][9B][9C][91]"#"Ruler"
+  Name: "[7D][9A][9F][96][9B][9C][91]" # Линейка
   Type: 48
 141:
   Action: 171
@@ -2167,7 +2167,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7E][96][AA][A0][9C][90][A3][A0][90][99][9E][96][C6][9E][9A]"#"Snake bag"
+  Name: "[7E][96][AA][A0][9C][90][A3][A0][90][99][9E][96][C6][9E][9A]" # Мешок[90]со[90]змеями
   Type: 52
 142:
   Action: 162
@@ -3871,7 +3871,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[74][A0][A2][9F][91][C6][90][9E][9A][9F][96][A2][91][9D][9C][91]"#"Bottle of DXwater"
+  Name: "[74][A0][A2][9F][91][C6][90][9E][9A][9F][96][A2][91][9D][9C][91]" # Горная[90]минералка
   Type: 36
 247:
   Action: 249
@@ -3917,7 +3917,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7E][A0][9F][96][A4][91][90][83][91][A4][A5][A2][9F]"#"Mr. Saturn coin"
+  Name: "[7E][A0][9F][96][A4][91][90][83][91][A4][A5][A2][9F]" # Монета[90]Сатурн
   Type: 28
 250:
   Action: 1
@@ -3933,7 +3933,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7E][96][A4][96][A0][A2][9A][9F][A5][9E]"#"Meteornium"
+  Name: "[7E][96][A4][96][A0][A2][9A][9F][A5][9E]" # Метеоринум
   Type: 56
 251:
   Action: 249

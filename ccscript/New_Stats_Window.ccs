@@ -1,74 +1,210 @@
+/* Add all Stats to the Equipment menu */
+
 import asm65816
+//import ebs
+//import ebpp_std
+
+/*
+NOTES:
+0xC1AA5D = Part of the main routine of the Equipment selection menu. When this routine exits, it closes the windows associated with the equipment menu.
+
+0xC19F29 = Seems to bring up the equipment selection menu for each character. Like the menu to see the Weapon, Body, Arms, and Other equipments the character has currently equipped.
+
+0xC127EF = Character Select Prompt. Creates a selection between each characters. Used in the player's inventory menu, Ness & Poo's PSI menu, Current Equipment menu, etc.
+
+0xC19437 = Closes the small window that displays the "Who", "Where", and "Which" text on the top left window when you're currently navigating the equipment window.
+
+0xC1A795 = Seems to build the equipment selection menu.
+	- 0xC1A7A3 = This section helps determine which choice the player selects when they choose the "Weapon", "Body", "Arms", or "Other" equipment. If the player presses the "B" button, it ends the 0xC1A795 routine
+	-
+
+To keep all of the windows integrity, we need to expand the window configuration table so we can use one extra window to print out the resistances.
+
+0xC3E250 = Window Configuration Table, look in routines to find which routines load this address.
+
+$c105c9 = ASMLoadAddress06(Window_Config_Table)
+
+0xC1A1E8 = Loads the window associated with displaying the current and changed stat values for equipping
+
+RAM 0x7E1AD6 - 0x7E1B16 = Contains data that displays things on the windows and window space. Values are initialized to 0x00 and progressively gets filled with 0xFF for each thing that is a window or appears in a window. If it reaches or goes pass 0x7E1B16, all windows will close forcefully. ROM 0xC40085 handles the window space, if the window space reaches 0x40 (64 bytes) then it will forcefully close all windows and resume the game normally.
+
+Just like how the Status window clears when you press A to see the list of PSI, think of doing this when you enter the equipment menu and selecting the equipments after you choose which equipment type.
+
+ROM 0xC1BB71 seems to be the Status window. When you press B, it returns to the main gameplay menu.
+
+Windows 7, 45 and 52 require the following changes:
+
+7:
+  Height: 12
+  Width: 13
+  X Offset: 18
+  Y Offset: 1
+45:
+  Height: 12
+  Width: 14
+  X Offset: 1
+  Y Offset: 13
+52:
+  Height: 14
+  Width: 16
+  X Offset: 15
+  Y Offset: 13
+
+ROM 0xC2032B seems to read text and prints them as titles to a window.
+Parameters:
+	A: window ID
+	X: Length of the text
+	DPR 0x0E - 0x10: The text itself
+Returns:
+	Nothing
+
+*/
+
+
+//ROM[0xC40091] = CPY_i (0x0042)
+
+ROM[0xC1AAE0] = {
+	JMP_l (Close_Equipment_Window)
+}
+
+Close_Equipment_Window:{
+	LDA_i (52)
+	JSL (0xC3E521) // Close Window
+	LDA_i (0x002D)
+	JSL (0xC3E521) // Close Window
+	LDA_i (6)
+	JSL (0xC3E521) // Close Window
+	JSL (Open_Money_Window)
+	JSL (0xC1DD3B) // Open HP/PP Window
+	//JSL (0xC134A7) // Open Gameplay Menu
+	JMP_l (0xC1AAEE)
+}
+
+//ROM[0xC40091] = CPY_i (0x00FF)
+
+ROM[0xC1AA68] = JSL (Equip_Routine_Edit1)
+
+Equip_Routine_Edit1:{
+	JSL (0xC20A20)
+	JSL (0xC1DD41) // Close the HP/PP window
+	LDA_i (10)
+	JSL (0xC3E521) // Close the money window
+	LDA_i (1)
+	JSL (0xC3E521) // Close the Gameplay menu
+	RTL
+}
 
 define UnknownJSRSubroutine1 = 0xC1A4BE
 ROM[0xC1A4BE] = {
-	JSR(0x04EE)
+	//JSR(0x04EE)
+	JSR (0x0D7C)
 	RTL
 }
+
 define UnknownJSRSubroutine2 = 0xC1A4C2
 ROM[0xC1A4C2] = {
 	JSR(0x0EB4)
 	RTL
 }
+
 define UnknownJSRSubroutine3 = 0xC1A4C6
 ROM[0xC1A4C6] = {
 	JSR(0x0EFC)
 	RTL
 }
+
 define UnknownJSRSubroutine4 = 0xC1A4CA
 ROM[0xC1A4CA] = {
 	JSR(0x0DF6)
 	RTL
 }
+
 define UnknownJSRSubroutine5 = 0xC1A4BA
 ROM[0xC1A4BA] = {
 	JSR(0x0FEA)
 	RTL
 }
 
+OffenseEquip_Text:
+	"[ 71 A4 91 9C 91 ]:[00]" // "Атака:[00]"
+
+DefenseEquip_Text:
+	"[ 79 91 C0 9A A4 91 ]:[00]" // "Защита:[00]"
+
 SpeedEquip_Text:
-	"[83][9C][A0][A2][A0][A3][A4][C3]:" // "Скорость:"
+	"[ 83 9C A0 A2 A0 A3 A4 C3 ]:[00]" // "Скорость:[00]"
+
 GutsEquip_Text:
-	"[73][C2][95][96][A2][98][9C][91]:"// "Выдержка:"
+	"[ 73 C2 95 96 A2 98 9C 91 ]:[00]" // "Выдержка:[00]"
+
 LuckEquip_Text:
-	"[85][95][91][A9][91]:" // "Удача:"
+	"[ 85 95 91 A9 91 ]:[00]" // "Удача:[00]"
+
+Status_Text:
+	"[ 83 A4 91 A4 A5 A3 ][00]" // "Статус[00]"
+
+ROM[0xC1A1E8] = {
+	JSL (Title_Stats_Window)
+	NOP
+	NOP
+}
+
 //Overwriting old code with this.
 ROM[0xC1A1F8] = {
 	JMP_l(NOROOM)
 }
+
 NOROOM:
 //Stat names:
+
+// OFFENSE
 	LDA_i(0x0000)//Load text's horizontal positioning.
 	LDX_i(0x0000)//Load text's vertical positioning
 	JSL(0xC43D75)//Set positioning using A and X parameters.
-	ASMLoadAddress0E(0xC45C1C)
-	LDA_i(0x0008)//Text's length.
+
+	ASMLoadAddress0E(OffenseEquip_Text)
+	LDA_i(0x0006)//Text's length.
 	JSL(UnknownJSRSubroutine3)//Print text?
+
+// DEFENSE
 	LDA_i(0x0000)//Load text's horizontal positioning.
 	LDX_i(0x0001)//Load text's vertical positioning
 	JSL(0xC43D75)//Set positioning using A and X parameters.
-	ASMLoadAddress0E(0xC45C24)
+
+	ASMLoadAddress0E(DefenseEquip_Text)
 	LDA_i(0x0007)//Text's length.
 	JSL(UnknownJSRSubroutine3)//Print text?
+
+// SPEED
 	LDA_i(0x0000)//Load text's horizontal positioning.
 	LDX_i(0x0002)//Load text's vertical positioning
 	JSL(0xC43D75)//Set positioning using A and X parameters.
+
 	ASMLoadAddress0E(SpeedEquip_Text)
 	LDA_i(0x0009)//Text's length.
 	JSL(UnknownJSRSubroutine3)//Print text?
+
+// GUTS
 	LDA_i(0x0000)//Load text's horizontal positioning.
 	LDX_i(0x0003)//Load text's vertical positioning
 	JSL(0xC43D75)//Set positioning using A and X parameters.
+
 	ASMLoadAddress0E(GutsEquip_Text)
 	LDA_i(0x0009)//Text's length.
 	JSL(UnknownJSRSubroutine3)//Print text?
+
+// LUCK
 	LDA_i(0x0000)//Load text's horizontal positioning.
 	LDX_i(0x0004)//Load text's vertical positioning
 	JSL(0xC43D75)//Set positioning using A and X parameters.
+
 	ASMLoadAddress0E(LuckEquip_Text)
 	LDA_i(0x0006)//Text's length.
 	JSL(UnknownJSRSubroutine3)//Print text?
-	//First stat readings.
+
+/*-+-+-+-+-+-+-+-+-+-+OFFENSE-+-+-+-+-+-+-+-+-+-+*/
+Offense:
+//First stat readings.
 	LDA_i(0x001C)//Base offense.
 	STA_d(0x20)
 	LDA_i(0x0031)//Weapon
@@ -81,184 +217,26 @@ NOROOM:
 	STA_d(0x28)//Not "equipment selection" stat.
 	STZ_d(0x04)//Zero memory responsible for holding stat modifying value.
 	JSL(NewEquipmentStats)
-	//Sum the equipment increases for a given stat.
+
+//Sum the equipment increases for a given stat.
 	LDY_d(0x16)//Load character's base stat.
 	TYA//Transfer to accumulator
 	CLC
 	ADC_d(0x04)//Add character's offense by weapon's offense value.
 	TAY
 	STY_d(0x16)//Store modified offense to memory.
-	//Preparing text.
+
+	LDA_d (0x16)
+	PHA // Push current Offense stat to the stack
+
+//Preparing text.
 	LDA_i(0x0031)//Text's horizontal positioning.
 	STA_d(0x20)
 	LDA_i(0x0000)//Text's vertical positioning.
 	STA_d(0x22)
 	JSL(NewEquipmentStatsOutput)
 
-	LDA_i(0x001D)//Base Defense.
-	STA_d(0x20)
-	LDA_i(0x0032)//Body
-	STA_d(0x22)
-	LDA_i(0x0003)//Poo's considered.
-	STA_d(0x24)
-	LDA_i(0x001F)//Defense boost.
-	STA_d(0x26)
-	LDA_i(0xFFFF)
-	STA_d(0x28)//Not "equipment selection" stat.
-	STZ_d(0x04)//Zero memory responsible for holding stat modifying value.
-	JSL(NewEquipmentStats)
-	LDA_i(0x0033)//Arms
-	STA_d(0x22)
-	JSL(NewEquipmentStats)
-	LDA_i(0x0034)//Other
-	STA_d(0x22)
-	JSL(NewEquipmentStats)
-	//Sum the equipment increases for a given stat.
-	LDY_d(0x16)//Load character's base stat.
-	TYA//Transfer to accumulator
-	CLC
-	ADC_d(0x04)//Add character's offense by weapon's offense value.
-	TAY
-	STY_d(0x16)//Store modified offense to memory.
-	//Preparing text.
-	LDA_i(0x0031)//Text's horizontal positioning.
-	STA_d(0x20)
-	LDA_i(0x0001)//Text's vertical positioning.
-	STA_d(0x22)
-	JSL(NewEquipmentStatsOutput)
-
-	LDA_i(0x001E)//Base Speed.
-	STA_d(0x20)
-	LDA_i(0x0032)//Body armor
-	STA_d(0x22)
-	LDA_i(0x0004)//Poo's not considered.
-	STA_d(0x24)
-	LDA_i(0x0021)//Speed boost.
-	STA_d(0x26)
-	LDA_i(0xFFFF)
-	STA_d(0x28)//Not "equipment selection" stat.
-	STZ_d(0x04)//Zero memory responsible for holding stat modifying value.
-	JSL(NewEquipmentStats)
-	//Sum the equipment increases for a given stat.
-	LDY_d(0x16)//Load character's base stat.
-	TYA//Transfer to accumulator.
-	CLC
-	ADC_d(0x04)//Add character's base stat by the sum of all relevant equipments' stat increase values.
-	TAY
-	STY_d(0x16)//Store modified stat to memory.
-	LDX_d(0x12)//Load character offset.
-	LDA_x(0x9A25)//Load speed boosts from capsules.
-	AND_i(0x00FF)
-	CLC
-	ADC_d(0x16)//Add with modified value.
-	STA_d(0x16)//Replace it with modified value.
-	//Preparing text.
-	LDA_i(0x0031)//Text's horizontal positioning.
-	STA_d(0x20)
-	LDA_i(0x0002)//Text's vertical positioning.
-	STA_d(0x22)
-	JSL(NewEquipmentStatsOutput)
-
-	LDA_i(0x001F)//Base Guts.
-	STA_d(0x20)
-	LDA_i(0x0031)//Weapon
-	STA_d(0x22)
-	LDA_i(0x0004)//Poo's not considered.
-	STA_d(0x24)
-	LDA_i(0x0021)//Guts boost.
-	STA_d(0x26)
-	LDA_i(0xFFFF)
-	STA_d(0x28)//Not "equipment selection" stat.
-	STZ_d(0x04)//Zero memory responsible for holding stat modifying value.
-	JSL(NewEquipmentStats)
-	//Sum the equipment increases for a given stat.
-	LDY_d(0x16)//Load character's base stat.
-	TYA//Transfer to accumulator.
-	CLC
-	ADC_d(0x04)//Add character's base stat by the sum of all relevant equipments' stat increase values.
-	TAY
-	STY_d(0x16)//Store modified stat to memory.
-	LDX_d(0x12)//Load character offset.
-	LDA_x(0x9A26)//Load Guts boosts from capsules.
-	AND_i(0x00FF)
-	CLC
-	ADC_d(0x16)//Add with modified value.
-	STA_d(0x16)//Replace it with modified value.
-	//Preparing text.
-	LDA_i(0x0031)//Text's horizontal positioning.
-	STA_d(0x20)
-	LDA_i(0x0003)//Text's vertical positioning.
-	STA_d(0x22)
-	JSL(NewEquipmentStatsOutput)
-
-	LDA_i(0x0020)//Base Luck.
-	STA_d(0x20)
-	LDA_i(0x0033)//Arms armor
-	STA_d(0x22)
-	LDA_i(0x0004)//Poo's not considered.
-	STA_d(0x24)
-	LDA_i(0x0021)//Luck boost.
-	STA_d(0x26)
-	LDA_i(0xFFFF)
-	STA_d(0x28)//Not "equipment selection" stat.
-	STZ_d(0x04)//Zero memory responsible for holding stat modifying value.
-	JSL(NewEquipmentStats)
-	LDA_i(0x0034)//Other armor
-	STA_d(0x22)
-	JSL(NewEquipmentStats)
-	//Sum the equipment increases for a given stat.
-	LDY_d(0x16)//Load character's base stat.
-	TYA//Transfer to accumulator.
-	CLC
-	ADC_d(0x04)//Add character's base stat by the sum of all relevant equipments' stat increase values.
-	TAY
-	STY_d(0x16)//Store modified stat to memory.
-	LDX_d(0x12)//Load character offset.
-	LDA_x(0x9A29)//Load Luck boosts from capsules.
-	AND_i(0x00FF)
-	CLC
-	ADC_d(0x16)//Add with modified value.
-	STA_d(0x16)//Replace it with modified value.
-	//Preparing text.
-	LDA_i(0x0031)//Text's horizontal positioning.
-	STA_d(0x20)
-	LDA_i(0x0004)//Text's vertical positioning.
-	STA_d(0x22)
-	JSL(NewEquipmentStatsOutput)
-
-	LDA_a(0x9CD4)
-	BEQ_a(NOROOM_End)
-
-	LDA_i(0x0001)//Text palette effect?
-	JSL(UnknownJSRSubroutine5)//Apply it?
-	LDX_i(0x0000)//\
-	LDA_i(0x0048)///Text positioning.
-	JSL(0xC43D75)//Set positioning.
-	LDA_i(0x014E)//Load index for right-arrow symbol.
-	JSL(0xC43F77)//Print it?
-	LDX_i(0x0001)//\
-	LDA_i(0x0048)///Text positioning.
-	JSL(0xC43D75)//Set positioning.
-	LDA_i(0x014E)//Load index for right-arrow symbol.
-	JSL(0xC43F77)//Print it?
-	LDX_i(0x0002)//\
-	LDA_i(0x0048)///Text positioning.
-	JSL(0xC43D75)//Set positioning.
-	LDA_i(0x014E)//Load index for right-arrow symbol.
-	JSL(0xC43F77)//Print it?
-	LDX_i(0x0003)//\
-	LDA_i(0x0048)///Text positioning.
-	JSL(0xC43D75)//Set positioning.
-	LDA_i(0x014E)//Load index for right-arrow symbol.
-	JSL(0xC43F77)//Print it?
-	LDX_i(0x0004)//\
-	LDA_i(0x0048)///Text positioning.
-	JSL(0xC43D75)//Set positioning.
-	LDA_i(0x014E)//Load index for right-arrow symbol.
-	JSL(0xC43F77)//Print it?
-	LDA_i(0x0000)//Text palette effect?
-	JSL(UnknownJSRSubroutine5)//Apply it?
-
+/*-+-+-+-+-+-+-+-+-+-+DELTA OFFENSE-+-+-+-+-+-+-+-+-+-+*/
 
 	LDA_i(0x001C)//Base offense.
 	STA_d(0x20)
@@ -272,19 +250,92 @@ NOROOM:
 	STA_d(0x28)//Weapon
 	STZ_d(0x04)//Zero memory responsible for holding stat modifying value.
 	JSL(NewEquipmentStats)
-	//Sum the equipment increases for a given stat.
+
+//Sum the equipment increases for a given stat.
 	LDY_d(0x16)//Load character's base stat.
 	TYA//Transfer to accumulator
 	CLC
 	ADC_d(0x04)//Add character's offense by weapon's offense value.
 	TAY
 	STY_d(0x16)//Store modified offense to memory.
-	//Preparing text.
+
+	// Checks to see if the stat delta is different
+	PLA
+	CMP_d (0x16)
+	BEQ_a (Defense) // If the equipment doesn't affect the offense stat, branch
+
+	// If we are just at the regular equipment menu, then just print the current stat and not the arrow and delta stat
+	LDA_a(0x9CD4)
+	BEQ_a(Defense)
+
+//Preparing text.
 	LDA_i(0x0053)//Text's horizontal positioning.
 	STA_d(0x20)
 	LDA_i(0x0000)//Text's vertical positioning.
 	STA_d(0x22)
 	JSL(NewEquipmentStatsOutput)
+
+	LDA_i(0x0001)//Text palette effect?
+	JSL(UnknownJSRSubroutine5)//Apply it?
+
+/*-+-+-+-+-+-+-+-+-+-+ARROW OFFENSE-+-+-+-+-+-+-+-+-+-+*/
+
+	LDA_i(0x0001)//Text palette effect?
+	JSL(UnknownJSRSubroutine5)//Apply it?
+
+// OFFENSE
+	LDX_i(0x0000)//
+	LDA_i(0x0048)///Text positioning.
+	JSL(0xC43D75)//Set positioning.
+
+	LDA_i(0x014E)//Load index for right-arrow symbol.
+	JSL(0xC43F77)//Print it?
+
+	LDA_i(0x0000)//Text palette effect?
+	JSL(UnknownJSRSubroutine5)//Apply it?
+
+/*-+-+-+-+-+-+-+-+-+-+DEFENSE-+-+-+-+-+-+-+-+-+-+*/
+Defense:
+	LDA_i(0x001D)//Base Defense.
+	STA_d(0x20)
+	LDA_i(0x0032)//Body
+	STA_d(0x22)
+	LDA_i(0x0003)//Poo's considered.
+	STA_d(0x24)
+	LDA_i(0x001F)//Defense boost.
+	STA_d(0x26)
+	LDA_i(0xFFFF)
+	STA_d(0x28)//Not "equipment selection" stat.
+	STZ_d(0x04)//Zero memory responsible for holding stat modifying value.
+	JSL(NewEquipmentStats)
+
+	LDA_i(0x0033)//Arms
+	STA_d(0x22)
+	JSL(NewEquipmentStats)
+
+	LDA_i(0x0034)//Other
+	STA_d(0x22)
+	JSL(NewEquipmentStats)
+
+//Sum the equipment increases for a given stat.
+	LDY_d(0x16)//Load character's base stat.
+	TYA//Transfer to accumulator
+	CLC
+	ADC_d(0x04)//Add character's offense by weapon's offense value.
+	TAY
+	STY_d(0x16)//Store modified offense to memory.
+
+	LDA_d (0x16)
+	PHA
+
+//Preparing text.
+	LDA_i(0x0031)//Text's horizontal positioning.
+	STA_d(0x20)
+	LDA_i(0x0001)//Text's vertical positioning.
+	STA_d(0x22)
+	JSL(NewEquipmentStatsOutput)
+
+/*-+-+-+-+-+-+-+-+-+-+DELTA DEFENSE-+-+-+-+-+-+-+-+-+-+*/
 
 	LDA_i(0x001D)//Base Defense.
 	STA_d(0x20)
@@ -298,25 +349,95 @@ NOROOM:
 	STA_d(0x28)//Body
 	STZ_d(0x04)//Zero memory responsible for holding stat modifying value.
 	JSL(NewEquipmentStats)
+
 	LDA_i(0x0002)//Arms
 	STA_d(0x28)
 	JSL(NewEquipmentStats)
+
 	LDA_i(0x0003)//Other
 	STA_d(0x28)
 	JSL(NewEquipmentStats)
-	//Sum the equipment increases for a given stat.
+
+//Sum the equipment increases for a given stat.
 	LDY_d(0x16)//Load character's base stat.
 	TYA//Transfer to accumulator
 	CLC
 	ADC_d(0x04)//Add character's offense by weapon's offense value.
 	TAY
 	STY_d(0x16)//Store modified offense to memory.
-	//Preparing text.
+
+	// Checks to see if the stat delta is different
+	PLA
+	CMP_d (0x16)
+	BEQ_a (Speed) // If the equipment doesn't affect the offense stat, branch
+
+	// If we are just at the regular equipment menu, then just print the current stat and not the arrow and delta stat
+	LDA_a(0x9CD4)
+	BEQ_a(Speed)
+
+
+//Preparing text.
 	LDA_i(0x0053)//Text's horizontal positioning.
 	STA_d(0x20)
 	LDA_i(0x0001)//Text's vertical positioning.
 	STA_d(0x22)
 	JSL(NewEquipmentStatsOutput)
+
+/*-+-+-+-+-+-+-+-+-+-+ARROW DEFENSE-+-+-+-+-+-+-+-+-+-+*/
+	LDA_i(0x0001)//Text palette effect?
+	JSL(UnknownJSRSubroutine5)//Apply it?
+
+// DEFENSE
+	LDX_i(0x0001)//
+	LDA_i(0x0048)///Text positioning.
+	JSL(0xC43D75)//Set positioning.
+
+	LDA_i(0x014E)//Load index for right-arrow symbol.
+	JSL(0xC43F77)//Print it?
+
+	LDA_i(0x0000)//Text palette effect?
+	JSL(UnknownJSRSubroutine5)//Apply it?
+
+/*-+-+-+-+-+-+-+-+-+-+SPEED-+-+-+-+-+-+-+-+-+-+*/
+Speed:
+	LDA_i(0x001E)//Base Speed.
+	STA_d(0x20)
+	LDA_i(0x0032)//Body armor
+	STA_d(0x22)
+	LDA_i(0x0004)//Poo's not considered.
+	STA_d(0x24)
+	LDA_i(0x0021)//Speed boost.
+	STA_d(0x26)
+	LDA_i(0xFFFF)
+	STA_d(0x28)//Not "equipment selection" stat.
+	STZ_d(0x04)//Zero memory responsible for holding stat modifying value.
+	JSL(NewEquipmentStats)
+
+//Sum the equipment increases for a given stat.
+	LDY_d(0x16)//Load character's base stat.
+	TYA//Transfer to accumulator.
+	CLC
+	ADC_d(0x04)//Add character's base stat by the sum of all relevant equipments' stat increase values.
+	TAY
+	STY_d(0x16)//Store modified stat to memory.
+	LDX_d(0x12)//Load character offset.
+	LDA_x(0x9A25)//Load speed boosts from capsules.
+	AND_i(0x00FF)
+	CLC
+	ADC_d(0x16)//Add with modified value.
+	STA_d(0x16)//Replace it with modified value.
+
+	LDA_d (0x16)
+	PHA
+
+//Preparing text.
+	LDA_i(0x0031)//Text's horizontal positioning.
+	STA_d(0x20)
+	LDA_i(0x0002)//Text's vertical positioning.
+	STA_d(0x22)
+	JSL(NewEquipmentStatsOutput)
+
+/*-+-+-+-+-+-+-+-+-+-+DELTA SPEED-+-+-+-+-+-+-+-+-+-+*/
 
 	LDA_i(0x001E)//Base Speed.
 	STA_d(0x20)
@@ -330,7 +451,8 @@ NOROOM:
 	STA_d(0x28)
 	STZ_d(0x04)//Zero memory responsible for holding stat modifying value.
 	JSL(NewEquipmentStats)
-	//Sum the equipment increases for a given stat.
+
+//Sum the equipment increases for a given stat.
 	LDY_d(0x16)//Load character's base stat.
 	TYA//Transfer to accumulator.
 	CLC
@@ -343,12 +465,78 @@ NOROOM:
 	CLC
 	ADC_d(0x16)//Add with modified value.
 	STA_d(0x16)//Replace it with modified value.
-	//Preparing text.
+
+	// Checks to see if the stat delta is different
+	PLA
+	CMP_d (0x16)
+	BEQ_a (Guts) // If the equipment doesn't affect the offense stat, branch
+
+	// If we are just at the regular equipment menu, then just print the current stat and not the arrow and delta stat
+	LDA_a(0x9CD4)
+	BEQ_a(Guts)
+
+//Preparing text.
 	LDA_i(0x0053)//Text's horizontal positioning.
 	STA_d(0x20)
 	LDA_i(0x0002)//Text's vertical positioning.
 	STA_d(0x22)
 	JSL(NewEquipmentStatsOutput)
+
+/*-+-+-+-+-+-+-+-+-+-+ARROW SPEED-+-+-+-+-+-+-+-+-+-+*/
+	LDA_i(0x0001)//Text palette effect?
+	JSL(UnknownJSRSubroutine5)//Apply it?
+
+// SPEED
+	LDX_i(0x0002)//
+	LDA_i(0x0048)///Text positioning.
+	JSL(0xC43D75)//Set positioning.
+
+	LDA_i(0x014E)//Load index for right-arrow symbol.
+	JSL(0xC43F77)//Print it?
+
+	LDA_i(0x0000)//Text palette effect?
+	JSL(UnknownJSRSubroutine5)//Apply it?
+
+/*-+-+-+-+-+-+-+-+-+-+GUTS-+-+-+-+-+-+-+-+-+-+*/
+Guts:
+	LDA_i(0x001F)//Base Guts.
+	STA_d(0x20)
+	LDA_i(0x0031)//Weapon
+	STA_d(0x22)
+	LDA_i(0x0004)//Poo's not considered.
+	STA_d(0x24)
+	LDA_i(0x0021)//Guts boost.
+	STA_d(0x26)
+	LDA_i(0xFFFF)
+	STA_d(0x28)//Not "equipment selection" stat.
+	STZ_d(0x04)//Zero memory responsible for holding stat modifying value.
+	JSL(NewEquipmentStats)
+
+//Sum the equipment increases for a given stat.
+	LDY_d(0x16)//Load character's base stat.
+	TYA//Transfer to accumulator.
+	CLC
+	ADC_d(0x04)//Add character's base stat by the sum of all relevant equipments' stat increase values.
+	TAY
+	STY_d(0x16)//Store modified stat to memory.
+	LDX_d(0x12)//Load character offset.
+	LDA_x(0x9A26)//Load Guts boosts from capsules.
+	AND_i(0x00FF)
+	CLC
+	ADC_d(0x16)//Add with modified value.
+	STA_d(0x16)//Replace it with modified value.
+
+	LDA_d (0x16)
+	PHA
+
+//Preparing text.
+	LDA_i(0x0031)//Text's horizontal positioning.
+	STA_d(0x20)
+	LDA_i(0x0003)//Text's vertical positioning.
+	STA_d(0x22)
+	JSL(NewEquipmentStatsOutput)
+
+/*-+-+-+-+-+-+-+-+-+-+DELTA GUTS-+-+-+-+-+-+-+-+-+-+*/
 
 	LDA_i(0x001F)//Base Guts.
 	STA_d(0x20)
@@ -362,7 +550,8 @@ NOROOM:
 	STA_d(0x28)
 	STZ_d(0x04)//Zero memory responsible for holding stat modifying value.
 	JSL(NewEquipmentStats)
-	//Sum the equipment increases for a given stat.
+
+//Sum the equipment increases for a given stat.
 	LDY_d(0x16)//Load character's base stat.
 	TYA//Transfer to accumulator.
 	CLC
@@ -375,12 +564,82 @@ NOROOM:
 	CLC
 	ADC_d(0x16)//Add with modified value.
 	STA_d(0x16)//Replace it with modified value.
-	//Preparing text.
+
+	// Checks to see if the stat delta is different
+	PLA
+	CMP_d (0x16)
+	BEQ_a (Luck) // If the equipment doesn't affect the offense stat, branch
+
+	// If we are just at the regular equipment menu, then just print the current stat and not the arrow and delta stat
+	LDA_a(0x9CD4)
+	BEQ_a(Luck)
+
+//Preparing text.
 	LDA_i(0x0053)//Text's horizontal positioning.
 	STA_d(0x20)
 	LDA_i(0x0003)//Text's vertical positioning.
 	STA_d(0x22)
 	JSL(NewEquipmentStatsOutput)
+
+/*-+-+-+-+-+-+-+-+-+-+ARROW GUTS-+-+-+-+-+-+-+-+-+-+*/
+	LDA_i(0x0001)//Text palette effect?
+	JSL(UnknownJSRSubroutine5)//Apply it?
+
+// GUTS
+	LDX_i(0x0003)//
+	LDA_i(0x0048)///Text positioning.
+	JSL(0xC43D75)//Set positioning.
+
+	LDA_i(0x014E)//Load index for right-arrow symbol.
+	JSL(0xC43F77)//Print it?
+
+	LDA_i(0x0000)//Text palette effect?
+	JSL(UnknownJSRSubroutine5)//Apply it?
+
+/*-+-+-+-+-+-+-+-+-+-+LUCK-+-+-+-+-+-+-+-+-+-+*/
+Luck:
+	LDA_i(0x0020)//Base Luck.
+	STA_d(0x20)
+	LDA_i(0x0033)//Arms armor
+	STA_d(0x22)
+	LDA_i(0x0004)//Poo's not considered.
+	STA_d(0x24)
+	LDA_i(0x0021)//Luck boost.
+	STA_d(0x26)
+	LDA_i(0xFFFF)
+	STA_d(0x28)//Not "equipment selection" stat.
+	STZ_d(0x04)//Zero memory responsible for holding stat modifying value.
+	JSL(NewEquipmentStats)
+
+	LDA_i(0x0034)//Other armor
+	STA_d(0x22)
+	JSL(NewEquipmentStats)
+
+//Sum the equipment increases for a given stat.
+	LDY_d(0x16)//Load character's base stat.
+	TYA//Transfer to accumulator.
+	CLC
+	ADC_d(0x04)//Add character's base stat by the sum of all relevant equipments' stat increase values.
+	TAY
+	STY_d(0x16)//Store modified stat to memory.
+	LDX_d(0x12)//Load character offset.
+	LDA_x(0x9A29)//Load Luck boosts from capsules.
+	AND_i(0x00FF)
+	CLC
+	ADC_d(0x16)//Add with modified value.
+	STA_d(0x16)//Replace it with modified value.
+
+	LDA_d (0x16)
+	PHA
+
+//Preparing text.
+	LDA_i(0x0031)//Text's horizontal positioning.
+	STA_d(0x20)
+	LDA_i(0x0004)//Text's vertical positioning.
+	STA_d(0x22)
+	JSL(NewEquipmentStatsOutput)
+
+/*-+-+-+-+-+-+-+-+-+-+DELTA LUCK-+-+-+-+-+-+-+-+-+-+*/
 
 	LDA_i(0x0020)//Base Luck.
 	STA_d(0x20)
@@ -394,10 +653,12 @@ NOROOM:
 	STA_d(0x28)
 	STZ_d(0x04)//Zero memory responsible for holding stat modifying value.
 	JSL(NewEquipmentStats)
+
 	LDA_i(0x0003)//"equipment selection" stat (Other).
 	STA_d(0x28)
 	JSL(NewEquipmentStats)
-	//Sum the equipment increases for a given stat.
+
+//Sum the equipment increases for a given stat.
 	LDY_d(0x16)//Load character's base stat.
 	TYA//Transfer to accumulator.
 	CLC
@@ -410,20 +671,55 @@ NOROOM:
 	CLC
 	ADC_d(0x16)//Add with modified value.
 	STA_d(0x16)//Replace it with modified value.
-	//Preparing text.
+
+	// Checks to see if the stat delta is different
+	PLA
+	CMP_d (0x16)
+	BEQ_a (NOROOM_End) // If the equipment doesn't affect the offense stat, branch
+
+	// If we are just at the regular equipment menu, then just print the current stat and not the arrow and delta stat
+	LDA_a(0x9CD4)
+	BEQ_a(NOROOM_End)
+
+//Preparing text.
 	LDA_i(0x0053)//Text's horizontal positioning.
 	STA_d(0x20)
 	LDA_i(0x0004)//Text's vertical positioning.
 	STA_d(0x22)
 	JSL(NewEquipmentStatsOutput)
-	NOROOM_End:
-	JMP_l(0xC1A772)
+
+/*-+-+-+-+-+-+-+-+-+-+ARROW LUCK-+-+-+-+-+-+-+-+-+-+*/
+	LDA_i(0x0001)//Text palette effect?
+	JSL(UnknownJSRSubroutine5)//Apply it?
+
+// LUCK
+	LDX_i(0x0004)//
+	LDA_i(0x0048)///Text positioning.
+	JSL(0xC43D75)//Set positioning.
+
+	LDA_i(0x014E)//Load index for right-arrow symbol.
+	JSL(0xC43F77)//Print it?
+
+	LDA_i(0x0000)//Text palette effect?
+	JSL(UnknownJSRSubroutine5)//Apply it?
+
+NOROOM_End:
+	JMP_l(0xC1A772) // JMP_l (0xC1A772)
+
+Return:
+	JSL (0xC3E4CA) // Print the items to the window.
+	//LDA_i (0x002D)
+	//STA_a (0x8958) // Set window focus
+	RTL
+
+/*-+-+-+-+-+-+-+-+-+-+ROUTINES-+-+-+-+-+-+-+-+-+-+*/
 
 NewEquipmentStats:
 	LDA_d(0x18)//Load character number to Accumulator.
 	STA_d(0x02)//Store to different location in memory.
 	LDY_i(0x005F)//Load multiplicand to Y.
 	JSL(0xC08FF7)//Multiply A by Y.
+
 	STA_d(0x12)
 	CLC
 	ADC_d(0x20)//Add base stat offset.
@@ -441,33 +737,38 @@ NewEquipmentStats:
 	BCC_a(NewEquipmentStats_Skip)
 	LDA_x(0x99CE)//Load equipped item's inventory slot number (0 if nothing).
 	BRA_a(NewEquipmentStats_CheckIfZero)
-	NewEquipmentStats_Skip:
+
+NewEquipmentStats_Skip:
 	TAX
 	LDA_x(0x9CD0)
-	NewEquipmentStats_CheckIfZero:
+
+NewEquipmentStats_CheckIfZero:
 	AND_i(0x00FF)//Clear high byte.
 	STA_d(0x0A)
 	BEQ_a(NewEquipmentStats_End)//Branch if nothing equipped in this slot.
-	LDX_i(0x0000)	//\
+
+	LDX_i(0x0000)	//
 	STX_d(0x14)	///Store 0 to memory.
 	LDA_d(0x02)//Load character number.
 	CMP_d(0x24)//If not character set in the parameters...
 	BNE(0x05)//...Branch
+
 	LDX_i(0x0001)//It's this character, replace 0 with 1 for X.
 	STX_d(0x14)//Store X to memory.
 	LDA_d(0x0A)//Load item slot number.
 	DEC//Decrement by 1 (preparing for multiplication.)
 	STA_d(0x02)//Store result to memory.
 	LDA_d(0x12)//Load character stat pointer offset (varies depending on character)
-	CLC		//\
+	CLC		//l
 	ADC_i(0x99F1)	//|
 	CLC		//|
 	ADC_d(0x02)	//|Load equipped item number.
 	TAX		//|
 	LDA_x(0x0000)	//|
-	AND_i(0x00FF)	///
+	AND_i(0x00FF)	//l
 	LDY_i(0x0027)//Item entry size loaded to Y.
 	JSL(0xC08FF7)//Multiply weapon number with item entry size.
+
 	LDX_d(0x14)//Load 1 (if Poo) or Load 0 (if anyone else)
 	STX_d(0x02)//Store X to memory(different location).
 	CLC
@@ -477,21 +778,24 @@ NewEquipmentStats:
 	TAX
 	LDA_xl(0xD55000)//Load equipment's stat value (or Poo's)
 	AND_i(0x00FF)
-	SEC		//\
+	SEC		//l
 	SBC_i(0x0080)	//|Convert equipment stat value to signed integer?
-	EOR_i(0xFF80)	///
+	EOR_i(0xFF80)	//l
 	CLC
 	ADC_d(0x04)
 	STA_d(0x04)//Store to memory.
+	//BRA_a (NewEquipmentStats_End)
+
 NewEquipmentStats_End:
 	RTL
 
 NewEquipmentStatsOutput:
 	LDA_i(0x0001)
 	STA_a(0x5E71)
-	LDA_d(0x20)//\
+	LDA_d(0x20)//
 	LDX_d(0x22)///Set text positioning.
 	JSL(0xC43D75)
+
 	LDY_d(0x16)//Load modified offense.
 	STY_d(0x04)//Store to different location in memory.
 	LDA_i(0x0000)
@@ -501,6 +805,7 @@ NewEquipmentStatsOutput:
 	BPL(0x09)
 	BRA(0x02)
 	BMI(0x05)
+
 	LDA_i(0x0000)
 	BRA(0x1A)
 	TYA
@@ -510,6 +815,7 @@ NewEquipmentStatsOutput:
 	BPL(0x09)
 	BRA(0x02)
 	BMI(0x05)
+
 	LDX_i(0x00FF)
 	BRA(0x07)
 	TYA
@@ -526,5 +832,75 @@ NewEquipmentStatsOutput:
 	LDA_d(0x08)
 	STA_d(0x10)
 	JSL(UnknownJSRSubroutine4)
+
 	STZ_a(0x5E71)
 	RTL
+
+//-------------------------------------
+
+Open_Money_Window: {
+	LDA_i (10)
+	JSL (0xC1DD47)
+	LDA_i (5)
+	JSL (UnknownJSRSubroutine6)
+	JSL (0xC3E4D4)
+	JSL (0xC1DD53)
+	LDA_a (0x9831)
+	STA_d (0x06)
+	LDA_a (0x9833)
+	STA_d (0x08)
+	LDA_d (0x06)
+	STA_d (0x0E)
+	LDA_d (0x08)
+	STA_d (0x10)
+	JSL (0xC4507A)
+	JSL (0xC3E4CA)
+	RTL
+}
+
+UnknownJSRSubroutine6: { // Acts like 0xC10EB4, helps with the money window
+	REP (0x31)
+	PHD
+	PHA
+	TDC
+	ADC_i (0xFFF0)
+	TCD
+	PLA
+	STA_d (0x0E)
+	LDA_a (0x8958)
+	CMP_i (0xFFFF)
+	BEQ_a (Return)
+	LDA_a (0x8958)
+	ASL
+	TAX
+	LDA_x (0x88E4)
+	LDY_i (0x0052)
+	JSL (0xC08FF7)
+	TAX
+	LDA_d (0x0E)
+	SEP (0x20)
+	STA_x (0x8662)
+
+Return:
+	PLD
+	RTL
+}
+
+Title_Stats_Window:{
+	REP (0x31)
+	PHD
+	TDC
+	ADC_i (0xFFEE)
+	TCD
+
+	LDA_i (0x002D) // Load 45
+	JSL (0xC1DD47) // Open window 45
+
+	ASMLoadAddress0E(Status_Text)
+	LDA_i (45)
+	LDX_i (0x0006)
+	JSL (0xC2032B)
+
+	PLD
+	RTL
+}

@@ -10,9 +10,18 @@ l_gender_female:
 //  "её" eob
     "[96][97]" eob
 
+// -ый/-ая
+l_gender_end_outside:
+//  "[19 10 01]{result_is(2)}[1B 03 {e(l_female_end_outside)}]ый" eob
+    "[19 10 01]{result_is(2)}[1B 03 {e(l_female_end_outside)}][C2][9B]" eob
+
+l_female_end_outside:
+//  "ая" eob
+    "[91][C6]" eob
+
 gain_exp_multi:
-//  "[1D 19 02][1B 03 {e(gain_exp_single)}][19 10 02][1D 0D 00 01 02][1B 03 {e(gain_exp_single)}] получают" eob
-    "[1D 19 02][1B 03 {e(gain_exp_single)}][19 10 02][1D 0D 00 01 02][1B 03 {e(gain_exp_single)}] [A1][A0][9D][A5][A9][91][C5][A4]" eob
+//  "[1D 19 02][1B 03 {e(gain_exp_single)}][19 10 02][1D 0D 00 01 02][1B 03 {e(gain_exp_single)}]получают" eob
+    "[1D 19 02][1B 03 {e(gain_exp_single)}][19 10 02][1D 0D 00 01 02][1B 03 {e(gain_exp_single)}][A1][A0][9D][A5][A9][91][C5][A4]" eob
 gain_exp_single:
 //  "получает" eob
     "[A1][A0][9D][A5][A9][91][96][A4]" eob

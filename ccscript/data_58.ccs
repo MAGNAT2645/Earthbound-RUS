@@ -457,9 +457,25 @@ l_0xc9dbd6:
     "[06 9B 00 {e(l_0xc9dbe2)}]" goto(l_0xc9d735)
 
 l_0xc9dbe2:
-    "@Would you like some tea?" linebreak
-    "[19 02]Yes" eob
+    /*
+    "@Хотите немного чаю?" linebreak
+    "[19 02]Да" eob
+    */
+    "@[87][A0][A4][9A][A4][96] [9F][96][9E][9F][A0][94][A0] [A9][91][C5]?" linebreak
+    "[19 02][75][91]" eob
 
 l_0xc9dbf4:
-    "[19 02]No" eob
+//  "[19 02]Нет" eob
+    "[19 02][7F][96][A4]" eob
+
+l_0xc9dbf9:
+    "[1C 07 02][11]{clearline}[09 02 {e(l_0xc9dc0e)} {e(l_0xc9dc08)}]" goto(l_0xc9dc08)
+
+l_0xc9dc08:
+//  "@ОК." end
+    "@[80][7C]." end
+
+l_0xc9dc0e:
+//  "@Пейте.{wait}{window_closeall}[06 DC 00 {e(data_55.l_0xc9992f)}]" call(data_36.l_0xc7dd74) "{music(92)}[1F 41 02]" eob
+    "@[81][96][9B][A4][96].{wait}{window_closeall}[06 DC 00 {e(data_55.l_0xc9992f)}]" call(data_36.l_0xc7dd74) "{music(92)}[1F 41 02]" eob
 

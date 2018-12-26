@@ -82,15 +82,24 @@ l_0xc92461:
     "@it is the truth...{wait}{window_closeall}" eob
 
 l_0xc9254a:
-    "{window_open(1)}@Prince [1C 02 04]..." next
-    "@I am the spirit of your ancient lineage." next
-    "@To complete your trial,{pause(15)} I am going to break your legs." next
-    "@You will lose the use of them." next
-    "@Do you accept this?" linebreak
-    "[19 02]Yes" eob
+    /*
+    "{window_open(1)}@Принц [1C 02 04]..." next
+    "@Я дух твоей древней родословной." next
+    "@Для завершения испытания,{pause(15)} я собираюсь сломать твои ноги." next
+    "@Ты не сможешь пользоваться ими." next
+    "@Ты принимаешь это?" linebreak
+    "[19 02]Да" eob
+    */
+    "{window_open(1)}@[81][A2][9A][9F][A8] [1C 02 04]..." next
+    "@[B6] [95][A5][A7] [A4][93][A0][96][9B] [95][A2][96][93][9F][96][9B] [A2][A0][95][A0][A3][9D][A0][93][9F][A0][9B]." next
+    "@[75][9D][C6] [99][91][93][96][A2][AA][96][9F][9A][C6] [9A][A3][A1][C2][A4][91][9F][9A][C6],{pause(15)} [C6] [A3][A0][92][9A][A2][91][C5][A3][C3] [A3][9D][A0][9E][91][A4][C3] [A4][93][A0][9A] [9F][A0][94][9A]." next
+    "@[84][C2] [9F][96] [A3][9E][A0][98][96][AA][C3] [A1][A0][9D][C3][99][A0][93][91][A4][C3][A3][C6] [9A][9E][9A]." next
+    "@[84][C2] [A1][A2][9A][9F][9A][9E][91][96][AA][C3] [C4][A4][A0]?" linebreak
+    "[19 02][75][91]" eob
 
 l_0xc925bb:
-    " [19 02]No" eob
+//  " [19 02]Нет" eob
+    " [19 02][7F][96][A4]" eob
 
 l_0xc925c1:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xc925db)} {e(l_0xc925d0)}]" goto(l_0xc925d0)
@@ -102,16 +111,26 @@ l_0xc925db:
     call(l_0xc92909) "{window_closetop}" eob
 
 l_0xc925e3:
-    "{window_open(1)}@So, Prince [1C 02 04]..." next
-    "@you cannot walk, as your legs are broken." next
-    "@Next, I will tear your arms off..." next
-    "@I shall then take your arms and feed them to the crows." next
-    "@The taking of your arms..." next
-    "@Do you accept this?" linebreak
-    "[19 02]Yes" eob
+    /*
+    "{window_open(1)}@Итак, Принц [1C 02 04]..." next
+    "@ты не можешь двигаться, потому что твои ноги сломаны." next
+    "@Далее, я оторву твои руки..." next
+    "@Я возьму их и скормлю воронам." next
+    "@Взятие твоих рук..." next
+    "@Ты принимаешь это?" linebreak
+    "[19 02]Да" eob
+    */
+    "{window_open(1)}@[7A][A4][91][9C], [81][A2][9A][9F][A8] [1C 02 04]..." next
+    "@[A4][C2] [9F][96] [9E][A0][98][96][AA][C3] [95][93][9A][94][91][A4][C3][A3][C6], [A1][A0][A4][A0][9E][A5] [A9][A4][A0] [A4][93][A0][9A] [9F][A0][94][9A] [A3][9D][A0][9E][91][9F][C2]." next
+    "@[75][91][9D][96][96], [C6] [A0][A4][A0][A2][93][A5] [A4][93][A0][9A] [A2][A5][9C][9A]..." next
+    "@[B6] [93][A0][99][C3][9E][A5] [9A][A7] [9A] [A3][9C][A0][A2][9E][9D][C5] [93][A0][A2][A0][9F][91][9E]." next
+    "@[73][99][C6][A4][9A][96] [A4][93][A0][9A][A7] [A2][A5][9C]..." next
+    "@[84][C2] [A1][A2][9A][9F][9A][9E][91][96][AA][C3] [C4][A4][A0]?" linebreak
+    "[19 02][75][91]" eob
 
 l_0xc9266c:
-    " [19 02]No" eob
+//  " [19 02]Нет" eob
+    " [19 02][7F][96][A4]" eob
 
 l_0xc92672:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xc92686)} {e(l_0xc925d0)}]" goto(l_0xc925d0)
@@ -120,15 +139,24 @@ l_0xc92686:
     call(l_0xc92924) "{window_closetop}" eob
 
 l_0xc9268e:
-    "{window_open(1)}@Ah, Prince [1C 02 04]..." next
-    "@Without legs and arms, you can only lie there..." next
-    "@Now, I'll cut your ears off." next
-    "@You do not mind my taking your hearing away, do you?" next
-    "@Do you accept this?" linebreak
-    "[19 02]Yes" eob
+    /*
+    "{window_open(1)}@Ах, Принц [1C 02 04]..." next
+    "@Без рук и ног, ты можешь только лежать здесь..." next
+    "@Теперь, я отрезу твои уши." next
+    "@Ты не возражаешь, если я лишу тебя слуха, не так ли?" next
+    "@Ты принимаешь это?" linebreak
+    "[19 02]Да" eob
+    */
+    "{window_open(1)}@[71][A7], [81][A2][9A][9F][A8] [1C 02 04]..." next
+    "@[72][96][99] [A2][A5][9C] [9A] [9F][A0][94], [A4][C2] [9E][A0][98][96][AA][C3] [A4][A0][9D][C3][9C][A0] [9D][96][98][91][A4][C3] [99][95][96][A3][C3]..." next
+    "@[84][96][A1][96][A2][C3], [C6] [A0][A4][A2][96][99][A5] [A4][93][A0][9A] [A5][AA][9A]." next
+    "@[84][C2] [9F][96] [93][A0][99][A2][91][98][91][96][AA][C3], [96][A3][9D][9A] [C6] [9D][9A][AA][A5] [A4][96][92][C6] [A3][9D][A5][A7][91], [9F][96] [A4][91][9C] [9D][9A]?" next
+    "@[84][C2] [A1][A2][9A][9F][9A][9E][91][96][AA][C3] [C4][A4][A0]?" linebreak
+    "[19 02][75][91]" eob
 
 l_0xc92701:
-    " [19 02]No" eob
+//  " [19 02]Нет" eob
+    " [19 02][7F][96][A4]" eob
 
 l_0xc92707:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xc9271b)} {e(l_0xc925d0)}]" goto(l_0xc925d0)
@@ -137,17 +165,28 @@ l_0xc9271b:
     call(l_0xc9293f) "{window_closetop}" eob
 
 l_0xc92723:
-    "[1F 04 03]{window_open(1)}@(So, Prince [1C 02 04]." next
-    "@No legs, no arms and no sound..." next
-    "@By floating words through the air,{pause(15)} I must ask you..." next
-    "@Do you care if I take your eyes?" next
-    "@Do you want to live in eternal darkness?" next
-    "@I shall steal your sight..." next
-    "@Do you accept this?)" linebreak
-    "[19 02]Yes" eob
+    /*
+    "[1F 04 03]{window_open(1)}@(Итак, Принц [1C 02 04]." next
+    "@Нет ног, нет рук и нет слуха..." next
+    "@Плавающими словами в воздухе,{pause(15)} я должен спросить тебя..." next
+    "@Ты не против, если я заберу твои глаза?" next
+    "@Ты хочешь жить в вечной темноте?" next
+    "@Я украду у тебя зрение..." next
+    "@Ты принимаешь это?)" linebreak
+    "[19 02]Да" eob
+    */
+    "[1F 04 03]{window_open(1)}@([7A][A4][91][9C], [81][A2][9A][9F][A8] [1C 02 04]." next
+    "@[7F][96][A4] [9F][A0][94], [9F][96][A4] [A2][A5][9C] [9A] [9F][96][A4] [A3][9D][A5][A7][91]..." next
+    "@[81][9D][91][93][91][C5][C0][9A][9E][9A] [A3][9D][A0][93][91][9E][9A] [93] [93][A0][99][95][A5][A7][96],{pause(15)} [C6] [95][A0][9D][98][96][9F] [A3][A1][A2][A0][A3][9A][A4][C3] [A4][96][92][C6]..." next
+    "@[84][C2] [9F][96] [A1][A2][A0][A4][9A][93], [96][A3][9D][9A] [C6] [99][91][92][96][A2][A5] [A4][93][A0][9A] [94][9D][91][99][91]?" next
+    "@[84][C2] [A7][A0][A9][96][AA][C3] [98][9A][A4][C3] [93] [93][96][A9][9F][A0][9B] [A4][96][9E][9F][A0][A4][96]?" next
+    "@[B6] [A5][9C][A2][91][95][A5] [A5] [A4][96][92][C6] [99][A2][96][9F][9A][96]..." next
+    "@[84][C2] [A1][A2][9A][9F][9A][9E][91][96][AA][C3] [C4][A4][A0]?)" linebreak
+    "[19 02][75][91]" eob
 
 l_0xc927c8:
-    " [19 02]No" eob
+//  " [19 02]Нет" eob
+    " [19 02][7F][96][A4]" eob
 
 l_0xc927ce:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xc927e2)} {e(l_0xc925d0)}]" goto(l_0xc925d0)
@@ -156,17 +195,31 @@ l_0xc927e2:
     call(l_0xc92955) "{window_closetop}" eob
 
 l_0xc927ea:
-    "{window_open(1)}@(So, Prince [1C 02 04]." next
-    "@Now, I can only communicate directly with your mind." next
-    "@Your mind is all you have left..." next
-    "@In the end, I will take your mind," next
-    "@though you probably don't want to allow that, do you?" next
-    "@So... you can't answer?{pause(20)}  You can't even move?" next
-    "@Are you sad, are you lonely?" next
-    "@If you lose your mind,{pause(15)}" linebreak
-    "  you also lose any feelings of sadness..." next
-    "@Do you accept this?" next
-    "@I will take your mind, Prince [1C 02 04],{pause(20)} know that I will possess it...)[03]{pause(20)}{window_closeall}{set(flag 273)}[1E 00 04 64][1F 04 01]{set(flag 595)}" eob
+    /*
+l_0xc927ea:
+    "{window_open(1)}@(Итак, Принц [1C 02 04]." next
+    "@Теперь я могу общаться только напрямую с твоим разумом." next
+    "@Твой разум - это всё, что у тебя осталось..." next
+    "@В конце, я заберу твой разум," next
+    "@хотя ты, вероятно, не хочешь этого допустить, не так ли?" next
+    "@Так... ты не можешь ответить?{pause(20)}  Ты даже пошевелиться не можешь?" next
+    "@Тебе грустно, тебе одиноко?" next
+    "@Если ты потеряешь свой разум,{pause(15)}" linebreak
+    "  ты также потеряешь любые чувства грусти..." next
+    "@Ты принимаешь это?" next
+    "@Я заберу твой разум, Принц [1C 02 04],{pause(20)} знай, что я буду владеть им...)[03]{pause(20)}{window_closeall}{set(flag 273)}[1E 00 04 64][1F 04 01]{set(flag 595)}" eob
+    */
+    "{window_open(1)}@([7A][A4][91][9C], [81][A2][9A][9F][A8] [1C 02 04]." next
+    "@[84][96][A1][96][A2][C3] [C6] [9E][A0][94][A5] [A0][92][C0][91][A4][C3][A3][C6] [A4][A0][9D][C3][9C][A0] [9F][91][A1][A2][C6][9E][A5][C5] [A3] [A4][93][A0][9A][9E] [A2][91][99][A5][9E][A0][9E]." next
+    "@[84][93][A0][9B] [A2][91][99][A5][9E] - [C4][A4][A0] [93][A3][97], [A9][A4][A0] [A5] [A4][96][92][C6] [A0][A3][A4][91][9D][A0][A3][C3]..." next
+    "@[73] [9C][A0][9F][A8][96], [C6] [99][91][92][96][A2][A5] [A4][93][A0][9B] [A2][91][99][A5][9E]," next
+    "@[A7][A0][A4][C6] [A4][C2], [93][96][A2][A0][C6][A4][9F][A0], [9F][96] [A7][A0][A9][96][AA][C3] [C4][A4][A0][94][A0] [95][A0][A1][A5][A3][A4][9A][A4][C3], [9F][96] [A4][91][9C] [9D][9A]?" next
+    "@[84][91][9C]... [A4][C2] [9F][96] [9E][A0][98][96][AA][C3] [A0][A4][93][96][A4][9A][A4][C3]?{pause(20)}  [84][C2] [95][91][98][96] [A1][A0][AA][96][93][96][9D][9A][A4][C3][A3][C6] [9F][96] [9E][A0][98][96][AA][C3]?" next
+    "@[84][96][92][96] [94][A2][A5][A3][A4][9F][A0], [A4][96][92][96] [A0][95][9A][9F][A0][9C][A0]?" next
+    "@[76][A3][9D][9A] [A4][C2] [A1][A0][A4][96][A2][C6][96][AA][C3] [A3][93][A0][9B] [A2][91][99][A5][9E],{pause(15)}" linebreak
+    "  [A4][C2] [A4][91][9C][98][96] [A1][A0][A4][96][A2][C6][96][AA][C3] [9D][C5][92][C2][96] [A9][A5][93][A3][A4][93][91] [94][A2][A5][A3][A4][9A]..." next
+    "@[84][C2] [A1][A2][9A][9F][9A][9E][91][96][AA][C3] [C4][A4][A0]?" next
+    "@[B6] [99][91][92][96][A2][A5] [A4][93][A0][9B] [A2][91][99][A5][9E], [81][A2][9A][9F][A8] [1C 02 04],{pause(20)} [99][9F][91][9B], [A9][A4][A0] [C6] [92][A5][95][A5] [93][9D][91][95][96][A4][C3] [9A][9E]...)[03]{pause(20)}{window_closeall}{set(flag 273)}[1E 00 04 64][1F 04 01]{set(flag 595)}" eob
 
 l_0xc92909:
     "{window_switch(1)}{window_closetop}{sound(63)}{pause(10)}{open_hp}[1E 01 04 50]{sound(61)}{pause(90)}{sound(46)}{pause(30)}" eob
@@ -181,18 +234,29 @@ l_0xc92955:
     "{window_closeall}" eob
 
 l_0xc92958:
-    "{window_open(1)}@Prince [1C 02 04]!" next
-    "@You have now completed your training!" next
-    "@The old Master must be so pleased!{pause(20)}  Hurry,{pause(15)} now,{pause(15)} and return to the palace.[03]{window_closeall}" eob
+    /*
+    "{window_open(1)}@Принц [1C 02 04]!" next
+    "@Ты завершил свою тренировку!" next
+    "@Старый Мастер, должно быть, очень доволен!{pause(20)}  Поспеши,{pause(15)} сейчас,{pause(15)} и вернись во дворец.[03]{window_closeall}" eob
+    */
+    "{window_open(1)}@[81][A2][9A][9F][A8] [1C 02 04]!" next
+    "@[84][C2] [99][91][93][96][A2][AA][9A][9D] [A3][93][A0][C5] [A4][A2][96][9F][9A][A2][A0][93][9C][A5]!" next
+    "@[83][A4][91][A2][C2][9B] [7E][91][A3][A4][96][A2], [95][A0][9D][98][9F][A0] [92][C2][A4][C3], [A0][A9][96][9F][C3] [95][A0][93][A0][9D][96][9F]!{pause(20)}  [81][A0][A3][A1][96][AA][9A],{pause(15)} [A3][96][9B][A9][91][A3],{pause(15)} [9A] [93][96][A2][9F][9A][A3][C3] [93][A0] [95][93][A0][A2][96][A8].[03]{window_closeall}" eob
 
 l_0xc929ae:
     "{window_open(1)}" call(data_58.l_0xc9d523) "{window_closeall}[1F 1E 4F 04 06]{sound(99)}[1F 15 A9 00 9B 02 06][1F 61]" eob
 
 l_0xc929ca:
-    "{window_open(1)}@My name is [1C 02 04].{pause(20)}  I am the one who will fight beside you." next
-    "@I am the servant of [1C 02 01].{pause(15)}  I will obey [1C 02 01]." next
+    /*
+    "{window_open(1)}@Меня зовут [1C 02 04].{pause(20)}  Я тот, кто будет сражаться на вашей стороне." next
+    "@Я слуга тому, чьё имя - [1C 02 01].{pause(15)}  Я буду повиноваться тому, чьё имя - [1C 02 01]." next
     "@[1C 02 01]!{pause(20)}" linebreak
-    "  My life is in your hands.[03]{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc92a48)}]{window_closeall}{set(flag 16)}{set(flag 504)}{set(flag 499)}" eob
+    "  Моя жизнь в твоих руках.[03]{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc92a48)}]{window_closeall}{set(flag 16)}{set(flag 504)}{set(flag 499)}" eob
+    */
+    "{window_open(1)}@[7E][96][9F][C6] [99][A0][93][A5][A4] [1C 02 04].{pause(20)}  [B6] [A4][A0][A4], [9C][A4][A0] [92][A5][95][96][A4] [A3][A2][91][98][91][A4][C3][A3][C6] [9F][91] [93][91][AA][96][9B] [A3][A4][A0][A2][A0][9F][96]." next
+    "@[B6] [A3][9D][A5][94][91] [A4][A0][9E][A5], [A9][C3][97] [9A][9E][C6] - [1C 02 01].{pause(15)}  [B6] [92][A5][95][A5] [A1][A0][93][9A][9F][A0][93][91][A4][C3][A3][C6] [A4][A0][9E][A5], [A9][C3][97] [9A][9E][C6] - [1C 02 01]." next
+    "@[1C 02 01]!{pause(20)}" linebreak
+    "  [7E][A0][C6] [98][9A][99][9F][C3] [93] [A4][93][A0][9A][A7] [A2][A5][9C][91][A7].[03]{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc92a48)}]{window_closeall}{set(flag 16)}{set(flag 504)}{set(flag 499)}" eob
 
 l_0xc92a48:
     newline

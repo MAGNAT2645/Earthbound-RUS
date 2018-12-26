@@ -7,15 +7,6 @@
 command e(label) "{long label}"
 
 // Text Data
-l_0xc9dbf9:
-    "[1C 07 02][11]{clearline}[09 02 {e(l_0xc9dc0e)} {e(l_0xc9dc08)}]" goto(l_0xc9dc08)
-
-l_0xc9dc08:
-    "@OK." end
-
-l_0xc9dc0e:
-    "@Drink.{wait}{window_closeall}[06 DC 00 {e(data_55.l_0xc9992f)}]" call(data_36.l_0xc7dd74) "{music(92)}[1F 41 02]" eob
-
 l_0xc9dc2c:
     "[06 9B 00 {e(l_0xc9dd87)}][06 02 00 {e(l_0xc9dd78)}]@There's only one Tenda who's not shy." next
     "@It's me, bubby!" next

@@ -351,10 +351,12 @@ l_0xc5decb:
     "{unset(flag 657)}" call(data_00.l_0xc50000) goto(l_0xc5ded3)
 
 l_0xc5ded3:
-    "[19 02]Buy" eob
+//  "[19 02]Купить" eob
+    "[19 02][7C][A5][A1][9A][A4][C3]" eob
 
 l_0xc5ded9:
-    "[19 02]Sell" eob
+//  "[19 02]Продать" eob
+    "[19 02][81][A2][A0][95][91][A4][C3]" eob
 
 l_0xc5dee0:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xc5df05)} {e(data_15.l_0xc5df3a)}]" goto(l_0xc5deef)
