@@ -222,16 +222,25 @@ l_0xc834a8:
     "@...I know better now." end
 
 l_0xc834e1:
-    "@I kept asking around for Trout-flavored yogurt, but...{wait}[1D 05 FF 8B][1B 03 {e(l_0xc83515)}]" eob
+//  "@Я всё время расспрашивала про йогурт со вкусом форели, но...{wait}[1D 05 FF 8B][1B 03 {e(l_0xc83515)}]" eob
+    "@[B6] [93][A3][97] [93][A2][96][9E][C6] [A2][91][A3][A3][A1][A2][91][AA][9A][93][91][9D][91] [A1][A2][A0] [9B][A0][94][A5][A2][A4] [A3][A0] [93][9C][A5][A3][A0][9E] [A6][A0][A2][96][9D][9A], [9F][A0]...{wait}[1D 05 FF 8B][1B 03 {e(l_0xc83515)}]" eob
 
 l_0xc83515:
+    /*
+    "@Что?{pause(20)}  У тебя есть <[1C 05 8B]>?" next
+    "@Можно я возьму?" next
+    "{sound(118)}{pause(10)}@(Она забрала <[1C 05 8B]> у вас до того, как вы хотели ответить.`)" next
+    "@Теперь я могу делать йогурт со вкусом форели для моих гостей." next
+    "@...Ты такой добрый, я и тебе сделаю немного." next
+    "@Моя комната на 48-ом этаже.{pause(20)}  Не забудь заскочить!{wait}{window_closeall}[1D 01 FF 8B]{set(flag 142)}[1F F1 B7 03 A8 02][1F 61][1F E6 B7 03][19 23 B7 03 01 FF 00][1F 16 B7 03 00]{pause(20)}{window_open(1)}@Моя комната на 48-ом этаже.{pause(20)}  Не забудь заскочить!{wait}{window_closeall}[1F E9 B7 03]{unset(flag 59)}" eob
+    */
     next
-    "@What?{pause(20)}  You have a <[1C 05 8B]>?" next
-    "@May I have it?" next
-    "{sound(118)}{pause(10)}@(Before you could answer, she took the <[1C 05 8B].>`)" next
-    "@Now I can make Trout-flavored yogurt for my guests." next
-    "@...You are so kind, I'll make some for you." next
-    "@My room's on the 48th floor.{pause(20)}  Don't forget to drop by!{wait}{window_closeall}[1D 01 FF 8B]{set(flag 142)}[1F F1 B7 03 A8 02][1F 61][1F E6 B7 03][19 23 B7 03 01 FF 00][1F 16 B7 03 00]{pause(20)}{window_open(1)}@My room's on the 48th floor.{pause(20)}  Don't forget to drop by!{wait}{window_closeall}[1F E9 B7 03]{unset(flag 59)}" eob
+    "@[89][A4][A0]?{pause(20)}  [85] [A4][96][92][C6] [96][A3][A4][C3] <[1C 05 8B]>?" next
+    "@[7E][A0][98][9F][A0] [C6] [93][A0][99][C3][9E][A5]?" next
+    "{sound(118)}{pause(10)}@([80][9F][91] [99][91][92][A2][91][9D][91] <[1C 05 8B]> [A5] [93][91][A3] [95][A0] [A4][A0][94][A0], [9C][91][9C] [93][C2] [A7][A0][A4][96][9D][9A] [A0][A4][93][96][A4][9A][A4][C3].`)" next
+    "@[84][96][A1][96][A2][C3] [C6] [9E][A0][94][A5] [95][96][9D][91][A4][C3] [9B][A0][94][A5][A2][A4] [A3][A0] [93][9C][A5][A3][A0][9E] [A6][A0][A2][96][9D][9A] [95][9D][C6] [9E][A0][9A][A7] [94][A0][A3][A4][96][9B]." next
+    "@...[84][C2] [A4][91][9C][A0][9B] [95][A0][92][A2][C2][9B], [C6] [9A] [A4][96][92][96] [A3][95][96][9D][91][C5] [9F][96][9E][9F][A0][94][A0]." next
+    "@[7E][A0][C6] [9C][A0][9E][9F][91][A4][91] [9F][91] 48-[A0][9E] [C4][A4][91][98][96].{pause(20)}  [7F][96] [99][91][92][A5][95][C3] [99][91][A3][9C][A0][A9][9A][A4][C3]!{wait}{window_closeall}[1D 01 FF 8B]{set(flag 142)}[1F F1 B7 03 A8 02][1F 61][1F E6 B7 03][19 23 B7 03 01 FF 00][1F 16 B7 03 00]{pause(20)}{window_open(1)}@[7E][A0][C6] [9C][A0][9E][9F][91][A4][91] [9F][91] 48-[A0][9E] [C4][A4][91][98][96].{pause(20)}  [7F][96] [99][91][92][A5][95][C3] [99][91][A3][9C][A0][A9][9A][A4][C3]!{wait}{window_closeall}[1F E9 B7 03]{unset(flag 59)}" eob
 
 l_0xc8361b:
     eob

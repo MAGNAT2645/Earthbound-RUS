@@ -18,32 +18,50 @@ l_0xc91c3a:
     "{window_closeall}{pause(30)}" eob
 
 l_0xc91cc1:
-    call(data_24.l_0xc69082) "{set(flag 11)}[1F 41 05][1F EB 03 06][1F 15 03 00 0E 01 01][1F 61][1F E7 03 00][1F F3 03 00 03]{pause(60)}[1F F4 03 00]{window_open(1)}@Ah!{pause(20)}  Here's the problem, and it's not too tough to fix." next
-    "@Hang on for a second or two...[03]{window_closeall}{pause(30)}[1F EA 03 00][1F 61]{music(179)}[1F F1 E2 01 10 01][1F 61][1F E6 E2 01][1F 07 02]{pause(60)}{music_resume}{window_open(1)}@There!" next
-    "@That should do it!" next
-    "@Now, if " call(l_0xc91fba) " board,{pause(15)} the Sky Runner will take " call(l_0xc91fdb) next
-    "@back to Winters." next
-    "@With Dr. Andonuts' help,{pause(15)} I can modify the machine to fly to Summers." next
-    "@...If Dad, I mean Dr. Andonuts," next
-    "@is not available, I'll have to figure it out by myself." next
-    "@Anyway, let's go back to the lab in Winters." next
-    "@...That's it...{pause(20)}" linebreak
-    "  Go, machine,{pause(15)} go![03]{window_closeall}[1F 15 6A 00 0F 01 01]{pause(1)}[1F EF 6A 00][1F E8 FF][1F 61][1F EB FF 06]{set(flag 655)}" call(data_36.l_0xc7dd7d) "[1F ED][1F E5 FF][1F E9 E2 01][1F 61]{pause(15)}[1F 1E E0 01 06]{pause(90)}[1F 15 D1 00 A2 00 FF][1F 15 E6 00 A5 00 FF][1F 21 C2][1F EF E6 00][1F E8 FF]{pause(1)}[1F 61][1F ED][1F 15 D1 00 96 00 FF][1F 21 BB][1F EF D1 00][1F 61][1F ED][1F 15 D1 00 9E 00 FF][1F 15 E6 00 A0 00 FF][1F 21 C0][1F EF E6 00][1F 61][1F ED][1F 15 D1 00 97 00 FF][1F 21 BB][1F EF D1 00][1F 61][1F ED][1F 15 D1 00 9A 00 FF][1F 15 E6 00 9C 00 FF][1F 21 BE][1F EF E6 00][1F 61][1F ED][1F 15 D1 00 98 00 FF][1F 21 BB][1F EF D1 00][1F 61][1F ED][1F 15 D1 00 A6 00 FF][1F 21 BA][1F EF D1 00][1F 61][1F ED]{set(flag 621)}[1F 21 DA][1F 17 6F 02 A7 00 01]{pause(100)}[1F 17 6D 02 A8 00 01][1F 61]{unset(flag 655)}" call(data_36.l_0xc7dd7d) "[1F 15 6A 00 A9 00 01]{pause(1)}[1F EF 6A 00][1F EC FF 01][1F 61][1F ED][1F E5 FF][1F F1 69 02 8D 00][1F 61][1F E6 67 02][1F E6 69 02][1F E6 6A 02]" call(data_26.l_0xc6cb97) "[1F F1 6A 02 8E 00][1F 61][1F E6 6A 02]" call(data_26.l_0xc6cc31) "[1F F1 6A 02 90 00][1F 61][1F F1 69 02 8F 00][1F 61][19 26 06]{unset(flag 621)}{unset(flag 748)}{unset(flag 48)}{unset(flag 773)}{set(flag 630)}{unset(flag 11)}[1F 41 06][1F E8 FF]" eob
+    /*
+    call(data_24.l_0xc69082) "{set(flag 11)}[1F 41 05][1F EB 03 06][1F 15 03 00 0E 01 01][1F 61][1F E7 03 00][1F F3 03 00 03]{pause(60)}[1F F4 03 00]{window_open(1)}@Аа!{pause(20)}  Вот в чём проблема, и это не слишком сложно починить." next
+    "@Подождите секунду или две...[03]{window_closeall}{pause(30)}[1F EA 03 00][1F 61]{music(179)}[1F F1 E2 01 10 01][1F 61][1F E6 E2 01][1F 07 02]{pause(60)}{music_resume}{window_open(1)}@Вот!" next
+    "@Это должно сработать!" next
+    "@Теперь, если " call(l_0xc91fba) " в Небесный Бегун,{pause(15)} он доставит " call(l_0xc91fdb) next
+    "@обратно в Уинтерс." next
+    "@С помощью Др. Андонатса,{pause(15)} я смогу перенастроить машину для полёта в Саммерс." next
+    "@...Если Отца, я имею в виду, Др. Андонатса," next
+    "@не будет на месте, мне придётся выяснить это самому." next
+    "@В любом случае, нужно вернуться в лабораторию в Уинтерсе." next
+    "@...Вот оно...{pause(20)}" linebreak
+    "  Давай, машина,{pause(15)} давай![03]{window_closeall}[1F 15 6A 00 0F 01 01]{pause(1)}[1F EF 6A 00][1F E8 FF][1F 61][1F EB FF 06]{set(flag 655)}" call(data_36.l_0xc7dd7d) "[1F ED][1F E5 FF][1F E9 E2 01][1F 61]{pause(15)}[1F 1E E0 01 06]{pause(90)}[1F 15 D1 00 A2 00 FF][1F 15 E6 00 A5 00 FF][1F 21 C2][1F EF E6 00][1F E8 FF]{pause(1)}[1F 61][1F ED][1F 15 D1 00 96 00 FF][1F 21 BB][1F EF D1 00][1F 61][1F ED][1F 15 D1 00 9E 00 FF][1F 15 E6 00 A0 00 FF][1F 21 C0][1F EF E6 00][1F 61][1F ED][1F 15 D1 00 97 00 FF][1F 21 BB][1F EF D1 00][1F 61][1F ED][1F 15 D1 00 9A 00 FF][1F 15 E6 00 9C 00 FF][1F 21 BE][1F EF E6 00][1F 61][1F ED][1F 15 D1 00 98 00 FF][1F 21 BB][1F EF D1 00][1F 61][1F ED][1F 15 D1 00 A6 00 FF][1F 21 BA][1F EF D1 00][1F 61][1F ED]{set(flag 621)}[1F 21 DA][1F 17 6F 02 A7 00 01]{pause(100)}[1F 17 6D 02 A8 00 01][1F 61]{unset(flag 655)}" call(data_36.l_0xc7dd7d) "[1F 15 6A 00 A9 00 01]{pause(1)}[1F EF 6A 00][1F EC FF 01][1F 61][1F ED][1F E5 FF][1F F1 69 02 8D 00][1F 61][1F E6 67 02][1F E6 69 02][1F E6 6A 02]" call(data_26.l_0xc6cb97) "[1F F1 6A 02 8E 00][1F 61][1F E6 6A 02]" call(data_26.l_0xc6cc31) "[1F F1 6A 02 90 00][1F 61][1F F1 69 02 8F 00][1F 61][19 26 06]{unset(flag 621)}{unset(flag 748)}{unset(flag 48)}{unset(flag 773)}{set(flag 630)}{unset(flag 11)}[1F 41 06][1F E8 FF]" eob
+    */
+    call(data_24.l_0xc69082) "{set(flag 11)}[1F 41 05][1F EB 03 06][1F 15 03 00 0E 01 01][1F 61][1F E7 03 00][1F F3 03 00 03]{pause(60)}[1F F4 03 00]{window_open(1)}@[71][91]!{pause(20)}  [73][A0][A4] [93] [A9][97][9E] [A1][A2][A0][92][9D][96][9E][91], [9A] [C4][A4][A0] [9F][96] [A3][9D][9A][AA][9C][A0][9E] [A3][9D][A0][98][9F][A0] [A1][A0][A9][9A][9F][9A][A4][C3]." next
+    "@[81][A0][95][A0][98][95][9A][A4][96] [A3][96][9C][A5][9F][95][A5] [9A][9D][9A] [95][93][96]...[03]{window_closeall}{pause(30)}[1F EA 03 00][1F 61]{music(179)}[1F F1 E2 01 10 01][1F 61][1F E6 E2 01][1F 07 02]{pause(60)}{music_resume}{window_open(1)}@[73][A0][A4]!" next
+    "@[B4][A4][A0] [95][A0][9D][98][9F][A0] [A3][A2][91][92][A0][A4][91][A4][C3]!" next
+    "@[84][96][A1][96][A2][C3], [96][A3][9D][9A] " call(l_0xc91fba) " [93] [7F][96][92][96][A3][9F][C2][9B] [72][96][94][A5][9F],{pause(15)} [A0][9F] [95][A0][A3][A4][91][93][9A][A4] " call(l_0xc91fdb) next
+    "@[A0][92][A2][91][A4][9F][A0] [93] [85][9A][9F][A4][96][A2][A3]." next
+    "@[83] [A1][A0][9E][A0][C0][C3][C5] [75][A2]. [71][9F][95][A0][9F][91][A4][A3][91],{pause(15)} [C6] [A3][9E][A0][94][A5] [A1][96][A2][96][9F][91][A3][A4][A2][A0][9A][A4][C3] [9E][91][AA][9A][9F][A5] [95][9D][C6] [A1][A0][9D][97][A4][91] [93] [83][91][9E][9E][96][A2][A3]." next
+    "@...[76][A3][9D][9A] [80][A4][A8][91], [C6] [9A][9E][96][C5] [93] [93][9A][95][A5], [75][A2]. [71][9F][95][A0][9F][91][A4][A3][91]," next
+    "@[9F][96] [92][A5][95][96][A4] [9F][91] [9E][96][A3][A4][96], [9E][9F][96] [A1][A2][9A][95][97][A4][A3][C6] [93][C2][C6][A3][9F][9A][A4][C3] [C4][A4][A0] [A3][91][9E][A0][9E][A5]." next
+    "@[73] [9D][C5][92][A0][9E] [A3][9D][A5][A9][91][96], [9F][A5][98][9F][A0] [93][96][A2][9F][A5][A4][C3][A3][C6] [93] [9D][91][92][A0][A2][91][A4][A0][A2][9A][C5] [93] [85][9A][9F][A4][96][A2][A3][96]." next
+    "@...[73][A0][A4] [A0][9F][A0]...{pause(20)}" linebreak
+    "  [75][91][93][91][9B], [9E][91][AA][9A][9F][91],{pause(15)} [95][91][93][91][9B]![03]{window_closeall}[1F 15 6A 00 0F 01 01]{pause(1)}[1F EF 6A 00][1F E8 FF][1F 61][1F EB FF 06]{set(flag 655)}" call(data_36.l_0xc7dd7d) "[1F ED][1F E5 FF][1F E9 E2 01][1F 61]{pause(15)}[1F 1E E0 01 06]{pause(90)}[1F 15 D1 00 A2 00 FF][1F 15 E6 00 A5 00 FF][1F 21 C2][1F EF E6 00][1F E8 FF]{pause(1)}[1F 61][1F ED][1F 15 D1 00 96 00 FF][1F 21 BB][1F EF D1 00][1F 61][1F ED][1F 15 D1 00 9E 00 FF][1F 15 E6 00 A0 00 FF][1F 21 C0][1F EF E6 00][1F 61][1F ED][1F 15 D1 00 97 00 FF][1F 21 BB][1F EF D1 00][1F 61][1F ED][1F 15 D1 00 9A 00 FF][1F 15 E6 00 9C 00 FF][1F 21 BE][1F EF E6 00][1F 61][1F ED][1F 15 D1 00 98 00 FF][1F 21 BB][1F EF D1 00][1F 61][1F ED][1F 15 D1 00 A6 00 FF][1F 21 BA][1F EF D1 00][1F 61][1F ED]{set(flag 621)}[1F 21 DA][1F 17 6F 02 A7 00 01]{pause(100)}[1F 17 6D 02 A8 00 01][1F 61]{unset(flag 655)}" call(data_36.l_0xc7dd7d) "[1F 15 6A 00 A9 00 01]{pause(1)}[1F EF 6A 00][1F EC FF 01][1F 61][1F ED][1F E5 FF][1F F1 69 02 8D 00][1F 61][1F E6 67 02][1F E6 69 02][1F E6 6A 02]" call(data_26.l_0xc6cb97) "[1F F1 6A 02 8E 00][1F 61][1F E6 6A 02]" call(data_26.l_0xc6cc31) "[1F F1 6A 02 90 00][1F 61][1F F1 69 02 8F 00][1F 61][19 26 06]{unset(flag 621)}{unset(flag 748)}{unset(flag 48)}{unset(flag 773)}{set(flag 630)}{unset(flag 11)}[1F 41 06][1F E8 FF]" eob
 
 l_0xc91f9c:
-    "@(Only [1C 02 03] is able to fix the Sky Runner.)" end
+//  "@(Только [1C 02 03] может починить Небесного Бегуна.)" end
+    "@([84][A0][9D][C3][9C][A0] [1C 02 03] [9E][A0][98][96][A4] [A1][A0][A9][9A][9F][9A][A4][C3] [7F][96][92][96][A3][9F][A0][94][A0] [72][96][94][A5][9F][91].)" end
 
 l_0xc91fba:
-    "[19 10 02][1D 0D 00 01 02][1B 03 {e(l_0xc91fd9)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_0xc91fd9)}]we" eob
+//  "[19 10 02][1D 0D 00 01 02][1B 03 {e(l_0xc91fd9)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_0xc91fd9)}]мы сядем" eob
+    "[19 10 02][1D 0D 00 01 02][1B 03 {e(l_0xc91fd9)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_0xc91fd9)}][9E][C2] [A3][C6][95][96][9E]" eob
 
 l_0xc91fd9:
-    "I" eob
+//  "я сяду" eob
+    "[C6] [A3][C6][95][A5]" eob
 
 l_0xc91fdb:
-    "[19 10 02][1D 0D 00 01 02][1B 03 {e(l_0xc91ffa)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_0xc91ffa)}]us" eob
+//  "[19 10 02][1D 0D 00 01 02][1B 03 {e(l_0xc91ffa)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_0xc91ffa)}]нас" eob
+    "[19 10 02][1D 0D 00 01 02][1B 03 {e(l_0xc91ffa)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_0xc91ffa)}][9F][91][A3]" eob
 
 l_0xc91ffa:
-    "me" eob
+//  "меня" eob
+    "[9E][96][9F][C6]" eob
 
 l_0xc91ffd:
     "{set(flag 11)}[1F 41 05][1F 15 B9 01 09 03 01]" call(data_24.l_0xc69082) "[1F E9 6F 02][1F 61]{pause(30)}[1F 1E 6D 02 06][1F 61][1F 15 D1 00 92 00 FF][1F 21 BA][1F 61][1F ED][1F 15 D1 00 93 00 FF][1F 21 BC][1F EF D1 00][1F 61][1F ED][1F 15 D1 00 AA 00 FF][1F 15 E6 00 AB 00 FF][1F 21 C3][1F EF E6 00][1F 61]{unset(flag 655)}{set(flag 535)}{music_resume}[1F 61]{music(110)}[1F 61][1F EC FF 01][1F ED][1F 15 F1 00 AC 00 FF][1F 15 F1 00 AD 00 FF][1F 15 F1 00 AE 00 FF]{unset(flag 535)}[1F 21 4E][1F E8 FF]{pause(1)}[19 26 07]{set(flag 748)}{set(flag 215)}{unset(flag 11)}[1F 41 06][1F 15 B9 01 0A 03 01]" eob
@@ -142,14 +160,14 @@ l_0xc9268e:
     /*
     "{window_open(1)}@Ах, Принц [1C 02 04]..." next
     "@Без рук и ног, ты можешь только лежать здесь..." next
-    "@Теперь, я отрезу твои уши." next
+    "@Теперь, я отрежу твои уши." next
     "@Ты не возражаешь, если я лишу тебя слуха, не так ли?" next
     "@Ты принимаешь это?" linebreak
     "[19 02]Да" eob
     */
     "{window_open(1)}@[71][A7], [81][A2][9A][9F][A8] [1C 02 04]..." next
     "@[72][96][99] [A2][A5][9C] [9A] [9F][A0][94], [A4][C2] [9E][A0][98][96][AA][C3] [A4][A0][9D][C3][9C][A0] [9D][96][98][91][A4][C3] [99][95][96][A3][C3]..." next
-    "@[84][96][A1][96][A2][C3], [C6] [A0][A4][A2][96][99][A5] [A4][93][A0][9A] [A5][AA][9A]." next
+    "@[84][96][A1][96][A2][C3], [C6] [A0][A4][A2][96][98][A5] [A4][93][A0][9A] [A5][AA][9A]." next
     "@[84][C2] [9F][96] [93][A0][99][A2][91][98][91][96][AA][C3], [96][A3][9D][9A] [C6] [9D][9A][AA][A5] [A4][96][92][C6] [A3][9D][A5][A7][91], [9F][96] [A4][91][9C] [9D][9A]?" next
     "@[84][C2] [A1][A2][9A][9F][9A][9E][91][96][AA][C3] [C4][A4][A0]?" linebreak
     "[19 02][75][91]" eob

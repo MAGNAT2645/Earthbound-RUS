@@ -190,23 +190,42 @@ l_0xc7c973:
     "@but the record of adventure number {delta} has been lost..." end
 
 l_0xc7c9a8:
-    "[06 49 00 {e(l_0xc7ca3c)}][19 10 01]{swap}@Hello,{pause(15)} this is the Stoic Club." next
-    "@Oh,{pause(15)} [1C 02 00], {swap}" call(data_37.l_0xc7e6b3) "!{pause(20)}" linebreak
-    "  Would you like to make a reservation? " next
-    "@Certainly." next
-    "@We are looking forward to having you here.{pause(15)}  Thank you." next
-    "@Click!  Beep-beep-beep... {wait}{sound(11)}{set(flag 337)}" eob
+    /*
+    "[06 49 00 {e(l_0xc7ca3c)}][19 10 01]{swap}@Привет,{pause(15)} это Клуб Стоик." next
+    "@Оу,{pause(15)} [1C 02 00], {swap}" call(data_37.l_0xc7e6b3) "!{pause(20)}" linebreak
+    "  Вы бы хотели забронировать место? " next
+    "@Конечно." next
+    "@Мы с нетерпением ждём вас здесь.{pause(15)}  Спасибо." next
+    "@Щелчок!  Бип-бип-бип... {wait}{sound(11)}{set(flag 337)}" eob
+    */
+    "[06 49 00 {e(l_0xc7ca3c)}][19 10 01]{swap}@[81][A2][9A][93][96][A4],{pause(15)} [C4][A4][A0] [7C][9D][A5][92] [83][A4][A0][9A][9C]." next
+    "@[80][A5],{pause(15)} [1C 02 00], {swap}" call(data_37.l_0xc7e6b3) "!{pause(20)}" linebreak
+    "  [73][C2] [92][C2] [A7][A0][A4][96][9D][9A] [99][91][92][A2][A0][9F][9A][A2][A0][93][91][A4][C3] [9E][96][A3][A4][A0]? " next
+    "@[7C][A0][9F][96][A9][9F][A0]." next
+    "@[7E][C2] [A3] [9F][96][A4][96][A2][A1][96][9F][9A][96][9E] [98][95][97][9E] [93][91][A3] [99][95][96][A3][C3].{pause(15)}  [83][A1][91][A3][9A][92][A0]." next
+    "@[B0][96][9D][A9][A0][9C]!  [72][9A][A1]-[92][9A][A1]-[92][9A][A1]... {wait}{sound(11)}{set(flag 337)}" eob
 
 l_0xc7ca3c:
-    "@Yo, this is the <The Lazy Cowpoke Stop'n Go>" next
-    "@Yeah, we're a new truck stop... we just opened..." next
-    "@What's that?  The Stoic Club?!  That lame old place shut down ages ago!" next
-    "@We totally remodeled the place!" next
-    "@Now we've got loud music, great food, and really rowdy crowds..." next
-    "@Listen, buddy, I'm too busy to talk to you right now! " next
-    "@Just drop by anytime!" linebreak
-    "  You come, you enjoy...  I promise! " next
-    "@Click!  Beep-beep-beep...{wait}{sound(11)}" eob
+    /*
+    "@Йоу, это <Остановка и Отъезд Ленивого Ковбоя>" next
+    "@Да, мы - новая стоянка для грузовиков... мы только что открылись..." next
+    "@Что такое?  Клуб Стоик?!  Это отстойное старое место закрылось давным-давно!" next
+    "@Мы полностью перестроили это место!" next
+    "@Теперь у нас громкая музыка, отличная еда и действительно шумная толпа..." next
+    "@Слушай, приятель, я слишком занят, чтобы говорить с тобой прямо сейчас! " next
+    "@Просто заходи в любое время!" linebreak
+    "  Ты приходишь, ты наслаждаешься...  Обещаю! " next
+    "@Щелчок!  Бип-бип-бип...{wait}{sound(11)}" eob
+    */
+    "@[7B][A0][A5], [C4][A4][A0] <[80][A3][A4][91][9F][A0][93][9C][91] [9A] [80][A4][C1][96][99][95] [7D][96][9F][9A][93][A0][94][A0] [7C][A0][93][92][A0][C6]>" next
+    "@[75][91], [9E][C2] - [9F][A0][93][91][C6] [A3][A4][A0][C6][9F][9C][91] [95][9D][C6] [94][A2][A5][99][A0][93][9A][9C][A0][93]... [9E][C2] [A4][A0][9D][C3][9C][A0] [A9][A4][A0] [A0][A4][9C][A2][C2][9D][9A][A3][C3]..." next
+    "@[89][A4][A0] [A4][91][9C][A0][96]?  [7C][9D][A5][92] [83][A4][A0][9A][9C]?!  [B4][A4][A0] [A0][A4][A3][A4][A0][9B][9F][A0][96] [A3][A4][91][A2][A0][96] [9E][96][A3][A4][A0] [99][91][9C][A2][C2][9D][A0][A3][C3] [95][91][93][9F][C2][9E]-[95][91][93][9F][A0]!" next
+    "@[7E][C2] [A1][A0][9D][9F][A0][A3][A4][C3][C5] [A1][96][A2][96][A3][A4][A2][A0][9A][9D][9A] [C4][A4][A0] [9E][96][A3][A4][A0]!" next
+    "@[84][96][A1][96][A2][C3] [A5] [9F][91][A3] [94][A2][A0][9E][9C][91][C6] [9E][A5][99][C2][9C][91], [A0][A4][9D][9A][A9][9F][91][C6] [96][95][91] [9A] [95][96][9B][A3][A4][93][9A][A4][96][9D][C3][9F][A0] [AA][A5][9E][9F][91][C6] [A4][A0][9D][A1][91]..." next
+    "@[83][9D][A5][AA][91][9B], [A1][A2][9A][C6][A4][96][9D][C3], [C6] [A3][9D][9A][AA][9C][A0][9E] [99][91][9F][C6][A4], [A9][A4][A0][92][C2] [94][A0][93][A0][A2][9A][A4][C3] [A3] [A4][A0][92][A0][9B] [A1][A2][C6][9E][A0] [A3][96][9B][A9][91][A3]! " next
+    "@[81][A2][A0][A3][A4][A0] [99][91][A7][A0][95][9A] [93] [9D][C5][92][A0][96] [93][A2][96][9E][C6]!" linebreak
+    "  [84][C2] [A1][A2][9A][A7][A0][95][9A][AA][C3], [A4][C2] [9F][91][A3][9D][91][98][95][91][96][AA][C3][A3][C6]...  [80][92][96][C0][91][C5]! " next
+    "@[B0][96][9D][A9][A0][9C]!  [72][9A][A1]-[92][9A][A1]-[92][9A][A1]...{wait}{sound(11)}" eob
 
 l_0xc7cb5f:
     "[19 10 01]{rtoarg}{result_is(1)}[1B 02 {e(l_0xc7d1c1)}][06 49 00 {e(l_0xc7d226)}]{isset(flag 688)}[1B 02 {e(l_0xc7cc35)}][1D 0D 01 06 02][1B 03 {e(l_0xc7cdae)}][1D 0D 01 01 08][1B 03 {e(l_0xc7ccec)}][06 B1 02 {e(l_0xc7ce96)}][1D 21 07][09 07 {e(l_0xc7cbba)} {e(l_0xc7cbba)} {e(l_0xc7cf6c)} {e(l_0xc7cf6c)} {e(l_0xc7d05a)} {e(l_0xc7d05a)} {e(l_0xc7d102)}]" goto(l_0xc7cbba)
