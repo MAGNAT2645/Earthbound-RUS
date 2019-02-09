@@ -182,17 +182,24 @@ l_0xc775bf:
     "@'cause this country will disappear when you wake up.{wait}[1F E1 05 00 3C]" eob
 
 l_0xc775fd:
-    "[06 5D 00 {e(l_0xc77683)}]@Hey me!{pause(20)}  I found my cap that you lost." next
+//  "[06 5D 00 {e(l_0xc77683)}]@Эй, я!{pause(20)}  Я нашёл мою кепку, что ты потерял." next
+    "[06 5D 00 {e(l_0xc77683)}]@[B4][9B], [C6]!{pause(20)}  [B6] [9F][91][AA][97][9D] [9E][A0][C5] [9C][96][A1][9C][A5], [A9][A4][A0] [A4][C2] [A1][A0][A4][96][A2][C6][9D]." next
     "[1D 03 FF][1B 02 {e(l_0xc77639)}][1D 0E 00 4A]" call(data_36.l_0xc7dccf) "{wait}{set(flag 93)}[1F E1 1F 03 3C]" eob
 
 l_0xc77639:
+    /*
+    "@Я такой глупый!" next
+    "@В такое время в моём рюкзаке полно всякого хлама." next
+    "@Почему бы мне не избавиться от того, чем я не пользуюсь.{wait}[1F E1 05 00 3C]" eob
+    */
     newline
-    "@I'm so stupid!" next
-    "@There's lots of junk in my backpack at a time like this." next
-    "@Why don't I get rid of something I don't use.{wait}[1F E1 05 00 3C]" eob
+    "@[B6] [A4][91][9C][A0][9B] [94][9D][A5][A1][C2][9B]!" next
+    "@[73] [A4][91][9C][A0][96] [93][A2][96][9E][C6] [93] [9E][A0][97][9E] [A2][C5][9C][99][91][9C][96] [A1][A0][9D][9F][A0] [93][A3][C6][9C][A0][94][A0] [A7][9D][91][9E][91]." next
+    "@[81][A0][A9][96][9E][A5] [92][C2] [9E][9F][96] [9F][96] [9A][99][92][91][93][9A][A4][C3][A3][C6] [A0][A4] [A4][A0][94][A0], [A9][96][9E] [C6] [9F][96] [A1][A0][9D][C3][99][A5][C5][A3][C3].{wait}[1F E1 05 00 3C]" eob
 
 l_0xc77683:
-    "@Hey me!{wait}[1F E1 05 00 3C]" eob
+//  "@Эй, я!{wait}[1F E1 05 00 3C]" eob
+    "@[B4][9B], [C6]!{wait}[1F E1 05 00 3C]" eob
 
 l_0xc7768f:
     "@Chi chi chi chi chi" next
@@ -390,53 +397,85 @@ l_0xc78000:
     "{set(flag 11)}[1F 41 05][1F 15 B9 01 09 03 01][1F 15 6A 00 49 00 01]{pause(1)}[1F EF 6A 00][1F E8 FF][1F 61][1F F2 CD 00 42 00][1F EB FF 06]{set(flag 534)}{music_resume}[1F EF CD 00]" eob
 
 l_0xc78033:
-    "[1F 15 52 00 C5 01 01] {window_open(1)}[06 47 00 {e(l_0xc78166)}][1D 15 02 00]{swap}@Yep, this is the bus to Threed," next
-    "@but, ...I'm not sure if we can get there or not.{pause(15)}  The fare is $[1C 0A 00 00 00 00]." next
-    "@...do you want to go?" linebreak
-    "[19 02]Yes" eob
+    /*
+    "[1F 15 52 00 C5 01 01] {window_open(1)}[06 47 00 {e(l_0xc78166)}][1D 15 02 00]{swap}@Ага, это автобус до Трида," next
+    "@но, ...я не уверен, сможем мы туда добраться или нет.{pause(15)}  Проезд стоит $[1C 0A 00 00 00 00]." next
+    "@...хотите поехать?" linebreak
+    "[19 02]Да" eob
+    */
+    "[1F 15 52 00 C5 01 01] {window_open(1)}[06 47 00 {e(l_0xc78166)}][1D 15 02 00]{swap}@[71][94][91], [C4][A4][A0] [91][93][A4][A0][92][A5][A3] [95][A0] [84][A2][9A][95][91]," next
+    "@[9F][A0], ...[C6] [9F][96] [A5][93][96][A2][96][9F], [A3][9E][A0][98][96][9E] [9E][C2] [A4][A5][95][91] [95][A0][92][A2][91][A4][C3][A3][C6] [9A][9D][9A] [9F][96][A4].{pause(15)}  [81][A2][A0][96][99][95] [A3][A4][A0][9A][A4] $[1C 0A 00 00 00 00]." next
+    "@...[A7][A0][A4][9A][A4][96] [A1][A0][96][A7][91][A4][C3]?" linebreak
+    "[19 02][75][91]" eob
 
 l_0xc7809c:
-    "[19 02]No" eob
+//  "[19 02]Нет" eob
+    "[19 02][7F][96][A4]" eob
 
 l_0xc780a1:
     "[1C 07 02]{open_wallet}[11]{clearline}[09 02 {e(l_0xc780f7)} {e(l_0xc780b2)}]" goto(l_0xc780b2)
 
 l_0xc780b2:
-    "@...Yep, I personally think it's better if you don't go." next
-    "@...I'm also not real confident about getting there.{wait}{window_closeall}[1F 1F 52 00 06]" eob
+    /*
+    "@...Ага, я считаю, что вам лучше остаться." next
+    "@...Я также не очень уверен, что вообще доберусь туда.{wait}{window_closeall}[1F 1F 52 00 06]" eob
+    */
+    "@...[71][94][91], [C6] [A3][A9][9A][A4][91][C5], [A9][A4][A0] [93][91][9E] [9D][A5][A9][AA][96] [A0][A3][A4][91][A4][C3][A3][C6]." next
+    "@...[B6] [A4][91][9C][98][96] [9F][96] [A0][A9][96][9F][C3] [A5][93][96][A2][96][9F], [A9][A4][A0] [93][A0][A0][92][C0][96] [95][A0][92][96][A2][A5][A3][C3] [A4][A5][95][91].{wait}{window_closeall}[1F 1F 52 00 06]" eob
 
 l_0xc780f7:
-    "[1D 14 00 00 00 00][1B 03 {e(l_0xc7814b)}]{sound(118)}{pause(1)}[1D 09 00 00]{open_wallet}@Okay.{pause(20)}  Let's give it a shot." next
-    "@...I have a feeling this could get ugly, though.[03]{window_closeall}[1F 1F 52 00 06]" goto(l_0xc78000)
+    /*
+    "[1D 14 00 00 00 00][1B 03 {e(l_0xc7814b)}]{sound(118)}{pause(1)}[1D 09 00 00]{open_wallet}@Хорошо.{pause(20)}  Давайте попробуем." next
+    "@...Но у меня такое чувство, что это ужасная идея.[03]{window_closeall}[1F 1F 52 00 06]" goto(l_0xc78000)
+    */
+    "[1D 14 00 00 00 00][1B 03 {e(l_0xc7814b)}]{sound(118)}{pause(1)}[1D 09 00 00]{open_wallet}@[87][A0][A2][A0][AA][A0].{pause(20)}  [75][91][93][91][9B][A4][96] [A1][A0][A1][A2][A0][92][A5][96][9E]." next
+    "@...[7F][A0] [A5] [9E][96][9F][C6] [A4][91][9C][A0][96] [A9][A5][93][A3][A4][93][A0], [A9][A4][A0] [C4][A4][A0] [A5][98][91][A3][9F][91][C6] [9A][95][96][C6].[03]{window_closeall}[1F 1F 52 00 06]" goto(l_0xc78000)
 
 l_0xc7814b:
-    "@...I can't let you on if you don't pay.{wait}{window_closeall}[1F 1F 52 00 06]" eob
+//  "@...Я не могу впустить вас, если вы не хотите платить.{wait}{window_closeall}[1F 1F 52 00 06]" eob
+    "@...[B6] [9F][96] [9E][A0][94][A5] [93][A1][A5][A3][A4][9A][A4][C3] [93][91][A3], [96][A3][9D][9A] [93][C2] [9F][96] [A7][A0][A4][9A][A4][96] [A1][9D][91][A4][9A][A4][C3].{wait}{window_closeall}[1F 1F 52 00 06]" eob
 
 l_0xc78166:
-    "[1D 15 02 00]{swap}@...This bus goes to Fourside via Threed." next
-    "@If you don't pay $[1C 0A 00 00 00 00] for the fare, I can't take you there." next
-    "@...Do you want to go?" linebreak
-    "[19 02]Yes" eob
+    /*
+    "[1D 15 02 00]{swap}@...Этот автобус едет до Фоурсайда через Трид." next
+    "@Если вы не заплатите $[1C 0A 00 00 00 00] за проезд, я не смогу забрать вас отсюда." next
+    "@...Хотите поехать с нами?" linebreak
+    "[19 02]Да" eob
+    */
+    "[1D 15 02 00]{swap}@...[B4][A4][A0][A4] [91][93][A4][A0][92][A5][A3] [96][95][96][A4] [95][A0] [86][A0][A5][A2][A3][91][9B][95][91] [A9][96][A2][96][99] [84][A2][9A][95]." next
+    "@[76][A3][9D][9A] [93][C2] [9F][96] [99][91][A1][9D][91][A4][9A][A4][96] $[1C 0A 00 00 00 00] [99][91] [A1][A2][A0][96][99][95], [C6] [9F][96] [A3][9E][A0][94][A5] [99][91][92][A2][91][A4][C3] [93][91][A3] [A0][A4][A3][C5][95][91]." next
+    "@...[87][A0][A4][9A][A4][96] [A1][A0][96][A7][91][A4][C3] [A3] [9F][91][9E][9A]?" linebreak
+    "[19 02][75][91]" eob
 
 l_0xc781b7:
-    " [19 02]No" eob
+//  " [19 02]Нет" eob
+    " [19 02][7F][96][A4]" eob
 
 l_0xc781bd:
     "[1C 07 02]{open_wallet}[11]{clearline}[09 02 {e(l_0xc78208)} {e(l_0xc781ce)}]" goto(l_0xc781ce)
 
 l_0xc781ce:
-    "@...If you don't have any money,{pause(15)} you should stroll around." next
-    "@Besides, walking is good for you...{wait}{window_closeall}[1F 1F 52 00 06]" eob
+    /*
+    "@...Если у вас нет денег,{pause(15)} вам стоит прогуляться." next
+    "@К тому же,{pause(15)} ходьба полезна для вас...{wait}{window_closeall}[1F 1F 52 00 06]" eob
+    */
+    "@...[76][A3][9D][9A] [A5] [93][91][A3] [9F][96][A4] [95][96][9F][96][94],{pause(15)} [93][91][9E] [A3][A4][A0][9A][A4] [A1][A2][A0][94][A5][9D][C6][A4][C3][A3][C6]." next
+    "@[7C] [A4][A0][9E][A5] [98][96],{pause(15)} [A7][A0][95][C3][92][91] [A1][A0][9D][96][99][9F][91] [95][9D][C6] [93][91][A3]...{wait}{window_closeall}[1F 1F 52 00 06]" eob
 
 l_0xc78208:
-    "[1D 14 00 00 00 00][1B 03 {e(l_0xc78240)}]{sound(118)}[1D 09 00 00]{open_wallet}@...Well,{pause(15)} hop aboard then!{wait}{window_closeall}[1F 1F 52 00 06]" goto(l_0xc78000)
+//  "[1D 14 00 00 00 00][1B 03 {e(l_0xc78240)}]{sound(118)}[1D 09 00 00]{open_wallet}@...Что ж,{pause(15)} тогда залезайте!{wait}{window_closeall}[1F 1F 52 00 06]" goto(l_0xc78000)
+    "[1D 14 00 00 00 00][1B 03 {e(l_0xc78240)}]{sound(118)}[1D 09 00 00]{open_wallet}@...[89][A4][A0] [98],{pause(15)} [A4][A0][94][95][91] [99][91][9D][96][99][91][9B][A4][96]!{wait}{window_closeall}[1F 1F 52 00 06]" goto(l_0xc78000)
 
 l_0xc7823f:
     eob
 
 l_0xc78240:
-    "@...If you don't have any money,{pause(15)} you should stroll around." next
-    "@Besides,{pause(15)} walking is good for you...{wait}{window_closeall}[1F 1F 52 00 06]" eob
+    /*
+    "@...Если у вас нет денег,{pause(15)} вам стоит прогуляться." next
+    "@К тому же,{pause(15)} ходьба полезна для вас...{wait}{window_closeall}[1F 1F 52 00 06]" eob
+    */
+    "@...[76][A3][9D][9A] [A5] [93][91][A3] [9F][96][A4] [95][96][9F][96][94],{pause(15)} [93][91][9E] [A3][A4][A0][9A][A4] [A1][A2][A0][94][A5][9D][C6][A4][C3][A3][C6]." next
+    "@[7C] [A4][A0][9E][A5] [98][96],{pause(15)} [A7][A0][95][C3][92][91] [A1][A0][9D][96][99][9F][91] [95][9D][C6] [93][91][A3]...{wait}{window_closeall}[1F 1F 52 00 06]" eob
 
 l_0xc7827c:
     "{set(flag 313)}[1F ED][1F 15 CD 00 43 00 FF][1F 21 3C][1F EF CD 00]" eob
@@ -448,12 +487,18 @@ l_0xc782a9:
     "[1F ED][1F 15 CD 00 46 00 FF][1F 21 3F][1F EF CD 00]{unset(flag 313)}" eob
 
 l_0xc782bd:
-    "[1F 15 52 00 C6 01 01] {window_open(1)}@...This bus continues on to Fourside." next
-    "@Do you want to get off here?" linebreak
-    "[19 02]Yes" eob
+    /*
+    "[1F 15 52 00 C6 01 01] {window_open(1)}@...Этот автобус едет дальше, до Фоурсайда." next
+    "@Хотите выйти здесь?" linebreak
+    "[19 02]Да" eob
+    */
+    "[1F 15 52 00 C6 01 01] {window_open(1)}@...[B4][A4][A0][A4] [91][93][A4][A0][92][A5][A3] [96][95][96][A4] [95][91][9D][C3][AA][96], [95][A0] [86][A0][A5][A2][A3][91][9B][95][91]." next
+    "@[87][A0][A4][9A][A4][96] [93][C2][9B][A4][9A] [99][95][96][A3][C3]?" linebreak
+    "[19 02][75][91]" eob
 
 l_0xc782f1:
-    " [19 02]No" eob
+//  " [19 02]Нет" eob
+    " [19 02][7F][96][A4]" eob
 
 l_0xc782f7:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xc78323)} {e(l_0xc78306)}]" goto(l_0xc78306)
@@ -468,10 +513,18 @@ l_0xc78360:
     "[1F 15 6A 00 48 00 01]{pause(1)}[1F EF 6A 00][1F EC FF 01][1F E8 FF][1F 61]{unset(flag 534)}{music_resume}[1F ED][1F E5 FF][1F EA CD 00][1F 61]{unset(flag 11)}[1F 41 06][1F 15 B9 01 0A 03 01]" eob
 
 l_0xc78394:
-    "{window_open(1)}@(For some reason,{pause(15)} the bus returned to Twoson.)[03]{window_closeall}{pause(30)}" newline
-    "[1F 15 52 00 C5 01 01] {window_open(1)}@...Yep!{pause(20)}  Just like I thought..." next
-    "@...Okay,{pause(15)} I'm starting to get the creeps..." next
-    "@We're going back to the bus station." next
-    "@Do you want to get off here?" linebreak
-    "[19 02]Yes" eob
+    /*
+    "{window_open(1)}@(По какой-то причине,{pause(15)} автобус вернулся в Тусон.)[03]{window_closeall}{pause(30)}" newline
+    "[1F 15 52 00 C5 01 01] {window_open(1)}@...Ага!{pause(20)}  как я и думал..." next
+    "@...Хорошо,{pause(15)} у меня пошли мурашки по коже..." next
+    "@Мы возвращаемся на автобусную станцию." next
+    "@Хотите выйти здесь?" linebreak
+    "[19 02]Да" eob
+    */
+    "{window_open(1)}@([81][A0] [9C][91][9C][A0][9B]-[A4][A0] [A1][A2][9A][A9][9A][9F][96],{pause(15)} [91][93][A4][A0][92][A5][A3] [93][96][A2][9F][A5][9D][A3][C6] [93] [84][A5][A3][A0][9F].)[03]{window_closeall}{pause(30)}" newline
+    "[1F 15 52 00 C5 01 01] {window_open(1)}@...[71][94][91]!{pause(20)}  [9C][91][9C] [C6] [9A] [95][A5][9E][91][9D]..." next
+    "@...[87][A0][A2][A0][AA][A0],{pause(15)} [A5] [9E][96][9F][C6] [A1][A0][AA][9D][9A] [9E][A5][A2][91][AA][9C][9A] [A1][A0] [9C][A0][98][96]..." next
+    "@[7E][C2] [93][A0][99][93][A2][91][C0][91][96][9E][A3][C6] [9F][91] [91][93][A4][A0][92][A5][A3][9F][A5][C5] [A3][A4][91][9F][A8][9A][C5]." next
+    "@[87][A0][A4][9A][A4][96] [93][C2][9B][A4][9A] [99][95][96][A3][C3]?" linebreak
+    "[19 02][75][91]" eob
 

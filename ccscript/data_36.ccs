@@ -266,58 +266,59 @@ l_0xc7de60:
 l_0xc7de72:
     "[06 0B 03 {e(data_55.l_0xc9992f)}]{unset(flag 754)}" eob
 
-/*l_0xc7de7d:
-    call(l_0xc7de11) call(data_24.l_0xc69082) "{window_open(1)}" call(l_0xc7dfa4) "@[1C 02 00]!" next
-    "@It looks like you got your head handed to you." next
-    "@So, how about giving it another shot?" linebreak
-    "[19 02]Yes" eob*/
 l_0xc7de7d:
+    /*
+    "@Похоже, тебе задали крепкую взбучку." next
+    "@Почему бы не попробовать ещё раз?" linebreak
+    "[19 02]Да" eob
+    */
     call(l_0xc7de11) call(data_24.l_0xc69082) "{window_open(1)}" call(l_0xc7dfa4) "@[1C 02 00]!" next
     "@[81][A0][A7][A0][98][96], [A4][96][92][96] [99][91][95][91][9D][9A] [9C][A2][96][A1][9C][A5][C5] [93][99][92][A5][A9][9C][A5]." next
     "@[81][A0][A9][96][9E][A5] [92][C2] [9F][96] [A1][A0][A1][A2][A0][92][A0][93][91][A4][C3] [96][C0][97] [A2][91][99]?" linebreak
     "[19 02][75][91]" eob
 
-/*l_0xc7deca:
-    "  [19 02]No" eob*/
 l_0xc7deca:
+//  "  [19 02]Нет" eob
     "  [19 02][7F][96][A4]" eob
 
 l_0xc7ded1:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xc7df3c)} {e(l_0xc7dee0)}]" goto(l_0xc7dee0)
 
-/*l_0xc7dee0:
-    "@Are you sure?" next
-    "@The next time you start your adventure," next
-    "@you'll begin where you last saved." next
-    "@Is that okay?" linebreak
-    "[19 02]No" eob*/
 l_0xc7dee0:
+    /*
+    "@Ты уверен?" next
+    "@Когда ты снова вернёшься к своему приключению," next
+    "@ты начнёшь с последнего сохранения." next
+    "@Ты с этим согласен?" linebreak
+    "[19 02]Нет" eob
+    */
     "@[84][C2] [A5][93][96][A2][96][9F]?" next
     "@[7C][A0][94][95][91] [A4][C2] [A3][9F][A0][93][91] [93][96][A2][9F][97][AA][C3][A3][C6] [9C] [A3][93][A0][96][9E][A5] [A1][A2][9A][9C][9D][C5][A9][96][9F][9A][C5]," next
     "@[A4][C2] [9F][91][A9][9F][97][AA][C3] [A3] [A1][A0][A3][9D][96][95][9F][96][94][A0] [A3][A0][A7][A2][91][9F][96][9F][9A][C6]." next
     "@[84][C2] [A3] [C4][A4][9A][9E] [A3][A0][94][9D][91][A3][96][9F]?" linebreak
     "[19 02][7F][96][A4]" eob
 
-/*l_0xc7df25:
-    "  [19 02]Yes" eob*/
 l_0xc7df25:
+//  "  [19 02]Да" eob
     "  [19 02][75][91]" eob
 
 l_0xc7df2d:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xc7df3c)} {e(l_0xc7df78)}]" goto(l_0xc7df3c)
 
-/*l_0xc7df3c:
-    "@[1C 02 00] decided to return after summoning all the courage and energy he had." next
-    "@Good luck!{wait}{window_closeall}{set(flag 475)}" eob*/
 l_0xc7df3c:
+    /*
+    "@[1C 02 00] решил вернуться с новыми силами." next
+    "@Удачи!{wait}{window_closeall}{set(flag 475)}" eob
+    */
     "@[1C 02 00] [A2][96][AA][9A][9D] [93][96][A2][9F][A5][A4][C3][A3][C6] [A3] [9F][A0][93][C2][9E][9A] [A3][9A][9D][91][9E][9A]." next
     "@[85][95][91][A9][9A]!{wait}{window_closeall}{set(flag 475)}" eob
 
-/*l_0xc7df78:
-    "@It must have all just been a bad dream." next
-    "@See you, [1C 02 00]!{wait}{window_closeall}{unset(flag 475)}" eob*/
 l_0xc7df78:
-    "@[73][9A][95][9A][9E][A0], [93][A3][97] [C4][A4][A0] [92][C2][9D][A0] [9F][A0][A9][9F][9A][9E] [9C][A0][AA][9E][91][A2][A0][9E]." next
+    /*
+    "@Видимо, всё это было ночным кошмаром." next
+    "@Увидимся, [1C 02 00]!{wait}{window_closeall}{unset(flag 475)}" eob
+    */
+    "@[73][9A][95][9A][9E][A0], [93][A3][97] [C4][A4][A0] [92][C2][9D][A0] [9F][A0][A9][9F][C2][9E] [9C][A0][AA][9E][91][A2][A0][9E]." next
     "@[85][93][9A][95][9A][9E][A3][C6], [1C 02 00]!{wait}{window_closeall}{unset(flag 475)}" eob
 
 l_0xc7dfa4:
@@ -391,138 +392,143 @@ l_0xc7dfbe:
 l_0xc7e3f9:
     eob
 
-/*l_0xc7e3fa:
-    "[19 19 00 00]{swap}@[1C 02 00] rearranged {swap}" call(data_37.l_0xc7e660) "{swap} own items and the {swap}[1C 05 00] moved." end
-*/
-"[19 19 00 00]{swap}@[1C 02 00] привел{swap}{call(data_gender.l_gendersuffix)} свои вещи в порядок и поместил{call(data_gender.l_gendersuffix)}{swap} {swap}[1C 05 00] в конец." end
 l_0xc7e3fa:
-    "[19 19 00 00]{swap}@[1C 02 00] [A1][A2][9A][93][96][9D]{swap}{call(data_gender.l_gendersuffix)} [A3][93][A0][9A] [93][96][C0][9A] [93] [A1][A0][A2][C6][95][A0][9C] [9A] [A1][A0][9E][96][A3][A4][9A][9D]{call(data_gender.l_gendersuffix)}{swap} {swap}[1C 05 00] [93] [9C][A0][9F][96][A8]." end
+//  "[19 19 00 00]{swap}@[1C 02 00] прив{swap}{call(data_gender.l_gender_rearrange)} свои вещи в порядок и поместил{call(data_gender.l_gendersuffix)}{swap} {swap}[1C 05 00] в конец." end
+    "[19 19 00 00]{swap}@[1C 02 00] [A1][A2][9A][93]{swap}{call(data_gender.l_gender_rearrange)} [A3][93][A0][9A] [93][96][C0][9A] [93] [A1][A0][A2][C6][95][A0][9C] [9A] [A1][A0][9E][96][A3][A4][9A][9D]{call(data_gender.l_gendersuffix)}{swap} {swap}[1C 05 00] [93] [9C][A0][9F][96][A8]." end
 
-/*l_0xc7e42c:
-    "[19 19 00 00]{swap}@[1C 02 00] tried to give" linebreak
-    "  the {swap}[1C 05 00]" linebreak
-    "  to [1C 02 FF]," next
-    "{load_registers}@but " call(l_0xc7e5f3) " was already carrying too much stuff." end*/
 l_0xc7e42c:
-    "[19 19 00 00]{swap}@[1C 02 00] [A1][A0][A1][C2][A4][91][9D]{call(data_gender.l_gendersuffix2)} [A1][96][A2][96][95][91][A4][C3]" linebreak
-    "  [1C 02 FF]" linebreak
-    "  {swap}[1C 05 00]," next
-    "{load_registers}@[9F][A0] [A5] {call(data_gender.l_gender3)} [A3][9D][9A][AA][9C][A0][9E] [9E][9F][A0][94][A0] [93][96][C0][96][9B]." end
+    /*
+    "[19 19 00 00]{swap}@[1C 02 00] попытал[19 10 01]{call(data_gender.l_gendersuffix2)} передать" linebreak
+    "  {swap}[1C 05 00]" linebreak
+    "  персонажу [1C 02 FF]," next
+    "{load_registers}@но у [19 10 01]{call(data_gender.l_gender3)} слишком много вещей." end
+    */
+    "[19 19 00 00]{swap}@[1C 02 00] [A1][A0][A1][C2][A4][91][9D][19 10 01]{call(data_gender.l_gendersuffix2)} [A1][96][A2][96][95][91][A4][C3]" linebreak
+    "  {swap}[1C 05 00]" linebreak
+    "  [A1][96][A2][A3][A0][9F][91][98][A5] [1C 02 FF]," next
+    "{load_registers}@[9F][A0] [A5] [19 10 01]{call(data_gender.l_gender3)} [A3][9D][9A][AA][9C][A0][9E] [9E][9F][A0][94][A0] [93][96][C0][96][9B]." end
 
-/*l_0xc7e468:
-    "[19 19 00 00]{swap}@[1C 02 00] tried to add" linebreak
-    "  the {swap}[1C 05 00]" linebreak
-    "  to [1C 02 FF]'s stuff," next
-    "@but there was no room for it." end*/
 l_0xc7e468:
-    "[19 19 00 00]{swap}@[1C 02 00] [A1][A0][A1][C2][A4][91][9D]{call(data_gender.l_gendersuffix2)} [A1][A0][9D][A0][98][9A][A4][C3]" linebreak
+    /*
+    "[19 19 00 00]{swap}@[1C 02 00] попытал[19 10 01]{call(data_gender.l_gendersuffix2)} положить" linebreak
     "  {swap}[1C 05 00]" linebreak
-    "  [93] [A2][C5][9C][99][91][9C] [1C 02 FF]," next
-    "@[9F][A0] [93] [9F][97][9E] [9F][96] [92][C2][9D][A0] [9E][96][A3][A4][91]." end
+    "  в рюкзак персонажа [1C 02 FF]," next
+    "@но там нет свободного места." end
+    */
+    "[19 19 00 00]{swap}@[1C 02 00] [A1][A0][A1][C2][A4][91][9D][19 10 01]{call(data_gender.l_gendersuffix2)} [A1][A0][9D][A0][98][9A][A4][C3]" linebreak
+    "  {swap}[1C 05 00]" linebreak
+    "  [93] [A2][C5][9C][99][91][9C] [A1][96][A2][A3][A0][9F][91][98][91] [1C 02 FF]," next
+    "@[9F][A0] [A4][91][9E] [9F][96][A4] [A3][93][A0][92][A0][95][9F][A0][94][A0] [9E][96][A3][A4][91]." end
 
-/*l_0xc7e4a4:
-    "[19 19 00 00]{swap}@[1C 02 00] gave the {swap}[1C 05 00]" linebreak
-    "  to [1C 02 FF]." end*/
 l_0xc7e4a4:
-    "[19 19 00 00]{swap}@[1C 02 00] [A1][96][A2][96][95][91][9D]{call(data_gender.l_gendersuffix)} {swap}[1C 05 00]" linebreak
-    "  [1C 02 FF]." end
+    /*
+    "[19 19 00 00]{swap}@[1C 02 00] передал[19 10 01]{call(data_gender.l_gendersuffix)} {swap}[1C 05 00]" linebreak
+    "  персонажу [1C 02 FF]." end
+    */
+    "[19 19 00 00]{swap}@[1C 02 00] [A1][96][A2][96][95][91][9D][19 10 01]{call(data_gender.l_gendersuffix)} {swap}[1C 05 00]" linebreak
+    "  [A1][96][A2][A3][A0][9F][91][98][A5] [1C 02 FF]." end
 
-/*l_0xc7e4c3:
-    "[19 19 00 00]{swap}@[1C 02 00] added" linebreak
-    "  the {swap}[1C 05 00]" linebreak
-    "  to [1C 02 FF]'s stuff." end*/
 l_0xc7e4c3:
-    "[19 19 00 00]{swap}@[1C 02 00] [A1][A0][9D][A0][98][9A][9D]{call(data_gender.l_gendersuffix)}" linebreak
+    /*
+    "[19 19 00 00]{swap}@[1C 02 00] положил[19 10 01]{call(data_gender.l_gendersuffix)}" linebreak
     "  {swap}[1C 05 00]" linebreak
-    "  [93] [A2][C5][9C][99][91][9C] [1C 02 FF]." end
+    "  к вещам персонажа [1C 02 FF]." end
+    */
+    "[19 19 00 00]{swap}@[1C 02 00] [A1][A0][9D][A0][98][9A][9D][19 10 01]{call(data_gender.l_gendersuffix)}" linebreak
+    "  {swap}[1C 05 00]" linebreak
+    "  [9C] [93][96][C0][91][9E] [A1][96][A2][A3][A0][9F][91][98][91] [1C 02 FF]." end
 
 /*l_0xc7e4e9:
     "[19 19 00 00]{swap}{store_registers}[19 10 01]{swap}@[1C 02 00]{load_registers} rearranged [1C 02 00]'s items and the {swap}[1C 05 00] moved." end*/
 l_0xc7e4e9:
     "[19 19 00 00]{swap}{store_registers}[19 10 01]{swap}@[1C 02 00]{load_registers} [A1][A2][9A][93][96][9D]{call(data_gender.l_gendersuffix)} [93][96][C0][9A] [1C 02 00] [93] [A1][A0][A2][C6][95][A0][9C] [9A] [A1][A0][9E][96][A3][A4][9A][9D]{call(data_gender.l_gendersuffix)} {swap}[1C 05 00] [93] [9C][A0][9F][96][A8]." end
 
-/*l_0xc7e51c:
-    "[19 19 00 00]@[1C 02 FF] tried to take" linebreak
-    "  the [1C 05 00]" linebreak
-    "  from {swap}[1C 02 00]'s stuff," next
-    "{load_registers}@but " call(l_0xc7e5f3) " was already carrying too much stuff." end*/
-
 l_0xc7e51c:
-    "[19 19 00 00]@[1C 02 FF] [A1][A0][A1][C2][A4][91][9D]{call(data_gender.l_gendersuffix2)} [93][99][C6][A4][C3]" linebreak
+    /*
+    "[19 19 00 00]@[1C 02 FF] попытал[19 10 01]{call(data_gender.l_gendersuffix2)} взять" linebreak
     "  [1C 05 00]" linebreak
-    "  [9A][99] [A2][C5][9C][99][91][9C][91] {swap}[1C 02 00]," next
+    "  из рюкзака персонажа {swap}[1C 02 00]," next
+    "{load_registers}@но у {call(data_gender.l_gender3)} слишком много вещей." end
+    */
+    "[19 19 00 00]@[1C 02 FF] [A1][A0][A1][C2][A4][91][9D][19 10 01]{call(data_gender.l_gendersuffix2)} [93][99][C6][A4][C3]" linebreak
+    "  [1C 05 00]" linebreak
+    "  [9A][99] [A2][C5][9C][99][91][9C][91] [A1][96][A2][A3][A0][9F][91][98][91] {swap}[1C 02 00]," next
     "{load_registers}@[9F][A0] [A5] {call(data_gender.l_gender3)} [A3][9D][9A][AA][9C][A0][9E] [9E][9F][A0][94][A0] [93][96][C0][96][9B]." end
 
-/*l_0xc7e559:
-    "[19 19 00 00]{swap}[1B 05][19 10 01]{swap}@[1C 02 00][1B 06] tried to add [1C 02 00]'s {swap}[1C 05 00]" linebreak
-    "  to [1C 02 FF]'s stuff," next
-    "@but there was no room for it." end*/
 l_0xc7e559:
-    "[19 19 00 00]{swap}[1B 05][19 10 01]{swap}@[1C 02 00][1B 06] [A1][A0][A1][C2][A4][91][9D]{call(data_gender.l_gendersuffix2)} [A1][A0][9D][A0][98][9A][A4][C3] [A3][93][A0][C5] {swap}[1C 05 00]" linebreak
-    "  [93] [A2][C5][9C][99][91][9C] [1C 02 FF]," next
-    "@[9F][A0] [93] [9F][97][9E] [9F][96] [92][C2][9D][A0] [9E][96][A3][A4][91]." end
+    /*
+    "[19 19 00 00]{swap}[1B 05][19 10 01]{swap}@[1C 02 00][1B 06] попытал{call(data_gender.l_gendersuffix2)} положить {swap}[1C 05 00] из своих вещей" linebreak
+    "  в рюкзак персонажа [1C 02 FF]," next
+    "@но там нет свободного места." end
+    */
+    "[19 19 00 00]{swap}[1B 05][19 10 01]{swap}@[1C 02 00][1B 06] [A1][A0][A1][C2][A4][91][9D]{call(data_gender.l_gendersuffix2)} [A1][A0][9D][A0][98][9A][A4][C3] {swap}[1C 05 00] [9A][99] [A3][93][A0][9A][A7] [93][96][C0][96][9B]" linebreak
+    "  [93] [A2][C5][9C][99][91][9C] [A1][96][A2][A3][A0][9F][91][98][91] [1C 02 FF]," next
+    "@[9F][A0] [A4][91][9E] [9F][96][A4] [A3][93][A0][92][A0][95][9F][A0][94][A0] [9E][96][A3][A4][91]." end
 
 l_0xc7e5a1:
-    /* "[19 19 00 00]@[1C 02 FF] взял{call(data_gender.l_gendersuffix)}" linebreak */
-    /* "  [1C 05 00]" linebreak */
-    /* "  из рюкзака персонажа {swap}[1C 02 00]." end */
-    "[19 19 00 00]@[1C 02 FF] [93][99][C6][9D]{call(data_gender.l_gendersuffix)}" linebreak
+    /*
+    "[19 19 00 00]@[1C 02 FF] взял[19 10 01]{call(data_gender.l_gendersuffix)}" linebreak
+    "  [1C 05 00]" linebreak
+    "  из рюкзака персонажа {swap}[1C 02 00]." end
+    */
+    "[19 19 00 00]@[1C 02 FF] [93][99][C6][9D][19 10 01]{call(data_gender.l_gendersuffix)}" linebreak
     "  [1C 05 00]" linebreak
     "  [9A][99] [A2][C5][9C][99][91][9C][91] [A1][96][A2][A3][A0][9F][91][98][91] {swap}[1C 02 00]." end
 
-/*l_0xc7e5c2:
-    "[19 19 00 00]{swap}[1B 05][19 10 01]{swap}@[1C 02 00][1B 06] added [1C 02 00]'s {swap}[1C 05 00]" linebreak
-    "  to [1C 02 FF]'s stuff." end*/
 l_0xc7e5c2:
-    "[19 19 00 00]{swap}[1B 05][19 10 01]{swap}@[1C 02 00][1B 06] [A1][A0][9D][A0][98][9A][9D]{call(data_gender.l_gendersuffix)} [A3][93][A0][C5] {swap}[1C 05 00]" linebreak
-    "  [93] [A2][C5][9C][99][91][9C] [1C 02 FF]." end
+    /*
+    "[19 19 00 00]{swap}[1B 05][19 10 01]{swap}@[1C 02 00][1B 06] положил{call(data_gender.l_gendersuffix)} {swap}[1C 05 00] из своих вещей" linebreak
+    "  в рюкзак персонажа [1C 02 FF]." end
+    */
+    "[19 19 00 00]{swap}[1B 05][19 10 01]{swap}@[1C 02 00][1B 06] [A1][A0][9D][A0][98][9A][9D]{call(data_gender.l_gendersuffix)} {swap}[1C 05 00] [9A][99] [A3][93][A0][9A][A7] [93][96][C0][96][9B]" linebreak
+    "  [93] [A2][C5][9C][99][91][9C] [A1][96][A2][A3][A0][9F][91][98][91] [1C 02 FF]." end
 
 //
 //Unused gender stuff - seperate file exists for easier management\\
 //
 
 l_0xc7e5f3:
-    /* "{result_is(2)}[1B 03 {e(l_0xc7e5fe)}]он" eob */
+//  "{result_is(2)}[1B 03 {e(l_0xc7e5fe)}]он" eob
     "{result_is(2)}[1B 03 {e(l_0xc7e5fe)}][A0][9F]" eob
 
 l_0xc7e5fe:
-    /* "она" eob */
+//  "она" eob
     "[A0][9F][91]" eob
 
 l_0xc7e602:
     "[1C 14 01][09 03 {e(l_0xc7e613)} {e(l_0xc7e616)} {e(l_0xc7e61a)}]" goto(l_0xc7e613)
 
 l_0xc7e613:
-    /* "он" eob */
+//  "он" eob
     "[A0][9F]" eob
 
 l_0xc7e616:
-    /* "она" eob */
+//  "она" eob
     "[A0][9F][91]" eob
 
 l_0xc7e61a:
-    /* "оно" eob */
+//  "оно" eob
     "[A0][9F][A0]" eob
 
 l_0xc7e61d:
     "[1C 14 01][09 03 {e(l_0xc7e62e)} {e(l_0xc7e631)} {e(l_0xc7e635)}]" goto(l_0xc7e62e)
 
 l_0xc7e62e:
-    /* "Он" eob */
+//  "Он" eob
     "[80][9F]" eob
 
 l_0xc7e631:
-    /* "Она" eob */
+//  "Она" eob
     "[80][9F][91]" eob
 
 l_0xc7e635:
-    /* "Оно" eob */
+//  "Оно" eob
     "[80][9F][A0]" eob
 
 l_0xc7e638:
     "[1C 15 01]{swap} [1C 0A 00 00 00 00] [1C 15 01][09 03 {e(l_0xc7e656)} {e(data_37.l_0xc7e659)} {e(data_37.l_0xc7e65d)}]" goto(l_0xc7e656)
 
 l_0xc7e656:
-    /* "он" eob */
+//  "он" eob
     "[A0][9F]" eob
 

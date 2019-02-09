@@ -1,5 +1,38 @@
 command e(label) "{long label}"
 
+// Проверка на гендер (используется в бою?)
+
+// Например, проверил : проверила : проверило
+l_gendersuffix:
+    "[1C 14 01][09 03 {e(l_gendersuffix_male)} {e(l_gendersuffix_female)} {e(l_gendersuffix_neutral)}]" goto(l_gendersuffix_male)
+
+l_gendersuffix_male:
+    eob
+l_gendersuffix_female:
+//  "а" eob
+    "[91]" eob
+l_gendersuffix_neutral:
+//  "о" eob
+    "[A0]" eob
+
+
+// ся/ась/ось
+l_gendersuffix2:
+    "[1C 14 01][09 03 {e(l_gendersuffix2_male)} {e(l_gendersuffix2_female)} {e(l_gendersuffix2_neutral)}]" goto(l_gendersuffix2_male)
+
+l_gendersuffix2_male:
+//  "ся" eob
+    "[A3][C6]" eob
+
+l_gendersuffix2_female:
+//  "ась" eob
+    "[91][A3][C3]" eob
+
+l_gendersuffix2_neutral:
+//  "ось" eob
+    "[A0][A3][C3]" eob
+
+
 // его/её
 l_gender:
     "[1C 14 01][09 03 {e(l_gender_male)} {e(l_gender_female)} {e(l_gender_male)}]" eob
@@ -10,6 +43,7 @@ l_gender_female:
 //  "её" eob
     "[96][97]" eob
 
+
 // -ый/-ая
 l_gender_end_outside:
 //  "[19 10 01]{result_is(2)}[1B 03 {e(l_female_end_outside)}]ый" eob
@@ -18,6 +52,20 @@ l_gender_end_outside:
 l_female_end_outside:
 //  "ая" eob
     "[91][C6]" eob
+
+
+l_gender_interwine:
+    "[1C 14 01][09 03 {e(l_gender_interwine_male)} {e(l_gender_interwine_female)} {e(l_gender_interwine_neutral)}]" goto(l_gender_interwine_male)
+l_gender_interwine_male:
+//  "ёлся" eob
+    "[97][9D][A3][C6]" eob
+l_gender_interwine_female:
+//  "елась" eob
+    "[96][9D][91][A3][C3]" eob
+l_gender_interwine_neutral:
+//  "елось" eob
+    "[96][9D][A0][A3][C3]" eob
+
 
 gain_exp_multi:
 //  "[1D 19 02][1B 03 {e(gain_exp_single)}][19 10 02][1D 0D 00 01 02][1B 03 {e(gain_exp_single)}]получают" eob
@@ -70,6 +118,7 @@ l_enc_came3:
     "[A1][A2][9A][AA][9D][9A]" eob
 
 // Вывод имён персонажей, например "Волшебная бабочка расслабила персонажа Несс и его друзей"
+// Используется вне боя
 l_print_players:
     "[19 10 01]{swap}[1C 02 00]{counter(1)}" goto(l_print_players_init)
 l_print_players_init:

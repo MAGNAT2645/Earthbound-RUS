@@ -23,13 +23,16 @@ l_0xc7e66e:
     "[1C 14 01][09 03 {e(l_0xc7e67f)} {e(l_0xc7e682)} {e(l_0xc7e685)}]" goto(l_0xc7e67f)
 
 l_0xc7e67f:
-    "his" eob
+//  "его" eob
+    "[96][94][A0]" eob
 
 l_0xc7e682:
-    "her" eob
+//  "её" eob
+    "[96][97]" eob
 
 l_0xc7e685:
-    "its" eob
+//  "его" eob
+    "[96][94][A0]" eob
 
 l_0xc7e689:
     "[1C 15 01][09 03 {e(l_0xc7e69a)} {e(l_0xc7e69d)} {e(l_0xc7e6a0)}]" goto(l_0xc7e69a)
@@ -50,16 +53,20 @@ l_0xc7e6b0:
     "her" eob
 
 l_0xc7e6b3:
-    "{result_is(2)}[1B 03 {e(l_0xc7e6bf)}]sir" eob
+//  "{result_is(2)}[1B 03 {e(l_0xc7e6bf)}]сэр" eob
+    "{result_is(2)}[1B 03 {e(l_0xc7e6bf)}][A3][C4][A2]" eob
 
 l_0xc7e6bf:
-    "ma'am" eob
+//  "мадам eob"
+    "[9E][91][95][91][9E]" eob
 
 l_0xc7e6c5:
-    "{result_is(2)}[1B 03 {e(l_0xc7e6d1)}]Sir" eob
+//  "{result_is(2)}[1B 03 {e(l_0xc7e6bf)}]Сэр" eob
+    "{result_is(2)}[1B 03 {e(l_0xc7e6d1)}][83][C4][A2]" eob
 
 l_0xc7e6d1:
-    "Ma'am" eob
+//  "Мадам" eob
+    "[7E][91][95][91][9E]" eob
 
 l_0xc7e6d7:
     "[19 10 01]{swap}[1C 02 00]{counter(1)}" goto(l_0xc7e6e1)

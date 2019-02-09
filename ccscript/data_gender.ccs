@@ -6,6 +6,13 @@
 //    It returns 03 if the enemy if neutral
 command e(label) "{long label}"
 
+l_gender_rearrange:
+//  "{result_is(2)}[1B 03 {e(l_female_rearrange)}]ёл" eob
+    "{result_is(2)}[1B 03 {e(l_female_rearrange)}][97][9D]" eob
+l_female_rearrange:
+//  "ела" eob
+    "[96][9D][91]" eob
+
 // его/её
 l_gender:
 //  "{result_is(2)}[1B 03 {e(l_female)}]его" eob
@@ -53,14 +60,6 @@ l_gendersuffix3:
 l_femalesuffix3:
 //  "ла" eob
     "[9D][91]" eob
-
-// Переплёлся/переплелась
-l_gender_interwine:
-//  "{result_is(2)}[1B 03 {e(l_female_interwine)}]ёлся" eob
-    "{result_is(2)}[1B 03 {e(l_female_interwine)}][97][9D][A3][C6]" eob
-l_female_interwine:
-//  "елась" eob
-    "[96][9D][91][A3][C3]" eob
 
 // Используется для "пришёл/пришла за вами."
 l_gender_came:
