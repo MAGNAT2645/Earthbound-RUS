@@ -415,23 +415,23 @@ l_0xef6874:
 
 l_0xef68d7:
     /*
-    "{window_open(1)}[1D 05 FF 69][1B 03 {e(l_0xef6954)}]@Вы победили меня..." next
-    "@Позвольте мне поесть немного Мушиного Мёда напоследок..." next
-    "@Мастер Бэлч ненавидит таких, как вы." next
-    "@...Как видите, те, у кого нет <Мушиного Мёда>, являются нашими смертными врагами...[03]{window_closeall}" eob
+    "{window_open(1)}[1D 05 FF 69][1B 03 {e(l_0xef6954)}]@Ты победил меня..." next
+    "@Позволь мне поесть немного Мушиного Мёда напоследок..." next
+    "@Мастер Бэлч ненавидит таких, как ты." next
+    "@...Как видишь, те, у кого нет <Мушиного Мёда>, являются нашими смертными врагами...[03]{window_closeall}" eob
     */
-    "{window_open(1)}[1D 05 FF 69][1B 03 {e(l_0xef6954)}]@[73][C2] [A1][A0][92][96][95][9A][9D][9A] [9E][96][9F][C6]..." next
-    "@[81][A0][99][93][A0][9D][C3][A4][96] [9E][9F][96] [A1][A0][96][A3][A4][C3] [9F][96][9E][9F][A0][94][A0] [7E][A5][AA][9A][9F][A0][94][A0] [7E][97][95][91] [9F][91][A1][A0][A3][9D][96][95][A0][9C]..." next
-    "@[7E][91][A3][A4][96][A2] [72][C4][9D][A9] [9F][96][9F][91][93][9A][95][9A][A4] [A4][91][9C][9A][A7], [9C][91][9C] [93][C2]." next
-    "@...[7C][91][9C] [93][9A][95][9A][A4][96], [A4][96], [A5] [9C][A0][94][A0] [9F][96][A4] <[7E][A5][AA][9A][9F][A0][94][A0] [7E][97][95][91]>, [C6][93][9D][C6][C5][A4][A3][C6] [9F][91][AA][9A][9E][9A] [A3][9E][96][A2][A4][9F][C2][9E][9A] [93][A2][91][94][91][9E][9A]...[03]{window_closeall}" eob
+    "{window_open(1)}[1D 05 FF 69][1B 03 {e(l_0xef6954)}]@[84][C2] [A1][A0][92][96][95][9A][9D] [9E][96][9F][C6]..." next
+    "@[81][A0][99][93][A0][9D][C3] [9E][9F][96] [A1][A0][96][A3][A4][C3] [9F][96][9E][9F][A0][94][A0] [7E][A5][AA][9A][9F][A0][94][A0] [7E][97][95][91] [9F][91][A1][A0][A3][9D][96][95][A0][9C]..." next
+    "@[7E][91][A3][A4][96][A2] [72][C4][9D][A9] [9F][96][9F][91][93][9A][95][9A][A4] [A4][91][9C][9A][A7], [9C][91][9C] [A4][C2]." next
+    "@...[7C][91][9C] [93][9A][95][9A][AA][C3], [A4][96], [A5] [9C][A0][94][A0] [9F][96][A4] <[7E][A5][AA][9A][9F][A0][94][A0] [7E][97][95][91]>, [C6][93][9D][C6][C5][A4][A3][C6] [9F][91][AA][9A][9E][9A] [A3][9E][96][A2][A4][9F][C2][9E][9A] [93][A2][91][94][91][9E][9A]...[03]{window_closeall}" eob
 
 l_0xef6954:
     /*
-    "@Я хотел получить твой Мушиный Мёд и проглотить его." next
+    "@Я хотел выхватить твой Мушиный Мёд и проглотить его." next
     "@Мастер Бэлч и я любим Мушиный Мёд.{pause(20)}" linebreak
     "  Гуорг Гуорг!...[03]{window_closeall}" eob
     */
-    "@[B6] [A7][A0][A4][96][9D] [A1][A0][9D][A5][A9][9A][A4][C3] [A4][93][A0][9B] [7E][A5][AA][9A][9F][C2][9B] [7E][97][95] [9A] [A1][A2][A0][94][9D][A0][A4][9A][A4][C3] [96][94][A0]." next
+    "@[B6] [A7][A0][A4][96][9D] [93][C2][A7][93][91][A4][9A][A4][C3] [A4][93][A0][9B] [7E][A5][AA][9A][9F][C2][9B] [7E][97][95] [9A] [A1][A2][A0][94][9D][A0][A4][9A][A4][C3] [96][94][A0]." next
     "@[7E][91][A3][A4][96][A2] [72][C4][9D][A9] [9A] [C6] [9D][C5][92][9A][9E] [7E][A5][AA][9A][9F][C2][9B] [7E][97][95].{pause(20)}" linebreak
     "  [74][A5][A0][A2][94] [74][A5][A0][A2][94]!...[03]{window_closeall}" eob
 
@@ -447,20 +447,20 @@ l_0xef69a1:
 l_0xef69ba:
     /*
     "@{target}" linebreak
-    "  восстанавливает {delta} ОЗ!{sound(36)}[03]" eob
+    "  восстановил{call(RUS_ref.l_gendersuffix)} {delta} ОЗ!{sound(36)}[03]" eob
     */
     newline
     "@{target}" linebreak
-    "  [93][A0][A3][A3][A4][91][9F][91][93][9D][9A][93][91][96][A4] {delta} [80][79]!{sound(36)}[03]" eob
+    "  [93][A0][A3][A3][A4][91][9F][A0][93][9A][9D]{call(RUS_ref.l_gendersuffix)} {delta} [80][79]!{sound(36)}[03]" eob
 
 l_0xef69d2:
     /*
     "@{target}" linebreak
-    "  восстанавливает {delta} ОП!{sound(36)}[03]" eob
+    "  восстановил{call(RUS_ref.l_gendersuffix)} {delta} ОП!{sound(36)}[03]" eob
     */
     newline
     "@{target}" linebreak
-    "  [93][A0][A3][A3][A4][91][9F][91][93][9D][9A][93][91][96][A4] {delta} [80][81]!{sound(36)}[03]" eob
+    "  [93][A0][A3][A3][A4][91][9F][A0][93][9A][9D]{call(RUS_ref.l_gendersuffix)} {delta} [80][81]!{sound(36)}[03]" eob
 
 l_0xef69ea:
     /*
@@ -508,21 +508,21 @@ l_0xef6a7f:
 
 l_0xef6a99:
     /*
-    "@Хлоп! {user} превращается" linebreak
-    "  в {target}![03]" eob
+    "@Хлоп! {user} превратил{call(RUS_ref.l_gendersuffix2)}" linebreak
+    "  в персонажа {target}![03]" eob
     */
     newline
-    "@[87][9D][A0][A1]! {user} [A1][A2][96][93][A2][91][C0][91][96][A4][A3][C6]" linebreak
-    "  [93] {target}![03]" eob
+    "@[87][9D][A0][A1]! {user} [A1][A2][96][93][A2][91][A4][9A][9D]{call(RUS_ref.l_gendersuffix2)}" linebreak
+    "  [93] [A1][96][A2][A3][A0][9F][91][98][91] {target}![03]" eob
 
 l_0xef6ab3:
     /*
-    "@{user} не может превратиться" linebreak
-    "  в {target}![03]" eob
+    "@{user} не смог{call(RUS_ref.l_gendersuffix5)} превратиться" linebreak
+    "  в персонажа {target}![03]" eob
     */
     newline
-    "@{user} [9F][96] [9E][A0][98][96][A4] [A1][A2][96][93][A2][91][A4][9A][A4][C3][A3][C6]" linebreak
-    "  [93] {target}![03]" eob
+    "@{user} [9F][96] [A3][9E][A0][94]{call(RUS_ref.l_gendersuffix5)} [A1][A2][96][93][A2][91][A4][9A][A4][C3][A3][C6]" linebreak
+    "  [93] [A1][96][A2][A3][A0][9F][91][98][91] {target}![03]" eob
 
 l_0xef6ac7:
     /*
@@ -552,14 +552,14 @@ l_0xef6afb:
     "  [9F][96][9E][9F][A0][94][A0] [A4][A0][AA][9F][A0][A4][93][A0][A2][9F][A0]...{sound(83)}[03]" eob
 
 l_0xef6b18:
-//  "@{target} получает отравление!{sound(83)}[03]" eob
+//  "@{target} был{call(RUS_ref.l_gendersuffix)} отравлен!{sound(83)}[03]" eob
     newline
-    "@{target} [A1][A0][9D][A5][A9][91][96][A4] [A0][A4][A2][91][93][9D][96][9F][9A][96]!{sound(83)}[03]" eob
+    "@{target} [92][C2][9D]{call(RUS_ref.l_gendersuffix)} [A0][A4][A2][91][93][9D][96][9F]!{sound(83)}[03]" eob
 
 l_0xef6b2f:
-//  "@{target} подхватывает простуду!{sound(83)}[03]" eob
+//  "@{target} подхватил{call(RUS_ref.l_gendersuffix)} простуду!{sound(83)}[03]" eob
     newline
-    "@{target} [A1][A0][95][A7][93][91][A4][C2][93][91][96][A4] [A1][A2][A0][A3][A4][A5][95][A5]!{sound(83)}[03]" eob
+    "@{target} [A1][A0][95][A7][93][91][A4][9A][9D]{call(RUS_ref.l_gendersuffix)} [A1][A2][A0][A3][A4][A5][95][A5]!{sound(83)}[03]" eob
 
 l_0xef6b43:
     "[1C 15 01][09 03 {e(l_0xef6b54)} {e(l_0xef6b59)} {e(l_0xef6b5f)}]" goto(l_0xef6b54)
@@ -598,9 +598,13 @@ l_0xef6b81:
     "  [A3][96][92][C6] [A3][A4][A2][91][9F][9F][A0]!{sound(83)}[03]" eob
 
 l_0xef6b98:
+    /*
+    "@{target} теперь одержим{call(RUS_ref.l_gendersuffix)}" linebreak
+    "  мини-призраком!{sound(83)}[03]" eob
+    */
     newline
-    "@{target} was" linebreak
-    "  possessed by a mini-ghost!{sound(83)}[03]" eob
+    "@{target} [A4][96][A1][96][A2][C3] [A0][95][96][A2][98][9A][9E]{call(RUS_ref.l_gendersuffix)}" linebreak
+    "  [9E][9A][9F][9A]-[A1][A2][9A][99][A2][91][9C][A0][9E]!{sound(83)}[03]" eob
 
 l_0xef6bbb:
     /*
