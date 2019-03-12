@@ -8,465 +8,637 @@ command e(label) "{long label}"
 
 // Text Data
 l_0xc5223c:
-    /*
-    "@[1C 05 00]?" linebreak
-    "  Я заплачу {swap}$[1C 0A 00 00 00 00] за это." next
-    "@Это сойдёт для вас?" linebreak
-    */
-    "@[1C 05 00]?" linebreak
-    "  [B6] [99][91][A1][9D][91][A9][A5] {swap}$[1C 0A 00 00 00 00] [99][91] [C4][A4][A0]." next
-    "@[B4][A4][A0] [A3][A0][9B][95][97][A4] [95][9D][C6] [93][91][A3]?" linebreak
-    eob
+	/*
+	"@[1C 05 00]?" linebreak
+	"  Я заплачу {swap}$[1C 0A 00 00 00 00] за это." next
+	"@Это сойдёт для вас?" linebreak
+	*/
+	"@[1C 05 00]?" linebreak
+	"  [B6] [99][91][A1][9D][91][A9][A5] {swap}$[1C 0A 00 00 00 00] [99][91] [C4][A4][A0]." next
+	"@[B4][A4][A0] [A3][A0][9B][95][97][A4] [95][9D][C6] [93][91][A3]?" linebreak
+	eob
 
 l_0xc52261:
-//  "@Хммм.  Это так?" next
-    "@[87][9E][9E][9E].  [B4][A4][A0] [A4][91][9C]?" next
-    eob
+//	"@Хммм.  Это так?" next
+	"@[87][9E][9E][9E].  [B4][A4][A0] [A4][91][9C]?" next
+	eob
 
 l_0xc52272:
-//  "@Ох, значит вам действительно нечего продать?" next
-    "@[80][A7], [99][9F][91][A9][9A][A4] [93][91][9E] [95][96][9B][A3][A4][93][9A][A4][96][9D][C3][9F][A0] [9F][96][A9][96][94][A0] [A1][A2][A0][95][91][A4][C3]?" next
-    eob
+//	"@Ох, значит вам действительно нечего продать?" next
+	"@[80][A7], [99][9F][91][A9][9A][A4] [93][91][9E] [95][96][9B][A3][A4][93][9A][A4][96][9D][C3][9F][A0] [9F][96][A9][96][94][A0] [A1][A2][A0][95][91][A4][C3]?" next
+	eob
 
 l_0xc52288:
-//  "@Простите, я не могу купить это." next
-    "@[81][A2][A0][A3][A4][9A][A4][96], [C6] [9F][96] [9E][A0][94][A5] [9C][A5][A1][9A][A4][C3] [C4][A4][A0]." next
-    eob
+//	"@Простите, я не могу купить это." next
+	"@[81][A2][A0][A3][A4][9A][A4][96], [C6] [9F][96] [9E][A0][94][A5] [9C][A5][A1][9A][A4][C3] [C4][A4][A0]." next
+	eob
 
 l_0xc52299:
-//  "@Большое спасибо." next
-    "@[72][A0][9D][C3][AA][A0][96] [A3][A1][91][A3][9A][92][A0]." next
-    eob
+//	"@Большое спасибо." next
+	"@[72][A0][9D][C3][AA][A0][96] [A3][A1][91][A3][9A][92][A0]." next
+	eob
 
 l_0xc522a3:
-//  "@Спасибо." next
-    "@[83][A1][91][A3][9A][92][A0]." next
-    eob
+//	"@Спасибо." next
+	"@[83][A1][91][A3][9A][92][A0]." next
+	eob
 
 l_0xc522aa:
-//  "@Могу я что-нибудь сделать для вас?" linebreak
-    "@[7E][A0][94][A5] [C6] [A9][A4][A0]-[9F][9A][92][A5][95][C3] [A3][95][96][9D][91][A4][C3] [95][9D][C6] [93][91][A3]?" linebreak
-    eob
+//	"@Могу я что-нибудь сделать для вас?" linebreak
+	"@[7E][A0][94][A5] [C6] [A9][A4][A0]-[9F][9A][92][A5][95][C3] [A3][95][96][9D][91][A4][C3] [95][9D][C6] [93][91][A3]?" linebreak
+	eob
 
 l_0xc522ba:
-//  "@Что я могу сделать для вас сейчас?" linebreak
-    "@[89][A4][A0] [C6] [9E][A0][94][A5] [A3][95][96][9D][91][A4][C3] [95][9D][C6] [93][91][A3] [A3][96][9B][A9][91][A3]?" linebreak
-    eob
+//	"@Что я могу сделать для вас сейчас?" linebreak
+	"@[89][A4][A0] [C6] [9E][A0][94][A5] [A3][95][96][9D][91][A4][C3] [95][9D][C6] [93][91][A3] [A3][96][9B][A9][91][A3]?" linebreak
+	eob
 
 l_0xc522ca:
-    /*
-    "@[1C 02 00] не сможет унести больше." next
-    "@Кто-нибудь другой возьмёт это?" linebreak
-    */
-    "@[1C 02 00] [9F][96] [A3][9E][A0][98][96][A4] [A5][9F][96][A3][A4][9A] [92][A0][9D][C3][AA][96]." next
-    "@[7C][A4][A0]-[9F][9A][92][A5][95][C3] [95][A2][A5][94][A0][9B] [93][A0][99][C3][9E][97][A4] [C4][A4][A0]?" linebreak
-    eob
+	/*
+	"@[1C 02 00] не сможет унести больше." next
+	"@Кто-нибудь другой возьмёт это?" linebreak
+	*/
+	"@[1C 02 00] [9F][96] [A3][9E][A0][98][96][A4] [A5][9F][96][A3][A4][9A] [92][A0][9D][C3][AA][96]." next
+	"@[7C][A4][A0]-[9F][9A][92][A5][95][C3] [95][A2][A5][94][A0][9B] [93][A0][99][C3][9E][97][A4] [C4][A4][A0]?" linebreak
+	eob
 
 l_0xc522ef:
-    /* "@Привет!  Добро пожаловать в мой магазин." next */
-    /* "@Что тебе нужно?" linebreak */
-    "@[81][A2][9A][93][96][A4]!  [75][A0][92][A2][A0] [A1][A0][98][91][9D][A0][93][91][A4][C3] [93] [9E][A0][9B] [9E][91][94][91][99][9A][9F]." next
-    "@[89][A4][A0] [A4][96][92][96] [9F][A5][98][9F][A0]?" linebreak
-    eob
+	/*
+	"@Привет!  Добро пожаловать в мой магазин." next
+	"@Что тебе нужно?" linebreak
+	*/
+	"@[81][A2][9A][93][96][A4]!  [75][A0][92][A2][A0] [A1][A0][98][91][9D][A0][93][91][A4][C3] [93] [9E][A0][9B] [9E][91][94][91][99][9A][9F]." next
+	"@[89][A4][A0] [A4][96][92][96] [9F][A5][98][9F][A0]?" linebreak
+	eob
 
 l_0xc5230c:
-//  "@Спасибо!" end
-    "@[83][A1][91][A3][9A][92][A0]!" end
+//	"@Спасибо!" end
+	"@[83][A1][91][A3][9A][92][A0]!" end
 
 l_0xc52312:
-//  "@Это место не для зевак.  Если вы не будете покупать, проваливайте!" end
-    "@[B4][A4][A0] [9E][96][A3][A4][A0] [9F][96] [95][9D][C6] [99][96][93][91][9C].  [76][A3][9D][9A] [93][C2] [9F][96] [92][A5][95][96][A4][96] [A1][A0][9C][A5][A1][91][A4][C3], [A1][A2][A0][93][91][9D][9A][93][91][9B][A4][96]!" end
+//	"@Это место не для зевак.  Если вы не будете покупать, проваливайте!" end
+	"@[B4][A4][A0] [9E][96][A3][A4][A0] [9F][96] [95][9D][C6] [99][96][93][91][9C].  [76][A3][9D][9A] [93][C2] [9F][96] [92][A5][95][96][A4][96] [A1][A0][9C][A5][A1][91][A4][C3], [A1][A2][A0][93][91][9D][9A][93][91][9B][A4][96]!" end
 
 l_0xc52339:
-//  "@Итак, вы что-нибудь купите, а?[03]" eob
-    "@[7A][A4][91][9C], [93][C2] [A9][A4][A0]-[9F][9A][92][A5][95][C3] [9C][A5][A1][9A][A4][96], [91]?[03]" eob
+//	"@Итак, вы что-нибудь купите, а?[03]" eob
+	"@[7A][A4][91][9C], [93][C2] [A9][A4][A0]-[9F][9A][92][A5][95][C3] [9C][A5][A1][9A][A4][96], [91]?[03]" eob
 
 l_0xc5234d:
-    "@[1C 05 00]?" next
-    eob
+	"@[1C 05 00]?" next
+	eob
 
 l_0xc52355:
-//  "@Кто из вас возьмёт это?[03]" eob
-    "@[7C][A4][A0] [9A][99] [93][91][A3] [93][A0][99][C3][9E][97][A4] [C4][A4][A0]?[03]" eob
+//	"@Кто из вас возьмёт это?[03]" eob
+	"@[7C][A4][A0] [9A][99] [93][91][A3] [93][A0][99][C3][9E][97][A4] [C4][A4][A0]?[03]" eob
 
 l_0xc52361:
-//  "@Будешь экипировать это здесь?" linebreak
-    "@[72][A5][95][96][AA][C3] [C4][9C][9A][A1][9A][A2][A0][93][91][A4][C3] [C4][A4][A0] [99][95][96][A3][C3]?" linebreak
-    eob
+//	"@Будешь экипировать это здесь?" linebreak
+	"@[72][A5][95][96][AA][C3] [C4][9C][9A][A1][9A][A2][A0][93][91][A4][C3] [C4][A4][A0] [99][95][96][A3][C3]?" linebreak
+	eob
 
 l_0xc52371:
-    /*
-    "@Я куплю у тебя" linebreak
-    "  [1C 05 00]" linebreak
-    "  за {swap}$[1C 0A 00 00 00 00]." next
-    */
-    "@[B6] [9C][A5][A1][9D][C5] [A5] [A4][96][92][C6]" linebreak
-    "  [1C 05 00]" linebreak
-    "  [99][91] {swap}$[1C 0A 00 00 00 00]." next
-    eob
+	/*
+	"@Я куплю у тебя" linebreak
+	"  [1C 05 00]" linebreak
+	"  за {swap}$[1C 0A 00 00 00 00]." next
+	*/
+	"@[B6] [9C][A5][A1][9D][C5] [A5] [A4][96][92][C6]" linebreak
+	"  [1C 05 00]" linebreak
+	"  [99][91] {swap}$[1C 0A 00 00 00 00]." next
+	eob
 
 l_0xc5238f:
-    "@Even though [1C 02 00] can't put this on, you still want to buy it?" next
-    "@Well, it's your money..." linebreak
-    eob
+	/*
+	"@Даже если [1C 02 00] не может надеть это, вы всё равно купите?" next
+	"@Что ж, это ваши деньги..." linebreak
+	*/
+	"@[75][91][98][96] [96][A3][9D][9A] [1C 02 00] [9F][96] [9E][A0][98][96][A4] [9F][91][95][96][A4][C3] [C4][A4][A0], [93][C2] [93][A3][97] [A2][91][93][9F][A0] [9C][A5][A1][9A][A4][96]?" next
+	"@[89][A4][A0] [98], [C4][A4][A0] [93][91][AA][9A] [95][96][9F][C3][94][9A]..." linebreak
+	eob
 
 l_0xc523be:
-    "@Hurry back now." next
-    eob
+//	"@Возвращайся как можно скорее." next
+	"@[73][A0][99][93][A2][91][C0][91][9B][A3][C6] [9C][91][9C] [9E][A0][98][9F][A0] [A3][9C][A0][A2][96][96]." next
+	eob
 
 l_0xc523cb:
-    "@Hey!  What are you trying to pull?!  You haven't got enough money!!" next
-    eob
+//	"@Эй!  Что это ты пытаешься провернуть?!  У тебя недостаточно денег!!" next
+	"@[B4][9B]!  [89][A4][A0] [C4][A4][A0] [A4][C2] [A1][C2][A4][91][96][AA][C3][A3][C6] [A1][A2][A0][93][96][A2][9F][A5][A4][C3]?!  [85] [A4][96][92][C6] [9F][96][95][A0][A3][A4][91][A4][A0][A9][9F][A0] [95][96][9F][96][94]!!" next
+	eob
 
 l_0xc523ef:
-    "@Hey!  You've already have got enough junk!" next
-    "@Do you want to sell me some of the junk you don't need?" linebreak
-    eob
+	/*
+	"@Эй!  У тебя уже достаточно мусора!" next
+	"@Может хочешь продать мне то, что тебе не нужно?" linebreak
+	*/
+	"@[B4][9B]!  [85] [A4][96][92][C6] [A5][98][96] [95][A0][A3][A4][91][A4][A0][A9][9F][A0] [9E][A5][A3][A0][A2][91]!" next
+	"@[7E][A0][98][96][A4] [A7][A0][A9][96][AA][C3] [A1][A2][A0][95][91][A4][C3] [9E][9F][96] [A4][A0], [A9][A4][A0] [A4][96][92][96] [9F][96] [9F][A5][98][9F][A0]?" linebreak
+	eob
 
 l_0xc5241d:
-    "@What can you sell me?[03]" eob
+//	"@Что ты можешь мне продать?[03]" eob
+	"@[89][A4][A0] [A4][C2] [9E][A0][98][96][AA][C3] [9E][9F][96] [A1][A2][A0][95][91][A4][C3]?[03]" eob
 
 l_0xc5242b:
-    "@[1C 05 00]?" linebreak
-    "  I'll give you {swap}$[1C 0A 00 00 00 00]." next
-    "@How would that be?" linebreak
-    eob
+	/*
+	"@[1C 05 00]?" linebreak
+	"  Дам {swap}$[1C 0A 00 00 00 00] за это." next
+	"@Ну и как это?" linebreak
+	*/
+	"@[1C 05 00]?" linebreak
+	"  [75][91][9E] {swap}$[1C 0A 00 00 00 00] [99][91] [C4][A4][A0]." next
+	"@[7F][A5] [9A] [9C][91][9C] [C4][A4][A0]?" linebreak
+	eob
 
 l_0xc5244f:
-    "@Hurrm.  Changed your mind, eh?" next
-    eob
+//	"@Хммм.  Передумал, да?" next
+	"@[87][9E][9E][9E].  [81][96][A2][96][95][A5][9E][91][9D], [95][91]?" next
+	eob
 
 l_0xc52469:
-    "@C'mon!" linebreak
-    "  You don't have anything to sell, do you?!" next
-    eob
+	/*
+	"@Да ладно!" linebreak
+	"  Тебе нечего продать, не так ли?!" next
+	*/
+	"@[75][91] [9D][91][95][9F][A0]!" linebreak
+	"  [84][96][92][96] [9F][96][A9][96][94][A0] [A1][A2][A0][95][91][A4][C3], [9F][96] [A4][91][9C] [9D][9A]?!" next
+	eob
 
 l_0xc52485:
-    "@Sorry, but I have no use for that." next
-    eob
+//	"@Прости, но мне это не нужно." next
+	"@[81][A2][A0][A3][A4][9A], [9F][A0] [9E][9F][96] [C4][A4][A0] [9F][96] [9F][A5][98][9F][A0]." next
+	eob
 
 l_0xc5249a:
-    "@Hey, it was nice doing business with you." next
-    eob
+//	"@Эй, было приятно иметь с тобой дело." next
+	"@[B4][9B], [92][C2][9D][A0] [A1][A2][9A][C6][A4][9F][A0] [9A][9E][96][A4][C3] [A3] [A4][A0][92][A0][9B] [95][96][9D][A0]." next
+	eob
 
 l_0xc524b2:
-    "@Thanks." next
-    eob
+//	"@Спасибо." next
+	"@[83][A1][91][A3][9A][92][A0]." next
+	eob
 
 l_0xc524b8:
-    "@Will there be anything else?" linebreak
-    eob
+//	"@Может что-то ещё?" linebreak
+	"@[7E][A0][98][96][A4] [A9][A4][A0]-[A4][A0] [96][C0][97]?" linebreak
+	eob
 
 l_0xc524c5:
-    "@What else do you want?" linebreak
-    eob
+//	"@Чего ты ещё хочешь?" linebreak
+	"@[89][96][94][A0] [A4][C2] [96][C0][97] [A7][A0][A9][96][AA][C3]?" linebreak
+	eob
 
 l_0xc524d2:
-    "@[1C 02 00] can't carry anymore stuff." next
-    "@Can one of you others carry it?" linebreak
-    eob
+	/*
+	"@[1C 02 00] не может нести больше вещей." next
+	"@Кто из вас может взять это?" linebreak
+	*/
+	"@[1C 02 00] [9F][96] [9E][A0][98][96][A4] [9F][96][A3][A4][9A] [92][A0][9D][C3][AA][96] [93][96][C0][96][9B]." next
+	"@[7C][A4][A0] [9A][99] [93][91][A3] [9E][A0][98][96][A4] [93][99][C6][A4][C3] [C4][A4][A0]?" linebreak
+	eob
 
 l_0xc524f7:
-    "@If ye be headin' to Scaraba, ye ought to shop here." next
-    "@Things're expensive down there..." next
-    "@So, what're ye lookin' fer?" linebreak
-    eob
+	/*
+	"@Если вы направляетесь в Скарабу, вы должны закупиться здесь." next
+	"@Там всё дорого..." next
+	"@Итак, что вы ищете?" linebreak
+	*/
+	"@[76][A3][9D][9A] [93][C2] [9F][91][A1][A2][91][93][9D][C6][96][A4][96][A3][C3] [93] [83][9C][91][A2][91][92][A5], [93][C2] [95][A0][9D][98][9F][C2] [99][91][9C][A5][A1][9A][A4][C3][A3][C6] [99][95][96][A3][C3]." next
+	"@[84][91][9E] [93][A3][97] [95][A0][A2][A0][94][A0]..." next
+	"@[7A][A4][91][9C], [A9][A4][A0] [93][C2] [9A][C0][96][A4][96]?" linebreak
+	eob
 
 l_0xc52546:
-    "@Thanks much." next
-    "@If'n yer going to Scaraba, take care of yerself." end
+	/*
+	"@Огромное спасибо." next
+	"@Если вы собираетесь в Скарабу, то будьте осторожны." end
+	*/
+	"@[80][94][A2][A0][9E][9F][A0][96] [A3][A1][91][A3][9A][92][A0]." next
+	"@[76][A3][9D][9A] [93][C2] [A3][A0][92][9A][A2][91][96][A4][96][A3][C3] [93] [83][9C][91][A2][91][92][A5], [A4][A0] [92][A5][95][C3][A4][96] [A0][A3][A4][A0][A2][A0][98][9F][C2]." end
 
 l_0xc5256c:
-    "@Please come again!" end
+//	"@Пожалуйста, заходите ещё!" end
+	"@[81][A0][98][91][9D][A5][9B][A3][A4][91], [99][91][A7][A0][95][9A][A4][96] [96][C0][97]!" end
 
 l_0xc52574:
-    "@What would ye like, then?[03]" eob
+//	"@Что бы вы тогда хотели?[03]" eob
+	"@[89][A4][A0] [92][C2] [93][C2] [A4][A0][94][95][91] [A7][A0][A4][96][9D][9A]?[03]" eob
 
 l_0xc52583:
-    "@[1C 05 00]?" next
-    eob
+	"@[1C 05 00]?" next
+	eob
 
 l_0xc5258b:
-    "@Which of ye is goin' to carry this?[03]" eob
+//	"@Кто из вас понесёт это?[03]" eob
+	"@[7C][A4][A0] [9A][99] [93][91][A3] [A1][A0][9F][96][A3][97][A4] [C4][A4][A0]?[03]" eob
 
 l_0xc525a4:
-    "@Would ye like to equip it here, then?" linebreak
-    eob
+//	"@Хочешь надеть это здесь?" linebreak
+	"@[87][A0][A9][96][AA][C3] [9F][91][95][96][A4][C3] [C4][A4][A0] [99][95][96][A3][C3]?" linebreak
+	eob
 
 l_0xc525bb:
-    "@Would ye like it if I bought yer" linebreak
-    "  [1C 05 00]" linebreak
-    "  for {swap}$[1C 0A 00 00 00 00]?" linebreak
-    eob
+	/*
+	"@Хочешь, я куплю у тебя" linebreak
+	"  [1C 05 00]" linebreak
+	"  за {swap}$[1C 0A 00 00 00 00]?" linebreak
+	*/
+	"@[87][A0][A9][96][AA][C3], [C6] [9C][A5][A1][9D][C5] [A5] [A4][96][92][C6]" linebreak
+	"  [1C 05 00]" linebreak
+	"  [99][91] {swap}$[1C 0A 00 00 00 00]?" linebreak
+	eob
 
 l_0xc525e6:
-    "@[1C 02 00] cannot equip this." next
-    "@Do ye still want to buy it?" linebreak
-    eob
+	/*
+	"@[1C 02 00] не может надеть это." next
+	"@Всё ещё хотите купить?" linebreak
+	*/
+	"@[1C 02 00] [9F][96] [9E][A0][98][96][A4] [9F][91][95][96][A4][C3] [C4][A4][A0]." next
+	"@[73][A3][97] [96][C0][97] [A7][A0][A4][9A][A4][96] [9C][A5][A1][9A][A4][C3]?" linebreak
+	eob
 
 l_0xc52603:
-    "@Yer not goin' to buy this thing?  All righty then." next
-    eob
+//	"@Ты не хочешь покупать эту штуку?  Ну тогда ладно." next
+	"@[84][C2] [9F][96] [A7][A0][A9][96][AA][C3] [A1][A0][9C][A5][A1][91][A4][C3] [C4][A4][A5] [AA][A4][A5][9C][A5]?  [7F][A5] [A4][A0][94][95][91] [9D][91][95][9F][A0]." next
+	eob
 
 l_0xc52622:
-    "@Beggin' yer pardon, but it appears ye don't have enough money..." next
-    eob
+//	"@Прошу прощения, но, похоже, у тебя недостаточно денег...." next
+	"@[81][A2][A0][AA][A5] [A1][A2][A0][C0][96][9F][9A][C6], [9F][A0], [A1][A0][A7][A0][98][96], [A5] [A4][96][92][C6] [9F][96][95][A0][A3][A4][91][A4][A0][A9][9F][A0] [95][96][9F][96][94]...." next
+	eob
 
 l_0xc5264b:
-    "@You've got entirely too many goodies." next
-    "@Would ye like me to take some of those things off yer hands?" next
-    "@I can buy the ones ye don't need, if ye want." linebreak
-    eob
+	/*
+	"@У тебя слишком много вещичек." next
+	"@Хочешь, я заберу что-то из твоих рук?" next
+	"@Если хочешь, я могу купить что-то ненужное для тебя." linebreak
+	*/
+	"@[85] [A4][96][92][C6] [A3][9D][9A][AA][9C][A0][9E] [9E][9F][A0][94][A0] [93][96][C0][9A][A9][96][9C]." next
+	"@[87][A0][A9][96][AA][C3], [C6] [99][91][92][96][A2][A5] [A9][A4][A0]-[A4][A0] [9A][99] [A4][93][A0][9A][A7] [A2][A5][9C]?" next
+	"@[76][A3][9D][9A] [A7][A0][A9][96][AA][C3], [C6] [9E][A0][94][A5] [9C][A5][A1][9A][A4][C3] [A9][A4][A0]-[A4][A0] [9F][96][9F][A5][98][9F][A0][96] [95][9D][C6] [A4][96][92][C6]." linebreak
+	eob
 
 l_0xc526a2:
-    "@What would ye like to sell me, then?[03]" eob
+//	"@Что же тогда ты можешь продать мне?[03]" eob
+	"@[89][A4][A0] [98][96] [A4][A0][94][95][91] [A4][C2] [9E][A0][98][96][AA][C3] [A1][A2][A0][95][91][A4][C3] [9E][9F][96]?[03]" eob
 
 l_0xc526b8:
-    "@[1C 05 00]?" linebreak
-    "  I would pay {swap}$[1C 0A 00 00 00 00]." next
-    "@Are ye happy with my offer?" linebreak
-    eob
+	/*
+	"@[1C 05 00]?" linebreak
+	"  Мог бы заплатить {swap}$[1C 0A 00 00 00 00]." next
+	"@Доволен моим предложением?" linebreak
+	*/
+	"@[1C 05 00]?" linebreak
+	"  [7E][A0][94] [92][C2] [99][91][A1][9D][91][A4][9A][A4][C3] {swap}$[1C 0A 00 00 00 00]." next
+	"@[75][A0][93][A0][9D][96][9F] [9E][A0][9A][9E] [A1][A2][96][95][9D][A0][98][96][9F][9A][96][9E]?" linebreak
+	eob
 
 l_0xc526e5:
-    "@Oh, it's not quite what ye expected?  Well, all righty then." next
-    eob
+//	"@Оу, это не совсем то, чего ты ожидал?  Что ж, ну тогда ладно." next
+	"@[80][A5], [C4][A4][A0] [9F][96] [A3][A0][93][A3][96][9E] [A4][A0], [A9][96][94][A0] [A4][C2] [A0][98][9A][95][91][9D]?  [89][A4][A0] [98], [9F][A5] [A4][A0][94][95][91] [9D][91][95][9F][A0]." next
+	eob
 
 l_0xc5270f:
-    "@Oh?  Well, it appears to me that ye don't have anything to sell." next
-    eob
+//	"@Эм?  Что ж, похоже тебе нечего продать." next
+	"@[B4][9E]?  [89][A4][A0] [98], [A1][A0][A7][A0][98][96] [A4][96][92][96] [9F][96][A9][96][94][A0] [A1][A2][A0][95][91][A4][C3]." next
+	eob
 
 l_0xc52732:
-    "@Beggin' yer pardon, but I can't buy that." next
-    eob
+//	"@Прошу прощения, но я не могу это купить." next
+	"@[81][A2][A0][AA][A5] [A1][A2][A0][C0][96][9F][9A][C6], [9F][A0] [C6] [9F][96] [9E][A0][94][A5] [C4][A4][A0] [9C][A5][A1][9A][A4][C3]." next
+	eob
 
 l_0xc52750:
-    "@Here ye go.  Thank ye." next
-    eob
+//	"@Вот.  Спасибо." next
+	"@[73][A0][A4].  [83][A1][91][A3][9A][92][A0]." next
+	eob
 
 l_0xc52764:
-    "@Thank ye kindly." next
-    eob
+//	"@Благодарю." next
+	"@[72][9D][91][94][A0][95][91][A2][C5]." next
+	eob
 
 l_0xc52776:
-    "@Will ye be needin' anything else?" linebreak
-    eob
+//	"@Тебе что-нибудь ещё нужно?" linebreak
+	"@[84][96][92][96] [A9][A4][A0]-[9F][9A][92][A5][95][C3] [96][C0][97] [9F][A5][98][9F][A0]?" linebreak
+	eob
 
 l_0xc52788:
-    "@What do ye need now?" linebreak
-    eob
+//	"@Что тебе нужно сейчас?" linebreak
+	"@[89][A4][A0] [A4][96][92][96] [9F][A5][98][9F][A0] [A3][96][9B][A9][91][A3]?" linebreak
+	eob
 
 l_0xc52796:
-    "@It appears [1C 02 00] has a full load." next
-    "@Will someone else take this instead?" linebreak
-    eob
+	/*
+	"@Похоже, [1C 02 00] имеет переполненный рюкзак." next
+	"@Кто-нибудь другой возьмёт это?" linebreak
+	*/
+	"@[81][A0][A7][A0][98][96], [1C 02 00] [9A][9E][96][96][A4] [A1][96][A2][96][A1][A0][9D][9F][96][9F][9F][C2][9B] [A2][C5][9C][99][91][9C]." next
+	"@[7C][A4][A0]-[9F][9A][92][A5][95][C3] [95][A2][A5][94][A0][9B] [93][A0][99][C3][9E][97][A4] [C4][A4][A0]?" linebreak
+	eob
 
 l_0xc527c7:
-    "@Welcome, welcome!  Ach, the heat!  Is your body okay?" next
-    "@Can I interest you in some of my merchandise?" linebreak
-    eob
+	/*
+	"@Добро пожаловать!  Ах, ну и жара!  С твоим телом всё в порядке?" next
+	"@Могу я заинтересовать тебя чем-нибудь из моих товаров?" linebreak
+	*/
+	"@[75][A0][92][A2][A0] [A1][A0][98][91][9D][A0][93][91][A4][C3]!  [71][A7], [9F][A5] [9A] [98][91][A2][91]!  [83] [A4][93][A0][9A][9E] [A4][96][9D][A0][9E] [93][A3][97] [93] [A1][A0][A2][C6][95][9C][96]?" next
+	"@[7E][A0][94][A5] [C6] [99][91][9A][9F][A4][96][A2][96][A3][A0][93][91][A4][C3] [A4][96][92][C6] [A9][96][9E]-[9F][9A][92][A5][95][C3] [9A][99] [9E][A0][9A][A7] [A4][A0][93][91][A2][A0][93]?" linebreak
+	eob
 
 l_0xc52809:
-    "@Ohh, thank you very much.  May you never find rocks in your sandals." end
+//	"@Ооо, большое спасибо.  Пусть ты никогда не найдешь камней в своих сандалиях." end
+	"@[80][A0][A0], [92][A0][9D][C3][AA][A0][96] [A3][A1][91][A3][9A][92][A0].  [81][A5][A3][A4][C3] [A4][C2] [9F][9A][9C][A0][94][95][91] [9F][96] [9F][91][9B][95][96][AA][C3] [9C][91][9E][9F][96][9B] [93] [A3][93][A0][9A][A7] [A3][91][9F][95][91][9D][9A][C6][A7]." end
 
 l_0xc52836:
-    "@Why don't you buy something?  I've got a family to feed!" end
+//	"@Почему ты ничего не покупаешь?  Мне нужно кормить семью!" end
+	"@[81][A0][A9][96][9E][A5] [A4][C2] [9F][9A][A9][96][94][A0] [9F][96] [A1][A0][9C][A5][A1][91][96][AA][C3]?  [7E][9F][96] [9F][A5][98][9F][A0] [9C][A0][A2][9E][9A][A4][C3] [A3][96][9E][C3][C5]!" end
 
 l_0xc52855:
-    "@What would you like?[03]" eob
+//	"@Чего бы ты хотел?[03]" eob
+	"@[89][96][94][A0] [92][C2] [A4][C2] [A7][A0][A4][96][9D]?[03]" eob
 
 l_0xc52860:
-    "@[1C 05 00]?" next
-    eob
+	"@[1C 05 00]?" next
+	eob
 
 l_0xc52868:
-    "@So, which of you will take this wonderful item?[03]" eob
+//	"@Итак, кто из вас возьмёт этот замечательный предмет?[03]" eob
+	"@[7A][A4][91][9C], [9C][A4][A0] [9A][99] [93][91][A3] [93][A0][99][C3][9E][97][A4] [C4][A4][A0][A4] [99][91][9E][96][A9][91][A4][96][9D][C3][9F][C2][9B] [A1][A2][96][95][9E][96][A4]?[03]" eob
 
 l_0xc52885:
-    "@Will you equip it here?" linebreak
-    eob
+//	"@Будешь надевать это здесь?" linebreak
+	"@[72][A5][95][96][AA][C3] [9F][91][95][96][93][91][A4][C3] [C4][A4][A0] [99][95][96][A3][C3]?" linebreak
+	eob
 
 l_0xc52893:
-    "@Would you be interested in selling your [1C 05 00]" next
-    "@for {swap}$[1C 0A 00 00 00 00]?" linebreak
-    eob
+	/*
+	"@Тебя заинтересует идея о продаже [1C 05 00]" next
+	"@за {swap}$[1C 0A 00 00 00 00]?" linebreak
+	*/
+	"@[84][96][92][C6] [99][91][9A][9F][A4][96][A2][96][A3][A5][96][A4] [9A][95][96][C6] [A0] [A1][A2][A0][95][91][98][96] [1C 05 00]" next
+	"@[99][91] {swap}$[1C 0A 00 00 00 00]?" linebreak
+	eob
 
 l_0xc528bf:
-    "@[1C 02 00] will have no use for this." next
-    "@Do you still want to buy this marvelous thing?" linebreak
-    eob
+	/*
+	"@[1C 02 00] не найдёт применения этому." next
+	"@Ты всё ещё хочешь купить эту чудесную вещь?" linebreak
+	*/
+	"@[1C 02 00] [9F][96] [9F][91][9B][95][97][A4] [A1][A2][9A][9E][96][9F][96][9F][9A][C6] [C4][A4][A0][9E][A5]." next
+	"@[84][C2] [93][A3][97] [96][C0][97] [A7][A0][A9][96][AA][C3] [9C][A5][A1][9A][A4][C3] [C4][A4][A5] [A9][A5][95][96][A3][9F][A5][C5] [93][96][C0][C3]?" linebreak
+	eob
 
 l_0xc528eb:
-    "@Very well then." next
-    eob
+//	"@Очень хорошо." next
+	"@[80][A9][96][9F][C3] [A7][A0][A2][A0][AA][A0]." next
+	eob
 
 l_0xc528f9:
-    "@A thousand pardons, but you do not seem to have the money" next
-    "@required to make this purchase." next
-    eob
+	/*
+	"@Тысяча извинений, но у тебя, кажется, нет денег," next
+	"@необходимых для этой покупки." next
+	*/
+	"@[84][C2][A3][C6][A9][91] [9A][99][93][9A][9F][96][9F][9A][9B], [9F][A0] [A5] [A4][96][92][C6], [9C][91][98][96][A4][A3][C6], [9F][96][A4] [95][96][9F][96][94]," next
+	"@[9F][96][A0][92][A7][A0][95][9A][9E][C2][A7] [95][9D][C6] [C4][A4][A0][9B] [A1][A0][9C][A5][A1][9C][9A]." next
+	eob
 
 l_0xc52938:
-    "@Ahh, I can see that your caravan is overloaded." next
-    "@Would you like to sell some of your extra items to me?" linebreak
-    eob
+	/*
+	"@Я вижу, что твой караван перегружен." next
+	"@Хочешь продать мне некоторые из своих дополнительных предметов?" linebreak
+	*/
+	"@[B6] [93][9A][98][A5], [A9][A4][A0] [A4][93][A0][9B] [9C][91][A2][91][93][91][9F] [A1][96][A2][96][94][A2][A5][98][96][9F]." next
+	"@[87][A0][A9][96][AA][C3] [A1][A2][A0][95][91][A4][C3] [9E][9F][96] [9F][96][9C][A0][A4][A0][A2][C2][96] [9A][99] [A3][93][A0][9A][A7] [95][A0][A1][A0][9D][9F][9A][A4][96][9D][C3][9F][C2][A7] [A1][A2][96][95][9E][96][A4][A0][93]?" linebreak
+	eob
 
 l_0xc52972:
-    "@Very well then, what would you like to sell?[03]" eob
+//	"@Хорошо, тогда что ты хочешь продать?[03]" eob
+	"@[87][A0][A2][A0][AA][A0], [A4][A0][94][95][91] [A9][A4][A0] [A4][C2] [A7][A0][A9][96][AA][C3] [A1][A2][A0][95][91][A4][C3]?[03]" eob
 
 l_0xc52989:
-    "@[1C 05 00]?" linebreak
-    "  Ahhh, I would pay you..." linebreak
-    "  {swap}$[1C 0A 00 00 00 00] for that." next
-    "@A trifle, I realize, but do you accept?" linebreak
-    eob
+	/*
+	"@[1C 05 00]?" linebreak
+	"  А-а-а, я могу заплатить..." linebreak
+	"  {swap}$[1C 0A 00 00 00 00] за это." next
+	"@Мелочь, я понимаю, но тебя устраивает?" linebreak
+	*/
+	"@[1C 05 00]?" linebreak
+	"  [71]-[91]-[91], [C6] [9E][A0][94][A5] [99][91][A1][9D][91][A4][9A][A4][C3]..." linebreak
+	"  {swap}$[1C 0A 00 00 00 00] [99][91] [C4][A4][A0]." next
+	"@[7E][96][9D][A0][A9][C3], [C6] [A1][A0][9F][9A][9E][91][C5], [9F][A0] [A4][96][92][C6] [A5][A3][A4][A2][91][9A][93][91][96][A4]?" linebreak
+	eob
 
 l_0xc529d2:
-    "@Very well then." next
-    eob
+//	"@Очень хорошо." next
+	"@[80][A9][96][9F][C3] [A7][A0][A2][A0][AA][A0]." next
+	eob
 
 l_0xc529e0:
-    "@From my humble vantage point, it appears you have nothing to sell." next
-    eob
+//	"@С моей скромной точки зрения, похоже, вам нечего продать." next
+	"@[83] [9E][A0][96][9B] [A3][9C][A2][A0][9E][9F][A0][9B] [A4][A0][A9][9C][9A] [99][A2][96][9F][9A][C6], [A1][A0][A7][A0][98][96], [93][91][9E] [9F][96][A9][96][94][A0] [A1][A2][A0][95][91][A4][C3]." next
+	eob
 
 l_0xc52a09:
-    "@A thousand pardons.  We do not carry that item here." next
-    eob
+//	"@Тысяча извинений.  Мы не принимаем такой предмет здесь." next
+	"@[84][C2][A3][C6][A9][91] [9A][99][93][9A][9F][96][9F][9A][9B].  [7E][C2] [9F][96] [A1][A2][9A][9F][9A][9E][91][96][9E] [A4][91][9C][A0][9B] [A1][A2][96][95][9E][96][A4] [99][95][96][A3][C3]." next
+	eob
 
 l_0xc52a2a:
-    "@Ahh, you are most gracious and kind." next
-    eob
+//	"@Ах, вы очень любезны и добры." next
+	"@[71][A7], [93][C2] [A0][A9][96][9F][C3] [9D][C5][92][96][99][9F][C2] [9A] [95][A0][92][A2][C2]." next
+	eob
 
 l_0xc52a45:
-    "@Thank you for visiting my poor shop." next
-    eob
+//	"@Спасибо, что посетили мой бедный магазин." next
+	"@[83][A1][91][A3][9A][92][A0], [A9][A4][A0] [A1][A0][A3][96][A4][9A][9D][9A] [9E][A0][9B] [92][96][95][9F][C2][9B] [9E][91][94][91][99][9A][9F]." next
+	eob
 
 l_0xc52a5c:
-    "@If there is anything else I can do for you, please, do not hesitate to ask." next
-    eob
+//	"@Если есть что-то ещё, что я могу сделать для вас, пожалуйста, не стесняйтесь спрашивать." next
+	"@[76][A3][9D][9A] [96][A3][A4][C3] [A9][A4][A0]-[A4][A0] [96][C0][97], [A9][A4][A0] [C6] [9E][A0][94][A5] [A3][95][96][9D][91][A4][C3] [95][9D][C6] [93][91][A3], [A1][A0][98][91][9D][A5][9B][A3][A4][91], [9F][96] [A3][A4][96][A3][9F][C6][9B][A4][96][A3][C3] [A3][A1][A2][91][AA][9A][93][91][A4][C3]." next
+	eob
 
 l_0xc52a82:
-    "@So, what more can I do for you?" linebreak
-    eob
+//	"@Итак, что ещё я могу для вас сделать?" linebreak
+	"@[7A][A4][91][9C], [A9][A4][A0] [96][C0][97] [C6] [9E][A0][94][A5] [95][9D][C6] [93][91][A3] [A3][95][96][9D][91][A4][C3]?" linebreak
+	eob
 
 l_0xc52a92:
-    "@[1C 02 00] simply cannot carry any more goods." next
-    "@Perhaps another of your party could bear this load?" linebreak
-    eob
+	/*
+	"@[1C 02 00] просто не сможет нести больше." next
+	"@Возможно, кто-то из вашей партии выдержит этот груз?" linebreak
+	*/
+	"@[1C 02 00] [A1][A2][A0][A3][A4][A0] [9F][96] [A3][9E][A0][98][96][A4] [9F][96][A3][A4][9A] [92][A0][9D][C3][AA][96]." next
+	"@[73][A0][99][9E][A0][98][9F][A0], [9C][A4][A0]-[A4][A0] [9A][99] [93][91][AA][96][9B] [A1][91][A2][A4][9A][9A] [93][C2][95][96][A2][98][9A][A4] [C4][A4][A0][A4] [94][A2][A5][99]?" linebreak
+	eob
 
 l_0xc52acc:
-    "@If you've already got what you need, great!" next
-    "@But if you don't, well, that would be a real shame." next
-    "@Take a good look at my menu and decide." next
-    "@Is there anything listed that you might want?" linebreak
-    eob
+	/*
+	"@Если у вас уже есть то, что вам нужно, то это здорово!" next
+	"@Но если это не так, что ж, это будет настоящий позор." next
+	"@Посмотрите внимательно на моё меню и решите." next
+	"@В списке есть что-нибудь, что вам может понадобиться?" linebreak
+	*/
+	"@[76][A3][9D][9A] [A5] [93][91][A3] [A5][98][96] [96][A3][A4][C3] [A4][A0], [A9][A4][A0] [93][91][9E] [9F][A5][98][9F][A0], [A4][A0] [C4][A4][A0] [99][95][A0][A2][A0][93][A0]!" next
+	"@[7F][A0] [96][A3][9D][9A] [C4][A4][A0] [9F][96] [A4][91][9C], [A9][A4][A0] [98], [C4][A4][A0] [92][A5][95][96][A4] [9F][91][A3][A4][A0][C6][C0][9A][9B] [A1][A0][99][A0][A2]." next
+	"@[81][A0][A3][9E][A0][A4][A2][9A][A4][96] [93][9F][9A][9E][91][A4][96][9D][C3][9F][A0] [9F][91] [9E][A0][97] [9E][96][9F][C5] [9A] [A2][96][AA][9A][A4][96]." next
+	"@[73] [A3][A1][9A][A3][9C][96] [96][A3][A4][C3] [A9][A4][A0]-[9F][9A][92][A5][95][C3], [A9][A4][A0] [93][91][9E] [9E][A0][98][96][A4] [A1][A0][9F][91][95][A0][92][9A][A4][C3][A3][C6]?" linebreak
+	eob
 
 l_0xc52b37:
-    "@If you do decide that you need any of my goodies, you just hurry on back now, y'hear?" end
+//	"@Если вы всё же решите, что вам нужны мои товары, вы просто в спешке вернётесь, слышите?" end
+	"@[76][A3][9D][9A] [93][C2] [93][A3][97] [98][96] [A2][96][AA][9A][A4][96], [A9][A4][A0] [93][91][9E] [9F][A5][98][9F][C2] [9E][A0][9A] [A4][A0][93][91][A2][C2], [93][C2] [A1][A2][A0][A3][A4][A0] [93] [A3][A1][96][AA][9C][96] [93][96][A2][9F][97][A4][96][A3][C3], [A3][9D][C2][AA][9A][A4][96]?" end
 
 l_0xc52b67:
-    "@Come back any time, if do need any of my goods." end
+//	"@Возвращайтесь в любое время, если потребуется любой из моих товаров." end
+	"@[73][A0][99][93][A2][91][C0][91][9B][A4][96][A3][C3] [93] [9D][C5][92][A0][96] [93][A2][96][9E][C6], [96][A3][9D][9A] [A1][A0][A4][A2][96][92][A5][96][A4][A3][C6] [9D][C5][92][A0][9B] [9A][99] [9E][A0][9A][A7] [A4][A0][93][91][A2][A0][93]." end
 
 l_0xc52b82:
-    "@What'll it be?[03]" eob
+//	"@Что же это будет?[03]" eob
+	"@[89][A4][A0] [98][96] [C4][A4][A0] [92][A5][95][96][A4]?[03]" eob
 
 l_0xc52b8d:
-    "@The [1C 05 00], you say?" next
-    eob
+//	"@[1C 05 00], говоришь?" next
+	"@[1C 05 00], [94][A0][93][A0][A2][9A][AA][C3]?" next
+	eob
 
 l_0xc52b9b:
-    "@Who's going to carry this?[03]" eob
+//	"@Кто заберёт это?[03]" eob
+	"@[7C][A4][A0] [99][91][92][96][A2][97][A4] [C4][A4][A0]?[03]" eob
 
 l_0xc52baa:
-    "@Will you be equipping that here?" linebreak
-    eob
+//	"@Будешь экипировать это здесь?" linebreak
+	"@[72][A5][95][96][AA][C3] [C4][9C][9A][A1][9A][A2][A0][93][91][A4][C3] [C4][A4][A0] [99][95][96][A3][C3]?" linebreak
+	eob
 
 l_0xc52bbd:
-    "@I can buy your" linebreak
-    "  [1C 05 00]" linebreak
-    "  for {swap}$[1C 0A 00 00 00 00]." next
-    eob
+	/*
+	"@Я могу купить у тебя" linebreak
+	"  [1C 05 00]" linebreak
+	"  за {swap}$[1C 0A 00 00 00 00]." next
+	*/
+	"@[B6] [9E][A0][94][A5] [9C][A5][A1][9A][A4][C3] [A5] [A4][96][92][C6]" linebreak
+	"  [1C 05 00]" linebreak
+	"  [99][91] {swap}$[1C 0A 00 00 00 00]." next
+	eob
 
 l_0xc52bdd:
-    "@[1C 02 00] won't be able to equip this." next
-    "@Are you sure you really need it?" linebreak
-    eob
+	/*
+	"@[1C 02 00] не сможет надеть это." next
+	"@Ты уверен, что тебе действительно нужен этот предмет?" linebreak
+	*/
+	"@[1C 02 00] [9F][96] [A3][9E][A0][98][96][A4] [9F][91][95][96][A4][C3] [C4][A4][A0]." next
+	"@[84][C2] [A5][93][96][A2][96][9F], [A9][A4][A0] [A4][96][92][96] [95][96][9B][A3][A4][93][9A][A4][96][9D][C3][9F][A0] [9F][A5][98][96][9F] [C4][A4][A0][A4] [A1][A2][96][95][9E][96][A4]?" linebreak
+	eob
 
 l_0xc52c00:
-    "@Oh?  Decided you don't want to buy it, huh?" next
-    eob
+//	"@А?  Решил, что не хочешь это покупать, да?" next
+	"@[71]?  [82][96][AA][9A][9D], [A9][A4][A0] [9F][96] [A7][A0][A9][96][AA][C3] [C4][A4][A0] [A1][A0][9C][A5][A1][91][A4][C3], [95][91]?" next
+	eob
 
 l_0xc52c1c:
-    "@Hmmm...  Hate to break this to you, but you don't have enough money." next
-    eob
+//	"@Хммм...  Не хочу тебя расстраивать, но у тебя недостаточно денег." next
+	"@[87][9E][9E][9E]...  [7F][96] [A7][A0][A9][A5] [A4][96][92][C6] [A2][91][A3][A3][A4][A2][91][9A][93][91][A4][C3], [9F][A0] [A5] [A4][96][92][C6] [9F][96][95][A0][A3][A4][91][A4][A0][A9][9F][A0] [95][96][9F][96][94]." next
+	eob
 
 l_0xc52c3d:
-    "@Oh... uh... it looks like you've got too many goods to carry." next
-    "@Would you be willing to sell me some of the goods you don't need?" next
-    eob
+	/*
+	"@Эм... мм... похоже, у тебя слишком много вещей в рюкзаке." next
+	"@Не мог бы ты продать мне некоторые вещи, которые тебе не нужны?" next
+	*/
+	"@[B4][9E]... [9E][9E]... [A1][A0][A7][A0][98][96], [A5] [A4][96][92][C6] [A3][9D][9A][AA][9C][A0][9E] [9E][9F][A0][94][A0] [93][96][C0][96][9B] [93] [A2][C5][9C][99][91][9C][96]." next
+	"@[7F][96] [9E][A0][94] [92][C2] [A4][C2] [A1][A2][A0][95][91][A4][C3] [9E][9F][96] [9F][96][9C][A0][A4][A0][A2][C2][96] [93][96][C0][9A], [9C][A0][A4][A0][A2][C2][96] [A4][96][92][96] [9F][96] [9F][A5][98][9F][C2]?" next
+	eob
 
 l_0xc52c81:
-    "@Fantastic!  What do you wanna sell?[03]" eob
+//	"@Фантастично!  Что ты хочешь продать?[03]" eob
+	"@[86][91][9F][A4][91][A3][A4][9A][A9][9F][A0]!  [89][A4][A0] [A4][C2] [A7][A0][A9][96][AA][C3] [A1][A2][A0][95][91][A4][C3]?[03]" eob
 
 l_0xc52c9b:
-    "@[1C 05 00]?" linebreak
-    "  I'd say it's worth" linebreak
-    "  about... {swap}$[1C 0A 00 00 00 00]." next
-    "@Whaddya say, partner?" linebreak
-    eob
+	/*
+	"@[1C 05 00]?" linebreak
+	"  Я бы сказал, что это будет стоить" linebreak
+	"  около... {swap}$[1C 0A 00 00 00 00]." next
+	"@Что скажешь, приятель?" linebreak
+	*/
+	"@[1C 05 00]?" linebreak
+	"  [B6] [92][C2] [A3][9C][91][99][91][9D], [A9][A4][A0] [C4][A4][A0] [92][A5][95][96][A4] [A3][A4][A0][9A][A4][C3]" linebreak
+	"  [A0][9C][A0][9D][A0]... {swap}$[1C 0A 00 00 00 00]." next
+	"@[89][A4][A0] [A3][9C][91][98][96][AA][C3], [A1][A2][9A][C6][A4][96][9D][C3]?" linebreak
+	eob
 
 l_0xc52cd4:
-    "@OK, I see.  Y'all come back now, hear?" next
-    eob
+//	"@ОК, я вижу.  Приходи ещё, слышишь?" next
+	"@[80][7C], [C6] [93][9A][98][A5].  [81][A2][9A][A7][A0][95][9A] [96][C0][97], [A3][9D][C2][AA][9A][AA][C3]?" next
+	eob
 
 l_0xc52ced:
-    "@What gives?  You don't have anything to sell.[03]" eob
+//	"@Что это даёт?  Тебе нечего продать.[03]" eob
+	"@[89][A4][A0] [C4][A4][A0] [95][91][97][A4]?  [84][96][92][96] [9F][96][A9][96][94][A0] [A1][A2][A0][95][91][A4][C3].[03]" eob
 
 l_0xc52d03:
-    "@Look, I'm really sorry, but we can't buy that." next
-    eob
+//	"@Слушай, мне правда жаль, но мы не можем купить это." next
+	"@[83][9D][A5][AA][91][9B], [9E][9F][96] [A1][A2][91][93][95][91] [98][91][9D][C3], [9F][A0] [9E][C2] [9F][96] [9E][A0][98][96][9E] [9C][A5][A1][9A][A4][C3] [C4][A4][A0]." next
+	eob
 
 l_0xc52d1e:
-    "@Thanks a million!" next
-    eob
+//	"@Огромнейшее спасибо!" next
+	"@[80][94][A2][A0][9E][9F][96][9B][AA][96][96] [A3][A1][91][A3][9A][92][A0]!" next
+	eob
 
 l_0xc52d2c:
-    "@Thanks a bunch!" next
-    eob
+//	"@Огромное спасибо!" next
+	"@[80][94][A2][A0][9E][9F][A0][96] [A3][A1][91][A3][9A][92][A0]!" next
+	eob
 
 l_0xc52d38:
-    "@Is there anything else" linebreak
-    "  I can get for you" linebreak
-    "  while you're here?" next
-    eob
+	/*
+	"@Есть что-нибудь ещё," linebreak
+	"  что я могу сделать," linebreak
+	"  пока вы здесь?" next
+	*/
+	"@[76][A3][A4][C3] [A9][A4][A0]-[9F][9A][92][A5][95][C3] [96][C0][97]," linebreak
+	"  [A9][A4][A0] [C6] [9E][A0][94][A5] [A3][95][96][9D][91][A4][C3]," linebreak
+	"  [A1][A0][9C][91] [93][C2] [99][95][96][A3][C3]?" next
+	eob
 
 l_0xc52d54:
-    "@What'll it be?" linebreak
-    eob
+//	"@Что это будет?" linebreak
+	"@[89][A4][A0] [C4][A4][A0] [92][A5][95][96][A4]?" linebreak
+	eob
 
 l_0xc52d5f:
-    "@Sakes alive! [1C 02 00] can't carry another thing." next
-    "@Maybe someone else can carry it." linebreak
-    eob
+	/*
+	"@Ну и ну! [1C 02 00] не сможет нести что-либо ещё." next
+	"@Может кто-то другой может взять это." linebreak
+	*/
+	"@[7F][A5] [9A] [9F][A5]! [1C 02 00] [9F][96] [A3][9E][A0][98][96][A4] [9F][96][A3][A4][9A] [A9][A4][A0]-[9D][9A][92][A0] [96][C0][97]." next
+	"@[7E][A0][98][96][A4] [9C][A4][A0]-[A4][A0] [95][A2][A5][94][A0][9B] [9E][A0][98][96][A4] [93][99][C6][A4][C3] [C4][A4][A0]." linebreak
+	eob
 
 l_0xc52d8c:
-    "@Please come again." end
+//	"@Пожалуйста, приходите ещё." end
+	"@[81][A0][98][91][9D][A5][9B][A3][A4][91], [A1][A2][9A][A7][A0][95][9A][A4][96] [96][C0][97]." end
 
 l_0xc52d94:
-    /*
-    "@Тссс!" linebreak
-    "  Не говорите слишком громко!" next
-    "@Чего вы хотите?" linebreak
-    */
-    "@[84][A3][A3][A3]!" linebreak
-    "  [7F][96] [94][A0][93][A0][A2][9A][A4][96] [A3][9D][9A][AA][9C][A0][9E] [94][A2][A0][9E][9C][A0]!" next
-    "@[89][96][94][A0] [93][C2] [A7][A0][A4][9A][A4][96]?" linebreak
-    eob
+	/*
+	"@Тссс!" linebreak
+	"  Не говорите слишком громко!" next
+	"@Чего вы хотите?" linebreak
+	*/
+	"@[84][A3][A3][A3]!" linebreak
+	"  [7F][96] [94][A0][93][A0][A2][9A][A4][96] [A3][9D][9A][AA][9C][A0][9E] [94][A2][A0][9E][9C][A0]!" next
+	"@[89][96][94][A0] [93][C2] [A7][A0][A4][9A][A4][96]?" linebreak
+	eob
 
 l_0xc52db6:
-    /*
-    "@...снова ты?!" linebreak
-    "  Чего ты хочешь теперь?" linebreak
-    */
-    "@...[A3][9F][A0][93][91] [A4][C2]?!" linebreak
-    "  [89][96][94][A0] [A4][C2] [A7][A0][A9][96][AA][C3] [A4][96][A1][96][A2][C3]?" linebreak
-    eob
+	/*
+	"@...снова ты?!" linebreak
+	"  Чего ты хочешь теперь?" linebreak
+	*/
+	"@...[A3][9F][A0][93][91] [A4][C2]?!" linebreak
+	"  [89][96][94][A0] [A4][C2] [A7][A0][A9][96][AA][C3] [A4][96][A1][96][A2][C3]?" linebreak
+	eob
 

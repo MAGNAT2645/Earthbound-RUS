@@ -1241,7 +1241,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7E][A0][9F][96][A4][91][90][A4][91][9D][9A][A3][9E][91][9F]"#Talisman coin
+  Name: "[7E][A0][9F][96][A4][91][90][A4][91][9D][9A][A3][9E][91][9F]" # Монета[90]талисман
   Type: 28
 85:
   Action: 240
@@ -1525,7 +1525,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7D][96][95][96][9F][A8].[90][A1][91][9D][A0][A9][9C][91]"#Rock candy
+  Name: "[7D][96][95][96][9F][A8].[90][A1][91][9D][A0][A9][9C][91]" # Rock candy
   Type: 32
 102:
   Action: 249
@@ -1542,7 +1542,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7C][A2][A5][91][A3][A3][91][9F]"#Croissant
+  Name: "[7C][A2][A5][91][A3][A3][91][9F]" # Круассан
   Type: 32
 103:
   Action: 249
@@ -1559,7 +1559,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[82][A5][9D][96][A4]"#Bread roll
+  Name: "[87][9D][96][92][9F][C2][9B][90][A2][A5][9D][96][A4]" # Хлебный[90]рулет
   Type: 32
 104:
   Action: 188
@@ -1575,7 +1575,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[78][96][93][91][A4].[90][A2][96][99][9A][9F][9C][91]"#Pak of bubble gum
+  Name: "[78][96][93][91][A4].[90][A2][96][99][9A][9F][9C][91]" # Pak of bubble gum
   Type: 56
 105:
   Action: 189
@@ -2475,7 +2475,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7E][96][AA][A0][9C][90][75][A2][91][9C][A0][9F][9A][A4][91]"#"Bag of Dragonite"
+  Name: "[7E][96][AA][A0][9C][90][75][A2][91][94][A0][9F][9A][A4][91]" # Мешок Драгонита
   Type: 53
 161:
   Action: 183
@@ -3752,7 +3752,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: ""#"Plain roll"
+  Name: "[82][A5][9D][96][A4]" # Рулет
   Type: 32
 240:
   Action: 249
@@ -3837,7 +3837,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[81][A2][C6][9F][A0][96][90][93][C6][9D][90][9E][C6][A3][A0]"#"Spicy jerky"
+  Name: "[81][A2][C6][9F][A0][96][90][93][C6][9D][90][9E][C6][A3][A0]" # Пряное[90]вял[90]мясо
   Type: 32
 245:
   Action: 249

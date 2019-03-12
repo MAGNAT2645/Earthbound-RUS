@@ -117,11 +117,11 @@ l_0xef77db:
 
 l_0xef77fd:
     /*
-    "@{target} присоединил{call(RUS_ref.l_gendersuffix2)}" linebreak
+    "@{target} присоединяется" linebreak
     "  к битве.[03]" eob
     */
     newline
-    "@{target} [A1][A2][9A][A3][A0][96][95][9A][9F][9A][9D]{call(RUS_ref.l_gendersuffix2)}" linebreak
+    "@{target} [A1][A2][9A][A3][A0][96][95][9A][9F][C6][96][A4][A3][C6]" linebreak
     "  [9C] [92][9A][A4][93][96].[03]" eob
 
 l_0xef7810:
