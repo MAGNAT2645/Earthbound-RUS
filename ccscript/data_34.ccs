@@ -410,28 +410,42 @@ l_0xc7ac3a:
     "[1F 15 0E 00 C3 01 01] " goto(l_0xc7ac42)
 
 l_0xc7ac42:
-    /*
-    "{pause(64)}[1F 15 6A 00 C4 01 01]  [1F 61][1F 1F 0E 00 06]        [1F EC 01 01]{window_open(1)}@Вау, какая прекрасная фотография!" next
-    "@Она всегда будет напоминать о самых тёплых воспоминаниях..." next
-    "{window_closeall}[1F EA 8F 00]                      [1F 61][1F 1F 58 01 06]      [1F 61][1F 07 03]{pause(60)}{music_resume}" eob
-    */
-    "{pause(64)}[1F 15 6A 00 C4 01 01]  [1F 61][1F 1F 0E 00 06]        [1F EC 01 01]{window_open(1)}@[73][91][A5], [9C][91][9C][91][C6] [A1][A2][96][9C][A2][91][A3][9F][91][C6] [A6][A0][A4][A0][94][A2][91][A6][9A][C6]!" next
-    "@[80][9F][91] [93][A3][96][94][95][91] [92][A5][95][96][A4] [9F][91][A1][A0][9E][9A][9F][91][A4][C3] [A0] [A3][91][9E][C2][A7] [A4][97][A1][9D][C2][A7] [93][A0][A3][A1][A0][9E][9A][9F][91][9F][9A][C6][A7]..." next
-    "{window_closeall}[1F EA 8F 00]                      [1F 61][1F 1F 58 01 06]      [1F 61][1F 07 03]{pause(60)}{music_resume}" eob
+	/*
+	"{pause(64)}[1F 15 6A 00 C4 01 01]  [1F 61][1F 1F 0E 00 06]        [1F EC 01 01]{window_open(1)}@Вау, какая прекрасная фотография!" next
+	"@Она всегда будет напоминать о самых тёплых воспоминаниях..." next
+	"{window_closeall}[1F EA 8F 00]                      [1F 61][1F 1F 58 01 06]      [1F 61][1F 07 03]{pause(60)}{music_resume}" eob
+	*/
+	"{pause(64)}[1F 15 6A 00 C4 01 01]  [1F 61][1F 1F 0E 00 06]        [1F EC 01 01]{window_open(1)}@[73][91][A5], [9C][91][9C][91][C6] [A1][A2][96][9C][A2][91][A3][9F][91][C6] [A6][A0][A4][A0][94][A2][91][A6][9A][C6]!" next
+	"@[80][9F][91] [93][A3][96][94][95][91] [92][A5][95][96][A4] [9F][91][A1][A0][9E][9A][9F][91][A4][C3] [A0] [A3][91][9E][C2][A7] [A4][97][A1][9D][C2][A7] [93][A0][A3][A1][A0][9E][9A][9F][91][9F][9A][C6][A7]..." next
+	"{window_closeall}[1F EA 8F 00]                      [1F 61][1F 1F 58 01 06]      [1F 61][1F 07 03]{pause(60)}{music_resume}" eob
 
 l_0xc7acb8:
-    "{music(115)}{pause(60)}{wait}[1F 01 00]{sound(11)}[19 10 01]{rtoarg}{window_open(1)}@[1C 02 01], I haven't talked with you in ages!{pause(20)}  This is Orange Kid." next
-    "@We're finally coming near to the end of our research on..." next
-    "@how to change a boiled egg back into a raw egg." next
-    "@By the way, Apple Kid is missing." next
-    "@He left here saying that he was going to see Dr. Andonuts in Winters," next
-    "@and he never came back." next
-    "@I was hoping to borrow the book <Overcoming Shyness> from him," next
-    "@but suddenly, he disappeared..." next
-    "@I haven't read the book, so I'm not very good at talking... sorry." next
-    "@I'm also working hard on my invention,{pause(15)} so I hope you'll understand." next
-    "@Say hello to your friends for me!" next
-    "@*click*{wait}{window_closeall}{sound(11)}{music_resume}" eob
+	/*
+	"{music(115)}{pause(60)}{wait}[1F 01 00]{sound(11)}[19 10 01]{rtoarg}{window_open(1)}@[1C 02 01], z не разговаривал с тобой целую вечность!{pause(20)}  Это Орэнж Кид." next
+	"@Мы, наконец, подходим к концу нашего исследования о том..." next
+	"@как превратить варёное яйцо обратно в сырое." next
+	"@Кстати, Эпл Кид пропал." next
+	"@Он ушёл, сказав, что собирается в Уинтерс,{pause(15)} навестить Др. Андонатса," next
+	"@и больше не вернулся." next
+	"@Я надеялся позаимствовать у него книгу <Преодоление Застенчивости>," next
+	"@но он внезапно исчез..." next
+	"@Я не читал эту книгу, поэтому я плох в общении... прости." next
+	"@Я также упорно работаю над своим изобретением,{pause(15)} поэтому я надеюсь, что ты поймёшь." next
+	"@Передай привет своим друзьям от меня!" next
+	"@*щелчок*{wait}{window_closeall}{sound(11)}{music_resume}" eob
+	*/
+	"{music(115)}{pause(60)}{wait}[1F 01 00]{sound(11)}[19 10 01]{rtoarg}{window_open(1)}@[1C 02 01], z [9F][96] [A2][91][99][94][A0][93][91][A2][9A][93][91][9D] [A3] [A4][A0][92][A0][9B] [A8][96][9D][A5][C5] [93][96][A9][9F][A0][A3][A4][C3]!{pause(20)}  [B4][A4][A0] [80][A2][C4][9F][98] [7C][9A][95]." next
+	"@[7E][C2], [9F][91][9C][A0][9F][96][A8], [A1][A0][95][A7][A0][95][9A][9E] [9C] [9C][A0][9F][A8][A5] [9F][91][AA][96][94][A0] [9A][A3][A3][9D][96][95][A0][93][91][9F][9A][C6] [A0] [A4][A0][9E]..." next
+	"@[9C][91][9C] [A1][A2][96][93][A2][91][A4][9A][A4][C3] [93][91][A2][97][9F][A0][96] [C6][9B][A8][A0] [A0][92][A2][91][A4][9F][A0] [93] [A3][C2][A2][A0][96]." next
+	"@[7C][A3][A4][91][A4][9A], [B4][A1][9D] [7C][9A][95] [A1][A2][A0][A1][91][9D]." next
+	"@[80][9F] [A5][AA][97][9D], [A3][9C][91][99][91][93], [A9][A4][A0] [A3][A0][92][9A][A2][91][96][A4][A3][C6] [93] [85][9A][9F][A4][96][A2][A3],{pause(15)} [9F][91][93][96][A3][A4][9A][A4][C3] [75][A2]. [71][9F][95][A0][9F][91][A4][A3][91]," next
+	"@[9A] [92][A0][9D][C3][AA][96] [9F][96] [93][96][A2][9F][A5][9D][A3][C6]." next
+	"@[B6] [9F][91][95][96][C6][9D][A3][C6] [A1][A0][99][91][9A][9E][A3][A4][93][A0][93][91][A4][C3] [A5] [9F][96][94][A0] [9C][9F][9A][94][A5] <[81][A2][96][A0][95][A0][9D][96][9F][9A][96] [79][91][A3][A4][96][9F][A9][9A][93][A0][A3][A4][9A]>," next
+	"@[9F][A0] [A0][9F] [93][9F][96][99][91][A1][9F][A0] [9A][A3][A9][96][99]..." next
+	"@[B6] [9F][96] [A9][9A][A4][91][9D] [C4][A4][A5] [9C][9F][9A][94][A5], [A1][A0][C4][A4][A0][9E][A5] [C6] [A1][9D][A0][A7] [93] [A0][92][C0][96][9F][9A][9A]... [A1][A2][A0][A3][A4][9A]." next
+	"@[B6] [A4][91][9C][98][96] [A5][A1][A0][A2][9F][A0] [A2][91][92][A0][A4][91][C5] [9F][91][95] [A3][93][A0][9A][9E] [9A][99][A0][92][A2][96][A4][96][9F][9A][96][9E],{pause(15)} [A1][A0][C4][A4][A0][9E][A5] [C6] [9F][91][95][96][C5][A3][C3], [A9][A4][A0] [A4][C2] [A1][A0][9B][9E][97][AA][C3]." next
+	"@[81][96][A2][96][95][91][9B] [A1][A2][9A][93][96][A4] [A3][93][A0][9A][9E] [95][A2][A5][99][C3][C6][9E] [A0][A4] [9E][96][9F][C6]!" next
+	"@*[C0][96][9D][A9][A0][9C]*{wait}{window_closeall}{sound(11)}{music_resume}" eob
 
 l_0xc7ae41:
     /*

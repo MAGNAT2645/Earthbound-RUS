@@ -48,28 +48,33 @@ l_0xc91f9c:
     "@([84][A0][9D][C3][9C][A0] [1C 02 03] [9E][A0][98][96][A4] [A1][A0][A9][9A][9F][9A][A4][C3] [7F][96][92][96][A3][9F][A0][94][A0] [72][96][94][A5][9F][91].)" end
 
 l_0xc91fba:
-//  "[19 10 02][1D 0D 00 01 02][1B 03 {e(l_0xc91fd9)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_0xc91fd9)}]мы сядем" eob
-    "[19 10 02][1D 0D 00 01 02][1B 03 {e(l_0xc91fd9)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_0xc91fd9)}][9E][C2] [A3][C6][95][96][9E]" eob
+//	"[19 10 02][1D 0D 00 01 02][1B 03 {e(l_0xc91fd9)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_0xc91fd9)}]мы сядем" eob
+	"[19 10 02][1D 0D 00 01 02][1B 03 {e(l_0xc91fd9)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_0xc91fd9)}][9E][C2] [A3][C6][95][96][9E]" eob
 
 l_0xc91fd9:
-//  "я сяду" eob
-    "[C6] [A3][C6][95][A5]" eob
+//	"я сяду" eob
+	"[C6] [A3][C6][95][A5]" eob
 
 l_0xc91fdb:
-//  "[19 10 02][1D 0D 00 01 02][1B 03 {e(l_0xc91ffa)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_0xc91ffa)}]нас" eob
-    "[19 10 02][1D 0D 00 01 02][1B 03 {e(l_0xc91ffa)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_0xc91ffa)}][9F][91][A3]" eob
+//	"[19 10 02][1D 0D 00 01 02][1B 03 {e(l_0xc91ffa)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_0xc91ffa)}]нас" eob
+	"[19 10 02][1D 0D 00 01 02][1B 03 {e(l_0xc91ffa)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_0xc91ffa)}][9F][91][A3]" eob
 
 l_0xc91ffa:
-//  "меня" eob
-    "[9E][96][9F][C6]" eob
+//	"меня" eob
+	"[9E][96][9F][C6]" eob
 
 l_0xc91ffd:
-    "{set(flag 11)}[1F 41 05][1F 15 B9 01 09 03 01]" call(data_24.l_0xc69082) "[1F E9 6F 02][1F 61]{pause(30)}[1F 1E 6D 02 06][1F 61][1F 15 D1 00 92 00 FF][1F 21 BA][1F 61][1F ED][1F 15 D1 00 93 00 FF][1F 21 BC][1F EF D1 00][1F 61][1F ED][1F 15 D1 00 AA 00 FF][1F 15 E6 00 AB 00 FF][1F 21 C3][1F EF E6 00][1F 61]{unset(flag 655)}{set(flag 535)}{music_resume}[1F 61]{music(110)}[1F 61][1F EC FF 01][1F ED][1F 15 F1 00 AC 00 FF][1F 15 F1 00 AD 00 FF][1F 15 F1 00 AE 00 FF]{unset(flag 535)}[1F 21 4E][1F E8 FF]{pause(1)}[19 26 07]{set(flag 748)}{set(flag 215)}{unset(flag 11)}[1F 41 06][1F 15 B9 01 0A 03 01]" eob
+	"{set(flag 11)}[1F 41 05][1F 15 B9 01 09 03 01]" call(data_24.l_0xc69082) "[1F E9 6F 02][1F 61]{pause(30)}[1F 1E 6D 02 06][1F 61][1F 15 D1 00 92 00 FF][1F 21 BA][1F 61][1F ED][1F 15 D1 00 93 00 FF][1F 21 BC][1F EF D1 00][1F 61][1F ED][1F 15 D1 00 AA 00 FF][1F 15 E6 00 AB 00 FF][1F 21 C3][1F EF E6 00][1F 61]{unset(flag 655)}{set(flag 535)}{music_resume}[1F 61]{music(110)}[1F 61][1F EC FF 01][1F ED][1F 15 F1 00 AC 00 FF][1F 15 F1 00 AD 00 FF][1F 15 F1 00 AE 00 FF]{unset(flag 535)}[1F 21 4E][1F E8 FF]{pause(1)}[19 26 07]{set(flag 748)}{set(flag 215)}{unset(flag 11)}[1F 41 06][1F 15 B9 01 0A 03 01]" eob
 
 l_0xc920a2:
-    call(data_24.l_0xc69082) "{music(111)}[1F 15 6A 00 FB 02 01][1F 61][1F EB FF 06][1F 21 51]{pause(120)}{window_open(1)}[19 10 01]{rtoarg}@([1C 02 00] had a dream, it was a very clear,{pause(15)} and very strange,{pause(5)} dream.)[03][1F 15 6A 00 79 02 01][1F 61]{window_closeall}[1F 64][1F 11 04][1F 12 01][1F 12 02][1F 12 03][1F EB FF 06]{set(flag 11)}[1F 07 03]{pause(60)}[1F 21 CA][1F 15 6A 00 85 02 01]" call(data_57.l_0xc9b4b8) "[1F 21 CB][1F 15 6A 00 86 02 01]" call(data_57.l_0xc9b4b8) "[1F EC FF 01][1F 21 4F][1F E5 FF][1F E6 41 04][1F E6 42 04]{pause(120)}[1F 07 03]{pause(120)}[1F 16 41 04 03]{music(119)}{pause(120)}{set(flag 149)}{window_open(1)}@Prince [1C 02 04],{pause(15)} the time has now come for you to undertake your final trial." next
-    "@Go to the <Place of Emptiness> and endure this final test." next
-    "@I am praying for your success in this final stage of your training.{wait}{window_closeall}{set(flag 150)}{set(flag 10)}[1F 66 01 01 03 22 C9 00]{unset(flag 11)}[1F 41 06]{set(flag 216)}[19 26 09][1F 07 03]{pause(60)}{music_resume}[1F E8 FF]" eob
+	/*
+	call(data_24.l_0xc69082) "{music(111)}[1F 15 6A 00 FB 02 01][1F 61][1F EB FF 06][1F 21 51]{pause(120)}{window_open(1)}[19 10 01]{rtoarg}@([1C 02 00] увидел сон, очень ясный{pause(15)} и очень странный сон.)[03][1F 15 6A 00 79 02 01][1F 61]{window_closeall}[1F 64][1F 11 04][1F 12 01][1F 12 02][1F 12 03][1F EB FF 06]{set(flag 11)}[1F 07 03]{pause(60)}[1F 21 CA][1F 15 6A 00 85 02 01]" call(data_57.l_0xc9b4b8) "[1F 21 CB][1F 15 6A 00 86 02 01]" call(data_57.l_0xc9b4b8) "[1F EC FF 01][1F 21 4F][1F E5 FF][1F E6 41 04][1F E6 42 04]{pause(120)}[1F 07 03]{pause(120)}[1F 16 41 04 03]{music(119)}{pause(120)}{set(flag 149)}{window_open(1)}@Принц [1C 02 04],{pause(15)} пришло время провести ваше последнее испытание." next
+	"@Идите в <Место Пустоты> и выдержите это последнее испытание." next
+	"@Я молюсь за ваш успех на этом заключительном этапе обучения.{wait}{window_closeall}{set(flag 150)}{set(flag 10)}[1F 66 01 01 03 22 C9 00]{unset(flag 11)}[1F 41 06]{set(flag 216)}[19 26 09][1F 07 03]{pause(60)}{music_resume}[1F E8 FF]" eob
+	*/
+	call(data_24.l_0xc69082) "{music(111)}[1F 15 6A 00 FB 02 01][1F 61][1F EB FF 06][1F 21 51]{pause(120)}{window_open(1)}[19 10 01]{rtoarg}@([1C 02 00] [A5][93][9A][95][96][9D] [A3][A0][9F], [A0][A9][96][9F][C3] [C6][A3][9F][C2][9B]{pause(15)} [9A] [A0][A9][96][9F][C3] [A3][A4][A2][91][9F][9F][C2][9B] [A3][A0][9F].)[03][1F 15 6A 00 79 02 01][1F 61]{window_closeall}[1F 64][1F 11 04][1F 12 01][1F 12 02][1F 12 03][1F EB FF 06]{set(flag 11)}[1F 07 03]{pause(60)}[1F 21 CA][1F 15 6A 00 85 02 01]" call(data_57.l_0xc9b4b8) "[1F 21 CB][1F 15 6A 00 86 02 01]" call(data_57.l_0xc9b4b8) "[1F EC FF 01][1F 21 4F][1F E5 FF][1F E6 41 04][1F E6 42 04]{pause(120)}[1F 07 03]{pause(120)}[1F 16 41 04 03]{music(119)}{pause(120)}{set(flag 149)}{window_open(1)}@[81][A2][9A][9F][A8] [1C 02 04],{pause(15)} [A1][A2][9A][AA][9D][A0] [93][A2][96][9E][C6] [A1][A2][A0][93][96][A3][A4][9A] [93][91][AA][96] [A1][A0][A3][9D][96][95][9F][96][96] [9A][A3][A1][C2][A4][91][9F][9A][96]." next
+	"@[7A][95][9A][A4][96] [93] <[7E][96][A3][A4][A0] [81][A5][A3][A4][A0][A4][C2]> [9A] [93][C2][95][96][A2][98][9A][A4][96] [C4][A4][A0] [A1][A0][A3][9D][96][95][9F][96][96] [9A][A3][A1][C2][A4][91][9F][9A][96]." next
+	"@[B6] [9E][A0][9D][C5][A3][C3] [99][91] [93][91][AA] [A5][A3][A1][96][A7] [9F][91] [C4][A4][A0][9E] [99][91][9C][9D][C5][A9][9A][A4][96][9D][C3][9F][A0][9E] [C4][A4][91][A1][96] [A0][92][A5][A9][96][9F][9A][C6].{wait}{window_closeall}{set(flag 150)}{set(flag 10)}[1F 66 01 01 03 22 C9 00]{unset(flag 11)}[1F 41 06]{set(flag 216)}[19 26 09][1F 07 03]{pause(60)}{music_resume}[1F E8 FF]" eob
 
 l_0xc92203:
     "{set(flag 11)}[1F 15 6A 00 53 01 01]       " call(data_57.l_0xc9b4b8) "[1F 07 02]{pause(60)}[1F 13 04 03]{pause(4)}[1F 13 04 04]{pause(4)}[1F 13 04 05]{pause(4)}[1F EB FF 06][1F 15 6A 01 54 01 01]{music(60)}{unset(flag 2)}                       [1F 61]                              [06 02 00 {e(l_0xc92417)}]      [1F E7 6A 01][1F 15 A3 00 55 01 01]  [1F 61]                                                      [1F E7 A3 00]" call(l_0xc92461) "              [1F EA A3 00]                           [1F 61][1F EA 6A 01][1F 61]                              [06 02 00 {e(l_0xc92417)}]      [1F 15 6D 01 56 01 01]   {unset(flag 3)}               {set(flag 4)}               [1F 61]                      [06 02 00 {e(l_0xc9242e)}]      {set(flag 3)}[1F 61]                      {open_hp}                       [1F F2 6D 01 57 01]    {unset(flag 3)}               {unset(flag 5)}               " call(l_0xc9254a) "[06 02 00 {e(l_0xc9242e)}]      " call(l_0xc925e3) "[06 02 00 {e(l_0xc9242e)}]      " call(l_0xc9268e) "[06 02 00 {e(l_0xc9242e)}]      " call(l_0xc92723) "[06 02 00 {e(l_0xc9242e)}]      {set(flag 5)}[1F 61]" call(l_0xc927ea) "[06 02 00 {e(l_0xc9242e)}]      {set(flag 3)}                       [1F 61]                              [1F 1F 6D 01 06]        [1F EC FF 01]         {pause(1)}{music_resume}[1F 15 58 00 55 01 01][1F 61]                                                      [1F E7 58 00][1F 13 04 07]" call(l_0xc92958) "              [1F EA 58 00]             [1F 61]" eob
@@ -84,20 +89,30 @@ l_0xc92417:
     "[1F EC FF 01]         [1F 1F 6A 01 06][1E 00 04 64][1F 04 01]{music_resume}" eob
 
 l_0xc9242e:
-    "[1E 00 04 64][1F 04 01]{set(flag 3)}{pause(1)}[06 04 00 {e(l_0xc9242e)}]      {unset(flag 2)}[1F 1F 6D 01 06]        [1F EC FF 01]         " eob
+	"[1E 00 04 64][1F 04 01]{set(flag 3)}{pause(1)}[06 04 00 {e(l_0xc9242e)}]      {unset(flag 2)}[1F 1F 6D 01 06]        [1F EC FF 01]         " eob
 
 l_0xc92458:
-    "[1F 66 01 01 03 22 C9 00]" eob
+	"[1F 66 01 01 03 22 C9 00]" eob
 
 l_0xc92461:
-    "{window_open(1)}@Ah!{pause(15)}  Prince [1C 02 04]..." next
-    "@I am a messenger from your master..." next
-    "@He sent me to tell you that you must stop your meditation immediately." next
-    "@Prince [1C 02 04]!" next
-    "@You must come back with me instead of staying in a place such as this." next
-    "@Your Master wishes it...{pause(15)} please rise, Prince..." next
-    "@Your highness, you must give up this trial for now... believe what I say," next
-    "@it is the truth...{wait}{window_closeall}" eob
+	/*
+	"{window_open(1)}@Ах!{pause(15)}  Принц [1C 02 04]..." next
+	"@Я - посланник вашего учителя..." next
+	"@Он послал меня сказать вам, что вы должны немедленно прекратить медитацию." next
+	"@Принц [1C 02 04]!" next
+	"@Вы должны вернуться со мной обратно, вместо того, чтобы оставаться в таком месте." next
+	"@Ваш учитель желает этого...{pause(15)} пожалуйста, встаньте, Принц..." next
+	"@Ваше высочество, вы должны прекратить это испытание.... поверьте моим словам," next
+	"@это правда...{wait}{window_closeall}" eob
+	*/
+	"{window_open(1)}@[71][A7]!{pause(15)}  [81][A2][9A][9F][A8] [1C 02 04]..." next
+	"@[B6] - [A1][A0][A3][9D][91][9F][9F][9A][9C] [93][91][AA][96][94][A0] [A5][A9][9A][A4][96][9D][C6]..." next
+	"@[80][9F] [A1][A0][A3][9D][91][9D] [9E][96][9F][C6] [A3][9C][91][99][91][A4][C3] [93][91][9E], [A9][A4][A0] [93][C2] [95][A0][9D][98][9F][C2] [9F][96][9E][96][95][9D][96][9F][9F][A0] [A1][A2][96][9C][A2][91][A4][9A][A4][C3] [9E][96][95][9A][A4][91][A8][9A][C5]." next
+	"@[81][A2][9A][9F][A8] [1C 02 04]!" next
+	"@[73][C2] [95][A0][9D][98][9F][C2] [93][96][A2][9F][A5][A4][C3][A3][C6] [A3][A0] [9E][9F][A0][9B] [A0][92][A2][91][A4][9F][A0], [93][9E][96][A3][A4][A0] [A4][A0][94][A0], [A9][A4][A0][92][C2] [A0][A3][A4][91][93][91][A4][C3][A3][C6] [93] [A4][91][9C][A0][9E] [9E][96][A3][A4][96]." next
+	"@[73][91][AA] [A5][A9][9A][A4][96][9D][C3] [98][96][9D][91][96][A4] [C4][A4][A0][94][A0]...{pause(15)} [A1][A0][98][91][9D][A5][9B][A3][A4][91], [93][A3][A4][91][9F][C3][A4][96], [81][A2][9A][9F][A8]..." next
+	"@[73][91][AA][96] [93][C2][A3][A0][A9][96][A3][A4][93][A0], [93][C2] [95][A0][9D][98][9F][C2] [A1][A2][96][9C][A2][91][A4][9A][A4][C3] [C4][A4][A0] [9A][A3][A1][C2][A4][91][9F][9A][96].... [A1][A0][93][96][A2][C3][A4][96] [9E][A0][9A][9E] [A3][9D][A0][93][91][9E]," next
+	"@[C4][A4][A0] [A1][A2][91][93][95][91]...{wait}{window_closeall}" eob
 
 l_0xc9254a:
     /*
