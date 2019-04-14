@@ -82,12 +82,20 @@ l_0xc87202:
     "[06 5C 01 {e(data_55.l_0xc9992f)}][06 56 01 {e(l_0xc87280)}][06 94 00 {e(l_0xc87220)}]{window_open(1)}@.....{wait}{window_closeall}" eob
 
 l_0xc87220:
-    "{window_open(1)}@Are you a thief, a warrior, or one who has come to see my majesty?" next
-    "@You must decide what you really are.  Therefore, what will you do?{wait}{window_closeall}{set(flag 7)}{set(flag 152)}" eob
+	/*
+	"{window_open(1)}@Ты вор, воин или тот, кто пришёл увидеть моё величество?" next
+	"@Ты должен решить, кто ты на самом деле.  Поэтому, что ты будешь делать?{wait}{window_closeall}{set(flag 7)}{set(flag 152)}" eob
+	*/
+	"{window_open(1)}@[84][C2] [93][A0][A2], [93][A0][9A][9F] [9A][9D][9A] [A4][A0][A4], [9C][A4][A0] [A1][A2][9A][AA][97][9D] [A5][93][9A][95][96][A4][C3] [9E][A0][97] [93][96][9D][9A][A9][96][A3][A4][93][A0]?" next
+	"@[84][C2] [95][A0][9D][98][96][9F] [A2][96][AA][9A][A4][C3], [9C][A4][A0] [A4][C2] [9F][91] [A3][91][9E][A0][9E] [95][96][9D][96].  [81][A0][C4][A4][A0][9E][A5], [A9][A4][A0] [A4][C2] [92][A5][95][96][AA][C3] [95][96][9D][91][A4][C3]?{wait}{window_closeall}{set(flag 7)}{set(flag 152)}" eob
 
 l_0xc87280:
-    "{window_open(1)}@Warriors, enter now.{pause(20)}" linebreak
-    "  Search for the [1C 05 AF].[03]{window_closeall}" eob
+	/*
+	"{window_open(1)}@Воины, входите.{pause(20)}" linebreak
+	"  Найдите Соколиный Глаз.[03]{window_closeall}" eob
+	*/
+	"{window_open(1)}@[73][A0][9A][9F][C2], [93][A7][A0][95][9A][A4][96].{pause(20)}" linebreak
+	"  [7F][91][9B][95][9A][A4][96] [83][A0][9C][A0][9D][9A][9F][C2][9B] [74][9D][91][99].[03]{window_closeall}" eob
 
 l_0xc872a6:
     "@Broken down, old submarine.  The yellow color is purely coincidental." next

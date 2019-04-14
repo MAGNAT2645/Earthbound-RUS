@@ -329,25 +329,36 @@ l_0xc6d50a:
     "@Back stage is right behind this door." end
 
 l_0xc6d561:
-    /*
-    "@Когда появится [1C 02 01],{pause(15)} Беглая Пятёрка сказала мне впустить его." next
-    "@Поэтому, заходи.[03]{window_closeall}[1F F1 48 03 F2 00][1F 61][1F 1E 48 03 06][1F 17 49 03 08 00 01]{set(flag 374)}{set(flag 10)}" eob
-    */
-    "@[7C][A0][94][95][91] [A1][A0][C6][93][9A][A4][A3][C6] [1C 02 01],{pause(15)} [72][96][94][9D][91][C6] [81][C6][A4][97][A2][9C][91] [A3][9C][91][99][91][9D][91] [9E][9F][96] [93][A1][A5][A3][A4][9A][A4][C3] [96][94][A0]." next
-    "@[81][A0][C4][A4][A0][9E][A5], [99][91][A7][A0][95][9A].[03]{window_closeall}[1F F1 48 03 F2 00][1F 61][1F 1E 48 03 06][1F 17 49 03 08 00 01]{set(flag 374)}{set(flag 10)}" eob
+	/*
+	"@Когда появится [1C 02 01],{pause(15)} Беглая Пятёрка сказала мне впустить его." next
+	"@Поэтому, заходи.[03]{window_closeall}[1F F1 48 03 F2 00][1F 61][1F 1E 48 03 06][1F 17 49 03 08 00 01]{set(flag 374)}{set(flag 10)}" eob
+	*/
+	"@[7C][A0][94][95][91] [A1][A0][C6][93][9A][A4][A3][C6] [1C 02 01],{pause(15)} [72][96][94][9D][91][C6] [81][C6][A4][97][A2][9C][91] [A3][9C][91][99][91][9D][91] [9E][9F][96] [93][A1][A5][A3][A4][9A][A4][C3] [96][94][A0]." next
+	"@[81][A0][C4][A4][A0][9E][A5], [99][91][A7][A0][95][9A].[03]{window_closeall}[1F F1 48 03 F2 00][1F 61][1F 1E 48 03 06][1F 17 49 03 08 00 01]{set(flag 374)}{set(flag 10)}" eob
 
 l_0xc6d5ae:
-    "@Ah, you're a friend of the Runaway Five..." next
-    "@Did you come to see Miss Venus?{pause(20)}  Come inside quickly." next
-    "@Don't let the other fans see you enter.[03]{window_closeall}[1F F1 48 03 F2 00][1F 61][1F 1E 48 03 06][1F 17 49 03 08 00 01]{set(flag 374)}{set(flag 9)}" eob
+	/*
+	"@А, ты друг Беглой Пятёрки..." next
+	"@Пришёл к Мисс Венус?{pause(20)}  Заходи скорее." next
+	"@Не позволяй другим фанатам увидеть, как ты заходишь.[03]{window_closeall}[1F F1 48 03 F2 00][1F 61][1F 1E 48 03 06][1F 17 49 03 08 00 01]{set(flag 374)}{set(flag 9)}" eob
+	*/
+	"@[71], [A4][C2] [95][A2][A5][94] [72][96][94][9D][A0][9B] [81][C6][A4][97][A2][9C][9A]..." next
+	"@[81][A2][9A][AA][97][9D] [9C] [7E][9A][A3][A3] [73][96][9F][A5][A3]?{pause(20)}  [79][91][A7][A0][95][9A] [A3][9C][A0][A2][96][96]." next
+	"@[7F][96] [A1][A0][99][93][A0][9D][C6][9B] [95][A2][A5][94][9A][9E] [A6][91][9F][91][A4][91][9E] [A5][93][9A][95][96][A4][C3], [9C][91][9C] [A4][C2] [99][91][A7][A0][95][9A][AA][C3].[03]{window_closeall}[1F F1 48 03 F2 00][1F 61][1F 1E 48 03 06][1F 17 49 03 08 00 01]{set(flag 374)}{set(flag 9)}" eob
 
 l_0xc6d61e:
-    "@If [1C 02 01] arrives,{pause(15)} the Runaway Five told me to let him in.[03]" eob
+//	"@Если придёт [1C 02 01],{pause(15)} Беглая Пятёрка сказала мне впустить его.[03]" eob
+	"@[76][A3][9D][9A] [A1][A2][9A][95][97][A4] [1C 02 01],{pause(15)} [72][96][94][9D][91][C6] [81][C6][A4][97][A2][9C][91] [A3][9C][91][99][91][9D][91] [9E][9F][96] [93][A1][A5][A3][A4][9A][A4][C3] [96][94][A0].[03]" eob
 
 l_0xc6d642:
-    "@Ah, you're a friend of the Runaway Five?" next
-    "@Did you come to see Miss Venus?{pause(20)}  Come inside quickly." next
-    "@Don't let the other fans see you enter.[03]" eob
+	/*
+	"@А, ты друг Беглой Пятёрки?" next
+	"@Пришёл к Мисс Венус?{pause(20)}  Заходи скорее." next
+	"@Не позволяй другим фанатам увидеть, как ты заходишь.[03]" eob
+	*/
+	"@[71], [A4][C2] [95][A2][A5][94] [72][96][94][9D][A0][9B] [81][C6][A4][97][A2][9C][9A]?" next
+	"@[81][A2][9A][AA][97][9D] [9C] [7E][9A][A3][A3] [73][96][9F][A5][A3]?{pause(20)}  [79][91][A7][A0][95][9A] [A3][9C][A0][A2][96][96]." next
+	"@[7F][96] [A1][A0][99][93][A0][9D][C6][9B] [95][A2][A5][94][9A][9E] [A6][91][9F][91][A4][91][9E] [A5][93][9A][95][96][A4][C3], [9C][91][9C] [A4][C2] [99][91][A7][A0][95][9A][AA][C3].[03]" eob
 
 l_0xc6d695:
     "[06 93 00 {e(l_0xc6d642)}]" goto(l_0xc6d61e)
@@ -361,43 +372,63 @@ l_0xc6d702:
     "girl." end
 
 l_0xc6d707:
-    "@Oh, you want an autograph?" next
-    "@Okay,{pause(15)} I'll give you my autograph on this banana peel..." next
-    "@{pause(20)}Here you go." next
-    "[1D 03 FF][1B 02 {e(l_0xc6d786)}][1D 0E 00 B7]" call(data_36.l_0xc7dcb6) next
-    "@Oh, and this is a bonus..." next
-    "@Smack!{wait}{window_closeall}{set(flag 91)}{set(flag 10)}" eob
+	/*
+	"@О, ты хочешь автограф?" next
+	"@Хорошо,{pause(15)} я дам тебе свой автограф на этой банановой кожуре..." next
+	"@{pause(20)}Вот, держи." next
+	"[1D 03 FF][1B 02 {e(l_0xc6d786)}][1D 0E 00 B7]" call(data_36.l_0xc7dcb6) next
+	"@Оу, а вот ещё бонус..." next
+	"@*Чмок*!{wait}{window_closeall}{set(flag 91)}{set(flag 10)}" eob
+	*/
+	"@[80], [A4][C2] [A7][A0][A9][96][AA][C3] [91][93][A4][A0][94][A2][91][A6]?" next
+	"@[87][A0][A2][A0][AA][A0],{pause(15)} [C6] [95][91][9E] [A4][96][92][96] [A3][93][A0][9B] [91][93][A4][A0][94][A2][91][A6] [9F][91] [C4][A4][A0][9B] [92][91][9F][91][9F][A0][93][A0][9B] [9C][A0][98][A5][A2][96]..." next
+	"@{pause(20)}[73][A0][A4], [95][96][A2][98][9A]." next
+	"[1D 03 FF][1B 02 {e(l_0xc6d786)}][1D 0E 00 B7]" call(data_36.l_0xc7dcb6) next
+	"@[80][A5], [91] [93][A0][A4] [96][C0][97] [92][A0][9F][A5][A3]..." next
+	"@*[89][9E][A0][9C]*!{wait}{window_closeall}{set(flag 91)}{set(flag 10)}" eob
 
 l_0xc6d786:
     "@Oh, uh huh..." next
     "@I can't give you the banana 'cause you have too much stuff." end
 
 l_0xc6d7b3:
-    "[06 A8 02 {e(l_0xc6d852)}]@Oh, you again..." next
-    "@Look, I'm busy right now." next
-    "@I'll give you an autograph next time." next
-    "@Are you here to see my show?" linebreak
-    "[19 02]Yes" eob
+	/*
+	"[06 A8 02 {e(l_0xc6d852)}]@Оу, снова ты..." next
+	"@Послушай, я сейчас занята." next
+	"@Я дам тебе автограф в другой раз." next
+	"@Ты пришёл посмотреть моё шоу?" linebreak
+	"[19 02]Да" eob
+	*/
+	"[06 A8 02 {e(l_0xc6d852)}]@[80][A5], [A3][9F][A0][93][91] [A4][C2]..." next
+	"@[81][A0][A3][9D][A5][AA][91][9B], [C6] [A3][96][9B][A9][91][A3] [99][91][9F][C6][A4][91]." next
+	"@[B6] [95][91][9E] [A4][96][92][96] [91][93][A4][A0][94][A2][91][A6] [93] [95][A2][A5][94][A0][9B] [A2][91][99]." next
+	"@[84][C2] [A1][A2][9A][AA][97][9D] [A1][A0][A3][9E][A0][A4][A2][96][A4][C3] [9E][A0][97] [AA][A0][A5]?" linebreak
+	"[19 02][75][91]" eob
 
 l_0xc6d803:
-    "[19 02]No" eob
+//	"[19 02]Нет" eob
+	"[19 02][7F][96][A4]" eob
 
 l_0xc6d808:
-    "[1C 07 02][11]{clearline}[09 02 {e(l_0xc6d84b)} {e(l_0xc6d817)}]" goto(l_0xc6d817)
+	"[1C 07 02][11]{clearline}[09 02 {e(l_0xc6d84b)} {e(l_0xc6d817)}]" goto(l_0xc6d817)
 
 l_0xc6d817:
-    "@...Oh, I see." next
-    goto(l_0xc6d822)
+//	"@...Оу, ладно." next
+	"@...[80][A5], [9D][91][95][9F][A0]." next
+	goto(l_0xc6d822)
 
 l_0xc6d822:
-    "@Looks like you aren't too busy.{pause(20)}  Make yourself at home for a while." end
+//	"@Похоже, ты не слишком занят.{pause(20)}  Чувствуй себя как дома." end
+	"@[81][A0][A7][A0][98][96], [A4][C2] [9F][96] [A3][9D][9A][AA][9C][A0][9E] [99][91][9F][C6][A4].{pause(20)}  [89][A5][93][A3][A4][93][A5][9B] [A3][96][92][C6] [9C][91][9C] [95][A0][9E][91]." end
 
 l_0xc6d84b:
-    "@Okay." next
-    goto(l_0xc6d852)
+//	"@Хорошо." next
+	"@[87][A0][A2][A0][AA][A0]." next
+	goto(l_0xc6d852)
 
 l_0xc6d852:
-    "@...Then, you should give me a big hand.{wait}{set(flag 680)}" eob
+//	"@...Тогда, ты должен протянуть мне руку.{wait}{set(flag 680)}" eob
+	"@...[84][A0][94][95][91], [A4][C2] [95][A0][9D][98][96][9F] [A1][A2][A0][A4][C6][9F][A5][A4][C3] [9E][9F][96] [A2][A5][9C][A5].{wait}{set(flag 680)}" eob
 
 l_0xc6d86d:
     "@Again, we've been cheated by the theater owner." next

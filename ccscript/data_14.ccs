@@ -8,365 +8,471 @@ command e(label) "{long label}"
 
 // Text Data
 l_0xc5d766:
-    "[1A 06 0B]" eob
+	"[1A 06 0B]" eob
 
 l_0xc5d76a:
-    "[1A 06 0E]" eob
+	"[1A 06 0E]" eob
 
 l_0xc5d76e:
-    "[1A 06 36]" eob
+	"[1A 06 36]" eob
 
 l_0xc5d772:
-    "[1A 06 0F]" eob
+	"[1A 06 0F]" eob
 
 l_0xc5d776:
-    "[1A 06 37]" eob
+	"[1A 06 37]" eob
 
 l_0xc5d77a:
-    "[1A 06 10]" eob
+	"[1A 06 10]" eob
 
 l_0xc5d77e:
-    "[1A 06 11]" eob
+	"[1A 06 11]" eob
 
 l_0xc5d782:
-    "[1A 06 12]" eob
+	"[1A 06 12]" eob
 
 l_0xc5d786:
-    "[1A 06 13]" eob
+	"[1A 06 13]" eob
 
 l_0xc5d78a:
-    "[1A 06 14]" eob
+	"[1A 06 14]" eob
 
 l_0xc5d78e:
-    "[1A 06 16]" eob
+	"[1A 06 16]" eob
 
 l_0xc5d792:
-    "[06 D7 00 {e(l_0xc5d79d)}][1A 06 40]" eob
+	"[06 D7 00 {e(l_0xc5d79d)}][1A 06 40]" eob
 
 l_0xc5d79d:
-    "[1A 06 41]" eob
+	"[1A 06 41]" eob
 
 l_0xc5d7a1:
-    "[1A 06 38]" eob
+	"[1A 06 38]" eob
 
 l_0xc5d7a5:
-    "[1A 06 17]" eob
+	"[1A 06 17]" eob
 
 l_0xc5d7a9:
-    "[1A 06 32]" eob
+	"[1A 06 32]" eob
 
 l_0xc5d7ad:
-    "[1A 06 39]" eob
+	"[1A 06 39]" eob
 
 l_0xc5d7b1:
-    "[1A 06 18]" eob
+	"[1A 06 18]" eob
 
 l_0xc5d7b5:
-    "[1A 06 3A]" eob
+	"[1A 06 3A]" eob
 
 l_0xc5d7b9:
-    "[1A 06 3B]" eob
+	"[1A 06 3B]" eob
 
 l_0xc5d7bd:
-    "[1A 06 19]" eob
+	"[1A 06 19]" eob
 
 l_0xc5d7c1:
-    "[1A 06 1A]" eob
+	"[1A 06 1A]" eob
 
 l_0xc5d7c5:
-    "[1A 06 1B]" eob
+	"[1A 06 1B]" eob
 
 l_0xc5d7c9:
-    "[1A 06 1C]" eob
+	"[1A 06 1C]" eob
 
 l_0xc5d7cd:
-    "[1A 06 1D]" eob
+	"[1A 06 1D]" eob
 
 l_0xc5d7d1:
-    "[1A 06 1F]" eob
+	"[1A 06 1F]" eob
 
 l_0xc5d7d5:
-    "[1A 06 20]" eob
+	"[1A 06 20]" eob
 
 l_0xc5d7d9:
-    "[1A 06 21]" eob
+	"[1A 06 21]" eob
 
 l_0xc5d7dd:
-    "[1A 06 1E]" eob
+	"[1A 06 1E]" eob
 
 l_0xc5d7e1:
-    "[1A 06 22]" eob
+	"[1A 06 22]" eob
 
 l_0xc5d7e5:
-    "[1A 06 23]" eob
+	"[1A 06 23]" eob
 
 l_0xc5d7e9:
-    "[1A 06 26]" eob
+	"[1A 06 26]" eob
 
 l_0xc5d7ed:
-    "[1A 06 28]" eob
+	"[1A 06 28]" eob
 
 l_0xc5d7f1:
-    "[1A 06 27]" eob
+	"[1A 06 27]" eob
 
 l_0xc5d7f5:
-    "[1A 06 03]" eob
+	"[1A 06 03]" eob
 
 l_0xc5d7f9:
-    "[1A 06 0A]" eob
+	"[1A 06 0A]" eob
 
 l_0xc5d7fd:
-    "[1A 06 3D]" eob
+	"[1A 06 3D]" eob
 
 l_0xc5d801:
-    "[1A 06 29]" eob
+	"[1A 06 29]" eob
 
 l_0xc5d805:
-    "[1A 06 2B]" eob
+	"[1A 06 2B]" eob
 
 l_0xc5d809:
-    "[1A 06 2C]" eob
+	"[1A 06 2C]" eob
 
 l_0xc5d80d:
-    "[1A 06 2D]" eob
+	"[1A 06 2D]" eob
 
 l_0xc5d811:
-    "[1A 06 3F]" eob
+	"[1A 06 3F]" eob
 
 l_0xc5d815:
-    "[1A 06 3E]" eob
+	"[1A 06 3E]" eob
 
 l_0xc5d819:
-    "[1A 06 15]" eob
+	"[1A 06 15]" eob
 
 l_0xc5d81d:
-    "[1A 06 33]" eob
+	"[1A 06 33]" eob
 
 l_0xc5d821:
-    "[1A 06 2E]" eob
+	"[1A 06 2E]" eob
 
 l_0xc5d825:
-    "[1A 06 34]" eob
+	"[1A 06 34]" eob
 
 l_0xc5d829:
-    "[1A 06 35]" eob
+	"[1A 06 35]" eob
 
 l_0xc5d82d:
-    "[1A 06 24]" eob
+	"[1A 06 24]" eob
 
 l_0xc5d831:
-    "[1A 06 3C]" eob
+	"[1A 06 3C]" eob
 
 l_0xc5d835:
-    "[06 90 02 {e(l_0xc5d840)}]{sound(12)}" eob
+	"[06 90 02 {e(l_0xc5d840)}]{sound(12)}" eob
 
 l_0xc5d840:
-    "{sound(120)}" eob
+	"{sound(120)}" eob
 
 l_0xc5d844:
-    "{unset(flag 446)}{set(flag 226)}" call(l_0xc5d894) "{unset(flag 226)}" call(data_36.l_0xc7de72) eob
+	"{unset(flag 446)}{set(flag 226)}" call(l_0xc5d894) "{unset(flag 226)}" call(data_36.l_0xc7de72) eob
 
 l_0xc5d858:
-    "{unset(flag 646)}{set(flag 227)}" call(l_0xc5d894) "{unset(flag 227)}" call(data_36.l_0xc7de72) eob
+	"{unset(flag 646)}{set(flag 227)}" call(l_0xc5d894) "{unset(flag 227)}" call(data_36.l_0xc7de72) eob
 
 l_0xc5d86c:
-    "{unset(flag 647)}{set(flag 228)}" call(l_0xc5d894) "{unset(flag 228)}" call(data_36.l_0xc7de72) eob
+	"{unset(flag 647)}{set(flag 228)}" call(l_0xc5d894) "{unset(flag 228)}" call(data_36.l_0xc7de72) eob
 
 l_0xc5d880:
-    "{unset(flag 648)}{set(flag 229)}" call(l_0xc5d894) "{unset(flag 229)}" call(data_36.l_0xc7de72) eob
+	"{unset(flag 648)}{set(flag 229)}" call(l_0xc5d894) "{unset(flag 229)}" call(data_36.l_0xc7de72) eob
 
 l_0xc5d894:
-    call(data_21.l_0xc659bf) call(l_0xc5d917) goto(l_0xc5d89e)
+	call(data_21.l_0xc659bf) call(l_0xc5d917) goto(l_0xc5d89e)
 
 l_0xc5d89e:
-    "{open_hp}" call(data_15.l_0xc5e456) "[1B 02 {e(l_0xc5d905)}]{store_registers}[19 19 00 00][1D 0B 00][1B 02 {e(l_0xc5d8fb)}]" call(l_0xc5d974) call(data_36.l_0xc7dd4f) "[11]{clearline}[09 02 {e(l_0xc5d8da)} {e(l_0xc5d8d0)}]" goto(l_0xc5d8d0)
+	"{open_hp}" call(data_15.l_0xc5e456) "[1B 02 {e(l_0xc5d905)}]{store_registers}[19 19 00 00][1D 0B 00][1B 02 {e(l_0xc5d8fb)}]" call(l_0xc5d974) call(data_36.l_0xc7dd4f) "[11]{clearline}[09 02 {e(l_0xc5d8da)} {e(l_0xc5d8d0)}]" goto(l_0xc5d8d0)
 
 l_0xc5d8d0:
-    call(l_0xc5d993) goto(l_0xc5d89e)
+	call(l_0xc5d993) goto(l_0xc5d89e)
 
 l_0xc5d8da:
-    "[1D 08 00 00]{open_wallet}{sound(118)}{load_registers}[1D 0F 00 00]" call(l_0xc5d936) "{window_closeall}" call(data_36.l_0xc7dde8) call(data_21.l_0xc659c8) eob
+	"[1D 08 00 00]{open_wallet}{sound(118)}{load_registers}[1D 0F 00 00]" call(l_0xc5d936) "{window_closeall}" call(data_36.l_0xc7dde8) call(data_21.l_0xc659c8) eob
 
 l_0xc5d8fb:
-    call(l_0xc5d9b2) goto(l_0xc5d89e)
+	call(l_0xc5d9b2) goto(l_0xc5d89e)
 
 l_0xc5d905:
-    call(l_0xc5d955) "{window_closeall}" call(data_36.l_0xc7dde8) call(data_21.l_0xc659c8) eob
+	call(l_0xc5d955) "{window_closeall}" call(data_36.l_0xc7dde8) call(data_21.l_0xc659c8) eob
 
 l_0xc5d917:
-    "[1B 05][06 E2 00 {e(l_0xc5d9d1)}][06 E3 00 {e(l_0xc5db01)}][06 E4 00 {e(l_0xc5dc17)}][06 E5 00 {e(l_0xc5dcf9)}]" eob
+	"[1B 05][06 E2 00 {e(l_0xc5d9d1)}][06 E3 00 {e(l_0xc5db01)}][06 E4 00 {e(l_0xc5dc17)}][06 E5 00 {e(l_0xc5dcf9)}]" eob
 
 l_0xc5d936:
-    "[1B 05][06 E2 00 {e(l_0xc5da27)}][06 E3 00 {e(l_0xc5db32)}][06 E4 00 {e(l_0xc5dc3c)}][06 E5 00 {e(l_0xc5dd29)}]" eob
+	"[1B 05][06 E2 00 {e(l_0xc5da27)}][06 E3 00 {e(l_0xc5db32)}][06 E4 00 {e(l_0xc5dc3c)}][06 E5 00 {e(l_0xc5dd29)}]" eob
 
 l_0xc5d955:
-    "[1B 05][06 E2 00 {e(l_0xc5da58)}][06 E3 00 {e(l_0xc5db54)}][06 E4 00 {e(l_0xc5dc63)}][06 E5 00 {e(l_0xc5dd52)}]" eob
+	"[1B 05][06 E2 00 {e(l_0xc5da58)}][06 E3 00 {e(l_0xc5db54)}][06 E4 00 {e(l_0xc5dc63)}][06 E5 00 {e(l_0xc5dd52)}]" eob
 
 l_0xc5d974:
-    "[1B 05][06 E2 00 {e(l_0xc5da85)}][06 E3 00 {e(l_0xc5db7f)}][06 E4 00 {e(l_0xc5dc91)}][06 E5 00 {e(l_0xc5dd6c)}]" eob
+	"[1B 05][06 E2 00 {e(l_0xc5da85)}][06 E3 00 {e(l_0xc5db7f)}][06 E4 00 {e(l_0xc5dc91)}][06 E5 00 {e(l_0xc5dd6c)}]" eob
 
 l_0xc5d993:
-    "[1B 05][06 E2 00 {e(l_0xc5dab3)}][06 E3 00 {e(l_0xc5dbbf)}][06 E4 00 {e(l_0xc5dcc1)}][06 E5 00 {e(l_0xc5dda3)}]" eob
+	"[1B 05][06 E2 00 {e(l_0xc5dab3)}][06 E3 00 {e(l_0xc5dbbf)}][06 E4 00 {e(l_0xc5dcc1)}][06 E5 00 {e(l_0xc5dda3)}]" eob
 
 l_0xc5d9b2:
-    "[1B 05][06 E2 00 {e(l_0xc5dacb)}][06 E3 00 {e(l_0xc5dbeb)}][06 E4 00 {e(l_0xc5dcdf)}][06 E5 00 {e(l_0xc5ddcc)}]" eob
+	"[1B 05][06 E2 00 {e(l_0xc5dacb)}][06 E3 00 {e(l_0xc5dbeb)}][06 E4 00 {e(l_0xc5dcdf)}][06 E5 00 {e(l_0xc5ddcc)}]" eob
 
 l_0xc5d9d1:
-    "@Huff, puff, huff... wheeeeze!  I ran here as fast as I could." next
-    "@I'm plum tuckered out." next
-    "@What have you got for sale?[03]" eob
+	/*
+	"@*Пыхтеет*, *пыхтеет*... *хрипит*!  Я бежал сюда так быстро, как только мог." next
+	"@Я вымотался." next
+	"@Что у тебя есть на продажу?[03]" eob
+	*/
+	"@*[81][C2][A7][A4][96][96][A4]*, *[A1][C2][A7][A4][96][96][A4]*... *[A7][A2][9A][A1][9A][A4]*!  [B6] [92][96][98][91][9D] [A3][C5][95][91] [A4][91][9C] [92][C2][A3][A4][A2][A0], [9C][91][9C] [A4][A0][9D][C3][9C][A0] [9E][A0][94]." next
+	"@[B6] [93][C2][9E][A0][A4][91][9D][A3][C6]." next
+	"@[89][A4][A0] [A5] [A4][96][92][C6] [96][A3][A4][C3] [9F][91] [A1][A2][A0][95][91][98][A5]?[03]" eob
 
 l_0xc5da27:
-    "@Thanks, sonny." next
-    "@You certainly made it worth my while to come all this way!" end
+	/*
+	"@Спасибо, сынок." next
+	"@Ты определённо стоил того, чтобы я проделал весь этот путь!" end
+	*/
+	"@[83][A1][91][A3][9A][92][A0], [A3][C2][9F][A0][9C]." next
+	"@[84][C2] [A0][A1][A2][96][95][96][9D][97][9F][9F][A0] [A3][A4][A0][9A][9D] [A4][A0][94][A0], [A9][A4][A0][92][C2] [C6] [A1][A2][A0][95][96][9D][91][9D] [93][96][A3][C3] [C4][A4][A0][A4] [A1][A5][A4][C3]!" end
 
 l_0xc5da58:
-    newline
-    "@Oh, say it ain't so!  And after I ran here as fast as I could!" end
+//	"@Оу, скажи, что это не так! И это после того, как я бежал сюда так быстро, как только мог!" end
+	newline
+	"@[80][A5], [A3][9C][91][98][9A], [A9][A4][A0] [C4][A4][A0] [9F][96] [A4][91][9C]! [7A] [C4][A4][A0] [A1][A0][A3][9D][96] [A4][A0][94][A0], [9C][91][9C] [C6] [92][96][98][91][9D] [A3][C5][95][91] [A4][91][9C] [92][C2][A3][A4][A2][A0], [9C][91][9C] [A4][A0][9D][C3][9C][A0] [9E][A0][94]!" end
 
 l_0xc5da85:
-    "[1B 06]" newline
-    "@[1C 05 00]?" linebreak
-    "  I'll give you {swap}$[1C 0A 00 00 00 00]." next
-    "@How's that for a fair offer?" linebreak
-    eob
+	/*
+	"@[1C 05 00]?" linebreak
+	"  Дам {swap}$[1C 0A 00 00 00 00]." next
+	"@Как тебе такое справедливое предложение?" linebreak
+	*/
+	"[1B 06]" newline
+	"@[1C 05 00]?" linebreak
+	"  [75][91][9E] {swap}$[1C 0A 00 00 00 00]." next
+	"@[7C][91][9C] [A4][96][92][96] [A4][91][9C][A0][96] [A3][A1][A2][91][93][96][95][9D][9A][93][A0][96] [A1][A2][96][95][9D][A0][98][96][9F][9A][96]?" linebreak
+	eob
 
 l_0xc5dab3:
-    "@That's too bad..." next
-    "@Do you have anything else you want to sell?[03]" eob
+	/*
+	"@Очень жаль..." next
+	"@У тебя есть ещё что-нибудь, что ты хочешь продать?[03]" eob
+	*/
+	"@[80][A9][96][9F][C3] [98][91][9D][C3]..." next
+	"@[85] [A4][96][92][C6] [96][A3][A4][C3] [96][C0][97] [A9][A4][A0]-[9F][9A][92][A5][95][C3], [A9][A4][A0] [A4][C2] [A7][A0][A9][96][AA][C3] [A1][A2][A0][95][91][A4][C3]?[03]" eob
 
 l_0xc5dacb:
-    newline
-    "@Oh, jumpin' jehosaphat!  I don't think I can buy that." next
-    "@What else can you sell me?[03]" eob
+	/*
+	"@О, прыгающий Иосафат!  Не думаю, что смогу купить это." next
+	"@Что ещё ты можешь мне продать?[03]" eob
+	*/
+	newline
+	"@[80], [A1][A2][C2][94][91][C5][C0][9A][9B] [7A][A0][A3][91][A6][91][A4]!  [7F][96] [95][A5][9E][91][C5], [A9][A4][A0] [A3][9E][A0][94][A5] [9C][A5][A1][9A][A4][C3] [C4][A4][A0]." next
+	"@[89][A4][A0] [96][C0][97] [A4][C2] [9E][A0][98][96][AA][C3] [9E][9F][96] [A1][A2][A0][95][91][A4][C3]?[03]" eob
 
 l_0xc5db01:
-    "@I saw your sign.  So, I thought I'd stop by." next
-    "@What're you peddlin'?[03]" eob
+	/*
+	"@Я увидел твою табличку.  Поэтому, я подумал, что могу остановиться здесь." next
+	"@Чем торгуешь?[03]" eob
+	*/
+	"@[B6] [A5][93][9A][95][96][9D] [A4][93][A0][C5] [A4][91][92][9D][9A][A9][9C][A5].  [81][A0][C4][A4][A0][9E][A5], [C6] [A1][A0][95][A5][9E][91][9D], [A9][A4][A0] [9E][A0][94][A5] [A0][A3][A4][91][9F][A0][93][9A][A4][C3][A3][C6] [99][95][96][A3][C3]." next
+	"@[89][96][9E] [A4][A0][A2][94][A5][96][AA][C3]?[03]" eob
 
 l_0xc5db32:
-    newline
-    "@Oh, thank you so much!  It was well worth the trip!" end
+//	"@О, большое спасибо!  Этот путь стоил того!" end
+	newline
+	"@[80], [92][A0][9D][C3][AA][A0][96] [A3][A1][91][A3][9A][92][A0]!  [B4][A4][A0][A4] [A1][A5][A4][C3] [A3][A4][A0][9A][9D] [A4][A0][94][A0]!" end
 
 l_0xc5db54:
-    newline
-    "@I can't believe it!" next
-    "@After I took all the trouble to get out here!" end
+	/*
+	"@Не могу поверить!" next
+	"@После того, как я взял на себя все хлопоты, чтобы добраться сюда!" end
+	*/
+	newline
+	"@[7F][96] [9E][A0][94][A5] [A1][A0][93][96][A2][9A][A4][C3]!" next
+	"@[81][A0][A3][9D][96] [A4][A0][94][A0], [9C][91][9C] [C6] [93][99][C6][9D] [9F][91] [A3][96][92][C6] [93][A3][96] [A7][9D][A0][A1][A0][A4][C2], [A9][A4][A0][92][C2] [95][A0][92][A2][91][A4][C3][A3][C6] [A3][C5][95][91]!" end
 
 l_0xc5db7f:
-    "[1B 06]" newline
-    "@The [1C 05 00]?" linebreak
-    "  Hmmm...  How about" linebreak
-    "  {swap}$[1C 0A 00 00 00 00]?" next
-    "@How does that offer strike you?" linebreak
-    eob
+	/*
+	"@[1C 05 00]?" linebreak
+	"  Хммм...  Как насчёт" linebreak
+	"  {swap}$[1C 0A 00 00 00 00]?" next
+	"@Как тебе это предложение?" linebreak
+	*/
+	"[1B 06]" newline
+	"@[1C 05 00]?" linebreak
+	"  [87][9E][9E][9E]...  [7C][91][9C] [9F][91][A3][A9][97][A4]" linebreak
+	"  {swap}$[1C 0A 00 00 00 00]?" next
+	"@[7C][91][9C] [A4][96][92][96] [C4][A4][A0] [A1][A2][96][95][9D][A0][98][96][9F][9A][96]?" linebreak
+	eob
 
 l_0xc5dbbf:
-    newline
-    "@My, my!" linebreak
-    "  You can't do that to me!" next
-    "@Well, have you got anything else for sale?[03]" eob
+	/*
+	"@Боже мой!" linebreak
+	"  Ты не можешь так поступить со мной!" next
+	"@Ладно, есть ещё что-нибудь на продажу?[03]" eob
+	*/
+	newline
+	"@[72][A0][98][96] [9E][A0][9B]!" linebreak
+	"  [84][C2] [9F][96] [9E][A0][98][96][AA][C3] [A4][91][9C] [A1][A0][A3][A4][A5][A1][9A][A4][C3] [A3][A0] [9E][9F][A0][9B]!" next
+	"@[7D][91][95][9F][A0], [96][A3][A4][C3] [96][C0][97] [A9][A4][A0]-[9F][9A][92][A5][95][C3] [9F][91] [A1][A2][A0][95][91][98][A5]?[03]" eob
 
 l_0xc5dbeb:
-    newline
-    "@Already got me one of those." next
-    "@Anything else worthwhile for sale?[03]" eob
+	/*
+	"@У меня уже есть это." next
+	"@Есть что-нибудь стоящее на продажу?[03]" eob
+	*/
+	newline
+	"@[85] [9E][96][9F][C6] [A5][98][96] [96][A3][A4][C3] [C4][A4][A0]." next
+	"@[76][A3][A4][C3] [A9][A4][A0]-[9F][9A][92][A5][95][C3] [A3][A4][A0][C6][C0][96][96] [9F][91] [A1][A2][A0][95][91][98][A5]?[03]" eob
 
 l_0xc5dc17:
-    "@Hi!" linebreak
-    "  Is this a tool shop?  Cool!" next
-    "@What are you selling?[03]" eob
+	/*
+	"@Привет!" linebreak
+	"  Это магазин инструментов?  Круто!" next
+	"@Что продаёшь?[03]" eob
+	*/
+	"@[81][A2][9A][93][96][A4]!" linebreak
+	"  [B4][A4][A0] [9E][91][94][91][99][9A][9F] [9A][9F][A3][A4][A2][A5][9E][96][9F][A4][A0][93]?  [7C][A2][A5][A4][A0]!" next
+	"@[89][A4][A0] [A1][A2][A0][95][91][97][AA][C3]?[03]" eob
 
 l_0xc5dc3c:
-    newline
-    "@Thanks a lot!" linebreak
-    "  It sure was worth it to come all the way out here!" end
+	/*
+	"@Большое спасибо!" linebreak
+	"  Это стоило того, чтобы проделать весь этот путь сюда!" end
+	*/
+	newline
+	"@[72][A0][9D][C3][AA][A0][96] [A3][A1][91][A3][9A][92][A0]!" linebreak
+	"  [B4][A4][A0] [A3][A4][A0][9A][9D][A0] [A4][A0][94][A0], [A9][A4][A0][92][C2] [A1][A2][A0][95][96][9D][91][A4][C3] [93][96][A3][C3] [C4][A4][A0][A4] [A1][A5][A4][C3] [A3][C5][95][91]!" end
 
 l_0xc5dc63:
-    newline
-    "@Oh, c'mon!" next
-    "@You have no idea how much trouble it was for me to get here!" end
+	/*
+	"@Да ладно!" next
+	"@Ты даже не представляешь, как трудно мне было сюда добраться!" end
+	*/
+	newline
+	"@[75][91] [9D][91][95][9F][A0]!" next
+	"@[84][C2] [95][91][98][96] [9F][96] [A1][A2][96][95][A3][A4][91][93][9D][C6][96][AA][C3], [9C][91][9C] [A4][A2][A5][95][9F][A0] [9E][9F][96] [92][C2][9D][A0] [A3][C5][95][91] [95][A0][92][A2][91][A4][C3][A3][C6]!" end
 
 l_0xc5dc91:
-    "[1B 06]" newline
-    "@The [1C 05 00]?" linebreak
-    "  How about {swap}$[1C 0A 00 00 00 00]..." next
-    "@Is that a fair trade?" linebreak
-    eob
+	/*
+	"@[1C 05 00]?" linebreak
+	"  Как насчёт {swap}$[1C 0A 00 00 00 00]..." next
+	"@Это честный обмен?" linebreak
+	*/
+	"[1B 06]" newline
+	"@[1C 05 00]?" linebreak
+	"  [7C][91][9C] [9F][91][A3][A9][97][A4] {swap}$[1C 0A 00 00 00 00]..." next
+	"@[B4][A4][A0] [A9][96][A3][A4][9F][C2][9B] [A0][92][9E][96][9F]?" linebreak
+	eob
 
 l_0xc5dcc1:
-    newline
-    "@You don't think so?  OK, have you got anything else then?[03]" eob
+//	"@Ты так не думаешь?  ОК, у тебя есть что-нибудь ещё?[03]" eob
+	newline
+	"@[84][C2] [A4][91][9C] [9F][96] [95][A5][9E][91][96][AA][C3]?  [80][7C], [A5] [A4][96][92][C6] [96][A3][A4][C3] [A9][A4][A0]-[9F][9A][92][A5][95][C3] [96][C0][97]?[03]" eob
 
 l_0xc5dcdf:
-    newline
-    "@Uhhh, I can't buy that..." next
-    "@Got anything else?[03]" eob
+	/*
+	"@Ммм, я не могу купить это..." next
+	"@Есть что-нибудь ещё?[03]" eob
+	*/
+	newline
+	"@[7E][9E][9E], [C6] [9F][96] [9E][A0][94][A5] [9C][A5][A1][9A][A4][C3] [C4][A4][A0]..." next
+	"@[76][A3][A4][C3] [A9][A4][A0]-[9F][9A][92][A5][95][C3] [96][C0][97]?[03]" eob
 
 l_0xc5dcf9:
-    "@Hi, how are ya?  Is this a tool shop or something?" next
-    "@What are you selling, anyway?[03]" eob
+	/*
+	"@Привет, как дела?  Это магазин инструментов или что?" next
+	"@Кстати, что продаёшь?[03]" eob
+	*/
+	"@[81][A2][9A][93][96][A4], [9C][91][9C] [95][96][9D][91]?  [B4][A4][A0] [9E][91][94][91][99][9A][9F] [9A][9F][A3][A4][A2][A5][9E][96][9F][A4][A0][93] [9A][9D][9A] [A9][A4][A0]?" next
+	"@[7C][A3][A4][91][A4][9A], [A9][A4][A0] [A1][A2][A0][95][91][97][AA][C3]?[03]" eob
 
 l_0xc5dd29:
-    newline
-    "@Thanks!  I have to say, it was well worth my trouble to come out here." end
+//	"@Спасибо!  Должен сказать, что это стоило моих усилий добраться сюда." end
+	newline
+	"@[83][A1][91][A3][9A][92][A0]!  [75][A0][9D][98][96][9F] [A3][9C][91][99][91][A4][C3], [A9][A4][A0] [C4][A4][A0] [A3][A4][A0][9A][9D][A0] [9E][A0][9A][A7] [A5][A3][9A][9D][9A][9B] [95][A0][92][A2][91][A4][C3][A3][C6] [A3][C5][95][91]." end
 
 l_0xc5dd52:
-    newline
-    "@That's just great!" linebreak
-    "  You can't do this to me!" end
+	/*
+	"@Здорово!" linebreak
+	"  Ты не можешь так поступить со мной!" end
+	*/
+	newline
+	"@[79][95][A0][A2][A0][93][A0]!" linebreak
+	"  [84][C2] [9F][96] [9E][A0][98][96][AA][C3] [A4][91][9C] [A1][A0][A3][A4][A5][A1][9A][A4][C3] [A3][A0] [9E][9F][A0][9B]!" end
 
 l_0xc5dd6c:
-    "[1B 06]" newline
-    "@The [1C 05 00]?" linebreak
-    "  I'd offer about" linebreak
-    "  {swap}$[1C 0A 00 00 00 00] for that." next
-    "@Is it a deal?" linebreak
-    eob
+	/*
+	"@[1C 05 00]?" linebreak
+	"  Я бы предложил около" linebreak
+	"  {swap}$[1C 0A 00 00 00 00] за это." next
+	"@Ну как?" linebreak
+	*/
+	"[1B 06]" newline
+	"@[1C 05 00]?" linebreak
+	"  [B6] [92][C2] [A1][A2][96][95][9D][A0][98][9A][9D] [A0][9C][A0][9D][A0]" linebreak
+	"  {swap}$[1C 0A 00 00 00 00] [99][91] [C4][A4][A0]." next
+	"@[7F][A5] [9C][91][9C]?" linebreak
+	eob
 
 l_0xc5dda3:
-    newline
-    "@Have it your way." next
-    "@Did you say you have some other things for sale?[03]" eob
+	/*
+	"@Будь по-твоему." next
+	"@Ты сказал, что у тебя есть другие вещи на продажу?[03]" eob
+	*/
+	newline
+	"@[72][A5][95][C3] [A1][A0]-[A4][93][A0][96][9E][A5]." next
+	"@[84][C2] [A3][9C][91][99][91][9D], [A9][A4][A0] [A5] [A4][96][92][C6] [96][A3][A4][C3] [95][A2][A5][94][9A][96] [93][96][C0][9A] [9F][91] [A1][A2][A0][95][91][98][A5]?[03]" eob
 
 l_0xc5ddcc:
-    newline
-    "@I'm not interested in one of those." next
-    "@Can you show me anything else?[03]" eob
+	/*
+	"@Мне не интересно это." next
+	"@Можешь показать мне что-нибудь ещё?[03]" eob
+	*/
+	newline
+	"@[7E][9F][96] [9F][96] [9A][9F][A4][96][A2][96][A3][9F][A0] [C4][A4][A0]." next
+	"@[7E][A0][98][96][AA][C3] [A1][A0][9C][91][99][91][A4][C3] [9E][9F][96] [A9][A4][A0]-[9F][9A][92][A5][95][C3] [96][C0][97]?[03]" eob
 
 l_0xc5ddf1:
-    call(data_36.l_0xc7de2f) "{unset(flag 446)}{unset(flag 646)}{unset(flag 647)}{unset(flag 648)}{window_open(1)}@Hello!" linebreak
-    "  (gasp... pant...)" next
-    "@I saw your sign" linebreak
-    "  (gasp... pant...)," next
-    "@and thought I should stop and buy something." next
-    "@I tried and tried to find it" linebreak
-    "  (gasp... pant...)" linebreak
-    "  but no such luck." next
-    "@I think you should give this up and go home." next
-    "@If you took your business more seriously," next
-    "@you would be more considerate of your customers![03]" call(data_36.l_0xc7de54) "{unset(flag 754)}" eob
+	/*
+	call(data_36.l_0xc7de2f) "{unset(flag 446)}{unset(flag 646)}{unset(flag 647)}{unset(flag 648)}{window_open(1)}@Привет!" linebreak
+	"  (вздох... одышка...)" next
+	"@Я увидел твою табличку" linebreak
+	"  (вздох... одышка...)," next
+	"@и подумал, что могу остановиться и купить что-нибудь." next
+	"@Я пытался и пытался найти её" linebreak
+	"  (вздох... одышка...)" linebreak
+	"  но не повезло." next
+	"@Я думаю, тебе стоит бросить это и пойти домой." next
+	"@Если бы ты относился к своему бизнесу более серьёзно," next
+	"@ты был бы более внимателен к своим клиентам![03]" call(data_36.l_0xc7de54) "{unset(flag 754)}" eob
+	*/
+	call(data_36.l_0xc7de2f) "{unset(flag 446)}{unset(flag 646)}{unset(flag 647)}{unset(flag 648)}{window_open(1)}@[81][A2][9A][93][96][A4]!" linebreak
+	"  ([93][99][95][A0][A7]... [A0][95][C2][AA][9C][91]...)" next
+	"@[B6] [A5][93][9A][95][96][9D] [A4][93][A0][C5] [A4][91][92][9D][9A][A9][9C][A5]" linebreak
+	"  ([93][99][95][A0][A7]... [A0][95][C2][AA][9C][91]...)," next
+	"@[9A] [A1][A0][95][A5][9E][91][9D], [A9][A4][A0] [9E][A0][94][A5] [A0][A3][A4][91][9F][A0][93][9A][A4][C3][A3][C6] [9A] [9C][A5][A1][9A][A4][C3] [A9][A4][A0]-[9F][9A][92][A5][95][C3]." next
+	"@[B6] [A1][C2][A4][91][9D][A3][C6] [9A] [A1][C2][A4][91][9D][A3][C6] [9F][91][9B][A4][9A] [96][97]" linebreak
+	"  ([93][99][95][A0][A7]... [A0][95][C2][AA][9C][91]...)" linebreak
+	"  [9F][A0] [9F][96] [A1][A0][93][96][99][9D][A0]." next
+	"@[B6] [95][A5][9E][91][C5], [A4][96][92][96] [A3][A4][A0][9A][A4] [92][A2][A0][A3][9A][A4][C3] [C4][A4][A0] [9A] [A1][A0][9B][A4][9A] [95][A0][9E][A0][9B]." next
+	"@[76][A3][9D][9A] [92][C2] [A4][C2] [A0][A4][9F][A0][A3][9A][9D][A3][C6] [9C] [A3][93][A0][96][9E][A5] [92][9A][99][9F][96][A3][A5] [92][A0][9D][96][96] [A3][96][A2][C3][97][99][9F][A0]," next
+	"@[A4][C2] [92][C2][9D] [92][C2] [92][A0][9D][96][96] [93][9F][9A][9E][91][A4][96][9D][96][9F] [9C] [A3][93][A0][9A][9E] [9C][9D][9A][96][9F][A4][91][9E]![03]" call(data_36.l_0xc7de54) "{unset(flag 754)}" eob
 
 l_0xc5decb:
-    "{unset(flag 657)}" call(data_00.l_0xc50000) goto(l_0xc5ded3)
+	"{unset(flag 657)}" call(data_00.l_0xc50000) goto(l_0xc5ded3)
 
 l_0xc5ded3:
-//  "[19 02]Купить" eob
-    "[19 02][7C][A5][A1][9A][A4][C3]" eob
+//	"[19 02]Купить" eob
+	"[19 02][7C][A5][A1][9A][A4][C3]" eob
 
 l_0xc5ded9:
-//  "[19 02]Продать" eob
-    "[19 02][81][A2][A0][95][91][A4][C3]" eob
+//	"[19 02]Продать" eob
+	"[19 02][81][A2][A0][95][91][A4][C3]" eob
 
 l_0xc5dee0:
-    "[1C 07 02][11]{clearline}[09 02 {e(l_0xc5df05)} {e(data_15.l_0xc5df3a)}]" goto(l_0xc5deef)
+	"[1C 07 02][11]{clearline}[09 02 {e(l_0xc5df05)} {e(data_15.l_0xc5df3a)}]" goto(l_0xc5deef)
 
 l_0xc5deef:
-    "[06 91 02 {e(l_0xc5defc)}]" call(data_00.l_0xc50330) eob
+	"[06 91 02 {e(l_0xc5defc)}]" call(data_00.l_0xc50330) eob
 
 l_0xc5defc:
-    call(data_00.l_0xc50198) "{unset(flag 657)}" eob
+	call(data_00.l_0xc50198) "{unset(flag 657)}" eob
 
 l_0xc5df05:
-    call(data_00.l_0xc504c8) "{open_hp}" call(data_13.l_0xc5d5ab) "[1B 02 {e(data_15.l_0xc5df61)}]" call(data_15.l_0xc5e3bc) "{store_registers}[1D 03 FF][1B 02 {e(data_15.l_0xc5df89)}]{load_registers}" call(data_15.l_0xc5e0a9) "[06 E0 00 {e(data_15.l_0xc5df56)}]" goto(data_15.l_0xc5df61)
+	call(data_00.l_0xc504c8) "{open_hp}" call(data_13.l_0xc5d5ab) "[1B 02 {e(data_15.l_0xc5df61)}]" call(data_15.l_0xc5e3bc) "{store_registers}[1D 03 FF][1B 02 {e(data_15.l_0xc5df89)}]{load_registers}" call(data_15.l_0xc5e0a9) "[06 E0 00 {e(data_15.l_0xc5df56)}]" goto(data_15.l_0xc5df61)
 

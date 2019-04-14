@@ -334,53 +334,75 @@ l_0xc82285:
     "@But I guess everyone knows that." end
 
 l_0xc822d2:
-    "[06 02 00 {e(l_0xc82565)}][06 D7 00 {e(l_0xc82468)}]@I'm so happy there are some visitors today.{pause(15)}  These days, few people come here." next
-    "@...I'm Mr. Spoon, the academic researcher." next
-    "{pause(60)}" linebreak
-    "@I wonder if there are any famous stars here today?" next
-    "{pause(60)}" linebreak
-    "@Dinosaurs..." next
-    "@Huge,{pause(15)} aren't they?{pause(20)}  Well, that's all I've gotten out of my research!" next
-    "@You wanna hear more?" next
-    "@(Whispering) To tell you the truth..." next
-    "@I heard that dinosaurs were found near the lower side of Scaraba," next
-    "@and there were lots of them." next
-    "@There are unconfirmed reports" next
-    "@that the dinosaurs ate some of the natives there." next
-    "@If you go,{pause(15)} please try to find the dinosaurs and bring back photographs." next
-    goto(l_0xc82565)
+	"[06 02 00 {e(l_0xc82565)}][06 D7 00 {e(l_0xc82468)}]@I'm so happy there are some visitors today.{pause(15)}  These days, few people come here." next
+	"@...I'm Mr. Spoon, the academic researcher." next
+	"{pause(60)}" linebreak
+	"@I wonder if there are any famous stars here today?" next
+	"{pause(60)}" linebreak
+	"@Dinosaurs..." next
+	"@Huge,{pause(15)} aren't they?{pause(20)}  Well, that's all I've gotten out of my research!" next
+	"@You wanna hear more?" next
+	"@(Whispering) To tell you the truth..." next
+	"@I heard that dinosaurs were found near the lower side of Scaraba," next
+	"@and there were lots of them." next
+	"@There are unconfirmed reports" next
+	"@that the dinosaurs ate some of the natives there." next
+	"@If you go,{pause(15)} please try to find the dinosaurs and bring back photographs." next
+	goto(l_0xc82565)
 
 l_0xc82467:
-    eob
+	eob
 
 l_0xc82468:
-    "@You want to know about something <extraordinary>?" next
-    "@....." next
-    "@Hmmmm..." next
-    "{pause(60)}" linebreak
-    "@...You know, there's a new singer named Venus at the Topolla Theater." next
-    "@Could you bring me her autograph on an eraser?" next
-    "@Then, I'll show you something <extraordinary.>" next
-    "@...Oh,{pause(15)} if you can get her autograph on anything,{pause(15)} don't worry about the eraser..." next
-    "@I don't care if the autograph is written on toilet paper...{wait}{set(flag 140)}{unset(flag 687)}" eob
+	/*
+	"@Вы хотите знать о чём-то <экстраординарном>?" next
+	"@....." next
+	"@Хмммм..." next
+	"{pause(60)}" linebreak
+	"@...Знаете, в Театре Тополла появилась новая певица по имени Венус." next
+	"@Не могли бы вы принести мне её автограф на ластике?" next
+	"@Тогда я покажу вам кое-что <экстраординарное>." next
+	"@...Оу,{pause(15)} если вы сможете получить её автограф на чём угодно,{pause(15)} то не беспокойтесь о ластике..." next
+	"@Мне всё равно, даже если автограф написан на туалетной бумаге...{wait}{set(flag 140)}{unset(flag 687)}" eob
+	*/
+	"@[73][C2] [A7][A0][A4][9A][A4][96] [99][9F][91][A4][C3] [A0] [A9][97][9E]-[A4][A0] <[C4][9C][A3][A4][A2][91][A0][A2][95][9A][9F][91][A2][9F][A0][9E]>?" next
+	"@....." next
+	"@[87][9E][9E][9E][9E]..." next
+	"{pause(60)}" linebreak
+	"@...[79][9F][91][96][A4][96], [93] [84][96][91][A4][A2][96] [84][A0][A1][A0][9D][9D][91] [A1][A0][C6][93][9A][9D][91][A3][C3] [9F][A0][93][91][C6] [A1][96][93][9A][A8][91] [A1][A0] [9A][9E][96][9F][9A] [73][96][9F][A5][A3]." next
+	"@[7F][96] [9E][A0][94][9D][9A] [92][C2] [93][C2] [A1][A2][9A][9F][96][A3][A4][9A] [9E][9F][96] [96][97] [91][93][A4][A0][94][A2][91][A6] [9F][91] [9D][91][A3][A4][9A][9C][96]?" next
+	"@[84][A0][94][95][91] [C6] [A1][A0][9C][91][98][A5] [93][91][9E] [9C][A0][96]-[A9][A4][A0] <[C4][9C][A3][A4][A2][91][A0][A2][95][9A][9F][91][A2][9F][A0][96]>." next
+	"@...[80][A5],{pause(15)} [96][A3][9D][9A] [93][C2] [A3][9E][A0][98][96][A4][96] [A1][A0][9D][A5][A9][9A][A4][C3] [96][97] [91][93][A4][A0][94][A2][91][A6] [9F][91] [A9][97][9E] [A5][94][A0][95][9F][A0],{pause(15)} [A4][A0] [9F][96] [92][96][A3][A1][A0][9C][A0][9B][A4][96][A3][C3] [A0] [9D][91][A3][A4][9A][9C][96]..." next
+	"@[7E][9F][96] [93][A3][97] [A2][91][93][9F][A0], [95][91][98][96] [96][A3][9D][9A] [91][93][A4][A0][94][A2][91][A6] [9F][91][A1][9A][A3][91][9F] [9F][91] [A4][A5][91][9D][96][A4][9F][A0][9B] [92][A5][9E][91][94][96]...{wait}{set(flag 140)}{unset(flag 687)}" eob
 
 l_0xc82565:
-    "@Please come back again to study," next
-    "@'cause I don't like being alone..." end
+	"@Please come back again to study," next
+	"@'cause I don't like being alone..." end
 
 l_0xc8258c:
     "[19 19 00 00]{swap}{result_is(183)}[1B 03 {e(l_0xc8259f)}]" goto(data_35.l_0xc7c6b6)
 
 l_0xc8259f:
-    "{sound(118)}@You got it!" next
-    "@That banana peel has an authentic <Venus> autograph?" next
-    "@Yep,{pause(15)} there's no doubt about it!" next
-    "@Now for my promise." next
-    "@I'll tell you about something <extraordinary.>" next
-    "@In the next room, there is a light shining from far, far below the manhole." next
-    "@There,{pause(15)} I found a huge,{pause(15)} monster rat!" next
-    "@I'm not trying to pull your leg..." next
-    "@I'll let you go there and check it out for yourself.{wait}{sound(16)}{window_closeall}[1D 01 FF B7][1F 1E 8C 03 06][1F 17 8D 03 F3 00 01][1F 61]{set(flag 58)}{set(flag 2)}" eob
+	/*
+	"{sound(118)}@У тебя получилось!" next
+	"@На этой банановой кожуре настоящий автограф <Венус>?" next
+	"@Ага,{pause(15)} в этом нет никаких сомнений!" next
+	"@Теперь моё обещание." next
+	"@Я расскажу вам о кое-чём <экстраординарном>." next
+	"@В следующей комнате, далеко-далеко под люком горит свет." next
+	"@Там,{pause(15)} я нашёл большую,{pause(15)} страшную крысу!" next
+	"@Я не пытаюсь тебя разыгрывать..." next
+	"@Я позволю тебе пойти туда и проверить самому.{wait}{sound(16)}{window_closeall}[1D 01 FF B7][1F 1E 8C 03 06][1F 17 8D 03 F3 00 01][1F 61]{set(flag 58)}{set(flag 2)}" eob
+	*/
+	"{sound(118)}@[85] [A4][96][92][C6] [A1][A0][9D][A5][A9][9A][9D][A0][A3][C3]!" next
+	"@[7F][91] [C4][A4][A0][9B] [92][91][9F][91][9F][A0][93][A0][9B] [9C][A0][98][A5][A2][96] [9F][91][A3][A4][A0][C6][C0][9A][9B] [91][93][A4][A0][94][A2][91][A6] <[73][96][9F][A5][A3]>?" next
+	"@[71][94][91],{pause(15)} [93] [C4][A4][A0][9E] [9F][96][A4] [9F][9A][9C][91][9C][9A][A7] [A3][A0][9E][9F][96][9F][9A][9B]!" next
+	"@[84][96][A1][96][A2][C3] [9E][A0][97] [A0][92][96][C0][91][9F][9A][96]." next
+	"@[B6] [A2][91][A3][A3][9C][91][98][A5] [93][91][9E] [A0] [9C][A0][96]-[A9][97][9E] <[C4][9C][A3][A4][A2][91][A0][A2][95][9A][9F][91][A2][9F][A0][9E]>." next
+	"@[73] [A3][9D][96][95][A5][C5][C0][96][9B] [9C][A0][9E][9F][91][A4][96], [95][91][9D][96][9C][A0]-[95][91][9D][96][9C][A0] [A1][A0][95] [9D][C5][9C][A0][9E] [94][A0][A2][9A][A4] [A3][93][96][A4]." next
+	"@[84][91][9E],{pause(15)} [C6] [9F][91][AA][97][9D] [92][A0][9D][C3][AA][A5][C5],{pause(15)} [A3][A4][A2][91][AA][9F][A5][C5] [9C][A2][C2][A3][A5]!" next
+	"@[B6] [9F][96] [A1][C2][A4][91][C5][A3][C3] [A4][96][92][C6] [A2][91][99][C2][94][A2][C2][93][91][A4][C3]..." next
+	"@[B6] [A1][A0][99][93][A0][9D][C5] [A4][96][92][96] [A1][A0][9B][A4][9A] [A4][A5][95][91] [9A] [A1][A2][A0][93][96][A2][9A][A4][C3] [A3][91][9E][A0][9E][A5].{wait}{sound(16)}{window_closeall}[1D 01 FF B7][1F 1E 8C 03 06][1F 17 8D 03 F3 00 01][1F 61]{set(flag 58)}{set(flag 2)}" eob
 
 l_0xc826bc:
     "[06 DC 00 {e(l_0xc826c8)}]" goto(l_0xc82565)

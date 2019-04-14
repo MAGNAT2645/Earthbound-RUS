@@ -307,12 +307,20 @@ l_0xc92be3:
     "{window_closeall}{pause(60)}{music(145)}{pause(140)}[1F 15 B7 01 63 01 01]{pause(1)}[1F EF B7 01][1F E8 FF][1F 15 6A 00 A3 02 01][1F 61][1F ED][1F E5 FF][1F 1F B7 01 06][1F E1 1B 04 B4][19 10 01]{rtoarg}{window_open(1)}@When you defeated the Starman DX, the Stonehenge base ceased functioning.[03]{window_closeall}{set(flag 70)}{set(flag 126)}{set(flag 51)}{set(flag 55)}{set(flag 766)}{isset(flag 219)}[1B 02 {e(data_55.l_0xc9992f)}]{set(flag 538)}{music_resume}" eob
 
 l_0xc92c70:
-    "[1F 41 05]{set(flag 11)}[1F F1 29 04 23 01][1F 15 6A 00 24 01 01]" call(data_57.l_0xc9b4b8) "[1F EB FF 06]" call(data_36.l_0xc7dd6b) "{set(flag 542)}{music_resume}[1F F1 40 04 25 01][1F EE 40 04][1F E8 FF][1F 61][1F ED][1F E5 FF][1F 21 59][1F 15 05 01 26 01 01]{pause(1)}[1F EF 05 01][1F E8 FF][1F 61][1F E7 05 01]" call(l_0xc92dee) "[1F EA 05 01][1F 61][1F 15 27 01 27 01 01][1F 61][1F E7 05 01][06 D9 00 {e(l_0xc92d92)}]{set(flag 543)}{unset(flag 542)}{window_open(1)}@H...{pause(5)} h...{pause(1)} here it coooomes!" next
-    "{window_closeall}" call(data_23.l_0xc685ad) "[1B 03 {e(l_0xc92dde)}][1F F2 27 01 7B 02]{pause(60)}{window_open(1)}@Oh, man!" next
-    "@I thought you guys were just everyday little kids," next
-    "@but you defeated the Kraken!" next
-    "@I also helped in the battle..." next
-    "@I threw my slippers at the beast...{pause(20)}  Maybe you didn't notice.{wait}{window_closeall}{pause(1)}" goto(l_0xc92d92)
+	/*
+	"[1F 41 05]{set(flag 11)}[1F F1 29 04 23 01][1F 15 6A 00 24 01 01]" call(data_57.l_0xc9b4b8) "[1F EB FF 06]" call(data_36.l_0xc7dd6b) "{set(flag 542)}{music_resume}[1F F1 40 04 25 01][1F EE 40 04][1F E8 FF][1F 61][1F ED][1F E5 FF][1F 21 59][1F 15 05 01 26 01 01]{pause(1)}[1F EF 05 01][1F E8 FF][1F 61][1F E7 05 01]" call(l_0xc92dee) "[1F EA 05 01][1F 61][1F 15 27 01 27 01 01][1F 61][1F E7 05 01][06 D9 00 {e(l_0xc92d92)}]{set(flag 543)}{unset(flag 542)}{window_open(1)}@В...{pause(5)} в...{pause(1)} вот он!" next
+	"{window_closeall}" call(data_23.l_0xc685ad) "[1B 03 {e(l_0xc92dde)}][1F F2 27 01 7B 02]{pause(60)}{window_open(1)}@О, Боже!" next
+	"@Я думал, вы, ребята, просто обычные маленькие дети," next
+	"@но вы победили Кракена!" next
+	"@Я тоже помогал в битве..." next
+	"@Я швырнул свои тапочки в зверя...{pause(20)}  Может, вы не заметили.{wait}{window_closeall}{pause(1)}" goto(l_0xc92d92)
+	*/
+	"[1F 41 05]{set(flag 11)}[1F F1 29 04 23 01][1F 15 6A 00 24 01 01]" call(data_57.l_0xc9b4b8) "[1F EB FF 06]" call(data_36.l_0xc7dd6b) "{set(flag 542)}{music_resume}[1F F1 40 04 25 01][1F EE 40 04][1F E8 FF][1F 61][1F ED][1F E5 FF][1F 21 59][1F 15 05 01 26 01 01]{pause(1)}[1F EF 05 01][1F E8 FF][1F 61][1F E7 05 01]" call(l_0xc92dee) "[1F EA 05 01][1F 61][1F 15 27 01 27 01 01][1F 61][1F E7 05 01][06 D9 00 {e(l_0xc92d92)}]{set(flag 543)}{unset(flag 542)}{window_open(1)}@[73]...{pause(5)} [93]...{pause(1)} [93][A0][A4] [A0][9F]!" next
+	"{window_closeall}" call(data_23.l_0xc685ad) "[1B 03 {e(l_0xc92dde)}][1F F2 27 01 7B 02]{pause(60)}{window_open(1)}@[80], [72][A0][98][96]!" next
+	"@[B6] [95][A5][9E][91][9D], [93][C2], [A2][96][92][C6][A4][91], [A1][A2][A0][A3][A4][A0] [A0][92][C2][A9][9F][C2][96] [9E][91][9D][96][9F][C3][9C][9A][96] [95][96][A4][9A]," next
+	"@[9F][A0] [93][C2] [A1][A0][92][96][95][9A][9D][9A] [7C][A2][91][9C][96][9F][91]!" next
+	"@[B6] [A4][A0][98][96] [A1][A0][9E][A0][94][91][9D] [93] [92][9A][A4][93][96]..." next
+	"@[B6] [AA][93][C2][A2][9F][A5][9D] [A3][93][A0][9A] [A4][91][A1][A0][A9][9C][9A] [93] [99][93][96][A2][C6]...{pause(20)}  [7E][A0][98][96][A4], [93][C2] [9F][96] [99][91][9E][96][A4][9A][9D][9A].{wait}{window_closeall}{pause(1)}" goto(l_0xc92d92)
 
 l_0xc92d92:
     "[1F EA 05 01][1F 61][1F ED][1F E5 FF][1F 21 5A][1F 15 D4 00 28 01 01]{pause(1)}[1F EF D4 00][1F E8 FF][1F 61][1F 15 6A 00 29 01 01]{pause(1)}[1F EF 6A 00][1F EC FF 01][1F 61][1F ED]{unset(flag 542)}{unset(flag 543)}[1F 07 03]{pause(60)}{music_resume}{unset(flag 11)}[1F 41 06]{set(flag 217)}" eob
@@ -321,28 +329,50 @@ l_0xc92dde:
     "[1F ED][1F EC FF 01]{unset(flag 542)}{unset(flag 11)}[1F 41 06]" eob
 
 l_0xc92dee:
-    "{window_open(1)}@WA{pause(5)}A{pause(5)}A{pause(5)}AIT!  Wait!{pause(15)}  Wait..." next
-    "@I need to stop the boat." next
-    "@It's been a long time since I was out on the open sea,{pause(20)} so I feel seasick..." next
-    "@Oh, man, what am I going to do?{pause(15)}  A sailor who gets seasick?" next
-    next
-    "{pause(60)}" linebreak
-    "@So how come you guys are all right?" next
-    "[06 49 00 {e(l_0xc92f88)}][06 11 00 {e(l_0xc92fb4)}]" goto(l_0xc92e9e)
+	/*
+	"{window_open(1)}@ПО{pause(5)}О{pause(5)}О{pause(5)}ОДОЖДИТЕ!  Подождите!{pause(15)}  Стоп..." next
+	"@Мне нужно остановить лодку." next
+	"@Прошло много времени с тех пор, как я был в открытом море,{pause(20)} поэтому я чувствую морскую болезнь..." next
+	"@Боже, что же мне делать?{pause(15)}  Моряк, у которого морская болезнь?" next
+	next
+	"{pause(60)}" linebreak
+	"@Так почему с вами всё в порядке?" next
+	*/
+	"{window_open(1)}@[81][80]{pause(5)}[80]{pause(5)}[80]{pause(5)}[80][75][80][78][75][7A][84][76]!  [81][A0][95][A0][98][95][9A][A4][96]!{pause(15)}  [83][A4][A0][A1]..." next
+	"@[7E][9F][96] [9F][A5][98][9F][A0] [A0][A3][A4][91][9F][A0][93][9A][A4][C3] [9D][A0][95][9C][A5]." next
+	"@[81][A2][A0][AA][9D][A0] [9E][9F][A0][94][A0] [93][A2][96][9E][96][9F][9A] [A3] [A4][96][A7] [A1][A0][A2], [9C][91][9C] [C6] [92][C2][9D] [93] [A0][A4][9C][A2][C2][A4][A0][9E] [9E][A0][A2][96],{pause(20)} [A1][A0][C4][A4][A0][9E][A5] [C6] [A9][A5][93][A3][A4][93][A5][C5] [9E][A0][A2][A3][9C][A5][C5] [92][A0][9D][96][99][9F][C3]..." next
+	"@[72][A0][98][96], [A9][A4][A0] [98][96] [9E][9F][96] [95][96][9D][91][A4][C3]?{pause(15)}  [7E][A0][A2][C6][9C], [A5] [9C][A0][A4][A0][A2][A0][94][A0] [9E][A0][A2][A3][9C][91][C6] [92][A0][9D][96][99][9F][C3]?" next
+	next
+	"{pause(60)}" linebreak
+	"@[84][91][9C] [A1][A0][A9][96][9E][A5] [A3] [93][91][9E][9A] [93][A3][97] [93] [A1][A0][A2][C6][95][9C][96]?" next
+	"[06 49 00 {e(l_0xc92f88)}][06 11 00 {e(l_0xc92fb4)}]" goto(l_0xc92e9e)
 
 l_0xc92e9e:
-    "@So... that bald guy over there..." next
-    "@your buddy, right?...{pause(20)}  He came from Dalaam?" next
-    "@You guys must be quite the adventurers!" next
-    "[06 BB 00 {e(l_0xc92f88)}]@Aren't there times when you'd just like to go back home?" next
-    "@So, you're not some mama's boy..." next
-    "@Well, it wouldn't hurt you to go back and visit once in a while." next
-    "[1D 05 FF FD][1B 02 {e(l_0xc92f88)}]@Hey, that's an awfully strange carrot.{pause(20)}  What kind of bunny would eat that?" next
-    goto(l_0xc92f88)
+	/*
+	"@Итак... вон тот лысый парнишка..." next
+	"@твой друг, верно?...{pause(20)}  Он прибыл из Далаама?" next
+	"@Вы, ребята, походу, настоящие искатели приключений!" next
+	"[06 BB 00 {e(l_0xc92f88)}]@Бывает так, что вы просто хотите вернуться домой?" next
+	"@Значит, ты не маменькин сынок..." next
+	"@Ну, тебе не повредит время от времени навещать свой дом." next
+	"[1D 05 FF FD][1B 02 {e(l_0xc92f88)}]@Эй, это ужасно странная морковка.{pause(20)}  Какой кролик стал бы это есть?" next
+	*/
+	"@[7A][A4][91][9C]... [93][A0][9F] [A4][A0][A4] [9D][C2][A3][C2][9B] [A1][91][A2][9F][9A][AA][9C][91]..." next
+	"@[A4][93][A0][9B] [95][A2][A5][94], [93][96][A2][9F][A0]?...{pause(20)}  [80][9F] [A1][A2][9A][92][C2][9D] [9A][99] [75][91][9D][91][91][9E][91]?" next
+	"@[73][C2], [A2][96][92][C6][A4][91], [A1][A0][A7][A0][95][A5], [9F][91][A3][A4][A0][C6][C0][9A][96] [9A][A3][9C][91][A4][96][9D][9A] [A1][A2][9A][9C][9D][C5][A9][96][9F][9A][9B]!" next
+	"[06 BB 00 {e(l_0xc92f88)}]@[72][C2][93][91][96][A4] [A4][91][9C], [A9][A4][A0] [93][C2] [A1][A2][A0][A3][A4][A0] [A7][A0][A4][9A][A4][96] [93][96][A2][9F][A5][A4][C3][A3][C6] [95][A0][9E][A0][9B]?" next
+	"@[79][9F][91][A9][9A][A4], [A4][C2] [9F][96] [9E][91][9E][96][9F][C3][9C][9A][9F] [A3][C2][9F][A0][9C]..." next
+	"@[7F][A5], [A4][96][92][96] [9F][96] [A1][A0][93][A2][96][95][9A][A4] [93][A2][96][9E][C6] [A0][A4] [93][A2][96][9E][96][9F][9A] [9F][91][93][96][C0][91][A4][C3] [A3][93][A0][9B] [95][A0][9E]." next
+	"[1D 05 FF FD][1B 02 {e(l_0xc92f88)}]@[B4][9B], [C4][A4][A0] [A5][98][91][A3][9F][A0] [A3][A4][A2][91][9F][9F][91][C6] [9E][A0][A2][9C][A0][93][9C][91].{pause(20)}  [7C][91][9C][A0][9B] [9C][A2][A0][9D][9A][9C] [A3][A4][91][9D] [92][C2] [C4][A4][A0] [96][A3][A4][C3]?" next
+	goto(l_0xc92f88)
 
 l_0xc92f88:
-    "@Hahaha!{pause(20)}  I'm feeling much better now!" next
-    "@Anchors aweigh![03]{window_closeall}" eob
+	/*
+	"@Ха-ха-ха!{pause(20)}  Я чувствую себя намного лучше!" next
+	"@Поднять якоря![03]{window_closeall}" eob
+	*/
+	"@[87][91]-[A7][91]-[A7][91]!{pause(20)}  [B6] [A9][A5][93][A3][A4][93][A5][C5] [A3][96][92][C6] [9F][91][9E][9F][A0][94][A0] [9D][A5][A9][AA][96]!" next
+	"@[81][A0][95][9F][C6][A4][C3] [C6][9C][A0][A2][C6]![03]{window_closeall}" eob
 
 l_0xc92fb4:
     "[06 14 01 {e(l_0xc92e9e)}]" goto(l_0xc92f88)
@@ -408,22 +438,31 @@ l_0xc9310d:
     "@(The door of the pyramid is firmly sealed...)" end
 
 l_0xc9312e:
-    "[06 5B 01 {e(l_0xc93180)}]{window_open(1)}@(Someone must have stepped on a switch!)" next
-    "{sound(117)}@(It sounds like something up above is moving.){wait}{window_closeall}{sound(114)}{set(flag 347)}" eob
+	/*
+	"[06 5B 01 {e(l_0xc93180)}]{window_open(1)}@(Кто-то наступил на переключатель!)" next
+	"{sound(117)}@(Похоже, что-то движется наверху.){wait}{window_closeall}{sound(114)}{set(flag 347)}" eob
+	*/
+	"[06 5B 01 {e(l_0xc93180)}]{window_open(1)}@([7C][A4][A0]-[A4][A0] [9F][91][A3][A4][A5][A1][9A][9D] [9F][91] [A1][96][A2][96][9C][9D][C5][A9][91][A4][96][9D][C3]!)" next
+	"{sound(117)}@([81][A0][A7][A0][98][96], [A9][A4][A0]-[A4][A0] [95][93][9A][98][96][A4][A3][C6] [9F][91][93][96][A2][A7][A5].){wait}{window_closeall}{sound(114)}{set(flag 347)}" eob
 
 l_0xc93180:
-    eob
+	eob
 
 l_0xc93181:
-    "[06 5C 01 {e(l_0xc93234)}]@(There is something on the platform." next
-    "@Do you want to get it?)" linebreak
-    call(data_36.l_0xc7dd4f) "[11]{clearline}[09 02 {e(l_0xc931d3)} {e(l_0xc931b7)}]" goto(l_0xc931b7)
+	/*
+	"[06 5C 01 {e(l_0xc93234)}]@(На платформе что-то лежит." next
+	"@Вы хотите забрать это?)" linebreak
+	*/
+	"[06 5C 01 {e(l_0xc93234)}]@([7F][91] [A1][9D][91][A4][A6][A0][A2][9E][96] [A9][A4][A0]-[A4][A0] [9D][96][98][9A][A4]." next
+	"@[73][C2] [A7][A0][A4][9A][A4][96] [99][91][92][A2][91][A4][C3] [C4][A4][A0]?)" linebreak
+	call(data_36.l_0xc7dd4f) "[11]{clearline}[09 02 {e(l_0xc931d3)} {e(l_0xc931b7)}]" goto(l_0xc931b7)
 
 l_0xc931b7:
-    "@(Wasn't it the whole reason you came here?)" end
+//	"@(Разве не из-за этого вы пришли сюда?)" end
+	"@([82][91][99][93][96] [9F][96] [9A][99]-[99][91] [C4][A4][A0][94][A0] [93][C2] [A1][A2][9A][AA][9D][9A] [A3][C5][95][91]?)" end
 
 l_0xc931d3:
-    "[1D 03 FF][1B 02 {e(l_0xc931f1)}][1D 0E 00 AF]" call(data_36.l_0xc7dcb6) "{wait}{set(flag 348)}{pause(10)}[1F 1E AB 04 06]" eob
+	"[1D 03 FF][1B 02 {e(l_0xc931f1)}][1D 0E 00 AF]" call(data_36.l_0xc7dcb6) "{wait}{set(flag 348)}{pause(10)}[1F 1E AB 04 06]" eob
 
 l_0xc931f1:
     "@(It's unbelievable that you would get this far," next

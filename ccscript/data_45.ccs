@@ -159,15 +159,26 @@ l_0xc8aae6:
     "@I got lots of money from him.  Heh heh heh." end
 
 l_0xc8abb0:
-    "@Here's a picture of the hieroglyphs, just for you." next
-    "@It's a reward for studying so hard." next
-    "[1D 03 FF][1B 02 {e(l_0xc8ac30)}][1D 0E 00 B9]" call(data_36.l_0xc7dccf) next
-    "@Use it in your Human Civilization class.  Ha ha ha!{wait}{set(flag 343)}{unset(flag 10)}[06 8C 00 {e(data_55.l_0xc9992f)}]{set(flag 687)}" eob
+	/*
+	"@Вот изображение Иероглифов, только для вас." next
+	"@Это награда за усердную учёбу." next
+	"[1D 03 FF][1B 02 {e(l_0xc8ac30)}][1D 0E 00 B9]" call(data_36.l_0xc7dccf) next
+	"@Используйте её в вашем предмете Человеческой Цивилизации.  Ха-ха-ха!{wait}{set(flag 343)}{unset(flag 10)}[06 8C 00 {e(data_55.l_0xc9992f)}]{set(flag 687)}" eob
+	*/
+	"@[73][A0][A4] [9A][99][A0][92][A2][91][98][96][9F][9A][96] [7A][96][A2][A0][94][9D][9A][A6][A0][93], [A4][A0][9D][C3][9C][A0] [95][9D][C6] [93][91][A3]." next
+	"@[B4][A4][A0] [9F][91][94][A2][91][95][91] [99][91] [A5][A3][96][A2][95][9F][A5][C5] [A5][A9][97][92][A5]." next
+	"[1D 03 FF][1B 02 {e(l_0xc8ac30)}][1D 0E 00 B9]" call(data_36.l_0xc7dccf) next
+	"@[7A][A3][A1][A0][9D][C3][99][A5][9B][A4][96] [96][97] [93] [93][91][AA][96][9E] [A1][A2][96][95][9E][96][A4][96] [89][96][9D][A0][93][96][A9][96][A3][9C][A0][9B] [88][9A][93][9A][9D][9A][99][91][A8][9A][9A].  [87][91]-[A7][91]-[A7][91]!{wait}{set(flag 343)}{unset(flag 10)}[06 8C 00 {e(data_55.l_0xc9992f)}]{set(flag 687)}" eob
 
 l_0xc8ac30:
-    "{sound(5)}@Oh, you can't carry it 'cause you have too much stuff." next
-    "@It's a pity.{pause(20)}  You're such a hard worker." next
-    "@Ha ha ha!{wait}{set(flag 10)}" eob
+	/*
+	"{sound(5)}@Оу, вы не можете забрать его, потому что у вас слишком много вещей." next
+	"@Жаль.{pause(20)}  Вы такие трудолюбивые." next
+	"@Ха-ха-ха!{wait}{set(flag 10)}" eob
+	*/
+	"{sound(5)}@[80][A5], [93][C2] [9F][96] [9E][A0][98][96][A4][96] [99][91][92][A2][91][A4][C3] [96][94][A0], [A1][A0][A4][A0][9E][A5] [A9][A4][A0] [A5] [93][91][A3] [A3][9D][9A][AA][9C][A0][9E] [9E][9F][A0][94][A0] [93][96][C0][96][9B]." next
+	"@[78][91][9D][C3].{pause(20)}  [73][C2] [A4][91][9C][9A][96] [A4][A2][A5][95][A0][9D][C5][92][9A][93][C2][96]." next
+	"@[87][91]-[A7][91]-[A7][91]!{wait}{set(flag 10)}" eob
 
 l_0xc8ac6f:
 	/*
