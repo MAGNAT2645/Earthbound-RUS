@@ -189,49 +189,55 @@ l_0xc86186:
   call(l_0xc8603c) eob
 
 l_0xc861dd:
-  "@Good morn...{pause(10)}  Uhhh... not morning.{pause(10)}" next
-  "@Here{pause(5)} in Moonside, it's always the middle of the night." next
-  "@This is a headline from tonight's Moonside Press..." next
-  "@<Mani Mani is {pause(10)} always Mani Mani {pause(10)} at Mani Mani with all {pause(10)} Mani Mani {pause(10)} Mani>" end
+	/*
+	"@Доброе утр...{pause(10)}  Эммм... не утро.{pause(10)}" next
+	"@Здесь,{pause(5)} в Мунсайде, всегда полночь." next
+	"@Вот заголовок из сегодняшней прессы Мунсайда..." next
+	"@<Мани-Мани - {pause(10)}это всегда Мани-Мани {pause(10)}в Мани-Мани со всеми {pause(10)}Мани-Мани{pause(10)}-Мани>" end
+	*/
+	"@[75][A0][92][A2][A0][96] [A5][A4][A2]...{pause(10)}  [B4][9E][9E][9E]... [9F][96] [A5][A4][A2][A0].{pause(10)}" next
+	"@[79][95][96][A3][C3],{pause(5)} [93] [7E][A5][9F][A3][91][9B][95][96], [93][A3][96][94][95][91] [A1][A0][9D][9F][A0][A9][C3]." next
+	"@[73][A0][A4] [99][91][94][A0][9D][A0][93][A0][9C] [9A][99] [A3][96][94][A0][95][9F][C6][AA][9F][96][9B] [A1][A2][96][A3][A3][C2] [7E][A5][9F][A3][91][9B][95][91]..." next
+	"@<[7E][91][9F][9A]-[7E][91][9F][9A] - {pause(10)}[C4][A4][A0] [93][A3][96][94][95][91] [7E][91][9F][9A]-[7E][91][9F][9A] {pause(10)}[93] [7E][91][9F][9A]-[7E][91][9F][9A] [A3][A0] [93][A3][96][9E][9A] {pause(10)}[7E][91][9F][9A]-[7E][91][9F][9A]{pause(10)}-[7E][91][9F][9A]>" end
 
-/*l_0xc86279:
-  "[06 4F 00 {e(l_0xc86320)}][06 84 00 {e(l_0xc862b8)}]@(Caution!{pause(30)}  There are still lots of fires burning here and there.{pause(20)}  It's HOT!)" end
-*/
 l_0xc86279:
-  "[06 4F 00 {e(l_0xc86320)}][06 84 00 {e(l_0xc862b8)}]@([73][9F][9A][9E][91][9F][9A][96]!{pause(30)}  [79][95][96][A3][C3] [93][A3][97] [96][C0][97] [9E][9F][A0][94][A0] [A0][94][A0][9F][C3][9C][A0][93].{pause(20)}  [84][A5][A4] [78][71][82][7C][80]!)" end
+//	"[06 4F 00 {e(l_0xc86320)}][06 84 00 {e(l_0xc862b8)}]@(Внимание!{pause(30)}  Здесь всё ещё много огоньков.{pause(20)}  Тут ЖАРКО!)" end
+	"[06 4F 00 {e(l_0xc86320)}][06 84 00 {e(l_0xc862b8)}]@([73][9F][9A][9E][91][9F][9A][96]!{pause(30)}  [79][95][96][A3][C3] [93][A3][97] [96][C0][97] [9E][9F][A0][94][A0] [A0][94][A0][9F][C3][9C][A0][93].{pause(20)}  [84][A5][A4] [78][71][82][7C][80]!)" end
 
-/*l_0xc862b8:
-  "@There is something shiny that you can reach." next
-  "@Do you want to try and get it?" linebreak
-  "[19 02]Yes" eob*/
 l_0xc862b8:
-  "@There is something shiny that you can reach." next
-  "@Do you want to try and get it?" linebreak
-  "[19 02]Yes" eob
+	/*
+	"@Тут есть что-то блестящее, до чего можно дотянуться." next
+	"@Хочешь попробовать забрать это?" linebreak
+	"[19 02]Да" eob
+	*/
+	"@[84][A5][A4] [96][A3][A4][C3] [A9][A4][A0]-[A4][A0] [92][9D][96][A3][A4][C6][C0][96][96], [95][A0] [A9][96][94][A0] [9E][A0][98][9F][A0] [95][A0][A4][C6][9F][A5][A4][C3][A3][C6]." next
+	"@[87][A0][A9][96][AA][C3] [A1][A0][A1][A2][A0][92][A0][93][91][A4][C3] [99][91][92][A2][91][A4][C3] [C4][A4][A0]?" linebreak
+	"[19 02][75][91]" eob
 
-/*l_0xc862e3:
-  "[19 02]No" eob*/
 l_0xc862e3:
-  "[19 02]No" eob
+//	"[19 02]Нет" eob
+	"[19 02][7F][96][A4]" eob
 
 l_0xc862e8:
-  "[1C 07 02][11]{clearline}[09 02 {e(l_0xc862f8)} {e(l_0xc862f7)}]" goto(l_0xc862f7)
+	"[1C 07 02][11]{clearline}[09 02 {e(l_0xc862f8)} {e(l_0xc862f7)}]" goto(l_0xc862f7)
 
 l_0xc862f7:
-  eob
+	eob
 
 l_0xc862f8:
-  "[1D 03 FF][1B 02 {e(l_0xc86311)}][1D 0E 00 C1][1B 05]" call(data_36.l_0xc7dcb6) "{set(flag 79)}" end
+	"[1D 03 FF][1B 02 {e(l_0xc86311)}][1D 0E 00 C1][1B 05]" call(data_36.l_0xc7dcb6) "{set(flag 79)}" end
 
 l_0xc86311:
-  "@You don't have any more space." end
+//	"@У вас больше нет свободного места." end
+	"@[85] [93][91][A3] [92][A0][9D][C3][AA][96] [9F][96][A4] [A3][93][A0][92][A0][95][9F][A0][94][A0] [9E][96][A3][A4][91]." end
 
 l_0xc86320:
-  "@(Seems like a big meteorite landed here not too long ago.)" end
+//	"@(Похоже, здесь недавно упал большой метеорит.)" end
+	"@([81][A0][A7][A0][98][96], [99][95][96][A3][C3] [9F][96][95][91][93][9F][A0] [A5][A1][91][9D] [92][A0][9D][C3][AA][A0][9B] [9E][96][A4][96][A0][A2][9A][A4].)" end
 
 l_0xc8634c:
-  "@Even if you're poor, come and see how easy it is to own a luxurious second home!" next
-  "@<Beak Point Real Estate>" end
+	"@Even if you're poor, come and see how easy it is to own a luxurious second home!" next
+	"@<Beak Point Real Estate>" end
 
 l_0xc86399:
   "@<Bush Hospital>" next

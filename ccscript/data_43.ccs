@@ -367,9 +367,14 @@ l_0xc87e37:
     "[06 59 00 {e(data_35.l_0xc7c59e)}][06 7E 00 {e(l_0xc87e4c)}]" call(data_35.l_0xc7c59e) end
 
 l_0xc87e4c:
-    "@(You found the book" linebreak
-    "  <Overcoming Shyness>!)" next
-    "[1D 03 FF][1B 02 {e(l_0xc87e8e)}][1D 0E 00 A4][1B 05]" call(data_36.l_0xc7dcb6) "{wait}{set(flag 89)}{unset(flag 766)}{unset(flag 51)}" eob
+	/*
+	"@(Ты нашёл книгу" linebreak
+	"  <Преодоление Застенчивости>!)" next
+	"[1D 03 FF][1B 02 {e(l_0xc87e8e)}][1D 0E 00 A4][1B 05]" call(data_36.l_0xc7dcb6) "{wait}{set(flag 89)}{unset(flag 766)}{unset(flag 51)}" eob
+	*/
+	"@([84][C2] [9F][91][AA][97][9D] [9C][9F][9A][94][A5]" linebreak
+	"  <[81][A2][96][A0][95][A0][9D][96][9F][9A][96] [79][91][A3][A4][96][9F][A9][9A][93][A0][A3][A4][9A]>!)" next
+	"[1D 03 FF][1B 02 {e(l_0xc87e8e)}][1D 0E 00 A4][1B 05]" call(data_36.l_0xc7dcb6) "{wait}{set(flag 89)}{unset(flag 766)}{unset(flag 51)}" eob
 
 l_0xc87e8e:
     "@(But look, at this glorious moment you have no more room.)" next

@@ -465,13 +465,14 @@ l_0xc77d3a:
 	"@[85][95][91][A9][9A], [1C 02 01]!{wait}{window_closeall}{pause(1)}[1F E1 1F 04 3C][1F 1E 42 05 09]{set(flag 639)}" eob
 
 l_0xc77d9f:
-    "{window_closeall}[1F 21 D6]" eob
+	"{window_closeall}[1F 21 D6]" eob
 
 l_0xc77da5:
-    "{window_closeall}[1F 21 28]" eob
+	"{window_closeall}[1F 21 28]" eob
 
 l_0xc77dab:
-    "{window_open(1)}@The [1C 05 C4] that [1C 02 01] used to have is now gone.{wait}{window_closeall}[1D 01 FF C4]" eob
+//	"{window_open(1)}@[1C 05 C4], который был в руках персонажа [1C 02 01], теперь исчез.{wait}{window_closeall}[1D 01 FF C4]" eob
+	"{window_open(1)}@[1C 05 C4], [9C][A0][A4][A0][A2][C2][9B] [92][C2][9D] [93] [A2][A5][9C][91][A7] [A1][96][A2][A3][A0][9F][91][98][91] [1C 02 01], [A4][96][A1][96][A2][C3] [9A][A3][A9][96][99].{wait}{window_closeall}[1D 01 FF C4]" eob
 
 l_0xc77dce:
     newline

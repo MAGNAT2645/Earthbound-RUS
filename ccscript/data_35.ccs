@@ -8,111 +8,135 @@ command e(label) "{long label}"
 
 // Text Data
 l_0xc7c1f7:
-    call(data_57.l_0xc9b226) "[06 80 01 {e(l_0xc7c204)}]" eob
+	call(data_57.l_0xc9b226) "[06 80 01 {e(l_0xc7c204)}]" eob
 
 l_0xc7c204:
-    "{set(flag 546)}" eob
+	"{set(flag 546)}" eob
 
 l_0xc7c208:
-    "[1F 15 6A 00 60 01 01]    {unset(flag 2)}               " call(data_36.l_0xc7dd6b) "{music(36)}" call(l_0xc7c54b) "{set(flag 2)}               [1F 61]                      {counter(1)}" call(data_36.l_0xc7dc7f) "[1B 02 {e(l_0xc7c258)}]{window_open(1)}@The power of Magnet Hill" call(l_0xc7c55d) goto(l_0xc7c258)
+//	"[1F 15 6A 00 60 01 01]    {unset(flag 2)}               " call(data_36.l_0xc7dd6b) "{music(36)}" call(l_0xc7c54b) "{set(flag 2)}               [1F 61]                      {counter(1)}" call(data_36.l_0xc7dc7f) "[1B 02 {e(l_0xc7c258)}]{window_open(1)}@Сила Магнитной Горки" call(l_0xc7c55d) goto(l_0xc7c258)
+	"[1F 15 6A 00 60 01 01]    {unset(flag 2)}               " call(data_36.l_0xc7dd6b) "{music(36)}" call(l_0xc7c54b) "{set(flag 2)}               [1F 61]                      {counter(1)}" call(data_36.l_0xc7dc7f) "[1B 02 {e(l_0xc7c258)}]{window_open(1)}@[83][9A][9D][91] [7E][91][94][9F][9A][A4][9F][A0][9B] [74][A0][A2][9C][9A]" call(l_0xc7c55d) goto(l_0xc7c258)
 
 l_0xc7c258:
-    call(l_0xc7c57d) "{set(flag 4)}{music_resume}[06 BA 00 {e(l_0xc7c2c5)}]{window_open(1)}@[1C 02 01] [A5][93][9A][95][96][9D] [92][A5][A4][C2][9D][9C][A5] [A2][96][92][97][9F][9C][91], [9F][A0] [9F][91] [9E][94][9F][A0][93][96][9F][9A][96].[03]{pause(60)}" linebreak
-    "@[1C 02 01]'s Sound Stone recorded the melody of Magnet Hill.{wait}{set(flag 186)}{set(flag 494)}{window_closetop}" goto(l_0xc7c2c5)
+	/*
+	call(l_0xc7c57d) "{set(flag 4)}{music_resume}[06 BA 00 {e(l_0xc7c2c5)}]{window_open(1)}@[1C 02 01] увидел детскую бутылочку, но на мгновение.[03]{pause(60)}" linebreak
+	"@Поющий Камень персонажа [1C 02 01] записал мелодию Магнитной Горки.{wait}{set(flag 186)}{set(flag 494)}{window_closetop}" goto(l_0xc7c2c5)
+	*/
+	call(l_0xc7c57d) "{set(flag 4)}{music_resume}[06 BA 00 {e(l_0xc7c2c5)}]{window_open(1)}@[1C 02 01] [A5][93][9A][95][96][9D] [95][96][A4][A3][9C][A5][C5] [92][A5][A4][C2][9D][A0][A9][9C][A5], [9F][A0] [9F][91] [9E][94][9F][A0][93][96][9F][9A][96].[03]{pause(60)}" linebreak
+	"@[81][A0][C5][C0][9A][9B] [7C][91][9E][96][9F][C3] [A1][96][A2][A3][A0][9F][91][98][91] [1C 02 01] [99][91][A1][9A][A3][91][9D] [9E][96][9D][A0][95][9A][C5] [7E][91][94][9F][9A][A4][9F][A0][9B] [74][A0][A2][9C][9A].{wait}{set(flag 186)}{set(flag 494)}{window_closetop}" goto(l_0xc7c2c5)
 
 l_0xc7c2c5:
-    eob
+	eob
 
 l_0xc7c2c6:
-    "[1F 15 6A 00 60 01 01]    {unset(flag 2)}               " call(data_36.l_0xc7dd6b) "{music(37)}" call(l_0xc7c54b) "{set(flag 2)}               [1F 61]                      {counter(1)}" call(data_36.l_0xc7dc7f) "[1B 02 {e(l_0xc7c317)}]{window_open(1)}@The power of Pink Cloud" call(l_0xc7c55d) goto(l_0xc7c317)
+//	"[1F 15 6A 00 60 01 01]    {unset(flag 2)}               " call(data_36.l_0xc7dd6b) "{music(37)}" call(l_0xc7c54b) "{set(flag 2)}               [1F 61]                      {counter(1)}" call(data_36.l_0xc7dc7f) "[1B 02 {e(l_0xc7c317)}]{window_open(1)}@Сила Розового Облака" call(l_0xc7c55d) goto(l_0xc7c317)
+	"[1F 15 6A 00 60 01 01]    {unset(flag 2)}               " call(data_36.l_0xc7dd6b) "{music(37)}" call(l_0xc7c54b) "{set(flag 2)}               [1F 61]                      {counter(1)}" call(data_36.l_0xc7dc7f) "[1B 02 {e(l_0xc7c317)}]{window_open(1)}@[83][9A][9D][91] [82][A0][99][A0][93][A0][94][A0] [80][92][9D][91][9C][91]" call(l_0xc7c55d) goto(l_0xc7c317)
 
 l_0xc7c317:
-    call(l_0xc7c57d) "{set(flag 4)}{music_resume}[06 BB 00 {e(l_0xc7c38a)}]{window_open(1)}@[1C 02 01] [A5][93][9A][95][96][9D] [9C][A0][A2][A0][A4][9C][A0][96] [93][9A][95][96][9F][9A][96] [A0] [A3][93][A0][96][9B] [9E][91][A4][96][A2][9A], [9C][A0][94][95][91] [A0][9F][91] [92][C2][9D][91] [9E][A0][9D][A0][95][91].[03]{pause(60)}" linebreak
-    "@[1C 02 01]'s Sound Stone recorded the melody of the Pink Cloud.{wait}{set(flag 187)}{window_closetop}" goto(l_0xc7c38a)
+	/*
+	call(l_0xc7c57d) "{set(flag 4)}{music_resume}[06 BB 00 {e(l_0xc7c38a)}]{window_open(1)}@[1C 02 01] увидел короткое видение о своей матери, когда она была молода.[03]{pause(60)}" linebreak
+	"@Поющий Камень персонажа [1C 02 01] записал мелодию Розового Облака.{wait}{set(flag 187)}{window_closetop}" goto(l_0xc7c38a)
+	*/
+	call(l_0xc7c57d) "{set(flag 4)}{music_resume}[06 BB 00 {e(l_0xc7c38a)}]{window_open(1)}@[1C 02 01] [A5][93][9A][95][96][9D] [9C][A0][A2][A0][A4][9C][A0][96] [93][9A][95][96][9F][9A][96] [A0] [A3][93][A0][96][9B] [9E][91][A4][96][A2][9A], [9C][A0][94][95][91] [A0][9F][91] [92][C2][9D][91] [9E][A0][9D][A0][95][91].[03]{pause(60)}" linebreak
+	"@[81][A0][C5][C0][9A][9B] [7C][91][9E][96][9F][C3] [A1][96][A2][A3][A0][9F][91][98][91] [1C 02 01] [99][91][A1][9A][A3][91][9D] [9E][96][9D][A0][95][9A][C5] [82][A0][99][A0][93][A0][94][A0] [80][92][9D][91][9C][91].{wait}{set(flag 187)}{window_closetop}" goto(l_0xc7c38a)
 
 l_0xc7c38a:
-    call(data_57.l_0xc9b226) "[06 80 01 {e(l_0xc7c397)}]" eob
+	call(data_57.l_0xc9b226) "[06 80 01 {e(l_0xc7c397)}]" eob
 
 l_0xc7c397:
-    "{set(flag 547)}" eob
+	"{set(flag 547)}" eob
 
 l_0xc7c39b:
-    "[06 BC 00 {e(l_0xc7c3c2)}]" call(l_0xc7c57d) "{pause(1)}[1F E1 1A 02 3C][1F 14 01][1F 15 6A 00 61 01 01]       [1F 61]                                              " goto(l_0xc7c3c2)
+	"[06 BC 00 {e(l_0xc7c3c2)}]" call(l_0xc7c57d) "{pause(1)}[1F E1 1A 02 3C][1F 14 01][1F 15 6A 00 61 01 01]       [1F 61]                                              " goto(l_0xc7c3c2)
 
 l_0xc7c3c2:
-    "[1F 15 6A 00 60 01 01]    {unset(flag 2)}               " call(data_36.l_0xc7dd6b) "{music(38)}" call(l_0xc7c54b) "{set(flag 2)}               [1F 61]                      {counter(1)}" call(data_36.l_0xc7dc7f) "[1B 02 {e(l_0xc7c412)}]{window_open(1)}@The power of Lumine Hall" call(l_0xc7c55d) goto(l_0xc7c412)
+//	"[1F 15 6A 00 60 01 01]    {unset(flag 2)}               " call(data_36.l_0xc7dd6b) "{music(38)}" call(l_0xc7c54b) "{set(flag 2)}               [1F 61]                      {counter(1)}" call(data_36.l_0xc7dc7f) "[1B 02 {e(l_0xc7c412)}]{window_open(1)}@Сила Светящегося Коридора" call(l_0xc7c55d) goto(l_0xc7c412)
+	"[1F 15 6A 00 60 01 01]    {unset(flag 2)}               " call(data_36.l_0xc7dd6b) "{music(38)}" call(l_0xc7c54b) "{set(flag 2)}               [1F 61]                      {counter(1)}" call(data_36.l_0xc7dc7f) "[1B 02 {e(l_0xc7c412)}]{window_open(1)}@[83][9A][9D][91] [83][93][96][A4][C6][C0][96][94][A0][A3][C6] [7C][A0][A2][9A][95][A0][A2][91]" call(l_0xc7c55d) goto(l_0xc7c412)
 
 l_0xc7c412:
-    "{set(flag 4)}" call(l_0xc7c57d) "{music_resume}[06 BC 00 {e(l_0xc7c478)}]{window_open(1)}@[1C 02 01] [A5][93][9A][95][96][9D] [A0][A4][A8][91], [95][96][A2][98][91][C0][96][94][A0] [96][94][A0].[03]{pause(60)}" linebreak
-    "@[1C 02 01]'s Sound Stone recorded the melody of Lumine Hall.{wait}{set(flag 188)}{window_closetop}" goto(l_0xc7c478)
+	/*
+	"{set(flag 4)}" call(l_0xc7c57d) "{music_resume}[06 BC 00 {e(l_0xc7c478)}]{window_open(1)}@[1C 02 01] увидел отца, держащего его.[03]{pause(60)}" linebreak
+	"@Поющий Камень персонажа [1C 02 01] записал мелодию Светящегося Коридора.{wait}{set(flag 188)}{window_closetop}" goto(l_0xc7c478)
+	*/
+	"{set(flag 4)}" call(l_0xc7c57d) "{music_resume}[06 BC 00 {e(l_0xc7c478)}]{window_open(1)}@[1C 02 01] [A5][93][9A][95][96][9D] [A0][A4][A8][91], [95][96][A2][98][91][C0][96][94][A0] [96][94][A0].[03]{pause(60)}" linebreak
+	"@[81][A0][C5][C0][9A][9B] [7C][91][9E][96][9F][C3] [A1][96][A2][A3][A0][9F][91][98][91] [1C 02 01] [99][91][A1][9A][A3][91][9D] [9E][96][9D][A0][95][9A][C5] [83][93][96][A4][C6][C0][96][94][A0][A3][C6] [7C][A0][A2][9A][95][A0][A2][91].{wait}{set(flag 188)}{window_closetop}" goto(l_0xc7c478)
 
 l_0xc7c478:
-    eob
+	eob
 
 l_0xc7c479:
-    "[1F 15 6A 00 60 01 01]    {unset(flag 2)}               " call(data_36.l_0xc7dd6b) "{music(39)}" call(l_0xc7c54b) "{set(flag 2)}               [1F 61]                      {counter(1)}" call(data_36.l_0xc7dc7f) "[1B 02 {e(l_0xc7c4c9)}]{window_open(1)}@The power of Fire Spring" call(l_0xc7c55d) goto(l_0xc7c4c9)
+//	"[1F 15 6A 00 60 01 01]    {unset(flag 2)}               " call(data_36.l_0xc7dd6b) "{music(39)}" call(l_0xc7c54b) "{set(flag 2)}               [1F 61]                      {counter(1)}" call(data_36.l_0xc7dc7f) "[1B 02 {e(l_0xc7c4c9)}]{window_open(1)}@Сила Огненного Источника" call(l_0xc7c55d) goto(l_0xc7c4c9)
+	"[1F 15 6A 00 60 01 01]    {unset(flag 2)}               " call(data_36.l_0xc7dd6b) "{music(39)}" call(l_0xc7c54b) "{set(flag 2)}               [1F 61]                      {counter(1)}" call(data_36.l_0xc7dc7f) "[1B 02 {e(l_0xc7c4c9)}]{window_open(1)}@[83][9A][9D][91] [80][94][9F][96][9F][9F][A0][94][A0] [7A][A3][A4][A0][A9][9F][9A][9C][91]" call(l_0xc7c55d) goto(l_0xc7c4c9)
 
 l_0xc7c4c9:
-    "{set(flag 4)}" call(l_0xc7c57d) "{music_resume}[06 BD 00 {e(l_0xc7c53a)}]{window_open(1)}@[1C 02 01] had the feeling that he was being watched by himself as a baby.[03]{pause(60)}" linebreak
-    "@[1C 02 01]'s Sound Stone recorded the melody of the Fire Spring.{wait}{set(flag 189)}{window_closetop}" goto(l_0xc7c53a)
+	/*
+	"{set(flag 4)}" call(l_0xc7c57d) "{music_resume}[06 BD 00 {e(l_0xc7c53a)}]{window_open(1)}@У персонажа [1C 02 01] возникло ощущение, что он наблюдает за самим собой младенческого возраста.[03]{pause(60)}" linebreak
+	"@Поющий Камень персонажа [1C 02 01] записал мелодию Огненного Источника.{wait}{set(flag 189)}{window_closetop}" goto(l_0xc7c53a)
+	*/
+	"{set(flag 4)}" call(l_0xc7c57d) "{music_resume}[06 BD 00 {e(l_0xc7c53a)}]{window_open(1)}@[85] [A1][96][A2][A3][A0][9F][91][98][91] [1C 02 01] [93][A0][99][9F][9A][9C][9D][A0] [A0][C0][A5][C0][96][9F][9A][96], [A9][A4][A0] [A0][9F] [9F][91][92][9D][C5][95][91][96][A4] [99][91] [A3][91][9E][9A][9E] [A3][A0][92][A0][9B] [9E][9D][91][95][96][9F][A9][96][A3][9C][A0][94][A0] [93][A0][99][A2][91][A3][A4][91].[03]{pause(60)}" linebreak
+	"@[81][A0][C5][C0][9A][9B] [7C][91][9E][96][9F][C3] [A1][96][A2][A3][A0][9F][91][98][91] [1C 02 01] [99][91][A1][9A][A3][91][9D] [9E][96][9D][A0][95][9A][C5] [80][94][9F][96][9F][9F][A0][94][A0] [7A][A3][A4][A0][A9][9F][9A][9C][91].{wait}{set(flag 189)}{window_closetop}" goto(l_0xc7c53a)
 
 l_0xc7c53a:
-    call(data_57.l_0xc9b226) "[06 80 01 {e(l_0xc7c547)}]" eob
+	call(data_57.l_0xc9b226) "[06 80 01 {e(l_0xc7c547)}]" eob
 
 l_0xc7c547:
-    "{set(flag 548)}" eob
+	"{set(flag 548)}" eob
 
 l_0xc7c54b:
-    "{pause(120)}{pause(120)}{pause(120)}{pause(120)}{pause(120)}" eob
+	"{pause(120)}{pause(120)}{pause(120)}{pause(120)}{pause(120)}" eob
 
 l_0xc7c556:
-    "{set(flag 3)}{unset(flag 524)}" eob
+	"{set(flag 3)}{unset(flag 524)}" eob
 
 l_0xc7c55d:
-    " flowed into [1C 02 01]." next
-    "@[1C 02 01] was revived.[03]{window_closeall}" eob
+	/*
+	" перетекла в тело персонажа [1C 02 01]." next
+	"@[1C 02 01] был возрождён.[03]{window_closeall}" eob
+	*/
+	" [A1][96][A2][96][A4][96][9C][9D][91] [93] [A4][96][9D][A0] [A1][96][A2][A3][A0][9F][91][98][91] [1C 02 01]." next
+	"@[1C 02 01] [92][C2][9D] [93][A0][99][A2][A0][98][95][97][9F].[03]{window_closeall}" eob
 
 l_0xc7c57d:
-    call(data_49.l_0xc915f4) "{sound(37)}{pause(90)}" eob
+	call(data_49.l_0xc915f4) "{sound(37)}{pause(90)}" eob
 
 /*l_0xc7c588:
-    "[06 94 02 {e(data_25.l_0xc6bef9)}]@Who are you talking to?" end*/
+	"[06 94 02 {e(data_25.l_0xc6bef9)}]@Who are you talking to?" end*/
 l_0xc7c588:
-    "[06 94 02 {e(data_25.l_0xc6bef9)}]@[83] [9C][96][9E] [A4][C2] [A2][91][99][94][A0][93][91][A2][9A][93][91][96][AA][C3]?" end
+	"[06 94 02 {e(data_25.l_0xc6bef9)}]@[83] [9C][96][9E] [A4][C2] [A2][91][99][94][A0][93][91][A2][9A][93][91][96][AA][C3]?" end
 
 /*l_0xc7c59e:
-    "[06 B0 01 {e(data_09.l_0xc58ebb)}]@No problem here." end*/
+	"[06 B0 01 {e(data_09.l_0xc58ebb)}]@No problem here." end*/
 l_0xc7c59e:
-    "[06 B0 01 {e(data_09.l_0xc58ebb)}]@[7F][9A][9C][91][9C][9A][A7] [A1][A2][A0][92][9D][96][9E]." end
+	"[06 B0 01 {e(data_09.l_0xc58ebb)}]@[7F][9A][9C][91][9C][9A][A7] [A1][A2][A0][92][9D][96][9E]." end
 
 l_0xc7c5b0:
-    "[19 19 00 00]{store_registers}" call(data_36.l_0xc7dc85) "{load_registers}{swap}" eob
+	"[19 19 00 00]{store_registers}" call(data_36.l_0xc7dc85) "{load_registers}{swap}" eob
 
 l_0xc7c5c0:
-    "{load_registers}{swap}" eob
+	"{load_registers}{swap}" eob
 
 l_0xc7c5c5:
-    "himself." end
+	"himself." end
 
 l_0xc7c5cd:
-    "{store_registers}" call(data_36.l_0xc7dc85) "[1B 03 {e(l_0xc7c5e4)}]{load_registers}{swap}[1C 02 00].[03]" eob
+	"{store_registers}" call(data_36.l_0xc7dc85) "[1B 03 {e(l_0xc7c5e4)}]{load_registers}{swap}[1C 02 00].[03]" eob
 
 l_0xc7c5e4:
-    "{load_registers}{swap}[1C 02 00]'s belongings.[03]" eob
+	"{load_registers}{swap}[1C 02 00]'s belongings.[03]" eob
 
 l_0xc7c5f7:
-    "{swap}[1C 02 00] ###failed.[03]" end
+	"{swap}[1C 02 00] ###failed.[03]" end
 
 l_0xc7c609:
-    "{store_registers}[19 19 00 00]{swap}{result_is(104)}[1B 03 {e(l_0xc7c669)}]{load_registers}[19 19 00 00][1D 0B 00][1B 02 {e(l_0xc7c655)}]{load_registers}[1D 0F 00 00]{store_registers}" call(data_36.l_0xc7dc85) "[1B 03 {e(l_0xc7c693)}]{load_registers}{swap}@[1C 02 00] got rid of" linebreak
-    "  the {swap}[1C 05 00]." end
+	"{store_registers}[19 19 00 00]{swap}{result_is(104)}[1B 03 {e(l_0xc7c669)}]{load_registers}[19 19 00 00][1D 0B 00][1B 02 {e(l_0xc7c655)}]{load_registers}[1D 0F 00 00]{store_registers}" call(data_36.l_0xc7dc85) "[1B 03 {e(l_0xc7c693)}]{load_registers}{swap}@[1C 02 00] got rid of" linebreak
+	"  the {swap}[1C 05 00]." end
 
 l_0xc7c655:
-    "@You shouldn't throw the [1C 05 00] away." end
+	"@You shouldn't throw the [1C 05 00] away." end
 
 l_0xc7c669:
-    "@Don't spit your gum out. " next
-    "@Even if it has lost its flavor..." end
+	"@Don't spit your gum out. " next
+	"@Even if it has lost its flavor..." end
 
 l_0xc7c693:
     "{load_registers}{swap}@" call(data_37.l_0xc7e74e) linebreak
@@ -357,15 +381,15 @@ l_0xc7d3e5:
     " [1C 07 02][11]{clearline}[09 02 {e(l_0xc7d43b)} {e(l_0xc7d3f5)}]" goto(l_0xc7d3f5)
 
 l_0xc7d3f5:
-    /*
-    "@Ох, я вижу..." next
-    "@Что ж, это не делает меня счастливым," next
-    "@но я понимаю твою точку зрения о судьбе мира, находящегося под угрозой." next
-    */
-    "@[80][A7], [C6] [93][9A][98][A5]..." next
-    "@[89][A4][A0] [98], [C4][A4][A0] [9F][96] [95][96][9D][91][96][A4] [9E][96][9F][C6] [A3][A9][91][A3][A4][9D][9A][93][C2][9E]," next
-    "@[9F][A0] [C6] [A1][A0][9F][9A][9E][91][C5] [A4][93][A0][C5] [A4][A0][A9][9C][A5] [99][A2][96][9F][9A][C6] [A0] [A3][A5][95][C3][92][96] [9E][9A][A2][91], [9F][91][A7][A0][95][C6][C0][96][94][A0][A3][C6] [A1][A0][95] [A5][94][A2][A0][99][A0][9B]." next
-    call(data_36.l_0xc7de54) eob
+	/*
+	"@Ох, понятно..." next
+	"@Что ж, это не делает меня счастливым," next
+	"@но я понимаю твою точку зрения о судьбе мира, находящегося под угрозой." next
+	*/
+	"@[80][A7], [A1][A0][9F][C6][A4][9F][A0]..." next
+	"@[89][A4][A0] [98], [C4][A4][A0] [9F][96] [95][96][9D][91][96][A4] [9E][96][9F][C6] [A3][A9][91][A3][A4][9D][9A][93][C2][9E]," next
+	"@[9F][A0] [C6] [A1][A0][9F][9A][9E][91][C5] [A4][93][A0][C5] [A4][A0][A9][9C][A5] [99][A2][96][9F][9A][C6] [A0] [A3][A5][95][C3][92][96] [9E][9A][A2][91], [9F][91][A7][A0][95][C6][C0][96][94][A0][A3][C6] [A1][A0][95] [A5][94][A2][A0][99][A0][9B]." next
+	call(data_36.l_0xc7de54) eob
 
 l_0xc7d43b:
     "@All right.{pause(20)}  You should find a place to stay in the nearest town." next

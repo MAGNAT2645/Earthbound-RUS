@@ -462,77 +462,137 @@ l_0xc7f0e2:
     "@I must try to come to a deeper understanding of this trait called <courage.>" end
 
 l_0xc7f165:
-    "[06 49 00 {e(l_0xc7f634)}][06 FD 02 {e(l_0xc7f50b)}][06 86 00 {e(l_0xc7f34c)}][06 84 00 {e(l_0xc7f25b)}]@Yahah!  The Mr. Saturns are incredible folk." next
-    "@And the Apple Kid...  He is a most exceptional young man," next
-    "@very different from other kids." next
-    "@...Well, anyway...{pause(20)}  The prototype Phase Distorter has been stolen." next
-    "@Someone resembling a pig wearing clothes took Mr. Saturn captive" next
-    "@and stole the device!{wait}{window_closeall}{pause(1)}[1F F1 E5 02 1F 01]" eob
+	/*
+	"[06 49 00 {e(l_0xc7f634)}][06 FD 02 {e(l_0xc7f50b)}][06 86 00 {e(l_0xc7f34c)}][06 84 00 {e(l_0xc7f25b)}]@Да!  Мр. Сатурны - невероятный народ." next
+	"@И Эпл Кид...  Он исключительный молодой человек," next
+	"@сильно отличающийся от других детей." next
+	"@...Что ж, в любом случае...{pause(20)}  Прототип Фазового Искажателя был украден." next
+	"@Кто-то, похожий на свинью в костюме, похитил Мр. Сатурна" next
+	"@и украл машину!{wait}{window_closeall}{pause(1)}[1F F1 E5 02 1F 01]" eob
+	*/
+	"[06 49 00 {e(l_0xc7f634)}][06 FD 02 {e(l_0xc7f50b)}][06 86 00 {e(l_0xc7f34c)}][06 84 00 {e(l_0xc7f25b)}]@[75][91]!  [7E][A2]. [83][91][A4][A5][A2][9F][C2] - [9F][96][93][96][A2][A0][C6][A4][9F][C2][9B] [9F][91][A2][A0][95]." next
+	"@[7A] [B4][A1][9D] [7C][9A][95]...  [80][9F] [9A][A3][9C][9D][C5][A9][9A][A4][96][9D][C3][9F][C2][9B] [9E][A0][9D][A0][95][A0][9B] [A9][96][9D][A0][93][96][9C]," next
+	"@[A3][9A][9D][C3][9F][A0] [A0][A4][9D][9A][A9][91][C5][C0][9A][9B][A3][C6] [A0][A4] [95][A2][A5][94][9A][A7] [95][96][A4][96][9B]." next
+	"@...[89][A4][A0] [98], [93] [9D][C5][92][A0][9E] [A3][9D][A5][A9][91][96]...{pause(20)}  [81][A2][A0][A4][A0][A4][9A][A1] [86][91][99][A0][93][A0][94][A0] [7A][A3][9C][91][98][91][A4][96][9D][C6] [92][C2][9D] [A5][9C][A2][91][95][96][9F]." next
+	"@[7C][A4][A0]-[A4][A0], [A1][A0][A7][A0][98][9A][9B] [9F][91] [A3][93][9A][9F][C3][C5] [93] [9C][A0][A3][A4][C5][9E][96], [A1][A0][A7][9A][A4][9A][9D] [7E][A2]. [83][91][A4][A5][A2][9F][91]" next
+	"@[9A] [A5][9C][A2][91][9D] [9E][91][AA][9A][9F][A5]!{wait}{window_closeall}{pause(1)}[1F F1 E5 02 1F 01]" eob
 
 l_0xc7f25b:
-    "@Hmmmm..." next
-    "@If I only had a piece of a meteorite," next
-    "@I might be able to extract some Zexonyte." end
+	/*
+	"@Хмммм..." next
+	"@Если бы у меня был кусок метеорита," next
+	"@я смог бы извлечь немного Зексонита." end
+	*/
+	"@[87][9E][9E][9E][9E]..." next
+	"@[76][A3][9D][9A] [92][C2] [A5] [9E][96][9F][C6] [92][C2][9D] [9C][A5][A3][A0][9C] [9E][96][A4][96][A0][A2][9A][A4][91]," next
+	"@[C6] [A3][9E][A0][94] [92][C2] [9A][99][93][9D][96][A9][C3] [9F][96][9E][9F][A0][94][A0] [79][96][9C][A3][A0][9F][9A][A4][91]." end
 
 l_0xc7f29e:
-    "[19 19 00 00]{swap}{result_is(193)}[1B 03 {e(l_0xc7f2b1)}]" goto(data_35.l_0xc7c6b6)
+	"[19 19 00 00]{swap}{result_is(193)}[1B 03 {e(l_0xc7f2b1)}]" goto(data_35.l_0xc7c6b6)
 
 l_0xc7f2b1:
-    "[1D 01 FF C1]{sound(118)}@Ah, yes!{pause(15)}" linebreak
-    "  This is fantastic!{pause(30)}" linebreak
-    "  What?" next
-    "@Well, I've never actually seen this incredibly rare element before..." next
-    "@It is very intriguing." next
-    "@All right, leave everything to us, and you get some rest." next
-    "@This is getting most fascinating!{wait}{set(flag 134)}{set(flag 169)}" eob
+	/*
+	"[1D 01 FF C1]{sound(118)}@А, да!{pause(15)}" linebreak
+	"  Фантастично!{pause(30)}" linebreak
+	"  Что?" next
+	"@Ну, я никогда раньше не видел этот невероятно редкий элемент..." next
+	"@Это очень интригующе." next
+	"@Ладно, оставь всё нам, а сам отдохни." next
+	"@Это становится самым захватывающим!{wait}{set(flag 134)}{set(flag 169)}" eob
+	*/
+	"[1D 01 FF C1]{sound(118)}@[71], [95][91]!{pause(15)}" linebreak
+	"  [86][91][9F][A4][91][A3][A4][9A][A9][9F][A0]!{pause(30)}" linebreak
+	"  [89][A4][A0]?" next
+	"@[7F][A5], [C6] [9F][9A][9C][A0][94][95][91] [A2][91][9F][C3][AA][96] [9F][96] [93][9A][95][96][9D] [C4][A4][A0][A4] [9F][96][93][96][A2][A0][C6][A4][9F][A0] [A2][96][95][9C][9A][9B] [C4][9D][96][9E][96][9F][A4]..." next
+	"@[B4][A4][A0] [A0][A9][96][9F][C3] [9A][9F][A4][A2][9A][94][A5][C5][C0][96]." next
+	"@[7D][91][95][9F][A0], [A0][A3][A4][91][93][C3] [93][A3][97] [9F][91][9E], [91] [A3][91][9E] [A0][A4][95][A0][A7][9F][9A]." next
+	"@[B4][A4][A0] [A3][A4][91][9F][A0][93][9A][A4][A3][C6] [A3][91][9E][C2][9E] [99][91][A7][93][91][A4][C2][93][91][C5][C0][9A][9E]!{wait}{set(flag 134)}{set(flag 169)}" eob
 
 l_0xc7f34c:
-    "[06 A9 00 {e(l_0xc7f5ec)}]@Finally, it's complete! " next
-    "@The Phase Distorter, version two," next
-    "@{pause(15)} is equipped with two new features." next
-    "@First,{pause(20)} it can repair your biological functions." next
-    "@Second,{pause(20)} it can save your progress." next
-    "@Don't be afraid, get right in!" next
-    "@...There is just one thing, though..." next
-    "@You might not be able to return.{pause(20)}  So, make sure you are optimally outfitted." next
-    "@Are you ready to go?" linebreak
-    "[19 02]Yes" eob
+	/*
+	"[06 A9 00 {e(l_0xc7f5ec)}]@Наконец-то, готово! " next
+	"@Фазовый Искажатель, вторая версия," next
+	"@{pause(15)} оснащён двумя новыми функциями." next
+	"@Во-первых,{pause(20)} он может восстановить ваши биологические функции." next
+	"@Во-вторых,{pause(20)} он может сохранить ваш прогресс." next
+	"@Не бойтесь, залезайте!" next
+	"@...Но есть одна проблема..." next
+	"@Вы можете не вернуться.{pause(20)}  Итак, убедитесь, что вы оптимально снаряжены." next
+	"@Вы готовы?" linebreak
+	"[19 02]Да" eob
+	*/
+	"[06 A9 00 {e(l_0xc7f5ec)}]@[7F][91][9C][A0][9F][96][A8]-[A4][A0], [94][A0][A4][A0][93][A0]! " next
+	"@[86][91][99][A0][93][C2][9B] [7A][A3][9C][91][98][91][A4][96][9D][C3], [93][A4][A0][A2][91][C6] [93][96][A2][A3][9A][C6]," next
+	"@{pause(15)} [A0][A3][9F][91][C0][97][9F] [95][93][A5][9E][C6] [9F][A0][93][C2][9E][9A] [A6][A5][9F][9C][A8][9A][C6][9E][9A]." next
+	"@[73][A0]-[A1][96][A2][93][C2][A7],{pause(20)} [A0][9F] [9E][A0][98][96][A4] [93][A0][A3][A3][A4][91][9F][A0][93][9A][A4][C3] [93][91][AA][9A] [92][9A][A0][9D][A0][94][9A][A9][96][A3][9C][9A][96] [A6][A5][9F][9C][A8][9A][9A]." next
+	"@[73][A0]-[93][A4][A0][A2][C2][A7],{pause(20)} [A0][9F] [9E][A0][98][96][A4] [A3][A0][A7][A2][91][9F][9A][A4][C3] [93][91][AA] [A1][A2][A0][94][A2][96][A3][A3]." next
+	"@[7F][96] [92][A0][9B][A4][96][A3][C3], [99][91][9D][96][99][91][9B][A4][96]!" next
+	"@...[7F][A0] [96][A3][A4][C3] [A0][95][9F][91] [A1][A2][A0][92][9D][96][9E][91]..." next
+	"@[73][C2] [9E][A0][98][96][A4][96] [9F][96] [93][96][A2][9F][A5][A4][C3][A3][C6].{pause(20)}  [7A][A4][91][9C], [A5][92][96][95][9A][A4][96][A3][C3], [A9][A4][A0] [93][C2] [A0][A1][A4][9A][9E][91][9D][C3][9F][A0] [A3][9F][91][A2][C6][98][96][9F][C2]." next
+	"@[73][C2] [94][A0][A4][A0][93][C2]?" linebreak
+	"[19 02][75][91]" eob
 
 l_0xc7f445:
-    "[19 02]No" eob
+//	"[19 02]Нет" eob
+	"[19 02][7F][96][A4]" eob
 
 l_0xc7f44a:
-    "[1C 07 02][11]{clearline}[09 02 {e(l_0xc7f459)} {e(l_0xc7f459)}]" goto(l_0xc7f459)
+	"[1C 07 02][11]{clearline}[09 02 {e(l_0xc7f459)} {e(l_0xc7f459)}]" goto(l_0xc7f459)
 
 l_0xc7f459:
-    "@Even if you're not 100%,{pause(15)} perfectly,{pause(15)} completely ready..." next
-    "@Well, you should be as prepared as possible.{pause(20)}  It would be for the best." next
-    "@Without careful preparation, you would be in big trouble." next
-    "@I just want to make sure you're ready." next
-    "@Let me know when your preparations are complete.{wait}{set(flag 765)}" eob
+	/*
+	"@Даже если вы не готовы полностью,{pause(15)} на все 100%..." next
+	"@Ну, вы должны быть готов, насколько это возможно.{pause(20)}  Это было бы к лучшему." next
+	"@Без тщательной подготовки у вас будут большие проблемы." next
+	"@Я просто хочу убедиться, что вы готовы." next
+	"@Дайте мне знать, когда закончите подготовку.{wait}{set(flag 765)}" eob
+	*/
+	"@[75][91][98][96] [96][A3][9D][9A] [93][C2] [9F][96] [94][A0][A4][A0][93][C2] [A1][A0][9D][9F][A0][A3][A4][C3][C5],{pause(15)} [9F][91] [93][A3][96] 100%..." next
+	"@[7F][A5], [93][C2] [95][A0][9D][98][9F][C2] [92][C2][A4][C3] [94][A0][A4][A0][93], [9F][91][A3][9C][A0][9D][C3][9C][A0] [C4][A4][A0] [93][A0][99][9E][A0][98][9F][A0].{pause(20)}  [B4][A4][A0] [92][C2][9D][A0] [92][C2] [9C] [9D][A5][A9][AA][96][9E][A5]." next
+	"@[72][96][99] [A4][C0][91][A4][96][9D][C3][9F][A0][9B] [A1][A0][95][94][A0][A4][A0][93][9C][9A] [A5] [93][91][A3] [92][A5][95][A5][A4] [92][A0][9D][C3][AA][9A][96] [A1][A2][A0][92][9D][96][9E][C2]." next
+	"@[B6] [A1][A2][A0][A3][A4][A0] [A7][A0][A9][A5] [A5][92][96][95][9A][A4][C3][A3][C6], [A9][A4][A0] [93][C2] [94][A0][A4][A0][93][C2]." next
+	"@[75][91][9B][A4][96] [9E][9F][96] [99][9F][91][A4][C3], [9C][A0][94][95][91] [99][91][9C][A0][9F][A9][9A][A4][96] [A1][A0][95][94][A0][A4][A0][93][9C][A5].{wait}{set(flag 765)}" eob
 
 l_0xc7f50b:
-    "@Good.{pause(20)}  At last,{pause(15)} the time has come." next
-    "@Are you ready?" linebreak
-    "[19 02]Yes" eob
+	/*
+	"@Хорошо.{pause(20)}  Наконец-то время пришло." next
+	"@Вы точно готовы?" linebreak
+	"[19 02]Да" eob
+	*/
+	"@[87][A0][A2][A0][AA][A0].{pause(20)}  [7F][91][9C][A0][9F][96][A8]-[A4][A0] [93][A2][96][9E][C6] [A1][A2][9A][AA][9D][A0]." next
+	"@[73][C2] [A4][A0][A9][9F][A0] [94][A0][A4][A0][93][C2]?" linebreak
+	"[19 02][75][91]" eob
 
 l_0xc7f533:
-    "[19 02]No" eob
+//	"[19 02]Нет" eob
+	"[19 02][7F][96][A4]" eob
 
 l_0xc7f538:
-    "[1C 07 02][11]{clearline}[09 02 {e(l_0xc7f54c)} {e(l_0xc7f459)}]" goto(l_0xc7f459)
+	"[1C 07 02][11]{clearline}[09 02 {e(l_0xc7f54c)} {e(l_0xc7f459)}]" goto(l_0xc7f459)
 
 l_0xc7f54c:
-    "@Remember, the Phase Distorter, version 2," next
-    "@is equipped with two new features." next
-    "@First,{pause(20)} it can repair your biological functions." next
-    "@Second,{pause(20)} it can save your progress." next
-    "@Don't be afraid!{pause(15)}  Get right in!{wait}{set(flag 133)}[1F F1 E5 02 1F 01]" eob
+	/*
+	"@Запомните, Фазовый Искажатель, версия 2," next
+	"@оснащён двумя новыми функциями." next
+	"@Во-первых,{pause(20)} он может восстановить ваши биологические функции." next
+	"@Во-вторых,{pause(20)} он может сохранить ваш прогресс." next
+	"@Не бойтесь!{pause(15)}  Залезайте!{wait}{set(flag 133)}[1F F1 E5 02 1F 01]" eob
+	*/
+	"@[79][91][A1][A0][9E][9F][9A][A4][96], [86][91][99][A0][93][C2][9B] [7A][A3][9C][91][98][91][A4][96][9D][C3], [93][96][A2][A3][9A][C6] 2," next
+	"@[A0][A3][9F][91][C0][97][9F] [95][93][A5][9E][C6] [9F][A0][93][C2][9E][9A] [A6][A5][9F][9C][A8][9A][C6][9E][9A]." next
+	"@[73][A0]-[A1][96][A2][93][C2][A7],{pause(20)} [A0][9F] [9E][A0][98][96][A4] [93][A0][A3][A3][A4][91][9F][A0][93][9A][A4][C3] [93][91][AA][9A] [92][9A][A0][9D][A0][94][9A][A9][96][A3][9C][9A][96] [A6][A5][9F][9C][A8][9A][9A]." next
+	"@[73][A0]-[93][A4][A0][A2][C2][A7],{pause(20)} [A0][9F] [9E][A0][98][96][A4] [A3][A0][A7][A2][91][9F][9A][A4][C3] [93][91][AA] [A1][A2][A0][94][A2][96][A3][A3]." next
+	"@[7F][96] [92][A0][9B][A4][96][A3][C3]!{pause(15)}  [79][91][9D][96][99][91][9B][A4][96]!{wait}{set(flag 133)}[1F F1 E5 02 1F 01]" eob
 
 l_0xc7f5ec:
-    "@Yes...{pause(20)}  Most intriguing..." next
-    "@Leave everything to us, and you get some rest." next
-    "@This is getting most fascinating!" end
+	/*
+	"@Да...{pause(20)}  Самое интригующее..." next
+	"@Оставьте всё нам, а сами отдохните." next
+	"@Это становится самым захватывающим!" end
+	*/
+	"@[75][91]...{pause(20)}  [83][91][9E][A0][96] [9A][9F][A4][A2][9A][94][A5][C5][C0][96][96]..." next
+	"@[80][A3][A4][91][93][C3][A4][96] [93][A3][97] [9F][91][9E], [91] [A3][91][9E][9A] [A0][A4][95][A0][A7][9F][9A][A4][96]." next
+	"@[B4][A4][A0] [A3][A4][91][9F][A0][93][9A][A4][A3][C6] [A3][91][9E][C2][9E] [99][91][A7][93][91][A4][C2][93][91][C5][C0][9A][9E]!" end
 
 l_0xc7f634:
     "@It's a miracle!" next

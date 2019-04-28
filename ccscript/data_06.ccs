@@ -8,17 +8,30 @@ command e(label) "{long label}"
 
 // Text Data
 l_0xc573dc:
-    "{window_open(1)}@The stars foretold that I would meet you here..." next
-    "@So, now it's the time to show you the way of the Starstorm..." next
-    "@For a while, you must live far away from your friends and live with me." next
-    "@Do you understand?" next
-    "@...There's only one answer." next
-    "@I must stop you here even if you don't want to." next
-    "@Stay with me for a while, do you understand?![03]{window_closeall}{pause(30)}" goto(data_50.l_0xc9329b)
+	/*
+	"{window_open(1)}@Звёзды предсказали, что я встречу вас здесь..." next
+	"@Итак, пришло время показать вам путь Звездопада..." next
+	"@Какое-то время вы должны жить со мной, вдали от своих друзей." next
+	"@Вы понимаете?" next
+	"@...Есть только один ответ." next
+	"@Я должен остановить вас здесь, даже если вы не хотите." next
+	"@Останьтесь со мной ненадолго, вы понимаете?![03]{window_closeall}{pause(30)}" goto(data_50.l_0xc9329b)
+	*/
+	"{window_open(1)}@[79][93][97][99][95][C2] [A1][A2][96][95][A3][9C][91][99][91][9D][9A], [A9][A4][A0] [C6] [93][A3][A4][A2][96][A9][A5] [93][91][A3] [99][95][96][A3][C3]..." next
+	"@[7A][A4][91][9C], [A1][A2][9A][AA][9D][A0] [93][A2][96][9E][C6] [A1][A0][9C][91][99][91][A4][C3] [93][91][9E] [A1][A5][A4][C3] [79][93][96][99][95][A0][A1][91][95][91]..." next
+	"@[7C][91][9C][A0][96]-[A4][A0] [93][A2][96][9E][C6] [93][C2] [95][A0][9D][98][9F][C2] [98][9A][A4][C3] [A3][A0] [9E][9F][A0][9B], [93][95][91][9D][9A] [A0][A4] [A3][93][A0][9A][A7] [95][A2][A5][99][96][9B]." next
+	"@[73][C2] [A1][A0][9F][9A][9E][91][96][A4][96]?" next
+	"@...[76][A3][A4][C3] [A4][A0][9D][C3][9C][A0] [A0][95][9A][9F] [A0][A4][93][96][A4]." next
+	"@[B6] [95][A0][9D][98][96][9F] [A0][A3][A4][91][9F][A0][93][9A][A4][C3] [93][91][A3] [99][95][96][A3][C3], [95][91][98][96] [96][A3][9D][9A] [93][C2] [9F][96] [A7][A0][A4][9A][A4][96]." next
+	"@[80][A3][A4][91][9F][C3][A4][96][A3][C3] [A3][A0] [9E][9F][A0][9B] [9F][96][9F][91][95][A0][9D][94][A0], [93][C2] [A1][A0][9F][9A][9E][91][96][A4][96]?![03]{window_closeall}{pause(30)}" goto(data_50.l_0xc9329b)
 
 l_0xc5749a:
-    "{window_open(1)}@It depends on [1C 02 04]'s efforts.  That will determine the reuniting of the group." next
-    "@Be faithful, and wait until the time comes!{wait}{window_closeall}" eob
+	/*
+	"{window_open(1)}@Это зависит от усилий Принца [1C 02 04].  Это определит воссоединение группы." next
+	"@Будьте верны и ждите, пока не придёт время!{wait}{window_closeall}" eob
+	*/
+	"{window_open(1)}@[B4][A4][A0] [99][91][93][9A][A3][9A][A4] [A0][A4] [A5][A3][9A][9D][9A][9B] [81][A2][9A][9F][A8][91] [1C 02 04].  [B4][A4][A0] [A0][A1][A2][96][95][96][9D][9A][A4] [93][A0][A3][A3][A0][96][95][9A][9F][96][9F][9A][96] [94][A2][A5][A1][A1][C2]." next
+	"@[72][A5][95][C3][A4][96] [93][96][A2][9F][C2] [9A] [98][95][9A][A4][96], [A1][A0][9C][91] [9F][96] [A1][A2][9A][95][97][A4] [93][A2][96][9E][C6]!{wait}{window_closeall}" eob
 
 l_0xc574f6:
     "[06 50 01 {e(l_0xc575f8)}]@I'm doing this as a hobby.{pause(20)}  Isn't it cool?" next
@@ -47,81 +60,137 @@ l_0xc575f8:
     "@But now I don't know why I did." end
 
 l_0xc5762c:
-    "[06 50 01 {e(l_0xc576e0)}]@I am not sure if it was the <Dungeon Man,> but..." next
-    "@there is a strange looking tower to the northwest." next
-    "@...This key I picked up a little while ago shall maybe open the tower." next
-    "@You may have it, I do not need it.[1D 03 FF][1B 02 {e(l_0xc57718)}][03][1D 0E 00 C0][1B 05]" call(data_36.l_0xc7dcb6) "{set(flag 336)}{wait}{window_closeall}{isset(flag 691)}[1B 02 {e(data_55.l_0xc9992f)}]{pause(60)}" call(data_24.l_0xc692f7) eob
+	/*
+	"[06 50 01 {e(l_0xc576e0)}]@Я не уверен, был ли это <Человек-Данж>, но..." next
+	"@на северо-западе стоит странная башня." next
+	"@...Ключ, который я недавно подобрал, может быть, откроет башню." next
+	"@Вы можете забрать его, мне он не нужен.[1D 03 FF][1B 02 {e(l_0xc57718)}][03][1D 0E 00 C0][1B 05]" call(data_36.l_0xc7dcb6) "{set(flag 336)}{wait}{window_closeall}{isset(flag 691)}[1B 02 {e(data_55.l_0xc9992f)}]{pause(60)}" call(data_24.l_0xc692f7) eob
+	*/
+	"[06 50 01 {e(l_0xc576e0)}]@[B6] [9F][96] [A5][93][96][A2][96][9F], [92][C2][9D] [9D][9A] [C4][A4][A0] <[89][96][9D][A0][93][96][9C]-[75][91][9F][98]>, [9F][A0]..." next
+	"@[9F][91] [A3][96][93][96][A2][A0]-[99][91][A1][91][95][96] [A3][A4][A0][9A][A4] [A3][A4][A2][91][9F][9F][91][C6] [92][91][AA][9F][C6]." next
+	"@...[7C][9D][C5][A9], [9C][A0][A4][A0][A2][C2][9B] [C6] [9F][96][95][91][93][9F][A0] [A1][A0][95][A0][92][A2][91][9D], [9E][A0][98][96][A4] [92][C2][A4][C3], [A0][A4][9C][A2][A0][96][A4] [92][91][AA][9F][C5]." next
+	"@[73][C2] [9E][A0][98][96][A4][96] [99][91][92][A2][91][A4][C3] [96][94][A0], [9E][9F][96] [A0][9F] [9F][96] [9F][A5][98][96][9F].[1D 03 FF][1B 02 {e(l_0xc57718)}][03][1D 0E 00 C0][1B 05]" call(data_36.l_0xc7dcb6) "{set(flag 336)}{wait}{window_closeall}{isset(flag 691)}[1B 02 {e(data_55.l_0xc9992f)}]{pause(60)}" call(data_24.l_0xc692f7) eob
 
 l_0xc576e0:
-    "@I'm not sure if it was the <Dungeon Man>..." next
-    "@There's a strange looking tower to the northwest." end
+	/*
+	"@Я не уверен, был ли это <Человек-Данж>..." next
+	"@На северо-западе стоит странная башня." end
+	*/
+	"@[B6] [9F][96] [A5][93][96][A2][96][9F], [92][C2][9D] [9D][9A] [C4][A4][A0] <[89][96][9D][A0][93][96][9C]-[75][91][9F][98]>..." next
+	"@[7F][91] [A3][96][93][96][A2][A0]-[99][91][A1][91][95][96] [A3][A4][A0][9A][A4] [A3][A4][A2][91][9F][9F][91][C6] [92][91][AA][9F][C6]." end
 
 l_0xc57718:
-    next
-    "@...But it seems that you have too many things." end
+//	"@...Но, кажется, у вас слишком много вещей." end
+	next
+	"@...[7F][A0], [9C][91][98][96][A4][A3][C6], [A5] [93][91][A3] [A3][9D][9A][AA][9C][A0][9E] [9E][9F][A0][94][A0] [93][96][C0][96][9B]." end
 
 l_0xc57730:
-    "[06 5E 02 {e(l_0xc57753)}]@(Looks like you could enter, but it's locked.)" end
+//	"[06 5E 02 {e(l_0xc57753)}]@(Похоже, вы можете войти, но дверь заперта.)" end
+	"[06 5E 02 {e(l_0xc57753)}]@([81][A0][A7][A0][98][96], [93][C2] [9E][A0][98][96][A4][96] [93][A0][9B][A4][9A], [9F][A0] [95][93][96][A2][C3] [99][91][A1][96][A2][A4][91].)" end
 
 l_0xc57753:
-    "{window_closeall}{pause(1)}[1F 21 9F]" call(data_57.l_0xc9b112) eob
+	"{window_closeall}{pause(1)}[1F 21 9F]" call(data_57.l_0xc9b112) eob
 
 l_0xc57760:
-    "{store_registers}[06 5E 02 {e(l_0xc577c5)}]{load_registers}" call(data_36.l_0xc7dd2c) "{result_is(192)}[1B 02 {e(l_0xc577b2)}]{load_registers}" call(data_36.l_0xc7dd37) newline
-    "@(The key worked to open the door." next
-    "@You may enter.){wait}{wait}{set(flag 606)}{sound(119)}{window_closeall}[1F 21 9F]" call(data_57.l_0xc9b112) eob
+	/*
+	"@(Ключ действительно смог открыть дверь." next
+	"@Вы можете войти.){wait}{wait}{set(flag 606)}{sound(119)}{window_closeall}[1F 21 9F]" call(data_57.l_0xc9b112) eob
+	*/
+	"{store_registers}[06 5E 02 {e(l_0xc577c5)}]{load_registers}" call(data_36.l_0xc7dd2c) "{result_is(192)}[1B 02 {e(l_0xc577b2)}]{load_registers}" call(data_36.l_0xc7dd37) newline
+	"@([7C][9D][C5][A9] [95][96][9B][A3][A4][93][9A][A4][96][9D][C3][9F][A0] [A3][9E][A0][94] [A0][A4][9C][A2][C2][A4][C3] [95][93][96][A2][C3]." next
+	"@[73][C2] [9E][A0][98][96][A4][96] [93][A0][9B][A4][9A].){wait}{wait}{set(flag 606)}{sound(119)}{window_closeall}[1F 21 9F]" call(data_57.l_0xc9b112) eob
 
 l_0xc577b2:
-    "@(The key doesn't fit!)" end
+//	"@(Ключ не подходит!)" end
+	"@([7C][9D][C5][A9] [9F][96] [A1][A0][95][A7][A0][95][9A][A4]!)" end
 
 l_0xc577c5:
-    "@(The door's already opened.)" end
+//	"@(Дверь уже открыта.)" end
+	"@([75][93][96][A2][C3] [A5][98][96] [A0][A4][9C][A2][C2][A4][91].)" end
 
 l_0xc577d8:
-    "[06 DA 00 {e(l_0xc57911)}]@A scary place called Deep Darkness is on the other side of the river." next
-    "@The monsters are very strong and you can lose your health" next
-    "@just by wandering in the swamp." next
-    "@Do you want to cross the river,{pause(15)} even though you know it's a stupid idea?" next
-    "[19 02]Yes" eob
+	/*
+	"[06 DA 00 {e(l_0xc57911)}]@Страшное место под названием Глубокая Тьма находится на другом берегу реки." next
+	"@Монстры очень сильны, и вы можете потерять своё здоровье," next
+	"@просто бродя по болоту." next
+	"@Вы хотите пересечь реку,{pause(15)} зная, что это глупая идея?" next
+	"[19 02]Да" eob
+	*/
+	"[06 DA 00 {e(l_0xc57911)}]@[83][A4][A2][91][AA][9F][A0][96] [9E][96][A3][A4][A0] [A1][A0][95] [9F][91][99][93][91][9F][9A][96][9E] [74][9D][A5][92][A0][9C][91][C6] [84][C3][9E][91] [9F][91][A7][A0][95][9A][A4][A3][C6] [9F][91] [95][A2][A5][94][A0][9E] [92][96][A2][96][94][A5] [A2][96][9C][9A]." next
+	"@[7E][A0][9F][A3][A4][A2][C2] [A0][A9][96][9F][C3] [A3][9A][9D][C3][9F][C2], [9A] [93][C2] [9E][A0][98][96][A4][96] [A1][A0][A4][96][A2][C6][A4][C3] [A3][93][A0][97] [99][95][A0][A2][A0][93][C3][96]," next
+	"@[A1][A2][A0][A3][A4][A0] [92][A2][A0][95][C6] [A1][A0] [92][A0][9D][A0][A4][A5]." next
+	"@[73][C2] [A7][A0][A4][9A][A4][96] [A1][96][A2][96][A3][96][A9][C3] [A2][96][9C][A5],{pause(15)} [99][9F][91][C6], [A9][A4][A0] [C4][A4][A0] [94][9D][A5][A1][91][C6] [9A][95][96][C6]?" next
+	"[19 02][75][91]" eob
 
 l_0xc57864:
-    "[19 02]No" eob
+//	"[19 02]Нет" eob
+	"[19 02][7F][96][A4]" eob
 
 l_0xc57869:
-    "[1C 07 02][11]{clearline}[09 02 {e(l_0xc578b3)} {e(l_0xc57878)}]" goto(l_0xc57878)
+	"[1C 07 02][11]{clearline}[09 02 {e(l_0xc578b3)} {e(l_0xc57878)}]" goto(l_0xc57878)
 
 l_0xc57878:
-    "@It was stupid of me to ask." next
-    "@Let's watch the sunset over Deep Darkness together from here." end
+	/*
+	"@Глупо было спрашивать." next
+	"@Давайте будем вместе смотреть на закат над Глубокой Тьмой отсюда." end
+	*/
+	"@[74][9D][A5][A1][A0] [92][C2][9D][A0] [A3][A1][A2][91][AA][9A][93][91][A4][C3]." next
+	"@[75][91][93][91][9B][A4][96] [92][A5][95][96][9E] [93][9E][96][A3][A4][96] [A3][9E][A0][A4][A2][96][A4][C3] [9F][91] [99][91][9C][91][A4] [9F][91][95] [74][9D][A5][92][A0][9C][A0][9B] [84][C3][9E][A0][9B] [A0][A4][A3][C5][95][91]." end
 
 l_0xc578b3:
-    "@The swamp is bottomless." next
-    "@Even if you're swimming, you'll be dragged in." next
-    "@It is a different story if you have a submarine.{wait}{set(flag 151)}{set(flag 762)}" eob
+	/*
+	"@Болото бездонно." next
+	"@Даже если вы будете плыть, вас затянет внутрь." next
+	"@Другое дело, если у вас есть подводная лодка.{wait}{set(flag 151)}{set(flag 762)}" eob
+	*/
+	"@[72][A0][9D][A0][A4][A0] [92][96][99][95][A0][9F][9F][A0]." next
+	"@[75][91][98][96] [96][A3][9D][9A] [93][C2] [92][A5][95][96][A4][96] [A1][9D][C2][A4][C3], [93][91][A3] [99][91][A4][C6][9F][96][A4] [93][9F][A5][A4][A2][C3]." next
+	"@[75][A2][A5][94][A0][96] [95][96][9D][A0], [96][A3][9D][9A] [A5] [93][91][A3] [96][A3][A4][C3] [A1][A0][95][93][A0][95][9F][91][C6] [9D][A0][95][9C][91].{wait}{set(flag 151)}{set(flag 762)}" eob
 
 l_0xc57911:
-    "@You returned from exploring the Deep Darkness?" next
-    "@I cannot believe you made it back alive." end
+	/*
+	"@Вы вернулись после исследования Глубокой Тьмы?" next
+	"@Я не могу поверить, что вы вернулись живыми." end
+	*/
+	"@[73][C2] [93][96][A2][9F][A5][9D][9A][A3][C3] [A1][A0][A3][9D][96] [9A][A3][A3][9D][96][95][A0][93][91][9F][9A][C6] [74][9D][A5][92][A0][9C][A0][9B] [84][C3][9E][C2]?" next
+	"@[B6] [9F][96] [9E][A0][94][A5] [A1][A0][93][96][A2][9A][A4][C3], [A9][A4][A0] [93][C2] [93][96][A2][9F][A5][9D][9A][A3][C3] [98][9A][93][C2][9E][9A]." end
 
 l_0xc57947:
-    "[06 DA 00 {e(l_0xc57955)}][06 97 00 {e(l_0xc57a26)}]" goto(l_0xc57955)
+	"[06 DA 00 {e(l_0xc57955)}][06 97 00 {e(l_0xc57a26)}]" goto(l_0xc57955)
 
 l_0xc57955:
-    "@Welcome![03]{window_closeall}" call(data_49.l_0xc915f4) "{sound(37)}{pause(90)}{window_open(1)}[06 DA 00 {e(l_0xc57ad9)}]@Long time, no see." next
-    "@Mr. [1C 02 03], we met in Winters a long time ago." next
-    "@I'm Brick Road." next
-    "@Dr. Andonuts finally made me Dungeon Man." next
-    "@If you want, I'll come with you guys for a while." next
-    "@The <Return Hole> is over there." next
-    "@Jump in that hole and then walk out.{wait}{set(flag 24)}{set(flag 445)}[1F 66 01 09 81 33 C9 00]{set(flag 507)}" eob
+	/*
+	"@Добро пожаловать![03]{window_closeall}" call(data_49.l_0xc915f4) "{sound(37)}{pause(90)}{window_open(1)}[06 DA 00 {e(l_0xc57ad9)}]@Давно не виделись." next
+	"@Мр. [1C 02 03], мы виделись в Уинтерс очень давно." next
+	"@Я Брик Род." next
+	"@Др. Андонатс наконец-то сделал меня Человеком-Данжем." next
+	"@Если вы хотите, я пойду с вами." next
+	"@<Дыра Возврата> вон там." next
+	"@Прыгайте в эту дыру и выходите.{wait}{set(flag 24)}{set(flag 445)}[1F 66 01 09 81 33 C9 00]{set(flag 507)}" eob
+	*/
+	"@[75][A0][92][A2][A0] [A1][A0][98][91][9D][A0][93][91][A4][C3]![03]{window_closeall}" call(data_49.l_0xc915f4) "{sound(37)}{pause(90)}{window_open(1)}[06 DA 00 {e(l_0xc57ad9)}]@[75][91][93][9F][A0] [9F][96] [93][9A][95][96][9D][9A][A3][C3]." next
+	"@[7E][A2]. [1C 02 03], [9E][C2] [93][9A][95][96][9D][9A][A3][C3] [93] [85][9A][9F][A4][96][A2][A3] [A0][A9][96][9F][C3] [95][91][93][9F][A0]." next
+	"@[B6] [72][A2][9A][9C] [82][A0][95]." next
+	"@[75][A2]. [71][9F][95][A0][9F][91][A4][A3] [9F][91][9C][A0][9F][96][A8]-[A4][A0] [A3][95][96][9D][91][9D] [9E][96][9F][C6] [89][96][9D][A0][93][96][9C][A0][9E]-[75][91][9F][98][96][9E]." next
+	"@[76][A3][9D][9A] [93][C2] [A7][A0][A4][9A][A4][96], [C6] [A1][A0][9B][95][A5] [A3] [93][91][9E][9A]." next
+	"@<[75][C2][A2][91] [73][A0][99][93][A2][91][A4][91]> [93][A0][9F] [A4][91][9E]." next
+	"@[81][A2][C2][94][91][9B][A4][96] [93] [C4][A4][A5] [95][C2][A2][A5] [9A] [93][C2][A7][A0][95][9A][A4][96].{wait}{set(flag 24)}{set(flag 445)}[1F 66 01 09 81 33 C9 00]{set(flag 507)}" eob
 
 l_0xc57a26:
-    "@There's an old submarine at the back of the dungeon." next
-    "@It can be used to cross the river." next
-    "@There's a <Goodbye Exit> ...over there." next
-    "@It will take you to the submarine." next
-    "@Don't make a mistake on which exit you take." next
-    "@You need to take the <Goodbye Exit!>{pause(20)}  Hope to see you again!" end
+	/*
+	"@В глубине подземелья есть старая подводная лодка." next
+	"@Её можно использовать для переправы через реку." next
+	"@Есть <Прощальный Выход> ...вон там." next
+	"@Он доставит вас к подводной лодке." next
+	"@Не ошибитесь, когда будете выходить." next
+	"@Используйте <Прощальный Выход>!{pause(20)}  Надеюсь увидеть вас снова!" end
+	*/
+	"@[73] [94][9D][A5][92][9A][9F][96] [A1][A0][95][99][96][9E][96][9D][C3][C6] [96][A3][A4][C3] [A3][A4][91][A2][91][C6] [A1][A0][95][93][A0][95][9F][91][C6] [9D][A0][95][9C][91]." next
+	"@[76][97] [9E][A0][98][9F][A0] [9A][A3][A1][A0][9D][C3][99][A0][93][91][A4][C3] [95][9D][C6] [A1][96][A2][96][A1][A2][91][93][C2] [A9][96][A2][96][99] [A2][96][9C][A5]." next
+	"@[76][A3][A4][C3] <[81][A2][A0][C0][91][9D][C3][9F][C2][9B] [73][C2][A7][A0][95]> ...[93][A0][9F] [A4][91][9E]." next
+	"@[80][9F] [95][A0][A3][A4][91][93][9A][A4] [93][91][A3] [9C] [A1][A0][95][93][A0][95][9F][A0][9B] [9D][A0][95][9C][96]." next
+	"@[7F][96] [A0][AA][9A][92][9A][A4][96][A3][C3], [9C][A0][94][95][91] [92][A5][95][96][A4][96] [93][C2][A7][A0][95][9A][A4][C3]." next
+	"@[7A][A3][A1][A0][9D][C3][99][A5][9B][A4][96] <[81][A2][A0][C0][91][9D][C3][9F][C2][9B] [73][C2][A7][A0][95]>!{pause(20)}  [7F][91][95][96][C5][A3][C3] [A5][93][9A][95][96][A4][C3] [93][91][A3] [A3][9F][A0][93][91]!" end
 
 l_0xc57ad9:
     "@I don't know how, but my homemade dungeon helped you out." next

@@ -88,12 +88,19 @@ l_0xc6c77b:
     "@I get the feeling that it is a very important lab." end
 
 l_0xc6c7d9:
-    "[06 46 00 {e(l_0xc6c8dd)}][06 6A 02 {e(l_0xc6c8d3)}]@I've been waiting for you." next
-    "@My master, Apple Kid completed this <Eraser Eraser Machine.>" next
-    "@While he was calling you, he was kidnapped.{pause(20)}  He felt like this...!{pause(5)}!{pause(5)}!{pause(5)}!{pause(5)}!" next
-    "@I was there, but was helpless.{pause(15)}  Sorry about that." next
-    "@Anyway, take this machine." next
-    "[1D 03 FF][1B 02 {e(l_0xc6c8a3)}][1D 0E 00 D2]" call(data_36.l_0xc7dcb6) "{wait}{set(flag 618)}" eob
+	/*
+	"[06 46 00 {e(l_0xc6c8dd)}][06 6A 02 {e(l_0xc6c8d3)}]@Я ждал тебя." next
+	"@Мой хозяин, Эпл Кид, закончил работу над этим <Ластиком для Ластика>." next
+	"@Пока он звонил тебе, его похитили.{pause(20)}  Он чувствовал себя так...!{pause(5)}!{pause(5)}!{pause(5)}!{pause(5)}!" next
+	"@Я был там, но был беспомощен.{pause(15)}  Жаль." next
+	"@В любом случае, возьми этот инструмент." next
+	*/
+	"[06 46 00 {e(l_0xc6c8dd)}][06 6A 02 {e(l_0xc6c8d3)}]@[B6] [98][95][91][9D] [A4][96][92][C6]." next
+	"@[7E][A0][9B] [A7][A0][99][C6][9A][9F], [B4][A1][9D] [7C][9A][95], [99][91][9C][A0][9F][A9][9A][9D] [A2][91][92][A0][A4][A5] [9F][91][95] [C4][A4][9A][9E] <[7D][91][A3][A4][9A][9C][A0][9E] [95][9D][C6] [7D][91][A3][A4][9A][9C][91]>." next
+	"@[81][A0][9C][91] [A0][9F] [99][93][A0][9F][9A][9D] [A4][96][92][96], [96][94][A0] [A1][A0][A7][9A][A4][9A][9D][9A].{pause(20)}  [80][9F] [A9][A5][93][A3][A4][93][A0][93][91][9D] [A3][96][92][C6] [A4][91][9C]...!{pause(5)}!{pause(5)}!{pause(5)}!{pause(5)}!" next
+	"@[B6] [92][C2][9D] [A4][91][9E], [9F][A0] [92][C2][9D] [92][96][A3][A1][A0][9E][A0][C0][96][9F].{pause(15)}  [78][91][9D][C3]." next
+	"@[73] [9D][C5][92][A0][9E] [A3][9D][A5][A9][91][96], [93][A0][99][C3][9E][9A] [C4][A4][A0][A4] [9A][9F][A3][A4][A2][A5][9E][96][9F][A4]." next
+	"[1D 03 FF][1B 02 {e(l_0xc6c8a3)}][1D 0E 00 D2]" call(data_36.l_0xc7dcb6) "{wait}{set(flag 618)}" eob
 
 l_0xc6c8a3:
     "@I think this is an important item." next
@@ -211,10 +218,16 @@ l_0xc6cf2d:
     "@If you see [1C 02 03],{pause(15)} please,{pause(15)} please ask him to call Tony.  Thanks!" end
 
 l_0xc6cfc5:
-    "{window_open(1)}@You're much stronger *whirrr* than our intelligence indicated..." next
-    "@We were not *beep* prepared for that eventuality..." next
-    "@The Prophecy from the *click* Apple of Enlightenment may be true..." next
-    "@but you must not *whirrr* underestimate us.[03]{window_closeall}" eob
+	/*
+	"{window_open(1)}@Ты намного сильнее *шум*, чем показал наш интеллект..." next
+	"@Мы не были *бип* готовы к такому повороту событий..." next
+	"@Пророчество *щелчок* Яблока Просвещения может быть правдивым..." next
+	"@но ты не должен *шум* недооценивать нас.[03]{window_closeall}" eob
+	*/
+	"{window_open(1)}@[84][C2] [9F][91][9E][9F][A0][94][A0] [A3][9A][9D][C3][9F][96][96] *[AA][A5][9E]*, [A9][96][9E] [A1][A0][9C][91][99][91][9D] [9F][91][AA] [9A][9F][A4][96][9D][9D][96][9C][A4]..." next
+	"@[7E][C2] [9F][96] [92][C2][9D][9A] *[92][9A][A1]* [94][A0][A4][A0][93][C2] [9C] [A4][91][9C][A0][9E][A5] [A1][A0][93][A0][A2][A0][A4][A5] [A3][A0][92][C2][A4][9A][9B]..." next
+	"@[81][A2][A0][A2][A0][A9][96][A3][A4][93][A0] *[C0][96][9D][A9][A0][9C]* [B6][92][9D][A0][9C][91] [81][A2][A0][A3][93][96][C0][96][9F][9A][C6] [9E][A0][98][96][A4] [92][C2][A4][C3] [A1][A2][91][93][95][9A][93][C2][9E]..." next
+	"@[9F][A0] [A4][C2] [9F][96] [95][A0][9D][98][96][9F] *[AA][A5][9E]* [9F][96][95][A0][A0][A8][96][9F][9A][93][91][A4][C3] [9F][91][A3].[03]{window_closeall}" eob
 
 l_0xc6d067:
     "@(Drug Store <Best Friend>`)" end
