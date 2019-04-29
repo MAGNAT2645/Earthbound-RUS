@@ -167,14 +167,14 @@ l_0xc6af6c:
     "[1D 05 FF 68][1B 03 {e(l_0xc6af8a)}]@Kyee Kyee! (Yeah!)" end
 
 l_0xc6af8a:
-    /*
-    "@Кую Юки" linebreak
-    "  (Дай немного жвачки.)" next
-    "@([1C 02 03] отдал кусок жвачки обезьяне, которая надула пузырь!)[03]{window_closeall}{set(flag 334)}{set(flag 22)}" call(data_43.l_0xc880b9) call(data_23.l_0xc6822a) eob
-    */
-    "@[7C][A5][C5] [B5][9C][9A]" linebreak
-    "  ([75][91][9B] [9F][96][9E][9F][A0][94][A0] [98][93][91][A9][9C][9A].)" next
-    "@([1C 02 03] [A0][A4][95][91][9D] [9C][A5][A3][A0][9C] [98][93][91][A9][9C][9A] [A0][92][96][99][C3][C6][9F][96], [9C][A0][A4][A0][A2][91][C6] [9F][91][95][A5][9D][91] [A1][A5][99][C2][A2][C3]!)[03]{window_closeall}{set(flag 334)}{set(flag 22)}" call(data_43.l_0xc880b9) call(data_23.l_0xc6822a) eob
+	/*
+	"@Кую Юки" linebreak
+	"  (Дай немного жвачки.)" next
+	"@([1C 02 03] отдал кусок жвачки обезьяне, и он надул пузырь!)[03]{window_closeall}{set(flag 334)}{set(flag 22)}" call(data_43.l_0xc880b9) call(data_23.l_0xc6822a) eob
+	*/
+	"@[7C][A5][C5] [B5][9C][9A]" linebreak
+	"  ([75][91][9B] [9F][96][9E][9F][A0][94][A0] [98][93][91][A9][9C][9A].)" next
+	"@([1C 02 03] [A0][A4][95][91][9D] [9C][A5][A3][A0][9C] [98][93][91][A9][9C][9A] [A0][92][96][99][C3][C6][9F][96], [9A] [A0][9F] [9F][91][95][A5][9D] [A1][A5][99][C2][A2][C3]!)[03]{window_closeall}{set(flag 334)}{set(flag 22)}" call(data_43.l_0xc880b9) call(data_23.l_0xc6822a) eob
 
 l_0xc6afe1:
     /*

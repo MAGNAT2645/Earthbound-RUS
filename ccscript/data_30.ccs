@@ -237,9 +237,14 @@ l_0xc747ed:
   "[06 49 00 {e(l_0xc7488d)}][06 09 00 {e(l_0xc74874)}][06 FF 01 {e(l_0xc7484f)}]" goto(l_0xc74802)
 
 l_0xc74802:
-  "@A library is a nice place to learn stuff." next
-  "@I got a lot of info about EarthBound." next
-  "@You can borrow maps for nothing!" end
+	/*
+	"@Библиотека - хорошее место, чтобы учиться." next
+	"@Я получил много информации про Еа[C7][C8][C9]Во[CA][CB][CC]." next // EarthBound
+	"@Карты можно брать бесплатно!" end
+	*/
+	"@[72][9A][92][9D][9A][A0][A4][96][9C][91] - [A7][A0][A2][A0][AA][96][96] [9E][96][A3][A4][A0], [A9][A4][A0][92][C2] [A5][A9][9A][A4][C3][A3][C6]." next
+	"@[B6] [A1][A0][9D][A5][A9][9A][9D] [9E][9F][A0][94][A0] [9A][9F][A6][A0][A2][9E][91][A8][9A][9A] [A1][A2][A0] [76][91][C7][C8][C9][73][A0][CA][CB][CC]." next
+	"@[7C][91][A2][A4][C2] [9E][A0][98][9F][A0] [92][A2][91][A4][C3] [92][96][A3][A1][9D][91][A4][9F][A0]!" end
 
 l_0xc7484f:
   "{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc74802)}]@What a cute, yellow backpack.{wait}{set(flag 9)}" eob
@@ -323,8 +328,9 @@ l_0xc74c49:
   "@[7F][96] [92][A5][95][C3] [A4][91][9C][9A][9E] [A3][9F][A0][92][A0][9E]![03]" call(data_23.l_0xc683f4) "[1B 03 {e(data_23.l_0xc683de)}][1F 1E 01 00 06]{set(flag 40)}" eob
 
 l_0xc74c6c:
-//  "@Возвращайся, когда пройдёшь ЭрфБаунд!" end
-  "@[73][A0][99][93][A2][91][C0][91][9B][A3][C6], [9C][A0][94][95][91] [A1][A2][A0][9B][95][97][AA][C3] [B4][A2][A6][72][91][A5][9F][95]!" end
+//	"@Возвращайся, когда пройдёшь Еа[C7][C8][C9]Во[CA][CB][CC]!" end
+//	EarthBound
+	"@[73][A0][99][93][A2][91][C0][91][9B][A3][C6], [9C][A0][94][95][91] [A1][A2][A0][9B][95][97][AA][C3] [76][91][C7][C8][C9][73][A0][CA][CB][CC]!" end
 
 l_0xc74c85:
 //  "@Привет!" end
@@ -388,10 +394,9 @@ l_0xc74f56:
   "[06 5F 00 {e(l_0xc74fde)}][06 5E 00 {e(l_0xc750e3)}][06 60 00 {e(l_0xc74fec)}][06 62 00 {e(l_0xc74fb6)}][06 61 00 {e(l_0xc74fb6)}]@[72][A0][98][96] [9E][A0][9B]!{pause(20)}  [7C][A4][A0] [9E][A0][98][96][A4] [A3][A4][A5][A9][91][A4][C3][A3][C6] [93] [95][93][96][A2][C3] [A4][91][9C] [A1][A0][99][95][9F][A0] [9F][A0][A9][C3][C5]?" next
   "@[84][C2] [9E][A0][98][96][AA][C3] [9A][9E] [A0][A4][9C][A2][C2][A4][C3]?" end
 
-/*l_0xc74fb6:
-  "@Pokey's waiting for you.{pause(20)}  You should listen to what he has to say." end*/
 l_0xc74fb6:
-  "@[81][A0][9C][9A] [98][95][97][A4] [A4][96][92][C6].{pause(20)}  [84][96][92][96] [A3][A4][A0][9A][A4] [93][C2][A3][9D][A5][AA][91][A4][C3], [A9][A4][A0] [A0][9F] [A7][A0][A9][96][A4] [A3][9C][91][99][91][A4][C3]." end
+//	"@Порки ждёт тебя.{pause(20)}  Тебе стоит выслушать, что он хочет сказать." end
+	"@[81][A0][A2][9C][9A] [98][95][97][A4] [A4][96][92][C6].{pause(20)}  [84][96][92][96] [A3][A4][A0][9A][A4] [93][C2][A3][9D][A5][AA][91][A4][C3], [A9][A4][A0] [A0][9F] [A7][A0][A9][96][A4] [A3][9C][91][99][91][A4][C3]." end
 
 /*l_0xc74fde:
   "@Could you get that?" end*/
@@ -429,23 +434,28 @@ l_0xc75124:
   "@I think it's great the way you kids have been working together." end
 
 l_0xc75176:
-  "[06 02 02 {e(l_0xc75262)}]{isset(flag 104)}[1B 02 {e(l_0xc751f1)}]@You're back!{pause(20)}  Don't bother yourself with talking now,{pause(15)} you look too tired." next
-  "@Mothers understand these things.{pause(20)}  Eat some [1C 01 04] and scoot up to bed.[03]{window_closeall}" call(data_24.l_0xc695ba) call(data_49.l_0xc91693) "[1F 21 C4]{set(flag 514)}" eob
+	/*
+	"[06 02 02 {e(l_0xc75262)}]{isset(flag 104)}[1B 02 {e(l_0xc751f1)}]@Ты вернулся!{pause(20)}  Не утруждай себя разговорами,{pause(15)} ты выглядишь слишком усталым." next
+	"@Матери понимают такое.{pause(20)}  [1C 01 04] в ожидании, поешь немного и ложись спать.[03]{window_closeall}" call(data_24.l_0xc695ba) call(data_49.l_0xc91693) "[1F 21 C4]{set(flag 514)}" eob
+	*/
+	"[06 02 02 {e(l_0xc75262)}]{isset(flag 104)}[1B 02 {e(l_0xc751f1)}]@[84][C2] [93][96][A2][9F][A5][9D][A3][C6]!{pause(20)}  [7F][96] [A5][A4][A2][A5][98][95][91][9B] [A3][96][92][C6] [A2][91][99][94][A0][93][A0][A2][91][9E][9A],{pause(15)} [A4][C2] [93][C2][94][9D][C6][95][9A][AA][C3] [A3][9D][9A][AA][9C][A0][9E] [A5][A3][A4][91][9D][C2][9E]." next
+	"@[7E][91][A4][96][A2][9A] [A1][A0][9F][9A][9E][91][C5][A4] [A4][91][9C][A0][96].{pause(20)}  [1C 01 04] [93] [A0][98][9A][95][91][9F][9A][9A], [A1][A0][96][AA][C3] [9F][96][9E][9F][A0][94][A0] [9A] [9D][A0][98][9A][A3][C3] [A3][A1][91][A4][C3].[03]{window_closeall}" call(data_24.l_0xc695ba) call(data_49.l_0xc91693) "[1F 21 C4]{set(flag 514)}" eob
 
-/*l_0xc751f1:
-  "@You're hungry already?" next
-  "@Why don't you have some" linebreak
-  "  [1C 01 04]?" next
-  "@Pokey,{pause(15)} you don't like" linebreak
-  "  [1C 01 04],{pause(10)} do you?" next
-  "[1F 04 03]@[1F 04 01]T[1F 04 03]#{pause(15)}[1F 04 01]O[1F 04 03]#{pause(15)}[1F 04 01]O[1F 04 03]#{pause(15)}[1F 04 01]BAD!{wait}" call(data_49.l_0xc915d6) call(data_49.l_0xc91582) eob*/
 l_0xc751f1:
-  "@[84][C2] [A5][98][96] [A1][A2][A0][94][A0][9D][A0][95][91][9D][A3][C6]?" next
-  "@[81][A0][A9][96][9E][A5] [92][C2] [A4][96][92][96] [9F][96] [A1][A0][96][A3][A4][C3]" linebreak
-  "  [1C 01 04]?" next
-  "@[81][A0][9C][9A],{pause(15)} [A4][C2] [9F][96] [9D][C5][92][9A][AA][C3]" linebreak
-  "  [1C 01 04],{pause(10)} [9F][96] [A1][A2][91][93][95][91] [9D][9A]?" next
-  "[1F 04 03]@[1F 04 01][80][1F 04 03]#{pause(15)}[1F 04 01][89][1F 04 03]#{pause(15)}[1F 04 01][76][1F 04 03]#{pause(15)}[1F 04 01][7F][B3][1F 04 03]#{pause(15)}[1F 04 01][78][71][7D][B3]!{wait}" call(data_49.l_0xc915d6) call(data_49.l_0xc91582) eob
+	/*
+	"@Ты уже проголодался?" next
+	"@Почему бы тебе не поесть" linebreak
+	"  [1C 01 04]?" next
+	"@Порки,{pause(15)} ты не любишь" linebreak
+	"  [1C 01 04],{pause(10)} не правда ли?" next
+	"[1F 04 03]@[1F 04 01]О[1F 04 03]#{pause(15)}[1F 04 01]Ч[1F 04 03]#{pause(15)}[1F 04 01]Е[1F 04 03]#{pause(15)}[1F 04 01]НЬ[1F 04 03]#{pause(15)}[1F 04 01]ЖАЛЬ!{wait}" call(data_49.l_0xc915d6) call(data_49.l_0xc91582) eob
+	*/
+	"@[84][C2] [A5][98][96] [A1][A2][A0][94][A0][9D][A0][95][91][9D][A3][C6]?" next
+	"@[81][A0][A9][96][9E][A5] [92][C2] [A4][96][92][96] [9F][96] [A1][A0][96][A3][A4][C3]" linebreak
+	"  [1C 01 04]?" next
+	"@[81][A0][A2][9C][9A],{pause(15)} [A4][C2] [9F][96] [9D][C5][92][9A][AA][C3]" linebreak
+	"  [1C 01 04],{pause(10)} [9F][96] [A1][A2][91][93][95][91] [9D][9A]?" next
+	"[1F 04 03]@[1F 04 01][80][1F 04 03]#{pause(15)}[1F 04 01][89][1F 04 03]#{pause(15)}[1F 04 01][76][1F 04 03]#{pause(15)}[1F 04 01][7F][B3][1F 04 03]#{pause(15)}[1F 04 01][78][71][7D][B3]!{wait}" call(data_49.l_0xc915d6) call(data_49.l_0xc91582) eob
 
 l_0xc75262:
   "[1D 19 02][1B 02 {e(l_0xc752ce)}][06 02 00 {e(l_0xc752a3)}]@Good morning,{pause(15)} sleepy bones!{pause(20)}  Are you ready to start your adventure?" next

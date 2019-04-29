@@ -538,7 +538,9 @@ l_0xc76b0a:
   eob
 
 l_0xc76b0b:
-  "@I've been playing <EarthBound> lately...{pause(20)}  I'm having a tough time." end
+//	"@В последнее время я играю в <Еа[C7][C8][C9]Во[CA][CB][CC]>...{pause(20)}  У меня сейчас трудные времена." end
+//	EarthBound
+	"@[73] [A1][A0][A3][9D][96][95][9F][96][96] [93][A2][96][9E][C6] [C6] [9A][94][A2][91][C5] [93] <[76][91][C7][C8][C9][73][A0][CA][CB][CC]>...{pause(20)}  [85] [9E][96][9F][C6] [A3][96][9B][A9][91][A3] [A4][A2][A5][95][9F][C2][96] [93][A2][96][9E][96][9F][91]." end
 
 l_0xc76b36:
   "@So you've traveled all over the world." next

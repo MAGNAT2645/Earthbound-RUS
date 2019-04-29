@@ -60,22 +60,33 @@ l_0xc82b27:
     "@I wonder if someone was fighting." end
 
 l_0xc82b59:
-    "[06 2C 02 {e(l_0xc82beb)}]@When I grow up,{pause(15)} I wanna work for APE as a programmer..." next
-    "@Do you have any connections with those guys?" linebreak
-    "[19 02]Yes" eob
+	/*
+	"[06 2C 02 {e(l_0xc82beb)}]@Когда я вырасту,{pause(15)} я буду работать программистом в команде АПЕ..." next
+	"@У тебя есть какие-нибудь связи с этими парнями?" linebreak
+	"[19 02]Да" eob
+	*/
+	"[06 2C 02 {e(l_0xc82beb)}]@[7C][A0][94][95][91] [C6] [93][C2][A2][91][A3][A4][A5],{pause(15)} [C6] [92][A5][95][A5] [A2][91][92][A0][A4][91][A4][C3] [A1][A2][A0][94][A2][91][9E][9E][9A][A3][A4][A0][9E] [93] [9C][A0][9E][91][9F][95][96] [71][81][76]..." next
+	"@[85] [A4][96][92][C6] [96][A3][A4][C3] [9C][91][9C][9A][96]-[9F][9A][92][A5][95][C3] [A3][93][C6][99][9A] [A3] [C4][A4][9A][9E][9A] [A1][91][A2][9F][C6][9E][9A]?" linebreak
+	"[19 02][75][91]" eob
 
 l_0xc82ba8:
-    "[19 02]No" eob
+//	"[19 02]Нет" eob
+	"[19 02][7F][96][A4]" eob
 
 l_0xc82bad:
-    "[1C 07 02][11]{clearline}[09 02 {e(l_0xc82bbc)} {e(l_0xc82bbc)}]" goto(l_0xc82bbc)
+	"[1C 07 02][11]{clearline}[09 02 {e(l_0xc82bbc)} {e(l_0xc82bbc)}]" goto(l_0xc82bbc)
 
 l_0xc82bbc:
-    "@Oh, you didn't have to answer." next
-    "@It was dumb of me to ask you that question." end
+	/*
+	"@О, тебе не нужно было отвечать." next
+	"@С моей стороны было глупо задавать тебе этот вопрос." end
+	*/
+	"@[80], [A4][96][92][96] [9F][96] [9F][A5][98][9F][A0] [92][C2][9D][A0] [A0][A4][93][96][A9][91][A4][C3]." next
+	"@[83] [9E][A0][96][9B] [A3][A4][A0][A2][A0][9F][C2] [92][C2][9D][A0] [94][9D][A5][A1][A0] [99][91][95][91][93][91][A4][C3] [A4][96][92][96] [C4][A4][A0][A4] [93][A0][A1][A2][A0][A3]." end
 
 l_0xc82beb:
-    "@The power supply to the game was cut off.{pause(20)}  I wasted my money." end
+//	"@Электропитание игры было отключено.{pause(20)}  Я зря потратил деньги." end
+	"@[B4][9D][96][9C][A4][A2][A0][A1][9A][A4][91][9F][9A][96] [9A][94][A2][C2] [92][C2][9D][A0] [A0][A4][9C][9D][C5][A9][96][9F][A0].{pause(20)}  [B6] [99][A2][C6] [A1][A0][A4][A2][91][A4][9A][9D] [95][96][9F][C3][94][9A]." end
 
 l_0xc82c11:
     "[06 2C 02 {e(l_0xc82c48)}]@I wanna save up some money and go to Summers or somewhere else to relax." end
