@@ -479,7 +479,12 @@ l_0xc73d85:
     "@Do you really agree?{pause(20)}  Let's build a strong,{pause(15)} sturdy shack." end
 
 l_0xc73db0:
-    "[06 49 00 {e(data_30.l_0xc73e7d)}][06 0D 00 {e(data_30.l_0xc73e2a)}][06 0C 00 {e(data_30.l_0xc73e2a)}]@I had a dream about you,{pause(20)} and you were traveling with a cute girl." next
-    "@If the dream comes true,{pause(15)} say hi to her for me." next
-    "@After all,{pause(15)} I'm single..." end
+	/*
+	"[06 49 00 {e(data_30.l_0xc73e7d)}][06 0D 00 {e(data_30.l_0xc73e2a)}][06 0C 00 {e(data_30.l_0xc73e2a)}]@Мне приснился сон о тебе,{pause(20)} и ты путешествовал с милой девочкой." next
+	"@Если сон был правдив,{pause(15)} передай ей от меня привет." next
+	"@В конце концов,{pause(15)} я одинок..." end
+	*/
+	"[06 49 00 {e(data_30.l_0xc73e7d)}][06 0D 00 {e(data_30.l_0xc73e2a)}][06 0C 00 {e(data_30.l_0xc73e2a)}]@[7E][9F][96] [A1][A2][9A][A3][9F][9A][9D][A3][C6] [A3][A0][9F] [A0] [A4][96][92][96],{pause(20)} [9A] [A4][C2] [A1][A5][A4][96][AA][96][A3][A4][93][A0][93][91][9D] [A3] [9E][9A][9D][A0][9B] [95][96][93][A0][A9][9C][A0][9B]." next
+	"@[76][A3][9D][9A] [A3][A0][9F] [92][C2][9D] [A1][A2][91][93][95][9A][93],{pause(15)} [A1][96][A2][96][95][91][9B] [96][9B] [A0][A4] [9E][96][9F][C6] [A1][A2][9A][93][96][A4]." next
+	"@[73] [9C][A0][9F][A8][96] [9C][A0][9F][A8][A0][93],{pause(15)} [C6] [A0][95][9A][9F][A0][9C]..." end
 

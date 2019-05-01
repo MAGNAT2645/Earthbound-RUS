@@ -66,6 +66,18 @@ l_gendersuffix5_neutral:
 //	"ло" eob
 	"[9D][A0]" eob
 
+// ен/на/но
+l_gendersuffix6:
+	"[1C 14 01][09 03 {e(l_gendersuffix6_male)} {e(l_gendersuffix6_female)} {e(l_gendersuffix6_neutral)}]" goto(l_gendersuffix6_male)
+l_gendersuffix6_male:
+	eob
+l_gendersuffix6_female:
+//	"ла" eob
+	"[9D][91]" eob
+l_gendersuffix6_neutral:
+//	"ло" eob
+	"[9D][A0]" eob
+
 // его/её
 l_gender:
 	"[1C 14 01][09 03 {e(l_gender_male)} {e(l_gender_female)} {e(l_gender_male)}]" eob

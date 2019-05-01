@@ -218,12 +218,20 @@ l_0xc685da:
     "[1D 0D 03 01 02][1B 03 {e(l_0xc68650)}][1D 0D 03 01 03][1B 03 {e(l_0xc68650)}][06 B8 02 {e(l_0xc68651)}][1F D0 64]" goto(l_0xc685fa)
 
 l_0xc685fa:
-    "[1B 02 {e(l_0xc68650)}][1B 05]{window_open(1)}" newline
-    "[1B 06]@Working through the night," linebreak
-    "  [1C 02 03] fixed" linebreak
-    "  the [1C 05 00]." next
-    "@After being fixed, the [1C 05 00] became" linebreak
-    "  the {swap}[1C 05 00].[03]{set(flag 696)}{window_closeall}" goto(l_0xc68650)
+	/*
+	"[1B 02 {e(l_0xc68650)}][1B 05]{window_open(1)}" newline
+	"[1B 06]@Работая всю ночь," linebreak
+	"  [1C 02 03] починил" linebreak
+	"  [1C 05 00]." next
+	"@Теперь [1C 05 00] -" linebreak
+	"  это {swap}[1C 05 00].[03]{set(flag 696)}{window_closeall}" goto(l_0xc68650)
+	*/
+	"[1B 02 {e(l_0xc68650)}][1B 05]{window_open(1)}" newline
+	"[1B 06]@[82][91][92][A0][A4][91][C6] [93][A3][C5] [9F][A0][A9][C3]," linebreak
+	"  [1C 02 03] [A1][A0][A9][9A][9F][9A][9D]" linebreak
+	"  [1C 05 00]." next
+	"@[84][96][A1][96][A2][C3] [1C 05 00] -" linebreak
+	"  [C4][A4][A0] {swap}[1C 05 00].[03]{set(flag 696)}{window_closeall}" goto(l_0xc68650)
 
 l_0xc68650:
     eob

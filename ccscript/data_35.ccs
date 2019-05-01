@@ -144,8 +144,12 @@ l_0xc7c693:
     "  [1C 02 00]'s {swap}[1C 05 00]." end
 
 l_0xc7c6b6:
-    "[19 1F]{swap}@You can't use" linebreak
-    "  the [1C 05 00]." end
+	/*
+	"[19 1F]{swap}@Ты не можешь" linebreak
+	"  использовать [1C 05 00]." end
+	*/
+	"[19 1F]{swap}@[84][C2] [9F][96] [9E][A0][98][96][AA][C3]" linebreak
+	"  [9A][A3][A1][A0][9D][C3][99][A0][93][91][A4][C3] [1C 05 00]." end
 
 l_0xc7c6c9:
     "[19 19 00 00]{swap}@[1C 02 00] is the only one who should carry" linebreak

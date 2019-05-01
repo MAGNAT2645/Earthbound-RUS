@@ -166,13 +166,13 @@ l_0xc7dccf:
     "{sound(116)}{pause(60)}" call(l_0xc7dcda) eob
 
 l_0xc7dcda:
-    /*
-    "@([1C 02 00] получает" linebreak
-    "  {swap}[19 19 00 00][1C 05 00].)" eob
-    */
-    "{store_registers}" call(l_0xc7dc85) "[1B 03 {e(l_0xc7dd03)}]{load_registers}{swap}" newline
-    "@([1C 02 00] [A1][A0][9D][A5][A9][91][96][A4]" linebreak
-    "  {swap}[19 19 00 00][1C 05 00].)" eob
+	/*
+	"@([1C 02 00] получает" linebreak
+	"  {swap}[19 19 00 00][1C 05 00].)" eob
+	*/
+	"{store_registers}" call(l_0xc7dc85) "[1B 03 {e(l_0xc7dd03)}]{load_registers}{swap}" newline
+	"@([1C 02 00] [A1][A0][9D][A5][A9][91][96][A4]" linebreak
+	"  {swap}[19 19 00 00][1C 05 00].)" eob
 
 /*l_0xc7dd03:
     "[19 10 01]{swap}@([1C 02 00] added the {load_registers}[19 19 00 00][1C 05 00]" linebreak
