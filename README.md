@@ -14,7 +14,6 @@
 - Переименованы все противники и NPC
 - Переименованы все внутриигровые предметы (отдельное спасибо [CrystalWarrior](https://github.com/Crystalwarrior))
 - Переведены все описания ПСИ в меню Статус
-- Локализация сюжета (некоторых частей)
 - Локализация боевой системы (большая часть)
 - Переведены титры с именами разработчиков
 - Переведена основная сюжетная линия (по файлу [earthbound_script.txt](https://github.com/Crystalwarrior/EarthBound-Russian-Translation/blob/master/earthbound_script.txt))
