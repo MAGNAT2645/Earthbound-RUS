@@ -1,15 +1,124 @@
-// Naming screen character set
+/* Script to modify the letters and characters available in the Naming Screens
+Made by PhoenixBound, based on previous work by TragicManner */
 
-/*ROM[0xEFA465] = "[71 2F 72 2F 73 2F 74 2F 75 2F 76 2F 77 2F 78 2F 79 18 05 16 00 2F 5D 2F 53 18 05 00 01 2F 7A 2F 7B 2F 7C 2F 7D 2F 7E 2F 7F 2F 80 2F 81 2F 82 18 05 16 01 2F 57 2F AE 18 05 00 02 2F 83 2F \
-84 2F 85 2F 86 2F 87 2F 88 2F 89 2F 8A 2F B0 18 05 16 02 2F 5E 2F 5F 18 05 00 03 2F B1 2F B2 2F B3 2F B4 2F B5 2F B6 2F 50 18 05 16 03 2F 51 2F AC 18 05 00 04 2F 60 2F 61 2F 62 2F 63 2F 64 2F 65 2F 66 2F 67 2F 68 2F 69 18 05 16 04 2F 6F 2F AF 02 \
-18 05 00 00 2F 91 2F 92 2F 93 2F 94 2F 95 2F 96 2F 97 2F 98 2F 99 18 05 16 00 2F 5D 2F 53 18 05 00 01 2F 9A 2F 9B 2F 9C 2F 9D 2F 9E 2F 9F 2F A0 2F A1 2F A2 18 05 16 01 2F 57 2F AE 18 05 00 02 2F A3 2F A4 \
-2F A5 2F A6 2F A7 2F A8 2F A9 2F AA 2F C0 18 05 16 02 2F 5E 2F 5F 18 05 00 03 2F C1 2F C2 2F C3 2F C4 2F C5 2F C6 2F 50 18 05 16 03 2F 51 2F AC 18 05 00 04 2f 60 2F 61 2F 62 2F 63 2F 64 2F 65 2F 66 2F 67 2F 68 2F 69]"
+import asm65816
 
-ROM[0xEFA56B] = "[71 2F 72 2F 73 2F 74 2F 75 2F 76 2F 77 2F 78 2F 79 18 05 16 00 2F 5D 2F 53 18 05 00 01 2F 7A 2F 7B 2F 7C 2F 7D 2F 7E 2F 7F 2F 80 2F 81 2F 82 18 05 16 01 2F 57 2F AE 18 05 00 02 2F 83 2F \
-84 2F 85 2F 86 2F 87 2F 88 2F 89 2F 8A 2F B0 18 05 16 02 2F 5E 2F 5F 18 05 00 03 2F B1 2F B2 2F B3 2F B4 2F B5 2F B6 2F 50 18 05 16 03 2F 51 2F AC 18 05 00 04 2F 60 2F 61 2F 62 2F 63 2F 64 2F 65 2F 66 2F 67 2F 68 2F 69 18 05 16 04 2F 6F 2F AF 02 \
-18 05 00 00 2F 91 2F 92 2F 93 2F 94 2F 95 2F 96 2F 97 2F 98 2F 99 18 05 16 00 2F 5D 2F 53 18 05 00 01 2F 9A 2F 9B 2F 9C 2F 9D 2F 9E 2F 9F 2F A0 2F A1 2F A2 18 05 16 01 2F 57 2F AE 18 05 00 02 2F A3 2F A4 \
-2F A5 2F A6 2F A7 2F A8 2F A9 2F AA 2F C0 18 05 16 02 2F 5E 2F 5F 18 05 00 03 2F C1 2F C2 2F C3 2F C4 2F C5 2F C6 2F 50 18 05 16 03 2F 51 2F AC 18 05 00 04 2f 60 2F 61 2F 62 2F 63 2F 64 2F 65 2F 66 2F 67 2F 68 2F 69]"*/
+main_capital: {		// offset EFA460
+	/*
+	text_pos(0, 0) "[2F]А[2F]Б[2F]В[2F]Г[2F]Д[2F]Е[2F]Ё[2F]Ж[2F]З"		text_pos(22, 0) "[2F]-[2F]#"
+	text_pos(0, 1) "[2F]И[2F]Й[2F]К[2F]Л[2F]М[2F]Н[2F]О[2F]П[2F]Р"	text_pos(22, 1) "[2F]'[2F]~"
+	text_pos(0, 2) "[2F]С[2F]Т[2F]У[2F]Ф[2F]Х[2F]Ц[2F]Ч[2F]Ш[2F]Щ"	text_pos(22, 2) "[2F].[2F][5F]"
+	text_pos(0, 3) "[2F]Ъ[2F]Ы[2F]Ь[2F]Э[2F]Ю[2F]Я[2F] "				text_pos(22, 3) "[2F]![2F][AC]"
+	text_pos(0, 4) "[2F]0[2F]1[2F]2[2F]3[2F]4[2F]5[2F]6[2F]7[2F]8[2F]9"	text_pos(22, 4) "[2F]?[2F][AF]"
+	*/
+	text_pos(0, 0) "[2F][71][2F][72][2F][73][2F][74][2F][75][2F][76][2F][77][2F][78][2F][79]"		text_pos(22, 0) "[2F]-[2F]#"
+	text_pos(0, 1) "[2F][7A][2F][7B][2F][7C][2F][7D][2F][7E][2F][7F][2F][80][2F][81][2F][82]"	text_pos(22, 1) "[2F]'[2F]~"
+	text_pos(0, 2) "[2F][83][2F][84][2F][85][2F][86][2F][87][2F][88][2F][89][2F][8A][2F][B0]"	text_pos(22, 2) "[2F].[2F][5F]"
+	text_pos(0, 3) "[2F][B1][2F][B2][2F][B3][2F][B4][2F][B5][2F][B6][2F] "						text_pos(22, 3) "[2F]![2F][AC]"
+	text_pos(0, 4) "[2F]0[2F]1[2F]2[2F]3[2F]4[2F]5[2F]6[2F]7[2F]8[2F]9"						text_pos(22, 4) "[2F]?[2F][AF]"
+	eob
+}
 
-ROM[0xEFA465] = "[71 2F 72 2F 73 2F 74 2F 75 2F 76 2F 77 2F 78 2F 79 18 05 16 00 2F 5D 2F 53 18 05 00 01 2F 7A 2F 7B 2F 7C 2F 7D 2F 7E 2F 7F 2F 80 2F 81 2F 82 18 05 16 01 2F 57 2F AE 18 05 00 02 2F 83 2F 84 2F 85 2F 86 2F 87 2F 88 2F 89 2F 8A 2F B0 18 05 16 02 2F 5E 2F 5F 18 05 00 03 2F B1 2F B2 2F B3 2F B4 2F B5 2F B6 2F 50 2F 00 2F 00 2F 00 18 05 16 03 2F 51 2F AC 18 05 16 04 2F 6F 2F AF 02 18 05 00 00 2F 91 2F 92 2F 93 2F 94 2F 95 2F 96 2F 97 2F 98 2F 99 18 05 16 00 2F 5D 2F 53 18 05 00 01 2F 9A 2F 9B 2F 9C 2F 9D 2F 9E 2F 9F 2F A0 2F A1 2F A2 18 05 16 01 2F 57 2F AE 18 05 00 02 2F A3 2F A4 2F A5 2F A6 2F A7 2F A8 2F A9 2F AA 2F C0 18 05 16 02 2F 5E 2F 5F 18 05 00 03 2F C1 2F C2 2F C3 2F C4 2F C5 2F C6 2F 50 2F 00 2F 00 2F 00 18 05 16 03 2F 51 2F AC]"
+main_small: {		// offset EFA4E3
+	/*
+	text_pos(0, 0) "[2F]а[2F]б[2F]в[2F]г[2F]д[2F]е[2F]ё[2F]ж[2F]з"		text_pos(22, 0) "[2F]-[2F]#"
+	text_pos(0, 1) "[2F]и[2F]й[2F]к[2F]л[2F]м[2F]н[2F]о[2F]п[2F]р"		text_pos(22, 1) "[2F]'[2F]~"
+	text_pos(0, 2) "[2F]с[2F]т[2F]у[2F]ф[2F]х[2F]ц[2F]ч[2F]ш[2F]щ"		text_pos(22, 2) "[2F].[2F][5F]"
+	text_pos(0, 3) "[2F]ъ[2F]ы[2F]ь[2F]э[2F]ю[2F]я[2F] "					text_pos(22, 3) "[2F]![2F][AC]"
+	text_pos(0, 4) "[2F]0[2F]1[2F]2[2F]3[2F]4[2F]5[2F]6[2F]7[2F]8[2F]9"	text_pos(22, 4) "[2F]?[2F][AF]"
+	*/
+	text_pos(0, 0) "[2F][91][2F][92][2F][93][2F][94][2F][95][2F][96][2F][97][2F][98][2F][99]"		text_pos(22, 0) "[2F]-[2F]#"
+	text_pos(0, 1) "[2F][9A][2F][9B][2F][9C][2F][9D][2F][9E][2F][9F][2F][A0][2F][A1][2F][A2]"	text_pos(22, 1) "[2F]'[2F]~"
+	text_pos(0, 2) "[2F][A3][2F][A4][2F][A5][2F][A6][2F][A7][2F][A8][2F][A9][2F][AA][2F][C0]"	text_pos(22, 2) "[2F].[2F][5F]"
+	text_pos(0, 3) "[2F][C1][2F][C2][2F][C3][2F][C4][2F][C5][2F][C6][2F] "						text_pos(22, 3) "[2F]![2F][AC]"
+	text_pos(0, 4) "[2F]0[2F]1[2F]2[2F]3[2F]4[2F]5[2F]6[2F]7[2F]8[2F]9"						text_pos(22, 4) "[2F]?[2F][AF]"
+	eob
+}
 
-ROM[0xEFA56B] = "[71 2F 72 2F 73 2F 74 2F 75 2F 76 2F 77 2F 78 2F 79 18 05 16 00 2F 5D 2F 53 18 05 00 01 2F 7A 2F 7B 2F 7C 2F 7D 2F 7E 2F 7F 2F 80 2F 81 2F 82 18 05 16 01 2F 57 2F AE 18 05 00 02 2F 83 2F 84 2F 85 2F 86 2F 87 2F 88 2F 89 2F 8A 2F 50 18 05 16 02 2F 5E 2F 5F 18 05 00 03 2F 60 2F 61 2F 62 2F 63 2F 64 2F 65 2F 66 2F 67 2F 68 2F 69 18 05 16 03 2F 51 2F AC 18 05 16 04 2F 6F 2F AF 02 18 05 00 00 2F 91 2F 92 2F 93 2F 94 2F 95 2F 96 2F 97 2F 98 2F 99 18 05 16 00 2F 5D 2F 53 18 05 00 01 2F 9A 2F 9B 2F 9C 2F 9D 2F 9E 2F 9F 2F A0 2F A1 2F A2 18 05 16 01 2F 57 2F AE 18 05 00 02 2F A3 2F A4 2F A5 2F A6 2F A7 2F A8 2F A9 2F AA 2F 50 18 05 16 02 2F 5E 2F 5F 18 05 00 03 2F 60 2F 61 2F 62 2F 63 2F 64 2F 65 2F 66 2F 67 2F 68 2F 69 18 05 16 03 2F 51 2F AC]"
+player_capital: {	// offset EFA566
+	/*
+	text_pos(0, 0) "[2F]А[2F]Б[2F]В[2F]Г[2F]Д[2F]Е[2F]Ё[2F]Ж[2F]З"		text_pos(22, 0) "[2F]-[2F]#"
+	text_pos(0, 1) "[2F]И[2F]Й[2F]К[2F]Л[2F]М[2F]Н[2F]О[2F]П[2F]Р"	text_pos(22, 1) "[2F]'[2F]~"
+	text_pos(0, 2) "[2F]С[2F]Т[2F]У[2F]Ф[2F]Х[2F]Ц[2F]Ч[2F]Ш[2F]Щ"	text_pos(22, 2) "[2F].[2F][5F]"
+	text_pos(0, 3) "[2F]Ъ[2F]Ы[2F]Ь[2F]Э[2F]Ю[2F]Я[2F] "				text_pos(22, 3) "[2F]![2F][AC]"
+	text_pos(0, 4) "[2F]0[2F]1[2F]2[2F]3[2F]4[2F]5[2F]6[2F]7[2F]8[2F]9"	text_pos(22, 4) "[2F]?[2F][AF]"
+	*/
+	text_pos(0, 0) "[2F][71][2F][72][2F][73][2F][74][2F][75][2F][76][2F][77][2F][78][2F][79]"		text_pos(22, 0) "[2F]-[2F]#"
+	text_pos(0, 1) "[2F][7A][2F][7B][2F][7C][2F][7D][2F][7E][2F][7F][2F][80][2F][81][2F][82]"	text_pos(22, 1) "[2F]'[2F]~"
+	text_pos(0, 2) "[2F][83][2F][84][2F][85][2F][86][2F][87][2F][88][2F][89][2F][8A][2F][B0]"	text_pos(22, 2) "[2F].[2F][5F]"
+	text_pos(0, 3) "[2F][B1][2F][B2][2F][B3][2F][B4][2F][B5][2F][B6][2F] "						text_pos(22, 3) "[2F]![2F][AC]"
+	text_pos(0, 4) "[2F]0[2F]1[2F]2[2F]3[2F]4[2F]5[2F]6[2F]7[2F]8[2F]9"						text_pos(22, 4) "[2F]?[2F][AF]"
+	eob
+}
+
+player_small: {		// offset EFA5E9
+	/*
+	text_pos(0, 0) "[2F]а[2F]б[2F]в[2F]г[2F]д[2F]е[2F]ё[2F]ж[2F]з"		text_pos(22, 0) "[2F]-[2F]#"
+	text_pos(0, 1) "[2F]и[2F]й[2F]к[2F]л[2F]м[2F]н[2F]о[2F]п[2F]р"		text_pos(22, 1) "[2F]'[2F]~"
+	text_pos(0, 2) "[2F]с[2F]т[2F]у[2F]ф[2F]х[2F]ц[2F]ч[2F]ш[2F]щ"		text_pos(22, 2) "[2F].[2F][5F]"
+	text_pos(0, 3) "[2F]ъ[2F]ы[2F]ь[2F]э[2F]ю[2F]я[2F] "					text_pos(22, 3) "[2F]![2F][AC]"
+	text_pos(0, 4) "[2F]0[2F]1[2F]2[2F]3[2F]4[2F]5[2F]6[2F]7[2F]8[2F]9"	text_pos(22, 4) "[2F]?[2F][AF]"
+	*/
+	text_pos(0, 0) "[2F][91][2F][92][2F][93][2F][94][2F][95][2F][96][2F][97][2F][98][2F][99]"		text_pos(22, 0) "[2F]-[2F]#"
+	text_pos(0, 1) "[2F][9A][2F][9B][2F][9C][2F][9D][2F][9E][2F][9F][2F][A0][2F][A1][2F][A2]"	text_pos(22, 1) "[2F]'[2F]~"
+	text_pos(0, 2) "[2F][A3][2F][A4][2F][A5][2F][A6][2F][A7][2F][A8][2F][A9][2F][AA][2F][C0]"	text_pos(22, 2) "[2F].[2F][5F]"
+	text_pos(0, 3) "[2F][C1][2F][C2][2F][C3][2F][C4][2F][C5][2F][C6][2F] "						text_pos(22, 3) "[2F]![2F][AC]"
+	text_pos(0, 4) "[2F]0[2F]1[2F]2[2F]3[2F]4[2F]5[2F]6[2F]7[2F]8[2F]9"						text_pos(22, 4) "[2F]?[2F][AF]"
+	eob
+}
+
+ROM[0xC20912] = {	// Table for the naming screen character recognition.
+// Each value is an offset value added to the starting control code [18 05 XX YY] or text_pos(x,y). 
+// For example, the first value [05] corresponds to the letter 'A', since [18 05 XX YY] takes up bytes 0-3, [2F] being byte 4 and the actual 'A' letter being the 0x05 byte. Then there's another 2F byte, which is 0x06 or byte 6, and then the next letter 'B', which is the 0x07 byte, and so on.
+// The table has been split into the corresponding rows, with only the 5th row being modified to include additional characters.
+// FF means there's a blank space.
+"[05 07 09 0B 0D 0F 11 13 15 FF FF 1B 1D FF \
+  23 25 27 29 2B 2D 2F 31 33 FF FF 39 3B FF \
+  41 43 45 47 49 4B 4D 4F 51 FF FF 57 59 FF \
+  5F 61 63 65 67 69 6B FF FF FF FF 71 73 FF \
+  79 7B 7D 7F 81 83 85 87 89 8B FF 91 93 FF \
+  FF FF FF FF FF FF FF FF FF 8F 1F 80 FF 03 FF 03 01 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00]" 
+}
+
+
+ROM[0xC1E992] = CMP_i (0x0005)	// Originally CMP_i (0x0004). Changed to 0x0005 so that CAPITAL and small are printed in the 5th row instead of the 4th one
+// Change the value to match the X position/row of the CAPITAL/small row so it's detected in the game properly
+
+ROM[0xC1E99B] = CMP_i (0x0008) // Override "small" text X position
+ROM[0xC1E934] = CMP_i (0x0014) // Override "Backspace" text X position
+
+footer_main: {		// offset EFA66C
+	/*
+	text_pos(0, 5) "[2F]ЗАГЛАВНЫЕ" text_pos(8, 5) "[2F]строчные"
+	text_pos(0, 6) "[2F]Не важно" text_pos(20, 6) "[2F]Назад" text_pos(25, 6) "[2F]ОК"
+	*/
+	text_pos(0, 5) "[2F][79][71][74][7D][71][73][7F][B2][76]" text_pos(8, 5) "[2F][A3][A4][A2][A0][A9][9F][C2][96]"
+	text_pos(0, 6) "[2F][7F][96] [93][91][98][9F][A0]" text_pos(20, 6) "[2F][7F][91][99][91][95]" text_pos(25, 6) "[2F][80][7C]"
+	eob
+}
+
+footer_player: {	// offset EFA6A7
+	/*
+	text_pos(0, 5) "[2F]ЗАГЛАВНЫЕ" text_pos(8, 5) "[2F]строчные"
+	text_pos(20, 6) "[2F]Назад" text_pos(25, 6) "[2F]ОК"
+	*/
+	text_pos(0, 5) "[2F][79][71][74][7D][71][73][7F][B2][76]" text_pos(8, 5) "[2F][A3][A4][A2][A0][A9][9F][C2][96]"
+	text_pos(20, 6) "[2F][7F][91][99][91][95]" text_pos(25, 6) "[2F][80][7C]"
+	eob
+}
+
+// ------------------------------
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// Don't modify anything below.
+// Thanks.
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// ------------------------------
+
+ROM[0xEFA6D3] = {
+	main_capital
+	main_small
+	player_capital
+	player_small
+	footer_main
+	footer_player
+}
