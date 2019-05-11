@@ -193,54 +193,94 @@ l_0xc8f8fd:
     "  something " call(data_36.l_0xc7e602) " would like![03]" eob
 
 l_0xc8f935:
-    newline
-    "@A mysterious light enveloped" linebreak
-    "  " call(data_37.l_0xc7e6d7) "![03]" eob
+	/*
+	"@Таинственный свет окутал персонажа" linebreak
+	"  " call(RUS_ref.l_print_players) "![03]" eob
+	*/
+	newline
+	"@[84][91][9A][9F][A3][A4][93][96][9F][9F][C2][9B] [A3][93][96][A4] [A0][9C][A5][A4][91][9D] [A1][96][A2][A3][A0][9F][91][98][91]" linebreak
+	"  " call(RUS_ref.l_print_players) "![03]" eob
 
 l_0xc8f956:
-    newline
-    "@A warm light surrounded" linebreak
-    "  " call(data_37.l_0xc7e6d7) "![03]" eob
+	/*
+	"@Тёплый свет окружил персонажа" linebreak
+	"  " call(RUS_ref.l_print_players) "![03]" eob
+	*/
+	newline
+	"@[84][97][A1][9D][C2][9B] [A3][93][96][A4] [A0][9C][A2][A5][98][9A][9D] [A1][96][A2][A3][A0][9F][91][98][91]" linebreak
+	"  " call(RUS_ref.l_print_players) "![03]" eob
 
 l_0xc8f973:
-    newline
-    "@A dazzling light enveloped" linebreak
-    "  " call(data_37.l_0xc7e6d7) "![03]" eob
+	/*
+	"@Ослепительный свет окутал персонажа" linebreak
+	"  " call(RUS_ref.l_print_players) "![03]" eob
+	*/
+	newline
+	"@[80][A3][9D][96][A1][9A][A4][96][9D][C3][9F][C2][9B] [A3][93][96][A4] [A0][9C][A5][A4][91][9D] [A1][96][A2][A3][A0][9F][91][98][91]" linebreak
+	"  " call(RUS_ref.l_print_players) "![03]" eob
 
 l_0xc8f992:
-    newline
-    "@Some heavy air flowed" linebreak
-    "  into the area![03]" eob
+	/*
+	"@Тяжёлый воздух хлынул" linebreak
+	"  на территорию![03]" eob
+	*/
+	newline
+	"@[84][C6][98][97][9D][C2][9B] [93][A0][99][95][A5][A7] [A7][9D][C2][9F][A5][9D]" linebreak
+	"  [9F][91] [A4][96][A2][A2][9A][A4][A0][A2][9A][C5]![03]" eob
 
 l_0xc8f9b3:
-    newline
-    "@The dazzling light chased" linebreak
-    "  the enemy![03]" eob
+	/*
+	"@Ослепительный свет помчался" linebreak
+	"  в сторону врага![03]" eob
+	*/
+	newline
+	"@[80][A3][9D][96][A1][9A][A4][96][9D][C3][9F][C2][9B] [A3][93][96][A4] [A1][A0][9E][A9][91][9D][A3][C6]" linebreak
+	"  [93] [A3][A4][A0][A2][A0][9F][A5] [93][A2][91][94][91]![03]" eob
 
 l_0xc8f9ce:
-    newline
-    "@A very subtle light engulfed" linebreak
-    "  " call(data_37.l_0xc7e6d7) "![03]" eob
+	/*
+	"@Очень тусклый свет охватил персонажа" linebreak
+	"  " call(RUS_ref.l_print_players) "![03]" eob
+	*/
+	newline
+	"@[80][A9][96][9F][C3] [A4][A5][A3][9C][9D][C2][9B] [A3][93][96][A4] [A0][A7][93][91][A4][9A][9D] [A1][96][A2][A3][A0][9F][91][98][91]" linebreak
+	"  " call(RUS_ref.l_print_players) "![03]" eob
 
 l_0xc8f9f0:
-    newline
-    "@A golden light poured" linebreak
-    "  over the area![03]" eob
+	/*
+	"@Золотой свет залил" linebreak
+	"  всё вокруг![03]" eob
+	*/
+	newline
+	"@[79][A0][9D][A0][A4][A0][9B] [A3][93][96][A4] [99][91][9D][9A][9D]" linebreak
+	"  [93][A3][97] [93][A0][9C][A2][A5][94]![03]" eob
 
 l_0xc8fa0d:
-    newline
-    "@Rainbow colored light" linebreak
-    "  shone into the area![03]" eob
+	/*
+	"@Радужный свет засиял" linebreak
+	"  на округе![03]" eob
+	*/
+	newline
+	"@[82][91][95][A5][98][9F][C2][9B] [A3][93][96][A4] [99][91][A3][9A][C6][9D]" linebreak
+	"  [9F][91] [A0][9C][A2][A5][94][96]![03]" eob
 
 l_0xc8fa2f:
-    newline
-    "@A mysterious aroma wafted" linebreak
-    "  into the area![03]" eob
+	/*
+	"@Таинственный аромат донёсся" linebreak
+	"  на территорию![03]" eob
+	*/
+	newline
+	"@[84][91][9A][9F][A3][A4][93][96][9F][9F][C2][9B] [91][A2][A0][9E][91][A4] [95][A0][9F][97][A3][A3][C6]" linebreak
+	"  [9F][91] [A4][96][A2][A2][9A][A4][A0][A2][9A][C5]![03]" eob
 
 l_0xc8fa51:
-    newline
-    "@A terrible, heaven rending sound," linebreak
-    "  echoed in the area![03]" eob
+	/*
+	"@Ужасный, разрывающий небо звук" linebreak
+	"  эхом разнёсся по округе![03]" eob
+	*/
+	newline
+	"@[85][98][91][A3][9F][C2][9B], [A2][91][99][A2][C2][93][91][C5][C0][9A][9B] [9F][96][92][A0] [99][93][A5][9C]" linebreak
+	"  [C4][A7][A0][9E] [A2][91][99][9F][97][A3][A3][C6] [A1][A0] [A0][9C][A2][A5][94][96]![03]" eob
 
 l_0xc8fa7b:
     newline
@@ -252,9 +292,9 @@ l_0xc8fa90:
     "  completely![03]" eob
 
 l_0xc8faaa:
-    /* "@Недостаточно ОП![03]" eob */
-    newline
-    "@[7F][96][95][A0][A3][A4][91][A4][A0][A9][9F][A0] [80][81]![03]" eob
+//	"@Недостаточно ОП![03]" eob
+	newline
+	"@[7F][96][95][A0][A3][A4][91][A4][A0][A9][9F][A0] [80][81]![03]" eob
 
 l_0xc8fab8:
     newline
@@ -264,23 +304,23 @@ l_0xc8faca:
     "{sound(29)}" goto(l_0xc8facd)
 
 l_0xc8facd:
-    /*
-    "@{user}[19 1F]{swap} пробует использовать" linebreak
-    "  [1C 12 00]!" next
-    "@Но не может из-за нехватки ОП.[03]" eob
-    */
-    "@{user}[19 1F]{swap} [A1][A2][A0][92][A5][96][A4] [9A][A3][A1][A0][9D][C3][99][A0][93][91][A4][C3]" linebreak
-    "  [1C 12 00]!" next
-    "@[7F][A0] [9F][96] [9E][A0][98][96][A4] [9A][99]-[99][91] [9F][96][A7][93][91][A4][9C][9A] [80][81].[03]" eob
+	/*
+	"@{user}[19 1F]{swap} пробует использовать" linebreak
+	"  [1C 12 00]!" next
+	"@Но не может из-за нехватки ОП.[03]" eob
+	*/
+	"@{user}[19 1F]{swap} [A1][A2][A0][92][A5][96][A4] [9A][A3][A1][A0][9D][C3][99][A0][93][91][A4][C3]" linebreak
+	"  [1C 12 00]!" next
+	"@[7F][A0] [9F][96] [9E][A0][98][96][A4] [9A][99]-[99][91] [9F][96][A7][93][91][A4][9C][9A] [80][81].[03]" eob
 
 l_0xc8faf6:
     newline
     "@[B4][A4][A0] [9F][9A][9C][A0][94][A0] [9F][96] [A5][95][91][A2][9A][9D][A0]![03]" eob
 
 l_0xc8fb05:
-//  "@{target} не имеет ОП![03]" eob
-    newline
-    "@{target} [9F][96] [9A][9E][96][96][A4] [80][81]![03]" eob
+//	"@{target} не имеет ОП![03]" eob
+	newline
+	"@{target} [9F][96] [9A][9E][96][96][A4] [80][81]![03]" eob
 
 l_0xc8fb1b:
     "{window_closetop}{pause(40)}{window_open(1)}" newline

@@ -8,41 +8,41 @@ command e(label) "{long label}"
 
 // Text Data
 l_0xef7696:
-    /*
-    "@Никакого видимого эффекта" linebreak
-    "  на персонаже {target}![03]" eob
-    */
-    newline
-    "@[7F][9A][9C][91][9C][A0][94][A0] [93][9A][95][9A][9E][A0][94][A0] [C4][A6][A6][96][9C][A4][91]" linebreak
-    "  [9F][91] [A1][96][A2][A3][A0][9F][91][98][96] {target}![03]" eob
+	/*
+	"@Никакого видимого эффекта" linebreak
+	"  на персонаже {target}![03]" eob
+	*/
+	newline
+	"@[7F][9A][9C][91][9C][A0][94][A0] [93][9A][95][9A][9E][A0][94][A0] [C4][A6][A6][96][9C][A4][91]" linebreak
+	"  [9F][91] [A1][96][A2][A3][A0][9F][91][98][96] {target}![03]" eob
 
 l_0xef76b3:
-    /*
-    "@Это не сработало на персонаже" linebreak
-    "  {target}![03]" eob
-    */
-    newline
-    "@[B4][A4][A0] [9F][96] [A3][A2][91][92][A0][A4][91][9D][A0] [9F][91] [A1][96][A2][A3][A0][9F][91][98][96]" linebreak
-    "  {target}![03]" eob
+	/*
+	"@Это не сработало на персонаже" linebreak
+	"  {target}![03]" eob
+	*/
+	newline
+	"@[B4][A4][A0] [9F][96] [A3][A2][91][92][A0][A4][91][9D][A0] [9F][91] [A1][96][A2][A3][A0][9F][91][98][96]" linebreak
+	"  {target}![03]" eob
 
 l_0xef76c7:
-//  "{sound(34)}@Мимо![03]" eob
-    newline
-    "{sound(34)}@[7E][9A][9E][A0]![03]" eob
+//	"{sound(34)}@Мимо![03]" eob
+	newline
+	"{sound(34)}@[7E][9A][9E][A0]![03]" eob
 
 l_0xef76d8:
-//  "{sound(34)}@...удар чуть не попал в цель![03]" eob
-    newline
-    "{sound(34)}@...[A5][95][91][A2] [A9][A5][A4][C3] [9F][96] [A1][A0][A1][91][9D] [93] [A8][96][9D][C3]![03]" eob
+//	"{sound(34)}@...удар чуть не попал в цель![03]" eob
+	newline
+	"{sound(34)}@...[A5][95][91][A2] [A9][A5][A4][C3] [9F][96] [A1][A0][A1][91][9D] [93] [A8][96][9D][C3]![03]" eob
 
 l_0xef76fd:
-    /*
-    "@Но {target} уже был{call(RUS_ref.l_gendersuffix)}" linebreak
-    "  без сознания...[03]" eob
-    */
-    newline
-    "@[7F][A0] {target} [A5][98][96] [92][C2][9D]{call(RUS_ref.l_gendersuffix)}" linebreak
-    "  [92][96][99] [A3][A0][99][9F][91][9F][9A][C6]...[03]" eob
+	/*
+	"@Но {target} уже был{call(RUS_ref.l_gendersuffix)}" linebreak
+	"  без сознания...[03]" eob
+	*/
+	newline
+	"@[7F][A0] {target} [A5][98][96] [92][C2][9D]{call(RUS_ref.l_gendersuffix)}" linebreak
+	"  [92][96][99] [A3][A0][99][9F][91][9F][9A][C6]...[03]" eob
 
 l_0xef7710:
     newline

@@ -290,7 +290,7 @@ l_0xc687a5:
 
 l_0xc687e4:
     "@What a great adventure we had together." next
-    "@Please turn off the power.[1F 50]" eob
+    "@Please turn off the power." eob
 
 l_0xc6880b:
     "{unset(flag 479)}[1F D2 01]{set(flag 698)}" eob
