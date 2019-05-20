@@ -149,6 +149,13 @@ abandoned_single:
 //	"отказывается" eob
 	"[A0][A4][9C][91][99][C2][93][91][96][A4][A3][C6]" eob
 
+lost_battle_multi:
+//	"[1D 19 02][1B 03 {e(lost_battle_single)}][19 10 02][1D 0D 00 01 02][1B 03 {e(lost_battle_single)}]проигрывают" eob
+	"[1D 19 02][1B 03 {e(lost_battle_single)}][19 10 02][1D 0D 00 01 02][1B 03 {e(lost_battle_single)}][A1][A2][A0][9A][94][A2][C2][93][91][C5][A4]" eob
+lost_battle_single:
+//	"проигрывает" eob
+	"[A1][A2][A0][9A][94][A2][C2][93][91][96][A4]" eob
+
 l_encounter_end:
 //	"[1C 14 02][09 03 {e(l_enc_end2)} {e(l_enc_end3)} {e(l_enc_end3)}]ют" eob
 	"[1C 14 02][09 03 {e(l_enc_end2)} {e(l_enc_end3)} {e(l_enc_end3)}][C5][A4]" eob
