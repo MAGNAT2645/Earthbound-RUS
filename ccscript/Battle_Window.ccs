@@ -1,0 +1,1365 @@
+import asm65816
+import ASMRef
+
+ROM[0xC2311B] = JMP_l (Battle_Window)
+
+// C4A1F2
+// Text window used
+// By default,
+// Small window 18 (0x12)
+// Medium window 15 (0x0F)
+// Large window 48 (0x30)
+Battle_Window_Numbers: {
+"[12][0F][30]"
+}
+
+// C2311B
+Battle_Window: {
+	REP	(0x31)
+	PHD
+	PHA
+	TDC
+	ADC_i	(0xFFD8)
+	TCD
+	PLA
+	STX_d	(0x04)
+	STA_d	(0x26)			//Character number
+	STZ_d	(0x24)
+	LDA_i	(0x0000)
+	JSL	(0xC2FEF9)
+	LDA_d	(0x26)
+	DEC
+	LDY_i	(0x005F)
+	JSL	(Eight_Bit_Mult_YxA)
+	CLC
+	ADC_i	(0x99CE)
+	STA_d	(0x22)			//Store stat pointer
+	LDY_i	(0x000E)		//Checks permanent status
+	LDA_diy	(0x22)
+	AND_i	(0x00FF)
+	CMP_i	(0x0003)		//Permanent status 3, paralysis
+	BEQ_a	(Paralyzed)
+	LDY_i	(0x0010)		//Checks in-battle status
+	LDA_diy	(0x22)
+	AND_i	(0x00FF)
+	CMP_i	(0x0003)		//In-battle status 3, immobilization
+	BNE_a	(Check_Weapon_1)
+
+Paralyzed:
+	LDA_i	(0x0002)
+	STA_d	(0x20)			//Trigger "Do Nothing"
+	BRA_a	(Check_Weapon_4)	//Branch if paralyzed or immobilized
+
+Check_Weapon_1:
+	LDY_i	(0x0031)
+	LDA_diy	(0x22)			//Equipped weapon slot
+	AND_i	(0x00FF)
+	BEQ_a	(Check_Weapon_2)
+	DEC
+	CLC
+	ADC_d	(0x22)
+	TAX
+	LDA_x	(0x0023)		//Equipped weapon
+	AND_i	(0x00FF)
+
+Check_Weapon_2:
+	CMP_i	(0x0000)
+	BEQ_a	(Check_Weapon_3)	//Branch if no weapon
+	LDY_i	(0x0027)
+	JSL	(Eight_Bit_Mult_YxA)
+	CLC
+	ADC_i	(0x0019)
+	TAX
+	LDA_xl	(Item_Configuration_Table)
+	AND_i	(0x00FF)
+	AND_i	(0x0003)
+	CMP_i	(0x0001)
+	BNE_a	(Check_Weapon_3)	//Branch if weapon bashes
+	LDA_i	(0x0001)
+	STA_d	(0x20)
+	BRA_a	(Check_Weapon_4)
+
+Check_Weapon_3:
+	STZ_d	(0x20)
+
+Check_Weapon_4:
+	LDA_a	(0x98B1)
+	AND_i	(0x00FF)
+	BNE_a	(Auto_Fight_Code)
+	BRA_a	(Battle_Window_Size)	//Branch if not Auto Fight
+
+// Start of Auto Fight routine
+// Checks to see if the character has the Can't Concentrate status
+Auto_Fight_Code:
+	LDY_i	(0x0012)
+	LDA_diy	(0x22)
+	AND_i	(0x00FF)
+	BEQ_a	(Feeling_Strange)	//Branch if user does not have Can't Concentrate status
+	JMP_l	(Weapon_Target)		//Branch if user has Can't Concentrate status
+
+// Checks to see if the character has the Feeling Strange status
+Feeling_Strange:
+	LDY_i	(0x0011)
+	LDA_diy	(0x22)
+	AND_i	(0x00FF)
+	CMP_i	(0x0001)
+	BNE_a	(Mushroomized)		//Branch if user does not have Feeling Strange status
+	JMP_l	(Weapon_Target)		//Branch if user has Feeling Strange status
+
+// Checks to see if the character has the Mushroomized status
+Mushroomized:
+	LDY_i	(0x000F)
+	LDA_diy	(0x22)
+	AND_i	(0x00FF)
+	CMP_i	(0x0001)
+	BNE_a	(Char_Check)		//Branch if user does not have Mushroomized status
+	JMP_l	(Weapon_Target)		//Branch if user has Mushroomized status
+
+// Checks character number and branches to the physical attack section if not character 1 or 4
+Char_Check:
+	LDA_d	(0x26)
+	CMP_i	(0x0001)
+	BEQ_a	(Lifeup_Omega)		//Branch if character 1
+	LDA_d	(0x26)
+	CMP_i	(0x0004)
+	BEQ_a	(Lifeup_Omega)		//Branch if character 4
+	JMP_l	(Weapon_Target)		//Branch if character is not character 1 or 4
+
+// Checks to see if character knows Lifeup omega
+Lifeup_Omega:
+	SEP	(0x20)
+	LDA_8	(0x01)
+	STA_a	(0xA981)		//Default command?
+	LDA_8	(0x1A)
+	STA_a	(0xA97E)
+	REP	(0x20)
+	LDA_i	(0x0023)		//Number in Battle Action Table
+	STA_a	(0xA97F)
+	LDX_i	(0x001A)		//Number in PSI Ability Table
+	LDA_d	(0x26)
+	JSL	(Check_PSI_Learned)	//Check if PSI is known routine
+	CMP_i	(0x0000)
+	BEQ_a	(Lifeup_Gamma)		//Branch if user doesn't know Lifeup omega
+	LDY_i	(0x004D)
+	LDA_al	(0xD57D0F)		//Checks PP Cost byte in Battle Action Table
+	AND_i	(0x00FF)
+	CMP_diy	(0x22)
+	BEQ_a	(Num_Char_Check)
+	BCS_a	(Lifeup_Gamma)		//Branch if not enough PP for Lifeup omega
+
+// Only uses Lifeup omega if there is more than one living character
+Num_Char_Check:
+	LDA_i	(0x0000)
+	JSL	(Count_Characters)
+	CMP_i	(0x0002)
+	BCC_a	(Lifeup_Gamma)		//Branch if only one PC alive
+	LDY_i	(0x0000)
+	STY_d	(0x1E)
+	JMP	(Next_Char_2)
+
+// Checks if the current character is not one of the playable characters?
+NPC_Char_Check:
+	LDA_y	(0x986F)
+	AND_i	(0x00FF)
+	TAX
+	CPX_i	(0x0001)
+	BCC_a	(Next_Char_1)
+	CPX_i	(0x0004)
+	BEQ	(HP_Check)		//Branch if target is one of the playable characters
+	BCS_a	(Next_Char_1)		//Skip if not character 1-4
+
+// Only uses Lifeup if a character has low HP, which is considered 25% of max HP or lower.
+HP_Check:
+	TXA
+	DEC
+	LDY_i	(0x005F)
+	JSL	(Eight_Bit_Mult_YxA)
+	TAX
+	LDA_x	(0x99D8)		//Maximum HP
+	LSR
+	LSR
+	CMP_x	(0x9A15)		//HP
+	BCC_a	(Lifeup_Gamma)
+	BEQ_a	(Lifeup_Gamma)		//Branch if target has 25% Max HP or less
+
+// Checks next character
+Next_Char_1:
+	LDY_d	(0x1E)
+	INY
+	STY_d	(0x1E)
+
+// Checks next character
+Next_Char_2:
+	CPY_i	(0x0006)
+	BCC_a	(NPC_Char_Check)	//Move to next character
+	SEP	(0x20)
+	LDA_8	(0x04)
+	STA_a	(0xA981)
+	JMP	(Char_Target)		//Branch if targeted someone
+
+// Checks to see if character knows Lifeup gamma
+Lifeup_Gamma:
+	SEP	(0x20)
+	LDA_8	(0x19)
+	STA_a	(0xA97E)
+	REP	(0x20)
+	LDA_i	(0x0022)		//Number in Battle Action Table
+	STA_a	(0xA97F)
+	LDX_i	(0x0019)		//Number in PSI Ability Table
+	LDA_d	(0x26)
+	JSL	(Check_PSI_Learned)	//Check if PSI is known routine
+	CMP_i	(0x0000)
+	BEQ_a	(Lifeup_Beta)		//Branch if user doesn't know Lifeup gamma
+	LDY_i	(0x004D)
+	LDA_al	(0xD57D03)		//Checks PP Cost byte in Battle Action Table
+	AND_i	(0x00FF)
+	CMP_diy	(0x22)
+	BEQ_a	(Lifeup_Target_1)	//Branch if Lifeup gamma is to be cast
+	BCS_a	(Lifeup_Beta)		//Branch if not enough PP for Lifeup gamma
+
+// Determines which character needs Lifeup gamma the most
+Lifeup_Target_1:
+	JSL	(0xC4A15D)		//Target a Lifeup PSI
+	SEP	(0x20)
+	STA_a	(0xA982)
+	REP	(0x20)
+	AND_i	(0x00FF)
+	BEQ_a	(Lifeup_Beta)		//Branch if Lifeup gamma is not to be cast
+	JMP	(Char_Target)		//Branch if targeted someone
+
+// Checks to see if character knows Lifeup beta
+Lifeup_Beta:
+	SEP	(0x20)
+	LDA_8	(0x18)
+	STA_a	(0xA97E)
+	REP	(0x20)
+	LDA_i	(0x0021)		//Number in Battle Action Table
+	STA_a	(0xA97F)
+	LDX_i	(0x0018)		//Number in PSI Ability Table
+	LDA_d	(0x26)
+	JSL	(Check_PSI_Learned)	//Check if PSI is known routine
+	CMP_i	(0x0000)
+	BEQ_a	(Lifeup_Alpha)		//Branch if user doesn't know Lifeup beta
+	LDY_i	(0x004D)
+	LDA_al	(0xD57CF7)		//Checks PP Cost byte in Battle Action Table
+	AND_i	(0x00FF)
+	CMP_diy	(0x22)
+	BEQ_a	(Lifeup_Target_2)	//Branch if Lifeup beta is to be cast
+	BCS_a	(Lifeup_Alpha)		//Branch if not enough PP for Lifeup beta
+
+// Determines which character needs Lifeup beta the most
+Lifeup_Target_2:
+	JSL	(0xC4A15D)		//Target a Lifeup PSI
+	SEP	(0x20)
+	STA_a	(0xA982)
+	REP	(0x20)
+	AND_i	(0x00FF)
+	BNE_a	(Char_Target)		//Branch if targeted someone
+
+// Checks to see if character knows Lifeup alpha
+Lifeup_Alpha:
+	SEP	(0x20)
+	LDA_8	(0x17)
+	STA_a	(0xA97E)
+	REP	(0x20)
+	LDA_i	(0x0020)		//Number in Battle Action Table
+	STA_a	(0xA97F)
+	LDX_i	(0x0017)		//Number in PSI Ability Table
+	LDA_d	(0x26)
+	JSL	(Check_PSI_Learned)	//Check if PSI is known routine
+	CMP_i	(0x0000)
+	BEQ_a	(Healing_Omega)		//Branch if user doesn't know Lifeup alpha
+	LDY_i	(0x004D)
+	LDA_al	(0xD57CEB)		//Checks PP Cost byte in Battle Action Table
+	AND_i	(0x00FF)
+	CMP_diy	(0x22)
+	BEQ_a	(Lifeup_Target_3)	//Branch if Lifeup alpha is to be cast
+	BCS_a	(Healing_Omega)		//Branch if not enough PP for Lifeup alpha
+
+// Determines which character needs Lifeup alpha the most
+Lifeup_Target_3:
+	JSL	(0xC4A15D)		//Target a Lifeup PSI
+	SEP	(0x20)
+	STA_a	(0xA982)
+	REP	(0x20)
+	AND_i	(0x00FF)
+	BEQ_a	(Healing_Omega)		//Branch if didn't target anyone
+
+// After picking an action and picking a target, it jumps here
+Char_Target:
+	REP	(0x20)
+	LDA_d	(0x26)
+	SEP	(0x20)
+	STA_a	(0xA97D)
+	REP	(0x20)
+	LDA_a	(0xA97F)
+	BRA_a	(Return)		//End
+
+// Checks to see if character knows Healing omega
+Healing_Omega:
+	SEP	(0x20)
+	LDA_8	(0x1E)
+	STA_a	(0xA97E)
+	REP	(0x20)
+	LDA_i	(0x0027)		//Number in Battle Action Table
+	STA_a	(0xA97F)
+	LDX_i	(0x001E)		//Number in PSI Ability Table
+	LDA_d	(0x26)
+	JSL	(Check_PSI_Learned)	//Check if PSI is known routine
+	CMP_i	(0x0000)
+	BEQ_a	(Healing_Gamma)		//Branch if user doesn't known Healing omega
+	LDY_i	(0x004D)
+	LDA_al	(0xD57D3F)		//Checks PP Cost byte in Battle Action Table
+	AND_i	(0x00FF)
+	CMP_diy	(0x22)
+	BEQ_a	(Healing_Target_Unconscious_Omega) //Checks for Unconscious
+	BCS_a	(Healing_Gamma)		//Branch if not enough PP for Healing omega
+
+// Uses Healing omega on an unconscious character
+Healing_Target_Unconscious_Omega:
+	LDX_i	(0x0001)
+	LDA_i	(0x0000)
+	JSL	(0xC4A0CF)		//Target Healing PSI
+	SEP	(0x20)
+	STA_a	(0xA982)
+	REP	(0x20)
+	AND_i	(0x00FF)
+	BNE_a	(Char_Target)		//Branch if targetting someone
+
+// Checks to see if character knows Healing gamma
+Healing_Gamma:
+	SEP	(0x20)
+	LDA_8	(0x1D)
+	STA_a	(0xA97E)
+	REP	(0x20)
+	LDA_i	(0x0026)		//Number in Battle Action Table
+	STA_a	(0xA97F)
+	LDX_i	(0x001D)		//Number in PSI Ability Table
+	LDA_d	(0x26)
+	JSL	(Check_PSI_Learned)	//Check if PSI is known routine
+	CMP_i	(0x0000)
+	BEQ_a	(Healing_Beta)		//Branch if user doesn't known Healing gamma
+	LDY_i	(0x004D)
+	LDA_al	(0xD57D33)		//Checks PP Cost byte in Battle Action Table
+	AND_i	(0x00FF)
+	CMP_diy	(0x22)
+	BEQ_a	(Healing_Target_Paralysis) //Checks for Paralysis
+	BCS_a	(Healing_Beta)		//Branch if not enough PP for Healing gamma
+
+// Uses Healing gamma on a paralyzed character
+Healing_Target_Paralysis:
+	LDX_i	(0x0003)
+	LDA_i	(0x0000)
+	JSL	(0xC4A0CF)		//Target Healing PSI
+	SEP	(0x20)
+	LDY_i	(0xA982)
+	STY_d	(0x1E)
+	STA_y	(0x0000)
+	REP	(0x20)
+	AND_i	(0x00FF)
+	BEQ_a	(Healing_Target_Diamondized) //If not Paralyzed, checks for Diamondized
+	JMP	(Char_Target)		//Branch if targeted someone
+
+// Uses Healing gamma on a diamondized character
+Healing_Target_Diamondized:
+	LDX_i	(0x0002)
+	LDA_i	(0x0000)
+	JSL	(0xC4A0CF)		//Target Healing PSI
+	SEP	(0x20)
+	LDY_d	(0x1E)
+	STA_y	(0x0000)
+	REP	(0x20)
+	AND_i	(0x00FF)
+	BEQ_a	(Healing_Target_Unconscious) //If not Diamondized, checks for Unconscious
+	JMP	(Char_Target)		//Branch if targeted someone
+
+// Uses Healing gamma on an unconscious character
+// If the user knows Healing omega, that PSI is prioritized for an unconscious target
+Healing_Target_Unconscious:
+	LDX_i	(0x0001)
+	LDA_i	(0x0000)
+	JSL	(0xC4A0CF)		//Target Healing PSI
+	SEP	(0x20)
+	LDY_d	(0x1E)
+	STA_y	(0x0000)
+	REP	(0x20)
+	AND_i	(0x00FF)
+	BEQ_a	(Healing_Beta)
+	JMP	(Char_Target)		//Branch if targeted someone
+
+// Checks to see if character knows Healing beta
+Healing_Beta:
+	SEP	(0x20)
+	LDA_8	(0x1C)
+	STA_a	(0xA97E)
+	REP	(0x20)
+	LDA_i	(0x0025)		//Number in Battle Action Table
+	STA_a	(0xA97F)
+	LDX_i	(0x001C)		//Number in PSI Ability Table
+	LDA_d	(0x26)
+	JSL	(Check_PSI_Learned)	//Check if PSI is known routine
+	CMP_i	(0x0000)
+	BNE_a	(Healing_Beta_PP)	//Branch if user knows Healing beta
+	JML	(Healing_Alpha)		//Branch if user doesn't know Healing beta; checks for Healing alpha
+
+// Healing beta PP check
+Healing_Beta_PP:
+	LDY_i	(0x004D)
+	LDA_al	(0xD57D27)		//Checks PP Cost byte in Battle Action Table
+	AND_i	(0x00FF)
+	CMP_diy	(0x22)
+	BEQ_a	(Healing_Target_Poison)	//Checks for Poison status
+	BCS_a	(Healing_Alpha)		//Branch if not enough PP for Healing beta; checks for Healing alpha
+
+// Uses Healing beta on a poisoned character
+Healing_Target_Poison:
+	LDX_i	(0x0005)
+	LDA_i	(0x0000)
+	JSL	(0xC4A0CF)		//Target Healing PSI
+	SEP	(0x20)
+	LDY_i	(0xA982)
+	STY_d	(0x1C)
+	STA_y	(0x0000)
+	REP	(0x20)
+	AND_i	(0x00FF)
+	BEQ_a	(Healing_Target_Nausea)	//If target isn't Poisoned, check for Nausea
+	JMP	(Char_Target)		//Branch if targeted someone
+
+// Uses Healing beta on a nauseous character
+Healing_Target_Nausea:
+	LDX_i	(0x0004)
+	LDA_i	(0x0000)
+	JSL	(0xC4A0CF)		//Target Healing PSI
+	SEP	(0x20)
+	LDY_d	(0x1C)
+	STA_y	(0x0000)
+	REP	(0x20)
+	AND_i	(0x00FF)
+	BEQ_a	(Healing_Target_Crying)	//If target isn't Nauseous, check for Crying
+	JMP	(Char_Target)		//Branch if targeted someone
+
+// Uses Healing beta on a crying character
+Healing_Target_Crying:
+	LDX_i	(0x0002)
+	TXA
+	JSL	(0xC4A0CF)		//Target Healing PSI
+	SEP	(0x20)
+	LDY_d	(0x1C)
+	STA_y	(0x0000)
+	REP	(0x20)
+	AND_i	(0x00FF)
+	BEQ_a	(Healing_Target_Strange) //If target isn't Crying, check for Healing alpha
+	JMP	(Char_Target)		//Branch if targeted someone
+
+// Uses Healing beta on a feeling strange character
+Healing_Target_Strange:
+	LDX_i	(0x0001)
+	LDA_i	(0x0003)
+	JSL	(0xC4A0CF)		//Target Healing PSI
+	SEP	(0x20)
+	LDY_d	(0x1C)
+	STA_y	(0x0000)
+	REP	(0x20)
+	AND_i	(0x00FF)
+	BEQ_a	(Healing_Alpha)
+	JMP	(Char_Target)		//Branch if targeted someone
+
+// Checks to see if character knows Healing alpha
+Healing_Alpha:
+	SEP	(0x20)
+	LDA_8	(0x1B)
+	STA_a	(0xA97E)
+	REP	(0x20)
+	LDA_i	(0x0024)		//Number in Battle Action Table
+	STA_a	(0xA97F)
+	LDX_i	(0x001B)		//Number in PSI Ability Table
+	LDA_d	(0x26)
+	JSL	(Check_PSI_Learned)	//Check if PSI is known routine
+	CMP_i	(0x0000)
+	BEQ_a	(Weapon_Target)		//Branch if user doesn't have Healing alpha
+	LDY_i	(0x004D)
+	LDA_al	(0xD57D1B)		//Checks PP Cost byte in Battle Action Table
+	AND_i	(0x00FF)
+	CMP_diy	(0x22)
+	BEQ_a	(Healing_Target_Cold)	//Checks for Cold status
+	BCS_a	(Weapon_Target)		//Branch if user doesn't have enough PP for Healing alpha
+
+// Uses Healing alpha on a character with a cold
+Healing_Target_Cold:
+	LDX_i	(0x0007)
+	LDA_i	(0x0000)
+	JSL	(0xC4A0CF)		//Target Healing PSI
+	SEP	(0x20)
+	LDY_i	(0xA982)
+	STY_d	(0x1E)
+	STA_y	(0x0000)
+	REP	(0x20)
+	AND_i	(0x00FF)
+	BEQ_a	(Healing_Target_Sunstroke) //If target doesn't have a Cold, check for Sunstroke
+	JMP	(Char_Target)		//Branch if targeted someone
+
+// Uses Healing alpha on a character with sunstroke
+Healing_Target_Sunstroke:
+	LDX_i	(0x0006)
+	LDA_i	(0x0000)
+	JSL	(0xC4A0CF)		//Target Healing PSI
+	SEP	(0x20)
+	LDY_d	(0x1E)
+	STA_y	(0x0000)
+	REP	(0x20)
+	AND_i	(0x00FF)
+	BEQ_a	(Healing_Target_Sleep)	//If target doesn't have Sunstroke, check for Sleep
+	JMP	(Char_Target)		//Branch if targeted someone
+
+// Uses Healing alpha on a character with sleep
+Healing_Target_Sleep:
+	LDX_i	(0x0001)
+	LDA_i	(0x0002)
+	JSL	(0xC4A0CF)		//Target Healing PSI
+	SEP	(0x20)
+	LDY_d	(0x1E)
+	STA_y	(0x0000)
+	REP	(0x20)
+	AND_i	(0x00FF)
+	BEQ_a	(Weapon_Target)		//Branch if no one has a status effect that can be healed
+	JMP	(Char_Target)		//Branch if targeted someone
+
+Weapon_Target:
+	LDA_d	(0x20)
+	BEQ_a	(Use_Bash)		//Branch if using a Bash-type weapon
+	CMP_i	(0x0001)
+	BEQ_a	(Use_Shoot)		//Branch if using a Shoot-type weapon
+	CMP_i	(0x0002)
+	BEQ_a	(Weapon_Paralyzed)	//Branch if paralyzed/immobilized
+	BRA_a	(Weapon_Attack)
+
+Use_Bash:
+	LDA_i	(0x0004)		//Use Bash command
+	STA_d	(0x1A)
+	BRA_a	(Weapon_Attack)
+
+Use_Shoot:
+	LDA_i	(0x0005)		//Use Shoot command
+	STA_d	(0x1A)
+	BRA_a	(Weapon_Attack)
+
+Weapon_Paralyzed:
+	LDA_i	(0x0001)
+	BRA_a	(Return)		//End
+
+// Attacks a random target with a physical attack
+Weapon_Attack:
+	LDA_d	(0x26)
+	SEP	(0x20)
+	STA_a	(0xA97D)
+	STZ_a	(0xA97E)
+	REP	(0x20)
+	LDA_d	(0x1A)
+	STA_a	(0xA97F)
+	SEP	(0x20)
+	LDA_8	(0x11)
+	STA_a	(0xA981)
+	REP	(0x20)
+	LDA_a	(0xAD56)
+	CLC
+	ADC_a	(0xAD58)
+	JSL	(Rand_0_to_A1)
+	SEP	(0x20)
+	INC
+	STA_a	(0xA982)
+	REP	(0x20)
+	LDA_d	(0x1A)
+
+	BRA_a	(Return)		//End
+
+// Checks character number in order to give Paula and Poo larger battle windows
+Battle_Window_Size:
+	JSL	(0xEF0262)
+	LDA_d	(0x26)
+	CMP_i	(0x0002)
+	BEQ_a	(Large_Menu_Size)	//Branch if character 2
+	LDA_d	(0x26)
+	CMP_i	(0x0004)
+	BNE_a	(Small_Menu_Size)	//Branch if not character 4
+
+Large_Menu_Size:
+	LDA_i	(0x0001)		//Increases Accumulator by 1
+	STA_d	(0x1A)
+	BRA_a	(Window_Size_Leader_Check)
+
+Small_Menu_Size:
+	STZ_d	(0x1A)			//Sets Accumulator to 0, for small menu
+
+Window_Size_Leader_Check:
+	LDA_d	(0x04)
+	BNE_a	(Assign_Window_Size)	//Branch if not party leader
+	INC_d	(0x1A)			//Increases Accumulator by 1
+
+Assign_Window_Size:
+	ASMLoadAddress06 (Battle_Window_Numbers) //Number in Accumulator determines window size.  0 = small, 1 = medium, 2 = large
+	LDA_d	(0x1A)
+	CLC
+	ADC_d	(0x06)
+	STA_d	(0x06)
+	STA_d	(0x16)
+	LDA_d	(0x08)
+	STA_d	(0x18)
+	LDA_dl	(0x06)			//Battle menu window number
+	AND_i	(0x00FF)
+	JSL	(Create_Window_Proxy)	//Open Window number based on the number in the Accumulator
+	LDA_d	(0x26)
+	DEC
+	LDY_i	(0x005F)
+	JSL	(Eight_Bit_Mult_YxA)
+	CLC
+	ADC_i	(0x99CE)
+	STA_d	(0x06)
+	PHB
+	SEP	(0x20)
+	PLA
+	STA_d	(0x08)
+	STZ_d	(0x09)
+	REP	(0x20)
+	LDA_d	(0x06)
+	STA_d	(0x0E)
+	LDA_d	(0x08)
+	STA_d	(0x10)
+	LDX_i	(0x0005)
+	LDA_d	(0x16)
+	STA_d	(0x06)
+	LDA_d	(0x18)
+	STA_d	(0x08)
+	LDA_dl	(0x06)			//Battle menu window number
+	AND_i	(0x00FF)
+
+// C235DC
+	JSL	(0xC2032B)		//Get/display name
+	LDA_d	(0x20)
+	BEQ_a	(Bash1)			//35F5 0x0C Bash
+	CMP_i	(0x0001)
+	BEQ_a	(Shoot)			//3616 0x28 Shoot
+	CMP_i	(0x0002)
+	BEQ_a	(Do_Nothing)		//3637 0x44 Do_Nothing
+	BRA_a	(Para_Check)		//3656 0x61 Para_Check
+
+Bash1:
+	ASMLoadAddress0E (0xC49FE1)	//Reads Bash's entry from the Battle Window Text routine
+	ASMLoadAddress12 (0x000000)
+	LDY_i	(0x0000)		//First row
+	TYX				//0 spaces over (transfers the value in Y to X)
+	LDA_i	(0x0001)
+	JSL	(Selection_Menu_Item_Setup) //Adds the text to the menu
+	BRA_a	(Para_Check)		//3656 0x40 Para_Check
+
+Shoot:
+	ASMLoadAddress0E (Shoot_Text)	//Reads Shoot's entry from the Battle Window Text routine
+	ASMLoadAddress12 (0x000000)
+	LDY_i	(0x0000)		//First row
+	TYX				//0 spaces over (transfers the value in Y to X)
+	LDA_i	(0x0001)
+	JSL	(Selection_Menu_Item_Setup) //Adds the text to the menu
+	BRA_a	(Para_Check)		//3656 0x1F Para_Check
+
+Do_Nothing:
+	ASMLoadAddress0E (DN_Text)	//Reads Do Nothing's entry from the Battle Window Text routine
+	ASMLoadAddress12 (0x000000)
+	LDY_i	(0x0000)		//First row
+	TYX				//0 spaces over (transfers the value in Y to X)
+	LDA_i	(0x0001)
+	JSL	(Selection_Menu_Item_Setup) //Adds the text to the menu
+
+Para_Check:
+	LDA_d	(0x20)
+	CMP_i	(0x0002)
+	BNE_a	(Bash2)			//3660 0x03 Bash2
+	BRA_a	(First_Char_Check)	//Skips next two if paralyzed or immobilized, 0x36E2
+
+Bash2:
+	ASMLoadAddress0A (0xC49FE1)	//Reads Bash's entry from the Battle Window Text routine
+	ASMLoadAddress06 (0x000000)
+	LDA_d	(0x06)
+	STA_d	(0x16)
+	LDA_d	(0x08)
+	STA_d	(0x18)
+
+Goods:
+	LDA_i	(0x0010)		//Goods
+	LDX_d	(0x0A)
+	STX_d	(0x06)
+	LDX_d	(0x0C)
+	STX_d	(0x08)
+	CLC
+	ADC_d	(0x06)
+	STA_d	(0x06)
+	STA_d	(0x0E)
+	LDA_d	(0x08)
+	STA_d	(0x10)
+	LDA_d	(0x16)
+	STA_d	(0x06)
+	LDA_d	(0x18)
+	STA_d	(0x08)
+	LDA_d	(0x06)
+	STA_d	(0x12)
+	LDA_d	(0x08)
+	STA_d	(0x14)
+
+	LDY_i	(0x0000)		//First row
+	LDX_i	(0x0007)		//7 spaces over
+	LDA_i	(0x0002)
+	JSL	(Selection_Menu_Item_Setup) //Adds the text to the menu
+
+Defend:
+	LDA_i	(0x0040)		//Defend
+	LDX_d	(0x0A)
+	STX_d	(0x06)
+	LDX_d	(0x0C)
+	STX_d	(0x08)
+	CLC
+	ADC_d	(0x06)
+	STA_d	(0x06)
+	STA_d	(0x0E)
+	LDA_d	(0x08)
+	STA_d	(0x10)
+	LDA_d	(0x16)
+	STA_d	(0x06)
+	LDA_d	(0x18)
+	STA_d	(0x08)
+	LDA_d	(0x06)
+	STA_d	(0x12)
+	LDA_d	(0x08)
+	STA_d	(0x14)
+
+	LDY_i	(0x0001)		//Second row
+	LDX_i	(0x0007)		//7 spaces over
+	LDA_i	(0x0005)
+	JSL	(Selection_Menu_Item_Setup) //Adds the text to the menu
+
+First_Char_Check:
+	LDA_d	(0x04)
+	BNE_a	(Spy)
+
+Bigger_Window:
+	LDA_d	(0x1A)
+	CMP_i	(0x0002)
+	BNE_a	(Smaller_Window)	//36F5 0x05
+	LDX_i	(0x0010)		//0x10 spaces over
+	BRA_a	(Paula_Window)		//36F8 0x03
+
+Smaller_Window:
+	LDX_i	(0x000B)		//0xB spaces over
+
+Paula_Window:
+	STX_d	(0x04)
+	LDA_d	(0x26)
+	CMP_i	(0x0002)
+	BEQ_a	(Paula_Window_2)	//3708 0x07
+	LDA_d	(0x26)
+	CMP_i	(0x0004)
+	BNE_a	(Bash3)			//370C
+
+Paula_Window_2:
+	INC_d	(0x04)
+	INC_d	(0x04)
+
+Bash3:
+	ASMLoadAddress06 (0xC49FE1)	//Reads Bash's entry from the Battle Window Text routine
+	LDA_d	(0x06)
+	STA_d	(0x16)
+	LDA_d	(0x08)
+	STA_d	(0x18)
+	ASMLoadAddress0A (0x000000)
+
+Auto_Fight:
+	LDA_i	(0x0020)		//Auto Fight
+	CLC
+	ADC_d	(0x06)
+	STA_d	(0x06)
+	STA_d	(0x0E)
+	LDA_d	(0x08)
+	STA_d	(0x10)
+	LDA_d	(0x0A)
+	STA_d	(0x06)
+	LDA_d	(0x0C)
+	STA_d	(0x08)
+	LDA_d	(0x06)
+	STA_d	(0x12)
+	LDA_d	(0x08)
+	STA_d	(0x14)
+
+	LDY_i	(0x0000)		//First row
+	LDX_i	(0x000E)
+	LDA_i	(0x0003)
+	JSL	(Selection_Menu_Item_Setup) //Adds the text to the menu
+
+Run_Away:
+	LDA_i	(0x0080)		//Run away
+	LDX_d	(0x16)
+	STX_d	(0x06)
+	LDX_d	(0x18)
+	STX_d	(0x08)
+
+	CLC
+	ADC_d	(0x06)
+	STA_d	(0x06)
+	STA_d	(0x0E)
+	LDA_d	(0x08)
+	STA_d	(0x10)
+	LDA_d	(0x0A)
+	STA_d	(0x06)
+	LDA_d	(0x0C)
+	STA_d	(0x08)
+	LDA_d	(0x06)
+	STA_d	(0x12)
+	LDA_d	(0x08)
+	STA_d	(0x14)
+
+	LDY_i	(0x0001)		//Second row
+	LDX_i	(0x000E)
+	LDA_i	(0x0006)
+	JSL	(Selection_Menu_Item_Setup) //Adds the text to the menu
+
+// Adds Spy command
+Spy:
+	LDA_d	(0x26)
+	CMP_i	(0x0003)		//Branch if not character 3
+	BNE_a	(Cant_Conc_Check)
+	ASMLoadAddress0E (Spy_Text)	//Reads Spy's entry from the Battle Window Text routine
+	ASMLoadAddress12 (0x000000)
+	LDY_i	(0x0001)		//Bottom row
+	LDX_i	(0x0000)		//0 spaces over
+	LDA_i	(0x0004)
+	JSL	(Selection_Menu_Item_Setup) //Adds the text to the menu
+	BRA_a	(Pray)
+
+// Check for Can't Concentrate status
+Cant_Conc_Check:
+	LDY_i	(0x0012)
+	LDA_diy	(0x22)
+	AND_i	(0x00FF)
+	BNE_a	(Pray)			//Skips past PSI section (to Pray) if character has Can't Concentrate status
+
+// Adds PSI command
+PSI:
+	ASMLoadAddress0E (0xC4A011)	//Reads PSI's entry from the Battle Window Text routine
+	ASMLoadAddress12 (0x000000)
+	LDY_i	(0x0001)		//Second row
+	LDX_i	(0x0000)		//0x0 spaces over
+	LDA_i	(0x0004)
+	JSL	(Selection_Menu_Item_Setup) //Adds the text to the menu
+
+// Adds Pray to character 2
+Pray:	
+	LDA_d	(0x26)
+	CMP_i	(0x0002)		//Branch if not character 2
+	BNE_a	(Mirror)		//3801 0x07
+	ASMLoadAddress0E (Pray_Text)	//Reads Pray's entry from the Battle Window Text routine
+	ASMLoadAddress12 (0x000000)
+	LDY_i	(0x0000)		//First row
+	LDX_i	(0x000D)		//0xE spaces over
+	LDA_i	(0x0007)
+	JSL	(Selection_Menu_Item_Setup) //Adds the text to the menu
+
+Mirror:
+	LDA_d	(0x26)
+	CMP_i	(0x0004)		//Branch if not character 4
+	BNE_a	(Battle_Window_1)	//3708 0x07
+	ASMLoadAddress0E (Mirror_Text)	//Reads Pray's entry from the Battle Window Text routine
+	ASMLoadAddress12 (0x000000)
+	LDY_i	(0x0000)		//First row
+	LDX_i	(0x000D)		//0xE spaces over
+	LDA_i	(0x0007)
+	JSL	(Selection_Menu_Item_Setup) //Adds the text to the menu
+
+// C23829
+Battle_Window_1:
+	LDX_d	(0x1A)
+	LDA_xl	(Battle_Window_Numbers)	//Battle menu window number
+	AND_i	(0x00FF)
+	JSL	(Set_Window_Focus_Proxy)
+	LDA_d	(0x24)
+	BNE_a	(Battle_Window_2)
+	JSL	(Print_Menu_Items_Proxy)
+
+Battle_Window_2:
+	INC_d	(0x24)
+	LDA_i	(0x0001)
+	JSL	(Selection_Menu_Proxy)
+	CMP_i	(0x0000)
+	BEQ_a	(Battle_Window_3)
+	BRA_a	(Battle_Window_12)
+
+Battle_Window_3:
+	LDA_a	(0x436C)
+	BEQ_a	(Battle_Window_5)
+	LDA_a	(0x0065)
+	AND_i	(0x3000)
+	CMP_i	(0x3000)
+	BNE_a	(Battle_Window_4)
+	JSL	(Resume_HP_Scrolling)
+	LDA_i	(0xFFFF)
+	BRA_a	(Return)
+
+Battle_Window_4:
+	LDA_a	(0x0065)
+	AND_i	(0x0010)
+	BEQ_a	(Battle_Window_5)
+	JSL	(0xE14DE8)
+	BRA_a	(Battle_Window_1)
+
+Battle_Window_5:
+	LDA_a	(0x4DC2)
+	BNE_a	(Battle_Window_11)
+	LDA_a	(0x0065)
+	AND_i	(0x0020)
+	BEQ_a	(Battle_Window_10)
+	JSL	(0xC13E7A)		//Set character level (?)
+	LDY_i	(0x0000)
+	STY_d	(0x22)
+	BRA_a	(Battle_Window_9)
+
+Battle_Window_6:
+	LDA_y	(0x986F)
+	AND_i	(0x00FF)
+	STA_d	(0x1C)
+	BEQ_a	(Battle_Window_8)
+	CMP_i	(0x0004)
+	BEQ_a	(Battle_Window_7)
+	BCS_a	(Battle_Window_8)
+
+Battle_Window_7:
+	TYA
+	LDY_i	(0x004E)
+	JSL	(Eight_Bit_Mult_YxA)
+	CLC
+	LDA_y	(0x9FAC)
+	TAX
+	LDA_d	(0x1C)
+	JSL	(Battle_Init_Player_Stats)
+
+Battle_Window_8:
+	LDY_d	(0x22)
+	INY
+	STY_d	(0x22)
+
+Battle_Window_9:
+	CPY_i	(0x0006)
+	BCC_a	(Battle_Window_6)
+	BRA_a	(Battle_Window_1)
+
+Battle_Window_10:
+	LDA_a	(0x0065)
+	LDA_i	(0x2000)
+	BEQ_a	(Battle_Window_11)
+	JSL	(0xC13EE7)
+	BRA_a	(Battle_Window_1)
+
+Battle_Window_11:
+	JSL	(Resume_HP_Scrolling)
+	LDA_i	(0x0000)
+	BRA_a	(Return)
+
+Battle_Window_12:
+	SEP	(0x20)
+	STZ_a	(0xA97C)
+
+// C238DE
+Battle_Window_Code_Pointers:
+	REP	(0x20)
+	CMP_i	(0x0001)		//Bash/Shoot/Do Nothing command
+	BEQ_a	(Bash_Code)
+
+Goods_Command:
+	CMP_i	(0x0002)		//Goods command
+	BEQ_a	(Goods_Code)
+
+AutoFight_Command:
+	CMP_i	(0x0003)		//Auto Fight command
+	BEQ_a	(AutoFight_Code)
+
+PSI_Spy_Command:
+	CMP_i	(0x0004)		//PSI/Spy command
+	BEQ_a	(Spy_Code)
+
+Defend_Command:
+	CMP_i	(0x0005)		//Defend command
+	BEQ_a	(Defend_Code)
+
+RunAway_Command:
+	CMP_i	(0x0006)		//Run Away command
+	BEQ_a	(RunAway_Code)
+
+PrayMirror_Command:
+	CMP_i	(0x0007)		//Pray/Mirror command
+	BEQ_a	(PrayMirror_Code)
+
+No_Command:
+	BRA_a	(Battle_Window_Code_Pointers_1)
+
+// C23918
+// Bash/Shoot/Do Nothing
+Bash_Code:
+	LDA_d	(0x20)
+	BEQ_a	(Bash_Action)
+	CMP_i	(0x0001)
+	BEQ_a	(Shoot_Action)
+	CMP_i	(0x0002)
+	BEQ_a	(NoEffect_Action)
+	BRA_a	(Bash_Common_1)
+
+Bash_Action:
+	LDA_i	(0x0004)		//Battle action 4 (Bash)
+	STA_d	(0x02)
+	STA_d	(0x1E)
+	BRA_a	(Bash_Common_1)
+
+Shoot_Action:
+	LDA_i	(0x0005)		//Battle action 5 (Shoot)
+	STA_d	(0x02)
+	STA_d	(0x1E)
+	BRA_a	(Bash_Common_1)
+
+NoEffect_Action:
+	LDA_i	(0x0001)		//Battle action 1
+	STA_d	(0x02)
+	STA_d	(0x1E)
+
+Bash_Common_1:
+	LDA_d	(0x1E)
+	STA_d	(0x02)
+	STA_a	(0xA97F)
+	SEP	(0x20)
+
+	LDA_8	(0x11)
+	STA_a	(0xA981)
+
+	REP	(0x20)
+	LDA_d	(0x20)
+	CMP_i	(0x0002)
+	BNE_a	(Bash_Common_2)
+	BRA_a	(Battle_Window_Code_Pointers_1)
+
+Bash_Common_2:
+	LDY_d	(0x02)
+	LDX_i	(0x0001)
+	LDA_i	(0x0000)
+	JSL	(0xC1DE37)
+	SEP	(0x20)
+	STA_a	(0xA982)
+	REP	(0x20)
+	AND_i	(0x00FF)
+	BNE_a	(Bash_Return)
+	BRA_a	(Battle_Window_1)
+
+Bash_Return:
+	BRA_a	(Battle_Window_Code_Pointers_1)
+
+// C23979
+// Goods
+Goods_Code:
+	LDA_d	(0x26)
+	SEP	(0x20)
+	STA_a	(0xA97D)
+	REP	(0x20)
+	LDA_i	(0xA97D)
+	JSL	(0xC1DE31)
+	TAX
+	BNE_a	(Goods_2)
+	JMP	(Battle_Window_1)
+
+Goods_2:
+	LDA_a	(0xA97E)
+	AND_i	(0x00FF)
+	TAX
+	LDA_d	(0x26)
+	JSL	(0xC3E977)
+	SEP	(0x20)
+	STA_a	(0xA97C)
+	REP	(0x20)
+	LDA_a	(0xA97F)
+	STA_d	(0x02)
+	STA_d	(0x1E)
+	BRA_a	(Battle_Window_Code_Pointers_1)
+
+// C239AD
+// Auto Fight
+AutoFight_Code:
+	SEP	(0x20)
+	LDA_8	(0x01)
+	STA_a	(0x98B1)
+	JSL	(0xC20266)
+	LDA_i	(0x0000)
+	STA_d	(0x02)
+	STA_d	(0x1E)
+	BRA_a	(Battle_Window_Code_Pointers_1)
+
+// C239C2
+// Spy
+Spy_Code:
+	LDA_d	(0x26)
+	CMP_i	(0x0003)
+	BNE_a	(PSI_Code)
+	LDA_i	(0x0006)
+	STA_d	(0x02)
+	STA_d	(0x1E)
+	LDA_d	(0x02)
+	STA_a	(0xA97F)
+	SEP	(0x20)
+	LDA_8	(0x11)
+	STA_a	(0xA981)
+	LDY_d	(0x02)
+	LDX_i	(0x0001)
+	REP	(0x20)
+	LDA_i	(0x0000)
+	JSL	(0xC1DE37)
+	SEP	(0x20)
+	STA_a	(0xA982)
+	REP	(0x20)
+	AND_i	(0x00FF)
+	BNE_a	(Spy_Return)
+	BRA_a	(Battle_Window_1)
+
+Spy_Return:
+	BRA_a	(Battle_Window_Code_Pointers_1)
+
+// C239FC
+// PSI
+PSI_Code:
+	LDA_d	(0x26)
+	SEP	(0x20)
+	STA_a	(0xA97D)
+	REP	(0x20)
+	LDA_i	(0xA97D)
+	JSL	(Battle_PSI_Menu_Proxy)
+	TAX
+	BNE_a	(PSI_2)
+	BRA_a	(Battle_Window_1)
+
+PSI_2:
+	SEP	(0x20)
+	STZ_a	(0xA97C)
+	REP	(0x20)
+	LDA_a	(0xA97F)
+	STA_d	(0x02)
+	STA_d	(0x1E)
+	BRA_a	(Battle_Window_Code_Pointers_1)
+
+// C23A23
+// Defend
+Defend_Code:
+	LDA_i	(0x0008)
+	STA_d	(0x02)
+	STA_d	(0x1E)
+	LDA_d	(0x02)
+	STA_a	(0xA97F)
+	SEP	(0x20)
+	STZ_a	(0xA981)
+	BRA_a	(Battle_Window_Code_Pointers_1)
+
+// C23A37
+// Run Away
+RunAway_Code:
+	SEP	(0x20)
+	LDA_8	(0x01)
+	STA_a	(0xA981)
+	REP	(0x20)
+	LDA_d	(0x26)
+	SEP	(0x20)
+	STA_a	(0xA982)
+	REP	(0x20)
+	LDA_i	(0x0117)
+	STA_d	(0x02)
+	STA_d	(0x1E)
+	LDA_d	(0x02)
+	STA_a	(0xA97F)
+	BRA_a	(Battle_Window_Code_Pointers_1)
+
+// C23A58
+// Pray/Mirror
+PrayMirror_Code:
+	LDX_i	(0xA981)
+	STX_d	(0x1C)
+	SEP	(0x20)
+	LDA_8	(0x01)
+	STA_x	(0x0000)
+	REP	(0x20)
+	LDA_i	(0xA982)
+	STA_d	(0x04)
+	LDA_d	(0x26)
+	SEP	(0x20)
+	LDX_d	(0x04)
+	STA_x	(0x0000)
+	REP	(0x20)
+	LDA_d	(0x26)
+
+	CMP_i	(0x0002)
+	BEQ_a	(Giygas_Prayer_Main)
+
+	CMP_i	(0x0004)
+	BEQ_a	(Mirror_Code)
+	BRA_a	(Battle_Window_Code_Pointers_1)
+
+Giygas_Prayer_Main:
+	LDA_a	(0xA97A)
+
+	CMP_i	(0x0004)
+	BEQ_a	(Giygas_Prayer_1)
+
+	CMP_i	(0x0005)
+	BEQ_a	(Giygas_Prayer_2)
+
+	CMP_i	(0x0006)
+	BEQ_a	(Giygas_Prayer_3)
+
+	CMP_i	(0x0007)
+	BEQ_a	(Giygas_Prayer_4)
+
+	CMP_i	(0x0008)
+	BEQ_a	(Giygas_Prayer_5)
+
+	CMP_i	(0x0009)
+	BEQ_a	(Giygas_Prayer_6)
+
+	CMP_i	(0x000A)
+	BEQ_a	(Giygas_Prayer_7)
+
+	CMP_i	(0x000B)
+	BEQ_a	(Giygas_Prayer_8)
+
+	CMP_i	(0x000C)
+	BEQ_a	(Giygas_Prayer_9)
+	BRA_a	(Prayer_Action)
+
+// C23ABA
+Giygas_Prayer_1:
+	LDA_i	(0x0123)		//Battle action 0x123 - First prayer
+	STA_d	(0x02)
+	STA_d	(0x1E)
+	BRA_a	(Prayer_Common)
+
+// C23AC3
+Giygas_Prayer_2:
+	LDA_i	(0x0124)		//Battle action 0x123 - Second prayer
+	STA_d	(0x02)
+	STA_d	(0x1E)
+	BRA_a	(Prayer_Common)
+
+// C23ACC
+Giygas_Prayer_3:
+	LDA_i	(0x0125)		//Battle action 0x123 - Third prayer
+	STA_d	(0x02)
+	STA_d	(0x1E)
+	BRA_a	(Prayer_Common)
+
+// C23AD5
+Giygas_Prayer_4:
+	LDA_i	(0x0126)		//Battle action 0x123 - Fourth prayer
+	STA_d	(0x02)
+	STA_d	(0x1E)
+	BRA_a	(Prayer_Common)
+
+// C23ADE
+Giygas_Prayer_5:
+	LDA_i	(0x0127)		//Battle action 0x123 - Fifth prayer
+	STA_d	(0x02)
+	STA_d	(0x1E)
+	BRA_a	(Prayer_Common)
+
+// C23AE7
+Giygas_Prayer_6:
+	LDA_i	(0x0128)		//Battle action 0x123 - Sixth prayer
+	STA_d	(0x02)
+	STA_d	(0x1E)
+	BRA_a	(Prayer_Common)
+
+// C23AF0
+Giygas_Prayer_7:
+	LDA_i	(0x0129)		//Battle action 0x123 - Seventh prayer
+	STA_d	(0x02)
+	STA_d	(0x1E)
+	BRA_a	(Prayer_Common)
+
+// C23AF9
+Giygas_Prayer_8:
+	LDA_i	(0x012A)		//Battle action 0x123 - Eighth prayer
+	STA_d	(0x02)
+	STA_d	(0x1E)
+	BRA_a	(Prayer_Common)
+
+// C23B02
+Giygas_Prayer_9:
+	LDA_i	(0x012B)		//Battle action 0x123 - Ninth prayer
+	STA_d	(0x02)
+	STA_d	(0x1E)
+	BRA_a	(Prayer_Common)
+
+// C23B0B
+Prayer_Action:
+	LDA_i	(0x0007)		//Battle action 7
+	STA_d	(0x02)
+	STA_d	(0x1E)
+
+// C23B12
+Prayer_Common:
+	LDA_d	(0x02)
+	STA_a	(0xA97F)
+	BRA_a	(Battle_Window_Code_Pointers_1)
+
+// C23B19
+Mirror_Code:
+	LDA_i	(0x0118)		//Battle action 0x118 - Mirror command
+	STA_d	(0x02)
+	STA_d	(0x1E)
+	LDA_d	(0x02)
+	STA_a	(0xA97F)
+	SEP	(0x20)
+	LDA_8	(0x11)
+	LDX_d	(0x1C)
+	STA_x	(0x0000)
+	LDY_d	(0x02)
+	LDX_i	(0x0001)
+	REP	(0x20)
+	LDA_i	(0x0000)
+	JSL	(0xC1DE37)
+	SEP	(0x20)
+	LDX_d	(0x04)
+	STA_x	(0x0000)
+	REP	(0x20)
+	AND_i	(0x00FF)
+	BNE_a	(Battle_Window_Code_Pointers_1)
+	BRA_a	(Battle_Window_1)
+
+// C23B4D
+Battle_Window_Code_Pointers_1:
+	LDX_d	(0x1A)
+	REP	(0x20)
+	LDA_xl	(Battle_Window_Numbers)	//Battle menu window number
+	AND_i	(0x00FF)
+	JSL	(Set_Window_Focus_Proxy)
+	JSL	(Resume_HP_Scrolling)
+	LDA_d	(0x1E)			//Action taken
+	STA_d	(0x02)
+
+Return:
+	PLD
+	RTL
+
+}
+Pray_Text:
+//	"[BE]Молиться[00]"
+	"[BE][7E][A0][9D][9A][A4][C3][A3][C6][00]"
+
+Shoot_Text:
+//	"[BC]Стрелять[00]"
+	"[BC][83][A4][A2][96][9D][C6][A4][C3][00]"
+
+Mirror_Text:
+//	"[BD]Зеркало[00]"
+	"[BD][79][96][A2][9C][91][9D][A0][00]"
+
+Spy_Text:
+//	"[B7]Изучить[00]"
+	"[B7][7A][99][A5][A9][9A][A4][C3][00]"
+
+DN_Text:
+//	"[CF]Пропустить[00]"
+	"[CF][81][A2][A0][A1][A5][A3][A4][9A][A4][C3][00]"

@@ -73,9 +73,9 @@
   Width: 24
   X Offset: 4
   Y Offset: 1
-15:
+15: # Среднее окно команд в бою
   Height: 6
-  Width: 21
+  Width: 27 #23
   X Offset: 1
   Y Offset: 1
 16:
@@ -88,9 +88,9 @@
   Width: 12
   X Offset: 12
   Y Offset: 1
-18:
+18: # Малое окно команд в бою
   Height: 6
-  Width: 14
+  Width: 16
   X Offset: 1
   Y Offset: 1
 19:
@@ -238,7 +238,7 @@
   Width: 30
   X Offset: 1
   Y Offset: 9
-48:
+48: # Большое окно команд в бою
   Height: 6
   Width: 28
   X Offset: 1
