@@ -72,23 +72,33 @@ l_0xc8f590:
     "@It didn't seem to change you at all, though." end
 
 l_0xc8f5d0:
-    "@I'm a detective from Twoson." next
-    "@The statue called Mani Mani or something or other" next
-    "@was stolen from the Happy-Happyism headquarters." next
-    "@Do you have any clues for me?" linebreak
-    "[19 02]Yes" eob
+	/*
+	"@Я - детектив из Тусона." next
+	"@Статуя Мани-Мани или что-то в этом роде" next
+	"@была украдена из штаба Счастливого Счастьенизма." next
+	"@У вас есть какие-нибудь подсказки, нужные мне?" linebreak
+	"[19 02]Да" eob
+	*/
+	"@[B6] - [95][96][A4][96][9C][A4][9A][93] [9A][99] [84][A5][A3][A0][9F][91]." next
+	"@[83][A4][91][A4][A5][C6] [7E][91][9F][9A]-[7E][91][9F][9A] [9A][9D][9A] [A9][A4][A0]-[A4][A0] [93] [C4][A4][A0][9E] [A2][A0][95][96]" next
+	"@[92][C2][9D][91] [A5][9C][A2][91][95][96][9F][91] [9A][99] [AA][A4][91][92][91] [83][A9][91][A3][A4][9D][9A][93][A0][94][A0] [83][A9][91][A3][A4][C3][96][9F][9A][99][9E][91]." next
+	"@[85] [93][91][A3] [96][A3][A4][C3] [9C][91][9C][9A][96]-[9F][9A][92][A5][95][C3] [A1][A0][95][A3][9C][91][99][9C][9A], [9F][A5][98][9F][C2][96] [9E][9F][96]?" linebreak
+	"[19 02][75][91]" eob
 
 l_0xc8f638:
-    " [19 02]No" eob
+//	" [19 02]Нет" eob
+	" [19 02][7F][96][A4]" eob
 
 l_0xc8f63e:
-    "[1C 07 02][11]{clearline}[09 02 {e(l_0xc8f656)} {e(l_0xc8f64d)}]" goto(l_0xc8f64d)
+	"[1C 07 02][11]{clearline}[09 02 {e(l_0xc8f656)} {e(l_0xc8f64d)}]" goto(l_0xc8f64d)
 
 l_0xc8f64d:
-    "@Oh, I see..." end
+//	"@Оу, ну ладно..." end
+	"@[80][A5], [9F][A5] [9D][91][95][9F][A0]..." end
 
 l_0xc8f656:
-    "@Don't try to feed me your lies!" end
+//	"@Не пытайтесь кормить меня вашей ложью!" end
+	"@[7F][96] [A1][C2][A4][91][9B][A4][96][A3][C3] [9C][A0][A2][9E][9A][A4][C3] [9E][96][9F][C6] [93][91][AA][96][9B] [9D][A0][98][C3][C5]!" end
 
 l_0xc8f66a:
     "@If I try to get away, my body will just fall apart." next

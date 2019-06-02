@@ -252,7 +252,7 @@ l_0xc9a593:
 
 l_0xc9a604:
     "{sound(111)}{pause(40)}{window_open(1)}[06 44 00 {e(l_0xc9a69f)}]@I've told you a thousand times. *munch, munch*" next
-    "@I won't join the Happy Happy Religious Group. *munch,munch, munch*" next
+    "@I won't join the Happy Happy Religious Group. *munch, munch, munch*" next
     "@If you get pushy with me, I'll pelt you with peanuts! *munch, munch*{wait}{window_closetop}" eob
 
 l_0xc9a69f:

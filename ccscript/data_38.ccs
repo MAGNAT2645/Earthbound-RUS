@@ -307,7 +307,7 @@ l_0xc8045b:
     "@You know that two people can't ride a bike," next
     "@but did you know that you can't ride a bike" next
     "@when you are carrying an unconscious friend's stuff?" next
-    "@Carrying a lot of items and riding aroud is impossible for you." end
+    "@Carrying a lot of items and riding around is impossible for you." end
 
 l_0xc804d1:
     "[06 49 00 {e(l_0xc808bd)}][06 08 03 {e(l_0xc8054d)}][06 55 00 {e(l_0xc807bc)}][06 54 00 {e(l_0xc806bb)}][06 0D 00 {e(l_0xc80579)}]@Whistle, whistle anywhere.{pause(10)}" linebreak

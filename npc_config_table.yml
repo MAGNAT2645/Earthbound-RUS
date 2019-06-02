@@ -4736,7 +4736,7 @@
   Direction: right
   Event Flag: 0x47
   Movement: 605
-  Show Sprite: when event flag unset
+  Show Sprite: always
   Sprite: 54
   Text Pointer 1: data_46.l_0xc8e734
   Text Pointer 2: $0
@@ -5067,7 +5067,7 @@
   Type: person
 563:
   Direction: down
-  Event Flag: 0x262
+  Event Flag: 0x47
   Movement: 10
   Show Sprite: when event flag set
   Sprite: 63

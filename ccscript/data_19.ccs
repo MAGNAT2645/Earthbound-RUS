@@ -454,7 +454,7 @@ l_0xc6442f:
 
 l_0xc6445f:
     "@I don't think you can carry everything." next
-    "[19 1D 01 01]@Well,  I'll leave just" linebreak
+    "[19 1D 01 01]@Well, I'll leave just" linebreak
     "  the [1C 05 00]." next
     call(l_0xc64600) "[19 1D 02 01][1D 18 00][19 1D 03 01][1B 02 {e(l_0xc6449f)}][1D 18 00]" goto(l_0xc6449f)
 
@@ -478,7 +478,7 @@ l_0xc6451a:
     "{unset(flag 181)}{unset(flag 645)}" call(data_36.l_0xc7de2f) "{window_open(1)}@Hello!" linebreak
     "  This is Escargo Express." linebreak
     " (hee, ha, he, ha)" next
-    "@I just (hee, ha, he, ha)couldn't find your location..." next
+    "@I just (hee, ha, he, ha) couldn't find your location..." next
     "@...You must be somewhere really strange.(hee, ha, he, ha)" next
     "@I've decided, honestly, that... I should give up." next
     "@I'm outta here.  (hee, ha, he, ha)" next

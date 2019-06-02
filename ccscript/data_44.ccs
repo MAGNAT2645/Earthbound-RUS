@@ -497,7 +497,7 @@ l_0xc8a394:
     "[06 10 00 {e(l_0xc8a3dd)}]" goto(l_0xc8a39b)
 
 l_0xc8a39b:
-    "@How annoying!{pause(20)}  Why are you are wandering around?" next
+    "@How annoying!{pause(20)}  Why are you wandering around?" next
     "@Summers is a posh resort, made for adults." end
 
 l_0xc8a3dd:

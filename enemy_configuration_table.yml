@@ -6145,7 +6145,7 @@
   Money: 31
   Movement pattern: 0
   Music: 102
-  Name: '[86][A2][C4][9F][9C][9A][AA][A4][C4][9B][9F] 2' # Фрэнкиштэйн 2
+  Name: '[86][A2][C4][9F][9C][9A][AA][A4][C4][9B][9F] [CD][CD]' # Фрэнкиштэйн [CD][CD]
   Offense: 15
   Overworld Sprite: 0
   PP: 0
@@ -9529,7 +9529,7 @@
   Money: 31
   Movement pattern: 0
   Music: 102
-  Name: '[86][A2][C4][9F][9C][9A][AA][A4][C4][9B][9F] 2' # Фрэнкиштэйн 2
+  Name: '[86][A2][C4][9F][9C][9A][AA][A4][C4][9B][9F] [CD][CD]' # Фрэнкиштэйн [CD][CD]
   Offense: 15
   Overworld Sprite: 0
   PP: 0

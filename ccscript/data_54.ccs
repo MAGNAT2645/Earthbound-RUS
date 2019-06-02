@@ -98,7 +98,8 @@ l_0xc97aa4:
     call(data_22.l_0xc680e2) eob
 
 l_0xc97aaa:
-    "[19 10 01]{rtoarg}@Would you like to stay overnight?@Thank you for always giving such generous tips!" next
+    "[19 10 01]{rtoarg}@Would you like to stay overnight?" linebreak
+    "@Thank you for always giving such generous tips!" next
     "@...Oh, Excuse me,{pause(15)} I haven't gotten any tips from you." end
 
 l_0xc97b06:
@@ -126,16 +127,16 @@ l_0xc97b35:
     "@[7C][91][9C] [95][A0][9D][94][A0] [93][C2] [92][A5][95][96][A4][96] [93] [7E][A5][9F][A3][91][9B][95][96]?" end
 
 l_0xc97b6b:
-    /*
-    "[19 1F]{swap}[19 21 00]{result_is(2)}[1B 03 {e(l_0xc97c30)}][19 25 00][1B 03 {e(l_0xc97bc4)}][1D 20][1B 03 {e(l_0xc97bab)}]" newline
-    "@{user} достал{call(RUS_ref.l_gendersuffix)}" linebreak
-    "  [1C 05 00] и" next
-    "@{target} съел{call(RUS_ref.l_gendersuffix)} это.{sound(68)}[03]" eob
-    */
-    "[19 1F]{swap}[19 21 00]{result_is(2)}[1B 03 {e(l_0xc97c30)}][19 25 00][1B 03 {e(l_0xc97bc4)}][1D 20][1B 03 {e(l_0xc97bab)}]" newline
-    "@{user} [95][A0][A3][A4][91][9D]{call(RUS_ref.l_gendersuffix)}" linebreak
-    "  [1C 05 00] [9A]" next
-    "@{target} [A3][C1][96][9D]{call(RUS_ref.l_gendersuffix)} [C4][A4][A0].{sound(68)}[03]" eob
+	/*
+	"[19 1F]{swap}[19 21 00]{result_is(2)}[1B 03 {e(l_0xc97c30)}][19 25 00][1B 03 {e(l_0xc97bc4)}][1D 20][1B 03 {e(l_0xc97bab)}]" newline
+	"@{user} достал{call(RUS_ref.l_gendersuffix)}" linebreak
+	"  [1C 05 00] и" next
+	"@{target} съел{call(RUS_ref.l_gendersuffix)} это.{sound(68)}[03]" eob
+	*/
+	"[19 1F]{swap}[19 21 00]{result_is(2)}[1B 03 {e(l_0xc97c30)}][19 25 00][1B 03 {e(l_0xc97bc4)}][1D 20][1B 03 {e(l_0xc97bab)}]" newline
+	"@{user} [95][A0][A3][A4][91][9D]{call(RUS_ref.l_gendersuffix)}" linebreak
+	"  [1C 05 00] [9A]" next
+	"@{target} [A3][C1][96][9D]{call(RUS_ref.l_gendersuffix)} [C4][A4][A0].{sound(68)}[03]" eob
 
 l_0xc97bab:
     /*
@@ -725,12 +726,12 @@ l_0xc98b24:
     "@Bye bye.{wait}{font_normal}" eob
 
 l_0xc98b5a:
-    /*
-    "@Привет,{pause(15)}" linebreak
-    "  ты.{wait}{font_normal}" eob
-    */
-    "@[81][A2][9A][93][96][A4],{pause(15)}" linebreak
-    "  [A4][C2].{wait}{font_normal}" eob
+	/*
+	"{font_saturn}@Привет,{pause(15)}" linebreak
+	"  ты.{wait}{font_normal}" eob
+	*/
+	"{font_saturn}@[81][A2][9A][93][96][A4],{pause(15)}" linebreak
+	"  [A4][C2].{wait}{font_normal}" eob
 
 l_0xc98b68:
     call(data_13.l_0xc5d30b) eob

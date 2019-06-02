@@ -237,13 +237,22 @@ l_0xc8e715:
     "@I thought there was something more to you than just your smile." end
 
 l_0xc8e734:
-    "[06 47 00 {e(l_0xc8e7b3)}]@I saw a beat-up tour bus going to Fourside.{pause(20)}  We can't go through the tunnel." next
-    "@The band was really noisy,{pause(15)} so the ghosts didn't approach the bus." next
-    "@It must be great to be so happy-go-lucky, huh!" end
+	/*
+	"[06 47 00 {e(l_0xc8e7b3)}]@Я видел потрёпанный тур-автобус, идущий в Фоурсайд.{pause(20)}  Мы не можем пройти через тоннель." next
+	"@Группа была очень шумной,{pause(15)} поэтому, призраки не подбирались к автобусу." next
+	"@Наверное здорово быть такими беспечными, да?" end
+	*/
+	"[06 47 00 {e(l_0xc8e7b3)}]@[B6] [93][9A][95][96][9D] [A1][A0][A4][A2][97][A1][91][9F][9F][C2][9B] [A4][A5][A2]-[91][93][A4][A0][92][A5][A3], [9A][95][A5][C0][9A][9B] [93] [86][A0][A5][A2][A3][91][9B][95].{pause(20)}  [7E][C2] [9F][96] [9E][A0][98][96][9E] [A1][A2][A0][9B][A4][9A] [A9][96][A2][96][99] [A4][A0][9F][9F][96][9D][C3]." next
+	"@[74][A2][A5][A1][A1][91] [92][C2][9D][91] [A0][A9][96][9F][C3] [AA][A5][9E][9F][A0][9B],{pause(15)} [A1][A0][C4][A4][A0][9E][A5], [A1][A2][9A][99][A2][91][9C][9A] [9F][96] [A1][A0][95][92][9A][A2][91][9D][9A][A3][C3] [9C] [91][93][A4][A0][92][A5][A3][A5]." next
+	"@[7F][91][93][96][A2][9F][A0][96] [99][95][A0][A2][A0][93][A0] [92][C2][A4][C3] [A4][91][9C][9A][9E][9A] [92][96][A3][A1][96][A9][9F][C2][9E][9A], [95][91]?" end
 
 l_0xc8e7b3:
-    "@I wanted to catch one of the ghosts in the tunnel and keep it as a pet." next
-    "@I'm just teasin'.  I can tease like that now that they're gone." end
+	/*
+	"@Я хотел поймать одного из призраков в туннеле и держать его как питомца." next
+	"@Я просто дразню.  Теперь, когда их нет, я могу так дразнить." end
+	*/
+	"@[B6] [A7][A0][A4][96][9D] [A1][A0][9B][9E][91][A4][C3] [A0][95][9F][A0][94][A0] [9A][99] [A1][A2][9A][99][A2][91][9C][A0][93] [93] [A4][A5][9F][9F][96][9D][96] [9A] [95][96][A2][98][91][A4][C3] [96][94][A0] [9C][91][9C] [A1][9A][A4][A0][9E][A8][91]." next
+	"@[B6] [A1][A2][A0][A3][A4][A0] [95][A2][91][99][9F][C5].  [84][96][A1][96][A2][C3], [9C][A0][94][95][91] [9A][A7] [9F][96][A4], [C6] [9E][A0][94][A5] [A4][91][9C] [95][A2][91][99][9F][9A][A4][C3]." end
 
 l_0xc8e804:
     "[06 49 00 {e(l_0xc8e9e8)}][06 47 00 {e(l_0xc8e95d)}]@I'm only telling you this because you look like you're just passing through." next

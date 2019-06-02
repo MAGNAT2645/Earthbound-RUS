@@ -125,7 +125,7 @@ l_0xc951b7:
     "@...But since I'm new to the company, I better just toe the line." end
 
 l_0xc9522b:
-    "@Well, well...{pause(20)} I got a little kid here talking to me like [19 10 01]{result_is(2)}[1B 03 {e(l_0xc95257)}]he' s " goto(l_0xc95257)
+    "@Well, well...{pause(20)} I got a little kid here talking to me like [19 10 01]{result_is(2)}[1B 03 {e(l_0xc95257)}]he's " goto(l_0xc95257)
 
 l_0xc95257:
     "an adult." next
