@@ -209,12 +209,20 @@ l_0xc70c4d:
     "@It's okay of you stay, but it's really okay if you leave..." call(data_29.l_0xc726cb) eob
 
 l_0xc70c8d:
-    "@There's a tunnel northwest of this town." next
-    "@There are two guard zombies that hang out at the entrance." next
-    "@They are actually pretty nice guys..." next
-    "@It might be a good idea to meet those guys..." next
-    "@But it's quite all right if you don't..." next
-    "@Though I think that you really ought to go there." call(data_29.l_0xc726cb) eob
+	/*
+	"@К северо-западу от города есть туннель." next
+	"@У входа в этот туннель болтаются 2 зомби-охранника." next
+	"@Вообще-то они довольно неплохие ребята..." next
+	"@Было бы неплохо познакомиться с этими ребятами..." next
+	"@Но ничего, если ты не сделаешь это..." next
+	"@Хотя я думаю, тебе правда стоит туда пойти." call(data_29.l_0xc726cb) eob
+	*/
+	"@[7C] [A3][96][93][96][A2][A0]-[99][91][A1][91][95][A5] [A0][A4] [94][A0][A2][A0][95][91] [96][A3][A4][C3] [A4][A5][9F][9F][96][9D][C3]." next
+	"@[85] [93][A7][A0][95][91] [93] [C4][A4][A0][A4] [A4][A5][9F][9F][96][9D][C3] [92][A0][9D][A4][91][C5][A4][A3][C6] 2 [99][A0][9E][92][9A]-[A0][A7][A2][91][9F][9F][9A][9C][91]." next
+	"@[73][A0][A0][92][C0][96]-[A4][A0] [A0][9F][9A] [95][A0][93][A0][9D][C3][9F][A0] [9F][96][A1][9D][A0][A7][9A][96] [A2][96][92][C6][A4][91]..." next
+	"@[72][C2][9D][A0] [92][C2] [9F][96][A1][9D][A0][A7][A0] [A1][A0][99][9F][91][9C][A0][9E][9A][A4][C3][A3][C6] [A3] [C4][A4][9A][9E][9A] [A2][96][92][C6][A4][91][9E][9A]..." next
+	"@[7F][A0] [9F][9A][A9][96][94][A0], [96][A3][9D][9A] [A4][C2] [9F][96] [A3][95][96][9D][91][96][AA][C3] [C4][A4][A0]..." next
+	"@[87][A0][A4][C6] [C6] [95][A5][9E][91][C5], [A4][96][92][96] [A1][A2][91][93][95][91] [A3][A4][A0][9A][A4] [A4][A5][95][91] [A1][A0][9B][A4][9A]." call(data_29.l_0xc726cb) eob
 
 l_0xc70d2f:
     "@So, how are you doin', kid?" next

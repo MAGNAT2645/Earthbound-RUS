@@ -1,0 +1,131 @@
+/**
+ * Arbitrary color text
+ *
+ * Usage: `command custom_text_color(color) "[1C 00 02 {short color}]"`
+ *        where color is a 15-bit BGR color value.
+ *        Reset to main color with `text_color(0)` or `text_color(1)`.
+ *
+ * Setup: Change the second magenta color in each window graphics PNG to the
+ *        window background color.
+ *
+ * Limitations:
+ *  - Color changes have the same tile-boundary limitations as normal
+ *    text_color commands.
+ *  - In the current implementation, only one custom color can display
+ *    on-screen at once.
+ *  - A color change is (only) reset to default after a fadeout.
+ */
+
+import asm65816
+import ASMRef
+
+define RAM_PALETTE_COLOR_9 = 0x7E0212
+// define WINDOW_STATS_TABLE = 0x7E8650
+define WINDOW_STATS_TABLE_PLUS_19 = 0x7E8663
+define CURRENT_FOCUS_WINDOW = 0x7E8958
+define WINDOW_EXISTENCE_TABLE = 0x7E88E4
+define CC_ARGUMENT_STORAGE = 0x7E97BA
+define CC_ARGUMENT_GATHERING_LOOP_COUNTER = 0x7E97CA
+
+define WINDOW_STATS_TABLE_ENTRY_SIZE = 52
+
+define ASL16_ENTRY2 = 0xC0923E
+define CC_1C_00_old = 0xC140F9
+define CC_1C_00_RTS = 0xC14102
+
+
+define COLOR_RED			=	0x001F
+define COLOR_YELLOW	=	0x03FF
+define COLOR_GREEN		=	0x03E0
+define COLOR_CYAN		=	0x7FE0
+define COLOR_BLUE		=	0x7C00
+define COLOR_MAGENTA	=	0x7C1F
+define COLOR_WHITE		=	0x7FFF
+
+
+CC_1C_00_new: {
+	REP (0x31)
+	PHD
+	TDC
+	ADC_i (0xFFEC)
+	TCD
+	TXA
+	LDX_a (CC_ARGUMENT_GATHERING_LOOP_COUNTER)
+	BEQ_a (no_bytes_consumed)
+	CPX_i (0x0001)
+	BEQ_a (one_byte_consumed)
+	BRA_a (two_bytes_consumed)
+no_bytes_consumed:
+	STA_d (0x12)
+	JSL (set_text_palette_slot)
+	LDA_d (0x12)
+	CMP_i (0x0002)
+	BNE_a (no_custom_color_setting)
+	INC_a (CC_ARGUMENT_GATHERING_LOOP_COUNTER)
+	LDA_i (CC_1C_00_old)
+	BRA_a (ret)
+no_custom_color_setting:
+	LDA_i (0x0000)
+	BRA_a (ret)
+one_byte_consumed:
+	SEP (0x20)
+	STA_a (CC_ARGUMENT_STORAGE)
+	REP (0x20)
+	INC_a (CC_ARGUMENT_GATHERING_LOOP_COUNTER)
+	LDA_i (CC_1C_00_old)
+	BRA_a (ret)
+two_bytes_consumed:
+	SEP (0x10)
+	LDY_8 (0x08)
+	JSL (ASL16_ENTRY2)
+	STA_d (0x02)
+	LDA_a (CC_ARGUMENT_STORAGE)
+	AND_i (0x00FF)
+	ORA_d (0x02)
+	// Alrighty. Now let's store that color in a few places.
+	REP (0x10)
+	STA_d (0x04)
+	STA_a (RAM_PALETTE_COLOR_9) // So the color looks fine during a fadeout
+	SEP (0x20)                  // Why would you do that though... it looks
+	LDA_8 (0x09)                // unprofessional to keep a window open then.
+	STA_al (0x002121)
+	LDA_d (0x04)
+	STA_al (0x002122)
+	LDA_d (0x05)
+	STA_al (0x002122)
+	REP (0x20)
+	LDA_i (0x0000)
+ret:
+	PLD
+	JML (CC_1C_00_RTS)
+}
+
+set_text_palette_slot: {
+	REP (0x31)
+	PHD
+	PHA
+	TDC
+	ADC_i (0xFFF0)
+	TCD
+	PLA
+	STA_d (0x0E)
+	LDA_a (CURRENT_FOCUS_WINDOW)
+	CMP_i (0xFFFF)
+	BEQ_a (no_window_open)
+	LDA_a (CURRENT_FOCUS_WINDOW)
+	ASL
+	TAX
+	LDA_x (WINDOW_EXISTENCE_TABLE)
+	LDY_i (WINDOW_STATS_TABLE_ENTRY_SIZE)
+	JSL (Eight_Bit_Mult_YxA)
+	TAX
+	LDY_i (0x0400)
+	LDA_d (0x0E)
+	JSL (Mult_YxA)
+	STA_x (WINDOW_STATS_TABLE_PLUS_19)
+no_window_open:
+	PLD
+	RTL
+}
+
+ROM[CC_1C_00_old] = JML (CC_1C_00_new)

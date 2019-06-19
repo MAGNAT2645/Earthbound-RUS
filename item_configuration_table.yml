@@ -2135,7 +2135,7 @@
   Help Text Pointer: data_04.l_0xc54c6d
   Misc Flags:
   - jeff can use
-  Name: "[82][91][99][95][91][A4][A9].[90][9B][A0][94][A5][A2][A4][91]"#"Yogurt dispenser"
+  Name: "[82][91][99][95][91][A4][A9].[90][9B][A0][94][A5][A2][A4][91]" # Раздатч.[90]йогурта
   Type: 52
 140:
   Action: 186
@@ -2184,7 +2184,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[80][92][97][A2][A4][9C][9A][90][9E][A5][9E][9A][9A]"#"Mummy wrap"
+  Name: "[80][92][97][A2][A4][9C][9A][90][9E][A5][9E][9A][9A]" # Обёртки[90]мумии
   Type: 52
 143:
   Action: 187
@@ -2200,7 +2200,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[84][A2][91][9F][A3][A1][A0][A2][A4][9A][A2]"#"Protractor"
+  Name: "[84][A2][91][9F][A3][A1][A0][A2][A4][9A][A2]" # Транспортир
   Type: 48
 144:
   Action: 163
@@ -2214,7 +2214,7 @@
   Misc Flags:
   - item disappears when used
   - jeff can use
-  Name: "[82][91][9C][96][A4][91]"#"Bottle rocket"
+  Name: "[82][91][9C][96][A4][91]" # Ракета
   Type: 52
 145:
   Action: 164
@@ -2228,7 +2228,7 @@
   Misc Flags:
   - item disappears when used
   - jeff can use
-  Name: "[72][A0][9D][C3][AA][91][C6][90][A2][91][9C][96][A4][91]"#"Big bottle rocket"
+  Name: "[72][A0][9D][C3][AA][91][C6][90][A2][91][9C][96][A4][91]" # Большая[90]ракета
   Type: 52
 146:
   Action: 165
@@ -2242,7 +2242,7 @@
   Misc Flags:
   - item disappears when used
   - jeff can use
-  Name: "[7E][A5][9D][C3][A4][9A]`[A2][91][9C][96][A4][91]"#"Multi`bottle rocket"
+  Name: "[7E][A5][9D][C3][A4][9A]`[A2][91][9C][96][A4][91]" # Мульти`ракета
   Type: 52
 147:
   Action: 167
@@ -2259,7 +2259,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[72][A0][9E][92][91]"#"Bomb"
+  Name: "[72][A0][9E][92][91]" # Бомба
   Type: 52
 148:
   Action: 168
@@ -2276,7 +2276,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[83][A5][A1][96][A2][90][92][A0][9E][92][91]"#"Super bomb"
+  Name: "[83][A5][A1][96][A2][90][92][A0][9E][92][91]" # Супер[90]бомба
   Type: 52
 149:
   Action: 178
@@ -2293,7 +2293,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7A][9F][A3][96][9C][A4][9A][A8][9A][95]"#"Insecticide spray"
+  Name: "[7A][9F][A3][96][9C][A4][9A][A8][9A][95]" # Инсектицид
   Type: 52
 150:
   Action: 180
@@ -2310,7 +2310,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[82][98][91][93][A0][9E][97][A4]"#"Rust promoter"
+  Name: "[82][98][91][93][A0][9E][97][A4]" # Ржавомёт
   Type: 52
 151:
   Action: 181
@@ -2327,7 +2327,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[82][98][91][93][A0][9E][97][A4][90][75][96][9D][C5][9C][A3]"#"Rust promoter DX"
+  Name: "[82][98][91][93][A0][9E][97][A4][90][75][96][9D][C5][9C][A3]" # Ржавомёт[90]Делюкс
   Type: 52
 152:
   Action: 172
@@ -2344,7 +2344,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[74][A2][C6][99][9F][C2][96][90][9F][A0][A3][9C][9A]"#"Pair`of dirty socks"
+  Name: "[74][A2][C6][99][9F][C2][96][90][9F][A0][A3][9C][9A]" # Грязные[90]носки
   Type: 52
 153:
   Action: 173
@@ -2361,7 +2361,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[78][A5][9C]-[A2][A0][94][91][A9]"#"Stag beetle"
+  Name: "[78][A5][9C]-[A2][A0][94][91][A9]" # Жук-рогач
   Type: 52
 154:
   Action: 174
@@ -2378,7 +2378,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[79][A5][92][9F][91][C6][90][C0][97][A4][9C][91]"#"Toothbrush"
+  Name: "[79][A5][92][9F][91][C6][90][C0][97][A4][9C][91]" # Зубная[90]щётка
   Type: 52
 155:
   Action: 166
@@ -2395,7 +2395,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[82][A5][A9][9C][91][90][A0][A4][90][A3][A5][9E][9C][9A]"#"Handbag strap"
+  Name: "[82][A5][A9][9C][91][90][A0][A4][90][A3][A5][9E][9C][9A]" # Ручка[90]от[90]сумки
   Type: 52
 156:
   Action: 175
@@ -2412,7 +2412,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[81][A2][A0][9C][9D][C6][A4].[90][A6][91][A2][91][A0][9F][91]"#"Pharaoh's curse"
+  Name: "[81][A2][A0][9C][9D][C6][A4].[90][A6][91][A2][91][A0][9F][91]" # Проклят.[90]фараона
   Type: 52
 157:
   Action: 184
@@ -2425,7 +2425,7 @@
   Help Text Pointer: data_04.l_0xc5519f
   Misc Flags:
   - jeff can use
-  Name: "[79][91][C0][9A][A4][9F].[90][95][A5][AA]"#"Defense shower"
+  Name: "[79][91][C0][9A][A4][9F].[90][95][A5][AA]" # Защитн.[90]душ
   Type: 53
 158:
   Action: 287
@@ -2441,7 +2441,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[81][9A][A3][C3][9E][A0][90][A0][A4][90][9E][91][9E][C2]"#"Letter from mom"
+  Name: "[81][9A][A3][C3][9E][A0][90][A0][A4][90][9E][91][9E][C2]" # Письмо[90]от[90]мамы
   Type: 59
 159:
   Action: 182
@@ -2458,7 +2458,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7C][91][A1][A3].[90][93][9F][96][99].[93][C2][95][96][A2]."#"Sudden guts pill"
+  Name: "[7C][91][A1][A3].[90][93][9F][96][99].[93][C2][95][96][A2]." # Капс.[90]внез.выдер.
   Type: 53
 160:
   Action: 177
@@ -2492,7 +2492,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[79][91][C0][9A][A4][9F].[90][A3][A1][A2][96][9B]"#"Defense spray"
+  Name: "[79][91][C0][9A][A4][9F].[90][A3][A1][A2][96][9B]" # Защитн.[90]спрей
   Type: 53
 162:
   Action: 190
@@ -2508,7 +2508,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[83][93][9A][9F][A0][9B][90][A1][C6][A4][91][A9][A0][9C]"#"Piggy nose"
+  Name: "[83][93][9A][9F][A0][9B][90][A1][C6][A4][91][A9][A0][9C]" # Свиной[90]пятачок
   Type: 56
 163:
   Action: 191
@@ -2524,7 +2524,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[79][9F][91][9C] <[81][A2][A0][95][91][97][A4][A3][C6]!>"#"For Sale sign"
+  Name: "[79][9F][91][9C] <[81][A2][A0][95][91][97][A4][A3][C6]!>" # Знак <Продаётся!>
   Type: 56
 164:
   Action: 192
@@ -2540,7 +2540,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7C][9F][9A][94][91][90][A0][90][99][91][A3][A4][96][9F][A9]."#"Shyness book"
+  Name: "[7C][9F][9A][94][91][90][A0][90][99][91][A3][A4][96][9F][A9]." # Книга[90]о[90]застенч.
   Type: 59
 165:
   Action: 193
@@ -2556,7 +2556,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[87][A5][95][A0][98][90][A0][A4][9C][A2][C2][A4][9C][91]"#"Picture postcard"
+  Name: "[87][A5][95][A0][98].[90][A0][A4][9C][A2][C2][A4][9C][91]" # Худож.[90]открытка
   Type: 56
 166:
   Action: 285
@@ -2572,7 +2572,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7C][A0][A2][A0][9D][96][93][A3][9C].[90][92][91][9F][91][9F]"#"King banana"
+  Name: "[7C][A0][A2][A0][9D][96][93][A3][9C].[90][92][91][9F][91][9F]" # Королевск.[90]банан
   Type: 56
 167:
   Action: 288
@@ -2588,7 +2588,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[81][9A][A3][C3][9E][A0][90][A0][A4][90][84][A0][9F][9A]"#"Letter from Tony"
+  Name: "[81][9A][A3][C3][9E][A0][90][A0][A4][90][84][A0][9F][9A]" # Письмо[90]от[90]Тони
   Type: 59
 168:
   Action: 195
@@ -2606,7 +2606,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[88][C2][A1][9D][97][9F][A0][9C]"#"Chick"
+  Name: "[88][C2][A1][9D][97][9F][A0][9C]" # Цыплёнок
   Type: 56
 169:
   Action: 196
@@ -2624,7 +2624,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7C][A5][A2][9A][A8][91]"#"Chicken"
+  Name: "[7C][A5][A2][9A][A8][91]" # Курица
   Type: 56
 170:
   Action: 1
@@ -2640,7 +2640,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7C][9D][C5][A9][90][A0][A4][90][A7][9A][98][9A][9F][C2]"#"Key to the shack"
+  Name: "[7C][9D][C5][A9][90][A0][A4][90][A7][9A][98][9A][9F][C2]" # Ключ[90]от[90]хижины
   Type: 59
 171:
   Action: 1
@@ -2656,7 +2656,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7C][9D][C5][A9][90][A0][A4][90][9C][91][92][9A][9F][C2]"#"Key to the cabin"
+  Name: "[7C][9D][C5][A9][90][A0][A4][90][9C][91][92][9A][9F][C2]" # Ключ[90]от[90]кабины
   Type: 59
 172:
   Action: 1
@@ -2672,7 +2672,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[81][9D][A0][A7].[90][9C][9D][C5][A9].[90][91][A1][A1]."#"Bad key machine"
+  Name: "[81][9D][A0][A7].[90][9C][9D][C5][A9].[90][91][A1][A1]." # Плох.[90]ключ.[90]апп.
   Type: 59
 173:
   Action: 1
@@ -2688,7 +2688,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[73][A2][96][9E][96][9F].[90][A4][A0][93][91][A2][C2]"#"Temporary goods"
+  Name: "[73][A2][96][9E][96][9F].[90][A4][A0][93][91][A2][C2]" # Времен.[90]товары
   Type: 56
 174:
   Action: 198
@@ -2704,7 +2704,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[72][A5][9E][91][94][91][90][A0][A4][90][99][A0][9E][92][9A]"#"Zombie paper"
+  Name: "[72][A5][9E][91][94][91][90][A0][A4][90][99][A0][9E][92][9A]" # Бумага[90]от[90]зомби
   Type: 58
 175:
   Action: 199
@@ -2736,7 +2736,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[73][96][9D][A0][A3][9A][A1][96][95]"#"Bicycle"
+  Name: "[73][96][9D][A0][A3][9A][A1][96][95]" # Велосипед
   Type: 58
 177:
   Action: 197
@@ -2754,7 +2754,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[72][91][9F][9C][A0][93][A3][9C][91][C6][90][9C][91][A2][A4][91]"#"ATM card"
+  Name: "[72][91][9F][9C][A0][93][A3][9C][91][C6][90][9C][91][A2][A4][91]" # Банковская[90]карта
   Type: 59
 178:
   Action: 1
@@ -2770,7 +2770,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[72][9A][9D][96][A4][90][9F][91][90][9C][A0][9F][A8][96][A2][A4]"#"Show ticket"
+  Name: "[72][9A][9D][96][A4][90][9F][91][90][9C][A0][9F][A8][96][A2][A4]" # Билет[90]на[90]концерт
   Type: 59
 179:
   Action: 289
@@ -2786,7 +2786,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[81][9A][A3][C3][9E][A0][90][A0][A4][90][95][96][A4][96][9B]"#"Letter from kids"
+  Name: "[81][9A][A3][C3][9E][A0][90][A0][A4][90][95][96][A4][96][9B]" # Письмо[90]от[90]детей
   Type: 59
 180:
   Action: 1
@@ -2802,7 +2802,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[81][91][A9][9C][91][90][95][96][9F][96][94]"#"Wad of bills"
+  Name: "[81][91][A9][9C][91][90][95][96][9F][96][94]" # Пачка[90]денег
   Type: 59
 181:
   Action: 286
@@ -2820,7 +2820,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[82][91][95][9A][A0][A1][A2][9A][97][9E][9F][9A][9C]"#"Receiver phone"
+  Name: "[82][91][95][9A][A0][A1][A2][9A][97][9E][9F][9A][9C]" # Радиоприёмник
   Type: 59
 182:
   Action: 1
@@ -2836,7 +2836,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[71][9D][9E][91][99]"#"Diamond"
+  Name: "[71][9D][9E][91][99]" # Алмаз
   Type: 59
 183:
   Action: 1
@@ -2852,7 +2852,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[81][A0][95][A1][9A][A3][91][9F][9F].[90][92][91][9F][91][9F]"#"Signed banana"
+  Name: "[81][A0][95][A1][9A][A3][91][9F][9F].[90][92][91][9F][91][9F]" # Подписанн.[90]банан
   Type: 59
 184:
   Action: 1
@@ -2868,7 +2868,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[83][A4][97][A2][9C][91][90][9C][91][A2][91][9F][95]."#"Pencil eraser"
+  Name: "[83][A4][97][A2][9C][91][90][9C][91][A2][91][9F][95]." # Стёрка[90]каранд.
   Type: 59
 185:
   Action: 270
@@ -2884,7 +2884,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7C][A0][A1][9A][C6][90][9A][96][A2][A0][94][9D][9A][A6][A0][93]"#"Hieroglyph copy"
+  Name: "[7C][A0][A1][9A][C6][90][9A][96][A2][A0][94][9D][9A][A6][A0][93]" # Копия[90]иероглифов
   Type: 59
 186:
   Action: 1
@@ -2900,7 +2900,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7E][96][A4][96][A0][A4][9A][A4]"#"Meteotite"
+  Name: "[7E][96][A4][96][A0][A4][9A][A4]" # Метеотит
   Type: 56
 187:
   Action: 1
@@ -2916,7 +2916,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7C][A0][9F][A4][91][9C][A4][9F][C2][96][90][9D][9A][9F][99][C2]"#"Contact lens"
+  Name: "[7C][A0][9F][A4][91][9C][A4][9F][C2][96][90][9D][9A][9F][99][C2]" # Контактные[90]линзы
   Type: 59
 188:
   Action: 140
@@ -2933,7 +2933,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[82][A5][9C][A0][A1][9D][91][A3][A4][C2][A2][C3]"#"Hand-Aid"
+  Name: "[82][A5][9C][A0][A1][9D][91][A3][A4][C2][A2][C3]" # Рукопластырь
   Type: 48
 189:
   Action: 249
@@ -2950,7 +2950,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[86][A0][A2][96][9D][C3][9F].[90][9B][A0][94][A5][A2][A4]"#"Trout yogurt"
+  Name: "[86][A0][A2][96][9D][C3][9F].[90][9B][A0][94][A5][A2][A4]" # Форельн.[90]йогурт
   Type: 32
 190:
   Action: 249
@@ -2967,7 +2967,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[72][91][9F][91][9F]"#"Banana"
+  Name: "[72][91][9F][91][9F]" # Банан
   Type: 32
 191:
   Action: 249
@@ -2984,7 +2984,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[87][9D][96][92][9F][91][C6][90][A1][91][9D][A0][A9][9C][91]"#"Calorie stick"
+  Name: "[87][9D][96][92][9F][91][C6][90][A1][91][9D][A0][A9][9C][91]" # Хлебная[90]палочка
   Type: 32
 192:
   Action: 1
@@ -3000,7 +3000,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7C][9D][C5][A9][90][A0][A4][90][92][91][AA][9F][9A]"#"Key to the tower"
+  Name: "[7C][9D][C5][A9][90][A0][A4][90][92][91][AA][9F][9A]" # Ключ[90]от[90]башни
   Type: 59
 193:
   Action: 1
@@ -3016,7 +3016,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7C][A5][A3][A0][9C][90][9E][96][A4][96][A0][A2][9A][A4][91]"#"Meteorite piece"
+  Name: "[7C][A5][A3][A0][9C][90][9E][96][A4][96][A0][A2][9A][A4][91]" # Кусок[90]метеорита
   Type: 59
 194:
   Action: 240
@@ -3032,7 +3032,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[79][96][9E][9F][A0][9B][90][9C][A5][9D][A0][9F]"#"Earth pendant"
+  Name: "[79][96][9E][9F][A0][9B][90][9C][A5][9D][A0][9F]" # Земной[90]кулон
   Type: 20
 195:
   Action: 247
@@ -3045,7 +3045,7 @@
   Help Text Pointer: data_04.l_0xc559d9
   Misc Flags:
   - jeff can use
-  Name: "[7F][96][9B][A4][A2][91][9D][9A][99][91][A4][A0][A2]"#"Neutralizer"
+  Name: "[7F][96][9B][A4][A2][91][9D][9A][99][91][A4][A0][A2]" # Нейтрализатор
   Type: 52
 196:
   Action: 258
@@ -3063,7 +3063,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[81][A0][C5][C0][9A][9B][90][9C][91][9E][96][9F][C3]"#"Sound Stone"
+  Name: "[81][A0][C5][C0][9A][9B][90][9C][91][9E][96][9F][C3]" # Поющий[90]камень
   Type: 56
 197:
   Action: 259
@@ -3079,7 +3079,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7E][C2][AA][9C][91]-[A1][A5][A4][96][93][A0][95]."#"Exit mouse"
+  Name: "[7E][C2][AA][9C][91]-[A1][A5][A4][96][93][A0][95]." # Мышка-путевод.
   Type: 56
 198:
   Action: 249
@@ -3096,7 +3096,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[75][98][96][9D][91][A4][A0][90][95][C4][90][9C][A5][A2][A0][A2][A4]"#"Gelato de resort"
+  Name: "[75][98][96][9D][91][A4][A0][90][95][C4][90][9C][A5][A2][A0][A2][A4]" # Джелато[90]дэ[90]курорт
   Type: 32
 199:
   Action: 268
@@ -3113,7 +3113,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[79][9E][96][C6]"#"Snake"
+  Name: "[79][9E][96][C6]" # Змея
   Type: 52
 200:
   Action: 269
@@ -3130,7 +3130,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[74][91][95][C5][9C][91]"#"Viper"
+  Name: "[74][91][95][C5][9C][91]" # Гадюка
   Type: 52
 201:
   Action: 1
@@ -3146,7 +3146,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[74][A0][9D][A0][93][9F][A0][9B][90][9C][91][9E][96][9F][C3]"#"Brain stone"
+  Name: "[74][A0][9D][A0][93][9F][A0][9B][90][9C][91][9E][96][9F][C3]" # Головной[90]камень
   Type: 56
 202:
   Action: 271
@@ -3162,7 +3162,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7C][91][A2][A4][91][90][74][A0][A2][A0][95][91]"#"Town map"
+  Name: "[7C][91][A2][A4][91][90][94][A0][A2][A0][95][91]" # Карта[90]города
   Type: 56
 203:
   Action: 272
@@ -3178,7 +3178,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[73][9A][95][96][A0][90][A2][96][9D][91][9C][A3][91][9F][A4]"#"Video relaxant" #Can't be found normally in-game
+  Name: "[73][9A][95][96][A0][90][A2][96][9D][91][9C][A3][91][9F][A4]" # Видео[90]релаксант (Просто так в игре его найти нельзя)
   Type: 56
 204:
   Action: 281
@@ -3195,7 +3195,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[83][A5][A1][A0][A2][9E][91]"#"Suporma" #Super Orange Machine
+  Name: "[83][A5][A1][91][A1][9E][91]" # Супапма (Супер Апельсиновая Машина)
   Type: 56
 205:
   Action: 1
@@ -3211,7 +3211,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7C][9D][C5][A9][90][A0][A4][90][AA][9C][91][A6][A9][9A][9C][91]"#"Key to the locker"
+  Name: "[7C][9D][C5][A9][90][A0][A4][90][AA][9C][91][A6][A9][9A][9C][91]" # Ключ[90]от[90]шкафчика
   Type: 59
 206:
   Action: 282
@@ -3227,7 +3227,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7F][96][99][9F][91][A9][9A][A4].[90][93][96][C0][C3]"#"Insignificant item"
+  Name: "[7F][96][99][9F][91][A9][9A][A4].[90][93][96][C0][C3]" # Незначит.[90]вещь
   Type: 59
 207:
   Action: 249
@@ -3244,7 +3244,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7E][91][94][9A][A9].[90][A4][A0][A2][A4][9A][9C]"#"Magic tart"
+  Name: "[7E][91][94][9A][A9].[90][A4][A0][A2][A4][9A][9C]" # Магич.[90]тортик
   Type: 32
 208:
   Action: 1
@@ -3259,7 +3259,7 @@
   - cannot be given away
   - cannot be stored with escargo express
   - poo can use
-  Name: "[7C][A2][A0][AA][96][A9][9F].[90][A2][A5][92][9A][9F]"#"Tiny ruby"
+  Name: "[7C][A2][A0][AA][96][A9][9F].[90][A2][A5][92][9A][9F]" # Крошечн.[90]рубин
   Type: 59
 209:
   Action: 283
@@ -3275,7 +3275,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[80][92][96][99][C3][C6][9F][C3][C6][90][9D][C5][92][A0][93][C3]"#"Monkey's love"
+  Name: "[80][92][96][99][C3][C6][9F][C3][C6][90][9D][C5][92][A0][93][C3]" # Обезьянья[90]любовь
   Type: 52
 210:
   Action: 1
@@ -3291,7 +3291,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7D][91][A3][A4].[90][A0][A4][90][9D][91][A3][A4][9A][9C][A0][93]"#"Eraser eraser"
+  Name: "[7D][91][A3][A4].[90][A0][A4][90][9D][91][A3][A4][9A][9C][A0][93]" # Ласт.[90]от[90]ластиков
   Type: 59
 211:
   Action: 284
@@ -3308,7 +3308,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[84][96][9F][95][91][A1][A5][A3][A4][91]"#"Tendakraut"
+  Name: "[84][96][9F][95][91][A1][A5][A3][A4][91]" # Тендапуста
   Type: 59
 212:
   Action: 239
@@ -3321,7 +3321,7 @@
   Help Text Pointer: data_04.l_0xc55eab
   Misc Flags:
   - ness can use
-  Name: "[84][9A][A2][91][9F][9F][A0][92][9A][A4][91]"#"T-rex's bat"
+  Name: "[84][9A][A2][91][9F][9F][A0][92][9A][A4][91]" # Тираннобита
   Type: 16
 213:
   Action: 239
@@ -3334,7 +3334,7 @@
   Help Text Pointer: data_04.l_0xc55ebb
   Misc Flags:
   - ness can use
-  Name: "[72][9A][A4][91][90][93][C2][A3][AA].[9D][9A][94][9A]"#"Big league bat"
+  Name: "[72][9A][A4][91][90][93][C2][A3][AA].[9D][9A][94][9A]" # Бита[90]высш.лиги
   Type: 16
 214:
   Action: 239
@@ -3347,7 +3347,7 @@
   Help Text Pointer: data_04.l_0xc55ef6
   Misc Flags:
   - ness can use
-  Name: "[81][A2][96][93][A0][A3][A7].[90][92][9A][A4][91]"#"Ultimate bat"
+  Name: "[81][A2][96][93][A0][A3][A7].[90][92][9A][A4][91]" # Превосх.[90]бита
   Type: 16
 215:
   Action: 239
@@ -3360,7 +3360,7 @@
   Help Text Pointer: data_04.l_0xc55f06
   Misc Flags:
   - jeff can use
-  Name: "[75][93][A0][9B][9F][A0][9B][90][9D][A5][A9]"#"Double beam"
+  Name: "[75][93][A0][9B][9F][A0][9B][90][9D][A5][A9]" # Двойной[90]луч
   Type: 17
 216:
   Action: 240
@@ -3376,7 +3376,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[81][9D][91][A4][9A][9F].[90][92][A2][91][A3][9D][96][A4]"#"Platinum band"
+  Name: "[81][9D][91][A4][9A][9F].[90][92][A2][91][A3][9D][96][A4]" # Платин.[90]браслет
   Type: 24
 217:
   Action: 240
@@ -3392,7 +3392,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[71][9D][9E][91][99][9F].[90][92][A2][91][A3][9D][96][A4]"#"Diamond band"
+  Name: "[71][9D][9E][91][99][9F].[90][92][A2][91][A3][9D][96][A4]" # Алмазн.[90]браслет
   Type: 24
 218:
   Action: 240
@@ -3405,7 +3405,7 @@
   Help Text Pointer: data_04.l_0xc55f36
   Misc Flags:
   - paula can use
-  Name: "[79][91][C0].[90][9D][96][9F][A4][A0][A9][9C][91]"#"Defense ribbon"
+  Name: "[79][91][C0].[90][9D][96][9F][A4][A0][A9][9C][91]" # Защ.[90]ленточка
   Type: 28
 219:
   Action: 240
@@ -3418,7 +3418,7 @@
   Help Text Pointer: data_04.l_0xc55f5d
   Misc Flags:
   - paula can use
-  Name: "[7D][96][9F][A4][91]-[A4][91][9D][9A][A3][9E][91][9F]"#"Talisman ribbon"
+  Name: "[7D][96][9F][A4][91]-[A4][91][9D][9A][A3][9E][91][9F]" # Лента-талисман
   Type: 28
 220:
   Action: 240
@@ -3431,7 +3431,7 @@
   Help Text Pointer: data_04.l_0xc55f84
   Misc Flags:
   - paula can use
-  Name: "[7D][96][9F][A4][91][90][83][91][A4][A5][A2][9F][A0][93]"#"Saturn ribbon"
+  Name: "[7D][96][9F][A4][91][90][83][91][A4][A5][A2][9F][91]" # Лента[90]Сатурна
   Type: 28
 221:
   Action: 240
@@ -3447,7 +3447,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7E][A0][9F][96][A4][91][90][92][96][99][9E][A0][9D]."#"Coin of silence"
+  Name: "[7E][A0][9F][96][A4][91][90][92][96][99][9E][A0][9D]." # Монета[90]безмол.
   Type: 28
 222:
   Action: 240
@@ -3463,7 +3463,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7E][A0][9F][96][A4][91][90][AA][91][A2][9E][91]"#"Charm coin"
+  Name: "[7E][A0][9F][96][A4][91][90][AA][91][A2][9E][91]" # Монета[90]шарма
   Type: 28
 223:
   Action: 249
@@ -3480,7 +3480,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[84][91][A2][96][9D][9C][91][90][9D][91][A1][AA][9A]"#"Cup of noodles"
+  Name: "[89][91][AA][9C][91][90][9D][91][A1][AA][9A]" # Чашка[90]лапши
   Type: 32
 224:
   Action: 249
@@ -3497,7 +3497,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[72][C2][A3][A4][A2][A0][92][A2][A0][95]" #"Skip sandwich"
+  Name: "[72][C2][A3][A4][A2][A0][92][A2][A0][95]" # Быстроброд
   Type: 32
 225:
   Action: 249
@@ -3514,7 +3514,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[72][C2][A3][A4][A2][A0][92][A2][A0][95][90][83][A5][A1][96][A2]"#"Skip sandwich DX"
+  Name: "[72][C2][A3][A4][A2][A0][92][A2][A0][95][90][83][A5][A1][96][A2]" # Быстроброд[90]Супер
   Type: 32
 226:
   Action: 249
@@ -3531,7 +3531,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[73][96][99][A5][A9].[90][92][A5][A4][96][A2][92][A2][A0][95]"#"Lucky sandwich"
+  Name: "[73][96][99][A5][A9].[90][92][A5][A4][96][A2][92][A2][A0][95]" # Везуч.[90]бутерброд
   Type: 32
 227:
   Action: 249
@@ -3548,7 +3548,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[73][96][99][A5][A9].[90][92][A5][A4][96][A2][92][A2][A0][95]"#"Lucky sandwich"
+  Name: "[73][96][99][A5][A9].[90][92][A5][A4][96][A2][92][A2][A0][95]" # Везуч.[90]бутерброд
   Type: 32
 228:
   Action: 249
@@ -3565,7 +3565,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[73][96][99][A5][A9].[90][92][A5][A4][96][A2][92][A2][A0][95]"#"Lucky sandwich"
+  Name: "[73][96][99][A5][A9].[90][92][A5][A4][96][A2][92][A2][A0][95]" # Везуч.[90]бутерброд
   Type: 32
 229:
   Action: 249
@@ -3582,7 +3582,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[73][96][99][A5][A9].[90][92][A5][A4][96][A2][92][A2][A0][95]"#"Lucky sandwich"
+  Name: "[73][96][99][A5][A9].[90][92][A5][A4][96][A2][92][A2][A0][95]" # Везуч.[90]бутерброд
   Type: 32
 230:
   Action: 249
@@ -3599,7 +3599,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[73][96][99][A5][A9].[90][92][A5][A4][96][A2][92][A2][A0][95]"#"Lucky sandwich"
+  Name: "[73][96][99][A5][A9].[90][92][A5][A4][96][A2][92][A2][A0][95]" # Везуч.[90]бутерброд
   Type: 32
 231:
   Action: 249
@@ -3616,7 +3616,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[73][96][99][A5][A9].[90][92][A5][A4][96][A2][92][A2][A0][95]"#"Lucky sandwich"
+  Name: "[73][96][99][A5][A9].[90][92][A5][A4][96][A2][92][A2][A0][95]" # Везуч.[90]бутерброд
   Type: 32
 232:
   Action: 249
@@ -3633,7 +3633,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[84][91][A2][96][9D][9C][91][90][9C][A0][A6][96]"#"Cup of coffee"
+  Name: "[89][91][AA][9C][91][90][9C][A0][A6][96]" # Чашка[90]кофе
   Type: 36
 233:
   Action: 249
@@ -3650,7 +3650,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[75][93][A0][9B][9F][A0][9B][90][92][A5][A2][94][96][A2]"#"Double burger"
+  Name: "[75][93][A0][9B][9F][A0][9B][90][92][A5][A2][94][96][A2]" # Двойной[90]бургер
   Type: 32
 234:
   Action: 249

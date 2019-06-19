@@ -1,4 +1,43 @@
+import asm65816
+
 command e(label) "{long label}"
+
+ROM[0xC1EE9B] = ASMLoadAddress12(level)
+level:
+//	"Уров.:[00]"
+	"[85][A2][A0][93].:[00]"
+
+
+ROM[0xC1F08C] = ASMLoadAddress0E(Continue)
+ROM[0xC1F0C5] = ASMLoadAddress0E(Copy)
+ROM[0xC1F102] = ASMLoadAddress0E(Delete)
+ROM[0xC1F120] = ASMLoadAddress0E(SetUp)
+
+// Copy horizontal alignment
+ROM[0xC1F0DC] = LDX_i(0x0005)
+// Delete horizontal alignment
+ROM[0xC1F117] = LDX_i(0x000C)
+// Set Up horizontal alignment
+ROM[0xC1F135] = LDX_i(0x0012)
+
+
+Continue:
+//	"Играть[00]"
+	"[7A][94][A2][91][A4][C3][00]"
+
+Copy:
+//	"Копировать[00]"
+	"[7C][A0][A1][9A][A2][A0][93][91][A4][C3][00]"
+
+Delete:
+//	"Удалить[00]"
+	"[85][95][91][9D][9A][A4][C3][00]"
+
+SetUp:
+//	"Настроить[00]"
+	"[7F][91][A3][A4][A2][A0][9A][A4][C3][00]"
+
+
 
 // Проверка на гендер (используется в бою?)
 
