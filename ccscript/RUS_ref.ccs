@@ -141,7 +141,6 @@ l_gender2_female:
 l_gender_end_outside:
 //	"[19 10 01]{result_is(2)}[1B 03 {e(l_female_end_outside)}]ый" eob
 	"[19 10 01]{result_is(2)}[1B 03 {e(l_female_end_outside)}][C2][9B]" eob
-
 l_female_end_outside:
 //	"ая" eob
 	"[91][C6]" eob
@@ -166,6 +165,13 @@ gain_exp_multi:
 gain_exp_single:
 //	"получает" eob
 	"[A1][A0][9D][A5][A9][91][96][A4]" eob
+
+used_multi:
+//	"[1D 19 02][1B 03 {e(used_single)}][19 10 02][1D 0D 00 01 02][1B 03 {e(used_single)}]использовали" eob
+	"[1D 19 02][1B 03 {e(used_single)}][19 10 02][1D 0D 00 01 02][1B 03 {e(used_single)}][9A][A3][A1][A0][9D][C3][99][A0][93][91][9D][9A]" eob
+used_single:
+//	"использовал{call(l_gendersuffix)}" eob
+	"[9A][A3][A1][A0][9D][C3][99][A0][93][91][9D]{call(l_gendersuffix)}" eob
 
 can_multi:
 //	"[1D 19 02][1B 03 {e(can_single)}][19 10 02][1D 0D 00 01 02][1B 03 {e(can_single)}]могут" eob
