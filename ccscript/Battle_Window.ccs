@@ -786,8 +786,8 @@ Auto_Fight:
 	LDA_d	(0x08)
 	STA_d	(0x14)
 
-	LDY_i	(0x0000)		//First row
-	LDX_i	(0x000E)
+	LDY_i	(0x0000)		// Y position (First row)
+	LDX_i	(0x0015)		// X position
 	LDA_i	(0x0003)
 	JSL	(Selection_Menu_Item_Setup) //Adds the text to the menu
 
@@ -813,8 +813,8 @@ Run_Away:
 	LDA_d	(0x08)
 	STA_d	(0x14)
 
-	LDY_i	(0x0001)		//Second row
-	LDX_i	(0x000E)
+	LDY_i	(0x0001)		// Y position (Second row)
+	LDX_i	(0x0015)		// X position
 	LDA_i	(0x0006)
 	JSL	(Selection_Menu_Item_Setup) //Adds the text to the menu
 
@@ -848,14 +848,14 @@ PSI:
 	JSL	(Selection_Menu_Item_Setup) //Adds the text to the menu
 
 // Adds Pray to character 2
-Pray:	
+Pray:
 	LDA_d	(0x26)
 	CMP_i	(0x0002)		//Branch if not character 2
 	BNE_a	(Mirror)		//3801 0x07
 	ASMLoadAddress0E (Pray_Text)	//Reads Pray's entry from the Battle Window Text routine
 	ASMLoadAddress12 (0x000000)
 	LDY_i	(0x0000)		//First row
-	LDX_i	(0x000D)		//0xE spaces over
+	LDX_i	(0x000D)		//0xD spaces over
 	LDA_i	(0x0007)
 	JSL	(Selection_Menu_Item_Setup) //Adds the text to the menu
 
@@ -866,7 +866,7 @@ Mirror:
 	ASMLoadAddress0E (Mirror_Text)	//Reads Pray's entry from the Battle Window Text routine
 	ASMLoadAddress12 (0x000000)
 	LDY_i	(0x0000)		//First row
-	LDX_i	(0x000D)		//0xE spaces over
+	LDX_i	(0x000D)		//0xD spaces over
 	LDA_i	(0x0007)
 	JSL	(Selection_Menu_Item_Setup) //Adds the text to the menu
 
@@ -1345,8 +1345,8 @@ Return:
 
 }
 Pray_Text:
-//	"[BE]Молиться[00]"
-	"[BE][7E][A0][9D][9A][A4][C3][A3][C6][00]"
+//	"[BE]Молитва[00]"
+	"[BE][7E][A0][9D][9A][A4][93][91][00]"
 
 Shoot_Text:
 //	"[BA]Стрелять[00]"

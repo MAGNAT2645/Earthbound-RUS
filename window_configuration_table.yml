@@ -3,26 +3,26 @@
   Width: 15
   X Offset: 1
   Y Offset: 1
-1:
+1: # Стандартное диалоговое окно
   Height: 8
-  Width: 19
-  X Offset: 12
+  Width: 30 #19
+  X Offset: 1 #12
   Y Offset: 1
 2:
   Height: 16
   Width: 24
   X Offset: 7
   Y Offset: 1
-3: #Use/Give/Drop/Help item menu 
+3: # Окно Исп./Дать/Брос./Помщ.
   Height: 10
   Width: 7
   X Offset: 1
   Y Offset: 1
-4:
+4: # Описание ПСИ (Цена и цели)
   Height: 6
   Width: 11
-  X Offset: 1
-  Y Offset: 3
+  X Offset: 20
+  Y Offset: 1
 5:
   Height: 16
   Width: 11
@@ -68,27 +68,27 @@
   Width: 24
   X Offset: 7
   Y Offset: 1
-14:
+14: # Окно сообщений в бою
   Height: 6
   Width: 24
   X Offset: 4
   Y Offset: 1
 15: # Среднее окно команд в бою
   Height: 6
-  Width: 27 #23
+  Width: 30 #24
   X Offset: 1
   Y Offset: 1
-16:
+16: # Окно ПСИ (Атака/Лечение/Вспом.) В бою
   Height: 8
   Width: 8
-  X Offset: 4
-  Y Offset: 1
+  X Offset: 1 #4
+  Y Offset: 9 #1
 17:
   Height: 4
   Width: 12
   X Offset: 12
   Y Offset: 1
-18: # Малое окно команд в бою
+18: # Малое окно команд в бою (окно Джеффа)
   Height: 6
   Width: 16
   X Offset: 1
@@ -223,24 +223,24 @@
   Width: 24
   X Offset: 8
   Y Offset: 2
-45:
+45: # Статы в меню экипировки
   Height: 12 #6
   Width: 15
   X Offset: 3
   Y Offset: 11
-46:
+46: # Окно ПСИ (Атака/Лечение/Вспом./Прочее) ВНЕ боя
   Height: 10
   Width: 8
-  X Offset: 4
-  Y Offset: 1
-47:
-  Height: 10
+  X Offset: 1 #4
+  Y Offset: 9 #1
+47: #Повреждённое окно при сохранении игры, окно с информацией ПСИ
+  Height: 11 #10
   Width: 30
   X Offset: 1
   Y Offset: 9
-48: # Большое окно команд в бою
+48: # Большое окно команд в бою (окно лидера)
   Height: 6
-  Width: 28
+  Width: 30 #24
   X Offset: 1
   Y Offset: 1
 49:
