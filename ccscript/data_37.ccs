@@ -47,29 +47,31 @@ l_0xc7e6a0:
     "its" eob
 
 l_0xc7e6a4:
-    "{result_is(2)}[1B 03 {e(l_0xc7e6b0)}]him" eob
+//	"{result_is(2)}[1B 03 {e(l_0xc7e6b0)}]ему" eob
+	"{result_is(2)}[1B 03 {e(l_0xc7e6b0)}][96][9E][A5]" eob
 
 l_0xc7e6b0:
-    "her" eob
+//	"ей" eob
+	"[96][9B]" eob
 
 l_0xc7e6b3:
-//  "{result_is(2)}[1B 03 {e(l_0xc7e6bf)}]сэр" eob
-    "{result_is(2)}[1B 03 {e(l_0xc7e6bf)}][A3][C4][A2]" eob
+//	"{result_is(2)}[1B 03 {e(l_0xc7e6bf)}]сэр" eob
+	"{result_is(2)}[1B 03 {e(l_0xc7e6bf)}][A3][C4][A2]" eob
 
 l_0xc7e6bf:
-//  "мадам eob"
-    "[9E][91][95][91][9E]" eob
+//	"мадам eob"
+	"[9E][91][95][91][9E]" eob
 
 l_0xc7e6c5:
-//  "{result_is(2)}[1B 03 {e(l_0xc7e6bf)}]Сэр" eob
-    "{result_is(2)}[1B 03 {e(l_0xc7e6d1)}][83][C4][A2]" eob
+//	"{result_is(2)}[1B 03 {e(l_0xc7e6bf)}]Сэр" eob
+	"{result_is(2)}[1B 03 {e(l_0xc7e6d1)}][83][C4][A2]" eob
 
 l_0xc7e6d1:
-//  "Мадам" eob
-    "[7E][91][95][91][9E]" eob
+//	"Мадам" eob
+	"[7E][91][95][91][9E]" eob
 
 l_0xc7e6d7:
-    "[19 10 01]{swap}[1C 02 00]{counter(1)}" goto(l_0xc7e6e1)
+	"[19 10 01]{swap}[1C 02 00]{counter(1)}" goto(l_0xc7e6e1)
 
 l_0xc7e6e1:
     "{inc}{ctoarg}[1D 19 00][1B 03 {e(l_0xc7e70e)}][19 10 00][1D 0D 00 01 02][1B 03 {e(l_0xc7e70e)}][19 10 00][1D 0D 00 01 03][1B 03 {e(l_0xc7e70e)}]" goto(l_0xc7e6e1)
@@ -78,37 +80,39 @@ l_0xc7e70e:
     "{ctoarg}{swap}[09 05 {e(l_0xc7e729)} {e(l_0xc7e729)} {e(l_0xc7e72a)} {e(l_0xc7e735)} {e(l_0xc7e735)}]" eob
 
 l_0xc7e729:
-    eob
+	eob
 
 l_0xc7e72a:
-//  "[19 10 02]{swap} и [1C 02 00]" eob
-    "[19 10 02]{swap} [9A] [1C 02 00]" eob
+//	"[19 10 02]{swap} и [1C 02 00]" eob
+	"[19 10 02]{swap} [9A] [1C 02 00]" eob
 
 l_0xc7e735:
-//  " и [19 10 01]{result_is(2)}[1B 03 {e(l_0xc7e748)}]его друзья" eob
-    " [9A] [19 10 01]{result_is(2)}[1B 03 {e(l_0xc7e748)}][96][94][A0] [95][A2][A5][99][C3][C6]" eob
+//	" и [19 10 01]{result_is(2)}[1B 03 {e(l_0xc7e748)}]его друзья" eob
+	" [9A] [19 10 01]{result_is(2)}[1B 03 {e(l_0xc7e748)}][96][94][A0] [95][A2][A5][99][C3][C6]" eob
 
 l_0xc7e748:
-//  "её друзья" eob
-    "[96][97] [95][A2][A5][99][C3][C6]" eob
+//	"её друзья" eob
+	"[96][97] [95][A2][A5][99][C3][C6]" eob
 
 l_0xc7e74e:
-    "{store_registers}" call(l_0xc7e6d7) "{load_registers}" eob
+	"{store_registers}" call(l_0xc7e6d7) "{load_registers}" eob
 
 l_0xc7e758:
-    "[19 10 02][1D 0D 00 01 02][1B 03 {e(l_0xc7e779)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_0xc7e779)}]kids" eob
+//	"[19 10 02][1D 0D 00 01 02][1B 03 {e(l_0xc7e779)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_0xc7e779)}]дети" eob
+	"[19 10 02][1D 0D 00 01 02][1B 03 {e(l_0xc7e779)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_0xc7e779)}][95][96][A4][9A]" eob
 
 l_0xc7e779:
-    "kid" eob
+//	"дитя" eob
+	"[95][9A][A4][C6]" eob
 
 l_0xc7e77d:
-    "{counter(1)}" goto(l_0xc7e77f)
+	"{counter(1)}" goto(l_0xc7e77f)
 
 l_0xc7e77f:
-    "[19 28 02][1B 02 {e(l_0xc7e796)}]{swap}[1C 11 00][1C 03 00]{inc}" goto(l_0xc7e77f)
+	"[19 28 02][1B 02 {e(l_0xc7e796)}]{swap}[1C 11 00][1C 03 00]{inc}" goto(l_0xc7e77f)
 
 l_0xc7e796:
-    eob
+	eob
 
 l_0xc7e797:
     "{font_saturn}[06 0A 00 {e(l_0xc7e7f8)}]@Do you want" linebreak
