@@ -515,17 +515,17 @@ l_0xef72db:
 l_0xef72f6:
 	eob
 
-l_0xef72f7: // НУЖНО ПЕРЕСМОТРЕТЬ
-	/* "@Чёрный дым вышел из тела" linebreak */
-	/* "  персонажа {user}!{prompt}" linebreak */
-	/* "@{call(data_37.l_0xc7e6d7)} был{call(data_gender.l_gendersuffix)}" linebreak */
-	/* "  поглощен{call(data_gender.l_gendersuffix)} дымом!{prompt}" linebreak */
-	/* "@Вы ничего не видите!{prompt}" eob */
+l_0xef72f7:
+	/*
+	"@{user} выпустил{call(RUS_ref.l_gendersuffix)} чёрный дым!{prompt}" linebreak
+	"@{call(data_37.l_0xc7e6d7)} был{call(RUS_ref.l_suffix_multi)}" linebreak
+	"  поглощ{call(RUS_ref.l_suffix5_multi)} дымом!{prompt}" linebreak
+	"@Вы ничего не видите!{prompt}" eob
+	*/
 	newline
-	"@[89][97][A2][9F][C2][9B] [95][C2][9E] [93][C2][AA][96][9D] [9A][99] [A4][96][9D][91]" linebreak
-	"  [A1][96][A2][A3][A0][9F][91][98][91] {user}!{prompt}" linebreak
-	"@{call(data_37.l_0xc7e6d7)} [92][C2][9D]{call(data_gender.l_gendersuffix)}" linebreak
-	"  [A1][A0][94][9D][A0][C0][96][9F]{call(data_gender.l_gendersuffix)} [95][C2][9E][A0][9E]!{prompt}" linebreak
+	"@{user} [93][C2][A1][A5][A3][A4][9A][9D]{call(RUS_ref.l_gendersuffix)} [A9][97][A2][9F][C2][9B] [95][C2][9E]!{prompt}" linebreak
+	"@{call(data_37.l_0xc7e6d7)} [92][C2][9D]{call(RUS_ref.l_suffix_multi)}" linebreak
+	"  [A1][A0][94][9D][A0][C0]{call(RUS_ref.l_suffix5_multi)} [95][C2][9E][A0][9E]!{prompt}" linebreak
 	"@[73][C2] [9F][9A][A9][96][94][A0] [9F][96] [93][9A][95][9A][A4][96]!{prompt}" eob
 
 l_0xef733d:

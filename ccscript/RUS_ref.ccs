@@ -20,19 +20,15 @@ ROM[0xC1F117] = LDX_i(0x000C)
 // Set Up horizontal alignment
 ROM[0xC1F135] = LDX_i(0x0012)
 
-
 Continue:
 //	"Играть[00]"
 	"[7A][94][A2][91][A4][C3][00]"
-
 Copy:
 //	"Копировать[00]"
 	"[7C][A0][A1][9A][A2][A0][93][91][A4][C3][00]"
-
 Delete:
 //	"Удалить[00]"
 	"[85][95][91][9D][9A][A4][C3][00]"
-
 SetUp:
 //	"Настроить[00]"
 	"[7F][91][A3][A4][A2][A0][9A][A4][C3][00]"
@@ -109,13 +105,27 @@ l_gendersuffix5_neutral:
 l_gendersuffix6:
 	"[1C 14 01][09 03 {e(l_gendersuffix6_male)} {e(l_gendersuffix6_female)} {e(l_gendersuffix6_neutral)}]" goto(l_gendersuffix6_male)
 l_gendersuffix6_male:
-	eob
+//	"ен" eob
+	"[96][9F]" eob
 l_gendersuffix6_female:
-//	"ла" eob
-	"[9D][91]" eob
+//	"на" eob
+	"[9F][91]" eob
 l_gendersuffix6_neutral:
-//	"ло" eob
-	"[9D][A0]" eob
+//	"но" eob
+	"[9F][A0]" eob
+
+// ён/ена/ено
+l_gendersuffix7:
+	"[1C 14 01][09 03 {e(l_gendersuffix7_male)} {e(l_gendersuffix7_female)} {e(l_gendersuffix7_neutral)}]" goto(l_gendersuffix7_male)
+l_gendersuffix7_male:
+//	"ён" eob
+	"[97][9F]" eob
+l_gendersuffix7_female:
+//	"ена" eob
+	"[96][9F][91]" eob
+l_gendersuffix7_neutral:
+//	"ено" eob
+	"[96][9F][A0]" eob
 
 // его/её
 l_gender:
@@ -321,3 +331,10 @@ l_suffix4_multi:
 	"[19 10 02][1D 0D 00 01 02][1B 03 {e(l_suffix4_single)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_suffix4_single)}][9F][C2]" eob
 l_suffix4_single:
 	call(l_gendersuffix6) eob
+
+// -ены (во множ. числе) или -ён/-ена/-ено (в ед. числе)
+l_suffix5_multi:
+//	"[19 10 02][1D 0D 00 01 02][1B 03 {e(l_suffix5_single)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_suffix5_single)}]ены" eob
+	"[19 10 02][1D 0D 00 01 02][1B 03 {e(l_suffix5_single)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_suffix5_single)}][96][9F][C2]" eob
+l_suffix5_single:
+	call(l_gendersuffix7) eob

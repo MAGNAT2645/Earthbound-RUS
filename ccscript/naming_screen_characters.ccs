@@ -35,7 +35,7 @@ main_small: {		// offset EFA4E3
 	eob
 }
 
-player_capital: {	// offset EFA566
+player_capital: {		// offset EFA566
 	/*
 	text_pos(0, 0) "[2F]А[2F]Б[2F]В[2F]Г[2F]Д[2F]Е[2F]Ё[2F]Ж[2F]З"		text_pos(22, 0) "[2F]-[2F]#"
 	text_pos(0, 1) "[2F]И[2F]Й[2F]К[2F]Л[2F]М[2F]Н[2F]О[2F]П[2F]Р"	text_pos(22, 1) "[2F]'[2F]~"
@@ -97,7 +97,7 @@ footer_main: {		// offset EFA66C
 	eob
 }
 
-footer_player: {	// offset EFA6A7
+footer_player: {		// offset EFA6A7
 	/*
 	text_pos(0, 5) "[2F]ЗАГЛАВНЫЕ" text_pos(8, 5) "[2F]строчные"
 	text_pos(20, 6) "[2F]Назад" text_pos(25, 6) "[2F]ОК"

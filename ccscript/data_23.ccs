@@ -111,43 +111,44 @@ l_0xc6846b:
     "{window_closeall}[1F 23 C5 01]" eob
 
 l_0xc68472:
-    eob
+	eob
 
 l_0xc68473:
-    "{window_closeall}[1F 23 B3 01]" eob
+	"{window_closeall}[1F 23 B3 01]" eob
 
 l_0xc6847a:
-    "[1D 05 FF 01][1B 03 {e(l_0xc684a6)}]{window_closeall}{pause(1)}{music(124)}[1F 15 6A 00 C1 02 01]{pause(80)}[1F EB FF 06]{pause(70)}[1F 21 69][1F EC FF 02]{set(flag 10)}" eob
+	"[1D 05 FF 01][1B 03 {e(l_0xc684a6)}]{window_closeall}{pause(1)}{music(124)}[1F 15 6A 00 C1 02 01]{pause(80)}[1F EB FF 06]{pause(70)}[1F 21 69][1F EC FF 02]{set(flag 10)}" eob
 
 l_0xc684a6:
-    "{window_closeall}{pause(1)}{music(124)}[1F 15 6A 00 C2 02 01][1F 61][1F 07 02][1F 61]{window_open(1)}[1D 05 02 01][1B 03 {e(l_0xc684ce)}]" goto(l_0xc684ce)
+	"{window_closeall}{pause(1)}{music(124)}[1F 15 6A 00 C2 02 01][1F 61][1F 07 02][1F 61]{window_open(1)}[1D 05 02 01][1B 03 {e(l_0xc684ce)}]" goto(l_0xc684ce)
 
 l_0xc684ce:
-    "@Carpainter's lightning was reflected by the Franklin Badge.[03]{window_closeall}[1F 23 C6 01]" eob
+//	"@Медаль Франклина отразила молнию Карпэйнтера.[03]{window_closeall}[1F 23 C6 01]" eob
+	"@[7E][96][95][91][9D][C3] [86][A2][91][9F][9C][9D][9A][9F][91] [A0][A4][A2][91][99][9A][9D][91] [9E][A0][9D][9F][9A][C5] [7C][91][A2][A1][C4][9B][9F][A4][96][A2][91].[03]{window_closeall}[1F 23 C6 01]" eob
 
 l_0xc68500:
-    "{window_closeall}[1F 23 B2 01]" eob
+	"{window_closeall}[1F 23 B2 01]" eob
 
 l_0xc68507:
-    "{window_closeall}[1F 23 B2 01]" eob
+	"{window_closeall}[1F 23 B2 01]" eob
 
 l_0xc6850e:
-    "{window_closeall}[1F 23 B2 01]" eob
+	"{window_closeall}[1F 23 B2 01]" eob
 
 l_0xc68515:
-    "{window_closeall}[1F 23 B2 01]" eob
+	"{window_closeall}[1F 23 B2 01]" eob
 
 l_0xc6851c:
-    "{window_closeall}[1F 23 B2 01]" eob
+	"{window_closeall}[1F 23 B2 01]" eob
 
 l_0xc68523:
-    "{window_closeall}[1F 23 B2 01]" eob
+	"{window_closeall}[1F 23 B2 01]" eob
 
 l_0xc6852a:
-    "{window_closeall}[1F 23 B3 01]" eob
+	"{window_closeall}[1F 23 B3 01]" eob
 
 l_0xc68531:
-    "{window_closeall}[1F 23 B4 01]" eob
+	"{window_closeall}[1F 23 B4 01]" eob
 
 l_0xc68538:
     "{window_closeall}[1F 23 CA 01]" eob

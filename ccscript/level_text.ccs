@@ -1,7 +1,0 @@
-import asm65816
-
-ROM[0xC1EE9B] = ASMLoadAddress12 (level)
-
-level:
-
-"[85][A2][A0][93].:[00]"

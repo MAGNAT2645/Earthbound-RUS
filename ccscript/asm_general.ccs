@@ -30,3 +30,12 @@ IncMissRate:
 	ADC_i (0x0008)//Add “8” to the enemy’s miss rate.
 	RTL
 }
+
+command window_title(number, length, text) {
+	ASMLoadAddress0E(text)
+	LDA_i(number)
+	LDX_i(length)
+	JSL(0xC2032B)
+	//PLD
+	//RTL
+}
