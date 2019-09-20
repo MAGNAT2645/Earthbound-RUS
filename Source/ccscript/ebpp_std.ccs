@@ -1,0 +1,137 @@
+/*
+ *	EB++ :: standard library
+ *
+ *	This library defines standard operations utilizing EB++.
+ */
+
+import ebpp
+
+// Allocate registers.
+define nul		= count("reg")	// a bit bucket; where results can be discarded if they are not used
+
+define eax		= count("reg")	// accumulator
+define ebx		= count("reg")	// base
+define ecx		= count("reg")	// counter
+define edx		= count("reg")	// data
+define eip		= count("reg")	// instruction pointer
+
+define seed		= count("reg")	// special register for persistent storage of the PRNG's seed
+
+
+// Linear-congruential pseudo-random number generator.
+define _A		= 0x19660D
+
+command rnd(r) {
+	pushc(return_addr)
+	push(r)
+	goto(_rnd)
+	return_addr:
+}
+
+command rndc(c) {
+	pushc(return_addr)
+	pushc(c)
+	goto(_rnd)
+	return_addr:
+}
+
+_rnd: {
+	// Initialize the seed, if zero.
+	if eqc(nul, seed, 0) { load32(seed, 0x7E0002) }
+
+	mulc(eax, seed, _A)				// seed * a
+	ina(eax, eax)					// ... + c (c=1)
+	copy(seed, eax)					// seed = ((seed * a) + c)
+
+	load32c(eax, 0xFFFFFFFF)		// RAND_MAX
+	pull(edx)						// n
+	div(edx, nul, eax, edx)			// edx = (RAND_MAX / n)
+
+	div(eax, nul, seed, edx)		// eax = seed / edx
+
+	return
+}
+
+
+/* C-style call stack functions */
+
+// Generic, no-argument function call.
+command run(addr) {
+	pushc(return_addr)
+	goto(addr)
+	return_addr:
+}
+
+/* Template for a 1-argument function call.
+command run1a(arg) {
+	pushc(return_addr)
+	pushc(arg)
+	goto(insert_addr_here)
+	return_addr:
+}
+*/
+
+// C-style return.
+command return {
+	pull(eip)
+	reg_txtjmp(eip)
+}
+
+// Return register value (to eax.)
+command return_r(r) {
+	copy(eax, r)		// Copy return value to EAX register.
+	return
+}
+
+// Return constant value (to eax.)
+command return_c(c) {
+	load32c(eax, c)		// Copy return value to EAX register.
+	return
+}
+
+
+/* Window titler interface */
+
+// title(1, "Hello, world.")
+command title(window, str) {
+	goto(exe)
+	tag: { str "[00]" }
+
+	exe:
+	load16c(eax, window)
+	load32c(edx, tag)
+	window_title(eax, edx)
+	clearline
+}
+
+// mem_title(1, 0xABCDEF, 4)
+command mem_title(window, address, length) {
+	pushc(return_addr)
+	pushc(window)
+	load32c(eax, address)
+	load16c(ecx, length)
+	goto(_mem_title)
+	return_addr:
+}
+
+_mem_title: {
+	load32c(edx, 0x317100)
+	memcpy(eax, edx, ecx)
+
+	add(ebx, edx, ecx)
+	load16c(ecx, 0x00)
+	pstore8(ecx, ebx)
+
+	pull(eax)
+	window_title(eax, edx)
+	clearline
+
+	return
+}
+
+// preset title commands for retrieving character names
+command title_ness(window)	{ mem_title(window, 0x7E99CE, 5) }
+command title_paula(window)	{ mem_title(window, 0x7E9A2D, 5) }
+command title_jeff(window)		{ mem_title(window, 0x7E9A8C, 5) }
+command title_poo(window)		{ mem_title(window, 0x7E9AEB, 5) }
+command title_dog(window)		{ mem_title(window, 0x7E9819, 6) }

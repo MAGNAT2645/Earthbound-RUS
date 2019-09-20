@@ -1,0 +1,609 @@
+/*
+ *	EB++ :: CCScript library
+ *
+ *	version 0.999
+ */
+
+/* EB++ CONTROL CODES */
+
+// # GENERIC
+command asmcall_long(addr)		{ "[1B 07 {mem24(addr)}]" }
+command asmcall_short(addr, rb)	{ "[1B 08 {mem24(addr)} {short rb}]" }
+command printb(r, z)			{ "[1B 0A {byte r} {byte z}]" }
+command printd(r, z)			{ "[1B 0B {byte r} {byte z}]" }
+command printh(r, z)			{ "[1B 0C {byte r} {byte z}]" }
+command reg_txtjmp(r)			{ "[1B 0D {byte r}]" }
+command reg_txtcall(r)			{ "[1B 0E {byte r}]" }
+command reg_asmcall(r)			{ "[1B 0F {byte r}]" }
+
+// # LOADING / STORING
+command load8(r, addr)			{ "[1B 10 {byte r} {mem24(addr)}]" }
+command load16(r, addr)			{ "[1B 11 {byte r} {mem24(addr)}]" }
+command load24(r, addr)			{ "[1B 12 {byte r} {mem24(addr)}]" }
+command load32(r, addr)			{ "[1B 13 {byte r} {mem24(addr)}]" }
+command store8(r, addr)			{ "[1B 14 {byte r} {mem24(addr)}]" }
+command store16(r, addr)		{ "[1B 15 {byte r} {mem24(addr)}]" }
+command store24(r, addr)		{ "[1B 16 {byte r} {mem24(addr)}]" }
+command store32(r, addr)		{ "[1B 17 {byte r} {mem24(addr)}]" }
+command load16c(r, constant)	{ "[1B 18 {byte r} {short constant}]" }
+command load32c(r, constant)	{ "[1B 19 {byte r} {long constant}]" }
+command mov_reg_result(r)		{ "[1B 1A {byte r}]" }
+command mov_reg_argument(r)		{ "[1B 1B {byte r}]" }
+command mov_reg_counter(r)		{ "[1B 1C {byte r}]" }
+command mov_result_reg(r)		{ "[1B 1D {byte r}]" }
+command mov_argument_reg(r)		{ "[1B 1E {byte r}]" }
+command mov_counter_reg(r)		{ "[1B 1F {byte r}]" }
+
+// # MANIPULATION
+command add(x, l, r)			{ "[1B 20 {byte x} {byte l} {byte r}]" }
+command sub(x, l, r)			{ "[1B 21 {byte x} {byte l} {byte r}]" }
+command mul(x, l, r)			{ "[1B 22 {byte x} {byte l} {byte r}]" }
+command div(x, m, l, r)			{ "[1B 23 {byte x} {byte m} {byte l} {byte r}]" }
+command bwand(x, l, r)			{ "[1B 24 {byte x} {byte l} {byte r}]" }
+command bwor(x, l, r)			{ "[1B 25 {byte x} {byte l} {byte r}]" }
+command bwxor(x, l, r)			{ "[1B 26 {byte x} {byte l} {byte r}]" }
+command push(r)					{ "[1B 27 {byte r}]" }
+command pull(r)					{ "[1B 28 {byte r}]" }
+command copy(d, s)				{ "[1B 29 {byte d} {byte s}]" }
+
+// # MANIPULATION (CONSTANT)
+command addc(x, l, r)			{ "[1B 30 {byte x} {byte l} {long r}]" }
+command subc(x, l, r)			{ "[1B 31 {byte x} {byte l} {long r}]" }
+command mulc(x, l, r)			{ "[1B 32 {byte x} {byte l} {long r}]" }
+command divc(x, m, l, r)		{ "[1B 33 {byte x} {byte m} {byte l} {long r}]" }
+command bwandc(x, l, r)			{ "[1B 34 {byte x} {byte l} {long r}]" }
+command bworc(x, l, r)			{ "[1B 35 {byte x} {byte l} {long r}]" }
+command bwxorc(x, l, r)			{ "[1B 36 {byte x} {byte l} {long r}]" }
+command pushc(r)				{ "[1B 37 {long r}]" }
+command pop						{ "[1B 38]" }
+command alloc(c)				{ "[1B 39 {short c}]" }
+command ina(d, s)				{ "[1B 3A {byte d} {byte s}]" }
+command dec(d, s)				{ "[1B 3B {byte d} {byte s}]" }
+command shl(d, s)				{ "[1B 3C {byte d} {byte s}]" }
+command shr(d, s)				{ "[1B 3D {byte d} {byte s}]" }
+command sload(d, sp)			{ "[1B 3E {byte d} {short sp}]" }
+command sstore(d, sp)			{ "[1B 3F {byte d} {short sp}]" }
+
+// # COMPARISON
+command eq(x, l, r)				{ "[1B 40 {byte x} {byte l} {byte r}]" }
+command neq(x, l, r)			{ "[1B 41 {byte x} {byte l} {byte r}]" }
+command gte(x, l, r)			{ "[1B 42 {byte x} {byte l} {byte r}]" }
+command lte(x, l, r)			{ "[1B 43 {byte x} {byte l} {byte r}]" }
+command gt(x, l, r)				{ "[1B 44 {byte x} {byte l} {byte r}]" }
+command lt(x, l, r)				{ "[1B 45 {byte x} {byte l} {byte r}]" }
+
+// # COMPARISON (CONSTANT)
+command eqc(x, l, r)			{ "[1B 50 {byte x} {byte l} {long r}]" }
+command neqc(x, l, r)			{ "[1B 51 {byte x} {byte l} {long r}]" }
+command gtec(x, l, r)			{ "[1B 52 {byte x} {byte l} {long r}]" }
+command ltec(x, l, r)			{ "[1B 53 {byte x} {byte l} {long r}]" }
+command gtc(x, l, r)			{ "[1B 54 {byte x} {byte l} {long r}]" }
+command ltc(x, l, r)			{ "[1B 55 {byte x} {byte l} {long r}]" }
+
+// # MISCELLANEOUS
+// author's note: [1B 60-63] is listed below, under movement-related stuff.
+command window_title(w, p)		{ "[1B 64 {byte p} {byte w}]" }
+command memset(p, v, r)			{ "[1B 65 {byte p} {byte v} {byte r}]" }
+command memcpy(f, t, r)			{ "[1B 66 {byte f} {byte t} {byte r}]" }
+
+// # LOADING / STORING (INDIRECTION/POINTERS)
+command pload8(d, s)			{ "[1B 70 {byte d} {byte s}]" }
+command pload16(d, s)			{ "[1B 71 {byte d} {byte s}]" }
+command pload24(d, s)			{ "[1B 72 {byte d} {byte s}]" }
+command pload32(d, s)			{ "[1B 73 {byte d} {byte s}]" }
+command pstore8(s, d)			{ "[1B 74 {byte s} {byte d}]" }
+command pstore16(s, d)			{ "[1B 75 {byte s} {byte d}]" }
+command pstore24(s, d)			{ "[1B 76 {byte s} {byte d}]" }
+command pstore32(s, d)			{ "[1B 77 {byte s} {byte d}]" }
+
+// A shortcut for peeking at the top of the stack.
+command peek(r) {
+	pull(r)
+	push(r)
+}
+
+/* GENERIC DEFINES */
+
+/*
+ * Item definitions
+ */
+
+define ITEM_NULL = 0x00
+define ITEM_BADGE_FRANKLIN = 0x01
+define ITEM_BEAR_TEDDY = 0x02
+define ITEM_BEAR_SUPER_PLUSH = 0x03
+define ITEM_BROKEN_MACHINE = 0x04
+define ITEM_BROKEN_GADGET = 0x05
+define ITEM_BROKEN_AIR_GUN = 0x06
+define ITEM_BROKEN_SPRAY_CAN = 0x07
+define ITEM_BROKEN_LASER = 0x08
+define ITEM_BROKEN_IRON = 0x09
+define ITEM_BROKEN_PIPE = 0x0A
+define ITEM_BROKEN_CANNON = 0x0B
+define ITEM_BROKEN_TUBE = 0x0C
+define ITEM_BROKEN_BAZOOKA = 0x0D
+define ITEM_BROKEN_TRUMPET = 0x0E
+define ITEM_BROKEN_HARMONICA = 0x0F
+define ITEM_BROKEN_ANTENNA = 0x10
+define ITEM_BAT_CRACKED = 0x11
+define ITEM_BAT_TEE_BALL = 0x12
+define ITEM_BAT_SAND_LOT = 0x13
+define ITEM_BAT_MINOR_LEAGUE = 0x14
+define ITEM_BAT_MR_BASEBALL = 0x15
+define ITEM_BAT_BIG_LEAGUE_A= 0x16
+define ITEM_BAT_FAME = 0x17
+define ITEM_BAT_MAGICANT = 0x18
+define ITEM_BAT_LEGENDARY = 0x19
+define ITEM_BAT_GUTSY = 0x1A
+define ITEM_BAT_CASEY = 0x1B
+define ITEM_PAN_FRY = 0x1C
+define ITEM_PAN_THICK_FRY = 0x1D
+define ITEM_PAN_DELUXE_FRY = 0x1E
+define ITEM_PAN_CHEF_FRY = 0x1F
+define ITEM_PAN_FRENCH_FRY = 0x20
+define ITEM_PAN_MAGIC_FRY = 0x21
+define ITEM_PAN_HOLY_FRY = 0x22
+define ITEM_SWORD_OF_KINGS = 0x23
+define ITEM_GUN_POP = 0x24
+define ITEM_GUN_STUN = 0x25
+define ITEM_GUN_TOY_AIR = 0x26
+define ITEM_GUN_MAGNUM_AIR = 0x27
+define ITEM_GUN_ZIP = 0x28
+define ITEM_GUN_LASER = 0x29
+define ITEM_BEAM_HYPER = 0x2A
+define ITEM_BEAM_CRUSHER = 0x2B
+define ITEM_BEAM_SPECTRUM = 0x2C
+define ITEM_RAY_DEATH = 0x2D
+define ITEM_BEAM_BADDEST = 0x2E
+define ITEM_GUN_MOON_BEAM = 0x2F
+define ITEM_BEAM_GAIA = 0x30
+define ITEM_YOYO = 0x31
+define ITEM_SLINGSHOT = 0x32
+define ITEM_SLINGSHOT_BIONIC = 0x33
+define ITEM_YOYO_TRICK = 0x34
+define ITEM_YOYO_COMBAT = 0x35
+define ITEM_CHARM_TRAVEL = 0x36
+define ITEM_CHARM_GREAT = 0x37
+define ITEM_CHARM_CRYSTAL = 0x38
+define ITEM_RABBITS_FOOT = 0x39
+define ITEM_PENDANT_FLAME = 0x3A
+define ITEM_PENDANT_RAIN = 0x3B
+define ITEM_PENDANT_NIGHT = 0x3C
+define ITEM_PENDANT_SEA = 0x3D
+define ITEM_PENDANT_STAR = 0x3E
+define ITEM_CLOAK_OF_KINGS = 0x3F
+define ITEM_BRACELET_CHEAP = 0x40
+define ITEM_BRACELET_COPPER = 0x41
+define ITEM_BRACELET_SILVER = 0x42
+define ITEM_BRACELET_GOLD = 0x43
+define ITEM_BAND_PLATINUM_A = 0x44
+define ITEM_BAND_DIAMOND_A = 0x45
+define ITEM_BRACELET_PIXIE = 0x46
+define ITEM_BAND_CHERUB = 0x47
+define ITEM_BAND_GODDESS = 0x48
+define ITEM_BRACER_OF_KINGS = 0x49
+define ITEM_CAP_BASEBALL = 0x4A
+define ITEM_HAT_HOLMES = 0x4B
+define ITEM_CAP_MR_BASEBALL = 0x4C
+define ITEM_HAT_HARD = 0x4D
+define ITEM_RIBBON = 0x4E
+define ITEM_RIBBON_RED = 0x4F
+define ITEM_RIBBON_GODDESS = 0x50
+define ITEM_COIN_SLUMBER = 0x51
+define ITEM_COIN_DEFENSE = 0x52
+define ITEM_COIN_LUCKY = 0x53
+define ITEM_COIN_TALISMAN = 0x54
+define ITEM_COIN_SHINY = 0x55
+define ITEM_COIN_SOUVENIR = 0x56
+define ITEM_DIADEM_OF_KINGS = 0x57
+define ITEM_COOKIE = 0x58
+define ITEM_BAG_OF_FRIES = 0x59
+define ITEM_HAMBURGER = 0x5A
+define ITEM_EGG_BOILED = 0x5B
+define ITEM_EGG_FRESH = 0x5C
+define ITEM_LUNCH_PICNIC = 0x5D
+define ITEM_SUMMERS_PASTA = 0x5E
+define ITEM_PIZZA = 0x5F
+define ITEM_CHEF_SPECIAL = 0x60
+define ITEM_PIZZA_LARGE = 0x61
+define ITEM_PSI_CARAMEL = 0x62
+define ITEM_MAGIC_TRUFFLE = 0x63
+define ITEM_LUNCH_BRAIN_FOOD = 0x64
+define ITEM_ROCK_CANDY = 0x65
+define ITEM_CROISSANT = 0x66
+define ITEM_BREAD_ROLL = 0x67
+define ITEM_BUBBLE_GUM = 0x68
+define ITEM_JAR_FLY_HONEY = 0x69
+define ITEM_CAN_FRUIT_JUICE = 0x6A
+define ITEM_TEA_ROYAL_ICED = 0x6B
+define ITEM_PROTEIN_DRINK = 0x6C
+define ITEM_KRAKEN_SOUP = 0x6D
+define ITEM_WATER_BOTTLE = 0x6E
+define ITEM_COLD_REMEDY = 0x6F
+define ITEM_SERUM_VIAL = 0x70
+define ITEM_CAPSULE_IQ = 0x71
+define ITEM_CAPSULE_GUTS = 0x72
+define ITEM_CAPSULE_SPEED = 0x73
+define ITEM_CAPSULE_VITAL = 0x74
+define ITEM_CAPSULE_LUCK = 0x75
+define ITEM_PACKET_KETCHUP = 0x76
+define ITEM_PACKET_SUGAR = 0x77
+define ITEM_COCOA_TIN = 0x78
+define ITEM_CREAM_CARTON = 0x79
+define ITEM_SPRIG_PARSLEY = 0x7A
+define ITEM_JAR_HOT_SAUCE = 0x7B
+define ITEM_PACKET_SALT = 0x7C
+define ITEM_PASS_BACKSTAGE = 0x7D
+define ITEM_JAR_DELISAUCE = 0x7E
+define ITEM_TOWEL_WET = 0x7F
+define ITEM_HERB_REFRESHING = 0x80
+define ITEM_HERB_SECRET = 0x81
+define ITEM_HORN_LIFE = 0x82
+define ITEM_UNIT_COUNTER_PSI = 0x83
+define ITEM_SHIELD_KILLER = 0x84
+define ITEM_BAZOOKA = 0x85
+define ITEM_BAZOOKA_HEAVY = 0x86
+define ITEM_HP_SUCKER = 0x87
+define ITEM_HP_SUCKER_HUNGRY = 0x88
+define ITEM_SPRAY_XTERMINATOR = 0x89
+define ITEM_SLIME_GENERATOR = 0x8A
+define ITEM_YOGURT_DISPENSER = 0x8B
+define ITEM_RULER = 0x8C
+define ITEM_SNAKE_BAG = 0x8D
+define ITEM_MUMMY_WRAP = 0x8E
+define ITEM_PROTRACTOR = 0x8F
+define ITEM_BOTTLE_ROCKET = 0x90
+define ITEM_BOTTLE_ROCKET_BIG = 0x91
+define ITEM_BOTTLE_ROCKET_MULTI = 0x92
+define ITEM_BOMB = 0x93
+define ITEM_BOMB_SUPER = 0x94
+define ITEM_SPRAY_INSECTICIDE = 0x95
+define ITEM_RUST_PROMOTER = 0x96
+define ITEM_RUST_PROMOTER_DX = 0x97
+define ITEM_SOCKS_DIRTY_PAIR = 0x98
+define ITEM_BEETLE_STAG = 0x99
+define ITEM_TOOTHBRUSH = 0x9A
+define ITEM_HANDBAG_STRAP = 0x9B
+define ITEM_PHAROAH_CURSE = 0x9C
+define ITEM_SHOWER_DEFENSE = 0x9D
+define ITEM_LETTER_MOM = 0x9E
+define ITEM_PILL_SUDDEN_GUTS = 0x9F
+define ITEM_DRAGONITE_BAG = 0xA0
+define ITEM_SPRAY_DEFENSE = 0xA1
+define ITEM_PIGGY_NOSE = 0xA2
+define ITEM_FOR_SALE_SIGN = 0xA3
+define ITEM_SHYNESS_BOOK = 0xA4
+define ITEM_PICTURE_POSTCARD = 0xA5
+define ITEM_KING_BANANA = 0xA6
+define ITEM_LETTER_TONY = 0xA7
+define ITEM_CHICK = 0xA8
+define ITEM_CHICKEN = 0xA9
+define ITEM_KEY_SHACK = 0xAA
+define ITEM_KEY_CABIN = 0xAB
+define ITEM_BAD_KEY_MACHINE = 0xAC
+define ITEM_TEMP_GOODS = 0xAD
+define ITEM_ZOMBIE_PAPER = 0xAE
+define ITEM_HAWK_EYE = 0xAF
+define ITEM_BICYCLE = 0xB0
+define ITEM_ATM_CARD = 0xB1
+define ITEM_SHOW_TICKET = 0xB2
+define ITEM_LETTER_KIDS = 0xB3
+define ITEM_WAD_BILLS = 0xB4
+define ITEM_RECEIVER_PHONE = 0xB5
+define ITEM_DIAMOND = 0xB6
+define ITEM_SIGNED_BANANA = 0xB7
+define ITEM_ERASER_PENCIL = 0xB8
+define ITEM_HIEROGLYPH_COPY = 0xB9
+define ITEM_METEOTITE = 0xBA
+define ITEM_CONTACT_LENS = 0xBB
+define ITEM_HAND_AID = 0xBC
+define ITEM_TROUT_YOGURT = 0xBD
+define ITEM_BANANA = 0xBE
+define ITEM_CALORIE_STICK = 0xBF
+define ITEM_KEY_TOWER = 0xC0
+define ITEM_METEORITE_PIECE = 0xC1
+define ITEM_PENDANT_EARTH = 0xC2
+define ITEM_NEUTRALIZER = 0xC3
+define ITEM_SOUND_STONE = 0xC4
+define ITEM_EXIT_MOUSE = 0xC5
+define ITEM_RESORT_GELATO = 0xC6
+define ITEM_SNAKE = 0xC7
+define ITEM_VIPER = 0xC8
+define ITEM_BRAIN_STONE = 0xC9
+define ITEM_TOWN_MAP = 0xCA
+define ITEM_VIDEO_RELAXANT = 0xCB
+define ITEM_SUPORMA = 0xCC
+define ITEM_KEY_LOCKER = 0xCD
+define ITEM_INSIGNIFICANT_ITEM = 0xCE
+define ITEM_MAGIC_TART = 0xCF
+define ITEM_TINY_RUBY = 0xD0
+define ITEM_MONKEY_LOVE = 0xD1
+define ITEM_ERASER_ERASER = 0xD2
+define ITEM_TENDAKRAUT = 0xD3
+define ITEM_BAT_TREX = 0xD4
+define ITEM_BAT_BIG_LEAGUE_B = 0xD5
+define ITEM_BAT_ULTIMATE = 0xD6
+define ITEM_BEAM_DOUBLE = 0xD7
+define ITEM_BAND_PLATINUM_B = 0xD8
+define ITEM_BAND_DIAMOND_B = 0xD9
+define ITEM_RIBBON_DEFENSE = 0xDA
+define ITEM_RIBBON_TALISMAN = 0xDB
+define ITEM_RIBBON_SATURN = 0xDC
+define ITEM_COIN_SILENCE = 0xDD
+define ITEM_COIN_CHARM = 0xDE
+define ITEM_CUP_NOODLES = 0xDF
+define ITEM_SKIP_SANDWICH = 0xE0
+define ITEM_SKIP_SANDWICH_DX = 0xE1
+define ITEM_LUCKY_SANDWICH_A = 0xE2
+define ITEM_LUCKY_SANDWICH_B = 0xE3
+define ITEM_LUCKY_SANDWICH_C = 0xE4
+define ITEM_LUCKY_SANDWICH_D = 0xE5
+define ITEM_LUCKY_SANDWICH_E = 0xE6
+define ITEM_LUCKY_SANDWICH_F = 0xE7
+define ITEM_CUP_COFFEE = 0xE8
+define ITEM_BURGER_DOUBLE = 0xE9
+define ITEM_PCB = 0xEA  // Peanut Cheese Bar
+define ITEM_PIGGY_JELLY = 0xEB
+define ITEM_BOWL_RICE_GRUEL = 0xEC
+define ITEM_BEAN_CROQUETTE = 0xED
+define ITEM_MOLOKHEIYA_SOUP = 0xEE
+define ITEM_PLAIN_ROLL = 0xEF
+define ITEM_KABOB = 0xF0
+define ITEM_PLAIN_YOGURT = 0xF1
+define ITEM_JERKY_BEEF = 0xF2
+define ITEM_BURGER_MAMMOTH = 0xF3
+define ITEM_JERKY_SPICY = 0xF4
+define ITEM_JERKY_LUXURY = 0xF5
+define ITEM_WATER_BOTTLE_DX = 0xF6
+define ITEM_MAGIC_PUDDING = 0xF7
+define ITEM_PAN_NONSTICK = 0xF8
+define ITEM_COIN_MR_SATURN = 0xF9
+define ITEM_METEORINUM = 0xFA
+define ITEM_POPSICLE = 0xFB
+define ITEM_CUP_LIFENOODLES = 0xFC
+define ITEM_KEY_CARROT = 0xFD
+
+
+/* MOVEMENT / DEMO STUFF */
+
+// Demo numbers for the demo sequence pointer-table.
+define DEMO_SUMMERS		= 0 	// 1st demo sequence
+define DEMO_THREED		= 1 	// unused/hidden demo sequence -- Ness & Paula walk around zombie Threed cemetary.
+define DEMO_DEEPDARK	= 2 	// 2nd
+define DEMO_BUS			= 3 	// 3rd
+define DEMO_PYRAMID		= 4 	// 4th
+define DEMO_TWOSON		= 5 	// 5th
+define DEMO_SCARABA		= 6 	// 6th
+define DEMO_FOURSIDE	= 7 	// 7th
+define DEMO_SUMMERS_X	= 8 	// unused/hidden demo sequence -- Ness & co. walk around upper summers.
+define DEMO_GIANT		= 9 	// 8th
+
+// Movement pattern numbers for each demo sequence.
+define MOVE_SUMMERS				= 0x0217
+define MOVE_THREED				= 0x0218
+define MOVE_DEEPDARK			= 0x0219
+define MOVE_DEEPDARK_PETUNIA1	= 0x002C	// I'm assuming this is a "stay still" movement code.
+define MOVE_DEEPDARK_PETUNIA2	= 0x021A	// Demonic Petunia has its own movement code for this particular demo sequence, when it moves east a little towards the party.
+define MOVE_BUS					= 0x021B
+define MOVE_BUS_SCOOP			= 0x021C	// The dirt scooper in this demo sequence has its own movement code, heading east.
+define MOVE_PYRAMID				= 0x021D
+define MOVE_TWOSON				= 0x021E
+define MOVE_SCARABA				= 0x021F
+define MOVE_FOURSIDE			= 0x0220
+define MOVE_SUMMERS_X			= 0x0221
+define MOVE_GIANT				= 0x0222
+
+
+/*
+ * ROM manipulation helpers
+ */
+
+// Converts a number to a little-endian formatted 24-bit value.
+command mem24(n) {
+	"[{short n}{byte [2] n}]"
+}
+
+// Links an item's help text pointer to a label.
+command item_link(itemnum, target) {
+	ROMTBL[0xD55023, 0x27, itemnum] = target
+}
+
+// Links a movement sequence to a label.  (Obsoleted by new arbitrary movement-pattern calling control codes.)
+command mov_link(seqnum, target) {
+	ROMTBL[0xC400D4, 0x03, seqnum] = mem24(target)
+}
+
+// Links a demo sequence to a label.
+command demo_link(seqnum, target) {
+	ROMTBL[0xC3FD8D, 0x04, seqnum] = target
+}
+
+// Sets which demo is played in which slot.
+// There are a maximum of 10 demoes: 0-9, and there are a maximum of 8 slots: 0-7.
+command demo_slot(seqnum, slot) {
+	ROMTBL[0xC4DC48, 0x0C, slot] = byte seqnum
+}
+
+// Changes the demo's music track.
+command demo_music(tracknum) {
+	ROM[0xC4DC41] = byte tracknum
+}
+
+// Change the style of the spotlight:
+// 0 - normal
+// 1 - wide
+// 2 - closes (difficult to explain without seeing it)
+command spotlight_style(style) {
+	ROM[0xC4DA12] = byte style
+}
+
+
+/*
+ * New movement-related control codes
+ */
+
+// Creates a TPT entry with an arbitrary movement pattern, pointed to by ptr.
+command create_tpt_movaddr(entry, ptr, effect) {
+	"[1B 60 {short entry} {mem24(ptr)} {byte effect}]"
+}
+
+// Creates a sprite with an arbitrary movement pattern, pointed to by ptr.
+command create_sprite_movaddr(entry, ptr, effect) {
+	"[1B 61 {short entry} {mem24(ptr)} {byte effect}]"
+}
+
+// Gives an on-screen TPT entry an arbitrary movement pattern, pointed to by ptr.
+command give_tpt_movaddr(entry, ptr) {
+	"[1B 62 {short entry} {mem24(ptr)}]"
+}
+
+// Gives an on-screen sprite entry an arbitrary movement pattern, pointed to by ptr.
+command give_sprite_movaddr(entry, ptr) {
+	"[1B 63 {short entry} {mem24(ptr)}]"
+}
+
+
+/*
+ * Movement codes -- these are entirely different from control codes.
+ */
+
+command mov_end "[00]"
+command mov_loop_start(i) "[01 {byte i}]"
+command mov_loop_end "[02]"
+command mov_jmlmov(target) "[03 {mem24(target)}]"
+command mov_jslmov(target) "[04 {mem24(target)}]"
+command mov_rtl "[05]"
+command mov_pause(n) "[06 {byte n}]"
+
+// The difference between mov_halt and mov_end seems to be that mov_end either erases
+// or makes invisible the active entry.  mov_halt just finishes the movement pattern in question
+// and leaves the entry alone after that.
+command mov_halt "[09]"
+
+command mov_tablewrite(i, w) "[0E {byte i} {short w}]"
+
+command mov_ramwrite(w, b) "[12 {short w} {byte b}]"
+
+command mov_jmpmov(target) "[19 {short target}]"
+command mov_jsrmov(target) "[1A {short target}]"
+command mov_rts "[1B]"
+
+command mov_loadtmp(c) "[1D {short c}]"
+
+// Sets active entry's X and Y co-ordinates, in pixels.  Multiply map tile sector by 32 to get co-ordinates.
+command mov_setx(n) "[28 {short n}]"
+command mov_sety(n) "[29 {short n}]"
+command mov_setxy(x,y) "[28 {short x} 29 {short y}]"
+
+// Moves active entry by N.  This number is signed, so FFFF is negative 1, FFFE is negative 2, etc.
+command mov_movx(n) "[2B {short n}]"
+command mov_movy(n) "[2C {short n}]"
+
+// Long calls assembly.
+command mov_jslasm(target) "[42 {mem24(target)}]"
+
+// Long-calls a short-returning movement pattern subroutine.  Fill fivebyte in with a location of a 0x05 byte in the bank you're calling to.
+// This is a non-standard movement control code only found in EB++.
+// (Make sure your fivebyte address is a non-header address.  Subtract 0x200 if you have a header.)
+command mov_jslmov_short(target, fivebyte) "[4D {short target}{byte [2] target} {short fivebyte}]"
+
+
+/*
+ * Movement subroutines
+ */
+
+// Calls an arbitrary block of text from within a movement pattern.
+command movs_calltext(target) {
+	mov_jslasm(0xC0A88D)
+	"[{byte [2] target} 00 {short target}]"
+}
+
+// Cease walking animation.
+command movs_stop {
+	mov_tablewrite(4,1)	//"[0E 04 01 00]"
+}
+
+// Start walking animation.
+command movs_go {
+	mov_tablewrite(4,0)	//"[0E 04 00 00]"
+}
+
+// Gradually moves the active entry to the destination (X,Y), in pixel co-ordinates.
+command movs_walker(x, y) {
+	mov_tablewrite(0x06, x)
+	mov_tablewrite(0x07, y)
+	mov_jslmov_short(0xC3AB59, 0x01F6)
+}
+
+// Like movs_walker, but the direction the sprite faces seems to be... backwards.  Think moon-walking.  Or driving in reverse.
+command movs_slider(x, y) {
+	mov_tablewrite(0x06, x)
+	mov_tablewrite(0x07, y)
+	mov_jslmov_short(0xC3AB67, 0x01F6)
+}
+
+// Changes the active sprite using the current movement code's direction.
+// At the moment, it only seems to work for the party or if the sprite is animated.
+command movs_dir(dir) {
+	mov_jslasm(0xC0A651) "[{byte dir}]"
+}
+
+// Another direction-setting subroutine.  Only works for currently animating sprites.
+command movs_dirB(dir) {
+	mov_loadtmp(dir)
+	mov_jslasm(0xC0A65F)
+}
+
+// Continually walk the active sprite in the specified direction until interrupted.
+command movs_dirwalker(dir) {
+	mov_loadtmp(dir)
+	mov_jslmov_short(0xC3AA1E, 0x01F6)	// "[1A 1E AA]" directional walker subroutine, same one used in the flyovers.
+}
+
+// This seems to make the sprite warp to the party, or perhaps the camera.
+command movs_partyjump {
+	mov_jslmov_short(0xC34E73, 0x01F6)
+}
+
+// Initialization routines.
+command movs_init(speed, style) {
+	mov_jslmov_short(0xC3AA38, 0x01F6)			// Sets the sprite up to be animated. (walking in place)
+	mov_jslasm(0xC0A685) "[{short speed}]"
+	mov_tablewrite(5, byte style)
+}
+
+command movs_init_noanim(speed, style) {
+	mov_jslmov_short(0xC3DBE0, 0x01F6)			// Sets the sprite up to not be animated.
+	mov_jslasm(0xC0A685) "[{short speed}]"
+	mov_tablewrite(5, byte style)
+}
+
+
+/*
+ * Demo-specific movements
+ */
+
+// Shows "produced by Shigesato Itoi."
+command demo_itoi {
+	mov_jslasm(0xC4DD28)			// Shows "produced by Shigesato Itoi."
+	mov_ramwrite(0x001A, 0x17)		// Keeps the background from disappearing after loading "Shigesato Itoi."
+}
+
+// Shows "presented by Nintendo."
+command demo_nintendo {
+	mov_jslasm(0xC4DDD0)
+	mov_ramwrite(0x001A, 0x17)		// Keeps the background from disappearing.
+}
+
+// Marks the end of a movement pattern.  Not necessarily the end of the entire demo sequence.
+command demo_stop {
+	mov_jslasm(0xC0A8A0)			// "[42 A0 A8 C0]"
+	"[C5 00 DF E5]"					// arguments
+}
+
+// End movement codes for a demo sequence movement.
+command demo_end {
+	demo_stop
+	mov_jslasm(0xC46E46)			// "[42 46 6E C4]"
+	mov_halt						// "[09]"
+}

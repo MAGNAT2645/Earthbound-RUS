@@ -1,0 +1,313 @@
+import asm65816
+
+command e(label)				"{long label}"
+command user_gender			"[1C 14 01]"
+command user_number			"[1C 14 02]"
+command target_gender			"[1C 15 01]"
+command target_number		"[1C 15 02]"
+command char_slot(num)		"[19 10 {byte num}]"
+
+// Проверка на гендер (используется в бою?)
+
+
+// Например, проверил : проверила : проверило
+l_gendersuffix:
+	"[09 03 {e(l_gendersuffix_male)} {e(l_gendersuffix_female)} {e(l_gendersuffix_neutral)}]" goto(l_gendersuffix_male)
+l_gendersuffix_male:
+	eob
+l_gendersuffix_female:
+//	"а" eob
+	"[91]" eob
+l_gendersuffix_neutral:
+//	"о" eob
+	"[A0]" eob
+
+
+// ся/ась/ось
+l_gendersuffix2:
+	"[09 03 {e(l_gendersuffix2_male)} {e(l_gendersuffix2_female)} {e(l_gendersuffix2_neutral)}]" goto(l_gendersuffix2_male)
+l_gendersuffix2_male:
+//	"ся" eob
+	"[A3][C6]" eob
+l_gendersuffix2_female:
+//	"ась" eob
+	"[91][A3][C3]" eob
+l_gendersuffix2_neutral:
+//	"ось" eob
+	"[A0][A3][C3]" eob
+
+// ёл/ла/ло
+l_gendersuffix3:
+	"[09 03 {e(l_gendersuffix3_male)} {e(l_gendersuffix3_female)} {e(l_gendersuffix3_neutral)}]" goto(l_gendersuffix3_male)
+l_gendersuffix3_male:
+//	"ёл" eob
+	"[97][9D]" eob
+l_gendersuffix3_female:
+//	"ла" eob
+	"[9D][91]" eob
+l_gendersuffix3_neutral:
+//	"ло" eob
+	"[9D][A0]" eob
+
+// ёс/есла/есло
+l_gendersuffix4:
+	"[09 03 {e(l_gendersuffix4_male)} {e(l_gendersuffix4_female)} {e(l_gendersuffix4_neutral)}]" goto(l_gendersuffix4_male)
+l_gendersuffix4_male:
+//	"ёс" eob
+	"[97][A3]" eob
+l_gendersuffix4_female:
+//	"есла" eob
+	"[96][A3][9D][91]" eob
+l_gendersuffix4_neutral:
+//	"есло" eob
+	"[96][A3][9D][A0]" eob
+
+// -/ла/ло
+l_gendersuffix5:
+	"[09 03 {e(l_gendersuffix5_male)} {e(l_gendersuffix5_female)} {e(l_gendersuffix5_neutral)}]" goto(l_gendersuffix5_male)
+l_gendersuffix5_male:
+	eob
+l_gendersuffix5_female:
+//	"ла" eob
+	"[9D][91]" eob
+l_gendersuffix5_neutral:
+//	"ло" eob
+	"[9D][A0]" eob
+
+// ен/на/но
+l_gendersuffix6:
+	"[09 03 {e(l_gendersuffix6_male)} {e(l_gendersuffix6_female)} {e(l_gendersuffix6_neutral)}]" goto(l_gendersuffix6_male)
+l_gendersuffix6_male:
+//	"ен" eob
+	"[96][9F]" eob
+l_gendersuffix6_female:
+//	"на" eob
+	"[9F][91]" eob
+l_gendersuffix6_neutral:
+//	"но" eob
+	"[9F][A0]" eob
+
+// ён/ена/ено
+l_gendersuffix7:
+	"[09 03 {e(l_gendersuffix7_male)} {e(l_gendersuffix7_female)} {e(l_gendersuffix7_neutral)}]" goto(l_gendersuffix7_male)
+l_gendersuffix7_male:
+//	"ён" eob
+	"[97][9F]" eob
+l_gendersuffix7_female:
+//	"ена" eob
+	"[96][9F][91]" eob
+l_gendersuffix7_neutral:
+//	"ено" eob
+	"[96][9F][A0]" eob
+
+// его/её
+l_gender:
+	"[09 03 {e(l_gender_male)} {e(l_gender_female)} {e(l_gender_male)}]" eob
+l_gender_male:
+//	"его" eob
+	"[96][94][A0]" eob
+l_gender_female:
+//	"её" eob
+	"[96][97]" eob
+
+// ему/ей
+l_gender2:
+	"[09 03 {e(l_gender2_male)} {e(l_gender2_female)} {e(l_gender2_male)}]" eob
+l_gender2_male:
+//	"ему" eob
+	"[96][9E][A5]" eob
+l_gender2_female:
+//	"ей" eob
+	"[96][9B]" eob
+
+// -ый/-ая
+l_gender_end_outside:
+//	"[19 10 01]{result_is(2)}[1B 03 {e(l_female_end_outside)}]ый" eob
+	"[19 10 01]{result_is(2)}[1B 03 {e(l_female_end_outside)}][C2][9B]" eob
+l_female_end_outside:
+//	"ая" eob
+	"[91][C6]" eob
+
+
+l_gender_interwine:
+	"[09 03 {e(l_gender_interwine_male)} {e(l_gender_interwine_female)} {e(l_gender_interwine_neutral)}]" goto(l_gender_interwine_male)
+l_gender_interwine_male:
+//	"ёлся" eob
+	"[97][9D][A3][C6]" eob
+l_gender_interwine_female:
+//	"елась" eob
+	"[96][9D][91][A3][C3]" eob
+l_gender_interwine_neutral:
+//	"елось" eob
+	"[96][9D][A0][A3][C3]" eob
+
+
+gain_exp_multi:
+//	"[1D 19 02][1B 03 {e(gain_exp_single)}][19 10 02][1D 0D 00 01 02][1B 03 {e(gain_exp_single)}]получают" eob
+	"[1D 19 02][1B 03 {e(gain_exp_single)}][19 10 02][1D 0D 00 01 02][1B 03 {e(gain_exp_single)}][A1][A0][9D][A5][A9][91][C5][A4]" eob
+gain_exp_single:
+//	"получает" eob
+	"[A1][A0][9D][A5][A9][91][96][A4]" eob
+
+used_multi:
+//	"[1D 19 02][1B 03 {e(used_single)}][19 10 02][1D 0D 00 01 02][1B 03 {e(used_single)}]использовали" eob
+	"[1D 19 02][1B 03 {e(used_single)}][19 10 02][1D 0D 00 01 02][1B 03 {e(used_single)}][9A][A3][A1][A0][9D][C3][99][A0][93][91][9D][9A]" eob
+used_single:
+//	"использовал{user_gender}{call(l_gendersuffix)}" eob
+	"[9A][A3][A1][A0][9D][C3][99][A0][93][91][9D]{user_gender}{call(l_gendersuffix)}" eob
+
+can_multi:
+//	"[1D 19 02][1B 03 {e(can_single)}][19 10 02][1D 0D 00 01 02][1B 03 {e(can_single)}]могут" eob
+	"[1D 19 02][1B 03 {e(can_single)}][19 10 02][1D 0D 00 01 02][1B 03 {e(can_single)}][9E][A0][94][A5][A4]" eob
+can_single:
+//	"может" eob
+	"[9E][A0][98][96][A4]" eob
+
+trying_multi:
+//	"[1D 19 02][1B 03 {e(trying_single)}][19 10 02][1D 0D 00 01 02][1B 03 {e(trying_single)}]пытаются" eob
+	"[1D 19 02][1B 03 {e(trying_single)}][19 10 02][1D 0D 00 01 02][1B 03 {e(trying_single)}][A1][C2][A4][91][C5][A4][A3][C6]" eob
+trying_single:
+//	"пытается" eob
+	"[A1][C2][A4][91][96][A4][A3][C6]" eob
+
+abandoned_multi:
+//	"[1D 19 02][1B 03 {e(abandoned_single)}][19 10 02][1D 0D 00 01 02][1B 03 {e(abandoned_single)}]отказываются" eob
+	"[1D 19 02][1B 03 {e(abandoned_single)}][19 10 02][1D 0D 00 01 02][1B 03 {e(abandoned_single)}][A0][A4][9C][91][99][C2][93][91][C5][A4][A3][C6]" eob
+abandoned_single:
+//	"отказывается" eob
+	"[A0][A4][9C][91][99][C2][93][91][96][A4][A3][C6]" eob
+
+lost_battle_multi:
+//	"[1D 19 02][1B 03 {e(lost_battle_single)}][19 10 02][1D 0D 00 01 02][1B 03 {e(lost_battle_single)}]проиграли" eob
+	"[1D 19 02][1B 03 {e(lost_battle_single)}][19 10 02][1D 0D 00 01 02][1B 03 {e(lost_battle_single)}][A1][A2][A0][9A][94][A2][91][9D][9A]" eob
+lost_battle_single:
+//	"проиграл{char_slot(1)}{call(data_gender.l_gendersuffix)}" eob
+	"[A1][A2][A0][9A][94][A2][91][9D]{char_slot(1)}{call(data_gender.l_gendersuffix)}" eob
+
+lost_pp_multi:
+//	"[1D 19 02][1B 03 {e(lost_pp_single)}][19 10 02][1D 0D 00 01 02][1B 03 {e(lost_pp_single)}]потеряли" eob
+	"[1D 19 02][1B 03 {e(lost_pp_single)}][19 10 02][1D 0D 00 01 02][1B 03 {e(lost_pp_single)}][A1][A0][A4][96][A2][C6][9D][9A]" eob
+lost_pp_single:
+//	"потерял{user_gender}{call(l_gendersuffix)}" eob
+	"[A1][A0][A4][96][A2][C6][9D]{user_gender}{call(l_gendersuffix)}" eob
+
+recovered_multi:
+//	"[1D 19 02][1B 03 {e(recovered_single)}][19 10 02][1D 0D 00 01 02][1B 03 {e(recovered_single)}]восстановлены" eob
+	"[1D 19 02][1B 03 {e(recovered_single)}][19 10 02][1D 0D 00 01 02][1B 03 {e(recovered_single)}][93][A0][A3][A3][A4][91][9F][A0][93][9D][96][9F][C2]" eob
+recovered_single:
+//	"восстановлен{user_gender}{call(l_gendersuffix)}" eob
+	"[93][A0][A3][A3][A4][91][9F][A0][93][9D][96][9F]{user_gender}{call(l_gendersuffix)}" eob
+
+l_encounter_end:
+//	"[1C 14 02][09 03 {e(l_enc_end2)} {e(l_enc_end3)} {e(l_enc_end3)}]ют" eob
+	"[1C 14 02][09 03 {e(l_enc_end2)} {e(l_enc_end3)} {e(l_enc_end3)}][C5][A4]" eob
+l_enc_end2:
+//	"ет" eob
+	"[96][A4]" eob
+l_enc_end3:
+//	"ют" eob
+	"[C5][A4]" eob
+
+l_encounter_end2:
+//	"[1C 14 02][09 03 {e(l_enc_end2_2)} {e(l_enc_end2_3)} {e(l_enc_end2_3)}]ят" eob
+	"[1C 14 02][09 03 {e(l_enc_end2_2)} {e(l_enc_end2_3)} {e(l_enc_end2_3)}][C6][A4]" eob
+l_enc_end2_2:
+//	"ит" eob
+	"[9A][A4]" eob
+l_enc_end2_3:
+//	"ят" eob
+	"[C6][A4]" eob
+
+l_encounter_came:
+//	"[1C 14 02][09 03 {e(l_enc_came2)} {e(l_enc_came3)} {e(l_enc_came3)}]пришли" eob
+	"[1C 14 02][09 03 {e(l_enc_came2)} {e(l_enc_came3)} {e(l_enc_came3)}][A1][A2][9A][AA][9D][9A]" eob
+l_enc_came2:
+	call(data_gender.l_gender_came) eob
+l_enc_came3:
+//	"пришли" eob
+	"[A1][A2][9A][AA][9D][9A]" eob
+
+// Вывод имён персонажей, например "Волшебная бабочка расслабила персонажа Несс и его друзей"
+// Используется вне боя
+l_print_players:
+	"[19 10 01]{swap}[1C 02 00]{counter(1)}" goto(l_print_players_init)
+l_print_players_init:
+	"{inc}{ctoarg}[1D 19 00][1B 03 {e(l_print_players_load)}][19 10 00][1D 0D 00 01 02][1B 03 {e(l_print_players_load)}][19 10 00][1D 0D 00 01 03][1B 03 {e(l_print_players_load)}]" goto(l_print_players_init)
+l_print_players_load:
+	"{ctoarg}{swap}[09 05 {e(l_print_players_nil)} {e(l_print_players_nil)} {e(l_print_players_and)} {e(l_print_players_his_friends)} {e(l_print_players_his_friends)}]" eob
+l_print_players_nil:
+	eob
+l_print_players_and:
+//	"[19 10 02]{swap} и [1C 02 00]" eob
+	"[19 10 02]{swap} [9A] [1C 02 00]" eob
+l_print_players_his_friends:
+//	" и [19 10 01]{result_is(2)}[1B 03 {e(l_print_players_her_friends)}]его друзей" eob
+	" [9A] [19 10 01]{result_is(2)}[1B 03 {e(l_print_players_her_friends)}][96][94][A0] [95][A2][A5][99][96][9B]" eob
+l_print_players_her_friends:
+//	"её друзей" eob
+	"[96][97] [95][A2][A5][99][96][9B]" eob
+
+LC_you_multi:
+//	"[19 10 02][1D 0D 00 01 02][1B 03 {e(LC_you_single)}][19 10 02][1D 0D 00 01 03][1B 03 {e(LC_you_single)}]вы" eob
+	"[19 10 02][1D 0D 00 01 02][1B 03 {e(LC_you_single)}][19 10 02][1D 0D 00 01 03][1B 03 {e(LC_you_single)}][93][C2]" eob
+LC_you_single:
+//	"ты" eob
+	"[A4][C2]" eob
+
+UC_you_multi:
+//	"[19 10 02][1D 0D 00 01 02][1B 03 {e(UC_you_multi)}][19 10 02][1D 0D 00 01 03][1B 03 {e(UC_you_multi)}]Вы" eob
+	"[19 10 02][1D 0D 00 01 02][1B 03 {e(UC_you_multi)}][19 10 02][1D 0D 00 01 03][1B 03 {e(UC_you_multi)}][73][C2]" eob
+UC_you_single:
+//	"Ты" eob
+	"[84][C2]" eob
+
+l_kid_multi_UC:
+//	"[19 10 02][1D 0D 00 01 02][1B 03 {e(l_kid_single_UC)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_kid_single_UC)}]Дети" eob
+	"[19 10 02][1D 0D 00 01 02][1B 03 {e(l_kid_single_UC)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_kid_single_UC)}][75][96][A4][9A]" eob
+l_kid_single_UC:
+	"{user_gender}[09 03 {e(l_kid_male_UC)} {e(l_kid_female_UC)} {e(l_kid_neutral_UC)}]" goto(l_kid_male_UC)
+l_kid_male_UC:
+//	"Сын" eob
+	"[83][C2][9F]" eob
+l_kid_female_UC:
+//	"Дочь" eob
+	"[75][A0][A9][C3]" eob
+l_kid_neutral_UC:
+//	"Дитя" eob
+	"[75][9A][A4][C6]" eob
+
+// -и (во множ. числе) или -а (в ед. числе)
+l_suffix_multi:
+//	"[19 10 02][1D 0D 00 01 02][1B 03 {e(l_suffix_single)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_suffix_single)}]и" eob
+	"[19 10 02][1D 0D 00 01 02][1B 03 {e(l_suffix_single)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_suffix_single)}][9A]" eob
+l_suffix_single:
+	char_slot(1) call(data_gender.l_gendersuffix) eob
+
+// -те (во множ. числе) или -шь (в ед. числе)
+l_suffix2_multi:
+//	"[19 10 02][1D 0D 00 01 02][1B 03 {e(l_suffix2_single)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_suffix2_single)}]ты" eob
+	"[19 10 02][1D 0D 00 01 02][1B 03 {e(l_suffix2_single)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_suffix2_single)}][A4][96]" eob
+l_suffix2_single:
+//	"шь" eob
+	"[AA][C3]" eob
+
+// Только -те (во множ. числе)
+l_suffix3_multi:
+//	"[19 10 02][1D 0D 00 01 02][1B 03 {e(l_suffix3_single)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_suffix3_single)}]те" eob
+	"[19 10 02][1D 0D 00 01 02][1B 03 {e(l_suffix3_single)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_suffix3_single)}][A4][96]" eob
+l_suffix3_single:
+	eob
+
+// -ны (во множ. числе) или -ен/-на/-но (в ед. числе)
+l_suffix4_multi:
+//	"[19 10 02][1D 0D 00 01 02][1B 03 {e(l_suffix4_single)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_suffix4_single)}]ны" eob
+	"[19 10 02][1D 0D 00 01 02][1B 03 {e(l_suffix4_single)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_suffix4_single)}][9F][C2]" eob
+l_suffix4_single:
+	"{user_gender}" call(l_gendersuffix6) eob
+
+// -ены (во множ. числе) или -ён/-ена/-ено (в ед. числе)
+l_suffix5_multi:
+//	"[19 10 02][1D 0D 00 01 02][1B 03 {e(l_suffix5_single)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_suffix5_single)}]ены" eob
+	"[19 10 02][1D 0D 00 01 02][1B 03 {e(l_suffix5_single)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_suffix5_single)}][96][9F][C2]" eob
+l_suffix5_single:
+	"{user_gender}" call(l_gendersuffix7) eob

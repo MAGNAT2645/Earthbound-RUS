@@ -1,0 +1,522 @@
+/*
+ * EarthBound Text Dump
+ * Time: 17:20:59 - 27/09/2015
+ * Generated using CCScriptWriter.
+ */
+
+import RUS_ref
+
+// Text Data
+l_0xc7d9ae:
+	/*
+	"{store_registers}@" call(data_37.l_0xc7e6d7) "{load_registers} получил" linebreak
+	"  $[1C 0A 00 00 00 00] долларов." end
+	*/
+	newline
+	"{store_registers}@" call(data_37.l_0xc7e6d7) "{load_registers} [A1][A0][9D][A5][A9][9A][9D]" linebreak
+	"  $[1C 0A 00 00 00 00] [95][A0][9D][9D][91][A2][A0][93]." end
+
+l_0xc7d9cf: // Проверяет, какой тип контейнера игрок пытается открыть (подарок, сундук и т.д.)
+	"[06 E2 00 {e(l_0xc7d9fd)}][06 E3 00 {e(l_0xc7da33)}][06 E4 00 {e(l_0xc7da7c)}][06 E5 00 {e(l_0xc7dab6)}]" eob
+
+l_0xc7d9ec:
+//	"@[1C 02 00] открыл{char_slot(1)}{call(data_gender.l_gendersuffix)} подарок." eob
+	"@[1C 02 00] [A0][A4][9C][A2][C2][9D]{char_slot(1)}{call(data_gender.l_gendersuffix)} [A1][A0][95][91][A2][A0][9C]." eob
+
+l_0xc7d9fc:
+	eob
+
+l_0xc7d9fd:
+//	"@Но он был пуст." end
+	newline
+	"@[7F][A0] [A0][9F] [92][C2][9D] [A1][A5][A3][A4]." end
+
+l_0xc7da0c:
+//	"@[1C 02 00] копается в мусорке." eob
+	"@[1C 02 00] [9C][A0][A1][91][96][A4][A3][C6] [93] [9E][A5][A3][A0][A2][9C][96]." eob
+
+l_0xc7da23:
+//	"{pause(20)}@Ну, что здесь у нас...[03]" eob
+	newline
+	"{pause(20)}@[7F][A5], [A9][A4][A0] [99][95][96][A3][C3] [A5] [9F][91][A3]...[03]" eob
+
+l_0xc7da33:
+//	"@В мусорке оказался самый обычный мусор." end
+	newline
+	"@[73] [9E][A5][A3][A0][A2][9C][96] [A0][9C][91][99][91][9D][A3][C6] [A3][91][9E][C2][9B] [A0][92][C2][A9][9F][C2][9B] [9E][A5][A3][A0][A2]." end
+
+l_0xc7da58:
+//	"@[1C 02 00] открыл{char_slot(1)}{call(data_gender.l_gendersuffix)} сундук." eob
+	"@[1C 02 00] [A0][A4][9C][A2][C2][9D]{char_slot(1)}{call(data_gender.l_gendersuffix)} [A3][A5][9F][95][A5][9C]." eob
+
+l_0xc7da68:
+//	"{pause(20)}@ВААААААААААААУ![03]" eob
+	"{pause(20)}@[73][71][71][71][71][71][71][71][71][71][71][71][71][85]![03]" eob
+
+l_0xc7da7c:
+//	"@Но сундук оказался пустым." end
+	newline
+	"@[7F][A0] [A3][A5][9F][95][A5][9C] [A0][9C][91][99][91][9D][A3][C6] [A1][A5][A3][A4][C2][9E]." end
+
+l_0xc7da8f:
+//	"@[1C 02 00] открыл{char_slot(1)}{call(data_gender.l_gendersuffix)} гроб." eob
+	"@[1C 02 00] [A0][A4][9C][A2][C2][9D]{char_slot(1)}{call(data_gender.l_gendersuffix)} [94][A2][A0][92]." eob
+
+l_0xc7daa1:
+//	"{pause(20)}@ТАААААА-ДАААААА![03]" eob
+	"{pause(20)}@[84][71][71][71][71][71][71]-[75][71][71][71][71][71][71]![03]" eob
+
+l_0xc7dab6:
+//	"@Но гроб оказался пуст." end
+	newline
+	"@[7F][A0] [94][A2][A0][92] [A0][9C][91][99][91][9D][A3][C6] [A1][A5][A3][A4]." end
+
+l_0xc7dacb:
+	"[19 10 01]{swap}" call(l_0xc7da0c) "[1F 16 46 02 01]{sound(16)}" next
+	"[06 57 00 {e(l_0xc7d9fd)}]" call(l_0xc7da23) "{counter(105)}{ctoarg}" call(data_35.l_0xc7d947) "[1D 03 FF][1B 02 {e(l_0xc7db34)}]{store_registers}" call(l_0xc7dc85) "[1B 03 {e(l_0xc7db22)}]{load_registers}{swap}" call(data_35.l_0xc7d958) "[1D 0E 00 00]{swap}{sound(116)}{pause(30)}{set(flag 87)}" eob
+
+l_0xc7db22:
+	call(data_35.l_0xc7d967) "[1D 0E 00 00]{sound(116)}{pause(30)}{set(flag 87)}" eob
+
+l_0xc7db34:
+	call(data_35.l_0xc7d991) "[1F 16 46 02 05]" eob
+
+l_0xc7db3f:
+	"[19 10 01]{swap}" call(l_0xc7d9ec) "{sound(16)}[1F 16 E8 02 01]" next
+	"[06 99 02 {e(l_0xc7d9fd)}]{counter(158)}{ctoarg}" call(data_35.l_0xc7d947) "[1D 03 FF][1B 02 {e(l_0xc7db82)}]{swap}" call(data_35.l_0xc7d958) "[1D 0E 00 00]{swap}{sound(116)}{pause(30)}{set(flag 665)}" eob
+
+l_0xc7db82:
+	call(data_35.l_0xc7d991) "[1F 16 E8 02 05]" eob
+
+l_0xc7db8d:
+	"[19 10 01]{swap}" call(l_0xc7d9ec) "{sound(16)}[1F 16 E9 02 01]" next
+	"[06 9A 02 {e(l_0xc7d9fd)}]{counter(167)}{ctoarg}" call(data_35.l_0xc7d947) "[1D 03 FF][1B 02 {e(l_0xc7dbd0)}]{swap}" call(data_35.l_0xc7d958) "[1D 0E 00 00]{swap}{sound(116)}{pause(30)}{set(flag 666)}" eob
+
+l_0xc7dbd0:
+	call(data_35.l_0xc7d991) "[1F 16 E9 02 05]" eob
+
+l_0xc7dbdb:
+	"[19 10 01]{swap}" call(l_0xc7d9ec) "{sound(16)}[1F 16 EA 02 03]" next
+	"[06 9B 02 {e(l_0xc7d9fd)}]{counter(179)}{ctoarg}" call(data_35.l_0xc7d947) "[1D 03 FF][1B 02 {e(l_0xc7dc1e)}]{swap}" call(data_35.l_0xc7d958) "[1D 0E 00 00]{swap}{sound(116)}{pause(30)}{set(flag 667)}" eob
+
+l_0xc7dc1e:
+	call(data_35.l_0xc7d991) "[1F 16 EA 02 07]" eob
+
+l_0xc7dc29:
+	"[1F C0 04 {e(l_0xc7dc3d)} {e(l_0xc7dc3e)} {e(l_0xc7dc3d)} {e(l_0xc7dc3e)}]" eob
+
+l_0xc7dc3d:
+	eob
+
+l_0xc7dc3e:
+	eob
+
+l_0xc7dc3f:
+	"{counter(1)}" goto(l_0xc7dc41)
+
+l_0xc7dc41:
+	"{inc}{ctoarg}[19 10 00][1B 02 {e(l_0xc7dc76)}]{store_registers}[18 07 05 00 00 00 00][1B 03 {e(l_0xc7dc76)}]{load_registers}[1D 0D 00 01 02][1B 03 {e(l_0xc7dc41)}]{load_registers}[1D 0D 00 01 03][1B 03 {e(l_0xc7dc41)}]" goto(l_0xc7dc76)
+
+l_0xc7dc76:
+	eob
+
+l_0xc7dc77:
+	"[06 7E 02 {e(l_0xc7dc7e)}]" goto(l_0xc7dc7e)
+
+l_0xc7dc7e:
+	eob
+
+l_0xc7dc7f:
+	"{ctoarg}{swap}{store_registers}" goto(l_0xc7dc85)
+
+l_0xc7dc85:
+	"[1D 0D 00 01 02][1B 03 {e(l_0xc7dc97)}]{load_registers}[1D 0D 00 01 03]" goto(l_0xc7dc97)
+
+l_0xc7dc97:
+	eob
+
+l_0xc7dc98:
+	"{ctoarg}" eob
+
+l_0xc7dc9b:
+	"{swap}{store_registers}{result_is(1)}[1B 03 {e(l_0xc7dcb5)}]{load_registers}{result_is(2)}[1B 03 {e(l_0xc7dcb5)}]{load_registers}{result_is(8)}" goto(l_0xc7dcb5)
+
+l_0xc7dcb5:
+	eob
+
+l_0xc7dcb6:
+	"{sound(116)}{pause(60)}[1B 05]{window_closeall}{sound(102)}{pause(100)}{window_open(1)}[1B 06]" call(l_0xc7dcda) eob
+
+l_0xc7dccf:
+	"{sound(116)}{pause(60)}" call(l_0xc7dcda) eob
+
+l_0xc7dcda:
+	/*
+	"@([1C 02 00]{store_registers} получил{swap}{call(data_gender.l_gendersuffix)}" linebreak
+	"  {load_registers}{swap}[19 19 00 00][1C 05 00].)" eob
+	*/
+	"{store_registers}" call(l_0xc7dc85) "[1B 03 {e(l_0xc7dd03)}]{load_registers}{swap}" newline
+	"@([1C 02 00]{store_registers} [A1][A0][9D][A5][A9][9A][9D]{swap}{call(data_gender.l_gendersuffix)}" linebreak
+	"  {load_registers}{swap}[19 19 00 00][1C 05 00].)" eob
+
+l_0xc7dd03:
+	/*
+	"[19 10 01]{swap}@([1C 02 00] положил{swap}{call(data_gender.l_gendersuffix)} {load_registers}[19 19 00 00][1C 05 00]" linebreak
+	"  к вещам персонажа {swap}[1C 02 00].)" eob
+	*/
+	"[19 10 01]{swap}@([1C 02 00] [A1][A0][9D][A0][98][9A][9D]{swap}{call(data_gender.l_gendersuffix)} {load_registers}[19 19 00 00][1C 05 00]" linebreak
+	"  [9C] [93][96][C0][91][9E] [A1][96][A2][A3][A0][9F][91][98][91] {swap}[1C 02 00].)" eob
+
+l_0xc7dd2c:
+	"[1B 05][19 19 00 00]{store_registers}{swap}" eob
+
+l_0xc7dd37:
+	/*
+	"{swap}@[1C 02 00] использует" linebreak
+	"  {swap}[1C 05 00].[03]" eob
+	*/
+	"{swap}@[1C 02 00] [9A][A3][A1][A0][9D][C3][99][A5][96][A4]" linebreak
+	"  {swap}[1C 05 00].[03]" eob
+
+l_0xc7dd4b:
+	"{open_hp}" goto(l_0xc7dd4d)
+
+l_0xc7dd4d:
+	"{open_wallet}" goto(l_0xc7dd4f)
+
+l_0xc7dd4f:
+//	"[19 02]Да" eob
+	"[19 02][75][91]" eob
+
+l_0xc7dd55:
+//	"[19 02]Нет" eob
+	"[19 02][7F][96][A4]" eob
+
+l_0xc7dd5a:
+	"[1C 07 02]" eob
+
+l_0xc7dd5e:
+	"[11]{clearline}[06 93 02 {e(l_0xc7dd68)}]" eob
+
+l_0xc7dd68:
+	"[0C 01]" eob
+
+l_0xc7dd6b:
+	"[1F 07 03]{pause(180)}[1F 01 00]" eob
+
+l_0xc7dd74:
+	"[1F 07 02]{pause(30)}[1F 01 00]" eob
+
+l_0xc7dd7d:
+	call(l_0xc7dd6b) "{music_resume}" eob
+
+l_0xc7dd85:
+	call(l_0xc7dd74) "{music_resume}" eob
+
+l_0xc7dd8d:
+	"{isset(flag 180)}[1B 03 {e(l_0xc7dde7)}]{isset(flag 181)}[1B 03 {e(l_0xc7dde7)}]{isset(flag 645)}[1B 03 {e(l_0xc7dde7)}]{isset(flag 446)}[1B 03 {e(l_0xc7dde7)}]{isset(flag 646)}[1B 03 {e(l_0xc7dde7)}]{isset(flag 647)}[1B 03 {e(l_0xc7dde7)}]{isset(flag 648)}[1B 03 {e(l_0xc7dde7)}]{isset(flag 675)}[1B 03 {e(l_0xc7dde7)}]{isset(flag 694)}[1B 03 {e(l_0xc7dde7)}]{isset(flag 695)}[1B 03 {e(l_0xc7dde7)}]" goto(l_0xc7dde7)
+
+l_0xc7dde7:
+	eob
+
+l_0xc7dde8:
+	"[1F E9 1F 05][1F 61]" eob
+
+l_0xc7ddef:
+	"{unset(flag 180)}{unset(flag 181)}{unset(flag 645)}{unset(flag 446)}{unset(flag 646)}{unset(flag 647)}{unset(flag 648)}{unset(flag 675)}{unset(flag 694)}{unset(flag 695)}{unset(flag 754)}" eob
+
+l_0xc7de11:
+	"{unset(flag 383)}{unset(flag 542)}{unset(flag 543)}{set(flag 778)}[06 F4 02 {e(l_0xc7de2a)}]{unset(flag 754)}{unset(flag 779)}" goto(l_0xc7de2a)
+
+l_0xc7de2a:
+	eob
+
+l_0xc7de2b:
+	"{unset(flag 383)}" eob
+
+l_0xc7de2f:
+	"{music(115)}{pause(60)}{wait}[1F 01 00]{sound(11)}" eob
+
+l_0xc7de3d:
+//	"@Щелчок!  Бииииииип...{wait}{sound(11)}" eob
+	newline
+	"@[B0][96][9D][A9][A0][9C]!  [72][9A][9A][9A][9A][9A][9A][9A][A1]...{wait}{sound(11)}" eob
+
+l_0xc7de54:
+	call(l_0xc7de3d) "{window_closeall}{pause(10)}{music_resume}" eob
+
+l_0xc7de60:
+	"{unset(flag 779)}" call(l_0xc7dd8d) "[1B 03 {e(data_55.l_0xc9992f)}]{unset(flag 754)}" eob
+
+l_0xc7de72:
+	"[06 0B 03 {e(data_55.l_0xc9992f)}]{unset(flag 754)}" eob
+
+l_0xc7de7d:
+	/*
+	"@Похоже, тебе задали крепкую взбучку." next
+	"@Почему бы не попробовать ещё раз?" linebreak
+	"[19 02]Да" eob
+	*/
+	call(l_0xc7de11) call(data_24.l_0xc69082) "{window_open(1)}" call(l_0xc7dfa4) "@[1C 02 00]!" next
+	"@[81][A0][A7][A0][98][96], [A4][96][92][96] [99][91][95][91][9D][9A] [9C][A2][96][A1][9C][A5][C5] [93][99][92][A5][A9][9C][A5]." next
+	"@[81][A0][A9][96][9E][A5] [92][C2] [9F][96] [A1][A0][A1][A2][A0][92][A0][93][91][A4][C3] [96][C0][97] [A2][91][99]?" linebreak
+	"[19 02][75][91]" eob
+
+l_0xc7deca:
+//	"  [19 02]Нет" eob
+	"  [19 02][7F][96][A4]" eob
+
+l_0xc7ded1:
+	"[1C 07 02][11]{clearline}[09 02 {e(l_0xc7df3c)} {e(l_0xc7dee0)}]" goto(l_0xc7dee0)
+
+l_0xc7dee0:
+	/*
+	"@Ты уверен?" next
+	"@Когда ты снова вернёшься к своему приключению," next
+	"@ты начнёшь с последнего сохранения." next
+	"@Ты с этим согласен?" linebreak
+	"[19 02]Нет" eob
+	*/
+	"@[84][C2] [A5][93][96][A2][96][9F]?" next
+	"@[7C][A0][94][95][91] [A4][C2] [A3][9F][A0][93][91] [93][96][A2][9F][97][AA][C3][A3][C6] [9C] [A3][93][A0][96][9E][A5] [A1][A2][9A][9C][9D][C5][A9][96][9F][9A][C5]," next
+	"@[A4][C2] [9F][91][A9][9F][97][AA][C3] [A3] [A1][A0][A3][9D][96][95][9F][96][94][A0] [A3][A0][A7][A2][91][9F][96][9F][9A][C6]." next
+	"@[84][C2] [A3] [C4][A4][9A][9E] [A3][A0][94][9D][91][A3][96][9F]?" linebreak
+	"[19 02][7F][96][A4]" eob
+
+l_0xc7df25:
+//	"  [19 02]Да" eob
+	"  [19 02][75][91]" eob
+
+l_0xc7df2d:
+	"[1C 07 02][11]{clearline}[09 02 {e(l_0xc7df3c)} {e(l_0xc7df78)}]" goto(l_0xc7df3c)
+
+l_0xc7df3c:
+	/*
+	"@[1C 02 00] решил вернуться с новыми силами." next
+	"@Удачи!{wait}{window_closeall}{set(flag 475)}" eob
+	*/
+	"@[1C 02 00] [A2][96][AA][9A][9D] [93][96][A2][9F][A5][A4][C3][A3][C6] [A3] [9F][A0][93][C2][9E][9A] [A3][9A][9D][91][9E][9A]." next
+	"@[85][95][91][A9][9A]!{wait}{window_closeall}{set(flag 475)}" eob
+
+l_0xc7df78:
+	/*
+	"@Видимо, всё это было ночным кошмаром." next
+	"@Увидимся, [1C 02 00]!{wait}{window_closeall}{unset(flag 475)}" eob
+	*/
+	"@[73][9A][95][9A][9E][A0], [93][A3][97] [C4][A4][A0] [92][C2][9D][A0] [9F][A0][A9][9F][C2][9E] [9C][A0][AA][9E][91][A2][A0][9E]." next
+	"@[85][93][9A][95][9A][9E][A3][C6], [1C 02 00]!{wait}{window_closeall}{unset(flag 475)}" eob
+
+l_0xc7dfa4:
+	"[06 0E 00 {e(l_0xc7dfb9)}]{isset(flag 128)}[1B 02 {e(l_0xc7dfb9)}]{counter(3)}{ctoarg}" eob
+
+l_0xc7dfb9:
+	"{counter(1)}{ctoarg}" eob
+
+l_0xc7dfbe:
+	/*
+	"[1F 13 01 02]{pause(16)}[1F 13 01 03]{pause(12)}[1F 13 01 04]{pause(8)}[1F 13 01 05]{pause(60)}{music(79)}[1F EA 6A 00][1F 61][1F E7 6A 00]{open_hp}[1F 41 0D]{window_open(1)}@[1C 01 08] наполняется силой Гигантского Следа!" next
+	"@Скорость персонажа [1C 01 08] увеличилась 5!{sound(40)}[1E 0C 01 05]" next
+	"@Живучесть персонажа [1C 01 08] увеличилась на 5!{sound(40)}[1E 0D 01 05]" next
+	"@[1C 01 08] наполняется силой Следов Лилипута!" next
+	"@Выдержка персонажа [1C 01 08] увеличилась на 5!{sound(40)}[1E 0B 01 05]" next
+	"@Удача персонажа [1C 01 08] увеличилась на 5!{sound(40)}[1E 0E 01 05]" next
+	"@[1C 01 08] наполняется силой Млечного Пруда!" next
+	"@Скорость персонажа [1C 01 08] увеличилась на 5!{sound(40)}[1E 0C 01 05]" next
+	"@Интеллект персонажа [1C 01 08] увеличился на 5!{sound(40)}[1E 0A 01 05]" next
+	"@[1C 01 08] наполняется силой Магнитной Горки!" next
+	"@Живучесть персонажа [1C 01 08] увеличилась на 5!{sound(40)}[1E 0D 01 05]" next
+	"@Удача персонажа [1C 01 08] увеличилась на 5!{sound(40)}[1E 0E 01 05]" next
+	"@[1C 01 08] наполняется силой Дождевого Округа!" next
+	"@Выдержка персонажа [1C 01 08] увеличилась на 5!{sound(40)}[1E 0B 01 05]" next
+	"@Интеллект персонажа [1C 01 08] увеличился на 5!{sound(40)}[1E 0A 01 05]" next
+	"@[1C 01 08] наполняется силой Розового Облака!" next
+	"@Скорость персонажа [1C 01 08] увеличилась на 5!{sound(40)}[1E 0C 01 05]" next
+	"@Выдержка персонажа [1C 01 08] увеличилась на 5!{sound(40)}[1E 0B 01 05]" next
+	"@[1C 01 08] наполняется силой Светящегося Коридора!" next
+	"@Удача персонажа [1C 01 08] увеличилась на 5!{sound(40)}[1E 0E 01 05]" next
+	"@Интеллект персонажа [1C 01 08] увеличился на 5!{sound(40)}[1E 0A 01 05]" next
+	"@[1C 01 08] наполняется силой Огненных Источников!" next
+	"@Скорость персонажа [1C 01 08] увеличилась на 5!{sound(40)}[1E 0C 01 05]" next
+	"@Удача персонажа [1C 01 08] увеличилась на 5!{sound(40)}[1E 0E 01 05][03]{window_closeall}[1F 41 0E]{pause(60)}{window_open(1)}@Тотчас, разум персонажа [1C 01 08] очищен," next
+	"@и он понял, что обладает великой силой!" next
+	"@Теперь, психические силы персонажа [1C 01 08] радикально расширены!{sound(40)}{set(flag 74)}[03]{window_closeall}{pause(30)}{window_open(14)}@[1C 01 08] получает 200,000 опыта.[03][1E 09 01 40 0D 03]" linebreak
+	"[1F 04 03]" newline
+	"@И наконец, он осознаёт{sound(103)} силу Телепорта [8C].[1F 71 01 01][1F 71 01 04]{prompt}[1F 04 01]{window_closeall}{pause(120)}{pause(180)}{pause(10)}[1F EB 01 06][1F E5 FF][1F 15 01 00 05 03 01]{pause(10)}[1F EA 6A 00][1F 61]{window_open(1)}@[1C 01 08] осознал все свои скрытые силы." next
+	"@[1C 01 08] поглотил власть Земли в своё сердце, и Магиканта больше нет.[03]{window_closeall}" goto(data_57.l_0xc9b4c9)
+	*/
+	"[1F 13 01 02]{pause(16)}[1F 13 01 03]{pause(12)}[1F 13 01 04]{pause(8)}[1F 13 01 05]{pause(60)}{music(79)}[1F EA 6A 00][1F 61][1F E7 6A 00]{open_hp}[1F 41 0D]{window_open(1)}@[1C 01 08] [9F][91][A1][A0][9D][9F][C6][96][A4][A3][C6] [A3][9A][9D][A0][9B] [74][9A][94][91][9F][A4][A3][9C][A0][94][A0] [83][9D][96][95][91]!" next
+	"@[83][9C][A0][A2][A0][A3][A4][C3] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] 5!{sound(40)}[1E 0C 01 05]" next
+	"@[78][9A][93][A5][A9][96][A3][A4][C3] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] 5!{sound(40)}[1E 0D 01 05]" next
+	"@[1C 01 08] [9F][91][A1][A0][9D][9F][C6][96][A4][A3][C6] [A3][9A][9D][A0][9B] [83][9D][96][95][A0][93] [7D][9A][9D][9A][A1][A5][A4][91]!" next
+	"@[73][C2][95][96][A2][98][9C][91] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] 5!{sound(40)}[1E 0B 01 05]" next
+	"@[85][95][91][A9][91] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] 5!{sound(40)}[1E 0E 01 05]" next
+	"@[1C 01 08] [9F][91][A1][A0][9D][9F][C6][96][A4][A3][C6] [A3][9A][9D][A0][9B] [7E][9D][96][A9][9F][A0][94][A0] [81][A2][A5][95][91]!" next
+	"@[83][9C][A0][A2][A0][A3][A4][C3] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] 5!{sound(40)}[1E 0C 01 05]" next
+	"@[7A][9F][A4][96][9D][9D][96][9C][A4] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A5][93][96][9D][9A][A9][9A][9D][A3][C6] [9F][91] 5!{sound(40)}[1E 0A 01 05]" next
+	"@[1C 01 08] [9F][91][A1][A0][9D][9F][C6][96][A4][A3][C6] [A3][9A][9D][A0][9B] [7E][91][94][9F][9A][A4][9F][A0][9B] [74][A0][A2][9C][9A]!" next
+	"@[78][9A][93][A5][A9][96][A3][A4][C3] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] 5!{sound(40)}[1E 0D 01 05]" next
+	"@[85][95][91][A9][91] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] 5!{sound(40)}[1E 0E 01 05]" next
+	"@[1C 01 08] [9F][91][A1][A0][9D][9F][C6][96][A4][A3][C6] [A3][9A][9D][A0][9B] [75][A0][98][95][96][93][A0][94][A0] [80][9C][A2][A5][94][91]!" next
+	"@[73][C2][95][96][A2][98][9C][91] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] 5!{sound(40)}[1E 0B 01 05]" next
+	"@[7A][9F][A4][96][9D][9D][96][9C][A4] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A5][93][96][9D][9A][A9][9A][9D][A3][C6] [9F][91] 5!{sound(40)}[1E 0A 01 05]" next
+	"@[1C 01 08] [9F][91][A1][A0][9D][9F][C6][96][A4][A3][C6] [A3][9A][9D][A0][9B] [82][A0][99][A0][93][A0][94][A0] [80][92][9D][91][9C][91]!" next
+	"@[83][9C][A0][A2][A0][A3][A4][C3] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] 5!{sound(40)}[1E 0C 01 05]" next
+	"@[73][C2][95][96][A2][98][9C][91] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] 5!{sound(40)}[1E 0B 01 05]" next
+	"@[1C 01 08] [9F][91][A1][A0][9D][9F][C6][96][A4][A3][C6] [A3][9A][9D][A0][9B] [83][93][96][A4][C6][C0][96][94][A0][A3][C6] [7C][A0][A2][9A][95][A0][A2][91]!" next
+	"@[85][95][91][A9][91] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] 5!{sound(40)}[1E 0E 01 05]" next
+	"@[7A][9F][A4][96][9D][9D][96][9C][A4] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A5][93][96][9D][9A][A9][9A][9D][A3][C6] [9F][91] 5!{sound(40)}[1E 0A 01 05]" next
+	"@[1C 01 08] [9F][91][A1][A0][9D][9F][C6][96][A4][A3][C6] [A3][9A][9D][A0][9B] [80][94][9F][96][9F][9F][C2][A7] [7A][A3][A4][A0][A9][9F][9A][9C][A0][93]!" next
+	"@[83][9C][A0][A2][A0][A3][A4][C3] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] 5!{sound(40)}[1E 0C 01 05]" next
+	"@[85][95][91][A9][91] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] 5!{sound(40)}[1E 0E 01 05][03]{window_closeall}[1F 41 0E]{pause(60)}{window_open(1)}@[84][A0][A4][A9][91][A3], [A2][91][99][A5][9E] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A0][A9][9A][C0][96][9F]," next
+	"@[9A] [A0][9F] [A1][A0][9F][C6][9D], [A9][A4][A0] [A0][92][9D][91][95][91][96][A4] [93][96][9D][9A][9C][A0][9B] [A3][9A][9D][A0][9B]!" next
+	"@[84][96][A1][96][A2][C3], [A1][A3][9A][A7][9A][A9][96][A3][9C][9A][96] [A3][9A][9D][C2] [A1][96][A2][A3][A0][9F][91][98][91] [1C 01 08] [A2][91][95][9A][9C][91][9D][C3][9F][A0] [A2][91][A3][AA][9A][A2][96][9F][C2]!{sound(40)}{set(flag 74)}[03]{window_closeall}{pause(30)}{window_open(14)}@[1C 01 08] [A1][A0][9D][A5][A9][91][96][A4] 200,000 [A0][A1][C2][A4][91].[03][1E 09 01 40 0D 03]" linebreak
+	"[1F 04 03]" newline
+	"@[7A] [9F][91][9C][A0][9F][96][A8], [A0][9F] [A0][A3][A0][99][9F][91][97][A4]{sound(103)} [A3][9A][9D][A5] [84][96][9D][96][A1][A0][A2][A4][91] [8C].[1F 71 01 01][1F 71 01 04]{prompt}[1F 04 01]{window_closeall}{pause(120)}{pause(180)}{pause(10)}[1F EB 01 06][1F E5 FF][1F 15 01 00 05 03 01]{pause(10)}[1F EA 6A 00][1F 61]{window_open(1)}@[1C 01 08] [A0][A3][A0][99][9F][91][9D] [93][A3][96] [A3][93][A0][9A] [A3][9C][A2][C2][A4][C2][96] [A3][9A][9D][C2]." next
+	"@[1C 01 08] [A1][A0][94][9D][A0][A4][9A][9D] [93][9D][91][A3][A4][C3] [79][96][9E][9D][9A] [93] [A3][93][A0][97] [A3][96][A2][95][A8][96], [9A] [7E][91][94][9A][9C][91][9F][A4][91] [92][A0][9D][C3][AA][96] [9F][96][A4].[03]{window_closeall}" goto(data_57.l_0xc9b4c9)
+
+l_0xc7e3f9:
+	eob
+
+l_0xc7e3fa:
+	/*
+	"[19 19 00 00]{swap}@[1C 02 00] прив{swap}{store_registers}{call(data_gender.l_gender_rearrange)} свои вещи в порядок" linebreak
+	"  и поместил{load_registers}{call(data_gender.l_gendersuffix)} {swap}{rtoarg}[1C 05 00] в конец." end
+	*/
+	"[19 19 00 00]{swap}@[1C 02 00] [A1][A2][9A][93]{swap}{store_registers}{call(data_gender.l_gender_rearrange)} [A3][93][A0][9A] [93][96][C0][9A] [93] [A1][A0][A2][C6][95][A0][9C]" linebreak
+	"  [9A] [A1][A0][9E][96][A3][A4][9A][9D]{load_registers}{call(data_gender.l_gendersuffix)} {swap}{rtoarg}[1C 05 00] [93] [9C][A0][9F][96][A8]." end
+
+l_0xc7e42c:
+	/*
+	"[19 19 00 00]{swap}@[1C 02 00] попытал[19 10 01]{call(data_gender.l_gendersuffix2)} передать" linebreak
+	"  {swap}[1C 05 00]" linebreak
+	"  персонажу [1C 02 FF]," next
+	"{load_registers}@но у [19 10 01]{call(data_gender.l_gender3)} слишком много вещей." end
+	*/
+	"[19 19 00 00]{swap}@[1C 02 00] [A1][A0][A1][C2][A4][91][9D][19 10 01]{call(data_gender.l_gendersuffix2)} [A1][96][A2][96][95][91][A4][C3]" linebreak
+	"  {swap}[1C 05 00]" linebreak
+	"  [A1][96][A2][A3][A0][9F][91][98][A5] [1C 02 FF]," next
+	"{load_registers}@[9F][A0] [A5] [19 10 01]{call(data_gender.l_gender3)} [A3][9D][9A][AA][9C][A0][9E] [9E][9F][A0][94][A0] [93][96][C0][96][9B]." end
+
+l_0xc7e468:
+	/*
+	"[19 19 00 00]{swap}@[1C 02 00] попытал{swap}{call(data_gender.l_gendersuffix2)} положить {swap}{rtoarg}[1C 05 00]" linebreak
+	"  в рюкзак персонажа [1C 02 FF]," next
+	"@но там нет свободного места." end
+	*/
+	"[19 19 00 00]{swap}@[1C 02 00] [A1][A0][A1][C2][A4][91][9D]{swap}{call(data_gender.l_gendersuffix2)} [A1][A0][9D][A0][98][9A][A4][C3] {swap}{rtoarg}[1C 05 00]" linebreak
+	"  [93] [A2][C5][9C][99][91][9C] [A1][96][A2][A3][A0][9F][91][98][91] [1C 02 FF]," next
+	"@[9F][A0] [A4][91][9E] [9F][96][A4] [A3][93][A0][92][A0][95][9F][A0][94][A0] [9E][96][A3][A4][91]." end
+
+l_0xc7e4a4:
+	/*
+	"[19 19 00 00]{swap}@[1C 02 00] передал{swap}{call(data_gender.l_gendersuffix)} {swap}{rtoarg}[1C 05 00]" linebreak
+	"  персонажу [1C 02 FF]." end
+	*/
+	"[19 19 00 00]{swap}@[1C 02 00] [A1][96][A2][96][95][91][9D]{swap}{call(data_gender.l_gendersuffix)} {swap}{rtoarg}[1C 05 00]" linebreak
+	"  [A1][96][A2][A3][A0][9F][91][98][A5] [1C 02 FF]." end
+
+l_0xc7e4c3:
+	/*
+	"[19 19 00 00]{swap}@[1C 02 00] положил{swap}{call(data_gender.l_gendersuffix)} {swap}{rtoarg}[1C 05 00]" linebreak
+	"  к вещам персонажа [1C 02 FF]." end
+	*/
+	"[19 19 00 00]{swap}@[1C 02 00] [A1][A0][9D][A0][98][9A][9D]{swap}{call(data_gender.l_gendersuffix)} {swap}{rtoarg}[1C 05 00]" linebreak
+	"  [9C] [93][96][C0][91][9E] [A1][96][A2][A3][A0][9F][91][98][91] [1C 02 FF]." end
+
+l_0xc7e4e9:
+	/*
+	"[19 19 00 00]{swap}{store_registers}{char_slot(1)}{swap}@[1C 02 00] прив{swap}{call(data_gender.l_gender_rearrange)} вещи" linebreak
+	"  персонажа {load_registers}[1C 02 00]{store_registers} в порядок" linebreak
+	"  и поместил{char_slot(1)}{call(data_gender.l_gendersuffix)} {load_registers}{swap}[1C 05 00] в конец." end
+	*/
+	"[19 19 00 00]{swap}{store_registers}{char_slot(1)}{swap}@[1C 02 00] [A1][A2][9A][93]{swap}{call(data_gender.l_gender_rearrange)} [93][96][C0][9A]" linebreak
+	"  [A1][96][A2][A3][A0][9F][91][98][91] {load_registers}[1C 02 00]{store_registers} [93] [A1][A0][A2][C6][95][A0][9C]" linebreak
+	"  [9A] [A1][A0][9E][96][A3][A4][9A][9D]{char_slot(1)}{call(data_gender.l_gendersuffix)} {load_registers}{swap}[1C 05 00] [93] [9C][A0][9F][96][A8]." end
+
+l_0xc7e51c:
+	/*
+	"[19 19 00 00]@[1C 02 FF] попытал{user_gender}{call(RUS_ref.l_gendersuffix2)} взять" linebreak
+	"  [1C 05 00]" linebreak
+	"  из рюкзака персонажа {swap}[1C 02 00]," next
+	"{load_registers}@но у {call(data_gender.l_gender3)} слишком много вещей." end
+	*/
+	"[19 19 00 00]@[1C 02 FF] [A1][A0][A1][C2][A4][91][9D]{user_gender}{call(RUS_ref.l_gendersuffix2)} [93][99][C6][A4][C3]" linebreak
+	"  [1C 05 00]" linebreak
+	"  [9A][99] [A2][C5][9C][99][91][9C][91] [A1][96][A2][A3][A0][9F][91][98][91] {swap}[1C 02 00]," next
+	"{load_registers}@[9F][A0] [A5] {call(data_gender.l_gender3)} [A3][9D][9A][AA][9C][A0][9E] [9E][9F][A0][94][A0] [93][96][C0][96][9B]." end
+
+l_0xc7e559:
+	/*
+	"[19 19 00 00]{swap}[1B 05][19 10 01]{swap}@[1C 02 00][1B 06] попытал{user_gender}{call(RUS_ref.l_gendersuffix2)} положить {swap}[1C 05 00] из своих вещей" linebreak
+	"  в рюкзак персонажа [1C 02 FF]," next
+	"@но там нет свободного места." end
+	*/
+	"[19 19 00 00]{swap}[1B 05][19 10 01]{swap}@[1C 02 00][1B 06] [A1][A0][A1][C2][A4][91][9D]{user_gender}{call(RUS_ref.l_gendersuffix2)} [A1][A0][9D][A0][98][9A][A4][C3] {swap}[1C 05 00] [9A][99] [A3][93][A0][9A][A7] [93][96][C0][96][9B]" linebreak
+	"  [93] [A2][C5][9C][99][91][9C] [A1][96][A2][A3][A0][9F][91][98][91] [1C 02 FF]," next
+	"@[9F][A0] [A4][91][9E] [9F][96][A4] [A3][93][A0][92][A0][95][9F][A0][94][A0] [9E][96][A3][A4][91]." end
+
+l_0xc7e5a1:
+	/*
+	"[19 19 00 00]@[1C 02 FF] взял{rtoarg}{swap}{call(data_gender.l_gendersuffix)} [1C 05 00]" linebreak
+	"  из рюкзака персонажа {swap}[1C 02 00]." end
+	*/
+	"[19 19 00 00]@[1C 02 FF]{store_registers} [93][99][C6][9D]{rtoarg}{swap}{call(data_gender.l_gendersuffix)} {load_registers}[1C 05 00]" linebreak
+	"  [9A][99] [A2][C5][9C][99][91][9C][91] [A1][96][A2][A3][A0][9F][91][98][91] {swap}[1C 02 00]." end
+
+l_0xc7e5c2:
+	/*
+	"[19 19 00 00]{swap}[1B 05][19 10 01]{swap}@[1C 02 00][1B 06] положил{user_gender}{call(RUS_ref.l_gendersuffix)} {swap}[1C 05 00] из своих вещей" linebreak
+	"  в рюкзак персонажа [1C 02 FF]." end
+	*/
+	"[19 19 00 00]{swap}[1B 05][19 10 01]{swap}@[1C 02 00][1B 06] [A1][A0][9D][A0][98][9A][9D]{user_gender}{call(RUS_ref.l_gendersuffix)} {swap}[1C 05 00] [9A][99] [A3][93][A0][9A][A7] [93][96][C0][96][9B]" linebreak
+	"  [93] [A2][C5][9C][99][91][9C] [A1][96][A2][A3][A0][9F][91][98][91] [1C 02 FF]." end
+
+//
+//Unused gender stuff - seperate file exists for easier management\\
+//
+
+l_0xc7e5f3:
+//	"{result_is(2)}[1B 03 {e(l_0xc7e5fe)}]он" eob
+	"{result_is(2)}[1B 03 {e(l_0xc7e5fe)}][A0][9F]" eob
+
+l_0xc7e5fe:
+//	"она" eob
+	"[A0][9F][91]" eob
+
+l_0xc7e602:
+	"[1C 14 01][09 03 {e(l_0xc7e613)} {e(l_0xc7e616)} {e(l_0xc7e61a)}]" goto(l_0xc7e613)
+
+l_0xc7e613:
+//	"он" eob
+	"[A0][9F]" eob
+
+l_0xc7e616:
+//	"она" eob
+	"[A0][9F][91]" eob
+
+l_0xc7e61a:
+//	"оно" eob
+	"[A0][9F][A0]" eob
+
+l_0xc7e61d:
+	"[1C 14 01][09 03 {e(l_0xc7e62e)} {e(l_0xc7e631)} {e(l_0xc7e635)}]" goto(l_0xc7e62e)
+
+l_0xc7e62e:
+//	"Он" eob
+	"[80][9F]" eob
+
+l_0xc7e631:
+//	"Она" eob
+	"[80][9F][91]" eob
+
+l_0xc7e635:
+//	"Оно" eob
+	"[80][9F][A0]" eob
+
+l_0xc7e638:
+	"[1C 15 01]{swap} [1C 0A 00 00 00 00] [1C 15 01][09 03 {e(l_0xc7e656)} {e(data_37.l_0xc7e659)} {e(data_37.l_0xc7e65d)}]" goto(l_0xc7e656)
+
+l_0xc7e656:
+//	"он" eob
+	"[A0][9F]" eob
+
