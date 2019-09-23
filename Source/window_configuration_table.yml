@@ -33,8 +33,8 @@
   Width: 20
   X Offset: 8
   Y Offset: 1
-7:
-  Height: 16
+7: # Список экипируемых предметов
+  Height: 12 # 16
   Width: 13
   X Offset: 18
   Y Offset: 1
@@ -226,8 +226,8 @@
 45: # Статы в меню экипировки
   Height: 12 #6
   Width: 15
-  X Offset: 3
-  Y Offset: 11
+  X Offset: 0 # 3
+  Y Offset: 13 # 11
 46: # Окно ПСИ (Атака/Лечение/Вспом./Прочее) ВНЕ боя
   Height: 10
   Width: 8
@@ -258,8 +258,8 @@
   Width: 9
   X Offset: 22
   Y Offset: 8
-52:
-  Height: 18
-  Width: 18
-  X Offset: 7
-  Y Offset: 9
+52: # ???
+  Height: 14 # 18
+  Width: 17 # 18
+  X Offset: 15 # 7
+  Y Offset: 13 # 9

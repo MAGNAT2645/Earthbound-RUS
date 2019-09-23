@@ -106,38 +106,44 @@ l_0xc6fed6:
 	"                                       [75][96][A4][A3][9C][A0][94][A0] [83][91][95][91] [81][A0][9D][A3][A4][91][A2])" end
 
 l_0xc6ff9b:
-    newline
-    "@You would probably regret it if you ate this now...[03]" eob
+//	"@Ты, вероятно, пожалеешь, если съешь это сейчас...[03]" eob
+	newline
+	"@[84][C2], [93][96][A2][A0][C6][A4][9F][A0], [A1][A0][98][91][9D][96][96][AA][C3], [96][A3][9D][9A] [A3][C1][96][AA][C3] [C4][A4][A0] [A3][96][9B][A9][91][A3]...[03]" eob
 
 l_0xc6ffbb:
-    newline
-    "@This phone  only receives calls.  You cannot make outgoing calls from it.[03]" eob
+//	"@Этот радиоприёмник только принимает звонки.  С него нельзя совершать исходящие звонки.[03]" eob
+	newline
+	"@[B4][A4][A0][A4] [A2][91][95][9A][A0][A1][A2][9A][97][9E][9F][9A][9C] [A4][A0][9D][C3][9C][A0] [A1][A2][9A][9F][9A][9E][91][96][A4] [99][93][A0][9F][9C][9A].  [83] [9F][96][94][A0] [9F][96][9D][C3][99][C6] [A3][A0][93][96][A2][AA][91][A4][C3] [9A][A3][A7][A0][95][C6][C0][9A][96] [99][93][A0][9F][9C][9A].[03]" eob
 
 l_0xc70000:
-    "[09 50 {e(l_0xc70511)} {e(l_0xc7058d)} {e(l_0xc705e4)} {e(l_0xc7062a)} {e(l_0xc70688)} {e(l_0xc70711)} {e(l_0xc70789)} {e(l_0xc70868)} {e(l_0xc708dd)} {e(l_0xc70943)} {e(l_0xc709e8)} {e(l_0xc70a4c)} {e(l_0xc70ab5)} {e(l_0xc70b17)} {e(l_0xc70b59)} {e(l_0xc70bc4)} {e(l_0xc70bff)} {e(l_0xc70c4d)} {e(l_0xc70c8d)} {e(l_0xc70d2f)} {e(l_0xc70d5f)} {e(l_0xc70db0)} {e(l_0xc70db6)} {e(l_0xc70e26)} {e(l_0xc70e61)} {e(l_0xc70e95)} {e(l_0xc70f16)} {e(l_0xc7105d)} {e(l_0xc710bb)} {e(l_0xc71140)} {e(l_0xc7117e)} {e(l_0xc71208)} {e(l_0xc71295)} {e(l_0xc712e3)} {e(l_0xc712ec)} {e(l_0xc713cb)} {e(l_0xc71435)} {e(l_0xc7152c)} {e(l_0xc715b7)} {e(l_0xc7162b)} {e(l_0xc71677)} {e(l_0xc716b7)} {e(l_0xc7175b)} {e(l_0xc717bc)} {e(l_0xc71808)} {e(l_0xc71837)} {e(l_0xc7188e)} {e(l_0xc718e0)} {e(l_0xc7192c)} {e(l_0xc71973)} {e(l_0xc719d7)} {e(l_0xc71a14)} {e(l_0xc71a67)} {e(l_0xc71af0)} {e(l_0xc71b3f)} {e(l_0xc71baa)} {e(l_0xc71be2)} {e(l_0xc71cad)} {e(l_0xc71d08)} {e(l_0xc71d65)} {e(l_0xc71dd2)} {e(l_0xc71ea1)} {e(l_0xc71efb)} {e(l_0xc71f21)} {e(l_0xc71f78)} {e(l_0xc71fb8)} {e(l_0xc72026)} {e(l_0xc72139)} {e(l_0xc721d9)} {e(l_0xc72205)} {e(l_0xc72258)} {e(l_0xc72296)} {e(l_0xc722c1)} {e(l_0xc72348)} {e(l_0xc72398)} {e(l_0xc7246a)} {e(l_0xc724ab)} {e(data_29.l_0xc724d7)} {e(data_29.l_0xc7252b)} {e(data_29.l_0xc7259f)}]" end
+	"[09 50 {e(l_0xc70511)} {e(l_0xc7058d)} {e(l_0xc705e4)} {e(l_0xc7062a)} {e(l_0xc70688)} {e(l_0xc70711)} {e(l_0xc70789)} {e(l_0xc70868)} {e(l_0xc708dd)} {e(l_0xc70943)} {e(l_0xc709e8)} {e(l_0xc70a4c)} {e(l_0xc70ab5)} {e(l_0xc70b17)} {e(l_0xc70b59)} {e(l_0xc70bc4)} {e(l_0xc70bff)} {e(l_0xc70c4d)} {e(l_0xc70c8d)} {e(l_0xc70d2f)} {e(l_0xc70d5f)} {e(l_0xc70db0)} {e(l_0xc70db6)} {e(l_0xc70e26)} {e(l_0xc70e61)} {e(l_0xc70e95)} {e(l_0xc70f16)} {e(l_0xc7105d)} {e(l_0xc710bb)} {e(l_0xc71140)} {e(l_0xc7117e)} {e(l_0xc71208)} {e(l_0xc71295)} {e(l_0xc712e3)} {e(l_0xc712ec)} {e(l_0xc713cb)} {e(l_0xc71435)} {e(l_0xc7152c)} {e(l_0xc715b7)} {e(l_0xc7162b)} {e(l_0xc71677)} {e(l_0xc716b7)} {e(l_0xc7175b)} {e(l_0xc717bc)} {e(l_0xc71808)} {e(l_0xc71837)} {e(l_0xc7188e)} {e(l_0xc718e0)} {e(l_0xc7192c)} {e(l_0xc71973)} {e(l_0xc719d7)} {e(l_0xc71a14)} {e(l_0xc71a67)} {e(l_0xc71af0)} {e(l_0xc71b3f)} {e(l_0xc71baa)} {e(l_0xc71be2)} {e(l_0xc71cad)} {e(l_0xc71d08)} {e(l_0xc71d65)} {e(l_0xc71dd2)} {e(l_0xc71ea1)} {e(l_0xc71efb)} {e(l_0xc71f21)} {e(l_0xc71f78)} {e(l_0xc71fb8)} {e(l_0xc72026)} {e(l_0xc72139)} {e(l_0xc721d9)} {e(l_0xc72205)} {e(l_0xc72258)} {e(l_0xc72296)} {e(l_0xc722c1)} {e(l_0xc72348)} {e(l_0xc72398)} {e(l_0xc7246a)} {e(l_0xc724ab)} {e(data_29.l_0xc724d7)} {e(data_29.l_0xc7252b)} {e(data_29.l_0xc7259f)}]" end
 
 l_0xc70144:
-    "{set(flag 681)}{counter(35)}" call(l_0xc70198) eob
+	"{set(flag 681)}{counter(35)}" call(l_0xc70198) eob
 
 l_0xc7014f:
-    "{set(flag 682)}{counter(50)}" call(l_0xc70198) eob
+	"{set(flag 682)}{counter(50)}" call(l_0xc70198) eob
 
 l_0xc7015a:
-    "{set(flag 683)}{counter(60)}" call(l_0xc70198) eob
+	"{set(flag 683)}{counter(60)}" call(l_0xc70198) eob
 
 l_0xc70165:
-    "{set(flag 684)}{set(flag 656)}{counter(75)}" call(l_0xc70198) "{unset(flag 656)}" eob
+	"{set(flag 684)}{set(flag 656)}{counter(75)}" call(l_0xc70198) "{unset(flag 656)}" eob
 
 l_0xc70176:
-    "{set(flag 685)}{set(flag 656)}{counter(150)}" call(l_0xc70198) "{unset(flag 656)}" eob
+	"{set(flag 685)}{set(flag 656)}{counter(150)}" call(l_0xc70198) "{unset(flag 656)}" eob
 
 l_0xc70187:
-    "{set(flag 686)}{set(flag 656)}{counter(100)}" call(l_0xc70198) "{unset(flag 656)}" eob
+	"{set(flag 686)}{set(flag 656)}{counter(100)}" call(l_0xc70198) "{unset(flag 656)}" eob
 
 l_0xc70198:
-    "[06 49 00 {e(l_0xc72398)}][06 4F 00 {e(l_0xc72348)}]{ctoarg}[06 08 00 {e(data_29.l_0xc726da)}]" call(data_29.l_0xc726b2) "@I could give you a great hint for just $[1C 0A 00 00 00 00]." next
-    "@You'd like a hint, wouldn't you?" linebreak
-    call(data_36.l_0xc7dd4d) "[11]{clearline}[09 02 {e(l_0xc7030f)} {e(l_0xc701f6)}]" goto(l_0xc701f6)
+	/*
+	"[06 49 00 {e(l_0xc72398)}][06 4F 00 {e(l_0xc72348)}]{ctoarg}[06 08 00 {e(data_29.l_0xc726da)}]" call(data_29.l_0xc726b2) "@Я могу дать тебе отличный совет всего за $[1C 0A 00 00 00 00]." next
+	"@Тебе ведь нужен совет, не так ли?" linebreak
+	*/
+	"[06 49 00 {e(l_0xc72398)}][06 4F 00 {e(l_0xc72348)}]{ctoarg}[06 08 00 {e(data_29.l_0xc726da)}]" call(data_29.l_0xc726b2) "@[B6] [9E][A0][94][A5] [95][91][A4][C3] [A4][96][92][96] [A0][A4][9D][9A][A9][9F][C2][9B] [A3][A0][93][96][A4] [93][A3][96][94][A0] [99][91] $[1C 0A 00 00 00 00]." next
+	"@[84][96][92][96] [93][96][95][C3] [9F][A5][98][96][9F] [A3][A0][93][96][A4], [9F][96] [A4][91][9C] [9D][9A]?" linebreak
+	call(data_36.l_0xc7dd4d) "[11]{clearline}[09 02 {e(l_0xc7030f)} {e(l_0xc701f6)}]" goto(l_0xc701f6)
 
 l_0xc701f6:
 	/*
@@ -787,133 +793,249 @@ l_0xc71af0:
 	"@[7E][A5][99][96][9B] [7C][A5][9D][C3][A4][A5][A2][C2] [83][9C][91][A2][91][92][C2]..." call(data_29.l_0xc726cb) eob
 
 l_0xc71b3f:
-    "@Did you go to the second floor of the Scaraba Cultural Museum in Summers?" next
-    "@If you are lucky... you'll get to see the hieroglyph." next
-    "@...Yeah, you sure would be lucky." call(data_29.l_0xc726cb) eob
+	/*
+	"@Ты заходил на второй этаж Музея Культуры Скарабы в Саммерс?" next
+	"@Если тебе повезёт... ты увидишь иероглиф." next
+	"@...Да, тебе правда должно повезти." call(data_29.l_0xc726cb) eob
+	*/
+	"@[84][C2] [99][91][A7][A0][95][9A][9D] [9F][91] [93][A4][A0][A2][A0][9B] [C4][A4][91][98] [7E][A5][99][96][C6] [7C][A5][9D][C3][A4][A5][A2][C2] [83][9C][91][A2][91][92][C2] [93] [83][91][9E][9E][96][A2][A3]?" next
+	"@[76][A3][9D][9A] [A4][96][92][96] [A1][A0][93][96][99][97][A4]... [A4][C2] [A5][93][9A][95][9A][AA][C3] [9A][96][A2][A0][94][9D][9A][A6]." next
+	"@...[75][91], [A4][96][92][96] [A1][A2][91][93][95][91] [95][A0][9D][98][9F][A0] [A1][A0][93][96][99][A4][9A]." call(data_29.l_0xc726cb) eob
 
 l_0xc71baa:
-    "[1B 02 {e(l_0xc7244e)}]@If you want to sail across the ocean, who better than to ask but a sailor?" call(data_29.l_0xc726cb) eob
+//	"[1B 02 {e(l_0xc7244e)}]@Если ты хочешь переплыть через океан, кого будет лучше спросить, как не моряка?" call(data_29.l_0xc726cb) eob
+	"[1B 02 {e(l_0xc7244e)}]@[76][A3][9D][9A] [A4][C2] [A7][A0][A9][96][AA][C3] [A1][96][A2][96][A1][9D][C2][A4][C3] [A9][96][A2][96][99] [A0][9C][96][91][9F], [9C][A0][94][A0] [92][A5][95][96][A4] [9D][A5][A9][AA][96] [A3][A1][A2][A0][A3][9A][A4][C3], [9C][91][9C] [9F][96] [9E][A0][A2][C6][9C][91]?" call(data_29.l_0xc726cb) eob
 
 l_0xc71be2:
-    "[1B 02 {e(l_0xc7244e)}]{isset(flag 148)}[1B 02 {e(l_0xc71b3f)}]@After you've made all the necessary preparations, go to the pyramid." next
-    "@In front of the pyramid, as the writing on the hieroglyph told," next
-    "@step on the round stone plates in front of the sphinx, and draw a star." next
-    "@That was really too much info to give out as a hint, wasn't it?" call(data_29.l_0xc726cb) eob
+	/*
+	"[1B 02 {e(l_0xc7244e)}]{isset(flag 148)}[1B 02 {e(l_0xc71b3f)}]@После того, как ты сделал все важные приготовления, иди к пирамиде." next
+	"@Перед пирамидой, как говорят иероглифы," next
+	"@наступай на круглые каменные плиты перед Сфинксом, и сделай таким образом звезду." next
+	"@Слишком много информации для совета, не так ли?" call(data_29.l_0xc726cb) eob
+	*/
+	"[1B 02 {e(l_0xc7244e)}]{isset(flag 148)}[1B 02 {e(l_0xc71b3f)}]@[81][A0][A3][9D][96] [A4][A0][94][A0], [9C][91][9C] [A4][C2] [A3][95][96][9D][91][9D] [93][A3][96] [93][91][98][9F][C2][96] [A1][A2][9A][94][A0][A4][A0][93][9D][96][9F][9A][C6], [9A][95][9A] [9C] [A1][9A][A2][91][9E][9A][95][96]." next
+	"@[81][96][A2][96][95] [A1][9A][A2][91][9E][9A][95][A0][9B], [9C][91][9C] [94][A0][93][A0][A2][C6][A4] [9A][96][A2][A0][94][9D][9A][A6][C2]," next
+	"@[9F][91][A3][A4][A5][A1][91][9B] [9F][91] [9C][A2][A5][94][9D][C2][96] [9C][91][9E][96][9F][9F][C2][96] [A1][9D][9A][A4][C2] [A1][96][A2][96][95] [83][A6][9A][9F][9C][A3][A0][9E], [9A] [A3][95][96][9D][91][9B] [A4][91][9C][9A][9E] [A0][92][A2][91][99][A0][9E] [99][93][96][99][95][A5]." next
+	"@[83][9D][9A][AA][9C][A0][9E] [9E][9F][A0][94][A0] [9A][9F][A6][A0][A2][9E][91][A8][9A][9A] [95][9D][C6] [A3][A0][93][96][A4][91], [9F][96] [A4][91][9C] [9D][9A]?" call(data_29.l_0xc726cb) eob
 
 l_0xc71cad:
-    "[1B 02 {e(l_0xc7244e)}]@Deep in the pyramid, there is an item called the [1C 05 AF], or so I've heard." next
-    "@You shouldn't exit the pyramid unless you have" linebreak
-    "  the [1C 05 AF]." call(data_29.l_0xc726cb) eob
+	/*
+	"[1B 02 {e(l_0xc7244e)}]@Глубоко в пирамиде, есть вещь под названием Соколиный Глаз, как я слышал." next
+	"@Не покидай пирамиду, пока не найдёшь" linebreak
+	"  Соколиный Глаз." call(data_29.l_0xc726cb) eob
+	*/
+	"[1B 02 {e(l_0xc7244e)}]@[74][9D][A5][92][A0][9C][A0] [93] [A1][9A][A2][91][9E][9A][95][96], [96][A3][A4][C3] [93][96][C0][C3] [A1][A0][95] [9F][91][99][93][91][9F][9A][96][9E] [83][A0][9C][A0][9D][9A][9F][C2][9B] [74][9D][91][99], [9C][91][9C] [C6] [A3][9D][C2][AA][91][9D]." next
+	"@[7F][96] [A1][A0][9C][9A][95][91][9B] [A1][9A][A2][91][9E][9A][95][A5], [A1][A0][9C][91] [9F][96] [9F][91][9B][95][97][AA][C3]" linebreak
+	"  [83][A0][9C][A0][9D][9A][9F][C2][9B] [74][9D][91][99]." call(data_29.l_0xc726cb) eob
 
 l_0xc71d08:
-    "[1B 02 {e(l_0xc7244e)}]@I don't know if he's an enemy of yours or not, but" next
-    "@the guy called <Dungeon Man> seems to be waiting for you." next
-    "@Have you already met him before this?" call(data_29.l_0xc726cb) eob
+	/*
+	"[1B 02 {e(l_0xc7244e)}]@Не знаю, враг ли он тебе или нет," next
+	"@но парень, по имени <Человек-Данж>, похоже, ждёт тебя." next
+	"@Ты уже встречался с ним раньше?" call(data_29.l_0xc726cb) eob
+	*/
+	"[1B 02 {e(l_0xc7244e)}]@[7F][96] [99][9F][91][C5], [93][A2][91][94] [9D][9A] [A0][9F] [A4][96][92][96] [9A][9D][9A] [9F][96][A4]," next
+	"@[9F][A0] [A1][91][A2][96][9F][C3], [A1][A0] [9A][9E][96][9F][9A] <[89][96][9D][A0][93][96][9C]-[75][91][9F][98]>, [A1][A0][A7][A0][98][96], [98][95][97][A4] [A4][96][92][C6]." next
+	"@[84][C2] [A5][98][96] [93][A3][A4][A2][96][A9][91][9D][A3][C6] [A3] [9F][9A][9E] [A2][91][9F][C3][AA][96]?" call(data_29.l_0xc726cb) eob
 
 l_0xc71d65:
-    "[1B 02 {e(l_0xc7244e)}]@There is a broken submarine in the Dungeon Man's tummy." next
-    "@Once the submarine gets fixed, you can go to the Deep Darkness." next
-    "@Uhhh... maybe..." call(data_29.l_0xc726cb) eob
+	/*
+	"[1B 02 {e(l_0xc7244e)}]@В животе Человека-Данжа есть сломанная подводная лодка." next
+	"@Как только подводная лодка будет починена, ты сможешь отправиться в Глубокую Тьму." next
+	"@Ээм... наверное..." call(data_29.l_0xc726cb) eob
+	*/
+	"[1B 02 {e(l_0xc7244e)}]@[73] [98][9A][93][A0][A4][96] [89][96][9D][A0][93][96][9C][91]-[75][91][9F][98][91] [96][A3][A4][C3] [A3][9D][A0][9E][91][9F][9F][91][C6] [A1][A0][95][93][A0][95][9F][91][C6] [9D][A0][95][9C][91]." next
+	"@[7C][91][9C] [A4][A0][9D][C3][9C][A0] [A1][A0][95][93][A0][95][9F][91][C6] [9D][A0][95][9C][91] [92][A5][95][96][A4] [A1][A0][A9][9A][9F][96][9F][91], [A4][C2] [A3][9E][A0][98][96][AA][C3] [A0][A4][A1][A2][91][93][9A][A4][C3][A3][C6] [93] [74][9D][A5][92][A0][9C][A5][C5] [84][C3][9E][A5]." next
+	"@[B4][C4][9E]... [9F][91][93][96][A2][9F][A0][96]..." call(data_29.l_0xc726cb) eob
 
 l_0xc71dd2:
-    "[1B 02 {e(l_0xc7244e)}]@If you need to brighten up a dark street you use..." next
-    "@Yep, that's right!  A flashlight!" next
-    "@Oh... you don't have one?  Actually, I knew that you didn't." next
-    "@Well, what comes in handy is something that you, y'know," next
-    "@picked up in, y'know, the pyramid..." next
-    "@I forgot the name...  It's that whatchyamacallit... ohhh... crud!" call(data_29.l_0xc726cb) eob
+	/*
+	"[1B 02 {e(l_0xc7244e)}]@Если тебе нужно осветить тёмную улицу, ты используешь..." next
+	"@Да, верно!  Фонарь!" next
+	"@Оу... у тебя нет его?  Вообще-то, я знал, что у тебя его нет." next
+	"@Ну, тут пригодится что-то такое, что ты, типо," next
+	"@подобрал, ну, в пирамиде..." next
+	"@Я забыл название...  Это, как же это называется... оххх... блин!" call(data_29.l_0xc726cb) eob
+	*/
+	"[1B 02 {e(l_0xc7244e)}]@[76][A3][9D][9A] [A4][96][92][96] [9F][A5][98][9F][A0] [A0][A3][93][96][A4][9A][A4][C3] [A4][97][9E][9F][A5][C5] [A5][9D][9A][A8][A5], [A4][C2] [9A][A3][A1][A0][9D][C3][99][A5][96][AA][C3]..." next
+	"@[75][91], [93][96][A2][9F][A0]!  [86][A0][9F][91][A2][C3]!" next
+	"@[80][A5]... [A5] [A4][96][92][C6] [9F][96][A4] [96][94][A0]?  [73][A0][A0][92][C0][96]-[A4][A0], [C6] [99][9F][91][9D], [A9][A4][A0] [A5] [A4][96][92][C6] [96][94][A0] [9F][96][A4]." next
+	"@[7F][A5], [A4][A5][A4] [A1][A2][9A][94][A0][95][9A][A4][A3][C6] [A9][A4][A0]-[A4][A0] [A4][91][9C][A0][96], [A9][A4][A0] [A4][C2], [A4][9A][A1][A0]," next
+	"@[A1][A0][95][A0][92][A2][91][9D], [9F][A5], [93] [A1][9A][A2][91][9E][9A][95][96]..." next
+	"@[B6] [99][91][92][C2][9D] [9F][91][99][93][91][9F][9A][96]...  [B4][A4][A0], [9C][91][9C] [98][96] [C4][A4][A0] [9F][91][99][C2][93][91][96][A4][A3][C6]... [A0][A7][A7][A7]... [92][9D][9A][9F]!" call(data_29.l_0xc726cb) eob
 
 l_0xc71ea1:
-    "[1B 02 {e(l_0xc7244e)}]@It's tough, but you have to keep pressing on through the Deep Darkness." next
-    "@That way, you'll find the village of the Tenda." next
-    "@Don't give up yet." call(data_29.l_0xc726cb) eob
+	/*
+	"[1B 02 {e(l_0xc7244e)}]@Это трудно, но ты должен продолжать продвигаться через Глубокую Тьму." next
+	"@В таком случае, ты найдёшь деревню Тенда." next
+	"@Не сдавайся." call(data_29.l_0xc726cb) eob
+	*/
+	"[1B 02 {e(l_0xc7244e)}]@[B4][A4][A0] [A4][A2][A5][95][9F][A0], [9F][A0] [A4][C2] [95][A0][9D][98][96][9F] [A1][A2][A0][95][A0][9D][98][91][A4][C3] [A1][A2][A0][95][93][9A][94][91][A4][C3][A3][C6] [A9][96][A2][96][99] [74][9D][A5][92][A0][9C][A5][C5] [84][C3][9E][A5]." next
+	"@[73] [A4][91][9C][A0][9E] [A3][9D][A5][A9][91][96], [A4][C2] [9F][91][9B][95][97][AA][C3] [95][96][A2][96][93][9F][C5] [84][96][9F][95][91]." next
+	"@[7F][96] [A3][95][91][93][91][9B][A3][C6]." call(data_29.l_0xc726cb) eob
 
 l_0xc71efb:
-    "[1B 02 {e(l_0xc7244e)}]@Apple..." next
-    "@Winters..." next
-    "@Andonuts..." call(data_29.l_0xc726cb) eob
+	/*
+	"[1B 02 {e(l_0xc7244e)}]@Эпл..." next
+	"@Уинтерс..." next
+	"@Андонатс..." call(data_29.l_0xc726cb) eob
+	*/
+	"[1B 02 {e(l_0xc7244e)}]@[B4][A1][9D]..." next
+	"@[85][9A][9F][A4][96][A2][A3]..." next
+	"@[71][9F][95][A0][9F][91][A4][A3]..." call(data_29.l_0xc726cb) eob
 
 l_0xc71f21:
-    "[1B 02 {e(l_0xc7244e)}]@The Pencil Eraser makes pencil-shaped stuff disappear." next
-    "@What do you think the Eraser Eraser machine does?" call(data_29.l_0xc726cb) eob
+	/*
+	"[1B 02 {e(l_0xc7244e)}]@Стиратель Карандашей заставит карандаше-образные вещи исчезнуть." next
+	"@Как ты думаешь, что же делает Стиратель Стирателей?" call(data_29.l_0xc726cb) eob
+	*/
+	"[1B 02 {e(l_0xc7244e)}]@[83][A4][9A][A2][91][A4][96][9D][C3] [7C][91][A2][91][9F][95][91][AA][96][9B] [99][91][A3][A4][91][93][9A][A4] [9C][91][A2][91][9F][95][91][AA][96]-[A0][92][A2][91][99][9F][C2][96] [93][96][C0][9A] [9A][A3][A9][96][99][9F][A5][A4][C3]." next
+	"@[7C][91][9C] [A4][C2] [95][A5][9E][91][96][AA][C3], [A9][A4][A0] [98][96] [95][96][9D][91][96][A4] [83][A4][9A][A2][91][A4][96][9D][C3] [83][A4][9A][A2][91][A4][96][9D][96][9B]?" call(data_29.l_0xc726cb) eob
 
 l_0xc71f78:
-    "[1B 02 {e(l_0xc7244e)}]@It looks like Apple Kid is trapped deep, deep, deep in the Stonehenge enemy base." call(data_29.l_0xc726cb) eob
+//	"[1B 02 {e(l_0xc7244e)}]@Похоже, Эпл Кида держат глубоко, глубоко, глубоко во вражеской базе Стоунхенджа." call(data_29.l_0xc726cb) eob
+	"[1B 02 {e(l_0xc7244e)}]@[81][A0][A7][A0][98][96], [B4][A1][9D] [7C][9A][95][91] [95][96][A2][98][91][A4] [94][9D][A5][92][A0][9C][A0], [94][9D][A5][92][A0][9C][A0], [94][9D][A5][92][A0][9C][A0] [93][A0] [93][A2][91][98][96][A3][9C][A0][9B] [92][91][99][96] [83][A4][A0][A5][9F][A7][96][9F][95][98][91]." call(data_29.l_0xc726cb) eob
 
 l_0xc71fb8:
-    "[1B 02 {e(l_0xc7244e)}]@Well, usually you find books at the library." next
-    "@One who goes to the the fishmonger and expects" next
-    "@to find books is likely to get very embarrassed indeed." call(data_29.l_0xc726cb) eob
+	/*
+	"[1B 02 {e(l_0xc7244e)}]@Ну, обычно, ты можешь отыскать книги в библиотеке." next
+	"@Тот, кто идёт к торговцу рыбой и ожидает" next
+	"@получения книги, скорее всего, будет сильно сбит с толку." call(data_29.l_0xc726cb) eob
+	*/
+	"[1B 02 {e(l_0xc7244e)}]@[7F][A5], [A0][92][C2][A9][9F][A0], [A4][C2] [9E][A0][98][96][AA][C3] [A0][A4][C2][A3][9C][91][A4][C3] [9C][9F][9A][94][9A] [93] [92][9A][92][9D][9A][A0][A4][96][9C][96]." next
+	"@[84][A0][A4], [9C][A4][A0] [9A][95][97][A4] [9C] [A4][A0][A2][94][A0][93][A8][A5] [A2][C2][92][A0][9B] [9A] [A0][98][9A][95][91][96][A4]" next
+	"@[A1][A0][9D][A5][A9][96][9F][9A][C6] [9C][9F][9A][94][9A], [A3][9C][A0][A2][96][96] [93][A3][96][94][A0], [92][A5][95][96][A4] [A3][9A][9D][C3][9F][A0] [A3][92][9A][A4] [A3] [A4][A0][9D][9C][A5]." call(data_29.l_0xc726cb) eob
 
 l_0xc72026:
-    "[1B 02 {e(l_0xc7244e)}]@To correct shyness, you should let that person read a self-help book." next
-    "@<Overcoming Shyness> is probably the best...  It was a best-seller, y'know." next
-    "@If a whole group is shy, the leader of the group should read the book on shyness" next
-    "@to all the group members, and the whole group may get over shyness." next
-    "@Though at least a part will certainly stop being shy." next
-    "@So, how many times did I use the word <shy>?..." call(data_29.l_0xc726cb) eob
+	/*
+	"[1B 02 {e(l_0xc7244e)}]@Чтобы избавиться от застенчивости, ты должен дать этой персоне прочитать книгу самопомощи." next
+	"@<Преодоление Застенчивости>, наверное, самая лучшая...  Знаешь, она была самой продаваемой." next
+	"@Если целая группа застенчива, лидер группы должен прочитать книгу о застенчивости" next
+	"@всем участникам группы, и вся группа сможет преодолеть застенчивость." next
+	"@Как минимум, часть из них наверняка перестанет стесняться." next
+	"@Так, сколько раз я сказал слово <застенчивость>?..." call(data_29.l_0xc726cb) eob
+	*/
+	"[1B 02 {e(l_0xc7244e)}]@[89][A4][A0][92][C2] [9A][99][92][91][93][9A][A4][C3][A3][C6] [A0][A4] [99][91][A3][A4][96][9F][A9][9A][93][A0][A3][A4][9A], [A4][C2] [95][A0][9D][98][96][9F] [95][91][A4][C3] [C4][A4][A0][9B] [A1][96][A2][A3][A0][9F][96] [A1][A2][A0][A9][9A][A4][91][A4][C3] [9C][9F][9A][94][A5] [A3][91][9E][A0][A1][A0][9E][A0][C0][9A]." next
+	"@<[81][A2][96][A0][95][A0][9D][96][9F][9A][96] [79][91][A3][A4][96][9F][A9][9A][93][A0][A3][A4][9A]>, [9F][91][93][96][A2][9F][A0][96], [A3][91][9E][91][C6] [9D][A5][A9][AA][91][C6]...  [79][9F][91][96][AA][C3], [A0][9F][91] [92][C2][9D][91] [A3][91][9E][A0][9B] [A1][A2][A0][95][91][93][91][96][9E][A0][9B]." next
+	"@[76][A3][9D][9A] [A8][96][9D][91][C6] [94][A2][A5][A1][A1][91] [99][91][A3][A4][96][9F][A9][9A][93][91], [9D][9A][95][96][A2] [94][A2][A5][A1][A1][C2] [95][A0][9D][98][96][9F] [A1][A2][A0][A9][9A][A4][91][A4][C3] [9C][9F][9A][94][A5] [A0] [99][91][A3][A4][96][9F][A9][9A][93][A0][A3][A4][9A]" next
+	"@[93][A3][96][9E] [A5][A9][91][A3][A4][9F][9A][9C][91][9E] [94][A2][A5][A1][A1][C2], [9A] [93][A3][C6] [94][A2][A5][A1][A1][91] [A3][9E][A0][98][96][A4] [A1][A2][96][A0][95][A0][9D][96][A4][C3] [99][91][A3][A4][96][9F][A9][9A][93][A0][A3][A4][C3]." next
+	"@[7C][91][9C] [9E][9A][9F][9A][9E][A5][9E], [A9][91][A3][A4][C3] [9A][99] [9F][9A][A7] [9F][91][93][96][A2][9F][C6][9C][91] [A1][96][A2][96][A3][A4][91][9F][96][A4] [A3][A4][96][A3][9F][C6][A4][C3][A3][C6]." next
+	"@[84][91][9C], [A3][9C][A0][9D][C3][9C][A0] [A2][91][99] [C6] [A3][9C][91][99][91][9D] [A3][9D][A0][93][A0] <[99][91][A3][A4][96][9F][A9][9A][93][A0][A3][A4][C3]>?..." call(data_29.l_0xc726cb) eob
 
 l_0xc72139:
-    "[1B 02 {e(l_0xc7244e)}]@Oh, heeey!" next
-    "@Have you have you spoken with like, the Tenda" next
-    "@deep in the cute, little Tenda village?" next
-    "@Oh... my... gosh..." linebreak
-    "  Really???" next
-    "@Are you like, really serious???" next
-    "@I sound like a y'know, teenage girl?" next
-    "@Do you like the way I talk now?" call(data_29.l_0xc726cb) eob
+	/*
+	"[1B 02 {e(l_0xc7244e)}]@О, эээй!" next
+	"@Ты уже говорил с, типа, Тенда" next
+	"@в глубокой милой, маленькой деревне Тенда?" next
+	"@О... боже... мой..." linebreak
+	"  Серьёзно???" next
+	"@Ты щас, типа, серьёзно???" next
+	"@Я говорю как, типа, девочка-подросток?" next
+	"@Тебе нравится, как я сейчас разговариваю?" call(data_29.l_0xc726cb) eob
+	*/
+	"[1B 02 {e(l_0xc7244e)}]@[80], [C4][C4][C4][9B]!" next
+	"@[84][C2] [A5][98][96] [94][A0][93][A0][A2][9A][9D] [A3], [A4][9A][A1][91], [84][96][9F][95][91]" next
+	"@[93] [94][9D][A5][92][A0][9C][A0][9B] [9E][9A][9D][A0][9B], [9E][91][9D][96][9F][C3][9C][A0][9B] [95][96][A2][96][93][9F][96] [84][96][9F][95][91]?" next
+	"@[80]... [92][A0][98][96]... [9E][A0][9B]..." linebreak
+	"  [83][96][A2][C3][97][99][9F][A0]???" next
+	"@[84][C2] [C0][91][A3], [A4][9A][A1][91], [A3][96][A2][C3][97][99][9F][A0]???" next
+	"@[B6] [94][A0][93][A0][A2][C5] [9C][91][9C], [A4][9A][A1][91], [95][96][93][A0][A9][9C][91]-[A1][A0][95][A2][A0][A3][A4][A0][9C]?" next
+	"@[84][96][92][96] [9F][A2][91][93][9A][A4][A3][C6], [9C][91][9C] [C6] [A3][96][9B][A9][91][A3] [A2][91][99][94][A0][93][91][A2][9A][93][91][C5]?" call(data_29.l_0xc726cb) eob
 
 l_0xc721d9:
-    "[1B 02 {e(l_0xc7244e)}]@There is a very important place under the Tenda Village." call(data_29.l_0xc726cb) eob
+//	"[1B 02 {e(l_0xc7244e)}]@Под Деревней Тенда есть очень важное место." call(data_29.l_0xc726cb) eob
+	"[1B 02 {e(l_0xc7244e)}]@[81][A0][95] [75][96][A2][96][93][9F][96][9B] [84][96][9F][95][91] [96][A3][A4][C3] [A0][A9][96][9F][C3] [93][91][98][9F][A0][96] [9E][96][A3][A4][A0]." call(data_29.l_0xc726cb) eob
 
 l_0xc72205:
-    "[1B 02 {e(l_0xc7244e)}]@Do you know about the talking rock in the Lost Underworld?" next
-    "@You should listen to what the rock has to say and then put it into practice." call(data_29.l_0xc726cb) eob
+	/*
+	"[1B 02 {e(l_0xc7244e)}]@Ты знаешь о говорящем камне в Подземелье?" next
+	"@Ты должен послушать, что этот камень хочет сказать, и затем применить это на практике." call(data_29.l_0xc726cb) eob
+	*/
+	"[1B 02 {e(l_0xc7244e)}]@[84][C2] [99][9F][91][96][AA][C3] [A0] [94][A0][93][A0][A2][C6][C0][96][9E] [9C][91][9E][9F][96] [93] [81][A0][95][99][96][9E][96][9D][C3][96]?" next
+	"@[84][C2] [95][A0][9D][98][96][9F] [A1][A0][A3][9D][A5][AA][91][A4][C3], [A9][A4][A0] [C4][A4][A0][A4] [9C][91][9E][96][9F][C3] [A7][A0][A9][96][A4] [A3][9C][91][99][91][A4][C3], [9A] [99][91][A4][96][9E] [A1][A2][9A][9E][96][9F][9A][A4][C3] [C4][A4][A0] [9F][91] [A1][A2][91][9C][A4][9A][9C][96]." call(data_29.l_0xc726cb) eob
 
 l_0xc72258:
-    "[1B 02 {e(l_0xc7244e)}]@Do you know that talking rock in the Lost Underworld?" next
-    "@You should listen to what the rock has to say." call(data_29.l_0xc726cb) eob
+	/*
+	"[1B 02 {e(l_0xc7244e)}]@Ты знаешь тот говорящий камень в Подземелье?" next
+	"@Ты должен послушать, что этот камень хочет сказать." call(data_29.l_0xc726cb) eob
+	*/
+	"[1B 02 {e(l_0xc7244e)}]@[84][C2] [99][9F][91][96][AA][C3] [A4][A0][A4] [94][A0][93][A0][A2][C6][C0][9A][9B] [9C][91][9E][96][9F][C3] [93] [81][A0][95][99][96][9E][96][9D][C3][96]?" next
+	"@[84][C2] [95][A0][9D][98][96][9F] [A1][A0][A3][9D][A5][AA][91][A4][C3], [A9][A4][A0] [C4][A4][A0][A4] [9C][91][9E][96][9F][C3] [A7][A0][A9][96][A4] [A3][9C][91][99][91][A4][C3]." call(data_29.l_0xc726cb) eob
 
 l_0xc72296:
-    "@Maybe ..." linebreak
-    "  where you should visit is" next
-    "@Saturn Valley..." call(data_29.l_0xc726cb) eob
+	/*
+	"@Возможно..." linebreak
+	"  то место, куда ты должен пойти," next
+	"@это Деревня Сатурн..." call(data_29.l_0xc726cb) eob
+	*/
+	"@[73][A0][99][9E][A0][98][9F][A0]..." linebreak
+	"  [A4][A0] [9E][96][A3][A4][A0], [9C][A5][95][91] [A4][C2] [95][A0][9D][98][96][9F] [A1][A0][9B][A4][9A]," next
+	"@[C4][A4][A0] [75][96][A2][96][93][9F][C6] [83][91][A4][A5][A2][9F]..." call(data_29.l_0xc726cb) eob
 
 l_0xc722c1:
-    "@A very special substance is necessary to complete the Phase Distorter." next
-    "@You know, I wonder if the site in Onett" next
-    "@where the meteorite landed has something to do with this?" next
-    "@I say, go there and check out the site." call(data_29.l_0xc726cb) eob
+	/*
+	"@Чтобы завершить разработку Фазового Искажателя, нужно очень особое вещество." next
+	"@Знаешь, мне вот интересно. То место в Онетте," next
+	"@куда врезался метеорит, имеет ли оно к этому какое-то отношение?" next
+	"@Я говорю, иди туда и проверь то место." call(data_29.l_0xc726cb) eob
+	*/
+	"@[89][A4][A0][92][C2] [99][91][93][96][A2][AA][9A][A4][C3] [A2][91][99][A2][91][92][A0][A4][9C][A5] [86][91][99][A0][93][A0][94][A0] [7A][A3][9C][91][98][91][A4][96][9D][C6], [9F][A5][98][9F][A0] [A0][A9][96][9F][C3] [A0][A3][A0][92][A0][96] [93][96][C0][96][A3][A4][93][A0]." next
+	"@[79][9F][91][96][AA][C3], [9E][9F][96] [93][A0][A4] [9A][9F][A4][96][A2][96][A3][9F][A0]. [84][A0] [9E][96][A3][A4][A0] [93] [80][9F][96][A4][A4][96]," next
+	"@[9C][A5][95][91] [93][A2][96][99][91][9D][A3][C6] [9E][96][A4][96][A0][A2][9A][A4], [9A][9E][96][96][A4] [9D][9A] [A0][9F][A0] [9C] [C4][A4][A0][9E][A5] [9C][91][9C][A0][96]-[A4][A0] [A0][A4][9F][A0][AA][96][9F][9A][96]?" next
+	"@[B6] [94][A0][93][A0][A2][C5], [9A][95][9A] [A4][A5][95][91] [9A] [A1][A2][A0][93][96][A2][C3] [A4][A0] [9E][96][A3][A4][A0]." call(data_29.l_0xc726cb) eob
 
 l_0xc72348:
-    "@I have no more hints for you." next
-    "@You've done such a good job to this point." next
-    "@From here on out..." next
-    "@Trust your judgement, and also your luck." end
+	/*
+	"@У меня больше нет советов для тебя." next
+	"@Ты проделал великолепную работу." next
+	"@Отныне и навсегда..." next
+	"@Верь своему суждению, а также своей удаче." end
+	*/
+	"@[85] [9E][96][9F][C6] [92][A0][9D][C3][AA][96] [9F][96][A4] [A3][A0][93][96][A4][A0][93] [95][9D][C6] [A4][96][92][C6]." next
+	"@[84][C2] [A1][A2][A0][95][96][9D][91][9D] [93][96][9D][9A][9C][A0][9D][96][A1][9F][A5][C5] [A2][91][92][A0][A4][A5]." next
+	"@[80][A4][9F][C2][9F][96] [9A] [9F][91][93][A3][96][94][95][91]..." next
+	"@[73][96][A2][C3] [A3][93][A0][96][9E][A5] [A3][A5][98][95][96][9F][9A][C5], [91] [A4][91][9C][98][96] [A3][93][A0][96][9B] [A5][95][91][A9][96]." end
 
 l_0xc72398:
-    "@Well, I want to thank you for all the times" next
-    "@that you used the hint shop.  It's been a while since I first saw you..." next
-    "@This is my final day in business." next
-    "@{pause(10)}..{pause(10)}..{pause(10)}..{pause(10)}..{pause(30)}.." next
-    "@Well, so long kid," linebreak
-    "  No, no... Master [1C 02 01]." next
-    "@See you again," linebreak
-    "  if fate allows it." end
+	/*
+	"@Что ж, я хочу поблагодарить тебя за всё время," next
+	"@что ты потратил в магазине советов." next
+	"@Прошло много времени с тех пор, как я впервые увидел тебя..." next
+	"@Это мой последний день в бизнесе." next
+	"@{pause(10)}..{pause(10)}..{pause(10)}..{pause(10)}..{pause(30)}.." next
+	"@Ну, прощай, малой." linebreak
+	"  Нет, нет... Мастер [1C 02 01]." next
+	"@Увидимся снова," linebreak
+	"  если судьба так решит." end
+	*/
+	"@[89][A4][A0] [98], [C6] [A7][A0][A9][A5] [A1][A0][92][9D][91][94][A0][95][91][A2][9A][A4][C3] [A4][96][92][C6] [99][91] [93][A3][97] [93][A2][96][9E][C6]," next
+	"@[A9][A4][A0] [A4][C2] [A1][A0][A4][A2][91][A4][9A][9D] [93] [9E][91][94][91][99][9A][9F][96] [A3][A0][93][96][A4][A0][93]." next
+	"@[81][A2][A0][AA][9D][A0] [9E][9F][A0][94][A0] [93][A2][96][9E][96][9F][9A] [A3] [A4][96][A7] [A1][A0][A2], [9C][91][9C] [C6] [93][A1][96][A2][93][C2][96] [A5][93][9A][95][96][9D] [A4][96][92][C6]..." next
+	"@[B4][A4][A0] [9E][A0][9B] [A1][A0][A3][9D][96][95][9F][9A][9B] [95][96][9F][C3] [93] [92][9A][99][9F][96][A3][96]." next
+	"@{pause(10)}..{pause(10)}..{pause(10)}..{pause(10)}..{pause(30)}.." next
+	"@[7F][A5], [A1][A2][A0][C0][91][9B], [9E][91][9D][A0][9B]." linebreak
+	"  [7F][96][A4], [9F][96][A4]... [7E][91][A3][A4][96][A2] [1C 02 01]." next
+	"@[85][93][9A][95][9A][9E][A3][C6] [A3][9F][A0][93][91]," linebreak
+	"  [96][A3][9D][9A] [A3][A5][95][C3][92][91] [A4][91][9C] [A2][96][AA][9A][A4]." end
 
 l_0xc72440:
-    "{isset(flag 652)}[1B 02 {e(l_0xc7244a)}]" eob
+	"{isset(flag 652)}[1B 02 {e(l_0xc7244a)}]" eob
 
 l_0xc7244a:
-    "[1D 21 01]" eob
+	"[1D 21 01]" eob
 
 l_0xc7244e:
-    "[06 BA 00 {e(data_29.l_0xc7259f)}][06 3A 00 {e(data_29.l_0xc7252b)}][06 5B 00 {e(data_29.l_0xc724d7)}][06 8C 00 {e(l_0xc724ab)}]" goto(l_0xc7246a)
+	"[06 BA 00 {e(data_29.l_0xc7259f)}][06 3A 00 {e(data_29.l_0xc7252b)}][06 5B 00 {e(data_29.l_0xc724d7)}][06 8C 00 {e(l_0xc724ab)}]" goto(l_0xc7246a)
 
 l_0xc7246a:
-    "@At the Dinosaur Museum in Fourside..." next
-    "@A man called called Mr. Spoon has a heavy mustache..." call(data_29.l_0xc726cb) eob
+	/*
+	"@В Музее Динозавров в Фоурсайде..." next
+	"@У человека, которого зовут Мр. Ложкин, густые усы..." call(data_29.l_0xc726cb) eob
+	*/
+	"@[73] [7E][A5][99][96][96] [75][9A][9F][A0][99][91][93][A2][A0][93] [93] [86][A0][A5][A2][A3][91][9B][95][96]..." next
+	"@[85] [A9][96][9D][A0][93][96][9C][91], [9C][A0][A4][A0][A2][A0][94][A0] [99][A0][93][A5][A4] [7E][A2]. [7D][A0][98][9C][9A][9F], [94][A5][A3][A4][C2][96] [A5][A3][C2]..." call(data_29.l_0xc726cb) eob
 
 l_0xc724ab:
-    "@If you want to meet Venus, you should go backstage at the Topolla Theater." call(data_29.l_0xc726cb) eob
+//	"@Если хочешь встретить Венеру, тебе надо пройти за кулисы в Театре Тополла." call(data_29.l_0xc726cb) eob
+	"@[76][A3][9D][9A] [A7][A0][A9][96][AA][C3] [93][A3][A4][A2][96][A4][9A][A4][C3] [73][96][9F][96][A2][A5], [A4][96][92][96] [9F][91][95][A0] [A1][A2][A0][9B][A4][9A] [99][91] [9C][A5][9D][9A][A3][C2] [93] [84][96][91][A4][A2][96] [84][A0][A1][A0][9D][9D][91]." call(data_29.l_0xc726cb) eob
 

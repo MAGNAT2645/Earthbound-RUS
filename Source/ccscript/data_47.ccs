@@ -701,7 +701,7 @@ l_0xc901a8:
 
 l_0xc901bb:
 	/*
-	title(1, "Мр.Сатурн")
+	title(1, "Др.Сатурн")
 	"{font_saturn}[06 02 00 {e(l_0xc9029f)}]@Я" linebreak
 	"  Др. Сатурн." linebreak
 	"  Зуум!" next
@@ -717,7 +717,7 @@ l_0xc901bb:
 	"{font_normal}[19 02]Да" eob
 	*/
 	newline
-	title(1, "[7E][A2].[83][91][A4][A5][A2][9F]")
+	title(1, "[75][A2].[83][91][A4][A5][A2][9F]")
 	"{font_saturn}[06 02 00 {e(l_0xc9029f)}]@[B6]" linebreak
 	"  [75][A2]. [83][91][A4][A5][A2][9F]." linebreak
 	"  [79][A5][A5][9E]!" next

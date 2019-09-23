@@ -1,0 +1,284 @@
+/*
+ *	EB++ :: dynamic memory allocation library
+ *
+ *	This library defines operations for dynamically allocating memory on the heap.
+ */
+ 
+// - Experimental - //
+
+import ebpp
+import ebpp_std
+
+/* Dynamic memory allocation */
+define cpy_space	= 0x316E00
+define heap_table	= 0x317100
+define heap			= 0x317300
+
+/* A heap entry is defined as follows.
+[PTR PTR PTR][X SIZ]
+PTR = 24-bit pointer to somewhere in the heap.
+X = 1-bit switch indicating allocation state. (1 = allocated, 0 = freed)
+SIZ = 7-bit unsigned integer indicating how large the allocation is.
+*/
+
+command new(size) {
+	load32c(eax, size)
+	run(_new)
+}
+
+command delete(ptr) {
+	copy(eax, ptr)
+	run(_delete)
+	load16c(ptr, 0)
+}
+
+_new: {
+	// 0-byte allocation handled.
+	if eqc(nul, eax, 0) { goto(exit) }
+	
+	// Save desired size.
+	push(eax)
+	
+	// Find a freed entry large enough or make a new one.
+	load32c(ebx, heap_table)	// base
+	load32c(eax, heap)			// location for new entry pointers
+
+	// Iterate through the heap table.
+	loop:
+	pload32(edx, ebx)
+	
+	// Allocate new entry if null entry found.
+	if eqc(nul, edx, 0) {
+		pull(edx)					// Pull desired size into EDX.
+		
+		bwandc(edx, edx, 0x7F)		// Keep only the lowest byte of the desired size, minus the highest bit.
+		bworc(edx, edx, 0x80)		// Turn on the "allocated bit."
+		
+		mulc(edx, edx, 0x01000000)	// Effectively bit-shift EDX up into the highest byte's slot.
+		
+		bwor(edx, edx, eax)			// OR EAX onto EDX, completing the heap entry.
+		pstore32(edx, ebx)			// Store the entry into *EBX.
+		
+		// Finished.
+		goto(exit)
+	}
+	
+	copy(eip, eax)
+	
+	// Otherwise, determine if the entry found is free.
+	copy(ecx, edx)
+	bwandc(ecx, ecx, 0x80000000)
+	if eqc(nul, ecx, 0) {
+		// Check the size of the freed entry.
+		copy(ecx, edx)
+		bwandc(ecx, ecx, 0x7F000000)
+		divc(ecx, nul, ecx, 0x01000000)
+		
+		peek(eax)
+		// If size is greater than or equal desired size...
+		if gte(nul, ecx, eax) {
+			push(ecx)
+			
+			copy(ecx, edx)
+			push(eax)
+			
+			// Edit entry.
+			bwandc(ecx, ecx, 0x00FFFFFF)	// Rewrite the size.
+			bworc(ecx, ecx, 0x80000000)		// Turn on the allocated bit.
+			mulc(eax, eax, 0x01000000)
+			bwor(ecx, ecx, eax)				// Insert new size.
+			pstore32(ecx, ebx)				// Store the entry back into its place.
+			
+			// Prepare to resize heap table.
+			pull(eax)
+			pull(ecx)
+			sub(ecx, ecx, eax)				// New size.
+			
+			// Skip resizing table if the entries are the same size.
+			if eqc(nul, ecx, 0) { goto(breakj) }
+			
+			// Prepare new halved free entry.
+			push(eax)
+			copy(eax, ecx)
+			copy(ecx, edx)
+			bwandc(ecx, ecx, 0x00FFFFFF)
+			mulc(eax, eax, 0x01000000)
+			bwor(ecx, ecx, eax)
+			pull(eax)
+			add(ecx, ecx, eax)
+			
+			// Measure how much space needs to be moved.
+			copy(eip, ebx)
+			addc(eip, eip, 4)
+			
+			loopj:
+			pload32(eax, eip)
+			if eqc(nul, eax, 0) {
+				push(ecx)
+				
+				sub(eax, eip, ebx)
+				
+				load32c(ecx, cpy_space)
+				memcpy(ebx, ecx, eax)
+
+				copy(eip, ebx)
+				addc(eip, eip, 4)
+				memcpy(ecx, eip, eax)
+				
+				pull(ecx)
+				pstore32(ecx, eip)
+				
+				goto(breakj)
+			}
+			
+			addc(eip, eip, 4)
+			goto(loopj)
+			
+			breakj:
+			
+			// Load return pointer.			
+			copy(eax, edx)
+			bwandc(eax, eax, 0x00FFFFFF)
+			
+			// Finished.
+			pop
+			goto(exit)
+		}
+	
+	}
+	
+	// Otherwise, make a note of this pointer, if it + its size are greater than EAX.
+	copy(eax, edx)
+	copy(ecx, edx)
+
+	bwandc(ecx, ecx, 0x7F000000)
+	divc(ecx, nul, ecx, 0x01000000)
+	
+	bwandc(eax, eax, 0x00FFFFFF)
+	add(ecx, eax, ecx)
+
+	copy(eax, eip)
+	if gt(nul, ecx, eax) { copy(eax, ecx) }
+	
+	// EBX += 4, incremental loop
+	addc(ebx, ebx, 4)
+	goto(loop)
+	
+	exit:
+	return
+}
+
+_delete: {
+	// Null deletion handled.
+	if eqc(nul, eax, 0) { goto(exit) }
+	
+	load32c(ebx, heap_table)	// base
+
+	// Iterate through the heap table.
+	loop:
+	pload32(edx, ebx)
+	
+	if eqc(nul, edx, 0) { "#INVALID HEAP PTR#" goto(exit) }
+	
+	bwandc(ecx, edx, 0x00FFFFFF)
+	if eq(nul, ecx, eax) {
+		// Flip off the allocated switch.
+		bwandc(edx, edx, 0x7FFFFFFF)
+		pstore32(edx, ebx)
+		goto(exit)
+	}
+	
+	
+	addc(ebx, ebx, 4)
+	goto(loop)
+	
+	exit:
+	// Run post-garbage collection subroutine.
+	run(_collapse)
+	return
+}
+
+_collapse: {
+	load32c(ebx, heap_table)	// base
+
+	// Iterate through the heap table.
+	loop:
+	pload32(edx, ebx)
+	
+	// If entry is null, exit.
+	if eqc(nul, edx, 0) { goto(exit) }
+	
+	// Check if entry is freed.
+	copy(ecx, edx)
+	bwandc(ecx, ecx, 0x80000000)
+	if eqc(nul, ecx, 0) {
+		// Note how large the base entry is.
+		copy(ecx, edx)
+		bwandc(eax, ecx, 0x7F000000)
+		divc(eax, nul, eax, 0x01000000)
+		
+		// Check for consecutive free entries.
+		copy(eip, ebx)
+		addc(eip, eip, 4)
+		
+		loopj:
+		pload32(ecx, eip)
+		
+		// If next entry is null, erase all entries from base to end.
+		if eqc(nul, ecx, 0) {
+			sub(ecx, eip, ebx)
+			memset(ebx, 0, ecx)
+			goto(exit)
+		}
+		
+		// Otherwise, check if freed.
+		bwandc(ecx, ecx, 0x80000000)
+		if eqc(nul, ecx, 0) {
+			// Note how large this particular entry is.
+			pload32(ecx, eip)
+			bwandc(ecx, ecx, 0x7F000000)
+			divc(ecx, nul, ecx, 0x01000000)
+			add(eax, eax, ecx)
+		}
+		
+		// Else, compact all freed entries found back into the base entry.
+		else {
+			// Edit base entry.
+			copy(ecx, edx)
+			mulc(eax, eax, 0x01000000)
+			bwor(eax, ecx, eax)
+			pstore32(eax, ebx)
+			
+			// Get range for memcpy.
+			load32c(eax, heap)
+			sub(eax, eax, eip)
+			
+			// Resize heap table.
+			load32c(ecx, cpy_space)
+			memcpy(eip, ecx, eax)
+			
+			copy(eip, ebx)
+			addc(eip, eip, 4)
+			memcpy(ecx, eip, eax)
+			
+			// Zero out old heap entries.
+			load32c(ecx, heap)
+			add(eip, eip, eax)
+			sub(eax, ecx, eax)
+			memset(eip, 0, eax)
+			
+			goto(continue)
+		}
+		
+		addc(eip, eip, 4)
+		goto(loopj)
+	}
+	
+	continue:
+	addc(ebx, ebx, 4)
+	goto(loop)
+	
+	exit:
+	return
+}
+
