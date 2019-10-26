@@ -111,9 +111,13 @@ l_0xef6d4c:
 	"[1D 01 FF 03]" eob
 
 l_0xef6d71:
-//	"@{target} был{target_gender}{call(RUS_ref.l_gendersuffix)} побежд{target_gender}{call(RUS_ref.l_gendersuffix7)}!{sound(33)}" eob
+	/*
+	"@{target}" linebreak
+	"  был{target_gender}{call(RUS_ref.l_gendersuffix)} побежд{target_gender}{call(RUS_ref.l_gendersuffix7)}!{sound(33)}" eob
+	*/
 	newline
-	"@{target} [92][C2][9D]{target_gender}{call(RUS_ref.l_gendersuffix)} [A1][A0][92][96][98][95]{target_gender}{call(RUS_ref.l_gendersuffix7)}!{sound(33)}" eob
+	"@{target}" linebreak
+	"  [92][C2][9D]{target_gender}{call(RUS_ref.l_gendersuffix)} [A1][A0][92][96][98][95]{target_gender}{call(RUS_ref.l_gendersuffix7)}!{sound(33)}" eob
 
 l_0xef6d83:
 //	"@{target} остановил{target_gender}{call(RUS_ref.l_gendersuffix2)}!{sound(33)}" eob
@@ -145,9 +149,13 @@ l_0xef6dd8:
 	"@{target} [92][C2][9D]{target_gender}{call(RUS_ref.l_gendersuffix)} [A2][91][99][92][9A][A4]{target_gender}{call(RUS_ref.l_gendersuffix)} [9F][91] [9C][A5][A3][A0][A9][9C][9A]!{sound(33)}" eob
 
 l_0xef6df0:
-//	"@{target} был{target_gender}{call(RUS_ref.l_gendersuffix)} побежд{target_gender}{call(RUS_ref.l_gendersuffix7)}!{sound(33)}" eob
+	/*
+	"@{target}" linebreak
+	"  был{target_gender}{call(RUS_ref.l_gendersuffix)} побежд{target_gender}{call(RUS_ref.l_gendersuffix7)}!{sound(33)}" eob
+	*/
 	newline
-	"@{target} [92][C2][9D]{target_gender}{call(RUS_ref.l_gendersuffix)} [A1][A0][92][96][98][95]{target_gender}{call(RUS_ref.l_gendersuffix7)}!{sound(33)}" eob
+	"@{target}" linebreak
+	"  [92][C2][9D]{target_gender}{call(RUS_ref.l_gendersuffix)} [A1][A0][92][96][98][95]{target_gender}{call(RUS_ref.l_gendersuffix7)}!{sound(33)}" eob
 
 l_0xef6e03:
 //	"@{target} был{target_gender}{call(RUS_ref.l_gendersuffix)} окончательно сломан{target_gender}{call(RUS_ref.l_gendersuffix)}!{sound(33)}" eob

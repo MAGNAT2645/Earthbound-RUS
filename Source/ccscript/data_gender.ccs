@@ -1,9 +1,3 @@
-//Usage: {call(data_gender.l_gender)} 
-//NB:  [1C 14 02] checks for the number of enemies in a fight, and [1C 14 01] checks for the gender of the main enemy in the fight.
-//With [1C 14 01], the following is true:
-//    It returns 01 if the enemy is Male
-//    It returns 02 if the enemy is Female
-//    It returns 03 if the enemy if neutral
 command e(label) "{long label}"
 
 l_gender_rearrange:
@@ -38,7 +32,7 @@ l_female3:
 	"[9F][96][97]" eob
 
 // Подстановка 'а' в конце, например: украл(а)
-// Только у женского пола добавляется суффикс, остальное не должно быть тронуто
+// Только у женского пола добавляется 'а', остальное не должно быть тронуто
 l_gendersuffix:
 	"{result_is(2)}[1B 03 {e(l_femalesuffix)}]" eob
 l_femalesuffix:
@@ -60,6 +54,11 @@ l_gendersuffix3:
 l_femalesuffix3:
 //	"ла" eob
 	"[9D][91]" eob
+
+// Только -ла в ж.р.
+l_gendersuffix4:
+//	"{result_is(2)}[1B 03 {e(l_femalesuffix3)}]" eob
+	"{result_is(2)}[1B 03 {e(l_femalesuffix3)}]" eob
 
 // Используется для "пришёл/пришла за вами."
 l_gender_came:

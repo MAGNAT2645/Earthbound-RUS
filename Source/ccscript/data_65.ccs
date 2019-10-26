@@ -516,11 +516,11 @@ l_0xef9785:
 
 l_0xef97a2:
 	/*
-	"[06 BF 00 {e(data_35.l_0xc7c588)}]{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(data_24.l_0xc690a6)}]{music(155)}@Ты наконец-то добрался сюда." next
+	"[06 BF 00 {e(data_35.l_0xc7c588)}]{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(data_24.l_0xc690a6)}]{music(155)}" title(1, "Хранитель") "@Ты наконец-то добрался сюда." next
 	"@Это вторая локация <Твоего Храма>.{pause(20)}  Но сейчас она моя." next
 	"@Отбери её у меня,{pause(30)} если посмеешь...[03]" call(data_23.l_0xc68410) "[1B 03 {e(data_23.l_0xc683de)}][1F 1E C3 01 08]{pause(120)}{set(flag 191)}" eob
 	*/
-	"[06 BF 00 {e(data_35.l_0xc7c588)}]{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(data_24.l_0xc690a6)}]{music(155)}@[84][C2] [9F][91][9C][A0][9F][96][A8]-[A4][A0] [95][A0][92][A2][91][9D][A3][C6] [A3][C5][95][91]." next
+	"[06 BF 00 {e(data_35.l_0xc7c588)}]{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(data_24.l_0xc690a6)}]{music(155)}" title(1, "[87][A2][91][9F][9A][A4][96][9D][C3]") "@[84][C2] [9F][91][9C][A0][9F][96][A8]-[A4][A0] [95][A0][92][A2][91][9D][A3][C6] [A3][C5][95][91]." next
 	"@[B4][A4][A0] [93][A4][A0][A2][91][C6] [9D][A0][9C][91][A8][9A][C6] <[84][93][A0][96][94][A0] [87][A2][91][9E][91]>.{pause(20)}  [7F][A0] [A3][96][9B][A9][91][A3] [A0][9F][91] [9E][A0][C6]." next
 	"@[80][A4][92][96][A2][9A] [96][97] [A5] [9E][96][9F][C6],{pause(30)} [96][A3][9D][9A] [A1][A0][A3][9E][96][96][AA][C3]...[03]" call(data_23.l_0xc68410) "[1B 03 {e(data_23.l_0xc683de)}][1F 1E C3 01 08]{pause(120)}{set(flag 191)}" eob
 
@@ -604,10 +604,10 @@ l_0xef9a5e:
 
 l_0xef9a7e:
 	/*
-	"{sound(25)}@{user} разорвал{user_gender}{call(RUS_ref.l_gendersuffix2)}" linebreak
-	"  на кусочки!{sound(91)}[03]{pause(30)}" eob
+	"{sound(25)}@{user}" linebreak
+	"  разорвал{user_gender}{call(RUS_ref.l_gendersuffix2)} на кусочки!{sound(91)}[03]{pause(30)}" eob
 	*/
 	newline
-	"{sound(25)}@{user} [A2][91][99][A0][A2][93][91][9D]{user_gender}{call(RUS_ref.l_gendersuffix2)}" linebreak
-	"  [9F][91] [9C][A5][A3][A0][A9][9C][9A]!{sound(91)}[03]{pause(30)}" eob
+	"{sound(25)}@{user}" linebreak
+	"  [A2][91][99][A0][A2][93][91][9D]{user_gender}{call(RUS_ref.l_gendersuffix2)} [9F][91] [9C][A5][A3][A0][A9][9C][9A]!{sound(91)}[03]{pause(30)}" eob
 

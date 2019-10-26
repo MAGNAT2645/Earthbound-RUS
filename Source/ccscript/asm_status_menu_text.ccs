@@ -22,11 +22,3 @@ StatusNameAlign:
 	text_pos (149, 5)	"[7A][9F][A4][96][9D][9D][96][9C][A4]:" // Интеллект:
 	text_pos (165, 6)	"[85][95][91][A9][91]:" // Удача:
 	eob
-
-
-command ASMLoadAddress0E(Address) {
-	LDA_i (short[0] Address)
-	STA_d (0x0E)
-	LDA_i (short[1] Address)
-	STA_d (0x10)
-}
