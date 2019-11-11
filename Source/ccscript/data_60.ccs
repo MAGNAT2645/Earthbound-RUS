@@ -309,9 +309,13 @@ l_0xc9fee3:
 	" [84][96][9D][96][A1][A0][A2][A4][91][A8][9A][A0][9F][9F][C2][9B] [B6][C0][9A][9C] [9F][96][9D][C3][99][C6] [9A][A3][A1][A0][9D][C3][99][A0][93][91][A4][C3] [99][95][96][A3][C3]." end
 
 l_0xc9fefd:
-//	"[19 19 00 00]{swap}@{user}{swap} приложил{user_gender}{call(data_gender.l_gendersuffix)} [1C 05 00] ко лбу и собрал{user_gender}{call(data_gender.l_gendersuffix2)} с мыслями.[03][1F 41 09]" eob
+	/*
+	"[19 19 00 00]{swap}@{user}{swap} приложил{user_gender}{call(data_gender.l_gendersuffix)} [1C 05 00] ко лбу" linebreak
+	"  и собрал{user_gender}{call(data_gender.l_gendersuffix2)} с мыслями.[03][1F 41 09]" eob
+	*/
 	newline
-	"[19 19 00 00]{swap}@{user}{swap} [A1][A2][9A][9D][A0][98][9A][9D]{user_gender}{call(data_gender.l_gendersuffix)} [1C 05 00] [9C][A0] [9D][92][A5] [9A] [A3][A0][92][A2][91][9D]{user_gender}{call(data_gender.l_gendersuffix2)} [A3] [9E][C2][A3][9D][C6][9E][9A].[03][1F 41 09]" eob
+	"[19 19 00 00]{swap}@{user}{swap} [A1][A2][9A][9D][A0][98][9A][9D]{user_gender}{call(data_gender.l_gendersuffix)} [1C 05 00] [9C][A0] [9D][92][A5]" linebreak
+	"  [9A] [A3][A0][92][A2][91][9D]{user_gender}{call(data_gender.l_gendersuffix2)} [A3] [9E][C2][A3][9D][C6][9E][9A].[03][1F 41 09]" eob
 
 l_0xe10000:
 	/*

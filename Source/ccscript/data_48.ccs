@@ -4,10 +4,9 @@
  * Generated using CCScriptWriter.
  */
 
-import custom_text_color
-
-command e(label) "{long label}"
-command custom_text_color(color) "[1C 00 02 {short color}]"
+import ebpp_std
+import asm_custom_text_color
+import RUS_ref
 
 // Text Data
 l_0xc90365:
@@ -100,17 +99,21 @@ l_0xc9058d:
 	call(data_36.l_0xc7dd4f) "[11]{clearline}[09 02 {e(l_0xc90615)} {e(l_0xc905fd)}]" goto(l_0xc905fd)
 
 l_0xc905fd:
-//	"@Хорошо.  Пожалуйста, приходи снова, в любое время." end
-	"@[87][A0][A2][A0][AA][A0].  [81][A0][98][91][9D][A5][9B][A3][A4][91], [A1][A2][9A][A7][A0][95][9A] [A3][9F][A0][93][91], [93] [9D][C5][92][A0][96] [93][A2][96][9E][C6]." end
+	/*
+	"@Хорошо." linebreak
+	"@Пожалуйста, приходи снова, в любое время." end
+	*/
+	"@[87][A0][A2][A0][AA][A0]." linebreak
+	"@[81][A0][98][91][9D][A5][9B][A3][A4][91], [A1][A2][9A][A7][A0][95][9A] [A3][9F][A0][93][91], [93] [9D][C5][92][A0][96] [93][A2][96][9E][C6]." end
 
 l_0xc90615:
 	/*
 	"@Отлично." next
-	"@Пожалуйста, устройся поудобнее, на{custom_text_color(COLOR_BLUE)} синих{text_color(1)} простынях..." next
+	"@Пожалуйста, устройся поудобнее, на{custom_text_color(COLOR_BLUE)} синих{text_color(0)} простынях..." next
 	"@Нет, нет, я просто шучу!  Ха-ха-хах!{wait}" call(data_49.l_0xc91693) "[1F 21 27]" eob
 	*/
 	"@[80][A4][9D][9A][A9][9F][A0]." next
-	"@[81][A0][98][91][9D][A5][9B][A3][A4][91], [A5][A3][A4][A2][A0][9B][A3][C6] [A1][A0][A5][95][A0][92][9F][96][96], [9F][91]{custom_text_color(COLOR_BLUE)} [A3][9A][9F][9A][A7]{text_color(1)} [A1][A2][A0][A3][A4][C2][9F][C6][A7]..." next
+	"@[81][A0][98][91][9D][A5][9B][A3][A4][91], [A5][A3][A4][A2][A0][9B][A3][C6] [A1][A0][A5][95][A0][92][9F][96][96], [9F][91]{custom_text_color(COLOR_BLUE)} [A3][9A][9F][9A][A7]{text_color(0)} [A1][A2][A0][A3][A4][C2][9F][C6][A7]..." next
 	"@[7F][96][A4], [9F][96][A4], [C6] [A1][A2][A0][A3][A4][A0] [AA][A5][A9][A5]!  [87][91]-[A7][91]-[A7][91][A7]!{wait}" call(data_49.l_0xc91693) "[1F 21 27]" eob
 
 l_0xc90663:
@@ -220,6 +223,7 @@ l_0xc908bc:
 	"@Однако, мы можем предоставить вам номер ценой в $[1C 0A 00 00 00 00] за ночь." next
 	"@Вы заинтересованы в номере?" linebreak
 	*/
+	title(1, Richmond)
 	"[06 7F 01 {e(l_0xc90a62)}][1D 15 96 00]{swap}@[75][A0][92][A2][A0] [A1][A0][98][91][9D][A0][93][91][A4][C3] [93]" linebreak
 	"  [7D][96] [80][A4][96][9D][C3] [95][C4] [83][91][9E][9E][96][A2][A3]." next
 	"@[7E][96][9F][C6] [99][A0][93][A5][A4]" linebreak

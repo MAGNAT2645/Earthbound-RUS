@@ -5,20 +5,24 @@
  */
 
 import ebpp_std
-command e(label) "{long label}"
+import RUS_ref
 
 // Text Data
 l_0xc7e659:
-    "she" eob
+//	"она" eob
+	"[A0][9F][91]" eob
 
 l_0xc7e65d:
-    "it" eob
+//	"оно" eob
+	"[A0][9F][A0]" eob
 
 l_0xc7e660:
-    "{result_is(2)}[1B 03 {e(l_0xc7e66b)}]his" eob
+//	"{result_is(2)}[1B 03 {e(l_0xc7e66b)}]его" eob
+	"{result_is(2)}[1B 03 {e(l_0xc7e66b)}][96][94][A0]" eob
 
 l_0xc7e66b:
-    "her" eob
+//	"её" eob
+	"[96][97]" eob
 
 l_0xc7e66e:
 	"[1C 14 01][09 03 {e(l_0xc7e67f)} {e(l_0xc7e682)} {e(l_0xc7e685)}]" goto(l_0xc7e67f)
@@ -39,13 +43,16 @@ l_0xc7e689:
 	"[1C 15 01][09 03 {e(l_0xc7e69a)} {e(l_0xc7e69d)} {e(l_0xc7e6a0)}]" goto(l_0xc7e69a)
 
 l_0xc7e69a:
-	"his" eob
+//	"его" eob
+	"[96][94][A0]" eob
 
 l_0xc7e69d:
-	"her" eob
+//	"её" eob
+	"[96][97]" eob
 
 l_0xc7e6a0:
-	"its" eob
+//	"его" eob
+	"[96][94][A0]" eob
 
 l_0xc7e6a4:
 //	"{result_is(2)}[1B 03 {e(l_0xc7e6b0)}]ему" eob
@@ -60,7 +67,7 @@ l_0xc7e6b3:
 	"{result_is(2)}[1B 03 {e(l_0xc7e6bf)}][A3][C4][A2]" eob
 
 l_0xc7e6bf:
-//	"мадам eob"
+//	"мадам" eob
 	"[9E][91][95][91][9E]" eob
 
 l_0xc7e6c5:
@@ -117,12 +124,11 @@ l_0xc7e796:
 
 l_0xc7e797:
 	/*
-	title(1, "Мр.Сатурн")
 	"{font_saturn}[06 0A 00 {e(l_0xc7e7f8)}]@Хочешь" linebreak
 	"  вздремнуть?" linebreak
 	"{font_normal}[19 02]Да" eob
 	*/
-	title(1, "[7E][A2].[83][91][A4][A5][A2][9F]")
+	title(1, MrSaturn)
 	"{font_saturn}[06 0A 00 {e(l_0xc7e7f8)}]@[87][A0][A9][96][AA][C3]" linebreak
 	"  [93][99][95][A2][96][9E][9F][A5][A4][C3]?" linebreak
 	"{font_normal}[19 02][75][91]" eob
@@ -158,7 +164,6 @@ l_0xc7e813:
 
 l_0xc7e819:
 	/*
-	title(1, "Мр.Сатурн")
 	"{font_saturn}[06 4A 00 {e(l_0xc7e890)}][06 47 00 {e(l_0xc7e86c)}]@Мы чувствуем себя" linebreak
 	"  отлично!" next
 	"@Хи-хо." linebreak
@@ -168,7 +173,7 @@ l_0xc7e819:
 	"  все" linebreak
 	"  Мр. Сатурн.{wait}{font_normal}" eob
 	*/
-	title(1, "[7E][A2].[83][91][A4][A5][A2][9F]")
+	title(1, MrSaturn)
 	"{font_saturn}[06 4A 00 {e(l_0xc7e890)}][06 47 00 {e(l_0xc7e86c)}]@[7E][C2] [A9][A5][93][A3][A4][93][A5][96][9E] [A3][96][92][C6]" linebreak
 	"  [A0][A4][9D][9A][A9][9F][A0]!" next
 	"@[87][9A]-[A7][A0]." linebreak
@@ -202,7 +207,6 @@ l_0xc7e890:
 
 l_0xc7e8ae:
 	/*
-	title(1, "Мр.Сатурн")
 	"{font_saturn}[06 4A 00 {e(l_0xc7e962)}][06 47 00 {e(l_0xc7e91b)}]@Однажды," linebreak
 	"  давным-давно," next
 	"@нас было" linebreak
@@ -214,7 +218,7 @@ l_0xc7e8ae:
 	"@Почему?  Хмммм..." linebreak
 	"  Буньк!{wait}{font_normal}" eob
 	*/
-	title(1, "[7E][A2].[83][91][A4][A5][A2][9F]")
+	title(1, MrSaturn)
 	"{font_saturn}[06 4A 00 {e(l_0xc7e962)}][06 47 00 {e(l_0xc7e91b)}]@[80][95][9F][91][98][95][C2]," linebreak
 	"  [95][91][93][9F][C2][9E]-[95][91][93][9F][A0]," next
 	"@[9F][91][A3] [92][C2][9D][A0]" linebreak
@@ -252,7 +256,6 @@ l_0xc7e962:
 
 l_0xc7e96c:
 	/*
-	title(1, "Мр.Сатурн")
 	"{font_saturn}[06 4A 00 {e(l_0xc7e9ed)}][06 47 00 {e(l_0xc7e9b9)}]@Горячие источники" linebreak
 	"  Приносят счастье...!" next
 	"@Счастье-счастье!" linebreak
@@ -260,7 +263,7 @@ l_0xc7e96c:
 	"@Прыгай" linebreak
 	"  в горячий источник!{wait}{font_normal}" eob
 	*/
-	title(1, "[7E][A2].[83][91][A4][A5][A2][9F]")
+	title(1, MrSaturn)
 	"{font_saturn}[06 4A 00 {e(l_0xc7e9ed)}][06 47 00 {e(l_0xc7e9b9)}]@[74][A0][A2][C6][A9][9A][96] [9A][A3][A4][A0][A9][9F][9A][9C][9A]" linebreak
 	"  [81][A2][9A][9F][A0][A3][C6][A4] [A3][A9][91][A3][A4][C3][96]...!" next
 	"@[83][A9][91][A3][A4][C3][96]-[A3][A9][91][A3][A4][C3][96]!" linebreak
@@ -270,17 +273,14 @@ l_0xc7e96c:
 
 l_0xc7e9b9:
 	/*
-	"{isset(flag 629)}[1B 02 {e(l_0xc7e9ed)}]@Иди в горячий" linebreak
-	"  источник." next
-	"@Смой" linebreak
-	"  рвоту со" linebreak
-	"  своего тела!{wait}{font_normal}" eob
+	"{isset(flag 629)}[1B 02 {e(l_0xc7e9ed)}]@Иди в горячий источник." next
+	"@Смой рвоту" linebreak
+	"  со своего тела!{wait}{font_normal}" eob
 	*/
-	"{isset(flag 629)}[1B 02 {e(l_0xc7e9ed)}]@[7A][95][9A] [93] [94][A0][A2][C6][A9][9A][9B]" linebreak
+	"{isset(flag 629)}[1B 02 {e(l_0xc7e9ed)}]@[7A][95][9A] [93] [94][A0][A2][C6][A9][9A][9B] [9A][A3][A4][A0][A9][9F][9A][9C]." next
 	"  [9A][A3][A4][A0][A9][9F][9A][9C]." next
-	"@[83][9E][A0][9B]" linebreak
-	"  [A2][93][A0][A4][A5] [A3][A0]" linebreak
-	"  [A3][93][A0][96][94][A0] [A4][96][9D][91]!{wait}{font_normal}" eob
+	"@[83][9E][A0][9B] [A2][93][A0][A4][A5]" linebreak
+	"  [A3][A0] [A3][93][A0][96][94][A0] [A4][96][9D][91]!{wait}{font_normal}" eob
 
 l_0xc7e9ed:
 	/*
@@ -292,7 +292,6 @@ l_0xc7e9ed:
 
 l_0xc7ea00:
 	/*
-	title(1, "Мр.Сатурн")
 	"{font_saturn}[06 4A 00 {e(l_0xc7eb3c)}][06 AD 00 {e(l_0xc7eb16)}][06 47 00 {e(l_0xc7ea71)}]@Мы выглядим" linebreak
 	"  одинаково!" next
 	"@Я дам тебе" linebreak
@@ -305,7 +304,7 @@ l_0xc7ea00:
 	"  буньк!" next
 	"@Услышимся!" goto(l_0xc7eb38)
 	*/
-	title(1, "[7E][A2].[83][91][A4][A5][A2][9F]")
+	title(1, MrSaturn)
 	"{font_saturn}[06 4A 00 {e(l_0xc7eb3c)}][06 AD 00 {e(l_0xc7eb16)}][06 47 00 {e(l_0xc7ea71)}]@[7E][C2] [93][C2][94][9D][C6][95][9A][9E]" linebreak
 	"  [A0][95][9A][9F][91][9C][A0][93][A0]!" next
 	"@[B6] [95][91][9E] [A4][96][92][96]" linebreak
@@ -375,7 +374,6 @@ l_0xc7eb3c:
 
 l_0xc7eb4c:
 	/*
-	title(1, "Мр.Сатурн")
 	"{font_saturn}[06 4A 00 {e(l_0xc7ebcf)}][06 47 00 {e(l_0xc7ebc3)}]@Страшный, страшный" linebreak
 	"  парень, буньк!" next
 	"@Грейпфрутовый" linebreak
@@ -387,7 +385,7 @@ l_0xc7eb4c:
 	"@Динь!" linebreak
 	"  Страшно!{wait}{font_normal}" eob
 	*/
-	title(1, "[7E][A2].[83][91][A4][A5][A2][9F]")
+	title(1, MrSaturn)
 	"{font_saturn}[06 4A 00 {e(l_0xc7ebcf)}][06 47 00 {e(l_0xc7ebc3)}]@[83][A4][A2][91][AA][9F][C2][9B], [A3][A4][A2][91][AA][9F][C2][9B]" linebreak
 	"  [A1][91][A2][96][9F][C3], [92][A5][9F][C3][9C]!" next
 	"@[74][A2][96][9B][A1][A6][A2][A5][A4][A0][93][C2][9B]" linebreak
@@ -419,7 +417,6 @@ l_0xc7ebcf:
 
 l_0xc7ebf9:
 	/*
-	title(1, "Мр.Сатурн")
 	"{font_saturn}[06 4A 00 {e(l_0xc7ec50)}][06 47 00 {e(l_0xc7ec3d)}]@Много" linebreak
 	"  друзей..." next
 	"@Забрали" linebreak
@@ -427,7 +424,7 @@ l_0xc7ebf9:
 	"@Почему?  Зачем?" linebreak
 	"  Буньк!{wait}{font_normal}" eob
 	*/
-	title(1, "[7E][A2].[83][91][A4][A5][A2][9F]")
+	title(1, MrSaturn)
 	"{font_saturn}[06 4A 00 {e(l_0xc7ec50)}][06 47 00 {e(l_0xc7ec3d)}]@[7E][9F][A0][94][A0]" linebreak
 	"  [95][A2][A5][99][96][9B]..." next
 	"@[79][91][92][A2][91][9D][9A]" linebreak
@@ -453,7 +450,6 @@ l_0xc7ec5c:
 
 l_0xc7ec6c:
 	/*
-	title(1, "Мр.Сатурн")
 	"{font_saturn}[06 49 00 {e(l_0xc7ecdb)}][06 4A 00 {e(l_0xc7eccd)}][06 47 00 {e(l_0xc7ecbe)}]@Трид" linebreak
 	"  полон зомби!" next
 	"@Я видел!" linebreak
@@ -461,7 +457,7 @@ l_0xc7ec6c:
 	"  за водопадом!" next
 	"@Зуум!{wait}{font_normal}" eob
 	*/
-	title(1, "[7E][A2].[83][91][A4][A5][A2][9F]")
+	title(1, MrSaturn)
 	"{font_saturn}[06 49 00 {e(l_0xc7ecdb)}][06 4A 00 {e(l_0xc7eccd)}][06 47 00 {e(l_0xc7ecbe)}]@[84][A2][9A][95]" linebreak
 	"  [A1][A0][9D][A0][9F] [99][A0][9E][92][9A]!" next
 	"@[B6] [93][9A][95][96][9D]!" linebreak
@@ -483,7 +479,6 @@ l_0xc7ecdb:
 
 l_0xc7ece9:
 	/*
-	title(1, "Мр.Сатурн")
 	"{font_saturn}[06 49 00 {e(l_0xc7edd9)}][06 47 00 {e(l_0xc7ed90)}]@Секрет... Базы." next
 	"@База за" linebreak
 	"  Грейпфрутовым" linebreak
@@ -495,7 +490,7 @@ l_0xc7ece9:
 	"@Затем стой," next
 	"@жди три минуты.{sound(114)}{pause(120)}{wait}{set(flag 131)}{font_normal}" eob
 	*/
-	title(1, "[7E][A2].[83][91][A4][A5][A2][9F]")
+	title(1, MrSaturn)
 	"{font_saturn}[06 49 00 {e(l_0xc7edd9)}][06 47 00 {e(l_0xc7ed90)}]@[83][96][9C][A2][96][A4]... [72][91][99][C2]." next
 	"@[72][91][99][91] [99][91]" linebreak
 	"  [74][A2][96][9B][A1][A6][A2][A5][A4][A0][93][C2][9E]" linebreak
@@ -537,22 +532,21 @@ l_0xc7edd9:
 
 l_0xc7edf1:
 	/*
-	title(1, "Мр.Сатурн")
 	"{font_saturn}@Выпьешь кофе" linebreak
 	"  перед уходом?" next
 	"@Скажи мне" linebreak
-	"  да?" next
+	"  да." next
 	"@Скажи мне" linebreak
-	"  нет?" linebreak
+	"  нет." linebreak
 	"[19 02]Да" eob
 	*/
-	title(1, "[7E][A2].[83][91][A4][A5][A2][9F]")
+	title(1, MrSaturn)
 	"{font_saturn}@[73][C2][A1][C3][96][AA][C3] [9C][A0][A6][96]" linebreak
 	"  [A1][96][A2][96][95] [A5][A7][A0][95][A0][9E]?" next
 	"@[83][9C][91][98][9A] [9E][9F][96]" linebreak
-	"  [95][91]?" next
+	"  [95][91]." next
 	"@[83][9C][91][98][9A] [9E][9F][96]" linebreak
-	"  [9F][96][A4]?" linebreak
+	"  [9F][96][A4]." linebreak
 	"[19 02][75][91]" eob
 
 l_0xc7ee28:
@@ -580,13 +574,12 @@ l_0xc7ee4f:
 
 l_0xc7ee7b:
 	/*
-	title(1, "Мр.Сатурн")
 	"{font_saturn}[06 47 00 {e(l_0xc7eeb1)}]@Почему?  Почему?" next
 	"@Вы не идёте" linebreak
 	"  в горячие источники..." next
 	"@*хнык* *хнык*." end
 	*/
-	title(1, "[7E][A2].[83][91][A4][A5][A2][9F]")
+	title(1, MrSaturn)
 	"{font_saturn}[06 47 00 {e(l_0xc7eeb1)}]@[81][A0][A9][96][9E][A5]?  [81][A0][A9][96][9E][A5]?" next
 	"@[73][C2] [9F][96] [9A][95][97][A4][96]" linebreak
 	"  [93] [94][A0][A2][C6][A9][9A][96] [9A][A3][A4][A0][A9][9F][9A][9C][9A]..." next
@@ -608,14 +601,13 @@ l_0xc7eeb1:
 
 l_0xc7eede:
 	/*
-	title(1, "Мр.Сатурн")
 	"{font_saturn}@О! О!" linebreak
 	"{font_normal}  *вдох*" next
 	"{font_saturn}@Дышать" linebreak
 	"  тааааак" linebreak
 	"  хорошо!{wait}{font_normal}" eob
 	*/
-	title(1, "[7E][A2].[83][91][A4][A5][A2][9F]")
+	title(1, MrSaturn)
 	"{font_saturn}@[80]! [80]!" linebreak
 	"{font_normal}  *[93][95][A0][A7]*" next
 	"{font_saturn}@[75][C2][AA][91][A4][C3]" linebreak
@@ -624,14 +616,13 @@ l_0xc7eede:
 
 l_0xc7ef0d:
 	/*
-	title(1, "Мр.Сатурн")
 	"{font_saturn}@Я думаю." linebreak
 	"  новые обстоятельства..." next
 	"@Сложные" linebreak
 	"  обстоятельства..." linebreak
 	"  отныне...{wait}{font_normal}" eob
 	*/
-	title(1, "[7E][A2].[83][91][A4][A5][A2][9F]")
+	title(1, MrSaturn)
 	"{font_saturn}@[B6] [95][A5][9E][91][C5]." linebreak
 	"  [9F][A0][93][C2][96] [A0][92][A3][A4][A0][C6][A4][96][9D][C3][A3][A4][93][91]..." next
 	"@[83][9D][A0][98][9F][C2][96]" linebreak
@@ -846,6 +837,6 @@ l_0xc7f634:
 	"@<[85][A9][97][9F][C2][9B] [9A] [A9][96][A4][93][96][A2][A0] [95][96][A4][96][9B] [A3][A1][91][A3][91][C5][A4] [9E][9A][A2]!>{pause(30)}  [85][91]-[A7][91]-[A7][91]-[A7][91]-[A7][91]!" end
 
 l_0xc7f710:
-	title(1, "???")
+	title(1, Unknown)
 	"[06 49 00 {e(data_38.l_0xc7f813)}][06 4A 00 {e(data_38.l_0xc7f7a5)}]" goto(data_38.l_0xc7f71e)
 

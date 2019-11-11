@@ -36,24 +36,28 @@ l_female3:
 l_gendersuffix:
 	"{result_is(2)}[1B 03 {e(l_femalesuffix)}]" eob
 l_femalesuffix:
-//	"а" eob
-	"[91]" eob
+	"[91]" eob	// "а"
 
 // ся/ась
 l_gendersuffix2:
 //	"{result_is(2)}[1B 03 {e(l_femalesuffix2)}]ся" eob
 	"{result_is(2)}[1B 03 {e(l_femalesuffix2)}][A3][C6]" eob
 l_femalesuffix2:
-//	"ась" eob
-	"[91][A3][C3]" eob
+	"[91][A3][C3]" eob	// "ась"
 
 // -ел / -ла
 l_gendersuffix3:
 //	"{result_is(2)}[1B 03 {e(l_femalesuffix2)}]ел" eob
 	"{result_is(2)}[1B 03 {e(l_femalesuffix3)}][96][9D]" eob
 l_femalesuffix3:
-//	"ла" eob
-	"[9D][91]" eob
+	"[9D][91]" eob	// "ла"
+
+// -ён / -ена
+l_gendersuffix7:
+//	"{result_is(2)}[1B 03 {e(l_femalesuffix7)}]ён" eob
+	"{result_is(2)}[1B 03 {e(l_femalesuffix7)}][97][9F]" eob
+l_femalesuffix7:
+	"[96][9F][91]" eob	// "ена"
 
 // Только -ла в ж.р.
 l_gendersuffix4:

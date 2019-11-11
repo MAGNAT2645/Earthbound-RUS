@@ -210,7 +210,8 @@ l_0xc5e365:
 	eob
 
 l_0xc5e36e:
-	"{swap}{store_registers}[19 19 00 00][1D 0B 00]" eob
+//	"{swap}{store_registers}[19 19 00 00][1D 0B 00]" eob
+	"{swap}{store_registers}{isset(flag 1008)}[1B 03 {e(data_35.loadZero)}]{load_registers}[19 19 00 00][1D 0B 00]" eob
 
 l_0xc5e37a:
 	"[1D 08 00 00]{open_wallet}{load_registers}[1D 0F 00 00]" eob

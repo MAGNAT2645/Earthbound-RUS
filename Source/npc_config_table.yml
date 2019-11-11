@@ -21,7 +21,7 @@
   Event Flag: 0x16d
   Movement: 598
   Show Sprite: when event flag unset
-  Sprite: 284
+  Sprite: 246
   Text Pointer 1: data_30.l_0xc74c8a
   Text Pointer 2: $0
   Type: person
@@ -30,7 +30,7 @@
   Event Flag: 0x0
   Movement: 12
   Show Sprite: always
-  Sprite: 284
+  Sprite: 246
   Text Pointer 1: data_30.l_0xc74cf7
   Text Pointer 2: $0
   Type: person
@@ -39,7 +39,7 @@
   Event Flag: 0x0
   Movement: 12
   Show Sprite: always
-  Sprite: 284
+  Sprite: 246
   Text Pointer 1: data_30.l_0xc74d5e
   Text Pointer 2: $0
   Type: person
@@ -66,7 +66,7 @@
   Event Flag: 0x2b9
   Movement: 598
   Show Sprite: when event flag unset
-  Sprite: 284
+  Sprite: 247
   Text Pointer 1: data_24.l_0xc6a666
   Text Pointer 2: $0
   Type: person
@@ -116,14 +116,14 @@
   Text Pointer 2: data_22.l_0xc680c2
   Type: object
 13:
-  Direction: down
+  Direction: right
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
   Sprite: 216
   Text Pointer 1: data_22.l_0xc6803d
   Text Pointer 2: $0
-  Type: person
+  Type: object
 14:
   Direction: down
   Event Flag: 0x1d5
@@ -210,7 +210,7 @@
   Event Flag: 0x1a6
   Movement: 8
   Show Sprite: when event flag unset
-  Sprite: 373
+  Sprite: 375
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -219,7 +219,7 @@
   Event Flag: 0x1a6
   Movement: 8
   Show Sprite: when event flag unset
-  Sprite: 373
+  Sprite: 375
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -242,7 +242,7 @@
   Text Pointer 2: $0
   Type: object
 27:
-  Direction: down
+  Direction: up
   Event Flag: 0x1dd
   Movement: 628
   Show Sprite: when event flag set
@@ -255,7 +255,7 @@
   Event Flag: 0x1a6
   Movement: 8
   Show Sprite: when event flag unset
-  Sprite: 373
+  Sprite: 375
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -282,7 +282,7 @@
   Event Flag: 0x1a6
   Movement: 8
   Show Sprite: when event flag unset
-  Sprite: 373
+  Sprite: 375
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -440,29 +440,29 @@
   Text Pointer 2: $0
   Type: person
 49:
-  Direction: down
+  Direction: up
   Event Flag: 0x1a6
   Movement: 8
   Show Sprite: when event flag unset
-  Sprite: 374
+  Sprite: 375
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
 50:
-  Direction: down
+  Direction: up
   Event Flag: 0x1a6
   Movement: 8
   Show Sprite: when event flag unset
-  Sprite: 374
+  Sprite: 375
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
 51:
-  Direction: down
+  Direction: up
   Event Flag: 0x1a6
   Movement: 8
   Show Sprite: when event flag unset
-  Sprite: 374
+  Sprite: 375
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -485,29 +485,29 @@
   Text Pointer 2: $0
   Type: person
 54:
-  Direction: down
+  Direction: up
   Event Flag: 0x1a6
   Movement: 8
   Show Sprite: when event flag unset
-  Sprite: 374
+  Sprite: 375
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
 55:
-  Direction: down
+  Direction: up
   Event Flag: 0x1a6
   Movement: 8
   Show Sprite: when event flag unset
-  Sprite: 374
+  Sprite: 375
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
 56:
-  Direction: down
+  Direction: up
   Event Flag: 0x1a6
   Movement: 8
   Show Sprite: when event flag unset
-  Sprite: 374
+  Sprite: 375
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -741,7 +741,7 @@
   Event Flag: 0x0
   Movement: 12
   Show Sprite: always
-  Sprite: 57
+  Sprite: 58
   Text Pointer 1: data_29.l_0xc72822
   Text Pointer 2: $0
   Type: person
@@ -1281,7 +1281,7 @@
   Event Flag: 0x16b
   Movement: 606
   Show Sprite: when event flag unset
-  Sprite: 284
+  Sprite: 247
   Text Pointer 1: data_21.l_0xc65ea3
   Text Pointer 2: $0
   Type: person
@@ -1290,7 +1290,7 @@
   Event Flag: 0x16c
   Movement: 609
   Show Sprite: when event flag unset
-  Sprite: 284
+  Sprite: 246
   Text Pointer 1: data_21.l_0xc65efc
   Text Pointer 2: $0
   Type: person
@@ -1592,38 +1592,38 @@
   Text Pointer 2: $0
   Type: object
 177:
-  Direction: down
+  Direction: up
   Event Flag: 0x69
   Movement: 8
   Show Sprite: when event flag unset
-  Sprite: 199
+  Sprite: 198
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
 178:
-  Direction: down
+  Direction: up
   Event Flag: 0x69
   Movement: 8
   Show Sprite: when event flag unset
-  Sprite: 199
+  Sprite: 198
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
 179:
-  Direction: down
+  Direction: up
   Event Flag: 0x69
   Movement: 8
   Show Sprite: when event flag unset
-  Sprite: 199
+  Sprite: 198
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
 180:
-  Direction: down
+  Direction: up
   Event Flag: 0x69
   Movement: 8
   Show Sprite: when event flag unset
-  Sprite: 199
+  Sprite: 198
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -1635,16 +1635,16 @@
   Sprite: 227
   Text Pointer 1: $0
   Text Pointer 2: $0
-  Type: object
+  Type: person
 182:
-  Direction: down
+  Direction: up
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
   Sprite: 227
   Text Pointer 1: $0
   Text Pointer 2: $0
-  Type: object
+  Type: person
 183:
   Direction: down
   Event Flag: 0x0
@@ -1653,7 +1653,7 @@
   Sprite: 227
   Text Pointer 1: $0
   Text Pointer 2: $0
-  Type: object
+  Type: person
 184:
   Direction: down
   Event Flag: 0x0
@@ -1664,11 +1664,11 @@
   Text Pointer 2: $0
   Type: object
 185:
-  Direction: down
+  Direction: right
   Event Flag: 0x0
   Movement: 7
   Show Sprite: always
-  Sprite: 228
+  Sprite: 198
   Text Pointer 1: data_22.l_0xc67bad
   Text Pointer 2: $0
   Type: object
@@ -1682,38 +1682,38 @@
   Text Pointer 2: $0
   Type: object
 187:
-  Direction: down
+  Direction: up
   Event Flag: 0x1dc
   Movement: 8
   Show Sprite: when event flag set
-  Sprite: 199
+  Sprite: 198
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
 188:
-  Direction: down
+  Direction: up
   Event Flag: 0x1dc
   Movement: 8
   Show Sprite: when event flag set
-  Sprite: 199
+  Sprite: 198
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
 189:
-  Direction: down
+  Direction: up
   Event Flag: 0x1d5
   Movement: 8
   Show Sprite: when event flag unset
-  Sprite: 199
+  Sprite: 198
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
 190:
-  Direction: down
+  Direction: up
   Event Flag: 0x1d5
   Movement: 8
   Show Sprite: when event flag unset
-  Sprite: 199
+  Sprite: 198
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -1722,7 +1722,7 @@
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 442
+  Sprite: 216
   Text Pointer 1: data_24.l_0xc6a755
   Text Pointer 2: $0
   Type: object
@@ -1817,11 +1817,11 @@
   Text Pointer 2: $0
   Type: object
 202:
-  Direction: down
+  Direction: up
   Event Flag: 0x40
   Movement: 8
   Show Sprite: when event flag unset
-  Sprite: 401
+  Sprite: 414
   Text Pointer 1: data_22.l_0xc67b91
   Text Pointer 2: $0
   Type: object
@@ -1887,7 +1887,7 @@
   Sprite: 333
   Text Pointer 1: data_21.l_0xc66670
   Text Pointer 2: $0
-  Type: person
+  Type: object
 210:
   Direction: right
   Event Flag: 0x174
@@ -2015,20 +2015,20 @@
   Text Pointer 2: $0
   Type: object
 224:
-  Direction: down
+  Direction: left
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 414
+  Sprite: 234
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
 225:
-  Direction: down
+  Direction: left
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 225
+  Sprite: 213
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -2145,7 +2145,7 @@
   Event Flag: 0x2ef
   Movement: 606
   Show Sprite: when event flag unset
-  Sprite: 57
+  Sprite: 58
   Text Pointer 1: data_33.l_0xc7944e
   Text Pointer 2: $0
   Type: person
@@ -2366,7 +2366,7 @@
   Text Pointer 2: $0
   Type: person
 263:
-  Direction: down
+  Direction: up
   Event Flag: 0x0
   Movement: 605
   Show Sprite: always
@@ -2483,14 +2483,14 @@
   Text Pointer 2: data_22.l_0xc680c2
   Type: object
 276:
-  Direction: down
+  Direction: right
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
   Sprite: 216
   Text Pointer 1: data_22.l_0xc6803d
   Text Pointer 2: $0
-  Type: person
+  Type: object
 277:
   Direction: down
   Event Flag: 0x0
@@ -2582,14 +2582,14 @@
   Text Pointer 2: data_22.l_0xc680c2
   Type: object
 287:
-  Direction: down
+  Direction: right
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
   Sprite: 216
   Text Pointer 1: data_22.l_0xc6803d
   Text Pointer 2: $0
-  Type: person
+  Type: object
 288:
   Direction: down
   Event Flag: 0x0
@@ -3032,14 +3032,14 @@
   Text Pointer 2: $0
   Type: person
 337:
-  Direction: down
+  Direction: up
   Event Flag: 0x49
-  Movement: 8
+  Movement: 606
   Show Sprite: when event flag unset
-  Sprite: 363
+  Sprite: 395
   Text Pointer 1: $0
   Text Pointer 2: $0
-  Type: person
+  Type: object
 338:
   Direction: down
   Event Flag: 0x0
@@ -3167,16 +3167,16 @@
   Text Pointer 2: $0
   Type: object
 352:
-  Direction: down
+  Direction: right
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 202
+  Sprite: 200
   Text Pointer 1: data_16.l_0xc5fd72
   Text Pointer 2: $0
   Type: object
 353:
-  Direction: down
+  Direction: up
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
@@ -3185,7 +3185,7 @@
   Text Pointer 2: $0
   Type: object
 354:
-  Direction: down
+  Direction: up
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
@@ -3194,7 +3194,7 @@
   Text Pointer 2: $0
   Type: object
 355:
-  Direction: down
+  Direction: up
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
@@ -3203,11 +3203,11 @@
   Text Pointer 2: $0
   Type: object
 356:
-  Direction: down
+  Direction: left
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 231
+  Sprite: 200
   Text Pointer 1: data_51.l_0xc94594
   Text Pointer 2: $0
   Type: object
@@ -3248,11 +3248,11 @@
   Text Pointer 2: $0
   Type: object
 361:
-  Direction: down
+  Direction: up
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 403
+  Sprite: 234
   Text Pointer 1: data_42.l_0xc866c4
   Text Pointer 2: $0
   Type: object
@@ -3284,11 +3284,11 @@
   Text Pointer 2: $0
   Type: object
 365:
-  Direction: down
+  Direction: right
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 404
+  Sprite: 234
   Text Pointer 1: data_42.l_0xc866ab
   Text Pointer 2: $0
   Type: object
@@ -3306,7 +3306,7 @@
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 442
+  Sprite: 216
   Text Pointer 1: data_24.l_0xc6a77b
   Text Pointer 2: $0
   Type: object
@@ -3320,11 +3320,11 @@
   Text Pointer 2: $0
   Type: object
 369:
-  Direction: down
+  Direction: up
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 433
+  Sprite: 216
   Text Pointer 1: data_52.l_0xc95365
   Text Pointer 2: $0
   Type: object
@@ -3338,20 +3338,20 @@
   Text Pointer 2: $0
   Type: object
 371:
-  Direction: down
+  Direction: right
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 224
+  Sprite: 213
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
 372:
-  Direction: down
+  Direction: right
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 224
+  Sprite: 213
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -3662,14 +3662,14 @@
   Text Pointer 2: data_22.l_0xc680c2
   Type: object
 407:
-  Direction: down
+  Direction: right
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
   Sprite: 216
   Text Pointer 1: data_22.l_0xc6803d
   Text Pointer 2: $0
-  Type: person
+  Type: object
 408:
   Direction: left
   Event Flag: 0x0
@@ -3711,7 +3711,7 @@
   Event Flag: 0x43
   Movement: 605
   Show Sprite: when event flag unset
-  Sprite: 69
+  Sprite: 454
   Text Pointer 1: data_54.l_0xc98d78
   Text Pointer 2: $0
   Type: person
@@ -3851,7 +3851,7 @@
   Text Pointer 2: $0
   Type: person
 428:
-  Direction: down
+  Direction: up
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
@@ -3905,11 +3905,11 @@
   Text Pointer 2: $0
   Type: object
 434:
-  Direction: down
+  Direction: right
   Event Flag: 0x44
   Movement: 8
   Show Sprite: when event flag unset
-  Sprite: 224
+  Sprite: 213
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -3923,14 +3923,14 @@
   Text Pointer 2: $0
   Type: object
 436:
-  Direction: down
+  Direction: up
   Event Flag: 0xd
   Movement: 8
   Show Sprite: when event flag unset
-  Sprite: 249
+  Sprite: 447
   Text Pointer 1: data_65.l_0xef952e
   Text Pointer 2: data_33.l_0xc795c1
-  Type: person
+  Type: object
 437:
   Direction: down
   Event Flag: 0xd
@@ -4040,11 +4040,11 @@
   Text Pointer 2: $0
   Type: person
 449:
-  Direction: down
+  Direction: left
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 231
+  Sprite: 200
   Text Pointer 1: data_65.l_0xef9785
   Text Pointer 2: $0
   Type: object
@@ -4065,7 +4065,7 @@
   Sprite: 333
   Text Pointer 1: data_65.l_0xef97a2
   Text Pointer 2: $0
-  Type: person
+  Type: object
 452:
   Direction: down
   Event Flag: 0x15d
@@ -4170,47 +4170,38 @@
   Event Flag: 0x7d
   Movement: 8
   Show Sprite: when event flag set
-  Sprite: 438
+  Sprite: 334
   Text Pointer 1: data_25.l_0xc6bef9
   Text Pointer 2: $0
-  Type: person
+  Type: object
 464:
   Direction: down
   Event Flag: 0x7d
   Movement: 10
   Show Sprite: when event flag set
-  Sprite: 438
+  Sprite: 334
   Text Pointer 1: data_47.l_0xc8f66a
   Text Pointer 2: $0
-  Type: person
+  Type: object
 465:
-  Direction: down
+  Direction: up
   Event Flag: 0x7d
   Movement: 10
   Show Sprite: when event flag set
   Sprite: 334
   Text Pointer 1: data_47.l_0xc8f69d
   Text Pointer 2: $0
-  Type: person
+  Type: object
 466:
-  Direction: down
+  Direction: up
   Event Flag: 0x7d
   Movement: 10
   Show Sprite: when event flag set
   Sprite: 334
   Text Pointer 1: data_47.l_0xc8f6b5
   Text Pointer 2: $0
-  Type: person
+  Type: object
 467:
-  Direction: down
-  Event Flag: 0x7d
-  Movement: 8
-  Show Sprite: when event flag set
-  Sprite: 438
-  Text Pointer 1: data_25.l_0xc6bef9
-  Text Pointer 2: $0
-  Type: person
-468:
   Direction: down
   Event Flag: 0x7d
   Movement: 8
@@ -4218,61 +4209,70 @@
   Sprite: 334
   Text Pointer 1: data_25.l_0xc6bef9
   Text Pointer 2: $0
-  Type: person
+  Type: object
+468:
+  Direction: up
+  Event Flag: 0x7d
+  Movement: 8
+  Show Sprite: when event flag set
+  Sprite: 334
+  Text Pointer 1: data_25.l_0xc6bef9
+  Text Pointer 2: $0
+  Type: object
 469:
-  Direction: down
+  Direction: up
   Event Flag: 0x7d
   Movement: 10
   Show Sprite: when event flag set
   Sprite: 334
   Text Pointer 1: data_47.l_0xc8f6ca
   Text Pointer 2: $0
-  Type: person
+  Type: object
 470:
   Direction: down
   Event Flag: 0x7d
   Movement: 10
   Show Sprite: when event flag set
-  Sprite: 438
+  Sprite: 334
   Text Pointer 1: data_47.l_0xc8f6e2
   Text Pointer 2: $0
-  Type: person
+  Type: object
 471:
-  Direction: down
+  Direction: up
   Event Flag: 0x7d
   Movement: 10
   Show Sprite: when event flag set
   Sprite: 334
   Text Pointer 1: data_47.l_0xc8f701
   Text Pointer 2: $0
-  Type: person
+  Type: object
 472:
-  Direction: down
+  Direction: up
   Event Flag: 0x7d
   Movement: 10
   Show Sprite: when event flag set
   Sprite: 334
   Text Pointer 1: data_47.l_0xc8f715
   Text Pointer 2: $0
-  Type: person
+  Type: object
 473:
-  Direction: down
+  Direction: up
   Event Flag: 0x7d
   Movement: 8
   Show Sprite: when event flag set
   Sprite: 334
   Text Pointer 1: data_25.l_0xc6bef9
   Text Pointer 2: $0
-  Type: person
+  Type: object
 474:
   Direction: down
   Event Flag: 0x7d
   Movement: 10
   Show Sprite: when event flag set
-  Sprite: 438
+  Sprite: 334
   Text Pointer 1: data_47.l_0xc8f725
   Text Pointer 2: $0
-  Type: person
+  Type: object
 475:
   Direction: right
   Event Flag: 0xe
@@ -4328,11 +4328,11 @@
   Text Pointer 2: $0
   Type: object
 481:
-  Direction: down
+  Direction: up
   Event Flag: 0x2f
   Movement: 8
   Show Sprite: when event flag set
-  Sprite: 240
+  Sprite: 409
   Text Pointer 1: data_47.l_0xc8f75e
   Text Pointer 2: $0
   Type: object
@@ -4562,14 +4562,14 @@
   Text Pointer 2: data_22.l_0xc680c2
   Type: object
 507:
-  Direction: down
+  Direction: right
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
   Sprite: 216
   Text Pointer 1: data_22.l_0xc6803d
   Text Pointer 2: $0
-  Type: person
+  Type: object
 508:
   Direction: down
   Event Flag: 0x0
@@ -4647,7 +4647,7 @@
   Event Flag: 0x47
   Movement: 12
   Show Sprite: when event flag unset
-  Sprite: 69
+  Sprite: 454
   Text Pointer 1: data_46.l_0xc8e1bd
   Text Pointer 2: $0
   Type: person
@@ -4778,11 +4778,11 @@
   Text Pointer 2: $0
   Type: person
 531:
-  Direction: down
+  Direction: right
   Event Flag: 0x31
   Movement: 592
   Show Sprite: when event flag set
-  Sprite: 271
+  Sprite: 272
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: person
@@ -4791,7 +4791,7 @@
   Event Flag: 0x31
   Movement: 592
   Show Sprite: when event flag set
-  Sprite: 271
+  Sprite: 272
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: person
@@ -4935,7 +4935,7 @@
   Event Flag: 0x47
   Movement: 12
   Show Sprite: when event flag set
-  Sprite: 330
+  Sprite: 364
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: person
@@ -5120,20 +5120,20 @@
   Text Pointer 2: $0
   Type: person
 569:
-  Direction: down
+  Direction: right
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 228
+  Sprite: 198
   Text Pointer 1: data_22.l_0xc67bad
   Text Pointer 2: $0
   Type: object
 570:
-  Direction: down
+  Direction: right
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 202
+  Sprite: 200
   Text Pointer 1: data_16.l_0xc5fdea
   Text Pointer 2: $0
   Type: object
@@ -5151,7 +5151,7 @@
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 201
+  Sprite: 200
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -5160,7 +5160,7 @@
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 201
+  Sprite: 200
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -5169,7 +5169,7 @@
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 201
+  Sprite: 200
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -5178,7 +5178,7 @@
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 201
+  Sprite: 200
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -5187,7 +5187,7 @@
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 201
+  Sprite: 200
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -5196,7 +5196,7 @@
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 201
+  Sprite: 200
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -5205,7 +5205,7 @@
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 201
+  Sprite: 200
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -5214,16 +5214,16 @@
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 201
+  Sprite: 200
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
 580:
-  Direction: down
+  Direction: right
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 202
+  Sprite: 200
   Text Pointer 1: data_16.l_0xc5fe4b
   Text Pointer 2: $0
   Type: object
@@ -5250,7 +5250,7 @@
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 442
+  Sprite: 216
   Text Pointer 1: data_24.l_0xc6a7a5
   Text Pointer 2: $0
   Type: object
@@ -5313,34 +5313,34 @@
   Event Flag: 0x25b
   Movement: 599
   Show Sprite: when event flag unset
-  Sprite: 315
+  Sprite: 379
   Text Pointer 1: data_65.l_0xef9502
   Text Pointer 2: $0
   Type: person
 591:
-  Direction: down
+  Direction: up
   Event Flag: 0x17
   Movement: 113
   Show Sprite: when event flag unset
-  Sprite: 183
+  Sprite: 104
   Text Pointer 1: data_25.l_0xc6a9f9
   Text Pointer 2: $0
-  Type: person
+  Type: object
 592:
-  Direction: down
+  Direction: right
   Event Flag: 0x80
   Movement: 8
   Show Sprite: when event flag unset
-  Sprite: 15
+  Sprite: 104
   Text Pointer 1: $0
   Text Pointer 2: $0
-  Type: person
+  Type: object
 593:
-  Direction: down
+  Direction: left
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 414
+  Sprite: 234
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -5597,11 +5597,11 @@
   Text Pointer 2: $0
   Type: object
 622:
-  Direction: down
+  Direction: right
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 429
+  Sprite: 210
   Text Pointer 1: data_26.l_0xc6cdcd
   Text Pointer 2: $0
   Type: object
@@ -5709,10 +5709,10 @@
   Event Flag: 0x14f
   Movement: 8
   Show Sprite: when event flag set
-  Sprite: 357
+  Sprite: 231
   Text Pointer 1: data_34.l_0xc7a22a
   Text Pointer 2: $0
-  Type: person
+  Type: object
 635:
   Direction: down
   Event Flag: 0x0
@@ -6038,11 +6038,11 @@
   Text Pointer 2: $0
   Type: person
 671:
-  Direction: down
+  Direction: up
   Event Flag: 0x12b
   Movement: 10
   Show Sprite: when event flag unset
-  Sprite: 407
+  Sprite: 265
   Text Pointer 1: data_60.l_0xc9fc9e
   Text Pointer 2: data_60.l_0xc9fcd5
   Type: object
@@ -6051,7 +6051,7 @@
   Event Flag: 0x1b2
   Movement: 8
   Show Sprite: when event flag unset
-  Sprite: 303
+  Sprite: 263
   Text Pointer 1: data_65.l_0xef941f
   Text Pointer 2: $0
   Type: person
@@ -6090,13 +6090,13 @@
   Sprite: 333
   Text Pointer 1: data_25.l_0xc6be74
   Text Pointer 2: $0
-  Type: person
+  Type: object
 677:
-  Direction: down
+  Direction: right
   Event Flag: 0x137
   Movement: 260
   Show Sprite: when event flag unset
-  Sprite: 356
+  Sprite: 447
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -6254,20 +6254,20 @@
   Text Pointer 2: $0
   Type: person
 695:
-  Direction: down
+  Direction: left
   Event Flag: 0x0
   Movement: 631
   Show Sprite: always
-  Sprite: 248
+  Sprite: 239
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
 696:
-  Direction: down
+  Direction: left
   Event Flag: 0x0
   Movement: 632
   Show Sprite: always
-  Sprite: 248
+  Sprite: 239
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -6281,20 +6281,20 @@
   Text Pointer 2: $0
   Type: person
 698:
-  Direction: down
+  Direction: left
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 263
+  Sprite: 367
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
 699:
-  Direction: down
+  Direction: left
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 263
+  Sprite: 367
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -6351,7 +6351,7 @@
   Sprite: 333
   Text Pointer 1: data_61.l_0xef679a
   Text Pointer 2: $0
-  Type: person
+  Type: object
 706:
   Direction: left
   Event Flag: 0x24e
@@ -6681,7 +6681,7 @@
   Event Flag: 0x0
   Movement: 683
   Show Sprite: always
-  Sprite: 405
+  Sprite: 384
   Text Pointer 1: data_38.l_0xc7f8ab
   Text Pointer 2: $0
   Type: object
@@ -6735,7 +6735,7 @@
   Event Flag: 0x0
   Movement: 606
   Show Sprite: always
-  Sprite: 69
+  Sprite: 454
   Text Pointer 1: data_48.l_0xc906f1
   Text Pointer 2: $0
   Type: person
@@ -6828,16 +6828,16 @@
   Sprite: 103
   Text Pointer 1: data_16.l_0xc601c0
   Text Pointer 2: $0
-  Type: person
+  Type: object
 759:
-  Direction: down
+  Direction: up
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 104
+  Sprite: 103
   Text Pointer 1: data_16.l_0xc60239
   Text Pointer 2: $0
-  Type: person
+  Type: object
 760:
   Direction: down
   Event Flag: 0x37
@@ -7010,29 +7010,29 @@
   Text Pointer 2: $0
   Type: object
 779:
-  Direction: down
+  Direction: up
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 235
+  Sprite: 267
   Text Pointer 1: data_17.l_0xc606d8
   Text Pointer 2: $0
   Type: object
 780:
-  Direction: down
+  Direction: left
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 236
+  Sprite: 198
   Text Pointer 1: data_17.l_0xc60bbf
   Text Pointer 2: $0
   Type: object
 781:
-  Direction: down
+  Direction: left
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 236
+  Sprite: 198
   Text Pointer 1: data_17.l_0xc60be3
   Text Pointer 2: $0
   Type: object
@@ -7041,19 +7041,19 @@
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 238
+  Sprite: 345
   Text Pointer 1: data_17.l_0xc60c1b
   Text Pointer 2: $0
-  Type: person
+  Type: object
 783:
-  Direction: down
+  Direction: up
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 237
+  Sprite: 345
   Text Pointer 1: data_17.l_0xc60cd8
   Text Pointer 2: $0
-  Type: person
+  Type: object
 784:
   Direction: down
   Event Flag: 0x88
@@ -7095,7 +7095,7 @@
   Event Flag: 0xae
   Movement: 8
   Show Sprite: when event flag set
-  Sprite: 229
+  Sprite: 380
   Text Pointer 1: data_20.l_0xc65057
   Text Pointer 2: $0
   Type: object
@@ -7109,20 +7109,20 @@
   Text Pointer 2: $0
   Type: object
 790:
-  Direction: down
+  Direction: right
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 202
+  Sprite: 200
   Text Pointer 1: data_33.l_0xc78628
   Text Pointer 2: $0
   Type: object
 791:
-  Direction: down
+  Direction: right
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 202
+  Sprite: 200
   Text Pointer 1: data_33.l_0xc78748
   Text Pointer 2: $0
   Type: object
@@ -7149,7 +7149,7 @@
   Event Flag: 0x181
   Movement: 10
   Show Sprite: when event flag unset
-  Sprite: 269
+  Sprite: 220
   Text Pointer 1: data_17.l_0xc60d6c
   Text Pointer 2: $0
   Type: object
@@ -7179,7 +7179,7 @@
   Sprite: 177
   Text Pointer 1: data_18.l_0xc62cf5
   Text Pointer 2: $0
-  Type: person
+  Type: object
 798:
   Direction: down
   Event Flag: 0x2e9
@@ -7467,7 +7467,7 @@
   Sprite: 177
   Text Pointer 1: data_17.l_0xc60e30
   Text Pointer 2: $0
-  Type: person
+  Type: object
 830:
   Direction: down
   Event Flag: 0x36
@@ -7748,14 +7748,14 @@
   Text Pointer 2: $0
   Type: person
 861:
-  Direction: down
+  Direction: right
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
   Sprite: 216
   Text Pointer 1: data_22.l_0xc6803d
   Text Pointer 2: $0
-  Type: person
+  Type: object
 862:
   Direction: down
   Event Flag: 0x0
@@ -8094,7 +8094,7 @@
   Event Flag: 0x0
   Movement: 605
   Show Sprite: always
-  Sprite: 69
+  Sprite: 454
   Text Pointer 1: data_27.l_0xc6f374
   Text Pointer 2: $0
   Type: person
@@ -8144,11 +8144,11 @@
   Text Pointer 2: $0
   Type: person
 905:
-  Direction: down
+  Direction: left
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 246
+  Sprite: 293
   Text Pointer 1: data_54.l_0xc97990
   Text Pointer 2: $0
   Type: object
@@ -8346,7 +8346,7 @@
   Event Flag: 0x39
   Movement: 13
   Show Sprite: when event flag unset
-  Sprite: 57
+  Sprite: 58
   Text Pointer 1: data_40.l_0xc82a6f
   Text Pointer 2: $0
   Type: person
@@ -8441,20 +8441,20 @@
   Text Pointer 2: data_22.l_0xc680c2
   Type: object
 938:
-  Direction: down
+  Direction: right
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
   Sprite: 216
   Text Pointer 1: data_22.l_0xc6803d
   Text Pointer 2: $0
-  Type: person
+  Type: object
 939:
   Direction: down
   Event Flag: 0x39
   Movement: 8
   Show Sprite: when event flag unset
-  Sprite: 229
+  Sprite: 380
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -8571,10 +8571,10 @@
   Event Flag: 0x3c
   Movement: 8
   Show Sprite: when event flag set
-  Sprite: 180
+  Sprite: 104
   Text Pointer 1: data_40.l_0xc8361c
   Text Pointer 2: $0
-  Type: person
+  Type: object
 953:
   Direction: right
   Event Flag: 0x3c
@@ -8616,7 +8616,7 @@
   Event Flag: 0x3c
   Movement: 606
   Show Sprite: when event flag set
-  Sprite: 57
+  Sprite: 58
   Text Pointer 1: data_40.l_0xc83c94
   Text Pointer 2: $0
   Type: person
@@ -8747,11 +8747,11 @@
   Text Pointer 2: $0
   Type: person
 972:
-  Direction: down
+  Direction: right
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 202
+  Sprite: 200
   Text Pointer 1: data_33.l_0xc78a9e
   Text Pointer 2: $0
   Type: object
@@ -8778,7 +8778,7 @@
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 201
+  Sprite: 200
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -8787,7 +8787,7 @@
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 201
+  Sprite: 200
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -8796,7 +8796,7 @@
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 201
+  Sprite: 200
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -8805,7 +8805,7 @@
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 201
+  Sprite: 200
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -8814,7 +8814,7 @@
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 201
+  Sprite: 200
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -8823,7 +8823,7 @@
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 201
+  Sprite: 200
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -8832,7 +8832,7 @@
   Event Flag: 0x0
   Movement: 877
   Show Sprite: always
-  Sprite: 201
+  Sprite: 200
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -8882,20 +8882,20 @@
   Text Pointer 2: $0
   Type: object
 987:
-  Direction: down
+  Direction: left
   Event Flag: 0x0
   Movement: 10
   Show Sprite: always
-  Sprite: 409
+  Sprite: 262
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
 988:
-  Direction: down
+  Direction: left
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 225
+  Sprite: 213
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -8940,7 +8940,7 @@
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 442
+  Sprite: 216
   Text Pointer 1: data_24.l_0xc6a800
   Text Pointer 2: $0
   Type: object
@@ -8961,13 +8961,13 @@
   Sprite: 333
   Text Pointer 1: data_40.l_0xc83d24
   Text Pointer 2: $0
-  Type: person
+  Type: object
 996:
   Direction: left
   Event Flag: 0x0
   Movement: 606
   Show Sprite: always
-  Sprite: 69
+  Sprite: 454
   Text Pointer 1: data_44.l_0xc89e1b
   Text Pointer 2: $0
   Type: person
@@ -9089,14 +9089,14 @@
   Text Pointer 2: data_22.l_0xc680c2
   Type: object
 1010:
-  Direction: down
+  Direction: right
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
   Sprite: 216
   Text Pointer 1: data_22.l_0xc6803d
   Text Pointer 2: $0
-  Type: person
+  Type: object
 1011:
   Direction: down
   Event Flag: 0x0
@@ -9134,20 +9134,20 @@
   Text Pointer 2: data_22.l_0xc680c2
   Type: object
 1015:
-  Direction: down
+  Direction: right
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
   Sprite: 216
   Text Pointer 1: data_22.l_0xc6803d
   Text Pointer 2: $0
-  Type: person
+  Type: object
 1016:
   Direction: left
   Event Flag: 0x0
   Movement: 12
   Show Sprite: always
-  Sprite: 69
+  Sprite: 454
   Text Pointer 1: data_44.l_0xc8a43d
   Text Pointer 2: $0
   Type: person
@@ -9206,14 +9206,14 @@
   Text Pointer 2: data_22.l_0xc680c2
   Type: object
 1023:
-  Direction: down
+  Direction: right
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
   Sprite: 216
   Text Pointer 1: data_22.l_0xc6803d
   Text Pointer 2: $0
-  Type: person
+  Type: object
 1024:
   Direction: down
   Event Flag: 0x0
@@ -9255,7 +9255,7 @@
   Event Flag: 0xd1
   Movement: 606
   Show Sprite: when event flag set
-  Sprite: 57
+  Sprite: 58
   Text Pointer 1: data_45.l_0xc8a691
   Text Pointer 2: $0
   Type: person
@@ -9395,29 +9395,29 @@
   Text Pointer 2: $0
   Type: object
 1044:
-  Direction: down
+  Direction: right
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 221
+  Sprite: 414
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
 1045:
-  Direction: down
+  Direction: right
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 221
+  Sprite: 414
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
 1046:
-  Direction: down
+  Direction: right
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 221
+  Sprite: 414
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -9600,7 +9600,7 @@
   Sprite: 103
   Text Pointer 1: data_45.l_0xc8ba82
   Text Pointer 2: $0
-  Type: person
+  Type: object
 1067:
   Direction: down
   Event Flag: 0x0
@@ -9629,14 +9629,14 @@
   Text Pointer 2: $0
   Type: person
 1070:
-  Direction: down
+  Direction: up
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 104
+  Sprite: 103
   Text Pointer 1: data_45.l_0xc8bab9
   Text Pointer 2: $0
-  Type: person
+  Type: object
 1071:
   Direction: down
   Event Flag: 0x2f0
@@ -9705,7 +9705,7 @@
   Event Flag: 0x0
   Movement: 886
   Show Sprite: always
-  Sprite: 229
+  Sprite: 380
   Text Pointer 1: data_20.l_0xc65057
   Text Pointer 2: $0
   Type: object
@@ -9746,20 +9746,20 @@
   Text Pointer 2: $0
   Type: object
 1083:
-  Direction: down
+  Direction: up
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 266
+  Sprite: 204
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
 1084:
-  Direction: down
+  Direction: up
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 266
+  Sprite: 204
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -9768,7 +9768,7 @@
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 229
+  Sprite: 380
   Text Pointer 1: data_20.l_0xc65057
   Text Pointer 2: $0
   Type: object
@@ -9777,7 +9777,7 @@
   Event Flag: 0x0
   Movement: 884
   Show Sprite: always
-  Sprite: 442
+  Sprite: 216
   Text Pointer 1: data_24.l_0xc6a7d2
   Text Pointer 2: $0
   Type: object
@@ -9899,14 +9899,14 @@
   Text Pointer 2: $0
   Type: person
 1100:
-  Direction: down
+  Direction: up
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 168
+  Sprite: 177
   Text Pointer 1: data_58.l_0xc9d011
   Text Pointer 2: $0
-  Type: person
+  Type: object
 1101:
   Direction: down
   Event Flag: 0x0
@@ -10068,7 +10068,7 @@
   Sprite: 333
   Text Pointer 1: data_58.l_0xc9d2ba
   Text Pointer 2: $0
-  Type: person
+  Type: object
 1119:
   Direction: down
   Event Flag: 0x15d
@@ -10277,14 +10277,14 @@
   Text Pointer 2: $0
   Type: person
 1142:
-  Direction: down
+  Direction: up
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 168
+  Sprite: 177
   Text Pointer 1: data_05.l_0xc571b9
   Text Pointer 2: $0
-  Type: person
+  Type: object
 1143:
   Direction: down
   Event Flag: 0x156
@@ -10331,14 +10331,14 @@
   Text Pointer 2: $0
   Type: person
 1148:
-  Direction: down
+  Direction: up
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 168
+  Sprite: 177
   Text Pointer 1: data_06.l_0xc574f6
   Text Pointer 2: $0
-  Type: person
+  Type: object
 1149:
   Direction: down
   Event Flag: 0x1bd
@@ -10412,14 +10412,14 @@
   Text Pointer 2: $0
   Type: person
 1157:
-  Direction: down
+  Direction: up
   Event Flag: 0x0
   Movement: 888
   Show Sprite: always
-  Sprite: 168
+  Sprite: 177
   Text Pointer 1: data_20.l_0xc65039
   Text Pointer 2: $0
-  Type: person
+  Type: object
 1158:
   Direction: down
   Event Flag: 0x0
@@ -10439,29 +10439,29 @@
   Text Pointer 2: $0
   Type: person
 1160:
-  Direction: left
+  Direction: down
   Event Flag: 0x0
   Movement: 10
   Show Sprite: always
-  Sprite: 443
+  Sprite: 414
   Text Pointer 1: $0
   Text Pointer 2: $0
-  Type: person
+  Type: object
 1161:
-  Direction: left
+  Direction: down
   Event Flag: 0x0
   Movement: 10
   Show Sprite: always
-  Sprite: 443
+  Sprite: 414
   Text Pointer 1: $0
   Text Pointer 2: $0
-  Type: person
+  Type: object
 1162:
   Direction: down
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 238
+  Sprite: 345
   Text Pointer 1: data_06.l_0xc57cd4
   Text Pointer 2: $0
   Type: object
@@ -10470,7 +10470,7 @@
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 238
+  Sprite: 345
   Text Pointer 1: data_06.l_0xc57cd4
   Text Pointer 2: $0
   Type: object
@@ -10479,7 +10479,7 @@
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 442
+  Sprite: 216
   Text Pointer 1: data_25.l_0xc6a895
   Text Pointer 2: $0
   Type: object
@@ -10619,11 +10619,11 @@
   Text Pointer 2: $0
   Type: person
 1180:
-  Direction: down
+  Direction: right
   Event Flag: 0x1b3
   Movement: 8
   Show Sprite: when event flag unset
-  Sprite: 322
+  Sprite: 360
   Text Pointer 1: data_65.l_0xef9448
   Text Pointer 2: $0
   Type: object
@@ -10736,47 +10736,47 @@
   Text Pointer 2: $0
   Type: person
 1193:
-  Direction: down
+  Direction: right
   Event Flag: 0x15b
   Movement: 8
   Show Sprite: when event flag unset
-  Sprite: 221
+  Sprite: 414
   Text Pointer 1: data_50.l_0xc9323b
   Text Pointer 2: $0
   Type: object
 1194:
-  Direction: down
+  Direction: right
   Event Flag: 0x15b
   Movement: 8
   Show Sprite: when event flag set
-  Sprite: 221
+  Sprite: 414
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
 1195:
-  Direction: down
+  Direction: right
   Event Flag: 0x15c
   Movement: 8
   Show Sprite: when event flag unset
-  Sprite: 353
+  Sprite: 239
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
 1196:
-  Direction: down
+  Direction: right
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 179
+  Sprite: 351
   Text Pointer 1: data_06.l_0xc57947
   Text Pointer 2: $0
-  Type: person
+  Type: object
 1197:
-  Direction: down
+  Direction: up
   Event Flag: 0xda
   Movement: 8
   Show Sprite: when event flag unset
-  Sprite: 244
+  Sprite: 211
   Text Pointer 1: data_06.l_0xc57c2c
   Text Pointer 2: $0
   Type: object
@@ -10808,32 +10808,32 @@
   Text Pointer 2: $0
   Type: object
 1201:
-  Direction: down
+  Direction: right
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
   Sprite: 216
   Text Pointer 1: data_22.l_0xc6803d
   Text Pointer 2: $0
-  Type: person
+  Type: object
 1202:
-  Direction: down
+  Direction: up
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 266
+  Sprite: 204
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
 1203:
-  Direction: down
+  Direction: right
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
   Sprite: 216
   Text Pointer 1: data_22.l_0xc6803d
   Text Pointer 2: $0
-  Type: person
+  Type: object
 1204:
   Direction: down
   Event Flag: 0x0
@@ -10844,11 +10844,11 @@
   Text Pointer 2: $0
   Type: object
 1205:
-  Direction: down
+  Direction: up
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 266
+  Sprite: 204
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -10862,11 +10862,11 @@
   Text Pointer 2: data_22.l_0xc680c2
   Type: object
 1207:
-  Direction: down
+  Direction: right
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 429
+  Sprite: 210
   Text Pointer 1: data_26.l_0xc6cdcd
   Text Pointer 2: $0
   Type: object
@@ -11024,11 +11024,11 @@
   Text Pointer 2: $0
   Type: person
 1225:
-  Direction: down
+  Direction: up
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 266
+  Sprite: 204
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -11085,7 +11085,7 @@
   Sprite: 456
   Text Pointer 1: $0
   Text Pointer 2: $0
-  Type: person
+  Type: object
 1232:
   Direction: left
   Event Flag: 0x0
@@ -11114,14 +11114,14 @@
   Text Pointer 2: $0
   Type: person
 1235:
-  Direction: down
+  Direction: left
   Event Flag: 0x0
   Movement: 10
   Show Sprite: always
-  Sprite: 412
+  Sprite: 177
   Text Pointer 1: data_59.l_0xc9ed29
   Text Pointer 2: $0
-  Type: person
+  Type: object
 1236:
   Direction: down
   Event Flag: 0x0
@@ -11163,7 +11163,7 @@
   Event Flag: 0x1b7
   Movement: 8
   Show Sprite: when event flag unset
-  Sprite: 376
+  Sprite: 381
   Text Pointer 1: data_59.l_0xc9e79f
   Text Pointer 2: $0
   Type: object
@@ -11172,7 +11172,7 @@
   Event Flag: 0x1b8
   Movement: 8
   Show Sprite: when event flag unset
-  Sprite: 376
+  Sprite: 381
   Text Pointer 1: data_59.l_0xc9e7b8
   Text Pointer 2: $0
   Type: object
@@ -11181,7 +11181,7 @@
   Event Flag: 0x1b9
   Movement: 8
   Show Sprite: when event flag unset
-  Sprite: 376
+  Sprite: 381
   Text Pointer 1: data_59.l_0xc9e7d1
   Text Pointer 2: $0
   Type: object
@@ -11190,7 +11190,7 @@
   Event Flag: 0x1ba
   Movement: 8
   Show Sprite: when event flag unset
-  Sprite: 376
+  Sprite: 381
   Text Pointer 1: data_59.l_0xc9e7ea
   Text Pointer 2: $0
   Type: object
@@ -11199,16 +11199,16 @@
   Event Flag: 0x1bb
   Movement: 8
   Show Sprite: when event flag unset
-  Sprite: 376
+  Sprite: 381
   Text Pointer 1: data_59.l_0xc9e803
   Text Pointer 2: $0
   Type: object
 1245:
-  Direction: down
+  Direction: up
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 411
+  Sprite: 365
   Text Pointer 1: data_59.l_0xc9ec7a
   Text Pointer 2: $0
   Type: object
@@ -11220,7 +11220,7 @@
   Sprite: 333
   Text Pointer 1: data_59.l_0xc9e27b
   Text Pointer 2: $0
-  Type: person
+  Type: object
 1247:
   Direction: down
   Event Flag: 0x0
@@ -11229,7 +11229,7 @@
   Sprite: 260
   Text Pointer 1: data_59.l_0xc9ddc6
   Text Pointer 2: $0
-  Type: person
+  Type: object
 1248:
   Direction: down
   Event Flag: 0x0
@@ -11238,7 +11238,7 @@
   Sprite: 260
   Text Pointer 1: data_59.l_0xc9ddd1
   Text Pointer 2: $0
-  Type: person
+  Type: object
 1249:
   Direction: down
   Event Flag: 0x0
@@ -11247,7 +11247,7 @@
   Sprite: 260
   Text Pointer 1: data_59.l_0xc9ddf8
   Text Pointer 2: $0
-  Type: person
+  Type: object
 1250:
   Direction: right
   Event Flag: 0x0
@@ -11346,7 +11346,7 @@
   Sprite: 260
   Text Pointer 1: data_59.l_0xc9e2f5
   Text Pointer 2: $0
-  Type: person
+  Type: object
 1261:
   Direction: down
   Event Flag: 0x0
@@ -11375,16 +11375,16 @@
   Text Pointer 2: $0
   Type: object
 1264:
-  Direction: down
+  Direction: left
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 225
+  Sprite: 213
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
 1265:
-  Direction: down
+  Direction: up
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
@@ -11393,11 +11393,11 @@
   Text Pointer 2: $0
   Type: object
 1266:
-  Direction: down
+  Direction: up
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 270
+  Sprite: 239
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -11406,7 +11406,7 @@
   Event Flag: 0x0
   Movement: 684
   Show Sprite: always
-  Sprite: 405
+  Sprite: 384
   Text Pointer 1: data_43.l_0xc87b40
   Text Pointer 2: $0
   Type: object
@@ -11490,7 +11490,7 @@
   Sprite: 333
   Text Pointer 1: data_61.l_0xef57eb
   Text Pointer 2: $0
-  Type: person
+  Type: object
 1277:
   Direction: down
   Event Flag: 0x15d
@@ -11627,14 +11627,14 @@
   Text Pointer 2: $0
   Type: person
 1292:
-  Direction: down
+  Direction: up
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 268
+  Sprite: 372
   Text Pointer 1: data_59.l_0xc9de0e
   Text Pointer 2: $0
-  Type: person
+  Type: object
 1293:
   Direction: down
   Event Flag: 0x0
@@ -11654,32 +11654,32 @@
   Text Pointer 2: $0
   Type: person
 1295:
-  Direction: down
+  Direction: up
   Event Flag: 0x0
-  Movement: 8
+  Movement: 10
   Show Sprite: always
-  Sprite: 427
+  Sprite: 367
   Text Pointer 1: data_61.l_0xef60f2
   Text Pointer 2: $0
-  Type: person
+  Type: object
 1296:
-  Direction: down
+  Direction: up
   Event Flag: 0x0
-  Movement: 8
+  Movement: 10
   Show Sprite: always
-  Sprite: 427
+  Sprite: 367
   Text Pointer 1: data_61.l_0xef60f2
   Text Pointer 2: $0
-  Type: person
+  Type: object
 1297:
-  Direction: down
+  Direction: up
   Event Flag: 0x0
-  Movement: 8
+  Movement: 10
   Show Sprite: always
-  Sprite: 427
+  Sprite: 367
   Text Pointer 1: data_61.l_0xef60f2
   Text Pointer 2: $0
-  Type: person
+  Type: object
 1298:
   Direction: down
   Event Flag: 0x0
@@ -11753,7 +11753,7 @@
   Text Pointer 2: $0
   Type: object
 1306:
-  Direction: right
+  Direction: down
   Event Flag: 0x49
   Movement: 8
   Show Sprite: when event flag set
@@ -11762,7 +11762,7 @@
   Text Pointer 2: $0
   Type: object
 1307:
-  Direction: left
+  Direction: right
   Event Flag: 0x49
   Movement: 8
   Show Sprite: when event flag set
@@ -11780,11 +11780,11 @@
   Text Pointer 2: $0
   Type: object
 1309:
-  Direction: right
+  Direction: up
   Event Flag: 0x49
   Movement: 8
   Show Sprite: when event flag set
-  Sprite: 457
+  Sprite: 26
   Text Pointer 1: $0
   Text Pointer 2: $0
   Type: object
@@ -12032,32 +12032,32 @@
   Text Pointer 2: $0
   Type: person
 1337:
-  Direction: down
+  Direction: left
   Event Flag: 0x0
   Movement: 10
   Show Sprite: always
-  Sprite: 100
+  Sprite: 351
   Text Pointer 1: data_32.l_0xc776c8
   Text Pointer 2: $0
-  Type: person
+  Type: object
 1338:
-  Direction: down
+  Direction: left
   Event Flag: 0x0
   Movement: 10
   Show Sprite: always
-  Sprite: 100
+  Sprite: 351
   Text Pointer 1: data_32.l_0xc776c8
   Text Pointer 2: $0
-  Type: person
+  Type: object
 1339:
-  Direction: down
+  Direction: left
   Event Flag: 0x0
   Movement: 10
   Show Sprite: always
-  Sprite: 100
+  Sprite: 351
   Text Pointer 1: data_32.l_0xc776c8
   Text Pointer 2: $0
-  Type: person
+  Type: object
 1340:
   Direction: down
   Event Flag: 0x0
@@ -12176,7 +12176,7 @@
   Text Pointer 2: $0
   Type: object
 1353:
-  Direction: down
+  Direction: up
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
@@ -12212,7 +12212,7 @@
   Text Pointer 2: $0
   Type: person
 1357:
-  Direction: down
+  Direction: up
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
@@ -12270,7 +12270,7 @@
   Event Flag: 0x183
   Movement: 597
   Show Sprite: when event flag unset
-  Sprite: 279
+  Sprite: 342
   Text Pointer 1: data_65.l_0xef8fe4
   Text Pointer 2: $0
   Type: person
@@ -12342,7 +12342,7 @@
   Event Flag: 0x184
   Movement: 597
   Show Sprite: when event flag unset
-  Sprite: 279
+  Sprite: 342
   Text Pointer 1: data_65.l_0xef9003
   Text Pointer 2: $0
   Type: person
@@ -12459,7 +12459,7 @@
   Event Flag: 0x0
   Movement: 12
   Show Sprite: always
-  Sprite: 69
+  Sprite: 454
   Text Pointer 1: data_53.l_0xc9707c
   Text Pointer 2: $0
   Type: person
@@ -12648,12 +12648,12 @@
   Event Flag: 0x0
   Movement: 8
   Show Sprite: always
-  Sprite: 442
+  Sprite: 216
   Text Pointer 1: data_24.l_0xc6a861
   Text Pointer 2: $0
   Type: object
 1406:
-  Direction: down
+  Direction: up
   Event Flag: 0x0
   Movement: 10
   Show Sprite: always

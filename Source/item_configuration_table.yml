@@ -7,8 +7,8 @@
   - 0
   Cost: 2
   Help Text Pointer: data_02.l_0xc539c4
-  Misc Flags: []
-  Name: 'Null'
+  Misc Flags: 0
+  Name: "[7F][A5][9D][C3]" # Нуль
   Type: 255
 1:
   Action: 1
@@ -1241,7 +1241,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[7E][A0][9F][96][A4][91][90][A4][91][9D][9A][A3][9E][91][9F]" # Монета[90]талисман
+  Name: "[7E][A0][9F][96][A4][91]-[A4][91][9D][9A][A3][9E][91][9F]" # Монета-талисман
   Type: 28
 85:
   Action: 240

@@ -5,7 +5,7 @@
  */
 
 import ebpp_std
-command e(label) "{long label}"
+import RUS_ref
 
 // Text Data
 l_0xc61e81:
@@ -27,7 +27,6 @@ l_0xc61ed7:
 
 l_0xc61f07:
 	/*
-	title(1, "Мэн К. Мэн")
 	"[06 CB 01 {e(l_0xc62008)}]@Юки Юкикики" next
 	"@(Я Мэн К. Мэн.)" next
 	"@Юки Юкикики" next
@@ -35,7 +34,7 @@ l_0xc61f07:
 	"@Юки Юкикики" next
 	"@(Что?{pause(20)}  Ты даёшь мне подарок?)" next
 	*/
-	title(1, "[7E][C4][9F] [7C]. [7E][C4][9F]")
+	title(1, Mankman)
 	"[06 CB 01 {e(l_0xc62008)}]@[B5][9C][9A] [B5][9C][9A][9C][9A][9C][9A]" next
 	"@([B6] [7E][C4][9F] [7C]. [7E][C4][9F].)" next
 	"@[B5][9C][9A] [B5][9C][9A][9C][9A][9C][9A]" next
