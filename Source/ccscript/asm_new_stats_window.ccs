@@ -162,7 +162,7 @@ define SPEED_ARROW_X_POS				= 0x0048
 define SPEED_ARROW_Y_POS			= 0x0002
 
 GutsEquip_Text:
-	"[73][C2][95][96][A2][98][9C][91]:[00]"	// "Выдержка:[00]"
+	"[73][A0][9D][C6]:[00]"	// "Воля:[00]"
 define GUTS_TEXT_LENGTH				= 0x0009
 define GUTS_TEXT_X_POS					= 0x0000
 define GUTS_TEXT_Y_POS					= 0x0003

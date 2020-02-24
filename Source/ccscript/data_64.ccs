@@ -291,11 +291,11 @@ l_0xef845d:
 l_0xef8477:
 	/*
 	"@{user} чувствует" linebreak
-	"  себя напуганным.[03]" eob
+	"  себя напуганн{user_gender}{call(RUS_ref.l_gendersuffix9)}.[03]" eob
 	*/
 	newline
 	"@{user} [A9][A5][93][A3][A4][93][A5][96][A4]" linebreak
-	"  [A3][96][92][C6] [9F][91][A1][A5][94][91][9F][9F][C2][9E].[03]" eob
+	"  [A3][96][92][C6] [9F][91][A1][A5][94][91][9F][9F]{user_gender}{call(RUS_ref.l_gendersuffix9)}.[03]" eob
 
 l_0xef848c:
 //	"[1F 41 08][1B 02 {e(l_0xef84a7)}]{sound(25)}@{user} атакует!{sound(26)}[03]" eob

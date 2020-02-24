@@ -151,13 +151,11 @@ l_0xc7c669:
 
 l_0xc7c693:
 	/*
-	"{load_registers}{swap}@{call(data_37.l_0xc7e74e)}{store_registers}" linebreak
-	"  избавил{call(RUS_ref.l_suffix6_multi)} от" linebreak
-	" {load_registers}[1C 05 00] персонажа {swap}[1C 02 00]." end
+	"{load_registers}{swap}@{call(data_37.l_0xc7e74e)}{store_registers} избавил{call(RUS_ref.l_suffix6_multi)} от" linebreak
+	"  {load_registers}{swap}[1C 05 00] персонажа {rtoarg}[1C 02 00]." end
 	*/
-	"{load_registers}{swap}@{call(data_37.l_0xc7e74e)}{store_registers}" linebreak
-	"  [9A][99][92][91][93][9A][9D]{call(RUS_ref.l_suffix6_multi)} [A0][A4]" linebreak
-	" {load_registers}[1C 05 00] [A1][96][A2][A3][A0][9F][91][98][91] {swap}[1C 02 00]." end
+	"{load_registers}{swap}@{call(data_37.l_0xc7e74e)}{store_registers} [9A][99][92][91][93][9A][9D]{call(RUS_ref.l_suffix6_multi)} [A0][A4]" linebreak
+	"  {load_registers}{swap}[1C 05 00] [A1][96][A2][A3][A0][9F][91][98][91] {rtoarg}[1C 02 00]." end
 
 l_0xc7c6b6:
 	/*

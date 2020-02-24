@@ -322,14 +322,14 @@ l_0xef7ab1:
 	"@" call(l_0xef7bbf) "[83][9C][A0][A2][A0][A3][A4][C3] [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] {delta}!{prompt}" eob
 
 l_0xef7ac9:
-//	"@" call(l_0xef7bbf) "Выдержка увеличилась на {delta}!{prompt}" eob
+//	"@" call(l_0xef7bbf) "Воля увеличилась на {delta}!{prompt}" eob
 	newline
-	"@" call(l_0xef7bbf) "[73][C2][95][96][A2][98][9C][91] [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] {delta}!{prompt}" eob
+	"@" call(l_0xef7bbf) "[73][A0][9D][C6] [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] {delta}!{prompt}" eob
 
 l_0xef7ae0:
-//	"@" call(l_0xef7bbf) "Живучесть увеличилась на {delta}!{prompt}" eob
+//	"@" call(l_0xef7bbf) "Сила увеличилась на {delta}!{prompt}" eob
 	newline
-	"@" call(l_0xef7bbf) "[78][9A][93][A5][A9][96][A3][A4][C3] [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] {delta}!{prompt}" eob
+	"@" call(l_0xef7bbf) "[83][9A][9D][91] [A5][93][96][9D][9A][A9][9A][9D][91][A3][C3] [9F][91] {delta}!{prompt}" eob
 
 l_0xef7afb:
 //	"@" call(l_0xef7bbf) "Интеллект увеличился на {delta}!{prompt}" eob
@@ -353,11 +353,11 @@ l_0xef7b46:
 
 l_0xef7b64:
 	/*
-	"{sound(103)}@{target} познал{target_gender}{call(data_gender.l_gendersuffix)} силу" linebreak
+	"{sound(103)}@{target} познаёт силу" linebreak
 	"[19 1F]{swap}  [1C 12 00].{prompt}" eob
 	*/
 	newline
-	"{sound(103)}@{target} [A1][A0][99][9F][91][9D]{target_gender}{call(data_gender.l_gendersuffix)} [A3][9A][9D][A5]" linebreak
+	"{sound(103)}@{target} [A1][A0][99][9F][91][97][A4] [A3][9A][9D][A5]" linebreak
 	"[19 1F]{swap}  [1C 12 00].{prompt}" eob
 
 l_0xef7b83:

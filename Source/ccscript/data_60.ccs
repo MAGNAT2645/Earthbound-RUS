@@ -797,26 +797,26 @@ l_0xef4ec7:
 	call(data_05.l_0xc56913) " ~320 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]." eob
 
 l_0xef4ede:
-//	call(data_05.l_0xc56935) " нанося ~180 очков урона." linebreak
-	call(data_05.l_0xc56935) " [9F][91][9F][A0][A3][C6] ~180 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]." linebreak
+//	call(data_05.l_0xc56935) "  нанося ~180 очков урона." linebreak
+	call(data_05.l_0xc56935) "  [9F][91][9F][A0][A3][C6] ~180 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]." linebreak
 	call(data_05.l_0xc56955) newline
 	call(data_05.l_0xc56b3e) eob
 
 l_0xef4f06:
-//	call(data_05.l_0xc56935) " нанося ~360 очков урона." linebreak
-	call(data_05.l_0xc56935) " [9F][91][9F][A0][A3][C6] ~360 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]." linebreak
+//	call(data_05.l_0xc56935) "  нанося ~360 очков урона." linebreak
+	call(data_05.l_0xc56935) "  [9F][91][9F][A0][A3][C6] ~360 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]." linebreak
 	call(data_05.l_0xc56955) newline
 	call(data_05.l_0xc56b3e) eob
 
 l_0xef4f2e:
-//	call(data_05.l_0xc56935) " нанося ~540 очков урона." linebreak
-	call(data_05.l_0xc56935) " [9F][91][9F][A0][A3][C6] ~540 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]." linebreak
+//	call(data_05.l_0xc56935) "  нанося ~540 очков урона." linebreak
+	call(data_05.l_0xc56935) "  [9F][91][9F][A0][A3][C6] ~540 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]." linebreak
 	call(data_05.l_0xc56955) newline
 	call(data_05.l_0xc56b3e) eob
 
 l_0xef4f56:
-//	call(data_05.l_0xc56935) " нанося ~720 очков урона." linebreak
-	call(data_05.l_0xc56935) " [9F][91][9F][A0][A3][C6] ~720 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]." linebreak
+//	call(data_05.l_0xc56935) "  нанося ~720 очков урона." linebreak
+	call(data_05.l_0xc56935) "  [9F][91][9F][A0][A3][C6] ~720 [A0][A9][9C][A0][93] [A5][A2][A0][9F][91]." linebreak
 	call(data_05.l_0xc56955) linebreak
 	call(data_05.l_0xc56b3e) eob
 

@@ -123,25 +123,19 @@ l_gendersuffix9_female:
 //	"ой" eob
 	"[A0][9B]" eob
 
-// его/её
 l_gender:
 	"[09 03 {e(l_gender_male)} {e(l_gender_female)} {e(l_gender_male)}]" eob
 l_gender_male:
-//	"его" eob
-	"[96][94][A0]" eob
+	"[96][94][A0]" eob	// "его" eob
 l_gender_female:
-//	"её" eob
-	"[96][97]" eob
+	"[96][97]" eob	// "её" eob
 
-// ему/ей
 l_gender2:
 	"[09 03 {e(l_gender2_male)} {e(l_gender2_female)} {e(l_gender2_male)}]" eob
 l_gender2_male:
-//	"ему" eob
-	"[96][9E][A5]" eob
+	"[96][9E][A5]" eob	// "ему" eob
 l_gender2_female:
-//	"ей" eob
-	"[96][9B]" eob
+	"[96][9B]" eob	// "ей" eob
 
 l_gender3:
 	"[09 03 {e(l_gender3_male)} {e(l_gender3_female)} {e(l_gender3_male)}]" eob
@@ -357,7 +351,7 @@ l_suffix6_multi:
 //	"{char_slot(2)}[1D 0D 00 01 02][1B 03 {e(l_suffix6_single)}]{char_slot(2)}[1D 0D 00 01 03][1B 03 {e(l_suffix6_single)}]ись" eob
 	"{char_slot(2)}[1D 0D 00 01 02][1B 03 {e(l_suffix6_single)}]{char_slot(2)}[1D 0D 00 01 03][1B 03 {e(l_suffix6_single)}][9A][A3][C3]" eob
 l_suffix6_single:
-	char_slot(1) call(l_gendersuffix2) eob
+	char_slot(1) call(data_gender.l_gendersuffix2) eob
 
 // Другие способы вставки окончания (через проверку кол-ва членов команды)
 // -а (в ед. ч. и ж.р.) | -и (во множ.ч.)
@@ -387,6 +381,7 @@ command init_party_number_check(label) {
 
 
 define Unknown		=	"???"
+define Merchant		=	"[84][A0][A2][94][A0][93][96][A8]"	// "Торговец"
 define Mom			=	"[7E][91][9E][91]"	// "Мама"
 define Dad			=	"[81][91][A1][91]"	// "Папа"
 define Tracy		=	"[84][A2][C4][9B][A3][9A]"	// "Трэйси"
@@ -397,11 +392,13 @@ define Picky		=	"[81][9A][9C][9A]"		// "Пики"
 define Buzz			=	"[73][98][98] [73][98][98]"	// "Вжж Вжж"
 define Aloysius		=	"[71][9D][A0][9B][99][9A][A5][A3] [7E][9A][9F][A9]"	// "Алойзиус Минч"
 define Lardna		=	"[7D][91][A2][95][9F][91] [7E][9A][9F][A9]"	// "Лардна Минч"
-define Ruffini		=	"[82][A5][A6][A6][9A][9F][9A]"	// "Руффини"
+define Hint			=	"[83][A0][93][96][A4][A9][9A][9C]"	// "Советчик"
+define Ruffini		=	"[74][91][A6][A6][9A][9F][9A]"	// "Гаффини"
 define Lier			=	"[72][A0][92] [7E][91][9F][C0][9A][9C]"	// "Боб Манщик"
-define Pirkle		=	"[72].[87]. [81][9A][A2][9C][9D]"	// "Б.Х. Пиркл"
-define Frank		=	"[86][A2][C4][9F][9C] [86][9D][91][9B]"	// "Фрэнк Флай"
+define Pirkle		=	"[7D].[74]. [81][9A][A2][9C][9D]"	// "Л.Г. Пиркл"
+define Frank		=	"[86][A2][C4][9F][9C]"	// "Фрэнк"
 define Prettyman	=	"[7E][A2].[7C][A2][91][A3][91][93][A9][9A][9C]"	// "Мр.Красавчик"
+define Cop			=	"[81][A0][9D][9A][A8][96][9B][A3][9C][9A][9B]"	// "Полицейский"
 define Strong		=	"[7C][91][A1][9A][A4][91][9F] [83][A4][A2][A0][9F][94]"	// "Капитан Стронг"
 define Mach		=	"[7E][91][A9] [81][9A][A8][A8][91]"	// "Мач Пицца"
 define Gonzales		=	"[74][A0][9F][A3][91][9D][96][A3]"	// "Гонсалес"
@@ -419,6 +416,7 @@ define Lucky		=	"[73][96][99][A5][A9][9A][9B]"	// "Везучий"
 define Gorgeous	=	"[75][9A][93][9F][C2][9B]"	// "Дивный"
 define Okay			=	"[7D][91][95][9F][C2][9B]"	// "Ладный"
 define Groovy		=	"[7C][A2][A5][A4][A0][9B]"	// "Крутой"
+define BlueBlue		=	"[83][9A][9F][9A][9B] [9C][A5][9D][C3][A4][9A][A3][A4]"	// "Синий культист"
 define Carpainter	=	"[7E][A2].[7C][91][A2][A1][C4][9B][9F][A4][96][A2]"	// "Мр.Карпэйнтер"
 define Pettenella	=	"[81][96][A4][A4][96][9F][96][9D][9D][91] [75][98][A0][93][91][9F][9F][9A]"	// "Петтенелла Джованни"
 define Gerardo		=	"[74][96][A2][91][A2][95][A0] [7E][A0][9F][A4][96][94][C5]"	// "Герардо Монтегю"
@@ -441,13 +439,13 @@ define Fork			=	"[7E][A2].[73][9A][9D][9C][9A][9F]"	// "Мр.Вилкин"
 define Spoon		=	"[7E][A2].[7D][A0][98][9C][9A][9F]"	// "Мр.Ложкин"
 define Fake			=	"[7E][9A][A3][A3] [86][91][9D][C3][AA]"	// "Мисс Фальш"
 define Venus		=	"[73][96][9F][96][A2][91]"	// "Венера"
-define Borges		=	"[75][98][96][9C][9A]"	// "Джеки"
+define Borges		=	"[72][A0][A2][A7][96][A3]"	// "Борхес"
 define Electra		=	"[B4][9D][96][9C][A4][A2][91]"	// "Электра"
-define Richmond	=	"[82][9A][A3][A0][AA][91] [82][9A][A9][9E][A0][9F][95]"	// "Рисоша Ричмонд"
+define Richmond	=	"[7C][A5][A2][A9][91][A2] [82][9A][A9][9E][A0][9F][95]"	// "Курчар Ричмонд"
 define Monotoly		=	"[74][96][9D][C3][95][96][94][91][A2][95][C4] [7E][A0][9F][A0][A4][A0][9D][9A]"	// "Гельдегардэ Монотоли"
 define Stoic			=	"[7C][9D][A5][92] [83][A4][A0][9A][9C]"	// "Клуб Стоик"
 define Lunatics		=	"[79][91][93][96][A4][9F][C2][96] [7D][A5][9F][91][A4][9A][9C][9A]"	// "Заветные Лунатики"
-define Gil			=	"[75][98][9A][9D][9D]"	// "Джилл"
+define Gil			=	"[74][9A][9D]"	// "Гил"
 define Dungeon		=	"[89][96][9D][A0][93][96][9C]-[75][91][9F][98]"	// "Человек-Данж"
 define Star			=	"[79][93][97][99][95][9F][C2][9B] [7E][91][A3][A4][96][A2]"	// "Звёздный Мастер"
 define Warrior		=	"[72][9D][91][94][A0][A2][A0][95][9F][C2][9B] [73][A0][9A][9F]"	// "Благородный Воин"
@@ -456,6 +454,7 @@ define Snake		=	"[7C][A2][91][A3][9F][C2][9B] [79][9E][96][9B]"	// "Красны
 define Charlie		=	"[89][91][A2][9D][9A]"	// "Чарли"
 define Rock			=	"[79][91][94][91][95][A0][A9][9F][91][C6] [83][9C][91][9D][91]"	// "Загадочная Скала"
 define Angrez		=	"[89][A5][95][91][9F][94][9D]"	// "Чудангл"
+define Tenda		=	"[84][96][9F][95][91]" // "Тенда"
 define Nico			=	"[7F][9A][9C][A0]"	// "Нико"
 define Flying		=	"[7D][96][A4][91][C5][C0][9A][9B] [89][96][9D][A0][93][96][9C]"	// "Летающий Человек"
 define Flying2		=	"[7D][96][A4][91][C5][C0][9A][9B] [89][96][9D][A0][93][96][9C] 2"	// "Летающий Человек 2"

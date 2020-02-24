@@ -51,15 +51,19 @@ l_0xc99dce:
 	"{unset(flag 383)}{isset(flag 611)}[1B 02 {e(data_55.l_0xc9992f)}][1F 63 {e(l_0xc99de1)}]" eob
 
 l_0xc99de1:
-//	"[1F 1A 43 01 03]{pause(10)}[19 22 FF 02 43 01][1F 13 FF 00]{pause(50)}[1F 1B 43 01][1F F1 43 01 80 02][1F 61]{window_open(1)}@Привет?  [1C 01 08]?" next
-	"[1F 1A 43 01 03]{pause(10)}[19 22 FF 02 43 01][1F 13 FF 00]{pause(50)}[1F 1B 43 01][1F F1 43 01 80 02][1F 61]{window_open(1)}@[81][A2][9A][93][96][A4]?  [1C 01 08]?" next
+//	"@Привет?  [1C 01 08]?" next
+	"[1F 1A 43 01 03]{pause(10)}[19 22 FF 02 43 01][1F 13 FF 00]{pause(50)}[1F 1B 43 01][1F F1 43 01 80 02][1F 61]{window_open(1)}"
+	title(1, Unknown)
+	"@[81][A2][9A][93][96][A4]?  [1C 01 08]?" next
 	"{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc99e48)}]" goto(l_0xc99e1b)
 
-l_0xc99e1b:
+l_0xc99e1b: // MOTHER 2
 	/*
+	"@Я посыльный Эвердреда, один из его лакеев." next
 	"@Эвердред ищет тебя." next
 	"@У него есть что-то для тебя.{wait}{window_closeall}[1F F1 43 01 82 02]{pause(60)}{unset(flag 611)}[1F 41 06]" eob
 	*/
+	"@[B6] [A1][A0][A3][C2][9D][C3][9F][C2][9B] [B4][93][96][A2][95][A2][96][95][91], [A0][95][9A][9F] [9A][99] [96][94][A0] [9D][91][9C][96][96][93]." next
 	"@[B4][93][96][A2][95][A2][96][95] [9A][C0][96][A4] [A4][96][92][C6]." next
 	"@[85] [9F][96][94][A0] [96][A3][A4][C3] [A9][A4][A0]-[A4][A0] [95][9D][C6] [A4][96][92][C6].{wait}{window_closeall}[1F F1 43 01 82 02]{pause(60)}{unset(flag 611)}[1F 41 06]" eob
 
@@ -237,8 +241,13 @@ l_0xc9a1b6:
 	"@<[87][96][A7]-[A7][96][A7]-[A7][96]>{wait}{window_closetop}" eob
 
 l_0xc9a270:
-//	"[06 78 02 {e(data_57.l_0xc9b20e)}]{sound(111)}{pause(40)}{window_open(1)}{title(1, Unknown)}@Магазин на востоке!{pause(20)}  ...Восток противоположен западу!{wait}{window_closetop}" eob
-	"[06 78 02 {e(data_57.l_0xc9b20e)}]{sound(111)}{pause(40)}{window_open(1)}{title(1, Unknown)}@[7E][91][94][91][99][9A][9F] [9F][91] [93][A0][A3][A4][A0][9C][96]!{pause(20)}  ...[73][A0][A3][A4][A0][9C] [A1][A2][A0][A4][9A][93][A0][A1][A0][9D][A0][98][96][9F] [99][91][A1][91][95][A5]!{wait}{window_closetop}" eob
+	/*
+	"@Магазин находится на востоке!{pause(20)}" linebreak
+	"  ...Восток противоположен западу!{wait}{window_closetop}" eob
+	*/
+	"[06 78 02 {e(data_57.l_0xc9b20e)}]{sound(111)}{pause(40)}{window_open(1)}{title(1, Unknown)}"
+	"@[7E][91][94][91][99][9A][9F] [9F][91][A7][A0][95][9A][A4][A3][C6] [9F][91] [93][A0][A3][A4][A0][9C][96]!{pause(20)}" linebreak
+	"  ...[73][A0][A3][A4][A0][9C] [A1][A2][A0][A4][9A][93][A0][A1][A0][9D][A0][98][96][9F] [99][91][A1][91][95][A5]!{wait}{window_closetop}" eob
 
 l_0xc9a2ac:
 	/*

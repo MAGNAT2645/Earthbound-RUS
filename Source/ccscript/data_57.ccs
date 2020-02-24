@@ -290,10 +290,13 @@ l_0xc9b4b8:
 
 l_0xc9b4c9:
 	/*
-	"[1F 41 05]{set(flag 11)}{pause(60)}" call(data_36.l_0xc7dd6b) "{pause(120)}{window_open(1)}@Теперь ты можешь проснуться.{pause(20)}  Твои друзья ждут тебя." next
+	"@Теперь ты можешь проснуться.{pause(20)}" linebreak
+	"@Твои друзья ждут тебя." next
 	"@Пора вставать.[03]{window_closeall}{pause(1)}" call(l_0xc9b8dd) call(data_24.l_0xc69082) "{music(143)}[1F F2 01 00 5A 01]     {pause(1)}[1F EF 01 00]                           [1F E8 FF][1F 61][1F 15 6A 00 5F 01 01]   [1F 61][1F ED][1F E5 FF]{set(flag 349)}" call(data_36.l_0xc7dd6b) "[06 24 02 {e(l_0xc9b799)}][06 23 02 {e(l_0xc9b6e3)}][06 22 02 {e(l_0xc9b62d)}][1F 21 C5][1F E5 FF]{pause(60)}" call(data_32.l_0xc77dab) "{pause(60)}[1F F1 C4 01 5B 01]{pause(30)}[1F 1A C5 01 03][1F 1A C6 01 03][1F 1A C7 01 03]{pause(90)}[1F 1E C4 01 06]         [1F EC 01 01]                {pause(30)}[1F 1B C5 01][1F 1B C6 01][1F 1B C7 01]{pause(90)}[1F F1 C5 01 5C 01]" call(l_0xc9b84f) "[1F F1 C6 01 5D 01]" call(l_0xc9b87f) "[1F F1 C7 01 5E 01]" call(l_0xc9b898) "[1F 11 02][1F EB 02 06][1F F1 C5 01 2F 00][1F 61][1F 1E C5 01 06][1F EC 02 01][1F 11 03][1F EB 03 06][1F F1 C6 01 2F 00][1F 61][1F 1E C6 01 06][1F EC 03 01][1F 11 04][1F EB 04 06][1F F1 C7 01 2F 00][1F 61][1F 1E C7 01 06][1F EC 04 01]" goto(l_0xc9b60f)
 	*/
-	"[1F 41 05]{set(flag 11)}{pause(60)}" call(data_36.l_0xc7dd6b) "{pause(120)}{window_open(1)}@[84][96][A1][96][A2][C3] [A4][C2] [9E][A0][98][96][AA][C3] [A1][A2][A0][A3][9F][A5][A4][C3][A3][C6].{pause(20)}  [84][93][A0][9A] [95][A2][A5][99][C3][C6] [98][95][A5][A4] [A4][96][92][C6]." next
+	"[1F 41 05]{set(flag 11)}{pause(60)}" call(data_36.l_0xc7dd6b) "{pause(120)}{window_open(1)}"
+	"@[84][96][A1][96][A2][C3] [A4][C2] [9E][A0][98][96][AA][C3] [A1][A2][A0][A3][9F][A5][A4][C3][A3][C6].{pause(20)}" linebreak
+	"@[84][93][A0][9A] [95][A2][A5][99][C3][C6] [98][95][A5][A4] [A4][96][92][C6]." next
 	"@[81][A0][A2][91] [93][A3][A4][91][93][91][A4][C3].[03]{window_closeall}{pause(1)}" call(l_0xc9b8dd) call(data_24.l_0xc69082) "{music(143)}[1F F2 01 00 5A 01]     {pause(1)}[1F EF 01 00]                           [1F E8 FF][1F 61][1F 15 6A 00 5F 01 01]   [1F 61][1F ED][1F E5 FF]{set(flag 349)}" call(data_36.l_0xc7dd6b) "[06 24 02 {e(l_0xc9b799)}][06 23 02 {e(l_0xc9b6e3)}][06 22 02 {e(l_0xc9b62d)}][1F 21 C5][1F E5 FF]{pause(60)}" call(data_32.l_0xc77dab) "{pause(60)}[1F F1 C4 01 5B 01]{pause(30)}[1F 1A C5 01 03][1F 1A C6 01 03][1F 1A C7 01 03]{pause(90)}[1F 1E C4 01 06]         [1F EC 01 01]                {pause(30)}[1F 1B C5 01][1F 1B C6 01][1F 1B C7 01]{pause(90)}[1F F1 C5 01 5C 01]" call(l_0xc9b84f) "[1F F1 C6 01 5D 01]" call(l_0xc9b87f) "[1F F1 C7 01 5E 01]" call(l_0xc9b898) "[1F 11 02][1F EB 02 06][1F F1 C5 01 2F 00][1F 61][1F 1E C5 01 06][1F EC 02 01][1F 11 03][1F EB 03 06][1F F1 C6 01 2F 00][1F 61][1F 1E C6 01 06][1F EC 03 01][1F 11 04][1F EB 04 06][1F F1 C7 01 2F 00][1F 61][1F 1E C7 01 06][1F EC 04 01]" goto(l_0xc9b60f)
 
 l_0xc9b60f:
@@ -309,8 +312,13 @@ l_0xc9b799:
 	"[1F 21 9E][1F E5 FF]{pause(60)}" call(data_32.l_0xc77dab) "{pause(60)}[1F F1 FD 04 5B 01]{pause(30)}[1F 1A FE 04 03][1F 1A FF 04 03][1F 1A 00 05 03]{pause(90)}[1F 1E FD 04 06]         [1F EC 01 01]                {pause(30)}[1F 1B FE 04][1F 1B FF 04][1F 1B 00 05]{pause(90)}[1F F1 FE 04 5C 01]" call(l_0xc9b84f) "[1F F1 FF 04 5D 01]" call(l_0xc9b87f) "[1F F1 00 05 5E 01]" call(l_0xc9b898) "[1F 11 02][1F EB 02 06][1F F1 FE 04 2F 00][1F 61][1F 1E FE 04 06][1F EC 02 01][1F 11 03][1F EB 03 06][1F F1 FF 04 2F 00][1F 61][1F 1E FF 04 06][1F EC 03 01][1F 11 04][1F EB 04 06][1F F1 00 05 2F 00][1F 61][1F 1E 00 05 06][1F EC 04 01]" call(l_0xc9b60f) eob
 
 l_0xc9b84f:
-//	"[1F 61]{window_open(1)}{title_paula(1)}@Что произошло, [1C 02 01]?{pause(20)}  Ты долгое время был без сознания...[03]{window_closeall}{pause(30)}" eob
-	"[1F 61]{window_open(1)}{title_paula(1)}@[89][A4][A0] [A1][A2][A0][9A][99][A0][AA][9D][A0], [1C 02 01]?{pause(20)}  [84][C2] [95][A0][9D][94][A0][96] [93][A2][96][9E][C6] [92][C2][9D] [92][96][99] [A3][A0][99][9F][91][9F][9A][C6]...[03]{window_closeall}{pause(30)}" eob
+	/*
+	"@Что произошло, [1C 02 01]?{pause(20)}" linebreak
+	"@Ты долгое время был без сознания...[03]{window_closeall}{pause(30)}" eob
+	*/
+	"[1F 61]{window_open(1)}{title_paula(1)}"
+	"@[89][A4][A0] [A1][A2][A0][9A][99][A0][AA][9D][A0], [1C 02 01]?{pause(20)}" linebreak
+	"@[84][C2] [95][A0][9D][94][A0][96] [93][A2][96][9E][C6] [92][C2][9D] [92][96][99] [A3][A0][99][9F][91][9F][9A][C6]...[03]{window_closeall}{pause(30)}" eob
 
 l_0xc9b87f:
 //	"[1F 61]{window_open(1)}{title_jeff(1)}@Ты всё время говорил что-то...[03]{window_closeall}{pause(30)}" eob

@@ -741,7 +741,7 @@
   Event Flag: 0x0
   Movement: 12
   Show Sprite: always
-  Sprite: 58
+  Sprite: 392 # 57
   Text Pointer 1: data_29.l_0xc72822
   Text Pointer 2: $0
   Type: person
@@ -2145,7 +2145,7 @@
   Event Flag: 0x2ef
   Movement: 606
   Show Sprite: when event flag unset
-  Sprite: 58
+  Sprite: 392 # 57
   Text Pointer 1: data_33.l_0xc7944e
   Text Pointer 2: $0
   Type: person
@@ -8346,7 +8346,7 @@
   Event Flag: 0x39
   Movement: 13
   Show Sprite: when event flag unset
-  Sprite: 58
+  Sprite: 392 # 57
   Text Pointer 1: data_40.l_0xc82a6f
   Text Pointer 2: $0
   Type: person
@@ -8616,7 +8616,7 @@
   Event Flag: 0x3c
   Movement: 606
   Show Sprite: when event flag set
-  Sprite: 58
+  Sprite: 392 # 57
   Text Pointer 1: data_40.l_0xc83c94
   Text Pointer 2: $0
   Type: person
@@ -9255,7 +9255,7 @@
   Event Flag: 0xd1
   Movement: 606
   Show Sprite: when event flag set
-  Sprite: 58
+  Sprite: 392 # 57
   Text Pointer 1: data_45.l_0xc8a691
   Text Pointer 2: $0
   Type: person

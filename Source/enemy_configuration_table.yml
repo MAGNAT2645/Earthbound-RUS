@@ -35,7 +35,7 @@
   Money: 0
   Movement pattern: 0
   Music: 0
-  Name: 'null'
+  Name: "[7F][A5][9D][C3]" # Нуль
   Offense: 0
   Overworld Sprite: 0
   PP: 0
@@ -834,7 +834,7 @@
   Money: 791
   Movement pattern: 27
   Music: 97
-  Name: "[B4][9D][96][9C][A4][A2][A0]-[83][93][A5][AA]" # Электро-Свуш
+  Name: "[B4][9D][96][9C][A4][A2][A0]-[74][9D][91][99][9C][9A]" # Электро-Глазки
   Offense: 140
   Overworld Sprite: 276
   PP: 338
@@ -6051,7 +6051,7 @@
   Money: 4736
   Movement pattern: 23
   Music: 104
-  Name: "[74][A2][A0][99][91] [9A] [8A][A4][A0][A2][9E]" # Гроза и Шторм
+  Name: "[74][A2][A0][99][91]-[8A][A4][A0][A2][9E]" # Гроза-Шторм
   Offense: 111
   Overworld Sprite: 333
   PP: 70
@@ -9482,7 +9482,7 @@
   Money: 4736
   Movement pattern: 23
   Music: 104
-  Name: "[74][A2][A0][99][91] [9A] [8A][A4][A0][A2][9E]" # Гроза и Шторм
+  Name: "[74][A2][A0][99][91]-[8A][A4][A0][A2][9E]" # Гроза-Шторм
   Offense: 111
   Overworld Sprite: 333
   PP: 70
