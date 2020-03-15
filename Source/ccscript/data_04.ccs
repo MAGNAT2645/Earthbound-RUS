@@ -4,8 +4,6 @@
  * Generated using CCScriptWriter.
  */
 
-import asm_custom_text_color
-
 command e(label) "{long label}"
 
 // Text Data
@@ -809,11 +807,11 @@ l_0xc55f26:
 
 l_0xc55f36:
 	/*
-	" <Защитная ленточка>" next
+	" <Защитный бантик>" next
 	"@Когда экипировано, повышает Удачу." end
 	*/
 	newline
-	" <[79][91][C0][9A][A4][9F][91][C6] [9D][96][9F][A4][A0][A9][9C][91]>" next
+	" <[79][91][C0][9A][A4][9F][C2][9B] [92][91][9F][A4][9A][9C]>" next
 	call(data_05.l_0xc56c6d) next
 	"@[7C][A0][94][95][91] [C4][9C][9A][A1][9A][A2][A0][93][91][9F][A0], [A1][A0][93][C2][AA][91][96][A4] [85][95][91][A9][A5]." end
 

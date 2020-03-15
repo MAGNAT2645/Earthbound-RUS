@@ -1138,7 +1138,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[83][A4][A2][A0][9A][A4].[90][7C][91][A3][9C][91]" # Строит.[90]Каска
+  Name: "[83][A4][A2][A0][9A][A4].[90][9C][91][A3][9C][91]" # Строит.[90]каска
   Type: 28
 78:
   Action: 240
@@ -1151,7 +1151,7 @@
   Help Text Pointer: data_03.l_0xc54055
   Misc Flags:
   - paula can use
-  Name: "[7D][96][9F][A4][A0][A9][9C][91]" # Ленточка
+  Name: "[72][91][9F][A4][9A][9C]" # Бантик
   Type: 28
 79:
   Action: 240
@@ -1164,7 +1164,7 @@
   Help Text Pointer: data_03.l_0xc54065
   Misc Flags:
   - paula can use
-  Name: "[7C][A2][91][A3][9F].[90][9D][96][9F][A4][A0][A9][9C][91]" # Красн.[90]ленточка
+  Name: "[7C][A2][91][A3][9F].[90][92][91][9F][A4][9A][9C]" # Красн.[90]бантик
   Type: 28
 80:
   Action: 240
@@ -1177,7 +1177,7 @@
   Help Text Pointer: data_03.l_0xc54075
   Misc Flags:
   - paula can use
-  Name: "[7D][96][9F][A4][91][90][92][A0][94][9A][9F][9A]" # Лента[90]богини
+  Name: "[72][91][9F][A4][9A][9C][90][72][A0][94][9A][9F][9A]" # Бантик[90]Богини
   Type: 28
 81:
   Action: 240
@@ -1981,7 +1981,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "[80][A3][93][C6][98].[90][A2][91][A3][A4][96][9F][9A][96]" # Освяж.[90]растение
+  Name: "[80][A3][93][96][98].[90][A2][91][A3][A4][96][9F][9A][96]" # Освеж.[90]растение
   Type: 48
 129:
   Action: 151
@@ -3405,7 +3405,7 @@
   Help Text Pointer: data_04.l_0xc55f36
   Misc Flags:
   - paula can use
-  Name: "[79][91][C0].[90][9D][96][9F][A4][A0][A9][9C][91]" # Защ.[90]ленточка
+  Name: "[79][91][C0].[90][92][91][9F][A4][9A][9C]" # Защ.[90]бантик
   Type: 28
 219:
   Action: 240
@@ -3418,7 +3418,7 @@
   Help Text Pointer: data_04.l_0xc55f5d
   Misc Flags:
   - paula can use
-  Name: "[7D][96][9F][A4][91]-[A4][91][9D][9A][A3][9E][91][9F]" # Лента-талисман
+  Name: "[72][91][9F][A4][9A][9C]-[A4][91][9D][9A][A3][9E][91][9F]" # Бантик-талисман
   Type: 28
 220:
   Action: 240
@@ -3431,7 +3431,7 @@
   Help Text Pointer: data_04.l_0xc55f84
   Misc Flags:
   - paula can use
-  Name: "[7D][96][9F][A4][91][90][83][91][A4][A5][A2][9F][91]" # Лента[90]Сатурна
+  Name: "[72][91][9F][A4][9A][9C][90][83][91][A4][A5][A2][9F][91]" # Бантик[90]Сатурна
   Type: 28
 221:
   Action: 240

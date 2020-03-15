@@ -329,13 +329,13 @@ l_0xc9ce2c:
 
 l_0xc9ce4d:
 	/*
-	"[06 DE 00 {e(data_23.l_0xc685cb)}][19 10 01]{rtoarg}@[1C 02 00] открывает подарок." next
-	"@Внутри находится Освяжающее растение." next
-	"[1D 03 FF][1B 02 {e(data_23.l_0xc685bb)}]{sound(116)}[1D 00 FF 80][19 10 01]{rtoarg}@[1C 02 00] забирает его.{wait}{set(flag 222)}" eob
+	"[06 DE 00 {e(data_23.l_0xc685cb)}][19 10 01]{rtoarg}@[1C 02 00] открыл{call(data_gender.l_gendersuffix)} подарок." next
+	"@Внутри находится Освежающее растение." next
+	"[1D 03 FF][1B 02 {e(data_23.l_0xc685bb)}]{sound(116)}[1D 00 FF 80][19 10 01]{rtoarg}@[1C 02 00] забрал{call(data_gender.l_gendersuffix)} его.{wait}{set(flag 222)}" eob
 	*/
-	"[06 DE 00 {e(data_23.l_0xc685cb)}][19 10 01]{rtoarg}@[1C 02 00] [A0][A4][9C][A2][C2][93][91][96][A4] [A1][A0][95][91][A2][A0][9C]." next
-	"@[73][9F][A5][A4][A2][9A] [9F][91][A7][A0][95][9A][A4][A3][C6] [80][A3][93][C6][98][91][C5][C0][96][96] [A2][91][A3][A4][96][9F][9A][96]." next
-	"[1D 03 FF][1B 02 {e(data_23.l_0xc685bb)}]{sound(116)}[1D 00 FF 80][19 10 01]{rtoarg}@[1C 02 00] [99][91][92][9A][A2][91][96][A4] [96][94][A0].{wait}{set(flag 222)}" eob
+	"[06 DE 00 {e(data_23.l_0xc685cb)}][19 10 01]{rtoarg}@[1C 02 00] [A0][A4][9C][A2][C2][9D]{call(data_gender.l_gendersuffix)} [A1][A0][95][91][A2][A0][9C]." next
+	"@[73][9F][A5][A4][A2][9A] [9F][91][A7][A0][95][9A][A4][A3][C6] [80][A3][93][96][98][91][C5][C0][96][96] [A2][91][A3][A4][96][9F][9A][96]." next
+	"[1D 03 FF][1B 02 {e(data_23.l_0xc685bb)}]{sound(116)}[1D 00 FF 80][19 10 01]{rtoarg}@[1C 02 00] [99][91][92][A2][91][9D]{call(data_gender.l_gendersuffix)} [96][94][A0].{wait}{set(flag 222)}" eob
 
 l_0xc9ce9b:
 	/*

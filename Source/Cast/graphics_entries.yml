@@ -1,15 +1,15 @@
 0: # Пики Минч
   begin: 0
   misc: false
-  size: 4
+  size: 3
 1: # Лардна Минч
-  begin: 4
+  begin: 3
   misc: false
   size: 4
 2: # Алойзиус Минч
-  begin: 8
+  begin: 7
   misc: false
-  size: 4
+  size: 5
 3: # Порки Минч
   begin: 12
   misc: false
@@ -29,15 +29,15 @@
 7: # Акулы
   begin: 27 # 26
   misc: false
-  size: 3
-8: # Б. Х. Пиркл
-  begin: 30 # 29
+  size: 2
+8: # Л. Г. Пиркл
+  begin: 29
   misc: false
   size: 3
 9: # Капитан Стронг
-  begin: 33 # 32
+  begin: 32
   misc: false
-  size: 4
+  size: 5
 10: # Полиция Онетта
   begin: 37 # 36
   misc: false
@@ -53,125 +53,125 @@
 13: # Эпл Кид
   begin: 52 # 51
   misc: false
-  size: 3
+  size: 2
 14: # Мышь (неиспользуемое)
-  begin: 55 # 54
+  begin: 54
   misc: false
   size: 2
 15: # Орэнж Кид
-  begin: 57 # 56
+  begin: 56
   misc: false
   size: 3
 16: # Мр. Эвердред
-  begin: 60 # 59
+  begin: 59
   misc: false
   size: 4
 17: # Беглая Пятёрка
-  begin: 64 # 63
+  begin: 63
   misc: false
   size: 5 # 4
 18: # Счастливые Счастьеисты
-  begin: 69 # 67
+  begin: 68
   misc: false
-  size: 8
+  size: 7
 19: # Карпэйнтер
-  begin: 77 # 72
-  misc: false
-  size: 3
-20: # Обезьяна-Пузырь
-  begin: 80 # 75
+  begin: 75
   misc: false
   size: 4
-21: # Тони
-  begin: 84 # 79
-  misc: false
-  size: 2
-22: # Максвелл
-  begin: 86 # 81
+20: # Обезьяна-Пузырь
+  begin: 79
   misc: false
   size: 3
+21: # Тони
+  begin: 82
+  misc: false
+  size: 2
+22: # Гаусс
+  begin: 84 # 81
+  misc: false
+  size: 2
 23: # Тесси
-  begin: 89 # 84
+  begin: 86 # 84
   misc: false
   size: 2
 24: # Клуб наблюдателей за Тесси
-  begin: 91 # 86
+  begin: 88
   misc: false
   size: 6
 25: # Брикрод
-  begin: 97 # 92
+  begin: 94
   misc: false
   size: 3
 26: # Др. Андонатс
-  begin: 100 # 95
+  begin: 97
   misc: false
   size: 4
 27: # Мр. Сатурн (неиспользуемое)
-  begin: 104 # 99
+  begin: 101
   misc: false
   size: 3
 28: # Мастер Бэлч
-  begin: 107 # 102
+  begin: 104
   misc: false
   size: 4
 29: # Джордж Монтегю
-  begin: 111 # 106
+  begin: 108
   misc: false
   size: 5
 30: # Герардо Монтегю
-  begin: 116 # 111
+  begin: 113
   misc: false
   size: 5
 31: # Тала Рама
-  begin: 121 # 116
+  begin: 118
   misc: false
-  size: 4
+  size: 3
 32: # Гельдегардэ Монотоли
-  begin: 125 # 120
+  begin: 121
   misc: false
   size: 6
 33: # Венера
-  begin: 131 # 126
+  begin: 127
   misc: false
   size: 2
 34: # Звёздный Мастер
-  begin: 133 # 128
+  begin: 129
   misc: false
-  size: 4
+  size: 3
 35: # (Пробел)
-  begin: 137 # 132
+  begin: 132
   misc: false
   size: 6
 36: # Человек-Данж
-  begin: 143 # 138
+  begin: 138
   misc: false
   size: 4
 37: # Благородный воин
-  begin: 147 # 142
+  begin: 142
   misc: false
   size: 4
 38: # Племя Тенда
-  begin: 151 # 146
+  begin: 146
   misc: false
-  size: 5
+  size: 4
 39: # Летающие люди
-  begin: 156 # 151
+  begin: 150
   misc: false
   size: 3
 40: # Папа
-  begin: 159 # 154
+  begin: 153
   misc: false
-  size: 2 # 1
+  size: 2
 41: # Трэйси
-  begin: 161 # 155
+  begin: 155
   misc: false
   size: 2
 42: # (Символ алмаза)
-  begin: 163 # 157
+  begin: 157
   misc: false
   size: 1
 43: # Мама
-  begin: 164 # 158
+  begin: 158
   misc: false
   size: 2
 44: # (РОЛИ)

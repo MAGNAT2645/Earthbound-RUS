@@ -15,9 +15,9 @@ ROM[0xC1F208] = ASMLoadAddress0E(CopyToWhere)
 // Copy horizontal alignment
 ROM[0xC1F0DC] = LDX_i(0x0005)
 // Delete horizontal alignment
-ROM[0xC1F117] = LDX_i(0x000C)
+ROM[0xC1F117] = LDX_i(0x000D)
 // Set Up horizontal alignment
-ROM[0xC1F135] = LDX_i(0x0012)
+ROM[0xC1F135] = LDX_i(0x0013)
 
 Continue:
 	"[7A][94][A2][91][A4][C3][00]"	// "Играть[00]"
