@@ -8,7 +8,7 @@
   Width: 30 #19
   X Offset: 1 #12
   Y Offset: 1
-2:
+2: # Окно инвентаря
   Height: 16
   Width: 24
   X Offset: 7
@@ -18,7 +18,7 @@
   Width: 7
   X Offset: 1
   Y Offset: 1
-4: # Описание ПСИ (Цена и цели)
+4: # Описание ПСИ (Затратность ОП и цели)
   Height: 6
   Width: 11
   X Offset: 20
@@ -53,17 +53,17 @@
   Width: 8
   X Offset: 1
   Y Offset: 8 # 10
-11:
+11: # ???
   Height: 4
   Width: 11
   X Offset: 1
   Y Offset: 15
-12:
+12: # Магазин/Список состояний в ATM Debug Menu
   Height: 16
   Width: 19
   X Offset: 12
   Y Offset: 1
-13:
+13: # ???
   Height: 16
   Width: 24
   X Offset: 7
@@ -78,12 +78,12 @@
   Width: 30 #24
   X Offset: 1
   Y Offset: 1
-16: # Окно ПСИ (Атака/Лечение/Вспом.) В бою
+16: # Окно ПСИ (Атака/Лечение/Вспом.) в бою
   Height: 8
   Width: 8
   X Offset: 1 #4
   Y Offset: 9 #1
-17:
+17: # Отображаемое название ПСИ при её выборе в бою
   Height: 4
   Width: 12
   X Offset: 12
@@ -93,7 +93,7 @@
   Width: 16
   X Offset: 1
   Y Offset: 1
-19:
+19: # Выбор сохранения (3 файла) после заставки
   Height: 8
   Width: 30
   X Offset: 1
@@ -103,122 +103,122 @@
   Width: 28
   X Offset: 2
   Y Offset: 9
-21:
+21: # Копирование сохранения (доступны 2 слота)
   Height: 8
   Width: 12
   X Offset: 10
   Y Offset: 16
-22:
+22: # Копирование сохранения (доступен 1 слот)
   Height: 6
   Width: 12
   X Offset: 10
   Y Offset: 16
-23:
+23: # Подтверждение удаления/стирания сохранения
   Height: 10
   Width: 21
   X Offset: 6
   Y Offset: 17
-24:
+24: # Выбор скорости текста
   Height: 10
   Width: 16
   X Offset: 3
   Y Offset: 14
-25:
+25: # Выбор режима звука (Моно/Стерео)
   Height: 8
   Width: 18
   X Offset: 8
   Y Offset: 15
-26:
+26: # Ввод имени персонажа (при выдаче имён)
   Height: 4
   Width: 8
   X Offset: 5
   Y Offset: 4
-27:
+27: # Сообщения "Пожалуйста, назовите его.", "Её тоже." и т.п.
   Height: 4
   Width: 17
   X Offset: 13
   Y Offset: 4
-28:
+28: # Большое окно с "клавиатурой"
   Height: 16
   Width: 30
   X Offset: 1
   Y Offset: 9
-29:
+29: # Подтверждение имени Несса
   Height: 4
   Width: 7
   X Offset: 7
   Y Offset: 3
-30:
+30: # Подтверждение имени Полы
   Height: 4
   Width: 7
   X Offset: 7
   Y Offset: 7
-31:
+31: # Подтверждение имени Джеффа
   Height: 4
   Width: 7
   X Offset: 7
   Y Offset: 11
-32:
+32: # Подтверждение имени Пу
   Height: 4
   Width: 7
   X Offset: 7
   Y Offset: 15
-33:
+33: # Подтверждение имени питомца
   Height: 4
   Width: 8
   X Offset: 20
   Y Offset: 3
-34:
+34: # Подтверждение названия любимой еды
   Height: 6
   Width: 13
   X Offset: 15
   Y Offset: 7
-35:
+35: # Подтверждение названия любимой вещи
   Height: 6
   Width: 13
   X Offset: 15
   Y Offset: 13
-36:
+36: # Подтверждение "Вы уверены?" (после выдачи имён)
   Height: 4
   Width: 24
   X Offset: 4
   Y Offset: 21
-37:
+37: # Выбор действий Целителя/Выбор размера пиццы у Мач Пицца (достаточно пространства для 3-х пунктов меню)
   Height: 8
   Width: 13
   X Offset: 18
   Y Offset: 6
-38:
+38: # ???
   Height: 4
   Width: 12
   X Offset: 12
   Y Offset: 1
-39:
+39: # ???
   Height: 6
   Width: 26
   X Offset: 3
   Y Offset: 3
-40:
+40: # Вспомогательное окошко "Кто?", "Что?", "Кому?", "Где?" и т.п.
   Height: 4
   Width: 7
   X Offset: 1
   Y Offset: 1
-41:
+41: # Горизонтальное окно с выбором персонажа (2 пункта) из текущей пати
   Height: 4
   Width: 15
   X Offset: 16
   Y Offset: 8
-42:
+42: # Горизонтальное окно с выбором персонажа (3 пункта) из текущей пати
   Height: 4
   Width: 21
   X Offset: 10
   Y Offset: 8
-43:
+43: # Горизонтальное окно с выбором персонажа (4 пункта) из текущей пати
   Height: 4
   Width: 27
   X Offset: 4
   Y Offset: 8
-44:
+44: # Передача предмета другому персонажу
   Height: 16
   Width: 24
   X Offset: 8
@@ -243,17 +243,17 @@
   Width: 30 #24
   X Offset: 1
   Y Offset: 1
-49:
+49: # Выбор врага (отображает его название) в бою
   Height: 4
   Width: 20
   X Offset: 10
   Y Offset: 4
-50: # Окно с выбором стиля (Обычная начинка, Клубничная и т.д.)
+50: # Окно с выбором стиля окон (Обычная начинка, Клубничная и т.д.)
   Height: 16
   Width: 15
   X Offset: 14
   Y Offset: 11
-51:
+51: # Горизонтальное окно с выбором персонажа (1 пункт) из текущей пати. Обычно не встречается, используется только в Debug Menu
   Height: 4
   Width: 9
   X Offset: 22
