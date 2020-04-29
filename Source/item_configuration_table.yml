@@ -1354,7 +1354,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "Варёное[90]Яйцо"
+  Name: "Варёное[90]яйцо"
   Type: 32
 92:
   Action: 249
@@ -3418,7 +3418,7 @@
   Help Text Pointer: data_04.l_0xc55f5d
   Misc Flags:
   - paula can use
-  Name: "Бантик-талисман"
+  Name: "Бантик-талисм."
   Type: 28
 220:
   Action: 240
@@ -3837,7 +3837,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "Вялен.[90]мясо"
+  Name: "Вяленое[90]мясо"
   Type: 32
 245:
   Action: 249

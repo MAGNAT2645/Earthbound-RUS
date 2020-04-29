@@ -555,10 +555,10 @@ l_0xc9ac4d:
 
 l_0xc9ac6f:
 	/*
-	"{sound(111)}{pause(40)}{window_open(1)}{title(1, Unknown)}@А, нет, я внутри." next
+	"{sound(111)}{pause(40)}{window_open(1)}{title(1, Unknown)}@А, нет, я внутри!" next
 	"@Не пытайтесь войти... особенно, если вам не нужно в ванну!{wait}{window_closeall}" eob
 	*/
-	"{sound(111)}{pause(40)}{window_open(1)}{title(1, Unknown)}@[71], [9F][96][A4], [C6] [93][9F][A5][A4][A2][9A]." next
+	"{sound(111)}{pause(40)}{window_open(1)}{title(1, Unknown)}@[71], [9F][96][A4], [C6] [93][9F][A5][A4][A2][9A]!" next
 	"@[7F][96] [A1][C2][A4][91][9B][A4][96][A3][C3] [93][A0][9B][A4][9A]... [A0][A3][A0][92][96][9F][9F][A0], [96][A3][9D][9A] [93][91][9E] [9F][96] [9F][A5][98][9F][A0] [93] [93][91][9F][9F][A5]!{wait}{window_closeall}" eob
 
 l_0xc9acae:
