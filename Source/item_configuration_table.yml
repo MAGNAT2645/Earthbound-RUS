@@ -1013,7 +1013,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "Алмазн.[90]браслет"
+  Name: "Алмаз.[90]браслет"
   Type: 24
 70:
   Action: 240
@@ -1286,7 +1286,7 @@
   Help Text Pointer: data_03.l_0xc540e5
   Misc Flags:
   - poo can use
-  Name: "Диадем.[90]Королей"
+  Name: "Диад.[90]Королей"
   Type: 28
 88:
   Action: 249
@@ -2852,7 +2852,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "Подписанн.[90]банан"
+  Name: "Подписан.[90]банан"
   Type: 59
 184:
   Action: 1
@@ -2868,7 +2868,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "Стёрка[90]каранд."
+  Name: "Ластик"
   Type: 59
 185:
   Action: 270
@@ -3259,7 +3259,7 @@
   - cannot be given away
   - cannot be stored with escargo express
   - poo can use
-  Name: "Крошечн.[90]рубин"
+  Name: "Крошеч.[90]рубин"
   Type: 59
 209:
   Action: 283
@@ -3392,7 +3392,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "Алмазн.[90]браслет"
+  Name: "Алмаз.[90]браслет"
   Type: 24
 218:
   Action: 240
