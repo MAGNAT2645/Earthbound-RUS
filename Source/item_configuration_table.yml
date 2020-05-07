@@ -2093,7 +2093,7 @@
   Help Text Pointer: data_04.l_0xc54bb0
   Misc Flags:
   - jeff can use
-  Name: "Голодн.[90]жизнекрад"
+  Name: "Голод.[90]жизнекрад"
   Type: 52
 137:
   Action: 179
@@ -2109,7 +2109,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "Истребл.[90]средство"
+  Name: "Истреб.[90]средство"
   Type: 52
 138:
   Action: 169
@@ -2524,7 +2524,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "Знак <Продаётся!>"
+  Name: "Знак <Продам!>"
   Type: 56
 164:
   Action: 192
