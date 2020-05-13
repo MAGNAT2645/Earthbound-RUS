@@ -627,9 +627,8 @@ l_0xc54842:
 	call(data_05.l_0xc56d63) end
 
 l_0xc54852:
-//	" <Сахарный пакетик>" next
 	newline
-	" <[83][91][A7][91][A2][9F][C2][9B] [A1][91][9C][96][A4][9A][9C]>" next
+	" <1C 05 77>" next
 	call(data_05.l_0xc56d63) end
 
 l_0xc54862:

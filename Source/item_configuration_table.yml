@@ -24,7 +24,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "М.[90]Франклина"
+  Name: "Мед.[90]Франклина"
   Type: 0
 2:
   Action: 1
@@ -1106,7 +1106,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "Шляпа[90]Холмс"
+  Name: "Шляпа[90]Холмса"
   Type: 28
 76:
   Action: 240
@@ -1829,7 +1829,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "Сахарн.[90]пакетик"
+  Name: "Пакетик[90]сахара"
   Type: 40
 120:
   Action: 249
@@ -2135,7 +2135,7 @@
   Help Text Pointer: data_04.l_0xc54c6d
   Misc Flags:
   - jeff can use
-  Name: "Раздатч.[90]йогурта"
+  Name: "Раздатч.[90]тофу"
   Type: 52
 140:
   Action: 186
@@ -2572,7 +2572,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "Королевск.[90]банан"
+  Name: "Королев.[90]банан"
   Type: 56
 167:
   Action: 288
@@ -2950,7 +2950,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "Клубн.[90]тофу"
+  Name: "Клубнич.[90]тофу"
   Type: 32
 190:
   Action: 249
@@ -2984,7 +2984,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "Хлебная[90]палочка"
+  Name: "Энерг.[90]батончик"
   Type: 32
 192:
   Action: 1
@@ -3096,7 +3096,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "Джелато[90]дэ[90]курорт"
+  Name: "Курорт.[90]Джелато"
   Type: 32
 199:
   Action: 268
@@ -3178,7 +3178,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "Видео[90]релаксант"
+  Name: "Видео-наркотик"
   Type: 56
 204:
   Action: 281
@@ -3718,7 +3718,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "Фасолевый[90]крокет"
+  Name: "Фасолев.[90]крокет"
   Type: 32
 238:
   Action: 249
