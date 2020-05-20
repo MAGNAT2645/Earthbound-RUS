@@ -542,8 +542,13 @@ l_0xc9abe5:
 	eob
 
 l_0xc9abe6:
-//	"{sound(111)}{pause(40)}{window_open(1)}{title(1, Unknown)}@Эй, я здесь!{pause(10)}  Иди и найди другую банку!{pause(20)}  Ха,{pause(15)} я просто шучу!{wait}{window_closetop}" eob		// ПРИМ.: "Another can" ?
-	"{sound(111)}{pause(40)}{window_open(1)}{title(1, Unknown)}@[B4][9B], [C6] [99][95][96][A3][C3]!{pause(10)}  [7A][95][9A] [9A] [9F][91][9B][95][9A] [95][A2][A5][94][A5][C5] [92][91][9F][9C][A5]!{pause(20)}  [87][91],{pause(15)} [C6] [A1][A2][A0][A3][A4][A0] [AA][A5][A9][A5]!{wait}{window_closetop}" eob
+	/*
+	"@Эй, занято!{pause(10)}  Найди себе другую камеру!{pause(20)}" linebreak
+	"  Ха,{pause(15)} я просто шучу!{wait}{window_closetop}" eob
+	*/
+	"{sound(111)}{pause(40)}{window_open(1)}{title(1, Unknown)}"
+	"@[B4][9B], [99][91][9F][C6][A4][A0]!{pause(10)}  [7F][91][9B][95][9A] [A3][96][92][96] [95][A2][A5][94][A5][C5] [9C][91][9E][96][A2][A5]!{pause(20)}" linebreak
+	"  [87][91],{pause(15)} [C6] [A1][A2][A0][A3][A4][A0] [AA][A5][A9][A5]!{wait}{window_closetop}" eob
 
 l_0xc9ac22:
 //	"{sound(111)}{pause(40)}{window_open(1)}{title(1, Unknown)}@Это тюрьма!{pause(20)}  У вас, ребята, нет права здесь находиться.{wait}{window_closetop}" eob
@@ -556,10 +561,10 @@ l_0xc9ac4d:
 l_0xc9ac6f:
 	/*
 	"{sound(111)}{pause(40)}{window_open(1)}{title(1, Unknown)}@А, нет, я внутри!" next
-	"@Не пытайтесь войти... особенно, если вам не нужно в ванну!{wait}{window_closeall}" eob
+	"@Не пытайтесь войти... особенно, если вам не нужно в туалет!{wait}{window_closeall}" eob
 	*/
 	"{sound(111)}{pause(40)}{window_open(1)}{title(1, Unknown)}@[71], [9F][96][A4], [C6] [93][9F][A5][A4][A2][9A]!" next
-	"@[7F][96] [A1][C2][A4][91][9B][A4][96][A3][C3] [93][A0][9B][A4][9A]... [A0][A3][A0][92][96][9F][9F][A0], [96][A3][9D][9A] [93][91][9E] [9F][96] [9F][A5][98][9F][A0] [93] [93][91][9F][9F][A5]!{wait}{window_closeall}" eob
+	"@[7F][96] [A1][C2][A4][91][9B][A4][96][A3][C3] [93][A0][9B][A4][9A]... [A0][A3][A0][92][96][9F][9F][A0], [96][A3][9D][9A] [93][91][9E] [9F][96] [9F][A5][98][9F][A0] [93] [A4][A5][91][9D][96][A4]!{wait}{window_closeall}" eob
 
 l_0xc9acae:
 	/*
