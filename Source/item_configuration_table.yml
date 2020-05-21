@@ -1138,7 +1138,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "Строит.[90]каска"
+  Name: "Каска"
   Type: 28
 78:
   Action: 240
@@ -1981,7 +1981,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "Освеж.[90]растение"
+  Name: "Освеж.[90]трава"
   Type: 48
 129:
   Action: 151
@@ -1998,7 +1998,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "Тайное[90]растение"
+  Name: "Тайная[90]трава"
   Type: 48
 130:
   Action: 152
@@ -2656,7 +2656,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "Ключ[90]от[90]кабины"
+  Name: "Ключ[90]от[90]камеры"
   Type: 59
 172:
   Action: 1

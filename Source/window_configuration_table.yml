@@ -10,7 +10,7 @@
   Y Offset: 1
 2: # Окно инвентаря
   Height: 16
-  Width: 24
+  Width: 25 #24
   X Offset: 7
   Y Offset: 1
 3: # Окно Исп./Дать/Брос./Помщ.

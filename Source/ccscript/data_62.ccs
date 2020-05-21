@@ -120,9 +120,13 @@ l_0xef6d71:
 	"  [92][C2][9D]{target_gender}{call(RUS_ref.l_gendersuffix)} [A1][A0][92][96][98][95]{target_gender}{call(RUS_ref.l_gendersuffix7)}!{sound(33)}" eob
 
 l_0xef6d83:
-//	"@{target} остановил{target_gender}{call(RUS_ref.l_gendersuffix2)}!{sound(33)}" eob
+	/*
+	"@{target}" linebreak
+	"  остановил{target_gender}{call(RUS_ref.l_gendersuffix2)}!{sound(33)}" eob
+	*/
 	newline
-	"@{target} [A0][A3][A4][91][9F][A0][93][9A][9D]{target_gender}{call(RUS_ref.l_gendersuffix2)}!{sound(33)}" eob
+	"@{target}" linebreak
+	"  [A0][A3][A4][91][9F][A0][93][9A][9D]{target_gender}{call(RUS_ref.l_gendersuffix2)}!{sound(33)}" eob
 
 l_0xef6d96:
 //	"@{target} успокоил{target_gender}{call(RUS_ref.l_gendersuffix2)}!{sound(33)}" eob
