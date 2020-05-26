@@ -576,7 +576,7 @@
   Help Text Pointer: data_03.l_0xc53bb6
   Misc Flags:
   - jeff can use
-  Name: "Почт.[90]пистол."
+  Name: "Самодел.[90]пист."
   Type: 17
 41:
   Action: 239
@@ -2704,7 +2704,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: "Бумага[90]от[90]зомби"
+  Name: "Липучка[90]от[90]зомби"
   Type: 58
 175:
   Action: 199

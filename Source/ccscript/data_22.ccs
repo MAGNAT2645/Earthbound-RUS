@@ -696,12 +696,14 @@ l_0xc680f0:
 	eob
 
 l_0xc680f2:
-//	"{window_closeall}[06 30 01 {e(l_0xc68139)}][1F 1E 10 00 06][1F 15 28 00 2F 00 01][1F 11 07][1F EB 07 06][1F 61][1F 1F 28 00 06][1F EC 07 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@[1C 01 03] присоединился к тебе.[03]{window_closeall}{set(flag 19)}" eob
-	"{window_closeall}[06 30 01 {e(l_0xc68139)}][1F 1E 10 00 06][1F 15 28 00 2F 00 01][1F 11 07][1F EB 07 06][1F 61][1F 1F 28 00 06][1F EC 07 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@[1C 01 03] [A1][A2][9A][A3][A0][96][95][9A][9F][9A][9D][A3][C6] [9C] [A4][96][92][96].[03]{window_closeall}{set(flag 19)}" eob
+//	"@[1C 01 03] присоединился к тебе.[03]{window_closeall}{set(flag 19)}" eob
+	"{window_closeall}[06 30 01 {e(l_0xc68139)}][1F 1E 10 00 06][1F 15 28 00 2F 00 01][1F 11 07][1F EB 07 06][1F 61][1F 1F 28 00 06][1F EC 07 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}"
+	"@[1C 01 03] [A1][A2][9A][A3][A0][96][95][9A][9F][9A][9D][A3][C6] [9C] [A4][96][92][96].[03]{window_closeall}{set(flag 19)}" eob
 
 l_0xc68139:
-//	"[1F 1E 12 00 06][1F 15 28 00 2F 00 01][1F 11 07][1F EB 07 06][1F 61][1F 1F 28 00 06][1F EC 07 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@[1C 01 03] присоединился к тебе.[03]{window_closeall}" eob
-	"[1F 1E 12 00 06][1F 15 28 00 2F 00 01][1F 11 07][1F EB 07 06][1F 61][1F 1F 28 00 06][1F EC 07 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@[1C 01 03] [A1][A2][9A][A3][A0][96][95][9A][9F][9A][9D][A3][C6] [9C] [A4][96][92][96].[03]{window_closeall}" eob
+//	"@[1C 01 03] присоединился к тебе.[03]{window_closeall}" eob
+	"[1F 1E 12 00 06][1F 15 28 00 2F 00 01][1F 11 07][1F EB 07 06][1F 61][1F 1F 28 00 06][1F EC 07 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}"
+	"@[1C 01 03] [A1][A2][9A][A3][A0][96][95][9A][9F][9A][9D][A3][C6] [9C] [A4][96][92][96].[03]{window_closeall}" eob
 
 l_0xc68174:
 //	"{window_closeall}[1F 11 05][1F EB 05 06][06 2D 01 {e(l_0xc681b5)}][1F F1 13 00 2F 00][1F 61][1F 1E 13 00 06][1F EC 05 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@(Порки присоединился к тебе.)[03]{window_closeall}" eob
