@@ -223,7 +223,7 @@
   Money: 172
   Movement pattern: 29
   Music: 102
-  Name: "Плохой Буйвол"
+  Name: "Плохой Бизон"
   Offense: 64
   Overworld Sprite: 311
   PP: 0
@@ -5848,7 +5848,7 @@
   Fire vulnerability: 70%
   Flash vulnerability: 70%
   Freeze vulnerability: 70%
-  Gender: neutral
+  Gender: female
   Guts: 7
   HP: 301
   Hypnosis/Brainshock vulnerability: 10%
@@ -5863,7 +5863,7 @@
   Money: 255
   Movement pattern: 27
   Music: 98
-  Name: "Абстрактное Искусство"
+  Name: "Абстрактная Картина"
   Offense: 67
   Overworld Sprite: 300
   PP: 60
@@ -7211,7 +7211,7 @@
   Fire vulnerability: 40%
   Flash vulnerability: 40%
   Freeze vulnerability: 40%
-  Gender: male
+  Gender: female
   Guts: 5
   HP: 431
   Hypnosis/Brainshock vulnerability: 10%
@@ -7226,7 +7226,7 @@
   Money: 349
   Movement pattern: 27
   Music: 98
-  Name: "Робо-насос"
+  Name: "Бензоколонка"
   Offense: 70
   Overworld Sprite: 342
   PP: 0
@@ -9702,7 +9702,7 @@
   Fire vulnerability: 40%
   Flash vulnerability: 40%
   Freeze vulnerability: 40%
-  Gender: male
+  Gender: female
   Guts: 5
   HP: 431
   Hypnosis/Brainshock vulnerability: 10%
@@ -9717,7 +9717,7 @@
   Money: 349
   Movement pattern: 27
   Music: 98
-  Name: "Робо-насос"
+  Name: "Бензоколонка"
   Offense: 70
   Overworld Sprite: 342
   PP: 0
