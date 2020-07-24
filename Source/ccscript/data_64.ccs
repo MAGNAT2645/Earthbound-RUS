@@ -570,11 +570,11 @@ l_0xef8aa3:
 l_0xef8ac2:
 	/*
 	"{sound(25)}@{user} клюнул{user_gender}{call(RUS_ref.l_gendersuffix)}" linebreak
-	"  вам в глаза![03]" eob
+	"  вас в глаза![03]" eob
 	*/
 	newline
 	"{sound(25)}@{user} [9C][9D][C5][9F][A5][9D]{user_gender}{call(RUS_ref.l_gendersuffix)}" linebreak
-	"  [93][91][9E] [93] [94][9D][91][99][91]![03]" eob
+	"  [93][91][A3] [93] [94][9D][91][99][91]![03]" eob
 
 l_0xef8add:
 //	"{sound(25)}@{user} протаранил{user_gender}{call(RUS_ref.l_gendersuffix)} и растоптал{user_gender}{call(RUS_ref.l_gendersuffix)} вас![03]" eob

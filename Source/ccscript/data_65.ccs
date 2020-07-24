@@ -208,14 +208,12 @@ l_0xef8dc1:
 
 l_0xef8dde:
 	/*
-	"@Внезапно," next
-	"@{user} испустил{user_gender}{call(RUS_ref.l_gendersuffix)}" linebreak
-	"  радугу цветов!{sound(65)}[1C 13 28 00]{pause(30)}{sound(65)}[1C 13 28 00]{pause(30)}{sound(65)}[1C 13 28 00]{pause(30)}" eob
+	"@Внезапно {user}" next
+	"  испустил{user_gender}{call(RUS_ref.l_gendersuffix)} радугу цветов!{sound(65)}[1C 13 28 00]{pause(30)}{sound(65)}[1C 13 28 00]{pause(30)}{sound(65)}[1C 13 28 00]{pause(30)}" eob
 	*/
 	newline
-	"@[73][9F][96][99][91][A1][9F][A0]," next
-	"@{user} [9A][A3][A1][A5][A3][A4][9A][9D]{user_gender}{call(RUS_ref.l_gendersuffix)}" linebreak
-	"  [A2][91][95][A5][94][A5] [A8][93][96][A4][A0][93]!{sound(65)}[1C 13 28 00]{pause(30)}{sound(65)}[1C 13 28 00]{pause(30)}{sound(65)}[1C 13 28 00]{pause(30)}" eob
+	"@[73][9F][96][99][91][A1][9F][A0] {user}" next
+	"  [9A][A3][A1][A5][A3][A4][9A][9D]{user_gender}{call(RUS_ref.l_gendersuffix)} [A2][91][95][A5][94][A5] [A8][93][96][A4][A0][93]!{sound(65)}[1C 13 28 00]{pause(30)}{sound(65)}[1C 13 28 00]{pause(30)}{sound(65)}[1C 13 28 00]{pause(30)}" eob
 
 l_0xef8e27:
 	/*

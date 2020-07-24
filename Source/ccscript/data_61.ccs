@@ -830,10 +830,10 @@ l_0xef6bbb:
 
 l_0xef6bd3:
 	/*
-	"@Внезапно, {target}" linebreak
+	"@Внезапно {target}" linebreak
 	"  не может двигаться!{sound(83)}[03]" eob
 	*/
 	newline
-	"@[73][9F][96][99][91][A1][9F][A0], {target}" linebreak
+	"@[73][9F][96][99][91][A1][9F][A0] {target}" linebreak
 	"  [9F][96] [9E][A0][98][96][A4] [95][93][9A][94][91][A4][C3][A3][C6]!{sound(83)}[03]" eob
 
