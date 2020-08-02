@@ -56,10 +56,11 @@ l_0xc7c3c2:
 
 l_0xc7c412:
 	/*
-	"{set(flag 4)}" call(l_0xc7c57d) "{music_resume}[06 BC 00 {e(l_0xc7c478)}]{window_open(1)}@[1C 02 01] увидел отца, держащего его.[03]{pause(60)}" linebreak
+	"@[1C 02 01] увидел себя на руках у отца.[03]{pause(60)}" linebreak
 	"@Поющий Камень персонажа [1C 02 01] записал мелодию Светящегося Коридора.{wait}{set(flag 188)}{window_closetop}" goto(l_0xc7c478)
 	*/
-	"{set(flag 4)}" call(l_0xc7c57d) "{music_resume}[06 BC 00 {e(l_0xc7c478)}]{window_open(1)}@[1C 02 01] [A5][93][9A][95][96][9D] [A0][A4][A8][91], [95][96][A2][98][91][C0][96][94][A0] [96][94][A0].[03]{pause(60)}" linebreak
+	"{set(flag 4)}" call(l_0xc7c57d) "{music_resume}[06 BC 00 {e(l_0xc7c478)}]{window_open(1)}"
+	"@[1C 02 01] [A5][93][9A][95][96][9D] [A3][96][92][C6] [9F][91] [A2][A5][9C][91][A7] [A5] [A0][A4][A8][91].[03]{pause(60)}" linebreak
 	"@[81][A0][C5][C0][9A][9B] [7C][91][9E][96][9F][C3] [A1][96][A2][A3][A0][9F][91][98][91] [1C 02 01] [99][91][A1][9A][A3][91][9D] [9E][96][9D][A0][95][9A][C5] [83][93][96][A4][C6][C0][96][94][A0][A3][C6] [7C][A0][A2][9A][95][A0][A2][91].{wait}{set(flag 188)}{window_closetop}" goto(l_0xc7c478)
 
 l_0xc7c478:

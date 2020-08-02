@@ -274,8 +274,13 @@ l_0xc9a336:
 	"@[B6] [9F][96] [99][9F][91][C5], [A0] [A9][97][9E] [A0][9F] [94][A0][93][A0][A2][9A][A4].{wait}{window_closeall}" eob
 
 l_0xc9a381:
-//	"[06 78 02 {e(data_57.l_0xc9b20e)}]{sound(111)}{pause(40)}{window_open(1)}{title(1, Unknown)}@К-{pause(5)}Кт-{pause(1)}Кто там?{pause(30)}  Здесь жутко.{pause(20)}  Что, почему ты не отвечаешь?{wait}{window_closetop}" eob
-	"[06 78 02 {e(data_57.l_0xc9b20e)}]{sound(111)}{pause(40)}{window_open(1)}{title(1, Unknown)}@[7C]-{pause(5)}[7C][A4]-{pause(1)}[7C][A4][A0] [A4][91][9E]?{pause(30)}  [79][95][96][A3][C3] [98][A5][A4][9C][A0].{pause(20)}  [89][A4][A0], [A1][A0][A9][96][9E][A5] [A4][C2] [9F][96] [A0][A4][93][96][A9][91][96][AA][C3]?{wait}{window_closetop}" eob
+	/*
+	"@К-{pause(5)}кт-{pause(1)}кто там?{pause(30)}  Здесь жутко.{pause(20)}  Что?" linebreak
+	"  Почему ты не отвечаешь?{wait}{window_closetop}" eob
+	*/
+	"[06 78 02 {e(data_57.l_0xc9b20e)}]{sound(111)}{pause(40)}{window_open(1)}{title(1, Unknown)}"
+	"@[7C]-{pause(5)}[9C][A4]-{pause(1)}[9C][A4][A0] [A4][91][9E]?{pause(30)}  [79][95][96][A3][C3] [98][A5][A4][9C][A0].{pause(20)}  [89][A4][A0]?" linebreak
+	"  [81][A0][A9][96][9E][A5] [A4][C2] [9F][96] [A0][A4][93][96][A9][91][96][AA][C3]?{wait}{window_closetop}" eob
 
 l_0xc9a3c5:
 	/*
