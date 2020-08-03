@@ -109,6 +109,14 @@ l_gendersuffix9_male:
 l_gendersuffix9_female:
 	"[A0][9B]" eob // "ой"
 
+// ёл/ела/ело
+l_gendersuffix10:
+	"[09 03 {e(l_gendersuffix3_male)} {e(l_gendersuffix10_female)} {e(l_gendersuffix10_neutral)}]" goto(l_gendersuffix3_male)
+l_gendersuffix10_female:
+	"[96][9D][91]" eob // "ела"
+l_gendersuffix10_neutral:
+	"[96][9D][A0]" eob // "ело"
+
 l_gender:
 	"[09 03 {e(l_gender_male)} {e(l_gender_female)} {e(l_gender_male)}]" eob
 l_gender_male:

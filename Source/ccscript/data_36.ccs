@@ -238,9 +238,9 @@ l_0xc7de2f:
 	"{music(115)}{pause(60)}{wait}[1F 01 00]{sound(11)}" eob
 
 l_0xc7de3d:
-//	"@Щелчок!  Бииииииип...{wait}{sound(11)}" eob
+//	"@Щёлк!  Бииииииип...{wait}{sound(11)}" eob
 	newline
-	"@[B0][96][9D][A9][A0][9C]!  [72][9A][9A][9A][9A][9A][9A][9A][A1]...{wait}{sound(11)}" eob
+	"@[B0][97][9D][9C]!  [72][9A][9A][9A][9A][9A][9A][9A][A1]...{wait}{sound(11)}" eob
 
 l_0xc7de54:
 	call(l_0xc7de3d) "{window_closeall}{pause(10)}{music_resume}" eob

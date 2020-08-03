@@ -607,11 +607,11 @@ l_0xef7f7b:
 
 l_0xef7f9a:
 	/*
-	"{sound(25)}@{user} схватился" linebreak
+	"{sound(25)}@{user} пров{user_gender}{call(RUS_ref.l_gendersuffix10)} захват" linebreak
 	"  и использовал свой приём![03]" eob
 	*/
 	newline
-	"{sound(25)}@{user} [A3][A7][93][91][A4][9A][9D][A3][C6]" linebreak
+	"{sound(25)}@{user} [A1][A2][A0][93]{user_gender}{call(RUS_ref.l_gendersuffix10)} [99][91][A7][93][91][A4]" linebreak
 	"  [9A] [9A][A3][A1][A0][9D][C3][99][A0][93][91][9D] [A3][93][A0][9B] [A1][A2][9A][97][9E]![03]" eob
 
 l_0xef7fc3:

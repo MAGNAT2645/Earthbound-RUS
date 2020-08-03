@@ -137,11 +137,11 @@ l_0xef8226:
 
 l_0xef8239:
 	/*
-	"{sound(25)}@{user} сделал{user_gender}{call(RUS_ref.l_gendersuffix)}" linebreak
+	"{sound(25)}@{user} изобразил{user_gender}{call(RUS_ref.l_gendersuffix)}" linebreak
 	"  широкую улыбку на своём лице.[03]" eob
 	*/
 	newline
-	"{sound(25)}@{user} [A3][95][96][9D][91][9D]{user_gender}{call(RUS_ref.l_gendersuffix)}" linebreak
+	"{sound(25)}@{user} [9A][99][A0][92][A2][91][99][9A][9D]{user_gender}{call(RUS_ref.l_gendersuffix)}" linebreak
 	"  [AA][9A][A2][A0][9C][A5][C5] [A5][9D][C2][92][9C][A5] [9F][91] [A3][93][A0][97][9E] [9D][9A][A8][96].[03]" eob
 
 l_0xef825c:
@@ -551,11 +551,11 @@ l_0xef8a6f:
 
 l_0xef8a8c:
 	/*
-	"{sound(25)}@{user} вырвал{user_gender}{call(RUS_ref.l_gendersuffix2)}," linebreak
+	"{sound(25)}@{user} рванул{user_gender}{call(RUS_ref.l_gendersuffix)} вперёд," linebreak
 	"  размахивая руками![03]" eob
 	*/
 	newline
-	"{sound(25)}@{user} [93][C2][A2][93][91][9D]{user_gender}{call(RUS_ref.l_gendersuffix2)}," linebreak
+	"{sound(25)}@{user} [A2][93][91][9F][A5][9D]{user_gender}{call(RUS_ref.l_gendersuffix)} [93][A1][96][A2][97][95]," linebreak
 	"  [A2][91][99][9E][91][A7][9A][93][91][C6] [A2][A5][9C][91][9E][9A]![03]" eob
 
 l_0xef8aa3:

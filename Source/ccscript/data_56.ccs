@@ -296,15 +296,16 @@ l_0xc9a3c5:
 	"@[7E][9E][9E],{pause(15)} [C6] [9F][96] [9E][A0][94][A5] [92][A0][9D][C3][AA][96] [98][95][91][A4][C3]!" next
 	"  [72][A5][95][A5] [95][91][9D][C3][AA][96] [A3][9E][A0][A4][A2][96][A4][C3] [9F][A0][93][A0][A3][A4][9A], [A0][9F][9A] [A1][A0][93][96][A3][96][9D][96][96] [A4][96][92][C6].{wait}{window_closetop}" eob
 
-l_0xc9a432:
+l_0xc9a432: // НЕОРИГИНАЛ!
 	/*
-	"[06 78 02 {e(data_57.l_0xc9b20e)}]{sound(111)}{pause(40)}{window_open(1)}{title(1, Unknown)}@ОК,{pause(15)} викторина!{pause(30)}" linebreak
-	"@<Песня Биттлз,{pause(15)} Об-Ла-Ди, Об-Ла-ХХ.>" next	// XXXterday
+	"@ОК,{pause(15)} викторина!{pause(30)}" linebreak
+	"@<Песня Биттлз,{pause(15)} Об-Ла-Ди, Об-Ла-...>" next	// XXXterday
 	"@Можешь заполнить пробелы?" linebreak
 	"[19 02]Да" eob
 	*/
-	"[06 78 02 {e(data_57.l_0xc9b20e)}]{sound(111)}{pause(40)}{window_open(1)}{title(1, Unknown)}@[80][7C],{pause(15)} [93][9A][9C][A4][A0][A2][9A][9F][91]!{pause(30)}" linebreak
-	"@<[81][96][A3][9F][C6] [72][9A][A4][A4][9D][99],{pause(15)} [80][92]-[7D][91]-[75][9A], [80][92]-[7D][91]-[87][87].>" next
+	"[06 78 02 {e(data_57.l_0xc9b20e)}]{sound(111)}{pause(40)}{window_open(1)}{title(1, Unknown)}"
+	"@[80][7C],{pause(15)} [93][9A][9C][A4][A0][A2][9A][9F][91]!{pause(30)}" linebreak
+	"@<[81][96][A3][9F][C6] [72][9A][A4][A4][9D][99],{pause(15)} [80][92]-[7D][91]-[75][9A], [80][92]-[7D][91]-...>" next
 	"@[7E][A0][98][96][AA][C3] [99][91][A1][A0][9D][9F][9A][A4][C3] [A1][A2][A0][92][96][9D][C2]?" linebreak
 	"[19 02][75][91]" eob
 
@@ -338,8 +339,9 @@ l_0xc9a4e6:
 	"@...[72][9D][9A][9F], [A1][A0][A3][9E][A0][A4][A2][9A] [9F][91] [9E][96][9F][C6], [C6] [A2][91][99][94][A0][93][91][A2][9A][93][91][C5] [A3][91][9E] [A3] [A3][A0][92][A0][9B]!{wait}{window_closetop}" eob
 
 l_0xc9a56a:
-//	"{sound(111)}{pause(40)}{window_open(1)}{title(1, Unknown)}@Если вы ищете дом Венеры, то он за следующей дверью.{wait}{window_closetop}" eob
-	"{sound(111)}{pause(40)}{window_open(1)}{title(1, Unknown)}@[76][A3][9D][9A] [93][C2] [9A][C0][96][A4][96] [95][A0][9E] [73][96][9F][96][A2][C2], [A4][A0] [A0][9F] [99][91] [A3][9D][96][95][A5][C5][C0][96][9B] [95][93][96][A2][C3][C5].{wait}{window_closetop}" eob
+//	"@Если вы ищете дом Венеры, то он рядом.{wait}{window_closetop}" eob
+	"{sound(111)}{pause(40)}{window_open(1)}{title(1, Unknown)}"
+	"@[76][A3][9D][9A] [93][C2] [9A][C0][96][A4][96] [95][A0][9E] [73][96][9F][96][A2][C2], [A4][A0] [A0][9F] [A2][C6][95][A0][9E].{wait}{window_closetop}" eob
 
 l_0xc9a593:
 	/*
@@ -566,10 +568,10 @@ l_0xc9ac4d:
 l_0xc9ac6f:
 	/*
 	"{sound(111)}{pause(40)}{window_open(1)}{title(1, Unknown)}@А, нет, я внутри!" next
-	"@Не пытайтесь войти... особенно, если вам не нужно в туалет!{wait}{window_closeall}" eob
+	"@Не пытайтесь войти... особенно если вам не нужно в туалет!{wait}{window_closeall}" eob
 	*/
 	"{sound(111)}{pause(40)}{window_open(1)}{title(1, Unknown)}@[71], [9F][96][A4], [C6] [93][9F][A5][A4][A2][9A]!" next
-	"@[7F][96] [A1][C2][A4][91][9B][A4][96][A3][C3] [93][A0][9B][A4][9A]... [A0][A3][A0][92][96][9F][9F][A0], [96][A3][9D][9A] [93][91][9E] [9F][96] [9F][A5][98][9F][A0] [93] [A4][A5][91][9D][96][A4]!{wait}{window_closeall}" eob
+	"@[7F][96] [A1][C2][A4][91][9B][A4][96][A3][C3] [93][A0][9B][A4][9A]... [A0][A3][A0][92][96][9F][9F][A0] [96][A3][9D][9A] [93][91][9E] [9F][96] [9F][A5][98][9F][A0] [93] [A4][A5][91][9D][96][A4]!{wait}{window_closeall}" eob
 
 l_0xc9acae:
 	/*

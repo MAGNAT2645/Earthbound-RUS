@@ -37,12 +37,12 @@ l_0xef8b65:
 
 l_0xef8b89:
 	/*
-	"{sound(25)}@{user} размахнул{user_gender}{call(RUS_ref.l_gendersuffix2)}" linebreak
-	"  своим обручем.{sound(26)}[03]" eob
+	"{sound(25)}@{user}" linebreak
+	"  размахнул{user_gender}{call(RUS_ref.l_gendersuffix2)} своим обручем.{sound(26)}[03]" eob
 	*/
 	newline
-	"{sound(25)}@{user} [A2][91][99][9E][91][A7][9F][A5][9D]{user_gender}{call(RUS_ref.l_gendersuffix2)}" linebreak
-	"  [A3][93][A0][9A][9E] [A0][92][A2][A5][A9][96][9E].{sound(26)}[03]" eob
+	"{sound(25)}@{user}" linebreak
+	"  [A2][91][99][9E][91][A7][9F][A5][9D]{user_gender}{call(RUS_ref.l_gendersuffix2)} [A3][93][A0][9A][9E] [A0][92][A2][A5][A9][96][9E].{sound(26)}[03]" eob
 
 l_0xef8ba8:
 	/*

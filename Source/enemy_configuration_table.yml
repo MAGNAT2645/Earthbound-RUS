@@ -1727,7 +1727,7 @@
   Money: 896
   Movement pattern: 29
   Music: 102
-  Name: "Чомпозавр"
+  Name: "Чавкозавр"
   Offense: 139
   Overworld Sprite: 312
   PP: 320
@@ -2088,7 +2088,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 40%
   Freeze vulnerability: 100%
-  Gender: female
+  Gender: male
   Guts: 75
   HP: 307
   Hypnosis/Brainshock vulnerability: 0%
@@ -2103,7 +2103,7 @@
   Money: 703
   Movement pattern: 31
   Music: 96
-  Name: "Нагруженная Кость"
+  Name: "Кубик-жулик"
   Offense: 146
   Overworld Sprite: 433
   PP: 0
@@ -8260,7 +8260,7 @@
   Money: 896
   Movement pattern: 29
   Music: 102
-  Name: "Чомпозавр"
+  Name: "Чавкозавр"
   Offense: 139
   Overworld Sprite: 312
   PP: 320
@@ -9185,7 +9185,7 @@
   Fire vulnerability: 100%
   Flash vulnerability: 40%
   Freeze vulnerability: 100%
-  Gender: female
+  Gender: male
   Guts: 75
   HP: 307
   Hypnosis/Brainshock vulnerability: 0%
@@ -9200,7 +9200,7 @@
   Money: 703
   Movement pattern: 31
   Music: 96
-  Name: "Нагруженная Кость"
+  Name: "Кубик-жулик"
   Offense: 146
   Overworld Sprite: 433
   PP: 0
