@@ -573,20 +573,20 @@ l_0xc5f9dd:
 	"@Не позволяй комплиментам Мэра забивать свою голову..." next
 	"@Ну давай, толстячок![03]" call(data_23.l_0xc6844f) "[1B 03 {e(data_23.l_0xc683de)}]{window_open(1)}" newline
 	title(1, Cop)
-	"@Давай сделаем это снова когда-нибудь..." next
-	"@В следующий раз, я поборю тебя своей ядерной суплексной атакой!{wait}{set(flag 291)}{window_closeall}[1F F1 4B 00 EE 00][1F 61]{pause(30)}[1F F1 4C 00 EC 00][1F 61]{window_open(1)}" goto(l_0xc5fa72)
+	"@Давай как-нибудь повторим..." next
+	"@В следующий раз я поборю тебя своей ядерной суплексной атакой!{wait}{set(flag 291)}{window_closeall}[1F F1 4B 00 EE 00][1F 61]{pause(30)}[1F F1 4C 00 EC 00][1F 61]{window_open(1)}" goto(l_0xc5fa72)
 	*/
 	title(1, Cop)
 	"@[7F][96] [A1][A0][99][93][A0][9D][C6][9B] [9C][A0][9E][A1][9D][9A][9E][96][9F][A4][91][9E] [7E][C4][A2][91] [99][91][92][9A][93][91][A4][C3] [A3][93][A0][C5] [94][A0][9D][A0][93][A5]..." next
 	"@[7F][A5] [95][91][93][91][9B], [A4][A0][9D][A3][A4][C6][A9][A0][9C]![03]" call(data_23.l_0xc6844f) "[1B 03 {e(data_23.l_0xc683de)}]{window_open(1)}" newline
 	title(1, Cop)
-	"@[75][91][93][91][9B] [A3][95][96][9D][91][96][9E] [C4][A4][A0] [A3][9F][A0][93][91] [9C][A0][94][95][91]-[9F][9A][92][A5][95][C3]..." next
-	"@[73] [A3][9D][96][95][A5][C5][C0][9A][9B] [A2][91][99], [C6] [A1][A0][92][A0][A2][C5] [A4][96][92][C6] [A3][93][A0][96][9B] [C6][95][96][A2][9F][A0][9B] [A3][A5][A1][9D][96][9C][A3][9F][A0][9B] [91][A4][91][9C][A0][9B]!{wait}{set(flag 291)}{window_closeall}[1F F1 4B 00 EE 00][1F 61]{pause(30)}[1F F1 4C 00 EC 00][1F 61]{window_open(1)}" goto(l_0xc5fa72)
+	"@[75][91][93][91][9B] [9C][91][9C]-[9F][9A][92][A5][95][C3] [A1][A0][93][A4][A0][A2][9A][9E]..." next
+	"@[73] [A3][9D][96][95][A5][C5][C0][9A][9B] [A2][91][99] [C6] [A1][A0][92][A0][A2][C5] [A4][96][92][C6] [A3][93][A0][96][9B] [C6][95][96][A2][9F][A0][9B] [A3][A5][A1][9D][96][9C][A3][9F][A0][9B] [91][A4][91][9C][A0][9B]!{wait}{set(flag 291)}{window_closeall}[1F F1 4B 00 EE 00][1F 61]{pause(30)}[1F F1 4C 00 EC 00][1F 61]{window_open(1)}" goto(l_0xc5fa72)
 
 l_0xc5fa72: // MOTHER 2
 	/*
-	"@Давай!" linebreak
-	"  Я разорву тебя на части прямо здесь, прямо сейчас, детка![03]" call(data_23.l_0xc68456) "[1B 03 {e(data_23.l_0xc683de)}]{window_open(1)}" newline
+	"@Давай, детка!" linebreak
+	"  Я разорву тебя на части прямо здесь, прямо сейчас![03]" call(data_23.l_0xc68456) "[1B 03 {e(data_23.l_0xc683de)}]{window_open(1)}" newline
 	title(1, Cop)
 	"@Гррр... я проиграл...{wait}{set(flag 292)}{window_closeall}[1F F1 4C 00 EE 00][1F 61]{pause(30)}[1F F1 4D 00 ED 00][1F 61]{window_open(1)}"
 	title(1, Cop)
@@ -617,8 +617,8 @@ l_0xc5fa72: // MOTHER 2
 	"@Удачи!{wait}{window_closeall}[1F F2 4B 00 6B 02][1F 61]{set(flag 105)}{unset(flag 450)}{unset(flag 35)}{unset(flag 37)}{unset(flag 742)}" eob
 	*/
 	title(1, Cop)
-	"@[75][91][93][91][9B]!" linebreak
-	"  [B6] [A2][91][99][A0][A2][93][A5] [A4][96][92][C6] [9F][91] [A9][91][A3][A4][9A] [A1][A2][C6][9E][A0] [99][95][96][A3][C3], [A1][A2][C6][9E][A0] [A3][96][9B][A9][91][A3], [95][96][A4][9C][91]![03]" call(data_23.l_0xc68456) "[1B 03 {e(data_23.l_0xc683de)}]{window_open(1)}" newline
+	"@[75][91][93][91][9B], [95][96][A4][9C][91]!" linebreak
+	"  [B6] [A2][91][99][A0][A2][93][A5] [A4][96][92][C6] [9F][91] [A9][91][A3][A4][9A] [A1][A2][C6][9E][A0] [99][95][96][A3][C3], [A1][A2][C6][9E][A0] [A3][96][9B][A9][91][A3]![03]" call(data_23.l_0xc68456) "[1B 03 {e(data_23.l_0xc683de)}]{window_open(1)}" newline
 	title(1, Cop)
 	"@[74][A2][A2][A2]... [C6] [A1][A2][A0][9A][94][A2][91][9D]...{wait}{set(flag 292)}{window_closeall}[1F F1 4C 00 EE 00][1F 61]{pause(30)}[1F F1 4D 00 ED 00][1F 61]{window_open(1)}"
 	title(1, Cop)
