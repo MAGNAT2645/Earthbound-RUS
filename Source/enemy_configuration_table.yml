@@ -1680,7 +1680,7 @@
   Money: 745
   Movement pattern: 29
   Music: 104
-  Name: "Уэтнозавр"
+  Name: "Мокроносавр"
   Offense: 126
   Overworld Sprite: 298
   PP: 0
@@ -3043,7 +3043,7 @@
   Money: 17
   Movement pattern: 21
   Music: 98
-  Name: "Панк-Скейтбордист"
+  Name: "Панк-скейтбордист"
   Offense: 7
   Overworld Sprite: 247
   PP: 0
@@ -6333,7 +6333,7 @@
   Money: 18
   Movement pattern: 21
   Music: 96
-  Name: "Прыгучий Панк"
+  Name: "Пого-панк"
   Offense: 8
   Overworld Sprite: 246
   PP: 0

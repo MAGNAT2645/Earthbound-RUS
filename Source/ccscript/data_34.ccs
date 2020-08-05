@@ -833,11 +833,12 @@ l_0xc7beb9:
 
 l_0xc7bf1e:
 	/*
-	call(data_35.l_0xc7c57d) "{set(flag 4)}{music_resume}[06 B6 00 {e(l_0xc7bf94)}]{window_open(1)}@[1C 02 01] мельком увидел маленького, милого щеночка.[03]{pause(60)}" linebreak
-	"@Поющий Камень персонажа [1C 02 01] записал мелодию Гигантского Следа.{wait}{set(flag 182)}{set(flag 36)}{set(flag 449)}{set(flag 450)}{set(flag 634)}{window_closetop}" goto(l_0xc7bf94)
+	"@[1C 02 01] мельком увидел маленького, милого щеночка.[03]{pause(60)}" linebreak
+	"@Поющий камень записал мелодию Гигантского Следа.{wait}{set(flag 182)}{set(flag 36)}{set(flag 449)}{set(flag 450)}{set(flag 634)}{window_closetop}" goto(l_0xc7bf94)
 	*/
-	call(data_35.l_0xc7c57d) "{set(flag 4)}{music_resume}[06 B6 00 {e(l_0xc7bf94)}]{window_open(1)}@[1C 02 01] [9E][96][9D][C3][9C][A0][9E] [A5][93][9A][95][96][9D] [9E][91][9D][96][9F][C3][9C][A0][94][A0], [9E][9A][9D][A0][94][A0] [C0][96][9F][A0][A9][9C][91].[03]{pause(60)}" linebreak
-	"@[81][A0][C5][C0][9A][9B] [7C][91][9E][96][9F][C3] [A1][96][A2][A3][A0][9F][91][98][91] [1C 02 01] [99][91][A1][9A][A3][91][9D] [9E][96][9D][A0][95][9A][C5] [74][9A][94][91][9F][A4][A3][9C][A0][94][A0] [83][9D][96][95][91].{wait}{set(flag 182)}{set(flag 36)}{set(flag 449)}{set(flag 450)}{set(flag 634)}{window_closetop}" goto(l_0xc7bf94)
+	call(data_35.l_0xc7c57d) "{set(flag 4)}{music_resume}[06 B6 00 {e(l_0xc7bf94)}]{window_open(1)}"
+	"@[1C 02 01] [9E][96][9D][C3][9C][A0][9E] [A5][93][9A][95][96][9D] [9E][91][9D][96][9F][C3][9C][A0][94][A0], [9E][9A][9D][A0][94][A0] [C0][96][9F][A0][A9][9C][91].[03]{pause(60)}" linebreak
+	"@[81][A0][C5][C0][9A][9B] [9C][91][9E][96][9F][C3] [99][91][A1][9A][A3][91][9D] [9E][96][9D][A0][95][9A][C5] [74][9A][94][91][9F][A4][A3][9C][A0][94][A0] [83][9D][96][95][91].{wait}{set(flag 182)}{set(flag 36)}{set(flag 449)}{set(flag 450)}{set(flag 634)}{window_closetop}" goto(l_0xc7bf94)
 
 l_0xc7bf94:
 	eob
@@ -848,11 +849,12 @@ l_0xc7bf95:
 
 l_0xc7bfe8:
 	/*
-	call(data_35.l_0xc7c57d) "{set(flag 4)}{music_resume}[06 B7 00 {e(l_0xc7c058)}]{window_open(1)}@[1C 02 01] мельком увидел малыша в красной кепке.[03]{pause(60)}" linebreak
-	"@Поющий Камень персонажа [1C 02 01] записал мелодию Следов Лилипута.{wait}{set(flag 183)}{window_closetop}" goto(l_0xc7c058)
+	"@[1C 02 01] мельком увидел малыша в красной кепке.[03]{pause(60)}" linebreak
+	"@Поющий камень записал мелодию Следов Лилипута.{wait}{set(flag 183)}{window_closetop}" goto(l_0xc7c058)
 	*/
-	call(data_35.l_0xc7c57d) "{set(flag 4)}{music_resume}[06 B7 00 {e(l_0xc7c058)}]{window_open(1)}@[1C 02 01] [9E][96][9D][C3][9C][A0][9E] [A5][93][9A][95][96][9D] [9E][91][9D][C2][AA][91] [93] [9C][A2][91][A3][9F][A0][9B] [9C][96][A1][9C][96].[03]{pause(60)}" linebreak
-	"@[81][A0][C5][C0][9A][9B] [7C][91][9E][96][9F][C3] [A1][96][A2][A3][A0][9F][91][98][91] [1C 02 01] [99][91][A1][9A][A3][91][9D] [9E][96][9D][A0][95][9A][C5] [83][9D][96][95][A0][93] [7D][9A][9D][9A][A1][A5][A4][91].{wait}{set(flag 183)}{window_closetop}" goto(l_0xc7c058)
+	call(data_35.l_0xc7c57d) "{set(flag 4)}{music_resume}[06 B7 00 {e(l_0xc7c058)}]{window_open(1)}"
+	"@[1C 02 01] [9E][96][9D][C3][9C][A0][9E] [A5][93][9A][95][96][9D] [9E][91][9D][C2][AA][91] [93] [9C][A2][91][A3][9F][A0][9B] [9C][96][A1][9C][96].[03]{pause(60)}" linebreak
+	"@[81][A0][C5][C0][9A][9B] [9C][91][9E][96][9F][C3] [99][91][A1][9A][A3][91][9D] [9E][96][9D][A0][95][9A][C5] [83][9D][96][95][A0][93] [7D][9A][9D][9A][A1][A5][A4][91].{wait}{set(flag 183)}{window_closetop}" goto(l_0xc7c058)
 
 l_0xc7c058:
 	call(data_49.l_0xc915f4) call(data_57.l_0xc9b226) "[06 80 01 {e(l_0xc7c06a)}]" eob
@@ -866,11 +868,12 @@ l_0xc7c06e:
 
 l_0xc7c0c0:
 	/*
-	call(data_35.l_0xc7c57d) "{set(flag 4)}{music_resume}[06 B8 00 {e(l_0xc7c129)}]{window_open(1)}@[1C 02 01] унюхал своё любимое блюдо, [1C 01 04], но только на секунду.[03]{pause(60)}" linebreak
-	"@Поющий Камень персонажа [1C 02 01] записал мелодию Дождевого Округа.{wait}{set(flag 184)}{window_closetop}" eob
+	"@[1C 02 01] унюхал своё любимое блюдо, [1C 01 04], но только на секунду.[03]{pause(60)}" linebreak
+	"@Поющий камень записал мелодию Дождевого Округа.{wait}{set(flag 184)}{window_closetop}" eob
 	*/
-	call(data_35.l_0xc7c57d) "{set(flag 4)}{music_resume}[06 B8 00 {e(l_0xc7c129)}]{window_open(1)}@[1C 02 01] [A5][9F][C5][A7][91][9D] [A3][93][A0][97] [9D][C5][92][9A][9E][A0][96] [92][9D][C5][95][A0], [1C 01 04], [9F][A0] [A4][A0][9D][C3][9C][A0] [9F][91] [A3][96][9C][A5][9F][95][A5].[03]{pause(60)}" linebreak
-	"@[81][A0][C5][C0][9A][9B] [7C][91][9E][96][9F][C3] [A1][96][A2][A3][A0][9F][91][98][91] [1C 02 01] [99][91][A1][9A][A3][91][9D] [9E][96][9D][A0][95][9A][C5] [75][A0][98][95][96][93][A0][94][A0] [80][9C][A2][A5][94][91].{wait}{set(flag 184)}{window_closetop}" eob
+	call(data_35.l_0xc7c57d) "{set(flag 4)}{music_resume}[06 B8 00 {e(l_0xc7c129)}]{window_open(1)}"
+	"@[1C 02 01] [A5][9F][C5][A7][91][9D] [A3][93][A0][97] [9D][C5][92][9A][9E][A0][96] [92][9D][C5][95][A0], [1C 01 04], [9F][A0] [A4][A0][9D][C3][9C][A0] [9F][91] [A3][96][9C][A5][9F][95][A5].[03]{pause(60)}" linebreak
+	"@[81][A0][C5][C0][9A][9B] [9C][91][9E][96][9F][C3] [99][91][A1][9A][A3][91][9D] [9E][96][9D][A0][95][9A][C5] [75][A0][98][95][96][93][A0][94][A0] [80][9C][A2][A5][94][91].{wait}{set(flag 184)}{window_closetop}" eob
 
 l_0xc7c129:
 	eob
@@ -881,11 +884,14 @@ l_0xc7c12a:
 
 l_0xc7c17b:
 	/*
-	call(data_35.l_0xc7c57d) "{set(flag 4)}{music_resume}[06 B9 00 {e(data_35.l_0xc7c1f7)}]{window_open(1)}@Персонажу [1C 02 01] показалось, что он услышал мать издалека... она сказала" next
+	"@Персонажу [1C 02 01] показалось," linebreak
+	"  что он услышал мать издалека... она сказала:" next
 	"@<Будь вдумчивым, сильным мальчиком...>[03]{pause(60)}" linebreak
-	"@Поющий Камень персонажа [1C 02 01] записал мелодию Млечного Пруда.{wait}{set(flag 185)}{window_closetop}" goto(data_35.l_0xc7c1f7)
+	"@Поющий камень записал мелодию Млечного Пруда.{wait}{set(flag 185)}{window_closetop}" goto(data_35.l_0xc7c1f7)
 	*/
-	call(data_35.l_0xc7c57d) "{set(flag 4)}{music_resume}[06 B9 00 {e(data_35.l_0xc7c1f7)}]{window_open(1)}@[81][96][A2][A3][A0][9F][91][98][A5] [1C 02 01] [A1][A0][9C][91][99][91][9D][A0][A3][C3], [A9][A4][A0] [A0][9F] [A5][A3][9D][C2][AA][91][9D] [9E][91][A4][C3] [9A][99][95][91][9D][96][9C][91]... [A0][9F][91] [A3][9C][91][99][91][9D][91]" next
+	call(data_35.l_0xc7c57d) "{set(flag 4)}{music_resume}[06 B9 00 {e(data_35.l_0xc7c1f7)}]{window_open(1)}"
+	"@[81][96][A2][A3][A0][9F][91][98][A5] [1C 02 01] [A1][A0][9C][91][99][91][9D][A0][A3][C3]," linebreak
+	"  [A9][A4][A0] [A0][9F] [A5][A3][9D][C2][AA][91][9D] [9E][91][A4][C3] [9A][99][95][91][9D][96][9C][91]... [A0][9F][91] [A3][9C][91][99][91][9D][91]:" next
 	"@<[72][A5][95][C3] [93][95][A5][9E][A9][9A][93][C2][9E], [A3][9A][9D][C3][9F][C2][9E] [9E][91][9D][C3][A9][9A][9C][A0][9E]...>[03]{pause(60)}" linebreak
-	"@[81][A0][C5][C0][9A][9B] [7C][91][9E][96][9F][C3] [A1][96][A2][A3][A0][9F][91][98][91] [1C 02 01] [99][91][A1][9A][A3][91][9D] [9E][96][9D][A0][95][9A][C5] [7E][9D][96][A9][9F][A0][94][A0] [81][A2][A5][95][91].{wait}{set(flag 185)}{window_closetop}" goto(data_35.l_0xc7c1f7)
+	"@[81][A0][C5][C0][9A][9B] [9C][91][9E][96][9F][C3] [99][91][A1][9A][A3][91][9D] [9E][96][9D][A0][95][9A][C5] [7E][9D][96][A9][9F][A0][94][A0] [81][A2][A5][95][91].{wait}{set(flag 185)}{window_closetop}" goto(data_35.l_0xc7c1f7)
 
