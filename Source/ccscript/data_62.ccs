@@ -46,21 +46,21 @@ l_0xef6c55:
 
 l_0xef6c6b:
 	/*
-	"@Тело персонажа {target}" linebreak
-	"  пострадало и рухнуло...{sound(32)}[03]" eob
+	"@{target} потерял{target_gender}{call(RUS_ref.l_gendersuffix)} сознание" linebreak
+	"  и упал{target_gender}{call(RUS_ref.l_gendersuffix)}...{sound(32)}[03]" eob
 	*/
 	newline
-	"@[84][96][9D][A0] [A1][96][A2][A3][A0][9F][91][98][91] {target}" linebreak
-	"  [A1][A0][A3][A4][A2][91][95][91][9D][A0] [9A] [A2][A5][A7][9F][A5][9D][A0]...{sound(32)}[03]" eob
+	"@{target} [A1][A0][A4][96][A2][C6][9D]{target_gender}{call(RUS_ref.l_gendersuffix)} [A3][A0][99][9F][91][9F][9A][96]" linebreak
+	"  [9A] [A5][A1][91][9D]{target_gender}{call(RUS_ref.l_gendersuffix)}...{sound(32)}[03]" eob
 
 l_0xef6c84:
 	/*
-	"@Тело персонажа {target}" linebreak
-	"  пострадало и рухнуло...{sound(32)}{unset(flag 587)}" next
+	"@{target} потерял{target_gender}{call(RUS_ref.l_gendersuffix)} сознание" linebreak
+	"  и упал{target_gender}{call(RUS_ref.l_gendersuffix)}...{sound(32)}{unset(flag 587)}" next
 	*/
 	newline
-	"@[84][96][9D][A0] [A1][96][A2][A3][A0][9F][91][98][91] {target}" linebreak
-	"  [A1][A0][A3][A4][A2][91][95][91][9D][A0] [9A] [A2][A5][A7][9F][A5][9D][A0]...{sound(32)}{unset(flag 587)}" next
+	"@{target} [A1][A0][A4][96][A2][C6][9D]{target_gender}{call(RUS_ref.l_gendersuffix)} [A3][A0][99][9F][91][9F][9A][96]" linebreak
+	"  [9A] [A5][A1][91][9D]{target_gender}{call(RUS_ref.l_gendersuffix)}...{sound(32)}{unset(flag 587)}" next
 	"[06 CF 00 {e(l_0xef6ce2)}][06 CE 00 {e(l_0xef6cd9)}][06 CD 00 {e(l_0xef6cd0)}][06 CC 00 {e(l_0xef6cc7)}]{set(flag 204)}" call(l_0xef6ceb) eob
 
 l_0xef6cc7:
@@ -140,12 +140,12 @@ l_0xef6da7:
 
 l_0xef6db8:
 	/*
-	"@Фигура персонажа {target}" linebreak
-	"  расплавилась в воздухе!{sound(33)}" eob
+	"@Фигура врага {target}" linebreak
+	"  растаяла в воздухе!{sound(33)}" eob
 	*/
 	newline
-	"@[86][9A][94][A5][A2][91] [A1][96][A2][A3][A0][9F][91][98][91] {target}" linebreak
-	"  [A2][91][A3][A1][9D][91][93][9A][9D][91][A3][C3] [93] [93][A0][99][95][A5][A7][96]!{sound(33)}" eob
+	"@[86][9A][94][A5][A2][91] [93][A2][91][94][91] {target}" linebreak
+	"  [A2][91][A3][A4][91][C6][9D][91] [93] [93][A0][99][95][A5][A7][96]!{sound(33)}" eob
 
 l_0xef6dd8:
 //	"@{target} был{target_gender}{call(RUS_ref.l_gendersuffix)} разбит{target_gender}{call(RUS_ref.l_gendersuffix)} на кусочки!{sound(33)}" eob
@@ -172,9 +172,9 @@ l_0xef6e19:
 	"@{target} [93][96][A2][9F][A5][9D]{target_gender}{call(RUS_ref.l_gendersuffix2)} [93] [9F][A0][A2][9E][91][9D][C3][9F][A0][96] [A3][A0][A3][A4][A0][C6][9F][9A][96]!{sound(33)}" eob
 
 l_0xef6e31:
-//	"@{target} вернул{target_gender}{call(RUS_ref.l_gendersuffix2)} в прах земли!{sound(33)}" eob
+//	"@{target} вернул{target_gender}{call(RUS_ref.l_gendersuffix2)} в прах земной!{sound(33)}" eob
 	newline
-	"@{target} [93][96][A2][9F][A5][9D]{target_gender}{call(RUS_ref.l_gendersuffix2)} [93] [A1][A2][91][A7] [99][96][9E][9D][9A]!{sound(33)}" eob
+	"@{target} [93][96][A2][9F][A5][9D]{target_gender}{call(RUS_ref.l_gendersuffix2)} [93] [A1][A2][91][A7] [99][96][9E][9F][A0][9B]!{sound(33)}" eob
 
 l_0xef6e4a:
 	/*

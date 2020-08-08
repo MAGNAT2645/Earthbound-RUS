@@ -687,15 +687,15 @@ l_0xc61a71:
 
 l_0xc61a88:
 	/*
-	title(1, "Обезьяна")
-	"[06 C7 01 {e(l_0xc61b70)}]@Юкуакки КуаКуи" next
-	"@(Мне бы хотелось Протеиновый напиток.)" next
+	"@Юкуакки КуаКуи" next
+	"@(Мне бы хотелось Взрослый напиток.)" next
 	"@Куа-Куа?" next
 	"@(Если он у тебя есть, можно мне?)" linebreak
 	*/
 	title(1, "[80][92][96][99][C3][C6][9F][91]")
-	"[06 C7 01 {e(l_0xc61b70)}]@[B5][9C][A5][91][9C][9C][9A] [7C][A5][91][7C][A5][9A]" next
-	"@([7E][9F][96] [92][C2] [A7][A0][A4][96][9D][A0][A3][C3] [81][A2][A0][A4][96][9A][9F][A0][93][C2][9B] [9F][91][A1][9A][A4][A0][9C].)" next
+	"[06 C7 01 {e(l_0xc61b70)}]"
+	"@[B5][9C][A5][91][9C][9C][9A] [7C][A5][91][7C][A5][9A]" next
+	"@([7E][9F][96] [92][C2] [A7][A0][A4][96][9D][A0][A3][C3] [73][99][A2][A0][A3][9D][C2][9B] [9F][91][A1][9A][A4][A0][9C].)" next
 	"@[7C][A5][91]-[7C][A5][91]?" next
 	"@([76][A3][9D][9A] [A0][9F] [A5] [A4][96][92][C6] [96][A3][A4][C3], [9E][A0][98][9F][A0] [9E][9F][96]?)" linebreak
 	call(data_36.l_0xc7dd4f) "[11]{clearline}[09 02 {e(l_0xc61b03)} {e(l_0xc61add)}]" goto(l_0xc61add)
@@ -710,10 +710,11 @@ l_0xc61add:
 
 l_0xc61b03:
 	/*
-	call(data_15.l_0xc5e456) "[1B 02 {e(l_0xc61add)}]{store_registers}[19 19 00 00]{swap}{result_is(108)}[1B 02 {e(l_0xc61add)}]{load_registers}[1D 0F 00 00]{sound(118)}{pause(10)}@*Глоток*,{pause(15)} *глоток*...{pause(20)} Блюкки!" next
+	"@*Глоток*,{pause(15)} *глоток*...{pause(20)} Блюкки!" next
 	"@(*Глоток*,{pause(15)} *глоток*...{pause(20)} Блюкки!){wait}{window_closeall}[1F 1E 2E 03 06][1F 17 30 03 2B 00 01]{set(flag 455)}" eob
 	*/
-	call(data_15.l_0xc5e456) "[1B 02 {e(l_0xc61add)}]{store_registers}[19 19 00 00]{swap}{result_is(108)}[1B 02 {e(l_0xc61add)}]{load_registers}[1D 0F 00 00]{sound(118)}{pause(10)}@*[74][9D][A0][A4][A0][9C]*,{pause(15)} *[94][9D][A0][A4][A0][9C]*...{pause(20)} [72][9D][C5][9C][9C][9A]!" next
+	call(data_15.l_0xc5e456) "[1B 02 {e(l_0xc61add)}]{store_registers}[19 19 00 00]{swap}{result_is(108)}[1B 02 {e(l_0xc61add)}]{load_registers}[1D 0F 00 00]{sound(118)}{pause(10)}"
+	"@*[74][9D][A0][A4][A0][9C]*,{pause(15)} *[94][9D][A0][A4][A0][9C]*...{pause(20)} [72][9D][C5][9C][9C][9A]!" next
 	"@(*[74][9D][A0][A4][A0][9C]*,{pause(15)} *[94][9D][A0][A4][A0][9C]*...{pause(20)} [72][9D][C5][9C][9C][9A]!){wait}{window_closeall}[1F 1E 2E 03 06][1F 17 30 03 2B 00 01]{set(flag 455)}" eob
 
 l_0xc61b70:

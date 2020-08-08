@@ -653,11 +653,11 @@ l_0xef8010:
 l_0xef8026:
 	/*
 	"{sound(25)}@{user} вцепил{user_gender}{call(RUS_ref.l_gendersuffix2)}" linebreak
-	"  своими острыми ногтями![03]" eob
+	"  своими острыми когтями![03]" eob
 	*/
 	newline
 	"{sound(25)}@{user} [93][A8][96][A1][9A][9D]{user_gender}{call(RUS_ref.l_gendersuffix2)}" linebreak
-	"  [A3][93][A0][9A][9E][9A] [A0][A3][A4][A2][C2][9E][9A] [9F][A0][94][A4][C6][9E][9A]![03]" eob
+	"  [A3][93][A0][9A][9E][9A] [A0][A3][A4][A2][C2][9E][9A] [9C][A0][94][A4][C6][9E][9A]![03]" eob
 
 l_0xef804b:
 	/*

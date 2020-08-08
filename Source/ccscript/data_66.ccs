@@ -96,11 +96,11 @@ l_0xef9be6:
 l_0xef9c02:
 	/*
 	"{sound(25)}@{user} выдохнул{user_gender}{call(RUS_ref.l_gendersuffix)}" linebreak
-	"  свой арктический холодный воздух!{sound(81)}[03]{pause(1)}" eob
+	"  свой арктически-холодный воздух!{sound(81)}[03]{pause(1)}" eob
 	*/
 	newline
 	"{sound(25)}@{user} [93][C2][95][A0][A7][9F][A5][9D]{user_gender}{call(RUS_ref.l_gendersuffix)}" linebreak
-	"  [A3][93][A0][9B] [91][A2][9C][A4][9A][A9][96][A3][9C][9A][9B] [A7][A0][9D][A0][95][9F][C2][9B] [93][A0][99][95][A5][A7]!{sound(81)}[03]{pause(1)}" eob
+	"  [A3][93][A0][9B] [91][A2][9C][A4][9A][A9][96][A3][9C][9A]-[A7][A0][9D][A0][95][9F][C2][9B] [93][A0][99][95][A5][A7]!{sound(81)}[03]{pause(1)}" eob
 
 l_0xef9c30:
 	/*

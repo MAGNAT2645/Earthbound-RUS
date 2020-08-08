@@ -625,7 +625,7 @@ l_0xc93625:
 	"@Тебе нравится это имя?" linebreak
 	"[19 02]Да" eob
 	*/
-	"[1F 07 02]{pause(30)}{music(2)}[1F 41 03][1F 07 02]{pause(30)}{music_resume}{window_open(1)}@" call(data_37.l_0xc7e77d) "," next
+	"[1F 07 02]{pause(30)}{music(2)}[1F 41 03][1F 07 02]{pause(30)}{music_resume}{window_open(1)}{title(1, Unknown)}@" call(data_37.l_0xc7e77d) "," next
 	"@[84][C2] [A5][93][96][A2][96][9F], [A9][A4][A0] [C4][A4][A0] [A4][A0], [A9][96][94][A0] [A4][C2] [A7][A0][A9][96][AA][C3]?" next
 	"@[84][96][92][96] [9F][A2][91][93][9A][A4][A3][C6] [C4][A4][A0] [9A][9E][C6]?" linebreak
 	"[19 02][75][91]" eob

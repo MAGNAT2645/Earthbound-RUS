@@ -176,7 +176,7 @@
   Money: 77
   Movement pattern: 21
   Music: 98
-  Name: "Бронированная Лягушка"
+  Name: "Бронелягушка"
   Offense: 37
   Overworld Sprite: 280
   PP: 0
@@ -1210,7 +1210,7 @@
   Money: 23
   Movement pattern: 21
   Music: 100
-  Name: "Хиппи Нового Времени"
+  Name: "Ретро-хиппи"
   Offense: 19
   Overworld Sprite: 389
   PP: 0
@@ -3654,7 +3654,7 @@
   Money: 81
   Movement pattern: 27
   Music: 102
-  Name: "Манипулирующий Призрак"
+  Name: "Призрак-манипулятор"
   Offense: 28
   Overworld Sprite: 305
   PP: 0
@@ -5769,7 +5769,7 @@
   Money: 47
   Movement pattern: 21
   Music: 96
-  Name: "Хэллоуинский Малыш"
+  Name: "Хэллоуинский Пацан"
   Offense: 30
   Overworld Sprite: 444
   PP: 0
@@ -10469,7 +10469,7 @@
   Money: 58
   Movement pattern: 21
   Music: 101
-  Name: "Фермерский Зомби"
+  Name: "Деревенский Зомби"
   Offense: 31
   Overworld Sprite: 237
   PP: 0
