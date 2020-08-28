@@ -164,10 +164,10 @@ l_0xc64996:
 
 l_0xc649b7:
 	/*
-	"@Речь идёт о доставке <[1C 05 AF]>?" linebreak
+	"@Речь идёт о доставке <{itemname(ITEM_HAWK_EYE)}>?" linebreak
 	"[19 02]Да" eob
 	*/
-	"@[82][96][A9][C3] [9A][95][97][A4] [A0] [95][A0][A3][A4][91][93][9C][96] <[1C 05 AF]>?" linebreak
+	"@[82][96][A9][C3] [9A][95][97][A4] [A0] [95][A0][A3][A4][91][93][9C][96] <{itemname(ITEM_HAWK_EYE)}>?" linebreak
 	"[19 02][75][91]" eob
 
 l_0xc649d4:
@@ -343,21 +343,19 @@ l_0xc64dee:
 	goto(l_0xc64df8)
 
 l_0xc64df8:
-//	"@Пожалуйста, заходите снова." end
-	"@[81][A0][98][91][9D][A5][9B][A3][A4][91], [99][91][A7][A0][95][9A][A4][96] [A3][9F][A0][93][91]." end
+//	"@Пожалуйста, приходите ещё." end
+	"@[81][A0][98][91][9D][A5][9B][A3][A4][91], [A1][A2][9A][A7][A0][95][9A][A4][96] [96][C0][97]." end
 
 l_0xc64e04:
 	/*
 	"@Что вы хотите вернуть?[03]{open_wallet}" call(data_15.l_0xc5e456) newline
 	"[1B 02 {e(l_0xc64dee)}]{store_registers}[19 19 00 00][1D 0B 00][1B 02 {e(l_0xc64ea4)}]@[1C 05 00]?" linebreak
-	"  Мы можем" linebreak
-	"  вернуть вам {swap}$[1C 0A 00 00 00 00]." next
+	"  Мы можем вернуть вам {swap}$[1C 0A 00 00 00 00]." next
 	"@Вы хотите сделать это?" linebreak
 	*/
 	"@[89][A4][A0] [93][C2] [A7][A0][A4][9A][A4][96] [93][96][A2][9F][A5][A4][C3]?[03]{open_wallet}" call(data_15.l_0xc5e456) newline
 	"[1B 02 {e(l_0xc64dee)}]{store_registers}[19 19 00 00][1D 0B 00][1B 02 {e(l_0xc64ea4)}]@[1C 05 00]?" linebreak
-	"  [7E][C2] [9E][A0][98][96][9E]" linebreak
-	"  [93][96][A2][9F][A5][A4][C3] [93][91][9E] {swap}$[1C 0A 00 00 00 00]." next
+	"  [7E][C2] [9E][A0][98][96][9E] [93][96][A2][9F][A5][A4][C3] [93][91][9E] {swap}$[1C 0A 00 00 00 00]." next
 	"@[73][C2] [A7][A0][A4][9A][A4][96] [A3][95][96][9D][91][A4][C3] [C4][A4][A0]?" linebreak
 	call(data_36.l_0xc7dd4f) "[11]{clearline}[09 02 {e(l_0xc64e6e)} {e(l_0xc64e69)}]" goto(l_0xc64e69)
 
@@ -466,15 +464,15 @@ l_0xc65057:
 
 l_0xc6505d:
 	/*
-	"@Мне нравится [1C 05 82]." next
-	"@Дай мне [1C 05 82]," next
+	"@Мне нравится {itemname(ITEM_HORN_LIFE)}." next
+	"@Дай мне {itemname(ITEM_HORN_LIFE)}," next
 	"@я дам тебе кое-что." next
 	"@Посмотри на список." next
 	*/
 	title(1, Tenda)
 	"[06 AE 01 {e(l_0xc651cc)}]"
-	"@[7E][9F][96] [9F][A2][91][93][9A][A4][A3][C6] [1C 05 82]." next
-	"@[75][91][9B] [9E][9F][96] [1C 05 82]," next
+	"@[7E][9F][96] [9F][A2][91][93][9A][A4][A3][C6] {itemname(ITEM_HORN_LIFE)}." next
+	"@[75][91][9B] [9E][9F][96] {itemname(ITEM_HORN_LIFE)}," next
 	"@[C6] [95][91][9E] [A4][96][92][96] [9C][A0][96]-[A9][A4][A0]." next
 	"@[81][A0][A3][9E][A0][A4][A2][9A] [9F][91] [A3][A1][9A][A3][A0][9C]." next
 	"{window_open(12)}"	// заменили меню 7 на 12, чтобы вмещались все пункты
@@ -501,14 +499,14 @@ l_0xc6511c:
 l_0xc6512f:
 	/*
 	"[1C 0C 01]{wait}{window_closetop}{window_switch(1)}" newline
-	"@Дашь мне [1C 05 82]?[03]" call(data_15.l_0xc5e456) "[1B 02 {e(l_0xc651a6)}]{store_registers}[19 19 00 00]{swap}{result_is(130)}[1B 02 {e(l_0xc651bf)}]{load_registers}[1D 0F 00 00]" call(l_0xc651ef) "{ctoarg}" newline
+	"@Дашь мне {itemname(ITEM_HORN_LIFE)}?[03]" call(data_15.l_0xc5e456) "[1B 02 {e(l_0xc651a6)}]{store_registers}[19 19 00 00]{swap}{result_is(130)}[1B 02 {e(l_0xc651bf)}]{load_registers}[1D 0F 00 00]" call(l_0xc651ef) "{ctoarg}" newline
 	"@Хорошо." linebreak
 	"  Я дам тебе [1C 05 00]." next
 	"@Ты счастлив.  Я счастлив.[03]" newline
 	"[1D 03 FF]{store_registers}[1D 0E 00 00]" call(data_36.l_0xc7dccf) end
 	*/
 	"[1C 0C 01]{wait}{window_closetop}{window_switch(1)}" newline
-	"@[75][91][AA][C3] [9E][9F][96] [1C 05 82]?[03]" call(data_15.l_0xc5e456) "[1B 02 {e(l_0xc651a6)}]{store_registers}[19 19 00 00]{swap}{result_is(130)}[1B 02 {e(l_0xc651bf)}]{load_registers}[1D 0F 00 00]" call(l_0xc651ef) "{ctoarg}" newline
+	"@[75][91][AA][C3] [9E][9F][96] {itemname(ITEM_HORN_LIFE)}?[03]" call(data_15.l_0xc5e456) "[1B 02 {e(l_0xc651a6)}]{store_registers}[19 19 00 00]{swap}{result_is(130)}[1B 02 {e(l_0xc651bf)}]{load_registers}[1D 0F 00 00]" call(l_0xc651ef) "{ctoarg}" newline
 	"@[87][A0][A2][A0][AA][A0]." linebreak
 	"  [B6] [95][91][9E] [A4][96][92][96] [1C 05 00]." next
 	"@[84][C2] [A3][A9][91][A3][A4][9D][9A][93].  [B6] [A3][A9][91][A3][A4][9D][9A][93].[03]" newline
@@ -530,11 +528,11 @@ l_0xc651bf:
 
 l_0xc651cc:
 	/*
-	"@Ещё [1C 05 82]?" next
+	"@Ещё {itemname(ITEM_HORN_LIFE)}?" next
 	"@Я доволен." next
 	"@Увидимся!" end
 	*/
-	"@[76][C0][97] [1C 05 82]?" next
+	"@[76][C0][97] {itemname(ITEM_HORN_LIFE)}?" next
 	"@[B6] [95][A0][93][A0][9D][96][9F]." next
 	"@[85][93][9A][95][9A][9E][A3][C6]!" end
 

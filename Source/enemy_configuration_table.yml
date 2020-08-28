@@ -881,7 +881,7 @@
   Money: 574
   Movement pattern: 23
   Music: 97
-  Name: "Шокированный"
+  Name: "Заряженный"
   Offense: 107
   Overworld Sprite: 269
   PP: 238
@@ -6459,7 +6459,7 @@
   Fire vulnerability: 70%
   Flash vulnerability: 70%
   Freeze vulnerability: 70%
-  Gender: neutral
+  Gender: female
   Guts: 1
   HP: 860
   Hypnosis/Brainshock vulnerability: 50%

@@ -284,8 +284,8 @@ l_0xc59c67: //16
 	"{wait}{window_closeall}{counter(43)}" call(data_10.l_0xc5a4ec) "{set(flag 142)}[1F 11 03][1F 21 81]" eob
 
 l_0xc59c84: //17
-//	"{diam}Внутри Здания Монотоли"
-	"{diam}[73][9F][A5][A4][A2][9A] [79][95][91][9F][9A][C6] [7E][A0][9F][A0][A4][A0][9D][9A]"
+//	"{diam}Внутри Монотоли Билдинг"
+	"{diam}[73][9F][A5][A4][A2][9A] [7E][A0][9F][A0][A4][A0][9D][9A] [72][9A][9D][95][9A][9F][94]"
 	"{wait}{window_closeall}{counter(43)}" call(data_10.l_0xc5a4ec) "{set(flag 317)}{set(flag 142)}{set(flag 143)}[1F 11 03][1F 11 02][1F 21 82]" eob
 
 l_0xc59cb5: //18

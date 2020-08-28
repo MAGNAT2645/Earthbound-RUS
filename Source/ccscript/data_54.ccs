@@ -42,11 +42,11 @@ l_0xc9794b:
 
 l_0xc97990:
 	/*
-	"{window_open(1)}@(На самом деле, статуя Мани Мани была устройством," next
+	"{window_open(1)}@(На самом деле статуя Мани Мани была устройством," next
 	"  которое создавало иллюзии." next
 	"@Устройство иллюзии было уничтожено.){wait}{window_closeall}[19 26 05][1F E8 FF]" eob
 	*/
-	"{window_open(1)}@([7F][91] [A3][91][9E][A0][9E] [95][96][9D][96], [A3][A4][91][A4][A5][C6] [7E][91][9F][9A] [7E][91][9F][9A] [92][C2][9D][91] [A5][A3][A4][A2][A0][9B][A3][A4][93][A0][9E]," next
+	"{window_open(1)}@([7F][91] [A3][91][9E][A0][9E] [95][96][9D][96] [A3][A4][91][A4][A5][C6] [7E][91][9F][9A] [7E][91][9F][9A] [92][C2][9D][91] [A5][A3][A4][A2][A0][9B][A3][A4][93][A0][9E]," next
 	"  [9C][A0][A4][A0][A2][A0][96] [A3][A0][99][95][91][93][91][9D][A0] [9A][9D][9D][C5][99][9A][9A]." next
 	"@[85][A3][A4][A2][A0][9B][A3][A4][93][A0] [9A][9D][9D][C5][99][9A][9A] [92][C2][9D][A0] [A5][9F][9A][A9][A4][A0][98][96][9F][A0].){wait}{window_closeall}[19 26 05][1F E8 FF]" eob
 
@@ -293,7 +293,7 @@ l_0xc97da3:
 	"@[73][95][A2][A5][94], [A2][91][99][95][91][A4][A9][9A][9C] [A1][A2][A0][9A][99][93][97][9D]" linebreak
 	"  [9F][96][9E][9F][A0][94][A0] [7C][9D][A5][92][9F][9A][A9][9F][A0][94][A0] [A4][A0][A6][A5]![03]" eob
 
-l_0xc97ddc:
+l_0xc97ddc: // ПРИМ.: Текст при использовании Ракеты (как Джеффом, так и Роботом-охранником)
 	/*
 	"@{user}[19 1F]{swap} выстрелил{user_gender}{call(RUS_ref.l_gendersuffix)}" linebreak
 	"  [1C 05 00]!{sound(70)}[03]" eob
@@ -302,7 +302,7 @@ l_0xc97ddc:
 	"@{user}[19 1F]{swap} [93][C2][A3][A4][A2][96][9D][9A][9D]{user_gender}{call(RUS_ref.l_gendersuffix)}" linebreak
 	"  [1C 05 00]!{sound(70)}[03]" eob
 
-l_0xc97df5:
+l_0xc97df5: // ПРИМ.: Текст при использовании Большой ракеты Джеффом
 	/*
 	"@{user}[19 1F]{swap} выстрелил{user_gender}{call(RUS_ref.l_gendersuffix)}" linebreak
 	"  [1C 05 00]!{sound(70)}{pause(8)}{sound(70)}{pause(8)}{sound(70)}{pause(8)}{sound(70)}{pause(8)}{sound(70)}{pause(8)}[03]" eob
@@ -311,7 +311,7 @@ l_0xc97df5:
 	"@{user}[19 1F]{swap} [93][C2][A3][A4][A2][96][9D][9A][9D]{user_gender}{call(RUS_ref.l_gendersuffix)}" linebreak
 	"  [1C 05 00]!{sound(70)}{pause(8)}{sound(70)}{pause(8)}{sound(70)}{pause(8)}{sound(70)}{pause(8)}{sound(70)}{pause(8)}[03]" eob
 
-l_0xc97e24:
+l_0xc97e24: // ПРИМ.: Текст при использовании Мульти-ракеты Джеффом
 	/*
 	"@{user}[19 1F]{swap} выстрелил{user_gender}{call(RUS_ref.l_gendersuffix)}" linebreak
 	"  [1C 05 00]!{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}[03]" eob
@@ -320,13 +320,13 @@ l_0xc97e24:
 	"@{user}[19 1F]{swap} [93][C2][A3][A4][A2][96][9D][9A][9D]{user_gender}{call(RUS_ref.l_gendersuffix)}" linebreak
 	"  [1C 05 00]!{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}[03]" eob
 
-l_0xc97e9e:
+l_0xc97e9e: // ПРИМ.: Текст при использовании [Тяжёлой] Базуки Джеффом
 	/*
-	"@{user}[19 1F]{swap} выстрелил{user_gender}{call(RUS_ref.l_gendersuffix)}" linebreak
+	"@{user}[19 1F]{swap} выстрелил{user_gender}{call(RUS_ref.l_gendersuffix)} из:" linebreak
 	"  [1C 05 00]!{sound(70)}[03]" eob
 	*/
 	newline
-	"@{user}[19 1F]{swap} [93][C2][A3][A4][A2][96][9D][9A][9D]{user_gender}{call(RUS_ref.l_gendersuffix)}" linebreak
+	"@{user}[19 1F]{swap} [93][C2][A3][A4][A2][96][9D][9A][9D]{user_gender}{call(RUS_ref.l_gendersuffix)} [9A][99]:" linebreak
 	"  [1C 05 00]!{sound(70)}[03]" eob
 
 l_0xc97eb7:

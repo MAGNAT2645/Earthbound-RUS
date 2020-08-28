@@ -527,7 +527,7 @@ l_0xc795bd:
 
 l_0xc795c1:
 	/*
-	"@(" call(data_37.l_0xc7e74e) " использовал [1C 05 AB].)" next
+	"@(" call(data_37.l_0xc7e74e) " использовал {itemname(ITEM_KEY_CABIN)}.)" next
 	"{window_closeall}{sound(119)}[1F 1E B4 01 06]{pause(60)}{window_open(1)}{title_paula(1)}"
 	"@Спасибо, [1C 02 01]!" next
 	"@Ты такой, каким я и представляла тебя..." next
@@ -539,7 +539,7 @@ l_0xc795c1:
 	"@[1C 02 02] присоединилась к тебе.[03]{window_closeall}{set(flag 13)}{set(flag 198)}{unset(flag 118)}{set(flag 321)}{set(flag 689)}{set(flag 483)}" eob
 	*/
 	"{store_registers}[19 19 00 00]{swap}{result_is(171)}[1B 02 {e(l_0xc796ee)}][1D 01 FF AB]"
-	"@(" call(data_37.l_0xc7e74e) " [9A][A3][A1][A0][9D][C3][99][A0][93][91][9D] [1C 05 AB].)" next
+	"@(" call(data_37.l_0xc7e74e) " [9A][A3][A1][A0][9D][C3][99][A0][93][91][9D] {itemname(ITEM_KEY_CABIN)}.)" next
 	"{window_closeall}{sound(119)}[1F 1E B4 01 06]{pause(60)}{window_open(1)}{title_paula(1)}"
 	"@[83][A1][91][A3][9A][92][A0], [1C 02 01]!" next
 	"@[84][C2] [A4][91][9C][A0][9B], [9C][91][9C][9A][9E] [C6] [9A] [A1][A2][96][95][A3][A4][91][93][9D][C6][9D][91] [A4][96][92][C6]..." next
@@ -551,8 +551,8 @@ l_0xc795c1:
 	"@[1C 02 02] [A1][A2][9A][A3][A0][96][95][9A][9F][9A][9D][91][A3][C3] [9C] [A4][96][92][96].[03]{window_closeall}{set(flag 13)}{set(flag 198)}{unset(flag 118)}{set(flag 321)}{set(flag 689)}{set(flag 483)}" eob
 
 l_0xc796ee:
-//	"@(Нужно использовать [1C 05 AB], чтобы открыть это.){wait}{window_closeall}" eob
-	"@([7F][A5][98][9F][A0] [9A][A3][A1][A0][9D][C3][99][A0][93][91][A4][C3] [1C 05 AB], [A9][A4][A0][92][C2] [A0][A4][9C][A2][C2][A4][C3] [C4][A4][A0].){wait}{window_closeall}" eob
+//	"@(Нужно использовать {itemname(ITEM_KEY_CABIN)}, чтобы открыть это.){wait}{window_closeall}" eob
+	"@([7F][A5][98][9F][A0] [9A][A3][A1][A0][9D][C3][99][A0][93][91][A4][C3] {itemname(ITEM_KEY_CABIN)}, [A9][A4][A0][92][C2] [A0][A4][9C][A2][C2][A4][C3] [C4][A4][A0].){wait}{window_closeall}" eob
 
 l_0xc79707:
 	"[1F E6 D9 00]" goto(l_0xc7970b)

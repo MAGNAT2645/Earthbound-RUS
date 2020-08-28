@@ -45,12 +45,12 @@ l_0xef80c4:
 
 l_0xef80e4:
 	/*
-	"{sound(25)}@{user} разбрызгнул{user_gender}{call(RUS_ref.l_gendersuffix)}" linebreak
-	"  огромную струю воды[03]" eob
+	"{sound(25)}@{user} метнул{user_gender}{call(RUS_ref.l_gendersuffix)}" linebreak
+	"  огромную струю воды![03]" eob
 	*/
 	newline
-	"{sound(25)}@{user} [A2][91][99][92][A2][C2][99][94][9F][A5][9D]{user_gender}{call(RUS_ref.l_gendersuffix)}" linebreak
-	"  [A0][94][A2][A0][9E][9F][A5][C5] [A3][A4][A2][A5][C5] [93][A0][95][C2][03]" eob
+	"{sound(25)}@{user} [9E][96][A4][9F][A5][9D]{user_gender}{call(RUS_ref.l_gendersuffix)}" linebreak
+	"  [A0][94][A2][A0][9E][9F][A5][C5] [A3][A4][A2][A5][C5] [93][A0][95][C2]![03]" eob
 
 l_0xef8109:
 	/*

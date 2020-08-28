@@ -10,13 +10,14 @@ import RUS_ref
 // Text Data
 l_0xc9ad26:
 	/*
-	"[06 8E 00 {e(l_0xc9ad77)}]{window_open(1)}@(Частный лифт!" next
+	"@(Частный лифт!" next
 	"@Не для пользования широкой публикой." next
-	"@Управляющий Здания Монотоли.){wait}{window_closeall}" eob
+	"@Управляющий Монотоли Билдинг.){wait}{window_closeall}" eob
 	*/
-	"[06 8E 00 {e(l_0xc9ad77)}]{window_open(1)}@([89][91][A3][A4][9F][C2][9B] [9D][9A][A6][A4]!" next
+	"[06 8E 00 {e(l_0xc9ad77)}]{window_open(1)}"
+	"@([89][91][A3][A4][9F][C2][9B] [9D][9A][A6][A4]!" next
 	"@[7F][96] [95][9D][C6] [A1][A0][9D][C3][99][A0][93][91][9F][9A][C6] [AA][9A][A2][A0][9C][A0][9B] [A1][A5][92][9D][9A][9C][A0][9B]." next
-	"@[85][A1][A2][91][93][9D][C6][C5][C0][9A][9B] [79][95][91][9F][9A][C6] [7E][A0][9F][A0][A4][A0][9D][9A].){wait}{window_closeall}" eob
+	"@[85][A1][A2][91][93][9D][C6][C5][C0][9A][9B] [7E][A0][9F][A0][A4][A0][9D][9A] [72][9A][9D][95][9A][9F][94].){wait}{window_closeall}" eob
 
 l_0xc9ad77:
 	"{unset(flag 350)}" eob
