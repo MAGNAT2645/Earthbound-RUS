@@ -907,7 +907,7 @@
   Text Pointer 1: data_29.l_0xc73550
   Text Pointer 2: $0
   Type: person
-101:
+101: # NPC мужчины, который бежит в туалет в библиотеке Онетта. Сам NPC не имеет диалогов т.к. с ним нельзя поговорить.
   Direction: up
   Event Flag: 0x67
   Movement: 250
@@ -988,7 +988,7 @@
   Text Pointer 1: data_24.l_0xc69e74
   Text Pointer 2: $0
   Type: person
-110:
+110: # Пока без title
   Direction: down
   Event Flag: 0x0
   Movement: 605
@@ -1015,7 +1015,7 @@
   Text Pointer 1: data_24.l_0xc6a286
   Text Pointer 2: $0
   Type: person
-113:
+113: # Пока без title. Вытекает в диалог врачей в госпиталях.
   Direction: down
   Event Flag: 0x0
   Movement: 605
@@ -1024,7 +1024,7 @@
   Text Pointer 1: data_29.l_0xc73888
   Text Pointer 2: $0
   Type: person
-114:
+114: # Пока без title.
   Direction: down
   Event Flag: 0x0
   Movement: 12
@@ -1150,7 +1150,7 @@
   Text Pointer 1: data_30.l_0xc74475
   Text Pointer 2: $0
   Type: person
-128:
+128: # Пока без title
   Direction: down
   Event Flag: 0x4e
   Movement: 608
@@ -1456,7 +1456,7 @@
   Text Pointer 1: data_22.l_0xc67349
   Text Pointer 2: $0
   Type: person
-162:
+162: # Пока без title
   Direction: right
   Event Flag: 0x4e
   Movement: 608
@@ -1960,7 +1960,7 @@
   Text Pointer 1: data_38.l_0xc80c31
   Text Pointer 2: $0
   Type: person
-218:
+218: # Пока без title
   Direction: right
   Event Flag: 0x49
   Movement: 13
@@ -1996,7 +1996,7 @@
   Text Pointer 1: data_39.l_0xc81676
   Text Pointer 2: $0
   Type: person
-222:
+222: # TODO: ЗДЕСЬ
   Direction: down
   Event Flag: 0x153
   Movement: 14

@@ -4,6 +4,7 @@
  * Generated using CCScriptWriter.
  */
 
+import ebpp
 import RUS_ref
 
 // Text Data
@@ -359,7 +360,7 @@ l_0xefa2d5:
 	eob
 
 l_0xefa2d6:
-	"{store_registers}[19 19 00 00]{swap}{result_is(170)}[1B 02 {e(data_27.l_0xc6fb5d)}]" call(data_27.l_0xc6fb33) "{load_registers}[1D 0F 00 00][1F 1E 93 00 06]{set(flag 108)}" eob
+	"{store_registers}[19 19 00 00]{swap}{result_is(ITEM_KEY_SHACK)}[1B 02 {e(data_27.l_0xc6fb5d)}]" call(data_27.l_0xc6fb33) "{load_registers}[1D 0F 00 00][1F 1E 93 00 06]{set(flag 108)}" eob
 
 l_0xefa2fa:
 	"{set(flag 11)}[1F 15 6A 00 91 00 01][1F EF 6A 00][1F E8 FF][1F 61][1F EB FF 06]{music(83)}{music_switching_off}[1F ED][1F E5 FF][1F 15 A2 00 8B 00 01][1F 61][1F E9 6F 02][1F 61][1F 21 AE][1F 15 D1 00 92 00 01]{pause(1)}[1F EF D1 00][1F E8 FF]{pause(1)}[1F 61][1F ED][1F E5 FF][1F 11 01][1F 11 02][1F 12 03][1F 21 4D][1F 15 0D 00 B0 00 01]{pause(60)}[1F 1F 0D 00 06][1F 15 03 00 B1 00 01]{pause(1)}[1F E7 03 00]{window_open(1)}{unset(flag 11)}" goto(data_43.l_0xc884d0)

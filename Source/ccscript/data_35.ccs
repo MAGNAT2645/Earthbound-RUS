@@ -136,10 +136,10 @@ l_0xc7c5f7: // НЕИСПОЛЬЗУЕМОЕ?
 l_0xc7c609:
 	/*
 	"{store_registers}[19 19 00 00]{swap}{result_is(104)}[1B 03 {e(l_0xc7c669)}]{load_registers}[19 19 00 00][1D 0B 00][1B 02 {e(l_0xc7c655)}]{load_registers}[1D 0F 00 00]{store_registers}" call(data_36.l_0xc7dc85) "[1B 03 {e(l_0xc7c693)}]{load_registers}{swap}@[1C 02 00] избавил{swap}{call(data_gender.l_gendersuffix2)}" linebreak
-	"  от {swap}{rtoarg}[1C 05 00]." end
+	"  от: {swap}{rtoarg}[1C 05 00]." end
 	*/
 	"{store_registers}[19 19 00 00]{swap}{result_is(104)}[1B 03 {e(l_0xc7c669)}]{load_registers}[19 19 00 00][1D 0B 00][1B 02 {e(l_0xc7c655)}]{load_registers}[1D 0F 00 00]{store_registers}" call(data_36.l_0xc7dc85) "[1B 03 {e(l_0xc7c693)}]{load_registers}{swap}@[1C 02 00] [9A][99][92][91][93][9A][9D]{swap}{call(data_gender.l_gendersuffix2)}" linebreak
-	"  [A0][A4] {swap}{rtoarg}[1C 05 00]." end
+	"  [A0][A4]: {swap}{rtoarg}[1C 05 00]." end
 
 l_0xc7c655:
 //	"@Не надо выбрасывать [1C 05 00]." end

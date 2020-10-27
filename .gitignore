@@ -1,7 +1,7 @@
 /Source/ccscript/summary.txt
-/Tools/input.txt
-/Tools/output.txt
-/Tools/CoilSnake_4.0.exe
+/Tools/*
+!/Tools/CyrillicToCode.py
+!/Tools/CCScriptWriter.py
 /MSU-1/*
 EarthBoundRUS.smc
 EarthBoundRUS.ips

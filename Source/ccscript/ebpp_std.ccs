@@ -132,6 +132,6 @@ _mem_title: {
 // preset title commands for retrieving character names
 command title_ness(window)	{ mem_title(window, 0x7E99CE, 5) }
 command title_paula(window)	{ mem_title(window, 0x7E9A2D, 5) }
-command title_jeff(window)		{ mem_title(window, 0x7E9A8C, 5) }
-command title_poo(window)		{ mem_title(window, 0x7E9AEB, 5) }
-command title_dog(window)		{ mem_title(window, 0x7E9819, 6) }
+command title_jeff(window)	{ mem_title(window, 0x7E9A8C, 5) }
+command title_poo(window)	{ mem_title(window, 0x7E9AEB, 5) }
+command title_dog(window)	{ mem_title(window, 0x7E9819, 6) }
