@@ -3,6 +3,8 @@
 !/Tools/CyrillicToCode.py
 !/Tools/CCScriptWriter.py
 /MSU-1/*
-EarthBoundRUS.smc
-EarthBoundRUS.ips
-EarthBoundRUS.zip
+*.smc
+*.ips
+*.zip
+*.rar
+*.exe

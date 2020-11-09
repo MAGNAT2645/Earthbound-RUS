@@ -1,4 +1,4 @@
-[![Старая форма QIWI](https://i.imgur.com/DXbNi1L.png)](https://qiwi.me/magnat2645) [![Новая форма QIWI](https://i.imgur.com/DXbNi1L.png)](https://my.qiwi.com/Yvan-ZjZkejXn2O) [![Группа ВК](https://i.imgur.com/xmwABcp.png)](https://vk.com/mother123) [![Steam Group](https://i.imgur.com/BQMjWqb.png)](https://steamcommunity.com/groups/earthbound-mother-ru)
+[![Новая форма QIWI](https://i.imgur.com/DXbNi1L.png)](https://my.qiwi.com/Yvan-ZjZkejXn2O) [![Группа ВК](https://i.imgur.com/xmwABcp.png)](https://vk.com/mother123) [![Steam Group](https://i.imgur.com/BQMjWqb.png)](https://steamcommunity.com/groups/earthbound-mother-ru)
 
 # ВНИМАНИЕ!
 Игра переведена **полностью**, сейчас мы занимаемся вычиткой перевода.
