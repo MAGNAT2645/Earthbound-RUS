@@ -345,11 +345,11 @@ l_0xef8511:
 
 l_0xef8530:
 	/*
-	"@{user} шпионит за" linebreak
+	"@{user} изучает врага" linebreak
 	"  {target}![03]" eob
 	*/
 	newline
-	"@{user} [AA][A1][9A][A0][9F][9A][A4] [99][91]" linebreak
+	"@{user} [9A][99][A5][A9][91][96][A4] [93][A2][91][94][91]" linebreak
 	"  {target}![03]" eob
 
 l_0xef8543:
