@@ -82,7 +82,7 @@
   Money: 33
   Movement pattern: 21
   Music: 102
-  Name: "Безумный Культист"
+  Name: "Безумный культист"
   Offense: 19
   Overworld Sprite: 101
   PP: 0
@@ -129,7 +129,7 @@
   Money: 1648
   Movement pattern: 23
   Music: 102
-  Name: "Призрак Универмага"
+  Name: "Призрак универмага"
   Offense: 82
   Overworld Sprite: 455
   PP: 290
@@ -223,7 +223,7 @@
   Money: 172
   Movement pattern: 29
   Music: 102
-  Name: "Плохой Бизон"
+  Name: "Плохой бизон"
   Offense: 64
   Overworld Sprite: 311
   PP: 0
@@ -270,7 +270,7 @@
   Money: 7
   Movement pattern: 20
   Music: 96
-  Name: "Чёрный Антоид"
+  Name: "Чёрный антоид"
   Offense: 14
   Overworld Sprite: 316
   PP: 25
@@ -317,7 +317,7 @@
   Money: 35
   Movement pattern: 20
   Music: 96
-  Name: "Красный Антоид"
+  Name: "Красный антоид"
   Offense: 29
   Overworld Sprite: 253
   PP: 30
@@ -364,7 +364,7 @@
   Money: 15
   Movement pattern: 24
   Music: 98
-  Name: "Бродячий Гриб"
+  Name: "Бродячий гриб"
   Offense: 15
   Overworld Sprite: 291
   PP: 0
@@ -411,7 +411,7 @@
   Money: 95
   Movement pattern: 24
   Music: 98
-  Name: "Напыщенный Гриб"
+  Name: "Напыщенный гриб"
   Offense: 29
   Overworld Sprite: 244
   PP: 0
@@ -458,7 +458,7 @@
   Money: 13
   Movement pattern: 24
   Music: 96
-  Name: "Бродячий Росток"
+  Name: "Бродячий росток"
   Offense: 17
   Overworld Sprite: 317
   PP: 9
@@ -505,7 +505,7 @@
   Money: 119
   Movement pattern: 24
   Music: 96
-  Name: "Крепкий Росток"
+  Name: "Крепкий росток"
   Offense: 33
   Overworld Sprite: 373
   PP: 13
@@ -552,7 +552,7 @@
   Money: 346
   Movement pattern: 27
   Music: 96
-  Name: "Бешеный Пожарный Гидрант"
+  Name: "Бешеный пожарный гидрант"
   Offense: 60
   Overworld Sprite: 341
   PP: 0
@@ -599,7 +599,7 @@
   Money: 310
   Movement pattern: 21
   Music: 98
-  Name: "Мистическая Пластинка"
+  Name: "Мистическая пластинка"
   Offense: 63
   Overworld Sprite: 453
   PP: 35
@@ -646,7 +646,7 @@
   Money: 730
   Movement pattern: 27
   Music: 104
-  Name: "Энергетический Робот"
+  Name: "Энергетический робот"
   Offense: 119
   Overworld Sprite: 385
   PP: 0
@@ -693,7 +693,7 @@
   Money: 820
   Movement pattern: 27
   Music: 104
-  Name: "Ядерный Робот"
+  Name: "Ядерный робот"
   Offense: 142
   Overworld Sprite: 411
   PP: 0
@@ -740,7 +740,7 @@
   Money: 470
   Movement pattern: 21
   Music: 96
-  Name: "Иероглиф-Хранитель"
+  Name: "Иероглиф-хранитель"
   Offense: 94
   Overworld Sprite: 325
   PP: 126
@@ -787,7 +787,7 @@
   Money: 625
   Movement pattern: 20
   Music: 98
-  Name: "Иероглиф Гадюки"
+  Name: "Иероглиф гадюки"
   Offense: 89
   Overworld Sprite: 320
   PP: 0
@@ -819,7 +819,7 @@
   Fire vulnerability: 40%
   Flash vulnerability: 100%
   Freeze vulnerability: 70%
-  Gender: male
+  Gender: neutral
   Guts: 5
   HP: 543
   Hypnosis/Brainshock vulnerability: 50%
@@ -834,7 +834,7 @@
   Money: 791
   Movement pattern: 27
   Music: 97
-  Name: "Электро-Глазки"
+  Name: "Электро-глазки"
   Offense: 140
   Overworld Sprite: 276
   PP: 338
@@ -928,7 +928,7 @@
   Money: 804
   Movement pattern: 23
   Music: 97
-  Name: "Токопроводящий Дух"
+  Name: "Токопроводящий дух"
   Offense: 130
   Overworld Sprite: 324
   PP: 329
@@ -975,7 +975,7 @@
   Money: 853
   Movement pattern: 27
   Music: 104
-  Name: "Злой Призрак"
+  Name: "Злой призрак"
   Offense: 121
   Overworld Sprite: 340
   PP: 0
@@ -1069,7 +1069,7 @@
   Money: 32
   Movement pattern: 21
   Music: 101
-  Name: "Надоедливый Тусовщик"
+  Name: "Надоедливый тусовщик"
   Offense: 20
   Overworld Sprite: 56
   PP: 0
@@ -1116,7 +1116,7 @@
   Money: 268
   Movement pattern: 21
   Music: 102
-  Name: "Надоедливый Гуляка"
+  Name: "Надоедливый гуляка"
   Offense: 58
   Overworld Sprite: 391
   PP: 0
@@ -1163,7 +1163,7 @@
   Money: 19
   Movement pattern: 21
   Music: 96
-  Name: "Местный Скромник"
+  Name: "Местный скромник"
   Offense: 18
   Overworld Sprite: 388
   PP: 0
@@ -1257,7 +1257,7 @@
   Money: 195
   Movement pattern: 21
   Music: 148
-  Name: "Мр. Карпэйнтер"
+  Name: "Мр. карпэйнтер"
   Offense: 33
   Overworld Sprite: 159
   PP: 70
@@ -1304,7 +1304,7 @@
   Money: 0
   Movement pattern: 23
   Music: 103
-  Name: "Углеродная Собака"
+  Name: "Углеродная собака"
   Offense: 159
   Overworld Sprite: 333
   PP: 0
@@ -1351,7 +1351,7 @@
   Money: 49
   Movement pattern: 29
   Music: 96
-  Name: "Могучий Медведь"
+  Name: "Могучий медведь"
   Offense: 29
   Overworld Sprite: 331
   PP: 0
@@ -1398,7 +1398,7 @@
   Money: 440
   Movement pattern: 29
   Music: 96
-  Name: "Могущественный Медведь"
+  Name: "Могущественный медведь"
   Offense: 85
   Overworld Sprite: 229
   PP: 0
@@ -1445,7 +1445,7 @@
   Money: 53
   Movement pattern: 24
   Music: 98
-  Name: "Гнилой Плесневик"
+  Name: "Гнилой плесневик"
   Offense: 36
   Overworld Sprite: 285
   PP: 0
@@ -1492,7 +1492,7 @@
   Money: 430
   Movement pattern: 23
   Music: 97
-  Name: "Малыш-Молния"
+  Name: "Малыш-молния"
   Offense: 85
   Overworld Sprite: 275
   PP: 200
@@ -1539,7 +1539,7 @@
   Money: 17
   Movement pattern: 21
   Music: 96
-  Name: "Чокнутая Леди"
+  Name: "Чокнутая леди"
   Offense: 16
   Overworld Sprite: 57
   PP: 0
@@ -1586,7 +1586,7 @@
   Money: 134
   Movement pattern: 21
   Music: 96
-  Name: "Особо Чокнутая Леди"
+  Name: "Особо чокнутая леди"
   Offense: 48
   Overworld Sprite: 392
   PP: 0
@@ -1774,7 +1774,7 @@
   Money: 150
   Movement pattern: 23
   Music: 103
-  Name: "Титановый Муравей"
+  Name: "Титановый муравей"
   Offense: 19
   Overworld Sprite: 333
   PP: 102
@@ -1821,7 +1821,7 @@
   Money: 304
   Movement pattern: 20
   Music: 102
-  Name: "Гигантский Муравей"
+  Name: "Гигантский муравей"
   Offense: 54
   Overworld Sprite: 313
   PP: 81
@@ -1868,7 +1868,7 @@
   Money: 4086
   Movement pattern: 23
   Music: 103
-  Name: "Могучий Гриб"
+  Name: "Могучий гриб"
   Offense: 95
   Overworld Sprite: 333
   PP: 112
@@ -1915,7 +1915,7 @@
   Money: 4464
   Movement pattern: 23
   Music: 103
-  Name: "Чумная Крыса Смерти"
+  Name: "Чумная крыса смерти"
   Offense: 71
   Overworld Sprite: 333
   PP: 60
@@ -1962,7 +1962,7 @@
   Money: 400
   Movement pattern: 23
   Music: 103
-  Name: "Гигантский Крот"
+  Name: "Гигантский крот"
   Offense: 37
   Overworld Sprite: 333
   PP: 161
@@ -2009,7 +2009,7 @@
   Money: 1467
   Movement pattern: 23
   Music: 103
-  Name: "Землекоп-Страж"
+  Name: "Землекоп-страж"
   Offense: 59
   Overworld Sprite: 333
   PP: 110
@@ -2056,7 +2056,7 @@
   Money: 280
   Movement pattern: 24
   Music: 98
-  Name: "Чашка-Убийца"
+  Name: "Чашка-убийца"
   Offense: 55
   Overworld Sprite: 445
   PP: 0
@@ -2150,7 +2150,7 @@
   Money: 124
   Movement pattern: 20
   Music: 141
-  Name: "Кучка Слизи"
+  Name: "Кучка слизи"
   Offense: 42
   Overworld Sprite: 315
   PP: 0
@@ -2197,7 +2197,7 @@
   Money: 579
   Movement pattern: 20
   Music: 141
-  Name: "Более Слизистая Кучка"
+  Name: "Более слизистая кучка"
   Offense: 103
   Overworld Sprite: 235
   PP: 0
@@ -2291,7 +2291,7 @@
   Money: 412
   Movement pattern: 20
   Music: 102
-  Name: "Страшный Арахнид"
+  Name: "Страшный арахнид"
   Offense: 87
   Overworld Sprite: 100
   PP: 0
@@ -2432,7 +2432,7 @@
   Money: 21
   Movement pattern: 23
   Music: 97
-  Name: "Вращающийся Робот"
+  Name: "Вращающийся робот"
   Offense: 21
   Overworld Sprite: 248
   PP: 17
@@ -2479,7 +2479,7 @@
   Money: 256
   Movement pattern: 23
   Music: 97
-  Name: "Вертящийся Робот"
+  Name: "Вертящийся робот"
   Offense: 78
   Overworld Sprite: 374
   PP: 36
@@ -2526,7 +2526,7 @@
   Money: 756
   Movement pattern: 23
   Music: 97
-  Name: "Циркулирующийся Робот"
+  Name: "Циркулирующийся робот"
   Offense: 122
   Overworld Sprite: 404
   PP: 83
@@ -2620,7 +2620,7 @@
   Money: 4
   Movement pattern: 20
   Music: 96
-  Name: "Змея-Пружина"
+  Name: "Змея-пружина"
   Offense: 3
   Overworld Sprite: 283
   PP: 0
@@ -2667,7 +2667,7 @@
   Money: 276
   Movement pattern: 20
   Music: 96
-  Name: "Томимая Змея-Пружина"
+  Name: "Томимая змея-пружина"
   Offense: 52
   Overworld Sprite: 266
   PP: 0
@@ -2808,7 +2808,7 @@
   Money: 80
   Movement pattern: 20
   Music: 98
-  Name: "Таракан-Злыдень"
+  Name: "Таракан-злыдень"
   Offense: 30
   Overworld Sprite: 412
   PP: 0
@@ -2855,7 +2855,7 @@
   Money: 432
   Movement pattern: 20
   Music: 98
-  Name: "Гадкий Таракан"
+  Name: "Гадкий таракан"
   Offense: 84
   Overworld Sprite: 427
   PP: 0
@@ -2902,7 +2902,7 @@
   Money: 244
   Movement pattern: 28
   Music: 98
-  Name: "Сумасшедший Знак"
+  Name: "Сумасшедший знак"
   Offense: 64
   Overworld Sprite: 309
   PP: 98
@@ -3137,7 +3137,7 @@
   Money: 609
   Movement pattern: 20
   Music: 102
-  Name: "Грозный Скелпион"
+  Name: "Грозный скелпион"
   Offense: 82
   Overworld Sprite: 425
   PP: 125
@@ -3325,7 +3325,7 @@
   Money: 191
   Movement pattern: 23
   Music: 104
-  Name: "Ухмыляющаяся Сфера"
+  Name: "Ухмыляющаяся сфера"
   Offense: 50
   Overworld Sprite: 302
   PP: 60
@@ -3372,7 +3372,7 @@
   Money: 796
   Movement pattern: 23
   Music: 104
-  Name: "Неконтролируемая Сфера"
+  Name: "Неконтролируемая сфера"
   Offense: 116
   Overworld Sprite: 270
   PP: 180
@@ -3419,7 +3419,7 @@
   Money: 628
   Movement pattern: 28
   Music: 102
-  Name: "Окаменевший Страж"
+  Name: "Окаменевший страж"
   Offense: 106
   Overworld Sprite: 221
   PP: 0
@@ -3466,7 +3466,7 @@
   Money: 3235
   Movement pattern: 28
   Music: 103
-  Name: "Главный Хранитель"
+  Name: "Главный хранитель"
   Offense: 109
   Overworld Sprite: 221
   PP: 6
@@ -3607,7 +3607,7 @@
   Money: 58
   Movement pattern: 21
   Music: 96
-  Name: "Городской Зомби"
+  Name: "Городской зомби"
   Offense: 31
   Overworld Sprite: 308
   PP: 0
@@ -3701,7 +3701,7 @@
   Money: 54
   Movement pattern: 22
   Music: 96
-  Name: "Зомби-Собака"
+  Name: "Зомби-собака"
   Offense: 39
   Overworld Sprite: 364
   PP: 0
@@ -3748,7 +3748,7 @@
   Money: 159
   Movement pattern: 21
   Music: 102
-  Name: "Нечестный Коп"
+  Name: "Нечестный коп"
   Offense: 20
   Overworld Sprite: 387
   PP: 0
@@ -3795,7 +3795,7 @@
   Money: 420
   Movement pattern: 21
   Music: 102
-  Name: "Усердный Коп"
+  Name: "Усердный коп"
   Offense: 69
   Overworld Sprite: 387
   PP: 0
@@ -3842,7 +3842,7 @@
   Money: 29
   Movement pattern: 29
   Music: 96
-  Name: "Территориальный Дуб"
+  Name: "Территориальный дуб"
   Offense: 26
   Overworld Sprite: 297
   PP: 41
@@ -3889,7 +3889,7 @@
   Money: 690
   Movement pattern: 29
   Music: 102
-  Name: "Злой Старый Дуб"
+  Name: "Злой старый дуб"
   Offense: 134
   Overworld Sprite: 202
   PP: 76
@@ -3936,7 +3936,7 @@
   Money: 6968
   Movement pattern: 23
   Music: 97
-  Name: "Алмазная Собака"
+  Name: "Алмазная собака"
   Offense: 167
   Overworld Sprite: 333
   PP: 154
@@ -3983,7 +3983,7 @@
   Money: 499
   Movement pattern: 21
   Music: 97
-  Name: "Осьмибот-Мародёр"
+  Name: "Осьмибот-мародёр"
   Offense: 99
   Overworld Sprite: 339
   PP: 0
@@ -4030,7 +4030,7 @@
   Money: 637
   Movement pattern: 21
   Music: 97
-  Name: "Боевой Осьмибот"
+  Name: "Боевой осьмибот"
   Offense: 138
   Overworld Sprite: 15
   PP: 0
@@ -4077,7 +4077,7 @@
   Money: 744
   Movement pattern: 21
   Music: 97
-  Name: "Механический Осьмибот"
+  Name: "Механический осьмибот"
   Offense: 147
   Overworld Sprite: 357
   PP: 0
@@ -4124,7 +4124,7 @@
   Money: 815
   Movement pattern: 21
   Music: 97
-  Name: "Супер Осьмибот"
+  Name: "Супер осьмибот"
   Offense: 163
   Overworld Sprite: 401
   PP: 0
@@ -4171,7 +4171,7 @@
   Money: 12
   Movement pattern: 21
   Music: 101
-  Name: "Сумасшедшая Утка"
+  Name: "Сумасшедшая утка"
   Offense: 12
   Overworld Sprite: 287
   PP: 0
@@ -4265,7 +4265,7 @@
   Money: 1358
   Movement pattern: 23
   Music: 103
-  Name: "Триллионнолетний Росток"
+  Name: "Триллионнолетний росток"
   Offense: 54
   Overworld Sprite: 333
   PP: 240
@@ -4359,7 +4359,7 @@
   Money: 114
   Movement pattern: 22
   Music: 96
-  Name: "Пустынный Волк"
+  Name: "Пустынный волк"
   Offense: 57
   Overworld Sprite: 353
   PP: 0
@@ -4453,7 +4453,7 @@
   Money: 728
   Movement pattern: 29
   Music: 99
-  Name: "Большая Куча Рвоты"
+  Name: "Большая куча рвоты"
   Offense: 120
   Overworld Sprite: 38
   PP: 0
@@ -4547,7 +4547,7 @@
   Money: 528
   Movement pattern: 23
   Music: 96
-  Name: "Поцелуй Смерти"
+  Name: "Поцелуй смерти"
   Offense: 91
   Overworld Sprite: 31
   PP: 0
@@ -4594,7 +4594,7 @@
   Money: 879
   Movement pattern: 27
   Music: 96
-  Name: "Француз. Поцелуй Смерти"
+  Name: "Француз. поцелуй смерти"
   Offense: 160
   Overworld Sprite: 199
   PP: 0
@@ -4735,7 +4735,7 @@
   Money: 611
   Movement pattern: 20
   Music: 99
-  Name: "Электрический Угорь"
+  Name: "Электрический угорь"
   Offense: 97
   Overworld Sprite: 301
   PP: 0
@@ -4829,7 +4829,7 @@
   Money: 407
   Movement pattern: 0
   Music: 102
-  Name: "Жуткий Тент"
+  Name: "Жуткий тент"
   Offense: 43
   Overworld Sprite: 0
   PP: 56
@@ -4876,7 +4876,7 @@
   Money: 897
   Movement pattern: 23
   Music: 102
-  Name: "Демон-Скуоттер"
+  Name: "Демон-скваттер"
   Offense: 158
   Overworld Sprite: 191
   PP: 60
@@ -4970,7 +4970,7 @@
   Money: 604
   Movement pattern: 20
   Music: 98
-  Name: "Великий Гребнетаран"
+  Name: "Великий гребнетаран"
   Offense: 100
   Overworld Sprite: 201
   PP: 0
@@ -5017,7 +5017,7 @@
   Money: 467
   Movement pattern: 22
   Music: 97
-  Name: "Мук Младший"
+  Name: "Мук младший"
   Offense: 76
   Overworld Sprite: 196
   PP: 190
@@ -5064,7 +5064,7 @@
   Money: 715
   Movement pattern: 22
   Music: 97
-  Name: "Мук Старший"
+  Name: "Мук старший"
   Offense: 108
   Overworld Sprite: 236
   PP: 700
@@ -5111,7 +5111,7 @@
   Money: 71
   Movement pattern: 24
   Music: 98
-  Name: "Вонючий Дух"
+  Name: "Вонючий дух"
   Offense: 35
   Overworld Sprite: 285
   PP: 50
@@ -5158,7 +5158,7 @@
   Money: 541
   Movement pattern: 24
   Music: 98
-  Name: "Смрадный Дух"
+  Name: "Смрадный дух"
   Offense: 90
   Overworld Sprite: 443
   PP: 0
@@ -5252,7 +5252,7 @@
   Money: 6
   Movement pattern: 20
   Music: 96
-  Name: "Безумный Слизень"
+  Name: "Безумный слизень"
   Offense: 9
   Overworld Sprite: 429
   PP: 6
@@ -5299,7 +5299,7 @@
   Money: 543
   Movement pattern: 20
   Music: 96
-  Name: "Питбульный Слизень"
+  Name: "Питбульный слизень"
   Offense: 79
   Overworld Sprite: 442
   PP: 11
@@ -5346,7 +5346,7 @@
   Money: 9
   Movement pattern: 20
   Music: 101
-  Name: "Мышь-Хулиган"
+  Name: "Мышь-хулиган"
   Offense: 7
   Overworld Sprite: 416
   PP: 0
@@ -5393,7 +5393,7 @@
   Money: 406
   Movement pattern: 20
   Music: 102
-  Name: "Смертоносная Мышь"
+  Name: "Смертоносная мышь"
   Offense: 63
   Overworld Sprite: 42
   PP: 0
@@ -5440,7 +5440,7 @@
   Money: 641
   Movement pattern: 27
   Music: 96
-  Name: "Беззаботная Бомба"
+  Name: "Беззаботная бомба"
   Offense: 135
   Overworld Sprite: 383
   PP: 0
@@ -5487,7 +5487,7 @@
   Money: 6564
   Movement pattern: 23
   Music: 104
-  Name: "Электро-Спектр"
+  Name: "Электро-спектр"
   Offense: 148
   Overworld Sprite: 333
   PP: 80
@@ -5628,7 +5628,7 @@
   Money: 624
   Movement pattern: 21
   Music: 99
-  Name: "Антропоморфная Рыба"
+  Name: "Антропоморфная рыба"
   Offense: 83
   Overworld Sprite: 288
   PP: 0
@@ -5675,7 +5675,7 @@
   Money: 686
   Movement pattern: 21
   Music: 103
-  Name: "Брат Антропоморфной Рыбы"
+  Name: "Брат антропоморфной рыбы"
   Offense: 114
   Overworld Sprite: 228
   PP: 210
@@ -5722,7 +5722,7 @@
   Money: 3
   Movement pattern: 22
   Music: 101
-  Name: "Бродячий Пёс"
+  Name: "Бродячий пёс"
   Offense: 4
   Overworld Sprite: 330
   PP: 0
@@ -5769,7 +5769,7 @@
   Money: 47
   Movement pattern: 21
   Music: 96
-  Name: "Хэллоуинский Пацан"
+  Name: "Хэллоуинский пацан"
   Offense: 30
   Overworld Sprite: 444
   PP: 0
@@ -5816,7 +5816,7 @@
   Money: 17
   Movement pattern: 29
   Music: 102
-  Name: "Пещерный Мальчик"
+  Name: "Пещерный мальчик"
   Offense: 21
   Overworld Sprite: 329
   PP: 0
@@ -5863,7 +5863,7 @@
   Money: 255
   Movement pattern: 27
   Music: 98
-  Name: "Абстрактная Картина"
+  Name: "Абстрактная картина"
   Offense: 67
   Overworld Sprite: 300
   PP: 60
@@ -5957,7 +5957,7 @@
   Money: 577
   Movement pattern: 24
   Music: 102
-  Name: "Ожесточённая Мумия"
+  Name: "Ожесточённая мумия"
   Offense: 101
   Overworld Sprite: 314
   PP: 0
@@ -6004,7 +6004,7 @@
   Money: 836
   Movement pattern: 30
   Music: 102
-  Name: "Эго Сфера"
+  Name: "Эго сфера"
   Offense: 125
   Overworld Sprite: 327
   PP: 0
@@ -6051,7 +6051,7 @@
   Money: 4736
   Movement pattern: 23
   Music: 104
-  Name: "Гроза-Шторм"
+  Name: "Гроза-шторм"
   Offense: 111
   Overworld Sprite: 333
   PP: 70
@@ -6098,7 +6098,7 @@
   Money: 18
   Movement pattern: 21
   Music: 98
-  Name: "Младший Поддакиватель"
+  Name: "Младший поддакиватель"
   Offense: 8
   Overworld Sprite: 284
   PP: 0
@@ -6239,7 +6239,7 @@
   Money: 110
   Movement pattern: 23
   Music: 96
-  Name: "Милый Крохотный НЛО"
+  Name: "Милый крохотный НЛО"
   Offense: 49
   Overworld Sprite: 306
   PP: 25
@@ -6380,7 +6380,7 @@
   Money: 525
   Movement pattern: 21
   Music: 102
-  Name: "Жёсткий Парень"
+  Name: "Жёсткий парень"
   Offense: 72
   Overworld Sprite: 390
   PP: 0
@@ -6427,7 +6427,7 @@
   Money: 216
   Movement pattern: 30
   Music: 98
-  Name: "Безумное Такси"
+  Name: "Безумное такси"
   Offense: 53
   Overworld Sprite: 289
   PP: 0
@@ -6615,7 +6615,7 @@
   Money: 392
   Movement pattern: 30
   Music: 96
-  Name: "Робот-Охранник"
+  Name: "Робот-охранник"
   Offense: 77
   Overworld Sprite: 310
   PP: 0
@@ -6756,7 +6756,7 @@
   Money: 862
   Movement pattern: 27
   Music: 102
-  Name: "Превосходный Пироманьяк"
+  Name: "Превосходный пироманьяк"
   Offense: 145
   Overworld Sprite: 225
   PP: 574
@@ -6803,7 +6803,7 @@
   Money: 36
   Movement pattern: 20
   Music: 101
-  Name: "Грубый Крот"
+  Name: "Грубый крот"
   Offense: 22
   Overworld Sprite: 415
   PP: 0
@@ -6850,7 +6850,7 @@
   Money: 9
   Movement pattern: 22
   Music: 96
-  Name: "Сердитый Козёл"
+  Name: "Сердитый козёл"
   Offense: 8
   Overworld Sprite: 294
   PP: 0
@@ -6897,7 +6897,7 @@
   Money: 2081
   Movement pattern: 27
   Music: 148
-  Name: "Неуклюжий Робот"
+  Name: "Неуклюжий робот"
   Offense: 88
   Overworld Sprite: 275
   PP: 0
@@ -6944,7 +6944,7 @@
   Money: 768
   Movement pattern: 27
   Music: 103
-  Name: "Дух Огня"
+  Name: "Дух огня"
   Offense: 131
   Overworld Sprite: 279
   PP: 0
@@ -7273,7 +7273,7 @@
   Money: 62
   Movement pattern: 29
   Music: 96
-  Name: "Простой Крокодил"
+  Name: "Простой крокодил"
   Offense: 40
   Overworld Sprite: 332
   PP: 0
@@ -7320,7 +7320,7 @@
   Money: 495
   Movement pattern: 29
   Music: 96
-  Name: "Сильный Крокодил"
+  Name: "Сильный крокодил"
   Offense: 85
   Overworld Sprite: 363
   PP: 0
@@ -7367,7 +7367,7 @@
   Money: 692
   Movement pattern: 29
   Music: 99
-  Name: "Жёсткий Крокодил"
+  Name: "Жёсткий крокодил"
   Offense: 110
   Overworld Sprite: 223
   PP: 0
@@ -7414,7 +7414,7 @@
   Money: 26
   Movement pattern: 23
   Music: 98
-  Name: "Плохая Пчела"
+  Name: "Плохая пчела"
   Offense: 23
   Overworld Sprite: 318
   PP: 0
@@ -7461,7 +7461,7 @@
   Money: 84
   Movement pattern: 23
   Music: 141
-  Name: "Очень Плохая Пчела"
+  Name: "Очень плохая пчела"
   Offense: 32
   Overworld Sprite: 376
   PP: 0
@@ -7508,7 +7508,7 @@
   Money: 5
   Movement pattern: 25
   Music: 101
-  Name: "Ехидный Ворон"
+  Name: "Ехидный ворон"
   Offense: 5
   Overworld Sprite: 282
   PP: 0
@@ -7555,7 +7555,7 @@
   Money: 0
   Movement pattern: 0
   Music: 0
-  Name: my pet
+  Name: my pet # Заменяется на имя питомца?
   Offense: 4
   Overworld Sprite: 0
   PP: 0
@@ -7837,7 +7837,7 @@
   Money: 0
   Movement pattern: 0
   Music: 0
-  Name: "Летающий Человек"
+  Name: "Летающий человек"
   Offense: 95
   Overworld Sprite: 0
   PP: 0
@@ -7884,7 +7884,7 @@
   Money: 0
   Movement pattern: 0
   Music: 0
-  Name: "Плюшевый Мишка"
+  Name: "Плюшевый мишка"
   Offense: 7
   Overworld Sprite: 0
   PP: 0
@@ -7931,7 +7931,7 @@
   Money: 0
   Movement pattern: 0
   Music: 0
-  Name: "Супер Плюшевый Мишка"
+  Name: "Супер плюшевый мишка"
   Offense: 7
   Overworld Sprite: 0
   PP: 0
@@ -8025,7 +8025,7 @@
   Money: 33
   Movement pattern: 21
   Music: 102
-  Name: "Безумный Культист"
+  Name: "Безумный культист"
   Offense: 19
   Overworld Sprite: 101
   PP: 0
@@ -8072,7 +8072,7 @@
   Money: 1648
   Movement pattern: 23
   Music: 102
-  Name: "Призрак Универмага"
+  Name: "Призрак универмага"
   Offense: 82
   Overworld Sprite: 455
   PP: 290
@@ -8213,7 +8213,7 @@
   Money: 0
   Movement pattern: 23
   Music: 103
-  Name: "Углеродная Собака"
+  Name: "Углеродная собака"
   Offense: 159
   Overworld Sprite: 333
   PP: 0
@@ -8307,7 +8307,7 @@
   Money: 150
   Movement pattern: 23
   Music: 103
-  Name: "Титановый Муравей"
+  Name: "Титановый муравей"
   Offense: 19
   Overworld Sprite: 333
   PP: 102
@@ -8354,7 +8354,7 @@
   Money: 304
   Movement pattern: 20
   Music: 102
-  Name: "Гигантский Муравей"
+  Name: "Гигантский муравей"
   Offense: 54
   Overworld Sprite: 313
   PP: 81
@@ -8401,7 +8401,7 @@
   Money: 4086
   Movement pattern: 23
   Music: 103
-  Name: "Могучий Гриб"
+  Name: "Могучий гриб"
   Offense: 95
   Overworld Sprite: 333
   PP: 112
@@ -8448,7 +8448,7 @@
   Money: 4464
   Movement pattern: 23
   Music: 103
-  Name: "Чумная Крыса Смерти"
+  Name: "Чумная крыса смерти"
   Offense: 71
   Overworld Sprite: 333
   PP: 60
@@ -8495,7 +8495,7 @@
   Money: 400
   Movement pattern: 23
   Music: 103
-  Name: "Гигантский Крот"
+  Name: "Гигантский крот"
   Offense: 37
   Overworld Sprite: 333
   PP: 161
@@ -8542,7 +8542,7 @@
   Money: 1467
   Movement pattern: 23
   Music: 103
-  Name: "Землекоп-Страж"
+  Name: "Землекоп-страж"
   Offense: 59
   Overworld Sprite: 333
   PP: 110
@@ -8918,7 +8918,7 @@
   Money: 58
   Movement pattern: 21
   Music: 96
-  Name: "Городской Зомби"
+  Name: "Городской зомби"
   Offense: 31
   Overworld Sprite: 308
   PP: 0
@@ -8965,7 +8965,7 @@
   Money: 6968
   Movement pattern: 23
   Music: 97
-  Name: "Алмазная Собака"
+  Name: "Алмазная собака"
   Offense: 167
   Overworld Sprite: 333
   PP: 154
@@ -9012,7 +9012,7 @@
   Money: 1358
   Movement pattern: 23
   Music: 103
-  Name: "Триллионнолетний Росток"
+  Name: "Триллионнолетний росток"
   Offense: 54
   Overworld Sprite: 333
   PP: 240
@@ -9106,7 +9106,7 @@
   Money: 690
   Movement pattern: 29
   Music: 99
-  Name: "Большая Куча Блевотины"
+  Name: "Большая куча блевотины"
   Offense: 134
   Overworld Sprite: 38
   PP: 76
@@ -9294,7 +9294,7 @@
   Money: 407
   Movement pattern: 0
   Music: 102
-  Name: "Жуткий Тент"
+  Name: "Жуткий тент"
   Offense: 43
   Overworld Sprite: 0
   PP: 56
@@ -9341,7 +9341,7 @@
   Money: 897
   Movement pattern: 23
   Music: 102
-  Name: "Демон-Скуоттер"
+  Name: "Демон-скваттер"
   Offense: 158
   Overworld Sprite: 191
   PP: 60
@@ -9435,7 +9435,7 @@
   Money: 6564
   Movement pattern: 23
   Music: 104
-  Name: "Электро-Спектр"
+  Name: "Электро-спектр"
   Offense: 148
   Overworld Sprite: 333
   PP: 80
@@ -9482,7 +9482,7 @@
   Money: 4736
   Movement pattern: 23
   Music: 104
-  Name: "Гроза-Шторм"
+  Name: "Гроза-шторм"
   Offense: 111
   Overworld Sprite: 333
   PP: 70
@@ -9670,7 +9670,7 @@
   Money: 2081
   Movement pattern: 27
   Music: 148
-  Name: "Неуклюжий Робот"
+  Name: "Неуклюжий робот"
   Offense: 88
   Overworld Sprite: 275
   PP: 0
@@ -9811,7 +9811,7 @@
   Money: 3235
   Movement pattern: 28
   Music: 103
-  Name: "Главный Хранитель"
+  Name: "Главный хранитель"
   Offense: 109
   Overworld Sprite: 322
   PP: 6
@@ -9858,7 +9858,7 @@
   Money: 7
   Movement pattern: 20
   Music: 96
-  Name: "Чёрный Антоид"
+  Name: "Чёрный антоид"
   Offense: 14
   Overworld Sprite: 316
   PP: 25
@@ -9905,7 +9905,7 @@
   Money: 15
   Movement pattern: 24
   Music: 98
-  Name: "Напыщенный Гриб"
+  Name: "Напыщенный гриб"
   Offense: 15
   Overworld Sprite: 403
   PP: 0
@@ -9952,7 +9952,7 @@
   Money: 3
   Movement pattern: 22
   Music: 101
-  Name: "Бродячий Пёс"
+  Name: "Бродячий пёс"
   Offense: 4
   Overworld Sprite: 330
   PP: 0
@@ -9999,7 +9999,7 @@
   Money: 17
   Movement pattern: 29
   Music: 102
-  Name: "Пещерный Мальчик"
+  Name: "Пещерный мальчик"
   Offense: 21
   Overworld Sprite: 329
   PP: 0
@@ -10046,7 +10046,7 @@
   Money: 162
   Movement pattern: 0
   Music: 101
-  Name: "Маленький Призрак"
+  Name: "Маленький призрак"
   Offense: 19
   Overworld Sprite: 0
   PP: 0
@@ -10093,7 +10093,7 @@
   Money: 20
   Movement pattern: 26
   Music: 148
-  Name: "Стармен Младший"
+  Name: "Стармен младший"
   Offense: 11
   Overworld Sprite: 43
   PP: 999
@@ -10469,7 +10469,7 @@
   Money: 58
   Movement pattern: 21
   Music: 101
-  Name: "Деревенский Зомби"
+  Name: "Деревенский зомби"
   Offense: 31
   Overworld Sprite: 237
   PP: 0
@@ -10516,7 +10516,7 @@
   Money: 0
   Movement pattern: 27
   Music: 101
-  Name: "Криминальная Гусеница"
+  Name: "Криминальная гусеница"
   Offense: 37
   Overworld Sprite: 417
   PP: 168
@@ -10563,7 +10563,7 @@
   Money: 896
   Movement pattern: 21
   Music: 96
-  Name: "Злобный Глаз"
+  Name: "Злобный глаз"
   Offense: 141
   Overworld Sprite: 358
   PP: 400
@@ -10610,7 +10610,7 @@
   Money: 0
   Movement pattern: 32
   Music: 0
-  Name: "Магическая Бабочка"
+  Name: "Магическая бабочка"
   Offense: 2
   Overworld Sprite: 413
   PP: 0
@@ -10704,7 +10704,7 @@
   Money: 0
   Movement pattern: 27
   Music: 101
-  Name: "Криминальный Червь"
+  Name: "Криминальный червь"
   Offense: 73
   Overworld Sprite: 461
   PP: 300
@@ -10845,7 +10845,7 @@
   Money: 2081
   Movement pattern: 27
   Music: 148
-  Name: "Неуклюжий Робот"
+  Name: "Неуклюжий робот"
   Offense: 88
   Overworld Sprite: 275
   PP: 0
