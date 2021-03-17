@@ -292,12 +292,13 @@ l_0xc6b063:
 
 l_0xc6b087:
 	/*
-	"[1F EB 09 06][1F 15 2E 00 FB 00 01][1F 61][19 22 03 03 2E 00][1F 13 03 00][1F F3 2E 00 03]{pause(60)}[1F F4 2E 00]{window_open(1)}@Куа куи куа куоо." linebreak
+	"@Куа куи куа куоо." linebreak
 	"  (Дай немного жвачки.)" next
 	"@Каки куке ко." linebreak
 	"  (Я позабочусь обо всём.){wait}{window_closeall}{pause(30)}" goto(data_43.l_0xc88103)
 	*/
-	"[1F EB 09 06][1F 15 2E 00 FB 00 01][1F 61][19 22 03 03 2E 00][1F 13 03 00][1F F3 2E 00 03]{pause(60)}[1F F4 2E 00]{window_open(1)}@[7C][A5][91] [9C][A5][9A] [9C][A5][91] [9C][A5][A0][A0]." linebreak
+	"[1F EB 09 06][1F 15 2E 00 FB 00 01][1F 61][19 22 03 03 2E 00][1F 13 03 00][1F F3 2E 00 03]{pause(60)}[1F F4 2E 00]{window_open(1)}{title(1, Bubble)}"
+	"@[7C][A5][91] [9C][A5][9A] [9C][A5][91] [9C][A5][A0][A0]." linebreak
 	"  ([75][91][9B] [9F][96][9E][9F][A0][94][A0] [98][93][91][A9][9C][9A].)" next
 	"@[7C][91][9C][9A] [9C][A5][9C][96] [9C][A0]." linebreak
 	"  ([B6] [A1][A0][99][91][92][A0][A9][A5][A3][C3] [A0][92][A0] [93][A3][97][9E].){wait}{window_closeall}{pause(30)}" goto(data_43.l_0xc88103)
