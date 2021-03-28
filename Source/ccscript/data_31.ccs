@@ -865,12 +865,12 @@ l_0xc76e92:
 
 l_0xc76ec5:
 	/*
-	"@Пошли,{pause(15)} пошли{pause(10)} илшоп!{pause(15)}  Уупс!{pause(15)}" linebreak
-	"  Моя вина,{pause(10)} пошли!{wait}" call(data_23.l_0xc6845d) "[1B 03 {e(data_23.l_0xc683de)}]{window_open(1)}" newline
+	"@Пошли{pause(15)}-пошли{pause(10)}-илшоп!{pause(15)}  Оой!{pause(15)}" linebreak
+	"  Ошибочка.{pause(10)} Я хотел сказать <пошли!>{wait}" call(data_23.l_0xc6845d) "[1B 03 {e(data_23.l_0xc683de)}]{window_open(1)}" newline
 	"@Извиняюсь!{pause(20)}  Ээээм... да.{wait}{set(flag 293)}" eob
 	*/
 	title(1, Cop)
-	"@[81][A0][AA][9D][9A],{pause(15)} [A1][A0][AA][9D][9A]{pause(10)} [9A][9D][AA][A0][A1]!{pause(15)}" linebreak
-	"  [85][A5][A1][A3]!{pause(15)}  [7E][A0][C6] [93][9A][9F][91],{pause(10)} [A1][A0][AA][9D][9A]!{wait}" call(data_23.l_0xc6845d) "[1B 03 {e(data_23.l_0xc683de)}]{window_open(1)}" newline
+	"@[81][A0][AA][9D][9A]{pause(15)}-[A1][A0][AA][9D][9A]{pause(10)}-[9A][9D][AA][A0][A1]!{pause(15)}  [80][A0][9B]!{pause(15)}" linebreak
+	"  [80][AA][9A][92][A0][A9][9C][91].{pause(10)} [B6] [A7][A0][A4][96][9D] [A3][9C][91][99][91][A4][C3] <[A1][A0][AA][9D][9A]!>{wait}" call(data_23.l_0xc6845d) "[1B 03 {e(data_23.l_0xc683de)}]{window_open(1)}" newline
 	"@[7A][99][93][9A][9F][C6][C5][A3][C3]!{pause(20)}  [B4][C4][C4][C4][9E]... [95][91].{wait}{set(flag 293)}" eob
 

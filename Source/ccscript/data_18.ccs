@@ -29,7 +29,7 @@ l_0xc61ed7:
 l_0xc61f07:
 	/*
 	"@Юки Юкикики" next
-	"@(Я Мэн К. Мэн.)" next
+	"@(Я {Mankman}.)" next
 	"@Юки Юкикики" next
 	"@(Для меня самая интересная вещь - это Королевский банан.)" next
 	"@Юки Юкикики" next
@@ -38,7 +38,7 @@ l_0xc61f07:
 	title(1, Mankman)
 	"[06 CB 01 {e(l_0xc62008)}]"
 	"@[B5][9C][9A] [B5][9C][9A][9C][9A][9C][9A]" next
-	"@([B6] [7E][C4][9F] [7C]. [7E][C4][9F].)" next
+	"@([B6] {Mankman}.)" next
 	"@[B5][9C][9A] [B5][9C][9A][9C][9A][9C][9A]" next
 	"@([75][9D][C6] [9E][96][9F][C6] [A3][91][9E][91][C6] [9A][9F][A4][96][A2][96][A3][9F][91][C6] [93][96][C0][C3] - [C4][A4][A0] [7C][A0][A2][A0][9D][96][93][A3][9C][9A][9B] [92][91][9F][91][9F].)" next
 	"@[B5][9C][9A] [B5][9C][9A][9C][9A][9C][9A]" next
@@ -55,19 +55,20 @@ l_0xc61f97:
 
 l_0xc61fab:
 	/*
-	call(data_15.l_0xc5e456) "[1B 02 {e(l_0xc61f97)}]{store_registers}[19 19 00 00]{swap}{result_is(166)}[1B 02 {e(l_0xc61f97)}]{load_registers}[1D 0F 00 00]{sound(118)}{pause(10)}@Юки!" next
+	"@Юки!" next
 	"@(Ах, я умер и попал на небеса обезьян!){wait}{window_closeall}[1F 1E 37 03 06][1F 17 39 03 2B 00 01]{set(flag 459)}" eob
 	*/
-	call(data_15.l_0xc5e456) "[1B 02 {e(l_0xc61f97)}]{store_registers}[19 19 00 00]{swap}{result_is(166)}[1B 02 {e(l_0xc61f97)}]{load_registers}[1D 0F 00 00]{sound(118)}{pause(10)}@[B5][9C][9A]!" next
+	call(data_15.l_0xc5e456) "[1B 02 {e(l_0xc61f97)}]{store_registers}[19 19 00 00]{swap}{result_is(166)}[1B 02 {e(l_0xc61f97)}]{load_registers}[1D 0F 00 00]{sound(118)}{pause(10)}"
+	"@[B5][9C][9A]!" next
 	"@([71][A7], [C6] [A5][9E][96][A2] [9A] [A1][A0][A1][91][9D] [9F][91] [9F][96][92][96][A3][91] [A0][92][96][99][C3][C6][9F]!){wait}{window_closeall}[1F 1E 37 03 06][1F 17 39 03 2B 00 01]{set(flag 459)}" eob
 
 l_0xc62008:
 	/*
 	"@Юкки Юкики" next
-	"@(Я Мэн К. Мэн.)" end
+	"@(Я {Mankman}.)" end
 	*/
 	"@[B5][9C][9C][9A] [B5][9C][9A][9C][9A]" next
-	"@([B6] [7E][C4][9F] [7C]. [7E][C4][9F].)" end
+	"@([B6] {Mankman}.)" end
 
 l_0xc62026:
 	/*

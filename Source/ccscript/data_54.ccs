@@ -331,11 +331,11 @@ l_0xc97e9e: // ПРИМ.: Текст при использовании [Тяжё
 
 l_0xc97eb7:
 	/*
-	"@{user}[19 1F]{swap} кинул{user_gender}{call(RUS_ref.l_gendersuffix)}" linebreak
+	"@{user}[19 1F]{swap} кинул{user_gender}{call(RUS_ref.l_gendersuffix)}:" linebreak
 	"  [1C 05 00]!{sound(70)}[03]" eob
 	*/
 	newline
-	"@{user}[19 1F]{swap} [9C][9A][9F][A5][9D]{user_gender}{call(RUS_ref.l_gendersuffix)}" linebreak
+	"@{user}[19 1F]{swap} [9C][9A][9F][A5][9D]{user_gender}{call(RUS_ref.l_gendersuffix)}:" linebreak
 	"  [1C 05 00]!{sound(70)}[03]" eob
 
 l_0xc97ed1:

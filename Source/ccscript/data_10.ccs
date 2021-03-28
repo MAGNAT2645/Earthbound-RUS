@@ -353,12 +353,10 @@ l_0xc5b6ca:
 
 l_0xc5b6e2:
 	/*
-	"@Хочешь, чтобы я купил у тебя" linebreak
-	"  [1C 05 00]" linebreak
+	"@Продашь [1C 05 00]" linebreak
 	"  за {swap}$[1C 0A 00 00 00 00]?" next
 	*/
-	"@[87][A0][A9][96][AA][C3], [A9][A4][A0][92][C2] [C6] [9C][A5][A1][9A][9D] [A5] [A4][96][92][C6]" linebreak
-	"  [1C 05 00]" linebreak
+	"@[81][A2][A0][95][91][AA][C3] [1C 05 00]" linebreak
 	"  [99][91] {swap}$[1C 0A 00 00 00 00]?" next
 	eob
 

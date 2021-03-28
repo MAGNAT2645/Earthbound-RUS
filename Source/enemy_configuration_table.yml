@@ -7728,7 +7728,7 @@
   Fire vulnerability: 70%
   Flash vulnerability: 70%
   Freeze vulnerability: 70%
-  Gender: female
+  Gender: male
   Guts: 5
   HP: 999
   Hypnosis/Brainshock vulnerability: 10%
@@ -7743,7 +7743,7 @@
   Money: 0
   Movement pattern: 0
   Music: 0
-  Name: "Обезьяна-Пузырь"
+  Name: "Бубль-гумыч"
   Offense: 7
   Overworld Sprite: 0
   PP: 0
@@ -7837,7 +7837,7 @@
   Money: 0
   Movement pattern: 0
   Music: 0
-  Name: "Летающий человек"
+  Name: "Летун"
   Offense: 95
   Overworld Sprite: 0
   PP: 0

@@ -9,8 +9,8 @@ import RUS_ref
 
 // Text Data
 l_0xc6822a:
-//	"{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@(Обезьяна-Пузырь присоединяется к тебе.)[03]{window_closeall}" eob
-	"{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@([80][92][96][99][C3][C6][9F][91]-[81][A5][99][C2][A2][C3] [A1][A2][9A][A3][A0][96][95][9A][9F][C6][96][A4][A3][C6] [9C] [A4][96][92][96].)[03]{window_closeall}" eob
+//	"{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@(Бубль-гумыч присоединился к тебе.)[03]{window_closeall}" eob
+	"{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@([72][A5][92][9D][C3]-[94][A5][9E][C2][A9] [A1][A2][9A][A3][A0][96][95][9A][9F][9A][9D][A3][C6] [9C] [A4][96][92][96].)[03]{window_closeall}" eob
 
 l_0xc68253:
 	"[06 0A 00 {e(l_0xc68264)}]{window_open(1)}" call(data_27.l_0xc6eeb4) "{window_closeall}" goto(l_0xc68264)
@@ -20,24 +20,24 @@ l_0xc68264:
 	"[1F 11 02][1F EB 02 06][1F F1 69 03 2F 00][1F 61][1F 1E 69 03 06][1F EC 02 01]{music(11)}{pause(120)}{pause(120)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@([1C 02 02] [A1][A2][9A][A3][A0][96][95][9A][9F][9A][9D][91][A3][C3] [9C] [A4][96][92][96].)[03]{window_closeall}" eob
 
 l_0xc6829f:
-//	"{window_closeall}[1F 11 0B][1F EB 0B 06][1F F1 21 05 2F 00][1F 61][1F 1E 21 05 06][1F EC 0B 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@(Летающий человек присоединился к тебе.)[03]{window_closeall}" eob
-	"{window_closeall}[1F 11 0B][1F EB 0B 06][1F F1 21 05 2F 00][1F 61][1F 1E 21 05 06][1F EC 0B 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@([7D][96][A4][91][C5][C0][9A][9B] [A9][96][9D][A0][93][96][9C] [A1][A2][9A][A3][A0][96][95][9A][9F][9A][9D][A3][C6] [9C] [A4][96][92][96].)[03]{window_closeall}" eob
+//	"{window_closeall}[1F 11 0B][1F EB 0B 06][1F F1 21 05 2F 00][1F 61][1F 1E 21 05 06][1F EC 0B 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@(Летун присоединился к тебе.)[03]{window_closeall}" eob
+	"{window_closeall}[1F 11 0B][1F EB 0B 06][1F F1 21 05 2F 00][1F 61][1F 1E 21 05 06][1F EC 0B 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@([7D][96][A4][A5][9F] [A1][A2][9A][A3][A0][96][95][9A][9F][9A][9D][A3][C6] [9C] [A4][96][92][96].)[03]{window_closeall}" eob
 
 l_0xc682dd:
-//	"{window_closeall}[1F 11 0C][1F EB 0C 06][1F F1 22 05 2F 00][1F 61][1F 1E 22 05 06][1F EC 0C 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@(Летающий человек присоединился к тебе.)[03]{window_closeall}" eob
-	"{window_closeall}[1F 11 0C][1F EB 0C 06][1F F1 22 05 2F 00][1F 61][1F 1E 22 05 06][1F EC 0C 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@([7D][96][A4][91][C5][C0][9A][9B] [A9][96][9D][A0][93][96][9C] [A1][A2][9A][A3][A0][96][95][9A][9F][9A][9D][A3][C6] [9C] [A4][96][92][96].)[03]{window_closeall}" eob
+//	"{window_closeall}[1F 11 0C][1F EB 0C 06][1F F1 22 05 2F 00][1F 61][1F 1E 22 05 06][1F EC 0C 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@(Летун присоединился к тебе.)[03]{window_closeall}" eob
+	"{window_closeall}[1F 11 0C][1F EB 0C 06][1F F1 22 05 2F 00][1F 61][1F 1E 22 05 06][1F EC 0C 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@([7D][96][A4][A5][9F] [A1][A2][9A][A3][A0][96][95][9A][9F][9A][9D][A3][C6] [9C] [A4][96][92][96].)[03]{window_closeall}" eob
 
 l_0xc6831b:
-//	"{window_closeall}[1F 11 0D][1F EB 0D 06][1F F1 23 05 2F 00][1F 61][1F 1E 23 05 06][1F EC 0D 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@(Летающий человек присоединился к тебе.)[03]{window_closeall}" eob
-	"{window_closeall}[1F 11 0D][1F EB 0D 06][1F F1 23 05 2F 00][1F 61][1F 1E 23 05 06][1F EC 0D 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@([7D][96][A4][91][C5][C0][9A][9B] [A9][96][9D][A0][93][96][9C] [A1][A2][9A][A3][A0][96][95][9A][9F][9A][9D][A3][C6] [9C] [A4][96][92][96].)[03]{window_closeall}" eob
+//	"{window_closeall}[1F 11 0D][1F EB 0D 06][1F F1 23 05 2F 00][1F 61][1F 1E 23 05 06][1F EC 0D 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@(Летун присоединился к тебе.)[03]{window_closeall}" eob
+	"{window_closeall}[1F 11 0D][1F EB 0D 06][1F F1 23 05 2F 00][1F 61][1F 1E 23 05 06][1F EC 0D 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@([7D][96][A4][A5][9F] [A1][A2][9A][A3][A0][96][95][9A][9F][9A][9D][A3][C6] [9C] [A4][96][92][96].)[03]{window_closeall}" eob
 
 l_0xc68359:
-//	"{window_closeall}[1F 11 0E][1F EB 0E 06][1F F1 24 05 2F 00][1F 61][1F 1E 24 05 06][1F EC 0E 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@(Летающий человек присоединился к тебе.)[03]{window_closeall}" eob
-	"{window_closeall}[1F 11 0E][1F EB 0E 06][1F F1 24 05 2F 00][1F 61][1F 1E 24 05 06][1F EC 0E 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@([7D][96][A4][91][C5][C0][9A][9B] [A9][96][9D][A0][93][96][9C] [A1][A2][9A][A3][A0][96][95][9A][9F][9A][9D][A3][C6] [9C] [A4][96][92][96].)[03]{window_closeall}" eob
+//	"{window_closeall}[1F 11 0E][1F EB 0E 06][1F F1 24 05 2F 00][1F 61][1F 1E 24 05 06][1F EC 0E 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@(Летун присоединился к тебе.)[03]{window_closeall}" eob
+	"{window_closeall}[1F 11 0E][1F EB 0E 06][1F F1 24 05 2F 00][1F 61][1F 1E 24 05 06][1F EC 0E 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@([7D][96][A4][A5][9F] [A1][A2][9A][A3][A0][96][95][9A][9F][9A][9D][A3][C6] [9C] [A4][96][92][96].)[03]{window_closeall}" eob
 
 l_0xc68397:
-//	"{window_closeall}[1F 11 0F][1F EB 0F 06][1F F1 25 05 2F 00][1F 61][1F 1E 25 05 06][1F EC 0F 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@(Летающий человек присоединился к тебе.)[03]{window_closeall}" eob
-	"{window_closeall}[1F 11 0F][1F EB 0F 06][1F F1 25 05 2F 00][1F 61][1F 1E 25 05 06][1F EC 0F 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@([7D][96][A4][91][C5][C0][9A][9B] [A9][96][9D][A0][93][96][9C] [A1][A2][9A][A3][A0][96][95][9A][9F][9A][9D][A3][C6] [9C] [A4][96][92][96].)[03]{window_closeall}" eob
+//	"{window_closeall}[1F 11 0F][1F EB 0F 06][1F F1 25 05 2F 00][1F 61][1F 1E 25 05 06][1F EC 0F 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@(Летун присоединился к тебе.)[03]{window_closeall}" eob
+	"{window_closeall}[1F 11 0F][1F EB 0F 06][1F F1 25 05 2F 00][1F 61][1F 1E 25 05 06][1F EC 0F 01]{music(123)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@([7D][96][A4][A5][9F] [A1][A2][9A][A3][A0][96][95][9A][9F][9A][9D][A3][C6] [9C] [A4][96][92][96].)[03]{window_closeall}" eob
 
 l_0xc683d5:
 	"[1F 12 07]" eob

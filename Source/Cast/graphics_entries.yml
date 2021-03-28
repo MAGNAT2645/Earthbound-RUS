@@ -78,86 +78,86 @@
   begin: 75
   misc: false
   size: 4
-20: # Обезьяна-Пузырь
+20: # Бубль-гумыч
   begin: 79
   misc: false
-  size: 3
+  size: 4
 21: # Тони
-  begin: 82
+  begin: 83
   misc: false
   size: 2
 22: # Гаусс
-  begin: 84 # 81
+  begin: 85 # 81
   misc: false
   size: 2
 23: # Тесси
-  begin: 86 # 84
+  begin: 87 # 84
   misc: false
   size: 2
 24: # Клуб наблюдателей за Тесси
-  begin: 88
+  begin: 89
   misc: false
   size: 6
 25: # Брикрод
-  begin: 94
+  begin: 95
   misc: false
   size: 3
 26: # Др. Андонатс
-  begin: 97
+  begin: 98
   misc: false
   size: 4
 27: # Мр. Сатурн (неиспользуемое)
-  begin: 101
+  begin: 102
   misc: false
   size: 3
 28: # Мастер Бэлч
-  begin: 104
+  begin: 105
   misc: false
   size: 4
 29: # Джордж Монтегю
-  begin: 108
+  begin: 109
   misc: false
   size: 5
 30: # Герардо Монтегю
-  begin: 113
+  begin: 114
   misc: false
   size: 5
 31: # Тала Рама
-  begin: 118
+  begin: 119
   misc: false
   size: 3
 32: # Гельдегардэ Монотоли
-  begin: 121
+  begin: 122
   misc: false
   size: 6
 33: # Венера
-  begin: 127
+  begin: 128
   misc: false
   size: 2
 34: # Звёздный Мастер
-  begin: 129
+  begin: 130
   misc: false
   size: 3
 35: # (Пробел)
-  begin: 132
+  begin: 133
   misc: false
   size: 6
 36: # Человек-Данж
-  begin: 138
+  begin: 139
   misc: false
   size: 4
 37: # Благородный воин
-  begin: 142
+  begin: 143
   misc: false
   size: 4
 38: # Племя Тенда
-  begin: 146
+  begin: 147
   misc: false
   size: 4
-39: # Летающие люди
-  begin: 150
+39: # Летуны
+  begin: 151
   misc: false
-  size: 3
+  size: 2
 40: # Папа
   begin: 153
   misc: false

@@ -262,10 +262,10 @@ l_0xc9a2ac:
 l_0xc9a306:
 	/*
 	"[06 78 02 {e(data_57.l_0xc9b20e)}]{window_open(1)}@(Скоро откроемся!" linebreak
-	"  Мач Пицца, отдел в Онетте.){wait}{window_closetop}" eob
+	"  Мах Пицца, филиал в Онетте.){wait}{window_closetop}" eob
 	*/
 	"[06 78 02 {e(data_57.l_0xc9b20e)}]{window_open(1)}@([83][9C][A0][A2][A0] [A0][A4][9C][A2][A0][96][9E][A3][C6]!" linebreak
-	"  [7E][91][A9] [81][9A][A8][A8][91], [A0][A4][95][96][9D] [93] [80][9F][96][A4][A4][96].){wait}{window_closetop}" eob
+	"  [7E][91][A7] [81][9A][A8][A8][91], [A6][9A][9D][9A][91][9D] [93] [80][9F][96][A4][A4][96].){wait}{window_closetop}" eob
 
 l_0xc9a336:
 	/*
