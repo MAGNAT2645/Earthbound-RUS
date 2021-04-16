@@ -1,0 +1,47 @@
+import asm65816
+// Makes the "skip sandwich" flag also turn off spawns.
+// by jtolmar
+// If using the standard run patch, the run button will also turn off spawns.
+// If using my run patch, it will not.
+
+// Spawn vertical
+// https://earthbound-rom-explorerr.herokuapp.com/address/$c02b55
+// $c02b65            LDA #$000b    ; Peaceful mode flag ID in A
+// $c02b68            JSL $c21628   ; Call flag check
+// $c02b6c            CMP #$0000    ; If 0
+// $c02b6f            BEQ UNKNOWN0  ; Resume spawn check
+// $c02b71            JMP UNKNOWN14 ; Else return
+
+// Instead of calling the flag check, call our extended check.
+ROM[0xc02b68] = JSL(extended_spawn_check)
+
+// Spawn horizontal
+// https://earthbound-rom-explorerr.herokuapp.com/address/$c02a6b
+// This is exactly the same idea, so just showing the relevant address
+// $c02a7d            JSL $c21628
+ROM[0xc02a7d] = JSL(extended_spawn_check)
+
+// Meat of the code is here.
+extended_spawn_check: {
+  // Vanilla check
+  // TODO: Could make this way more efficient by hand instead of calling the check flag routine
+  JSL(0xc21628) // Check flags[accumulator]. Accumulator is already 0x0B
+  CMP_i(0x0)
+  BEQ(1) // Spawns not off, continue.
+  RTL // Spawns on, return
+
+  // Check skip sandwich status
+  LDA_a(0x9840) // Load skip sandwich/toasted status
+  AND_i(0x00FF) // Drop high byte
+  // Note that there are obscure statuses set by plot events, which persist weird amounts of time,
+  // so we really need to check if it's exactly skip sandwich.
+  CMP_i	(0x0003) // Check if skip sandwich
+  BNE(4) // If not skip sandwich, skip to "spawns off"
+  // Spawns on
+  LDA_i(0x0001) // Return any non-0 (3 bytes)
+  RTL // (1 byte)
+  // Spawns off
+  LDA_i(0x0000) // Return 0
+  RTL
+}
+
