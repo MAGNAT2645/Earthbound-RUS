@@ -448,37 +448,37 @@
 89:
     Type: small
     Row:    10
-    Column: 0
+    Column: 7
     Character: "ь"
 90:
     Type: small
     Row:    10
-    Column: 1
+    Column: 8
     Character: "э"
 91:
     Type: small
     Row:    10
-    Column: 2
+    Column: 9
     Character: "ю"
 92:
     Type: small
     Row:    10
-    Column: 3
+    Column: 10
     Character: "я"
 93:
     Type: small
-    Row:    10
-    Column: 4
+    Row:    11
+    Column: 7
     Character: n
 94:
     Type: small
-    Row:    10
-    Column: 5
+    Row:    11
+    Column: 8
     Character: i
 95:
     Type: small
-    Row:    10
-    Column: 6
+    Row:    11
+    Column: 9
     Character: d
 96:
     Type: big
