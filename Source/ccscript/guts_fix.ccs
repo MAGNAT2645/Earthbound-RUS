@@ -18,4 +18,4 @@ import asm65816
 // Yep, was supposed to be the defender's guts.
 // Honestly there's surprisingly few of these in this game. You should see the
 // average Final Fantasy, woah nelly.
-ROM[0xC27F96] = LDX_a(0xA972) // меняем указатель на защищающегося
+ROM[0xC27F96] = LDX_a(0xA972) // меняем указатель на защищающегося (CURRENT_TARGET в RAM)
