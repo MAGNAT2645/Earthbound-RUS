@@ -351,7 +351,7 @@ l_0xef7b46:
 	newline
 	"@" call(l_0xef7ba0) "[7E][91][9C][A3][9A][9E][A5][9E] [80][81] [A5][93][96][9D][9A][A9][9A][9D][A3][C6] [9F][91] {delta}!{prompt}" eob
 
-l_0xef7b64:
+l_0xef7b64: // TODO: Подстроить текст под гендер персонажа (если возможно, хотя уже вроде пробовал)
 	/*
 	"{sound(103)}@{target} познаёт силу" linebreak
 	"[19 1F]{swap}  [1C 12 00].{prompt}" eob
@@ -384,20 +384,22 @@ l_0xef7bbf:
 l_0xef7bdc:
 	"{load_registers}" eob
 
-l_0xef7bdf:
+l_0xef7bdf: // TODO: Подстроить текст под гендер персонажа
 	/*
 	"@Враг оставил подарок!{prompt}" linebreak
-	"{sound(16)}{pause(1)}@В подарке находится" linebreak
+	"{sound(16)}{pause(1)}@В подарке находится:" linebreak
 	"[19 1F]{swap}  [1C 05 00]!{prompt}" linebreak
-	"[1D 03 FF][1B 02 {e(l_0xef7c73)}]{store_registers}" call(data_36.l_0xc7dc85) "[1B 03 {e(l_0xef7c42)}]{load_registers}{swap}@[1C 02 00]{swap} забирает это.[1D 0E 00 00]{sound(116)}{prompt}" eob
+	"[1D 03 FF][1B 02 {e(l_0xef7c73)}]{store_registers}" call(data_36.l_0xc7dc85) "[1B 03 {e(l_0xef7c42)}]{load_registers}{swap}"
+	"@[1C 02 00]{swap} забирает это.[1D 0E 00 00]{sound(116)}{prompt}" eob
 	*/
 	newline
 	"@[73][A2][91][94] [A0][A3][A4][91][93][9A][9D] [A1][A0][95][91][A2][A0][9C]!{prompt}" linebreak
-	"{sound(16)}{pause(1)}@[73] [A1][A0][95][91][A2][9C][96] [9F][91][A7][A0][95][9A][A4][A3][C6]" linebreak
+	"{sound(16)}{pause(1)}@[73] [A1][A0][95][91][A2][9C][96] [9F][91][A7][A0][95][9A][A4][A3][C6]:" linebreak
 	"[19 1F]{swap}  [1C 05 00]!{prompt}" linebreak
-	"[1D 03 FF][1B 02 {e(l_0xef7c73)}]{store_registers}" call(data_36.l_0xc7dc85) "[1B 03 {e(l_0xef7c42)}]{load_registers}{swap}@[1C 02 00]{swap} [99][91][92][9A][A2][91][96][A4] [C4][A4][A0].[1D 0E 00 00]{sound(116)}{prompt}" eob
+	"[1D 03 FF][1B 02 {e(l_0xef7c73)}]{store_registers}" call(data_36.l_0xc7dc85) "[1B 03 {e(l_0xef7c42)}]{load_registers}{swap}"
+	"@[1C 02 00]{swap} [99][91][92][9A][A2][91][96][A4] [C4][A4][A0].[1D 0E 00 00]{sound(116)}{prompt}" eob
 
-l_0xef7c42:
+l_0xef7c42: // TODO: Подстроить текст под гендер персонажа
 	/*
 	"@[1C 02 00] кладёт{load_registers} [1C 05 00]" linebreak
 	"  {swap}к вещам персонажа [1C 02 00].{swap}[1D 0E 00 00]{sound(116)}{prompt}" eob
@@ -453,21 +455,23 @@ l_0xef7ced:
 l_0xef7cf8:
 	/*
 	"@" call(data_37.l_0xc7e74e) " {call(RUS_ref.abandoned_multi)}" linebreak
-	"  от [1C 05 00].{prompt}" eob
+	"  от: [1C 05 00].{prompt}" eob
 	*/
 	"@" call(data_37.l_0xc7e74e) " {call(RUS_ref.abandoned_multi)}" linebreak
-	"  [A0][A4] [1C 05 00].{prompt}" eob
+	"  [A0][A4]: [1C 05 00].{prompt}" eob
 
 l_0xef7d0f:
 	/*
 	"@Что вы хотите выбросить?{prompt}" call(data_15.l_0xc5e4c3) newline
-	"[1B 02 {e(l_0xef7cb4)}]{store_registers}[19 19 00 00][1D 0B 00][1B 02 {e(l_0xef7dbe)}]{load_registers}[19 19 00 00]@Итак, вы хотите" linebreak
+	"[1B 02 {e(l_0xef7cb4)}]{store_registers}[19 19 00 00][1D 0B 00][1B 02 {e(l_0xef7dbe)}]{load_registers}[19 19 00 00]"
+	"@Итак, вы хотите" linebreak
 	"  выбросить [1C 05 00]?{prompt}" linebreak
 	"[19 02]Выбросить" eob
 	*/
 	newline
 	"@[89][A4][A0] [93][C2] [A7][A0][A4][9A][A4][96] [93][C2][92][A2][A0][A3][9A][A4][C3]?{prompt}" call(data_15.l_0xc5e4c3) newline
-	"[1B 02 {e(l_0xef7cb4)}]{store_registers}[19 19 00 00][1D 0B 00][1B 02 {e(l_0xef7dbe)}]{load_registers}[19 19 00 00]@[7A][A4][91][9C], [93][C2] [A7][A0][A4][9A][A4][96]" linebreak
+	"[1B 02 {e(l_0xef7cb4)}]{store_registers}[19 19 00 00][1D 0B 00][1B 02 {e(l_0xef7dbe)}]{load_registers}[19 19 00 00]"
+	"@[7A][A4][91][9C], [93][C2] [A7][A0][A4][9A][A4][96]" linebreak
 	"  [93][C2][92][A2][A0][A3][9A][A4][C3] [1C 05 00]?{prompt}" linebreak
 	"[19 02][73][C2][92][A2][A0][A3][9A][A4][C3]" eob
 
@@ -478,7 +482,7 @@ l_0xef7d61:
 l_0xef7d6f:
 	"[1C 07 02][11]{clearline}[09 02 {e(l_0xef7d83)} {e(l_0xef7cb4)}]" goto(l_0xef7cb4)
 
-l_0xef7d83:
+l_0xef7d83: // TODO: Подстроить текст под гендер персонажа
 	/*
 	"{load_registers}[1D 0F 00 00]{swap}@[1C 02 00]{swap} выбрасывает [1C 05 00]{prompt}" linebreak
 	"{swap}[19 1F]{swap}@и кладёт [1C 05 00] в рюкзак.[1D 0E 00 00]{sound(116)}{pause(1)}[03]" eob
@@ -490,20 +494,20 @@ l_0xef7dbe:
 //	"@Не выбрасывай [1C 05 00].{prompt}" goto(l_0xef7d0f)
 	"@[7F][96] [93][C2][92][A2][91][A3][C2][93][91][9B] [1C 05 00].{prompt}" goto(l_0xef7d0f)
 
-l_0xef7dd5:
+l_0xef7dd5: // [1C 02 03] - Джефф
 	/*
 	"@{user} увидел{user_gender}{call(RUS_ref.l_gendersuffix)}" linebreak
 	"  подарок за спиной врага." next
-	"{sound(16)}@В подарке находится" linebreak
+	"{sound(16)}@В подарке находится:" linebreak
 	"[19 1F]{swap}  [1C 05 00]." next
-	"@[1C 02 03] забирает это.[1D 0E 03 00]{sound(116)}[03]" eob
+	"@[1C 02 03] забрал это.[1D 0E 03 00]{sound(116)}[03]" eob
 	*/
 	newline
 	"@{user} [A5][93][9A][95][96][9D]{user_gender}{call(RUS_ref.l_gendersuffix)}" linebreak
 	"  [A1][A0][95][91][A2][A0][9C] [99][91] [A3][A1][9A][9F][A0][9B] [93][A2][91][94][91]." next
-	"{sound(16)}@[73] [A1][A0][95][91][A2][9C][96] [9F][91][A7][A0][95][9A][A4][A3][C6]" linebreak
+	"{sound(16)}@[73] [A1][A0][95][91][A2][9C][96] [9F][91][A7][A0][95][9A][A4][A3][C6]:" linebreak
 	"[19 1F]{swap}  [1C 05 00]." next
-	"@[1C 02 03] [99][91][92][9A][A2][91][96][A4] [C4][A4][A0].[1D 0E 03 00]{sound(116)}[03]" eob
+	"@[1C 02 03] [99][91][92][A2][91][9D] [C4][A4][A0].[1D 0E 03 00]{sound(116)}[03]" eob
 
 l_0xef7e25:
 	/*

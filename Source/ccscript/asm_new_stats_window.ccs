@@ -80,8 +80,6 @@ Close_Equipment_Window:{
 	JMP_l (0xC1AAEE)
 }
 
-//ROM[0xC40091] = CPY_i (0x00FF)
-
 ROM[0xC1AA68] = JSL (Equip_Routine_Edit1)
 
 Equip_Routine_Edit1:{
@@ -126,142 +124,142 @@ ROM[0xC1A4BA] = {
 }
 
 OffenseEquip_Text:
-	"[71][A4][91][9C][91]:[00]"				// "Атака:[00]"
-define OFFENSE_TEXT_LENGTH			= 0x0006
-define OFFENSE_TEXT_X_POS				= 0x0000
-define OFFENSE_TEXT_Y_POS				= 0x0000
-define OFFENSE_NUM_X_POS				= 0x0031
-define OFFENSE_NUM_Y_POS				= 0x0000
-define OFFENSE_DELTA_NUM_X_POS		= 0x0055
-define OFFENSE_DELTA_NUM_Y_POS		= 0x0000
-define OFFENSE_ARROW_X_POS			= 0x0048
-define OFFENSE_ARROW_Y_POS			= 0x0000
+	"[71][A4][91][9C][91]:[00]" // "Атака:[00]"
+define OFFENSE_TEXT_LENGTH     = 0x0006
+define OFFENSE_TEXT_X_POS      = 0x000C
+define OFFENSE_TEXT_Y_POS      = 0x0000
+define OFFENSE_NUM_X_POS       = 0x0031
+define OFFENSE_NUM_Y_POS       = 0x0000
+define OFFENSE_DELTA_NUM_X_POS = 0x0055
+define OFFENSE_DELTA_NUM_Y_POS = 0x0000
+define OFFENSE_ARROW_X_POS     = 0x0048
+define OFFENSE_ARROW_Y_POS     = 0x0000
 
 DefenseEquip_Text:
-	"[79][91][C0][9A][A4][91]:[00]"			// "Защита:[00]"
-define DEFENSE_TEXT_LENGTH			= 0x0007
-define DEFENSE_TEXT_X_POS				= 0x0000
-define DEFENSE_TEXT_Y_POS				= 0x0001
-define DEFENSE_NUM_X_POS				= 0x0031
-define DEFENSE_NUM_Y_POS				= 0x0001
-define DEFENSE_DELTA_NUM_X_POS		= 0x0055
-define DEFENSE_DELTA_NUM_Y_POS		= 0x0001
-define DEFENSE_ARROW_X_POS			= 0x0048
-define DEFENSE_ARROW_Y_POS			= 0x0001
+	"[79][91][C0][9A][A4][91]:[00]" // "Защита:[00]"
+define DEFENSE_TEXT_LENGTH     = 0x0007
+define DEFENSE_TEXT_X_POS      = 0x0005
+define DEFENSE_TEXT_Y_POS      = 0x0001
+define DEFENSE_NUM_X_POS       = 0x0031
+define DEFENSE_NUM_Y_POS       = 0x0001
+define DEFENSE_DELTA_NUM_X_POS = 0x0055
+define DEFENSE_DELTA_NUM_Y_POS = 0x0001
+define DEFENSE_ARROW_X_POS     = 0x0048
+define DEFENSE_ARROW_Y_POS     = 0x0001
 
 SpeedEquip_Text:
-	"[83][9C][A0][A2][A0][A3][A4][C3]:[00]"	// "Скорость:[00]"
-define SPEED_TEXT_LENGTH				= 0x0009
-define SPEED_TEXT_X_POS				= 0x0000
-define SPEED_TEXT_Y_POS				= 0x0002
-define SPEED_NUM_X_POS				= 0x0031
-define SPEED_NUM_Y_POS				= 0x0002
-define SPEED_DELTA_NUM_X_POS		= 0x0055
-define SPEED_DELTA_NUM_Y_POS		= 0x0002
-define SPEED_ARROW_X_POS				= 0x0048
-define SPEED_ARROW_Y_POS			= 0x0002
+	"[83][9C][A0][A2][A0][A3][A4][C3]:[00]" // "Скорость:[00]"
+define SPEED_TEXT_LENGTH     = 0x0009
+define SPEED_TEXT_X_POS      = 0x0000
+define SPEED_TEXT_Y_POS      = 0x0002
+define SPEED_NUM_X_POS       = 0x0031
+define SPEED_NUM_Y_POS       = 0x0002
+define SPEED_DELTA_NUM_X_POS = 0x0055
+define SPEED_DELTA_NUM_Y_POS = 0x0002
+define SPEED_ARROW_X_POS     = 0x0048
+define SPEED_ARROW_Y_POS     = 0x0002
 
 GutsEquip_Text:
-	"[73][A0][9D][C6]:[00]"	// "Воля:[00]"
-define GUTS_TEXT_LENGTH				= 0x0009
-define GUTS_TEXT_X_POS					= 0x0000
-define GUTS_TEXT_Y_POS					= 0x0003
-define GUTS_NUM_X_POS					= 0x0031
-define GUTS_NUM_Y_POS					= 0x0003
-define GUTS_DELTA_NUM_X_POS			= 0x0055
-define GUTS_DELTA_NUM_Y_POS			= 0x0003
-define GUTS_ARROW_X_POS				= 0x0048
-define GUTS_ARROW_Y_POS				= 0x0003
+	"[73][A0][9D][C6]:[00]" // "Воля:[00]"
+define GUTS_TEXT_LENGTH     = 0x0005
+define GUTS_TEXT_X_POS      = 0x0013
+define GUTS_TEXT_Y_POS      = 0x0003
+define GUTS_NUM_X_POS       = 0x0031
+define GUTS_NUM_Y_POS       = 0x0003
+define GUTS_DELTA_NUM_X_POS = 0x0055
+define GUTS_DELTA_NUM_Y_POS = 0x0003
+define GUTS_ARROW_X_POS     = 0x0048
+define GUTS_ARROW_Y_POS     = 0x0003
 
 LuckEquip_Text:
-	"[85][95][91][A9][91]:[00]"				// "Удача:[00]"
-define LUCK_TEXT_LENGTH				= 0x0006
-define LUCK_TEXT_X_POS					= 0x0000
-define LUCK_TEXT_Y_POS					= 0x0004
-define LUCK_NUM_X_POS					= 0x0031
-define LUCK_NUM_Y_POS					= 0x0004
-define LUCK_DELTA_NUM_X_POS			= 0x0055
-define LUCK_DELTA_NUM_Y_POS			= 0x0004
-define LUCK_ARROW_X_POS				= 0x0048
-define LUCK_ARROW_Y_POS				= 0x0004
+	"[85][95][91][A9][91]:[00]" // "Удача:[00]"
+define LUCK_TEXT_LENGTH     = 0x0006
+define LUCK_TEXT_X_POS      = 0x000C
+define LUCK_TEXT_Y_POS      = 0x0004
+define LUCK_NUM_X_POS       = 0x0031
+define LUCK_NUM_Y_POS       = 0x0004
+define LUCK_DELTA_NUM_X_POS = 0x0055
+define LUCK_DELTA_NUM_Y_POS = 0x0004
+define LUCK_ARROW_X_POS     = 0x0048
+define LUCK_ARROW_Y_POS     = 0x0004
 
 FireEquip_Text:
-	"[80][94][A0][9F][C3]:[00]"				// "Огонь:[00]"
-define FIRE_TEXT_LENGTH					= 0x0006
-define FIRE_TEXT_X_POS					= 0x0000
-define FIRE_TEXT_Y_POS					= 0x0000
-define FIRE_NUM_X_POS					= 0x002A
-define FIRE_NUM_Y_POS					= 0x0000
-define FIRE_DELTA_NUM_X_POS			= 0x0055
-define FIRE_DELTA_NUM_Y_POS			= 0x0000
-define FIRE_ARROW_X_POS				= 0x0050
-define FIRE_ARROW_Y_POS				= 0x0000
+	"[80][94][A0][9F][C3]:[00]" // "Огонь:[00]"
+define FIRE_TEXT_LENGTH     = 0x0006
+define FIRE_TEXT_X_POS      = 0x0012
+define FIRE_TEXT_Y_POS      = 0x0000
+define FIRE_NUM_X_POS       = 0x002F
+define FIRE_NUM_Y_POS       = 0x0000
+// define FIRE_DELTA_NUM_X_POS = 0x0055
+// define FIRE_DELTA_NUM_Y_POS = 0x0000
+// define FIRE_ARROW_X_POS     = 0x0050
+// define FIRE_ARROW_Y_POS     = 0x0000
 
 FreezeEquip_Text:
-	"[7E][A0][A2][A0][99]:[00]"				// "Мороз:[00]"
-define FREEZE_TEXT_LENGTH				= 0x0006
-define FREEZE_TEXT_X_POS				= 0x0000
-define FREEZE_TEXT_Y_POS				= 0x0001
-define FREEZE_NUM_X_POS				= 0x002A
-define FREEZE_NUM_Y_POS				= 0x0001
-define FREEZE_DELTA_NUM_X_POS		= 0x0055
-define FREEZE_DELTA_NUM_Y_POS		= 0x0001
-define FREEZE_ARROW_X_POS			= 0x0050
-define FREEZE_ARROW_Y_POS			= 0x0001
+	"[7E][A0][A2][A0][99]:[00]" // "Мороз:[00]"
+define FREEZE_TEXT_LENGTH     = 0x0006
+define FREEZE_TEXT_X_POS      = 0x000F
+define FREEZE_TEXT_Y_POS      = 0x0001
+define FREEZE_NUM_X_POS       = 0x002F
+define FREEZE_NUM_Y_POS       = 0x0001
+// define FREEZE_DELTA_NUM_X_POS = 0x0055
+// define FREEZE_DELTA_NUM_Y_POS = 0x0001
+// define FREEZE_ARROW_X_POS     = 0x0050
+// define FREEZE_ARROW_Y_POS     = 0x0001
 
 FlashEquip_Text:
-	"[73][A3][A1][C2][AA][9C][91]:[00]"		// "Вспышка:[00]"
-define FLASH_TEXT_LENGTH				= 0x0008
-define FLASH_TEXT_X_POS				= 0x0000
-define FLASH_TEXT_Y_POS				= 0x0002
-define FLASH_NUM_X_POS					= 0x002A
-define FLASH_NUM_Y_POS				= 0x0002
-define FLASH_DELTA_NUM_X_POS			= 0x0055
-define FLASH_DELTA_NUM_Y_POS		= 0x0002
-define FLASH_ARROW_X_POS				= 0x0050
-define FLASH_ARROW_Y_POS				= 0x0002
+	"[73][A3][A1][C2][AA][9C][91]:[00]" // "Вспышка:[00]"
+define FLASH_TEXT_LENGTH     = 0x0008
+define FLASH_TEXT_X_POS      = 0x0002
+define FLASH_TEXT_Y_POS      = 0x0002
+define FLASH_NUM_X_POS       = 0x002F
+define FLASH_NUM_Y_POS       = 0x0002
+// define FLASH_DELTA_NUM_X_POS = 0x0055
+// define FLASH_DELTA_NUM_Y_POS = 0x0002
+// define FLASH_ARROW_X_POS     = 0x0050
+// define FLASH_ARROW_Y_POS     = 0x0002
 
 ParalysisEquip_Text:
-	"[81][91][A2][91][9D][9A][A9]:[00]"		// "Паралич:[00]"
-define PARALYSIS_TEXT_LENGTH			= 0x0008
-define PARALYSIS_TEXT_X_POS			= 0x0000
-define PARALYSIS_TEXT_Y_POS			= 0x0003
-define PARALYSIS_NUM_X_POS			= 0x002A
-define PARALYSIS_NUM_Y_POS			= 0x0003
-define PARALYSIS_DELTA_NUM_X_POS	= 0x0055
-define PARALYSIS_DELTA_NUM_Y_POS	= 0x0003
-define PARALYSIS_ARROW_X_POS		= 0x0050
-define PARALYSIS_ARROW_Y_POS		= 0x0003
+	"[81][91][A2][91][9D][9A][A9]:[00]" // "Паралич:[00]"
+define PARALYSIS_TEXT_LENGTH     = 0x0008
+define PARALYSIS_TEXT_X_POS      = 0x0005
+define PARALYSIS_TEXT_Y_POS      = 0x0003
+define PARALYSIS_NUM_X_POS       = 0x002F
+define PARALYSIS_NUM_Y_POS       = 0x0003
+// define PARALYSIS_DELTA_NUM_X_POS = 0x0055
+// define PARALYSIS_DELTA_NUM_Y_POS = 0x0003
+// define PARALYSIS_ARROW_X_POS     = 0x0050
+// define PARALYSIS_ARROW_Y_POS     = 0x0003
 
 HypnosisEquip_Text:
-	"[74][9A][A1][9F][A0][99]:[00]"			// "Гипноз:[00]"
-define HYPNOSIS_TEXT_LENGTH			= 0x0007
-define HYPNOSIS_TEXT_X_POS			= 0x0000
-define HYPNOSIS_TEXT_Y_POS			= 0x0004
-define HYPNOSIS_NUM_X_POS			= 0x002A
-define HYPNOSIS_NUM_Y_POS			= 0x0004
-define HYPNOSIS_DELTA_NUM_X_POS	= 0x0055
-define HYPNOSIS_DELTA_NUM_Y_POS	= 0x0004
-define HYPNOSIS_ARROW_X_POS			= 0x0050
-define HYPNOSIS_ARROW_Y_POS			= 0x0004
+	"[74][9A][A1][9F][A0][99]:[00]" // "Гипноз:[00]"
+define HYPNOSIS_TEXT_LENGTH     = 0x0007
+define HYPNOSIS_TEXT_X_POS      = 0x000D
+define HYPNOSIS_TEXT_Y_POS      = 0x0004
+define HYPNOSIS_NUM_X_POS       = 0x002F
+define HYPNOSIS_NUM_Y_POS       = 0x0004
+// define HYPNOSIS_DELTA_NUM_X_POS = 0x0055
+// define HYPNOSIS_DELTA_NUM_Y_POS = 0x0004
+// define HYPNOSIS_ARROW_X_POS     = 0x0050
+// define HYPNOSIS_ARROW_Y_POS     = 0x0004
 
 BrainshockEquip_Text:
-	"[7E][A0][99][94][A0][9D][A0][9E]:[00]"	// "Мозголом:[00]"
-define BRAINSHOCK_TEXT_LENGTH		= 0x0009
-define BRAINSHOCK_TEXT_X_POS			= 0x0000
-define BRAINSHOCK_TEXT_Y_POS			= 0x0005
-define BRAINSHOCK_NUM_X_POS			= 0x002A
-define BRAINSHOCK_NUM_Y_POS			= 0x0005
-define BRAINSHOCK_DELTA_NUM_X_POS	= 0x0055
-define BRAINSHOCK_DELTA_NUM_Y_POS	= 0x0005
-define BRAINSHOCK_ARROW_X_POS		= 0x0050
-define BRAINSHOCK_ARROW_Y_POS		= 0x0005
+	"[7E][A0][99][94][A0][9D][A0][9E]:[00]" // "Мозголом:[00]"
+define BRAINSHOCK_TEXT_LENGTH     = 0x0009
+define BRAINSHOCK_TEXT_X_POS      = 0x0000
+define BRAINSHOCK_TEXT_Y_POS      = 0x0005
+define BRAINSHOCK_NUM_X_POS       = 0x002F
+define BRAINSHOCK_NUM_Y_POS       = 0x0005
+// define BRAINSHOCK_DELTA_NUM_X_POS = 0x0055
+// define BRAINSHOCK_DELTA_NUM_Y_POS = 0x0005
+// define BRAINSHOCK_ARROW_X_POS     = 0x0050
+// define BRAINSHOCK_ARROW_Y_POS     = 0x0005
 
 Status_Text:
-	"[83][A4][91][A4][A5][A3][00]"	// "Статус[00]"
+	"[83][A4][91][A4][A5][A3][00]" // "Статус[00]"
 
 Resistances_Text:
-	"[85][A3][A4][A0][9B][A9][9A][93][A0][A3][A4][C3][00]"	// "Устойчивость[00]"
+	"[85][A3][A4][A0][9B][A9][9A][93][A0][A3][A4][C3][00]" // "Устойчивость[00]"
 
 ROM[0xC1A1E8] = {
 	JSL (Title_Stats_Window)
@@ -833,11 +831,15 @@ NOROOM_End:
 /*-+-+-+-+-+-+-+-+-+-+RESISTANCE WINDOW-+-+-+-+-+-+-+-+-+-+*/
 
 New_Resistance_Window_Display: {
-
 	LDA_i (52)
 	STA_a (0x8958) // Make window 52 the focus window
 	JSL (0xC1DD47) // Open window 52
+
+	LDA_a (0x9CD4)
+	BNE_a (Return) // Если открыто окно с выбором предмета, то не отображаем устойчивость (частично избегаем ограничения игры).
+
 	JSL (Title_Resistance_Window)
+
 	JSL (0xC3E4E0) // Enable things to be written to the window
 	LDA_i (3)
 	JSL (UnknownJSRSubroutine2) // position of the numbers right of the stat
@@ -970,7 +972,7 @@ Fire:
 	STA_d(0x28)
 	JSL(NewEquipmentStats)
 
-//Sum the equipment increases for a given stat.
+// Sum the equipment increases for a given stat.
 	LDY_d(0x16)//Load character's base stat.
 	TYA//Transfer to accumulator.
 	CLC
@@ -988,26 +990,26 @@ Fire:
 	BEQ_a(Freeze)
 
 //Preparing text.
-	LDA_i(FIRE_DELTA_NUM_X_POS)//Text's horizontal positioning. $33F68B
-	STA_d(0x20)
-	LDA_i(FIRE_DELTA_NUM_Y_POS)//Text's vertical positioning.
-	STA_d(0x22)
-	JSL(NewEquipmentStatsOutput_Elemental)
+	// LDA_i(FIRE_DELTA_NUM_X_POS)//Text's horizontal positioning. $33F68B
+	// STA_d(0x20)
+	// LDA_i(FIRE_DELTA_NUM_Y_POS)//Text's vertical positioning.
+	// STA_d(0x22)
+	// JSL(NewEquipmentStatsOutput_Elemental)
 
 /*-+-+-+-+-+ARROW FIRE RESISTANCE-+-+-+-+-+*/
-	LDA_i(0x0001)//Text palette effect?
-	JSL(UnknownJSRSubroutine5)//Apply it?
+	// LDA_i(0x0001)//Text palette effect?
+	// JSL(UnknownJSRSubroutine5)//Apply it?
 
 // FIRE RESISTANCE
-	LDX_i(FIRE_ARROW_Y_POS)//
-	LDA_i(FIRE_ARROW_X_POS)///Text positioning.	$33F6A3
-	JSL(0xC43D75)//Set positioning.
+	// LDX_i(FIRE_ARROW_Y_POS)//
+	// LDA_i(FIRE_ARROW_X_POS)///Text positioning.	$33F6A3
+	// JSL(0xC43D75)//Set positioning.
 
-	LDA_i(0x014E)//Load index for right-arrow symbol.
-	JSL(0xC43F77)//Print it?
+	// LDA_i(0x014E)//Load index for right-arrow symbol.
+	// JSL(0xC43F77)//Print it?
 
-	LDA_i(0x0000)//Text palette effect?
-	JSL(UnknownJSRSubroutine5)//Apply it?
+	// LDA_i(0x0000)//Text palette effect?
+	// JSL(UnknownJSRSubroutine5)//Apply it?
 
 /*-+-+-+-+-+FREEZE RESISTANCE-+-+-+-+-+*/
 Freeze:
@@ -1099,26 +1101,26 @@ Freeze:
 	BEQ_a(Flash)
 
 //Preparing text.
-	LDA_i(FREEZE_DELTA_NUM_X_POS)//Text's horizontal positioning. $33F745
-	STA_d(0x20)
-	LDA_i(FREEZE_DELTA_NUM_Y_POS)//Text's vertical positioning.
-	STA_d(0x22)
-	JSL(NewEquipmentStatsOutput_Elemental)
+	// LDA_i(FREEZE_DELTA_NUM_X_POS)//Text's horizontal positioning. $33F745
+	// STA_d(0x20)
+	// LDA_i(FREEZE_DELTA_NUM_Y_POS)//Text's vertical positioning.
+	// STA_d(0x22)
+	// JSL(NewEquipmentStatsOutput_Elemental)
 
 /*-+-+-+-+-+ARROW FREEZE RESISTANCE-+-+-+-+-+*/
-	LDA_i(0x0001)//Text palette effect?
-	JSL(UnknownJSRSubroutine5)//Apply it?
+	// LDA_i(0x0001)//Text palette effect?
+	// JSL(UnknownJSRSubroutine5)//Apply it?
 
 // FREEZE RESISTANCE
-	LDX_i(FREEZE_ARROW_Y_POS)//
-	LDA_i(FREEZE_ARROW_X_POS)///Text positioning.	$33F75D
-	JSL(0xC43D75)//Set positioning.
+	// LDX_i(FREEZE_ARROW_Y_POS)//
+	// LDA_i(FREEZE_ARROW_X_POS)///Text positioning.	$33F75D
+	// JSL(0xC43D75)//Set positioning.
 
-	LDA_i(0x014E)//Load index for right-arrow symbol.
-	JSL(0xC43F77)//Print it?
+	// LDA_i(0x014E)//Load index for right-arrow symbol.
+	// JSL(0xC43F77)//Print it?
 
-	LDA_i(0x0000)//Text palette effect?
-	JSL(UnknownJSRSubroutine5)//Apply it?
+	// LDA_i(0x0000)//Text palette effect?
+	// JSL(UnknownJSRSubroutine5)//Apply it?
 
 
 /*-+-+-+-+-+FLASH RESISTANCE-+-+-+-+-+*/
@@ -1211,27 +1213,27 @@ Flash:
 	BEQ_a(Paralysis)
 
 //Preparing text.
-	LDA_i(FLASH_DELTA_NUM_X_POS)//Text's horizontal positioning. $33F7FF
-	STA_d(0x20)
-	LDA_i(FLASH_DELTA_NUM_Y_POS)//Text's vertical positioning.
-	STA_d(0x22)
-	JSL(NewEquipmentStatsOutput_Elemental)
+	// LDA_i(FLASH_DELTA_NUM_X_POS)//Text's horizontal positioning. $33F7FF
+	// STA_d(0x20)
+	// LDA_i(FLASH_DELTA_NUM_Y_POS)//Text's vertical positioning.
+	// STA_d(0x22)
+	// JSL(NewEquipmentStatsOutput_Elemental)
 
 /*-+-+-+-+-+ARROW FLASH RESISTANCE-+-+-+-+-+*/
 
-	LDA_i(0x0001)//Text palette effect?
-	JSL(UnknownJSRSubroutine5)//Apply it?
+	// LDA_i(0x0001)//Text palette effect?
+	// JSL(UnknownJSRSubroutine5)//Apply it?
 
 // Flash Resistance arrow
-	LDX_i(FLASH_ARROW_Y_POS)//
-	LDA_i(FLASH_ARROW_X_POS)///Text positioning.	$33F817
-	JSL(0xC43D75)//Set positioning.
+	// LDX_i(FLASH_ARROW_Y_POS)//
+	// LDA_i(FLASH_ARROW_X_POS)///Text positioning.	$33F817
+	// JSL(0xC43D75)//Set positioning.
 
-	LDA_i(0x014E)//Load index for right-arrow symbol.
-	JSL(0xC43F77)//Print it?
+	// LDA_i(0x014E)//Load index for right-arrow symbol.
+	// JSL(0xC43F77)//Print it?
 
-	LDA_i(0x0000)//Text palette effect?
-	JSL(UnknownJSRSubroutine5)//Apply it?
+	// LDA_i(0x0000)//Text palette effect?
+	// JSL(UnknownJSRSubroutine5)//Apply it?
 
 /*-+-+-+-+-+PARALYSIS RESISTANCE-+-+-+-+-+*/
 Paralysis:
@@ -1323,27 +1325,27 @@ Paralysis:
 	BEQ_a(Hypnosis)
 
 //Preparing text.
-	LDA_i(PARALYSIS_DELTA_NUM_X_POS)//Text's horizontal positioning. $33F8B9
-	STA_d(0x20)
-	LDA_i(PARALYSIS_DELTA_NUM_Y_POS)//Text's vertical positioning.
-	STA_d(0x22)
-	JSL(NewEquipmentStatsOutput_Elemental)
+	// LDA_i(PARALYSIS_DELTA_NUM_X_POS)//Text's horizontal positioning. $33F8B9
+	// STA_d(0x20)
+	// LDA_i(PARALYSIS_DELTA_NUM_Y_POS)//Text's vertical positioning.
+	// STA_d(0x22)
+	// JSL(NewEquipmentStatsOutput_Elemental)
 
 /*-+-+-+-+-+ARROW PARALYSIS RESISTANCE-+-+-+-+-+*/
 
-	LDA_i(0x0001)//Text palette effect?
-	JSL(UnknownJSRSubroutine5)//Apply it?
+	// LDA_i(0x0001)//Text palette effect?
+	// JSL(UnknownJSRSubroutine5)//Apply it?
 
 // Paralysis Resistance arrow
-	LDX_i(PARALYSIS_ARROW_Y_POS)//
-	LDA_i(PARALYSIS_ARROW_X_POS)///Text positioning.	$33F8D1
-	JSL(0xC43D75)//Set positioning.
+	// LDX_i(PARALYSIS_ARROW_Y_POS)//
+	// LDA_i(PARALYSIS_ARROW_X_POS)///Text positioning.	$33F8D1
+	// JSL(0xC43D75)//Set positioning.
 
-	LDA_i(0x014E)//Load index for right-arrow symbol.
-	JSL(0xC43F77)//Print it?
+	// LDA_i(0x014E)//Load index for right-arrow symbol.
+	// JSL(0xC43F77)//Print it?
 
-	LDA_i(0x0000)//Text palette effect?
-	JSL(UnknownJSRSubroutine5)//Apply it?
+	// LDA_i(0x0000)//Text palette effect?
+	// JSL(UnknownJSRSubroutine5)//Apply it?
 
 /*-+-+-+-+-+HYPNOSIS RESISTANCE-+-+-+-+-+*/
 Hypnosis:
@@ -1428,27 +1430,27 @@ Hypnosis:
 	BEQ_a(Brainshock)
 
 //Preparing text.
-	LDA_i(HYPNOSIS_DELTA_NUM_X_POS)//Text's horizontal positioning. $33F961
-	STA_d(0x20)
-	LDA_i(HYPNOSIS_DELTA_NUM_Y_POS)//Text's vertical positioning.
-	STA_d(0x22)
-	JSL(NewEquipmentStatsOutput_Elemental)
+	// LDA_i(HYPNOSIS_DELTA_NUM_X_POS)//Text's horizontal positioning. $33F961
+	// STA_d(0x20)
+	// LDA_i(HYPNOSIS_DELTA_NUM_Y_POS)//Text's vertical positioning.
+	// STA_d(0x22)
+	// JSL(NewEquipmentStatsOutput_Elemental)
 
 /*-+-+-+-+-+ARROW HYPNOSIS RESISTANCE-+-+-+-+-+*/
 
-	LDA_i(0x0001)//Text palette effect?
-	JSL(UnknownJSRSubroutine5)//Apply it?
+	// LDA_i(0x0001)//Text palette effect?
+	// JSL(UnknownJSRSubroutine5)//Apply it?
 
 // Hypnosis Resistance arrow
-	LDX_i(HYPNOSIS_ARROW_Y_POS)//
-	LDA_i(HYPNOSIS_ARROW_X_POS)///Text positioning.	$33F979
-	JSL(0xC43D75)//Set positioning.
+	// LDX_i(HYPNOSIS_ARROW_Y_POS)//
+	// LDA_i(HYPNOSIS_ARROW_X_POS)///Text positioning.	$33F979
+	// JSL(0xC43D75)//Set positioning.
 
-	LDA_i(0x014E)//Load index for right-arrow symbol.
-	JSL(0xC43F77)//Print it?
+	// LDA_i(0x014E)//Load index for right-arrow symbol.
+	// JSL(0xC43F77)//Print it?
 
-	LDA_i(0x0000)//Text palette effect?
-	JSL(UnknownJSRSubroutine5)//Apply it?
+	// LDA_i(0x0000)//Text palette effect?
+	// JSL(UnknownJSRSubroutine5)//Apply it?
 
 /*-+-+-+-+-+BRAINSHOCK RESISTANCE-+-+-+-+-+*/
 Brainshock:
@@ -1535,30 +1537,30 @@ Brainshock:
 
 
 //Preparing text.
-	LDA_i(BRAINSHOCK_DELTA_NUM_X_POS)//Text's horizontal positioning. $33FA0D
-	STA_d(0x20)
-	LDA_i(BRAINSHOCK_DELTA_NUM_Y_POS)//Text's vertical positioning.
-	STA_d(0x22)
-	JSL(NewEquipmentStatsOutput_Elemental)
+	// LDA_i(BRAINSHOCK_DELTA_NUM_X_POS)//Text's horizontal positioning. $33FA0D
+	// STA_d(0x20)
+	// LDA_i(BRAINSHOCK_DELTA_NUM_Y_POS)//Text's vertical positioning.
+	// STA_d(0x22)
+	// JSL(NewEquipmentStatsOutput_Elemental)
 
-	LDA_a(0x9CD4)
-	BEQ_a(Return)
+	// LDA_a(0x9CD4)
+	// BEQ_a(Return)
 
 /*-+-+-+-+-+ARROW BRAINSHOCK RESISTANCE-+-+-+-+-+*/
 
-	LDA_i(0x0001)//Text palette effect?
-	JSL(UnknownJSRSubroutine5)//Apply it?
+	// LDA_i(0x0001)//Text palette effect?
+	// JSL(UnknownJSRSubroutine5)//Apply it?
 
 // Brainshock Resistance arrow
-	LDX_i(BRAINSHOCK_ARROW_Y_POS)//
-	LDA_i(BRAINSHOCK_ARROW_X_POS)///Text positioning.	$33FA2D
-	JSL(0xC43D75)//Set positioning.
+	// LDX_i(BRAINSHOCK_ARROW_Y_POS)//
+	// LDA_i(BRAINSHOCK_ARROW_X_POS)///Text positioning.	$33FA2D
+	// JSL(0xC43D75)//Set positioning.
 
-	LDA_i(0x014E)//Load index for right-arrow symbol.
-	JSL(0xC43F77)//Print it?
+	// LDA_i(0x014E)//Load index for right-arrow symbol.
+	// JSL(0xC43F77)//Print it?
 
-	LDA_i(0x0000)//Text palette effect?
-	JSL(UnknownJSRSubroutine5)//Apply it?
+	// LDA_i(0x0000)//Text palette effect?
+	// JSL(UnknownJSRSubroutine5)//Apply it?
 
 Return:
 	JSL (0xC3E4CA) // Print the items to the window.
@@ -2386,3 +2388,119 @@ Title_Resistance_Window:{
 	PLD
 	RTL
 }
+
+// ROM[0xC1A7C1] = {
+	// JML (FixGameLimitation)
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+	// NOP
+// }
+// FixGameLimitation: {
+	// LDA_i (52)
+	// JSL (0xC3E521) // Предварительно закрываем окно с устойчивостью
+
+	// Остальное скопировано из EB
+	// LDA_i (0x0007)
+	// JSR (0x04EE)
+	// LDA_i (0x5C58)
+	// STA_d (0x06)
+	// LDA_i (0x00C4)
+	// STA_d (0x08)
+	// LDA_d (0x1C)
+	// DEC
+	// ASL
+	// ASL
+	// ASL
+	// CLC
+	// ADC_d (0x06)
+	// STA_d (0x06)
+	// STA_d (0x0E)
+	// LDA_d (0x08)
+	// STA_d (0x10)
+	// JSL (0xC08F22)
+	// STA_d (0x1A)
+	// LDA_d (0x06)
+	// STA_d (0x0E)
+	// LDA_d (0x08)
+	// STA_d (0x10)
+	// LDA_d (0x1A)
+	// TAX
+	// LDA_i (0x0007)
+	// JSL (0xC2032B)
+	// LDA_i (0x0000)
+	// STA_d (0x04)
+	// LDA_i (0xFFFF)
+	// STA_d (0x18)
+	// LDA_i (0x0000)
+	// STA_d (0x02)
+	// JMP (0xA906)
+// }

@@ -2,7 +2,8 @@ import asm65816
 
 // Overwrites Teleport Box battle action code
 // 0xC2AB71 - 0xC2AC29
-define Atk_Fail_Chk = 0xC2AB71			define NPC_Check = 0xC2AB71
+define Atk_Fail_Chk = 0xC2AB71
+define NPC_Check = 0xC2AB71
 define Miss_Calc = 0xC2AB75
 define Smash = 0xC2AB79
 define Determine_Dodge = 0xC2AB7D
@@ -12,7 +13,8 @@ define Inflict_Status = 0xC2AB89
 define Success_256 = 0xC2AB8D
 define Mult_A_x_Rand_050_150 = 0xC2AB91
 define Mult_A_x_Rand_075_125 = 0xC2AB95
-define Calc_Resist_Damage = 0xC2AB99		define Damage_Reduction = 0xC2AB99
+define Calc_Resist_Damage = 0xC2AB99
+define Damage_Reduction = 0xC2AB99
 define Decrease_Offense_16th = 0xC2AB9D
 define Decrease_Defense_16th = 0xC2ABA1
 define Revive_Target = 0xC2ABA5
@@ -64,8 +66,10 @@ define Battle_PSI_Menu_Proxy = 0xC1DE3D
 
 define Check_Event = 0xC21628
 define Set_Event = 0xC2165E
-define Adjust_Attacker_Name = 0xC23BCF		define Fix_Attacker_Name = 0xC23BCF
-define Adjust_Target_Name = 0xC23D05		define Fix_Target_Name = 0xC23D05
+define Adjust_Attacker_Name = 0xC23BCF
+define Fix_Attacker_Name = 0xC23BCF
+define Adjust_Target_Name = 0xC23D05
+define Fix_Target_Name = 0xC23D05
 define Select_First_Target = 0xC23E32
 define Execute_Battle_Action = 0xC240A4
 define Choose_Target = 0xC24477

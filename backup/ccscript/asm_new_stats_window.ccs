@@ -68,8 +68,8 @@ ROM[0xC1AAE0] = {
 }
 
 Close_Equipment_Window:{
-	LDA_i (52)
-	JSL (0xC3E521) // Close Window
+//	LDA_i (52)
+//	JSL (0xC3E521) // Close Window
 	LDA_i (0x002D)
 	JSL (0xC3E521) // Close Window
 	LDA_i (6)
@@ -704,13 +704,16 @@ Luck:
 	JSL(UnknownJSRSubroutine5)//Apply it?
 
 NOROOM_End:
-	JMP_l(0xC1A772) // JMP_l (0xC1A772)
+	JSL (0xC3E4CA)
+	JMP_l(0xC1A776) // JMP_l (0xC1A772)
 
+/*
 Return:
 	JSL (0xC3E4CA) // Print the items to the window.
 	//LDA_i (0x002D)
 	//STA_a (0x8958) // Set window focus
 	RTL
+*/
 
 /*-+-+-+-+-+-+-+-+-+-+ROUTINES-+-+-+-+-+-+-+-+-+-+*/
 
@@ -784,7 +787,7 @@ NewEquipmentStats_CheckIfZero:
 	CLC
 	ADC_d(0x04)
 	STA_d(0x04)//Store to memory.
-	//BRA_a (NewEquipmentStats_End)
+	BRA_a (NewEquipmentStats_End)
 
 NewEquipmentStats_End:
 	RTL

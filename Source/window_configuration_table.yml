@@ -30,13 +30,13 @@
   Y Offset: 1
 6: # Меню экипировки (слоты)
   Height: 10
-  Width: 20
+  Width: 23
   X Offset: 8
   Y Offset: 1
 7: # Список экипируемых предметов
   Height: 12 # 16
-  Width: 13
-  X Offset: 18
+  Width: 15
+  X Offset: 16
   Y Offset: 1
 8: # Окно Статус
   Height: 18
@@ -226,7 +226,7 @@
 45: # Статы в меню экипировки
   Height: 12 #6
   Width: 15
-  X Offset: 0 # 3
+  X Offset: 2 # 3
   Y Offset: 13 # 11
 46: # Окно ПСИ (Атака/Лечение/Вспом./Прочее) ВНЕ боя
   Height: 10
@@ -258,8 +258,8 @@
   Width: 9
   X Offset: 22
   Y Offset: 8
-52: # ???
+52: # ??? (Используется в качестве окна "Устройчивость")
   Height: 14 # 18
-  Width: 17 # 18
-  X Offset: 15 # 7
+  Width: 13 # 17
+  X Offset: 17 # 15
   Y Offset: 13 # 9

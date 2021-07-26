@@ -79,6 +79,3 @@ IncMissRate:
 	ADC_i (0x0008) // Добавляем “8” к шансу промаха врага
 	RTL
 }
-
-// TODO: Test
-//ROM[0xC40091] = CMP_y(0x0050)
