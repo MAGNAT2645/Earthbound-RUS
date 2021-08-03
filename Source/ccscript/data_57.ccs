@@ -301,7 +301,7 @@ l_0xc9b4c9:
 	"@[81][A0][A2][91] [93][A3][A4][91][93][91][A4][C3].[03]{window_closeall}{pause(1)}" call(l_0xc9b8dd) call(data_24.l_0xc69082) "{music(143)}[1F F2 01 00 5A 01]     {pause(1)}[1F EF 01 00]                           [1F E8 FF][1F 61][1F 15 6A 00 5F 01 01]   [1F 61][1F ED][1F E5 FF]{set(flag 349)}" call(data_36.l_0xc7dd6b) "[06 24 02 {e(l_0xc9b799)}][06 23 02 {e(l_0xc9b6e3)}][06 22 02 {e(l_0xc9b62d)}][1F 21 C5][1F E5 FF]{pause(60)}" call(data_32.l_0xc77dab) "{pause(60)}[1F F1 C4 01 5B 01]{pause(30)}[1F 1A C5 01 03][1F 1A C6 01 03][1F 1A C7 01 03]{pause(90)}[1F 1E C4 01 06]         [1F EC 01 01]                {pause(30)}[1F 1B C5 01][1F 1B C6 01][1F 1B C7 01]{pause(90)}[1F F1 C5 01 5C 01]" call(l_0xc9b84f) "[1F F1 C6 01 5D 01]" call(l_0xc9b87f) "[1F F1 C7 01 5E 01]" call(l_0xc9b898) "[1F 11 02][1F EB 02 06][1F F1 C5 01 2F 00][1F 61][1F 1E C5 01 06][1F EC 02 01][1F 11 03][1F EB 03 06][1F F1 C6 01 2F 00][1F 61][1F 1E C6 01 06][1F EC 03 01][1F 11 04][1F EB 04 06][1F F1 C7 01 2F 00][1F 61][1F 1E C7 01 06][1F EC 04 01]" goto(l_0xc9b60f)
 
 l_0xc9b60f:
-	"{pause(120)}[1F 20 04 04]{pause(120)}[19 26 04]{unset(flag 349)}{set(flag 382)}{unset(flag 476)}[1F E8 FF][1F 41 06]{unset(flag 11)}" eob
+	"{pause(120)}[1F 20 06 04]{pause(120)}[19 26 04]{unset(flag 349)}{set(flag 382)}{unset(flag 476)}[1F E8 FF][1F 41 06]{unset(flag 11)}" eob
 
 l_0xc9b62d:
 	"[1F 21 C6][1F E5 FF]{pause(60)}" call(data_32.l_0xc77dab) "{pause(60)}[1F F1 BC 02 5B 01]{pause(30)}[1F 1A BD 02 03][1F 1A BE 02 03][1F 1A BF 02 03]{pause(90)}[1F 1E BC 02 06]         [1F EC 01 01]                {pause(30)}[1F 1B BD 02][1F 1B BE 02][1F 1B BF 02]{pause(90)}[1F F1 BD 02 5C 01]" call(l_0xc9b84f) "[1F F1 BE 02 5D 01]" call(l_0xc9b87f) "[1F F1 BF 02 5E 01]" call(l_0xc9b898) "[1F 11 02][1F EB 02 06][1F F1 BD 02 2F 00][1F 61][1F 1E BD 02 06][1F EC 02 01][1F 11 03][1F EB 03 06][1F F1 BE 02 2F 00][1F 61][1F 1E BE 02 06][1F EC 03 01][1F 11 04][1F EB 04 06][1F F1 BF 02 2F 00][1F 61][1F 1E BF 02 06][1F EC 04 01]" call(l_0xc9b60f) eob
@@ -327,11 +327,12 @@ l_0xc9b87f:
 
 l_0xc9b898:
 	/*
-	"[1F 61]{window_open(1)}{title_poo(1)}@...Долина Сатурн?{pause(30)}" linebreak
+	"@...Долина Сатурн?{pause(30)}" linebreak
 	"  Что нас там ждёт?" next
 	"@В любом случае, нам нужно телепортироваться...[03]{window_closeall}{pause(30)}" eob
 	*/
-	"[1F 61]{window_open(1)}{title_poo(1)}@...[75][A0][9D][9A][9F][91] [83][91][A4][A5][A2][9F]?{pause(30)}" linebreak
+	"[1F 61]{window_open(1)}{title_poo(1)}"
+	"@...[75][A0][9D][9A][9F][91] [83][91][A4][A5][A2][9F]?{pause(30)}" linebreak
 	"  [89][A4][A0] [9F][91][A3] [A4][91][9E] [98][95][97][A4]?" next
 	"@[73] [9D][C5][92][A0][9E] [A3][9D][A5][A9][91][96], [9F][91][9E] [9F][A5][98][9F][A0] [A4][96][9D][96][A1][A0][A2][A4][9A][A2][A0][93][91][A4][C3][A3][C6]...[03]{window_closeall}{pause(30)}" eob
 

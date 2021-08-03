@@ -3,8 +3,7 @@ import asm65816
 ROM[0xC1EE9B] = ASMLoadAddress12(level)
 ROM[0xC1F326] = ASMLoadAddress0E(level)
 level:
-	"[85][A2][A0][93].:[00]"	// "Уров.:[00]"
-
+	"[85][A2][A0][93].:[00]" // "Уров.:[00]"
 
 ROM[0xC1F08C] = ASMLoadAddress0E(Continue)
 ROM[0xC1F0C5] = ASMLoadAddress0E(Copy)
@@ -12,20 +11,17 @@ ROM[0xC1F102] = ASMLoadAddress0E(Delete)
 ROM[0xC1F120] = ASMLoadAddress0E(SetUp)
 ROM[0xC1F208] = ASMLoadAddress0E(CopyToWhere)
 
-// Copy horizontal alignment
-ROM[0xC1F0DC] = LDX_i(0x0005)
-// Delete horizontal alignment
-ROM[0xC1F117] = LDX_i(0x000D)
-// Set Up horizontal alignment
-ROM[0xC1F135] = LDX_i(0x0013)
+ROM[0xC1F0DC] = LDX_i(0x0005) // Расположение текста "Копировать" по горизонтали
+ROM[0xC1F117] = LDX_i(0x000D) // Расположение текста "Удалить" по горизонтали
+ROM[0xC1F135] = LDX_i(0x0013) // Расположение текста "Настроить" по горизонтали
 
 Continue:
-	"[7A][94][A2][91][A4][C3][00]"	// "Играть[00]"
+	"[7A][94][A2][91][A4][C3][00]" // "Играть[00]"
 Copy:
-	"[7C][A0][A1][9A][A2][A0][93][91][A4][C3][00]"	// "Копировать[00]"
+	"[7C][A0][A1][9A][A2][A0][93][91][A4][C3][00]" // "Копировать[00]"
 Delete:
-	"[85][95][91][9D][9A][A4][C3][00]"	// "Удалить[00]"
+	"[85][95][91][9D][9A][A4][C3][00]" // "Удалить[00]"
 SetUp:
-	"[7F][91][A3][A4][A2][A0][9A][A4][C3][00]"	// "Настроить[00]"
+	"[7F][91][A3][A4][A2][A0][9A][A4][C3][00]" // "Настроить[00]"
 CopyToWhere:
-	"[7C][A5][95][91]?[00]"	// "Куда?[00]"
+	"[7C][A5][95][91]?[00]" // "Куда?[00]"

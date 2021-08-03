@@ -629,11 +629,11 @@ l_0xc8097b:
 
 l_0xc80997:
 	/*
-	"@O, [1C 02 02]!{pause(20)}" linebreak
+	"@О, [1C 02 02]!{pause(20)}" linebreak
 	"@Эм... прости,{pause(15)} я думал, что ты [1C 02 02]." end
 	*/
 	title(1, Unknown)
-	"@O, [1C 02 02]!{pause(20)}" linebreak
+	"@[80], [1C 02 02]!{pause(20)}" linebreak
 	"@[B4][9E]... [A1][A2][A0][A3][A4][9A],{pause(15)} [C6] [95][A5][9E][91][9D], [A9][A4][A0] [A4][C2] [1C 02 02]." end
 
 l_0xc809ba:

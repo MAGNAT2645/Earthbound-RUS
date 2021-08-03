@@ -1,8 +1,6 @@
 /* Add all Stats and Resistances to the Equipment menu */
 
 import asm65816
-import ebpp
-import ebpp_std
 
 /*
 NOTES:

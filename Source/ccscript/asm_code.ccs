@@ -79,3 +79,22 @@ IncMissRate:
 	ADC_i (0x0008) // Добавляем “8” к шансу промаха врага
 	RTL
 }
+
+/*
+ ПРИМЕЧАНИЕ: Исправляет баг с неправильным определением значения Воли.
+ Должно указывать на Волю защищающегося, а не атакующего.
+*/
+// Fixes a bug in Earthbound where guts saves are determined by the attacker's
+// guts, rather than the defender's
+// by jtolmar
+
+// Main damage-calculation routine
+// https://earthbound-rom-explorerr.herokuapp.com/address/$c27eaf
+// This is the guts save check
+// $c27f96            LDX $a970    ; pointer to current attacker
+// $c27f99            LDA $002c,X  ; index of guts stat
+// Record scratch. Wait what?
+// Yep, was supposed to be the defender's guts.
+// Honestly there's surprisingly few of these in this game. You should see the
+// average Final Fantasy, woah nelly.
+ROM[0xC27F96] = LDX_a(0xA972) // меняем указатель на защищающегося (CURRENT_TARGET в RAM)
