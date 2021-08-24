@@ -225,9 +225,9 @@ l_0xc9fc48:
 	"{set(flag 124)}[1D 01 FF AE]" eob
 
 l_0xc9fc6f:
-//	"@{user}[19 1F]{swap} использовал{call(RUS_ref.l_gendersuffix)} [1C 05 00]!{sound(95)}{pause(1)}{wait}{window_closeall}[1D 01 FF AF]{set(flag 288)}[1F 1E CF 04 06]" call(data_50.l_0xc935b1) "){set(flag 508)}" eob
+//	"@{user}[19 1F]{swap} использовал{user_gender}{call(RUS_ref.l_gendersuffix)} [1C 05 00]!{sound(95)}{pause(1)}{wait}{window_closeall}[1D 01 FF AF]{set(flag 288)}[1F 1E CF 04 06]" call(data_50.l_0xc935b1) "){set(flag 508)}" eob
 	newline
-	"@{user}[19 1F]{swap} [9A][A3][A1][A0][9D][C3][99][A0][93][91][9D]{call(RUS_ref.l_gendersuffix)} [1C 05 00]!{sound(95)}{pause(1)}{wait}{window_closeall}[1D 01 FF AF]{set(flag 288)}[1F 1E CF 04 06]" call(data_50.l_0xc935b1) "){set(flag 508)}" eob
+	"@{user}[19 1F]{swap} [9A][A3][A1][A0][9D][C3][99][A0][93][91][9D]{user_gender}{call(RUS_ref.l_gendersuffix)} [1C 05 00]!{sound(95)}{pause(1)}{wait}{window_closeall}[1D 01 FF AF]{set(flag 288)}[1F 1E CF 04 06]" call(data_50.l_0xc935b1) "){set(flag 508)}" eob
 
 l_0xc9fc9e:
 	/*
