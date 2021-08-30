@@ -4,8 +4,7 @@
  * Generated using CCScriptWriter.
  */
 
-import asm_diamond
-command e(label) "{long label}"
+import commands
 
 // Text Data
 l_0xc5889c: // Тоска по дому

@@ -4,8 +4,8 @@
  * Generated using CCScriptWriter.
  */
 
+import commands
 import RUS_ref
-import ebpp_std
 
 // Text Data
 l_0xc86e58:

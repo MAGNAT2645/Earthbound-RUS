@@ -4,7 +4,8 @@
  * Generated using CCScriptWriter.
  */
 
-import ebpp_std
+import defines
+import commands
 import RUS_ref
 
 // Text Data
@@ -917,14 +918,15 @@ l_0xc6c2db:
 	/*
 	"@Я слышал, ветер всегда дует, когда появляется Тесси." next
 	"@Ааа-пчхии!" next
-	"{char_slot(1)}{rtoarg}[19 05 00 01 08]{sound(83)}"
+	"{char_num(1)}{rtoarg}{inflict(FROM_MEMORY, AFFLICTION_SNIFFLING)}{sound(83)}"
 	"@Кажется, я поймал простуду." end
 	*/
 	title(1, Unknown)
-	"[06 34 00 {e(data_26.l_0xc6c38c)}][06 13 01 {e(data_26.l_0xc6c377)}]"
+	goto_if_flag(FLAG_PEOPLE_FREED_FROM_TUBES, data_26.l_0xc6c38c)
+	goto_if_flag(FLAG_TELEPORT_ALPHA_LEARNED, data_26.l_0xc6c377)
 	"@[B6] [A3][9D][C2][AA][91][9D], [93][96][A4][96][A2] [93][A3][96][94][95][91] [95][A5][96][A4], [9C][A0][94][95][91] [A1][A0][C6][93][9D][C6][96][A4][A3][C6] [84][96][A3][A3][9A]." next
 	"@[71][91][91]-[A1][A9][A7][9A][9A]!" next
-	"{char_slot(1)}{rtoarg}[19 05 00 01 08]{sound(83)}" // ПРИМЕЧАНИЕ: В оригинале этой строчки нет, добавлена для придачи атмосферы Mother 1 ))
+	"{char_num(1)}{rtoarg}{inflict(FROM_MEMORY, AFFLICTION_SNIFFLING)}{sound(83)}" // ПРИМЕЧАНИЕ: В оригинале этой строчки нет, добавлена для придачи атмосферы Mother 1 ))
 	"@[7C][91][98][96][A4][A3][C6], [C6] [A1][A0][9B][9E][91][9D] [A1][A2][A0][A3][A4][A5][95][A5]." end
 
 l_0xc6c334: // НЕИСПОЛЬЗУЕМОЕ игрой?

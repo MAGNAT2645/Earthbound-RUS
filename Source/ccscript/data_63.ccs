@@ -4,7 +4,8 @@
  * Generated using CCScriptWriter.
  */
 
-import RUS_ref
+import defines
+import commands
 
 // Text Data
 l_0xef7696:
@@ -280,12 +281,12 @@ l_0xef79ef:
 l_0xef7a0a:
 	"[19 05 01 06 02]" goto(l_0xef79ef)
 
-l_0xef7a14:
+l_0xef7a14: // отображает "ПОБЕДА!" и текст с кол-вом опыта при моментальной победе
 	"{window_clear}{music(184)}" linebreak
 	"              [1C 08 02]" linebreak
 	"{pause(120)}" goto(l_0xef79e6)
 
-l_0xef7a28:
+l_0xef7a28: // отображает "ПОБЕДА!" и текст с кол-вом опыта в конце битвы
 //	"@{call(data_37.l_0xc7e6d7)} {call(RUS_ref.gain_exp_multi)} {delta} опыта" call(data_65.l_0xef8fad) "{prompt}" eob
 	"{window_clear}" linebreak
 	"              [1C 08 02]" linebreak
@@ -299,7 +300,7 @@ l_0xef7a4d:
 
 l_0xef7a66:
 	/*
-	"@Уровень персонажа {target} linebreak"
+	"@Уровень персонажа {target}" linebreak
 	"  был повышен до {delta}!{prompt}" eob
 	*/
 	newline
@@ -384,29 +385,29 @@ l_0xef7bbf:
 l_0xef7bdc:
 	"{load_registers}" eob
 
-l_0xef7bdf: // TODO: Подстроить текст под гендер персонажа
+l_0xef7bdf:
 	/*
 	"@Враг оставил подарок!{prompt}" linebreak
 	"{sound(16)}{pause(1)}@В подарке находится:" linebreak
-	"[19 1F]{swap}  [1C 05 00]!{prompt}" linebreak
-	"[1D 03 FF][1B 02 {e(l_0xef7c73)}]{store_registers}" call(data_36.l_0xc7dc85) "[1B 03 {e(l_0xef7c42)}]{load_registers}{swap}"
-	"@[1C 02 00]{swap} забирает это.[1D 0E 00 00]{sound(116)}{prompt}" eob
+	"[19 1F]{swap}  {itemname(FROM_MEMORY)}!{prompt}" linebreak
+	"{notfull(ALL_CHARS)}{goto_if_false(l_0xef7c73)}{store_registers}" call(data_36.l_0xc7dc85) "[1B 03 {e(l_0xef7c42)}]{load_registers}{swap}"
+	"@{name(FROM_MEMORY)}{swap}{store_registers} забрал{call(data_gender.l_gendersuffix)} это.{load_registers}{give2(FROM_MEMORY, FROM_MEMORY)}{sound(116)}{prompt}" eob
 	*/
 	newline
 	"@[73][A2][91][94] [A0][A3][A4][91][93][9A][9D] [A1][A0][95][91][A2][A0][9C]!{prompt}" linebreak
 	"{sound(16)}{pause(1)}@[73] [A1][A0][95][91][A2][9C][96] [9F][91][A7][A0][95][9A][A4][A3][C6]:" linebreak
-	"[19 1F]{swap}  [1C 05 00]!{prompt}" linebreak
-	"[1D 03 FF][1B 02 {e(l_0xef7c73)}]{store_registers}" call(data_36.l_0xc7dc85) "[1B 03 {e(l_0xef7c42)}]{load_registers}{swap}"
-	"@[1C 02 00]{swap} [99][91][92][9A][A2][91][96][A4] [C4][A4][A0].[1D 0E 00 00]{sound(116)}{prompt}" eob
+	"[19 1F]{swap}  {itemname(FROM_MEMORY)}!{prompt}" linebreak
+	"{notfull(ALL_CHARS)}{goto_if_false(l_0xef7c73)}{store_registers}" call(data_36.l_0xc7dc85) "[1B 03 {e(l_0xef7c42)}]{load_registers}{swap}"
+	"@{name(FROM_MEMORY)}{swap}{store_registers} [99][91][92][A2][91][9D]{call(data_gender.l_gendersuffix)} [C4][A4][A0].{load_registers}{give2(FROM_MEMORY, FROM_MEMORY)}{sound(116)}{prompt}" eob
 
-l_0xef7c42: // TODO: Подстроить текст под гендер персонажа
+l_0xef7c42:
 	/*
-	"@[1C 02 00] кладёт{load_registers} [1C 05 00]" linebreak
-	"  {swap}к вещам персонажа [1C 02 00].{swap}[1D 0E 00 00]{sound(116)}{prompt}" eob
+	"@{name(FROM_MEMORY)} положил{swap}{call(data_gender.l_gendersuffix)} {load_registers}{itemname(FROM_MEMORY)}" linebreak
+	"  {swap}к вещам персонажа {name(FROM_MEMORY)}.{swap}{give2(FROM_MEMORY, FROM_MEMORY)}{sound(116)}{prompt}" eob
 	*/
-	"[19 10 01]{swap}" newline
-	"@[1C 02 00] [9C][9D][91][95][97][A4]{load_registers} [1C 05 00]" linebreak
-	"  {swap}[9C] [93][96][C0][91][9E] [A1][96][A2][A3][A0][9F][91][98][91] [1C 02 00].{swap}[1D 0E 00 00]{sound(116)}{prompt}" eob
+	"{char_num(1)}{swap}" newline
+	"@{name(FROM_MEMORY)} [A1][A0][9D][A0][98][9A][9D]{swap}{call(data_gender.l_gendersuffix)} {load_registers}{itemname(FROM_MEMORY)}" linebreak
+	"  {swap}[9C] [93][96][C0][91][9E] [A1][96][A2][A3][A0][9F][91][98][91] {name(FROM_MEMORY)}.{swap}{give2(FROM_MEMORY, FROM_MEMORY)}{sound(116)}{prompt}" eob
 
 l_0xef7c73:
 //	"@Но, " call(data_37.l_0xc7e6d7) " не {call(RUS_ref.can_multi)} взять больше вещей.{prompt}" linebreak
@@ -433,11 +434,11 @@ l_0xef7ca5:
 l_0xef7cb4:
 	/*
 	"[19 1F]{swap}@Тогда, вы оставите" linebreak
-	"  [1C 05 00] позади?{prompt}" linebreak
+	"  {itemname(FROM_MEMORY)} позади?{prompt}" linebreak
 	"[19 02]Да" eob
 	*/
 	"[19 1F]{swap}@[84][A0][94][95][91], [93][C2] [A0][A3][A4][91][93][9A][A4][96]" linebreak
-	"  [1C 05 00] [A1][A0][99][91][95][9A]?{prompt}" linebreak
+	"  {itemname(FROM_MEMORY)} [A1][A0][99][91][95][9A]?{prompt}" linebreak
 	"[19 02][75][91]" eob
 
 l_0xef7cd9:
@@ -455,24 +456,24 @@ l_0xef7ced:
 l_0xef7cf8:
 	/*
 	"@" call(data_37.l_0xc7e74e) " {call(RUS_ref.abandoned_multi)}" linebreak
-	"  от: [1C 05 00].{prompt}" eob
+	"  от: {itemname(FROM_MEMORY)}.{prompt}" eob
 	*/
 	"@" call(data_37.l_0xc7e74e) " {call(RUS_ref.abandoned_multi)}" linebreak
-	"  [A0][A4]: [1C 05 00].{prompt}" eob
+	"  [A0][A4]: {itemname(FROM_MEMORY)}.{prompt}" eob
 
 l_0xef7d0f:
 	/*
 	"@Что вы хотите выбросить?{prompt}" call(data_15.l_0xc5e4c3) newline
 	"[1B 02 {e(l_0xef7cb4)}]{store_registers}[19 19 00 00][1D 0B 00][1B 02 {e(l_0xef7dbe)}]{load_registers}[19 19 00 00]"
 	"@Итак, вы хотите" linebreak
-	"  выбросить [1C 05 00]?{prompt}" linebreak
+	"  выбросить {itemname(FROM_MEMORY)}?{prompt}" linebreak
 	"[19 02]Выбросить" eob
 	*/
 	newline
 	"@[89][A4][A0] [93][C2] [A7][A0][A4][9A][A4][96] [93][C2][92][A2][A0][A3][9A][A4][C3]?{prompt}" call(data_15.l_0xc5e4c3) newline
 	"[1B 02 {e(l_0xef7cb4)}]{store_registers}[19 19 00 00][1D 0B 00][1B 02 {e(l_0xef7dbe)}]{load_registers}[19 19 00 00]"
 	"@[7A][A4][91][9C], [93][C2] [A7][A0][A4][9A][A4][96]" linebreak
-	"  [93][C2][92][A2][A0][A3][9A][A4][C3] [1C 05 00]?{prompt}" linebreak
+	"  [93][C2][92][A2][A0][A3][9A][A4][C3] {itemname(FROM_MEMORY)}?{prompt}" linebreak
 	"[19 02][73][C2][92][A2][A0][A3][9A][A4][C3]" eob
 
 l_0xef7d61:
@@ -482,32 +483,42 @@ l_0xef7d61:
 l_0xef7d6f:
 	"[1C 07 02][11]{clearline}[09 02 {e(l_0xef7d83)} {e(l_0xef7cb4)}]" goto(l_0xef7cb4)
 
-l_0xef7d83: // TODO: Подстроить текст под гендер персонажа
+l_0xef7d83:
 	/*
-	"{load_registers}[1D 0F 00 00]{swap}@[1C 02 00]{swap} выбрасывает [1C 05 00]{prompt}" linebreak
-	"{swap}[19 1F]{swap}@и кладёт [1C 05 00] в рюкзак.[1D 0E 00 00]{sound(116)}{pause(1)}[03]" eob
+	"@{name(FROM_MEMORY)}{swap}{store_registers} выбросил{call(data_gender.l_gendersuffix)} {itemname(FROM_MEMORY)}{prompt}" linebreak
+	"@и положил{call(data_gender.l_gendersuffix)} {load_registers}{itemname(FROM_MEMORY)} в рюкзак.{give2(FROM_MEMORY, FROM_MEMORY)}{sound(116)}{pause(1)}[03]" eob
 	*/
-	"{load_registers}[1D 0F 00 00]{swap}@[1C 02 00]{swap} [93][C2][92][A2][91][A3][C2][93][91][96][A4] [1C 05 00]{prompt}" linebreak
-	"{swap}[19 1F]{swap}@[9A] [9C][9D][91][95][97][A4] [1C 05 00] [93] [A2][C5][9C][99][91][9C].[1D 0E 00 00]{sound(116)}{pause(1)}[03]" eob
+	load_registers
+	take2(FROM_MEMORY, FROM_MEMORY) // персонаж из РЕЗУЛЬТАТа, слот из АРГУМЕНТа -> команда возвращает: ID персонажа в РЕЗУЛЬТАТ, ID предмета в АРГУМЕНТ
+	swap // меняем значения РЕЗУЛЬТАТа и АРГУМЕНТа местами -> предмет в РЕЗУЛЬТАТе, персонаж в АРГУМЕНТе -> name(FROM_MEMORY) берёт значение из АРГУМЕНТа
+	"@{name(FROM_MEMORY)}{swap}{store_registers} [93][C2][92][A2][A0][A3][9A][9D]{call(data_gender.l_gendersuffix)} {itemname(FROM_MEMORY)}{prompt}" linebreak
+	// После name(FROM_MEMORY) повторно меняем значения в регистрах -> персонаж в РЕЗУЛЬТАТе, предмет в АРГУМЕНТе -> itemname(FROM_MEMORY) берёт значение из АРГУМЕНТа
+	// При этом call(data_gender.l_gendersuffix) перезаписывает РЕЗУЛЬТАТ на булево значение (0 или 1) в зависимости от номера персонажа (1 при 2, 0 в остальных случаях)
+	load_registers
+	swap // повторно меняем значения в регистрах -> предмет в РЕЗУЛЬТАТе, персонаж в АРГУМЕНТе
+	"[19 1F]" // Возвращает в РЕЗУЛЬТАТ аргумент действия в бою (battle action). Скорее всего, используется для получения выпадаемого с врага предмета.
+	swap // повторно меняем значения в регистрах -> персонаж в РЕЗУЛЬТАТе, выпадаемый предмет в АРГУМЕНТе
+	store_registers
+	"@[9A] [A1][A0][9D][A0][98][9A][9D]{call(data_gender.l_gendersuffix)} {load_registers}{itemname(FROM_MEMORY)} [93] [A2][C5][9C][99][91][9C].{give2(FROM_MEMORY, FROM_MEMORY)}{sound(116)}{pause(1)}[03]" eob
 
 l_0xef7dbe:
-//	"@Не выбрасывай [1C 05 00].{prompt}" goto(l_0xef7d0f)
-	"@[7F][96] [93][C2][92][A2][91][A3][C2][93][91][9B] [1C 05 00].{prompt}" goto(l_0xef7d0f)
+//	"@Не выбрасывай {itemname(FROM_MEMORY)}.{prompt}" goto(l_0xef7d0f)
+	"@[7F][96] [93][C2][92][A2][91][A3][C2][93][91][9B] {itemname(FROM_MEMORY)}.{prompt}" goto(l_0xef7d0f)
 
-l_0xef7dd5: // [1C 02 03] - Джефф
+l_0xef7dd5:
 	/*
 	"@{user} увидел{user_gender}{call(RUS_ref.l_gendersuffix)}" linebreak
 	"  подарок за спиной врага." next
 	"{sound(16)}@В подарке находится:" linebreak
-	"[19 1F]{swap}  [1C 05 00]." next
-	"@[1C 02 03] забрал это.[1D 0E 03 00]{sound(116)}[03]" eob
+	"[19 1F]{swap}  {itemname(FROM_MEMORY)}." next
+	"@{name(JEFF)} забрал это.{give2(JEFF, FROM_MEMORY)}{sound(116)}[03]" eob
 	*/
 	newline
 	"@{user} [A5][93][9A][95][96][9D]{user_gender}{call(RUS_ref.l_gendersuffix)}" linebreak
 	"  [A1][A0][95][91][A2][A0][9C] [99][91] [A3][A1][9A][9F][A0][9B] [93][A2][91][94][91]." next
 	"{sound(16)}@[73] [A1][A0][95][91][A2][9C][96] [9F][91][A7][A0][95][9A][A4][A3][C6]:" linebreak
-	"[19 1F]{swap}  [1C 05 00]." next
-	"@[1C 02 03] [99][91][92][A2][91][9D] [C4][A4][A0].[1D 0E 03 00]{sound(116)}[03]" eob
+	"[19 1F]{swap}  {itemname(FROM_MEMORY)}." next
+	"@{name(JEFF)} [99][91][92][A2][91][9D] [C4][A4][A0].{give2(JEFF, FROM_MEMORY)}{sound(116)}[03]" eob
 
 l_0xef7e25:
 	/*

@@ -4,7 +4,7 @@
  * Generated using CCScriptWriter.
  */
 
-import ebpp_std
+import commands
 import RUS_ref
 
 // Text Data
@@ -558,14 +558,14 @@ l_0xc67a7b:
 	"  [80][A5], [A1][A2][A0][A3][A4][9A]..." end
 
 l_0xc67aa0:
-//	"@Меня{sound(31)}{smash}{pause(10)}ила мышь." end
+//	"@Меня{smash}{pause(10)}ила мышь." end
 	title(1, Unknown)
 	"[06 49 00 {e(l_0xc67ac1)}]"
-	"@[7E][96][9F][C6]{sound(31)}{smash}{pause(10)}[9A][9D][91] [9E][C2][AA][C3]." end
+	"@[7E][96][9F][C6]{smash}{pause(10)}[9A][9D][91] [9E][C2][AA][C3]." end
 
 l_0xc67ac1:
-//	"@Моя рана от{sound(31)}{smash}а скоро заживёт." end
-	"@[7E][A0][C6] [A2][91][9F][91] [A0][A4]{sound(31)}{smash}[91] [A3][9C][A0][A2][A0] [99][91][98][9A][93][97][A4]." end
+//	"@Моя рана от{smash}{pause(10)}а скоро заживёт." end
+	"@[7E][A0][C6] [A2][91][9F][91] [A0][A4]{smash}{pause(10)}[91] [A3][9C][A0][A2][A0] [99][91][98][9A][93][97][A4]." end
 
 l_0xc67add:
 	title(1, Unknown)
@@ -691,13 +691,13 @@ l_0xc68016:
 	eob
 
 l_0xc68017:
-//	"[19 10 01]{rtoarg}@[1C 02 00] поднял{char_slot(1)}{call(data_gender.l_gendersuffix)} трубку." next
-	"[19 10 01]{rtoarg}@[1C 02 00] [A1][A0][95][9F][C6][9D]{char_slot(1)}{call(data_gender.l_gendersuffix)} [A4][A2][A5][92][9C][A5]." next
+//	"[19 10 01]{rtoarg}@[1C 02 00] поднял{char_num(1)}{call(data_gender.l_gendersuffix)} трубку." next
+	"[19 10 01]{rtoarg}@[1C 02 00] [A1][A0][95][9F][C6][9D]{char_num(1)}{call(data_gender.l_gendersuffix)} [A4][A2][A5][92][9C][A5]." next
 	"{sound(11)}" call(data_18.l_0xc63029) eob
 
 l_0xc6803d:
-//	"{open_wallet}[1D 14 01 00 00 00][1B 03 {e(l_0xc68077)}][19 10 01]{swap}@[1C 02 00] поднял{char_slot(1)}{call(data_gender.l_gendersuffix)} трубку." next
-	"{open_wallet}[1D 14 01 00 00 00][1B 03 {e(l_0xc68077)}][19 10 01]{swap}@[1C 02 00] [A1][A0][95][9F][C6][9D]{char_slot(1)}{call(data_gender.l_gendersuffix)} [A4][A2][A5][92][9C][A5]." next
+//	"{open_wallet}[1D 14 01 00 00 00][1B 03 {e(l_0xc68077)}][19 10 01]{swap}@[1C 02 00] поднял{char_num(1)}{call(data_gender.l_gendersuffix)} трубку." next
+	"{open_wallet}[1D 14 01 00 00 00][1B 03 {e(l_0xc68077)}][19 10 01]{swap}@[1C 02 00] [A1][A0][95][9F][C6][9D]{char_num(1)}{call(data_gender.l_gendersuffix)} [A4][A2][A5][92][9C][A5]." next
 	"[1D 09 01 00]{open_wallet}{sound(11)}" call(data_18.l_0xc63033) eob
 
 l_0xc68077:

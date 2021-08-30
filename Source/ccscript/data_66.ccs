@@ -4,8 +4,8 @@
  * Generated using CCScriptWriter.
  */
 
-import ebpp
-import RUS_ref
+import commands
+import defines
 
 // Text Data
 l_0xef9a9e:

@@ -1,0 +1,76 @@
+command e(label) "{long label}" // форматирует метку в 4-байтный адрес (для подстановки в текст, например, "FC 09 0A 0B")
+
+/*
+ Возвращает в РЕЗУЛЬТАТ номер персонажа в указанном слоте.
+ Вернёт: 1 = Несс; 2 = Пола; 3 = Джефф; 4 = Пу
+
+ Например, мы хотим проверить, если Несс - первый (или же текущий лидер) в команде. Для этого используется [19 10 01] или char_num(1)
+
+ Дальше сравниваем полученный РЕЗУЛЬТАТ с числом 1: [0B 01] или result_is(1)
+ Если мы хотим проверить, чтобы РЕЗУЛЬТАТ не был равен 1: [0C 01] или result_not(1)
+
+ [0B XX] и [0C XX] (и их псевдонимы result_is и result_not) возвращают в РЕЗУЛЬТАТ (т.е. перезаписывают) булевое значение: 0 или 1
+ Исходя из этого можно делать переход/ветвление по меткам:
+
+    [1B 02 XX XX XX XX] - игра переходит на указатель XXXXXXXX, если РЕЗУЛЬТАТ = 0
+    Пример:
+            char_num(1)
+            result_is(1)
+            "[1B 02 {e(mylabel)}]" // Переходим на mylabel, если result_is(1) вернул 0
+            "@Ты тот пацан с красной кепкой!" end
+        mylabel:
+            "@Ты НЕ тот пацан с красной кепкой!" end
+
+    [1B 03 XX XX XX XX] - игра переходит на указатель XXXXXXXX, если РЕЗУЛЬТАТ = 1
+    Пример:
+            char_num(1)
+            result_is(1)
+            "[1B 03 {e(mylabel)}]" // Переходим на mylabel, если result_is(1) вернул 1
+            "@Хм, ты не {name(1)}..." end // name(1) (или же [1C 02 01]) выводит имя первого персонажа (Несс)
+        mylabel:
+            "@Ты ведь {name(1)}!" end
+*/
+command char_num(slot) "[19 10 {byte slot}]"
+
+command goto_if_flag(flag_num, label) "[06 {short flag_num} {e(label)}]" // goto-переход на метку label, если флаг события flag установлен (использовать оператор flag <число>!!!)
+command goto_if_false(label)          "[1B 02 {e(label)}]" // goto-переход на метку label, если РЕЗУЛЬТАТ = 0
+command goto_if_true(label)           "[1B 03 {e(label)}]" // goto-переход на метку label, если РЕЗУЛЬТАТ = 1
+
+command user_gender   "[1C 14 01]" // Возвращает в РЕЗУЛЬТАТ номер гендера для {user}. Используется в бою.
+command user_number   "[1C 14 02]" // Возвращает в РЕЗУЛЬТАТ кол-во союзников для {user}. Используется в бою.
+command target_gender "[1C 15 01]" // Возвращает в РЕЗУЛЬТАТ номер гендера для {target}. Используется в бою.
+command target_number "[1C 15 02]" // Возвращает в РЕЗУЛЬТАТ кол-во союзников для {target}. Используется в бою.
+command disable_input "[1F 50]"    // Отключает любой ввод с контроллера.
+command enable_input  "[1F 51]"    // Разрешает ввод с контроллера.
+
+// Выдаёт предмет item персонажу char, возвращая в РЕЗУЛЬТАТ номер получателя и в АРГУМЕНТ кол-во предметов (включая этот) получателя
+command give2(char, item) "[1D 0E {byte char} {byte item}]"
+
+// Экипирует персонажу char предмет из слота slot (оба параметра могут быть 0 - значения берутся из Результата и Аргумента)
+command equip(char, slot) "[1F 83 {byte char} {byte slot}]"
+
+// Удаляет предмет из слота slot персонажа char, возвращает: ID персонажа в Результат, ID предмета в Аргумент
+command take2(char, slot) "[1D 0F {byte char} {byte slot}]"
+
+command init_party_number_check(label) { // инициализирует аргумент и счётчик для цикла в метке label
+	char_num(1)
+	swap
+	counter(1)
+	call(label)
+}
+
+// Title_Window.ccs: Добавляют над окном window заголовки с именами персонажей (без использования EB++)
+command title_ness(window)  { "[18 0B {byte[0] window} 01 05]" clearline }
+command title_paula(window) { "[18 0B {byte[0] window} 02 05]" clearline }
+command title_jeff(window)  { "[18 0B {byte[0] window} 03 05]" clearline }
+command title_poo(window)   { "[18 0B {byte[0] window} 04 05]" clearline }
+command title_dog(window)   { "[18 0B {byte[0] window} 05 06]" clearline }
+
+// Title_Window.ccs: Добавляет произвольный заголовок (строку по метке label) над окном window
+command title(window, label) { "[18 0C {byte[0] window} {byte[0] label} {byte[1] label} {byte[2] label} 00]" clearline }
+
+// asm_diamond.ccs: Отображает алмаз (из Mother 2) вместо белой точки
+command diam "[1C 08 03]"
+
+command store_wram "[1B 05]" // сохраняет активную память окна в WRAM
+command load_wram  "[1B 06]" // загружает из WRAM в активную память

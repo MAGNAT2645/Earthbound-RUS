@@ -4,7 +4,7 @@
  * Generated using CCScriptWriter.
  */
 
-import ebpp_std
+import commands
 import RUS_ref
 
 // Text Data
@@ -86,14 +86,13 @@ l_0xc97a35:
 
 l_0xc97a51:
 	/*
-	title(1, "Мр.Ложкин")
 	"@Знаешь, чьи кости выставлены здесь?" next
 	"@Ответ...{pause(30)} твои кости." next
 	"@Мои кости." next
 	"@Кости костей." next
 	"@Кости, кости, кости." end
 	*/
-	title(1, "[7E][A2].[7D][A0][98][9C][9A][9F]")
+	title(1, Spoon)
 	"@[79][9F][91][96][AA][C3], [A9][C3][9A] [9C][A0][A3][A4][9A] [93][C2][A3][A4][91][93][9D][96][9F][C2] [99][95][96][A3][C3]?" next
 	"@[80][A4][93][96][A4]...{pause(30)} [A4][93][A0][9A] [9C][A0][A3][A4][9A]." next
 	"@[7E][A0][9A] [9C][A0][A3][A4][9A]." next
@@ -121,11 +120,10 @@ l_0xc97b0c:
 
 l_0xc97b12:
 	/*
-	title(1, "Монотоли")
 	"@Не делай ничего со мной!" linebreak
 	"  Я... Я не Монотоли![03][1F 1E 73 05 09]{pause(120)}{set(flag 631)}" eob
 	*/
-	title(1, "[7E][A0][9F][A0][A4][A0][9D][9A]")
+	title(1, Monotoly)
 	"@[7F][96] [95][96][9D][91][9B] [9F][9A][A9][96][94][A0] [A3][A0] [9E][9F][A0][9B]!" linebreak
 	"  [B6]... [B6] [9F][96] [7E][A0][9F][A0][A4][A0][9D][9A]![03][1F 1E 73 05 09]{pause(120)}{set(flag 631)}" eob
 

@@ -4,8 +4,8 @@
  * Generated using CCScriptWriter.
  */
 
-import ebpp_std
-command e(label) "{long label}"
+import commands
+import RUS_ref
 
 // Text Data
 l_0xc913dd:
@@ -117,44 +117,36 @@ l_0xc91675:
 l_0xc91693:
 	call(data_48.l_0xc90f7d) call(l_0xc915d6) call(l_0xc91582) eob
 
-l_0xc916a3:
-//	title(1, "Целитель")
-	title(1, "[88][96][9D][9A][A4][96][9D][C3]")
+l_0xc916a3: // Центральные диалоги Целителей
+	title(1, Unknown)
 	"{set(flag 226)}" call(l_0xc91805) "{unset(flag 226)}" eob
 
 l_0xc916af:
-//	title(1, "Целитель")
-	title(1, "[88][96][9D][9A][A4][96][9D][C3]")
+	title(1, Unknown)
 	"{set(flag 227)}" call(l_0xc91805) "{unset(flag 227)}" eob
 
 l_0xc916bb:
-//	title(1, "Целитель")
-	title(1, "[88][96][9D][9A][A4][96][9D][C3]")
+	title(1, Unknown)
 	"{set(flag 228)}" call(l_0xc91805) "{unset(flag 228)}" eob
 
 l_0xc916c7:
-//	title(1, "Целитель")
-	title(1, "[88][96][9D][9A][A4][96][9D][C3]")
+	title(1, Unknown)
 	"{set(flag 229)}" call(l_0xc91805) "{unset(flag 229)}" eob
 
 l_0xc916d3:
-//	title(1, "Целитель")
-	title(1, "[88][96][9D][9A][A4][96][9D][C3]")
+	title(1, Unknown)
 	"{set(flag 230)}" call(l_0xc91805) "{unset(flag 230)}" eob
 
 l_0xc916df:
-//	title(1, "Целитель")
-	title(1, "[88][96][9D][9A][A4][96][9D][C3]")
+	title(1, Unknown)
 	"{set(flag 231)}" call(l_0xc91805) "{unset(flag 231)}" eob
 
 l_0xc916eb:
-//	title(1, "Целитель")
-	title(1, "[88][96][9D][9A][A4][96][9D][C3]")
+	title(1, Unknown)
 	"{set(flag 232)}" call(l_0xc91805) "{unset(flag 232)}" eob
 
 l_0xc916f7:
-//	title(1, "Целитель")
-	title(1, "[88][96][9D][9A][A4][96][9D][C3]")
+	title(1, Unknown)
 	"{set(flag 233)}{set(flag 659)}" call(l_0xc91805) "{unset(flag 233)}{unset(flag 659)}" eob
 
 l_0xc91709:

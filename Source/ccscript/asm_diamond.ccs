@@ -6,9 +6,6 @@
 import asm65816
 import ASMRef
 
-// Отображает алмаз (из Mother 2) вместо белой точки
-command diam "[1C 08 03]"
-
 // The [1C 08 XX] control code.
 ROM[0xC10EE3] = {
 	JSL	(Display_Window_Graphics)

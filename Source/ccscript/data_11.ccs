@@ -4,7 +4,6 @@
  * Generated using CCScriptWriter.
  */
 
-import ebpp_std
 command e(label) "{long label}"
 
 // Text Data
@@ -66,11 +65,9 @@ l_0xc5bb46:
 
 l_0xc5bb76:
 	/*
-	title(1, "Торговец")
 	"@Здравствуйте, могу я принять ваш заказ?" linebreak
 	"  (улыбка, улыбка)" next
 	*/
-	title(1, "[84][A0][A2][94][A0][93][96][A8]")
 	"@[79][95][A2][91][93][A3][A4][93][A5][9B][A4][96], [9E][A0][94][A5] [C6] [A1][A2][9A][9F][C6][A4][C3] [93][91][AA] [99][91][9C][91][99]?" linebreak
 	"  ([A5][9D][C2][92][9C][91], [A5][9D][C2][92][9C][91])" next
 	eob
@@ -473,11 +470,9 @@ l_0xc5c1be:
 
 l_0xc5c1e5:
 	/*
-	title(1, "Торговец")
 	"@Заходи!" linebreak
 	"  У нас есть товары!" next
 	*/
-	title(1, "[84][A0][A2][94][A0][93][96][A8]")
 	"@[79][91][A7][A0][95][9A]!" linebreak
 	"  [85] [9F][91][A3] [96][A3][A4][C3] [A4][A0][93][91][A2][C2]!" next
 	eob

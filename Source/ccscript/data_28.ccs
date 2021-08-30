@@ -4,7 +4,7 @@
  * Generated using CCScriptWriter.
  */
 
-import ebpp_std
+import commands
 import RUS_ref
 
 // Text Data
@@ -78,7 +78,6 @@ l_0xc6fdbe:
 
 l_0xc6fed6:
 	/*
-	title(1, "Детсадовцы")
 	"@(Дорогая [1C 01 1E]," linebreak
 	"  Как у тебя дела?" linebreak
 	"  У меня хорошо." next
@@ -94,7 +93,7 @@ l_0xc6fed6:
 	"                                      Детского Сада Полстар)" end
 	*/
 	newline
-	title(1, "[75][96][A4][A3][91][95][A0][93][A8][C2]")
+	title(1, Kindergartens)
 	"@([75][A0][A2][A0][94][91][C6] [1C 01 1E]," linebreak
 	"  [7C][91][9C] [A5] [A4][96][92][C6] [95][96][9D][91]?" linebreak
 	"  [85] [9E][96][9F][C6] [A7][A0][A2][A0][AA][A0]." next

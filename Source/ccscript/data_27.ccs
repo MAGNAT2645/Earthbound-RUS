@@ -4,7 +4,8 @@
  * Generated using CCScriptWriter.
  */
 
-import ebpp_std
+import defines
+import commands
 import RUS_ref
 
 // Text Data
@@ -46,7 +47,9 @@ l_0xc6dfe7:
 	"  Мр. Монотоли." end
 	*/
 	title(1, Unknown)
-	"[06 49 00 {e(l_0xc6e05a)}][06 8F 00 {e(l_0xc6e018)}]@[B6] [C4][9D][9A][A4][9F][C2][9B] [92][9A][99][9F][96][A3][9E][96][9F], [A2][91][92][A0][A4][91][C5][C0][9A][9B] [93] [A0][A6][9A][A3][96]" linebreak
+	goto_if_flag(flag 73, l_0xc6e05a)
+	goto_if_flag(FLAG_PORKY_NOT_IN_FOURSIDE, l_0xc6e018)
+	"@[B6] [C4][9D][9A][A4][9F][C2][9B] [92][9A][99][9F][96][A3][9E][96][9F], [A2][91][92][A0][A4][91][C5][C0][9A][9B] [93] [A0][A6][9A][A3][96]" linebreak
 	"  [7E][A2]. [7E][A0][9F][A0][A4][A0][9D][9A]." end
 
 l_0xc6e018:
@@ -73,7 +76,7 @@ l_0xc6e088:
 	"@Что привело тебя к Монотоли Билдинг?" end
 	*/
 	title(1, Unknown)
-	"[06 49 00 {e(l_0xc6e0b4)}]"
+	goto_if_flag(flag 73, l_0xc6e0b4)
 	"@[81][A2][9A][93][96][A4], [9E][91][9D][C2][AA]." next
 	"@[89][A4][A0] [A1][A2][9A][93][96][9D][A0] [A4][96][92][C6] [9C] [7E][A0][9F][A0][A4][A0][9D][9A] [72][9A][9D][95][9A][9F][94]?" end
 
@@ -93,7 +96,7 @@ l_0xc6e0e3:
 	"@Кто-нибудь может заподозрить вас и шмальнуть из пулемёта..." end
 	*/
 	title(1, Unknown)
-	"[06 8F 00 {e(l_0xc6e159)}]" linebreak
+	goto_if_flag(FLAG_PORKY_NOT_IN_FOURSIDE, l_0xc6e159)
 	"@[73][C2] [95][A2][A5][94] [7E][91][A3][A4][96][A2][91] [81][A0][A2][9C][9A]?" next
 	"@[76][94][A0] [9E][A0][98][9F][A0] [9F][91][93][96][C0][91][A4][C3] [99][95][96][A3][C3],{pause(15)}" linebreak
 	"  [9F][A0] [9F][96] [92][A2][A0][95][9A][A4][96] [A1][A0] [99][95][91][9F][9A][C5]." next
@@ -113,7 +116,7 @@ l_0xc6e192:
 	"@Я чуть вас не побил." end
 	*/
 	title(1, Unknown)
-	"[06 8F 00 {e(l_0xc6e1b9)}]" linebreak
+	goto_if_flag(FLAG_PORKY_NOT_IN_FOURSIDE, l_0xc6e1b9)
 	"@[85][A5][A5][A5][A1][A3]..." next
 	"@[B6] [A9][A5][A4][C3] [93][91][A3] [9F][96] [A1][A0][92][9A][9D]." end
 
@@ -134,7 +137,7 @@ l_0xc6e220:
 	"  и не пяльтесь на мой зад!{wait}{window_closeall}[1F 16 58 03 01]{music(138)}[1F 15 B7 01 63 01 01]{pause(1)}[1F EF B7 01][1F E8 FF][1F 15 6A 00 47 02 01][1F 61]{music(139)}{pause(90)}[1F ED][1F E5 FF][1F 1F B7 01 06]{set(flag 350)}{set(flag 10)}" eob
 	*/
 	title(1, Unknown)
-	"[06 0A 00 {e(l_0xc6e298)}]"
+	goto_if_flag(FLAG_SPECIAL_0A, l_0xc6e298)
 	"@[B4][A4][A0][A4] [9D][9A][A6][A4] [9A][95][97][A4] [93][9F][9A][99]." next
 	"@[81][A0][A3][9D][A5][AA][91][9B][A4][96], [9F][96] [A3][A4][A0][9B][A4][96] [A1][A0][99][91][95][9A] [9E][96][9F][C6]" linebreak
 	"  [9A] [9F][96] [A1][C6][9D][C3][A4][96][A3][C3] [9F][91] [9E][A0][9B] [99][91][95]!{wait}{window_closeall}[1F 16 58 03 01]{music(138)}[1F 15 B7 01 63 01 01]{pause(1)}[1F EF B7 01][1F E8 FF][1F 15 6A 00 47 02 01][1F 61]{music(139)}{pause(90)}[1F ED][1F E5 FF][1F 1F B7 01 06]{set(flag 350)}{set(flag 10)}" eob
@@ -143,35 +146,36 @@ l_0xc6e298:
 //	"@Первый этаж." end
 	"@[81][96][A2][93][C2][9B] [C4][A4][91][98]." end
 
-l_0xc6e2a4:
+l_0xc6e2a4: // центральный диалог Порки в Монотоли Билдинг
 	title(1, Porky)
-	"[06 4B 00 {e(l_0xc6e45a)}]" goto(l_0xc6e2ab)
+	goto_if_flag(FLAG_MANI_MANI_DEFEATED, l_0xc6e45a)
+	goto(l_0xc6e2ab)
 
 l_0xc6e2ab:
 	/*
 	"@Ооуу-ла-ла." next
 	"@Это же... мой бедный, старый друг..." next
 	"@А?... Как тебя зовут?..." next
-	"{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 02 {e(l_0xc6e33a)}]"
+	"{counter(1)}" call(data_36.l_0xc7dc7f) goto_if_false(l_0xc6e33a)
 	"@А, Свиная Задница..." next
-	"@Нет, ты друг моего друга, которого зовут [1C 02 01]." next
+	"@Нет, ты друг моего друга, которого зовут {name(NESS)}." next
 	"@Свиная Задница, ты пришёл просить у меня денег, верно?" next
 	*/
 	"@[80][A0][A5][A5]-[9D][91]-[9D][91]." next
 	"@[B4][A4][A0] [98][96]... [9E][A0][9B] [92][96][95][9F][C2][9B], [A3][A4][91][A2][C2][9B] [95][A2][A5][94]..." next
 	"@[71]?... [7C][91][9C] [A4][96][92][C6] [99][A0][93][A5][A4]?..." next
-	"{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 02 {e(l_0xc6e33a)}]"
+	"{counter(1)}" call(data_36.l_0xc7dc7f) goto_if_false(l_0xc6e33a)
 	"@[71], [83][93][9A][9F][91][C6] [79][91][95][9F][9A][A8][91]..." next
-	"@[7F][96][A4], [A4][C2] [95][A2][A5][94] [9E][A0][96][94][A0] [95][A2][A5][94][91], [9C][A0][A4][A0][A2][A0][94][A0] [99][A0][93][A5][A4] [1C 02 01]." next
+	"@[7F][96][A4], [A4][C2] [95][A2][A5][94] [9E][A0][96][94][A0] [95][A2][A5][94][91], [9C][A0][A4][A0][A2][A0][94][A0] [99][A0][93][A5][A4] {name(NESS)}." next
 	"@[83][93][9A][9F][91][C6] [79][91][95][9F][9A][A8][91], [A4][C2] [A1][A2][9A][AA][97][9D] [A1][A2][A0][A3][9A][A4][C3] [A5] [9E][96][9F][C6] [95][96][9F][96][94], [93][96][A2][9F][A0]?" next
 	goto(l_0xc6e36d)
 
 l_0xc6e33a:
 	/*
-	"@Свиная Задница... нет-нет, [1C 02 01]!" next
+	"@Свиная Задница... нет-нет, {name(NESS)}!" next
 	"@Ты, случаем, не деньги просить у меня пришёл?" next
 	*/
-	"@[83][93][9A][9F][91][C6] [79][91][95][9F][9A][A8][91]... [9F][96][A4]-[9F][96][A4], [1C 02 01]!" next
+	"@[83][93][9A][9F][91][C6] [79][91][95][9F][9A][A8][91]... [9F][96][A4]-[9F][96][A4], {name(NESS)}!" next
 	"@[84][C2], [A3][9D][A5][A9][91][96][9E], [9F][96] [95][96][9F][C3][94][9A] [A1][A2][A0][A3][9A][A4][C3] [A5] [9E][96][9F][C6] [A1][A2][9A][AA][97][9D]?" next
 	goto(l_0xc6e36d)
 
@@ -185,8 +189,8 @@ l_0xc6e36d:
 	"@Теперь я партнёр Гельдегардэ Монотоли," next
 	"@я даю ему политические и экономические советы." next
 	"@Я слышал, что какие-то крысёныши спрашивали про Мистера Монотоли..." next
-	"{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc6e426)}]"
-	"@Это был ты, [1C 02 01]?" next
+	"{counter(1)}" call(data_36.l_0xc7dc7f) goto_if_true(l_0xc6e426)
+	"@Это был ты, {name(NESS)}?" next
 	*/
 	"@[80][A0][A5][A5]-[9D][91]-[9D][91]." next
 	"@[82][91][99][93][96] [A4][C2] [9E][96][9F][C6] [9F][96] [A5][99][9F][91][97][AA][C3]?" next
@@ -196,8 +200,8 @@ l_0xc6e36d:
 	"@[84][96][A1][96][A2][C3] [C6] [A1][91][A2][A4][9F][97][A2] [74][96][9D][C3][95][96][94][91][A2][95][C4] [7E][A0][9F][A0][A4][A0][9D][9A]," next
 	"@[C6] [95][91][C5] [96][9E][A5] [A1][A0][9D][9A][A4][9A][A9][96][A3][9C][9A][96] [9A] [C4][9C][A0][9F][A0][9E][9A][A9][96][A3][9C][9A][96] [A3][A0][93][96][A4][C2]." next
 	"@[B6] [A3][9D][C2][AA][91][9D], [A9][A4][A0] [9C][91][9C][9A][96]-[A4][A0] [9C][A2][C2][A3][97][9F][C2][AA][9A] [A3][A1][A2][91][AA][9A][93][91][9D][9A] [A1][A2][A0] [7E][9A][A3][A4][96][A2][91] [7E][A0][9F][A0][A4][A0][9D][9A]..." next
-	"{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc6e426)}]"
-	"@[B4][A4][A0] [92][C2][9D] [A4][C2], [1C 02 01]?" next
+	"{counter(1)}" call(data_36.l_0xc7dc7f) goto_if_true(l_0xc6e426)
+	"@[B4][A4][A0] [92][C2][9D] [A4][C2], {name(NESS)}?" next
 	goto(l_0xc6e426)
 
 l_0xc6e426:
@@ -211,7 +215,7 @@ l_0xc6e426:
 l_0xc6e45a:
 	/*
 	"@Ооуу-ла-ла." next
-	"@[1C 01 04] не может вот так просто удовлетворить тебя." next
+	"@{stat(FAV_FOOD)} не может вот так просто удовлетворить тебя." next
 	"@Ты совсем не в себе." next
 	"@Я заказал <Клубничный тофу>." next
 	"@Он очень популярен среди гурманов." next
@@ -221,9 +225,9 @@ l_0xc6e45a:
 	"  Оооо, я не могу дождаться!" next
 	"@У меня текут слюни лишь от одной мысли о нём." end
 	*/
-	"[06 71 02 {e(l_0xc6e2ab)}]"
+	goto_if_flag(flag 625, l_0xc6e2ab)
 	"@[80][A0][A5][A5]-[9D][91]-[9D][91]." next
-	"@[1C 01 04] [9F][96] [9E][A0][98][96][A4] [93][A0][A4] [A4][91][9C] [A1][A2][A0][A3][A4][A0] [A5][95][A0][93][9D][96][A4][93][A0][A2][9A][A4][C3] [A4][96][92][C6]." next
+	"@{stat(FAV_FOOD)} [9F][96] [9E][A0][98][96][A4] [93][A0][A4] [A4][91][9C] [A1][A2][A0][A3][A4][A0] [A5][95][A0][93][9D][96][A4][93][A0][A2][9A][A4][C3] [A4][96][92][C6]." next
 	"@[84][C2] [A3][A0][93][A3][96][9E] [9F][96] [93] [A3][96][92][96]." next
 	"@[B6] [99][91][9C][91][99][91][9D] <[7C][9D][A5][92][9F][9A][A9][9F][C2][9B] [A4][A0][A6][A5]>." next
 	"@[80][9F] [A0][A9][96][9F][C3] [A1][A0][A1][A5][9D][C6][A2][96][9F] [A3][A2][96][95][9A] [94][A5][A2][9E][91][9F][A0][93]." next
@@ -234,9 +238,10 @@ l_0xc6e45a:
 	"@[85] [9E][96][9F][C6] [A4][96][9C][A5][A4] [A3][9D][C5][9F][9A] [9D][9A][AA][C3] [A0][A4] [A0][95][9F][A0][9B] [9E][C2][A3][9D][9A] [A0] [9F][97][9E]." end
 
 l_0xc6e557:
-//	"{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc6e57d)}]@Ты не сильно изменился, [1C 02 01]." next
+//	"@Ты не сильно изменился, {name(NESS)}." next
 	title(1, Aloysius)
-	"{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc6e57d)}]@[84][C2] [9F][96] [A3][9A][9D][C3][9F][A0] [9A][99][9E][96][9F][9A][9D][A3][C6], [1C 02 01]." next
+	"{counter(1)}" call(data_36.l_0xc7dc7f) goto_if_true(l_0xc6e57d)
+	"@[84][C2] [9F][96] [A3][9A][9D][C3][9F][A0] [9A][99][9E][96][9F][9A][9D][A3][C6], {name(NESS)}." next
 	goto(l_0xc6e5a1)
 
 l_0xc6e57d:
@@ -270,14 +275,16 @@ l_0xc6e5a1:
 
 l_0xc6e69c:
 	/*
-	"[06 0A 00 {e(l_0xc6e759)}][06 8F 00 {e(l_0xc6e79a)}]@Тссс! Тихо!" linebreak
-	"[19 10 01]{rtoarg}  Ты [1C 02 00]?" next
+	"@Тссс! Тихо!" linebreak
+	"[19 10 01]{rtoarg}  Ты {name(FROM_MEMORY)}?" next
 	"@Горничная Мр. Монотоли, Электра, рассказала мне о тебе." next
 	"@Я отведу тебя до офиса Мр. Монотоли на 48-ом этаже." next
 	"@Только ты можешь идти туда.[03][19 10 01]{rtoarg}" goto(l_0xc6e71e)
 	*/
-	"[06 0A 00 {e(l_0xc6e759)}][06 8F 00 {e(l_0xc6e79a)}]@[84][A3][A3][A3]! [84][9A][A7][A0]!" linebreak
-	"[19 10 01]{rtoarg}  [84][C2] [1C 02 00]?" next
+	goto_if_flag(FLAG_SPECIAL_0A, l_0xc6e759)
+	goto_if_flag(FLAG_PORKY_NOT_IN_FOURSIDE, l_0xc6e79a)
+	"@[84][A3][A3][A3]! [84][9A][A7][A0]!" linebreak
+	"[19 10 01]{rtoarg}  [84][C2] {name(FROM_MEMORY)}?" next
 	"@[74][A0][A2][9F][9A][A9][9F][91][C6] [7E][A2]. [7E][A0][9F][A0][A4][A0][9D][9A], [B4][9D][96][9C][A4][A2][91], [A2][91][A3][A3][9C][91][99][91][9D][91] [9E][9F][96] [A0] [A4][96][92][96]." next
 	"@[B6] [A0][A4][93][96][95][A5] [A4][96][92][C6] [95][A0] [A0][A6][9A][A3][91] [7E][A2]. [7E][A0][9F][A0][A4][A0][9D][9A] [9F][91] 48-[A0][9E] [C4][A4][91][98][96]." next
 	"@[84][A0][9D][C3][9C][A0] [A4][C2] [9E][A0][98][96][AA][C3] [9A][95][A4][9A] [A4][A5][95][91].[03][19 10 01]{rtoarg}" goto(l_0xc6e71e)
@@ -287,11 +294,12 @@ l_0xc6e71e:
 
 l_0xc6e759:
 	/*
-	"[06 8F 00 {e(l_0xc6e7e9)}]@48-й этаж." next
+	"@48-й этаж." next
 	"@Робот-охранник патрулирует этаж." next
 	"@Будьте осторожны!" end
 	*/
-	"[06 8F 00 {e(l_0xc6e7e9)}]@48-[9B] [C4][A4][91][98]." next
+	goto_if_flag(FLAG_PORKY_NOT_IN_FOURSIDE, l_0xc6e7e9)
+	"@48-[9B] [C4][A4][91][98]." next
 	"@[82][A0][92][A0][A4]-[A0][A7][A2][91][9F][9F][9A][9C] [A1][91][A4][A2][A5][9D][9A][A2][A5][96][A4] [C4][A4][91][98]." next
 	"@[72][A5][95][C3][A4][96] [A0][A3][A4][A0][A2][A0][98][9F][C2]!" end
 
@@ -324,7 +332,9 @@ l_0xc6e81a:
 	"@Этот лифт доставит тебя на 47-й этаж.[03]" goto(l_0xc6e884)
 	*/
 	title(1, Unknown)
-	"[06 0A 00 {e(l_0xc6e8bf)}][06 D7 00 {e(l_0xc6e961)}][06 8F 00 {e(l_0xc6e8cc)}]"
+	goto_if_flag(FLAG_SPECIAL_0A, l_0xc6e8bf)
+	goto_if_flag(FLAG_TELEPORT_DEST_SUMMERS, l_0xc6e961)
+	goto_if_flag(FLAG_PORKY_NOT_IN_FOURSIDE, l_0xc6e8cc)
 	"@[84][C2] [9E][A0][98][96][AA][C3] [93][A3][A4][A2][96][A4][9A][A4][C3][A3][C6] [A3] [94][A0][A2][9F][9A][A9][9F][A0][9B], [B4][9D][96][9C][A4][A2][A0][9B]." next
 	"@[7A][9F][A4][96][A2][96][A3][9F][A0], [9C][91][9C][9A][96] [A5] [93][91][A3] [A0][A4][9F][A0][AA][96][9F][9A][C6]...([A5][9D][C2][92][9C][91])." next
 	"@[B4][A4][A0][A4] [9D][9A][A6][A4] [95][A0][A3][A4][91][93][9A][A4] [A4][96][92][C6] [9F][91] 47-[9B] [C4][A4][91][98].[03]" goto(l_0xc6e884)
@@ -416,8 +426,8 @@ l_0xc6eb2c:
 	"@Я часто ходил туда молиться." next
 	"@....." next
 	"@Странные слова появились передо мной, когда я был в иллюзии." next
-	"@[1C 02 01], твоё имя появилось в загадочных сообщениях." next
-	"@<Останови того, чьё имя - [1C 02 01], и сделай это собственными руками.>" next
+	"@{name(NESS)}, твоё имя появилось в загадочных сообщениях." next
+	"@<Останови того, чьё имя - {name(NESS)}, и сделай это собственными руками.>" next
 	"@Или..." next
 	"@<Не позволь им пробраться в Саммерс.>" next
 	"@Или..." next
@@ -442,8 +452,8 @@ l_0xc6eb2c:
 	"@[B6] [A9][91][A3][A4][A0] [A7][A0][95][9A][9D] [A4][A5][95][91] [9E][A0][9D][9A][A4][C3][A3][C6]." next
 	"@....." next
 	"@[83][A4][A2][91][9F][9F][C2][96] [A3][9D][A0][93][91] [A1][A0][C6][93][9A][9D][9A][A3][C3] [A1][96][A2][96][95][A0] [9E][9F][A0][9B], [9C][A0][94][95][91] [C6] [92][C2][9D] [93] [9A][9D][9D][C5][99][9A][9A]." next
-	"@[1C 02 01], [A4][93][A0][97] [9A][9E][C6] [A1][A0][C6][93][9A][9D][A0][A3][C3] [93] [99][91][94][91][95][A0][A9][9F][C2][A7] [A3][A0][A0][92][C0][96][9F][9A][C6][A7]." next
-	"@<[80][A3][A4][91][9F][A0][93][9A] [A4][A0][94][A0], [A9][C3][97] [9A][9E][C6] - [1C 02 01], [9A] [A3][95][96][9D][91][9B] [C4][A4][A0] [A3][A0][92][A3][A4][93][96][9F][9F][C2][9E][9A] [A2][A5][9C][91][9E][9A].>" next
+	"@{name(NESS)}, [A4][93][A0][97] [9A][9E][C6] [A1][A0][C6][93][9A][9D][A0][A3][C3] [93] [99][91][94][91][95][A0][A9][9F][C2][A7] [A3][A0][A0][92][C0][96][9F][9A][C6][A7]." next
+	"@<[80][A3][A4][91][9F][A0][93][9A] [A4][A0][94][A0], [A9][C3][97] [9A][9E][C6] - {name(NESS)}, [9A] [A3][95][96][9D][91][9B] [C4][A4][A0] [A3][A0][92][A3][A4][93][96][9F][9F][C2][9E][9A] [A2][A5][9C][91][9E][9A].>" next
 	"@[7A][9D][9A]..." next
 	"@<[7F][96] [A1][A0][99][93][A0][9D][C3] [9A][9E] [A1][A2][A0][92][A2][91][A4][C3][A3][C6] [93] [83][91][9E][9E][96][A2][A3].>" next
 	"@[7A][9D][9A]..." next
@@ -474,7 +484,7 @@ l_0xc6ed74:
 	"@Я сейчас открою тайную дверь.[03]{window_closeall}{pause(1)}[1F F1 68 03 BD 02][1F 61][1F F1 6C 03 BE 02][1F 61][1F F1 6C 03 2C 00][1F E6 68 03][1F 07 03]{pause(180)}{music(85)}[1F F1 6D 03 BF 02][1F 61][1F F1 6D 03 08 00][1F 07 02]{pause(30)}{sound(28)}{pause(60)}{music_resume}[1F E9 68 03][1F 61][1F F1 68 03 08 00]{window_open(1)}"
 	title(1, Monotoly)
 	"@Тебе нужно продолжить путешествие!" next
-	"@[1C 02 01]!" next
+	"@{name(NESS)}!" next
 	"@Это твоя судьба." next
 	*/
 	"@[83][91][9E][9E][96][A2][A3] [9F][91][A7][A0][95][9A][A4][A3][C6] [99][91] [A0][9C][96][91][9F][A0][9E].{pause(20)}" linebreak
@@ -482,16 +492,16 @@ l_0xc6ed74:
 	"@[B6] [A3][96][9B][A9][91][A3] [A0][A4][9C][A2][A0][C5] [A4][91][9B][9F][A5][C5] [95][93][96][A2][C3].[03]{window_closeall}{pause(1)}[1F F1 68 03 BD 02][1F 61][1F F1 6C 03 BE 02][1F 61][1F F1 6C 03 2C 00][1F E6 68 03][1F 07 03]{pause(180)}{music(85)}[1F F1 6D 03 BF 02][1F 61][1F F1 6D 03 08 00][1F 07 02]{pause(30)}{sound(28)}{pause(60)}{music_resume}[1F E9 68 03][1F 61][1F F1 68 03 08 00]{window_open(1)}"
 	title(1, Monotoly)
 	"@[84][96][92][96] [9F][A5][98][9F][A0] [A1][A2][A0][95][A0][9D][98][9A][A4][C3] [A1][A5][A4][96][AA][96][A3][A4][93][9A][96]!" next
-	"@[1C 02 01]!" next
+	"@{name(NESS)}!" next
 	"@[B4][A4][A0] [A4][93][A0][C6] [A3][A5][95][C3][92][91]." next
 	"{set(flag 664)}{set(flag 741)}" goto(l_0xc6ee2e)
 
 l_0xc6ee2e:
 	/*
-	"@[1C 01 1E], пришло время попрощаться." next
+	"@{stat(PAULA_NAME)}, пришло время попрощаться." next
 	"@Будьте осторожны.{wait}{window_closeall}{set(flag 357)}{set(flag 358)}{set(flag 359)}{set(flag 360)}{set(flag 361)}{set(flag 362)}{set(flag 11)}{set(flag 754)}{set(flag 779)}{unset(flag 759)}" eob
 	*/
-	"@[1C 01 1E], [A1][A2][9A][AA][9D][A0] [93][A2][96][9E][C6] [A1][A0][A1][A2][A0][C0][91][A4][C3][A3][C6]." next
+	"@{stat(PAULA_NAME)}, [A1][A2][9A][AA][9D][A0] [93][A2][96][9E][C6] [A1][A0][A1][A2][A0][C0][91][A4][C3][A3][C6]." next
 	"@[72][A5][95][C3][A4][96] [A0][A3][A4][A0][A2][A0][98][9F][C2].{wait}{window_closeall}{set(flag 357)}{set(flag 358)}{set(flag 359)}{set(flag 360)}{set(flag 361)}{set(flag 362)}{set(flag 11)}{set(flag 754)}{set(flag 779)}{unset(flag 759)}" eob
 
 l_0xc6ee6f:
@@ -512,7 +522,7 @@ l_0xc6ee94:
 
 l_0xc6eeb4:
 	/*
-	"[19 10 01]{rtoarg}@...[1C 02 01]!" next
+	"[19 10 01]{rtoarg}@...{name(NESS)}!" next
 	"@Ты наконец-то добрался сюда!" next
 	"@...Я в порядке." next
 	"@Я верила, что ты придёшь и спасёшь меня." next
@@ -521,7 +531,7 @@ l_0xc6eeb4:
 	"@Просто не спеши и выслушай его.{wait}{set(flag 10)}" eob
 	*/
 	title_paula(1)
-	"[19 10 01]{rtoarg}@...[1C 02 01]!" next
+	"[19 10 01]{rtoarg}@...{name(NESS)}!" next
 	"@[84][C2] [9F][91][9C][A0][9F][96][A8]-[A4][A0] [95][A0][92][A2][91][9D][A3][C6] [A3][C5][95][91]!" next
 	"@...[B6] [93] [A1][A0][A2][C6][95][9C][96]." next
 	"@[B6] [93][96][A2][9A][9D][91], [A9][A4][A0] [A4][C2] [A1][A2][9A][95][97][AA][C3] [9A] [A3][A1][91][A3][97][AA][C3] [9E][96][9F][C6]." next
@@ -843,17 +853,19 @@ l_0xc6fa05:
 	"{load_registers}{swap}{result_is(172)}" eob
 
 l_0xc6fa0c:
-//	"{load_registers}{swap}@[1C 02 00] открыл{user_gender}{call(RUS_ref.l_gendersuffix)} шкафчик, используя Аппарат для плохих ключей.{sound(119)}[03]" newline
-	"{load_registers}{swap}@[1C 02 00] [A0][A4][9C][A2][C2][9D]{user_gender}{call(RUS_ref.l_gendersuffix)} [AA][9C][91][A6][A9][9A][9C], [9A][A3][A1][A0][9D][C3][99][A5][C6] [71][A1][A1][91][A2][91][A4] [95][9D][C6] [A1][9D][A0][A7][9A][A7] [9C][9D][C5][A9][96][9B].{sound(119)}[03]" newline
+//	"{load_registers}{swap}@[1C 02 00] открыл{swap}{call(data_gender.l_gendersuffix)} шкафчик, используя Аппарат для плохих ключей.{sound(119)}[03]" newline
+	"{load_registers}{swap}@[1C 02 00] [A0][A4][9C][A2][C2][9D]{swap}{call(data_gender.l_gendersuffix)} [AA][9C][91][A6][A9][9A][9C], [9A][A3][A1][A0][9D][C3][99][A5][C6] [71][A1][A1][91][A2][91][A4] [95][9D][C6] [A1][9D][A0][A7][9A][A7] [9C][9D][C5][A9][96][9B].{sound(119)}[03]" newline
 	eob
 
 l_0xc6fa2e:
 	/*
 	"{ctoarg}@В шкавчике лежит [1C 05 00]." next
-	"[1D 03 FF][1B 02 {e(l_0xc6fab4)}]{store_registers}[1D 0E 00 00]{load_registers}{swap}@[1C 02 00]{swap} забирает это.{wait}{sound(116)}{pause(1)}" eob
+	"[1D 03 FF][1B 02 {e(l_0xc6fab4)}]{store_registers}[1D 0E 00 00]{load_registers}{swap}"
+	"@[1C 02 00] забрал{swap}{call(data_gender.l_gendersuffix)} это.{wait}{sound(116)}{pause(1)}" eob
 	*/
 	"{ctoarg}@[73] [AA][9C][91][93][A9][9A][9C][96] [9D][96][98][9A][A4] [1C 05 00]." next
-	"[1D 03 FF][1B 02 {e(l_0xc6fab4)}]{store_registers}[1D 0E 00 00]{load_registers}{swap}@[1C 02 00]{swap} [99][91][92][9A][A2][91][96][A4] [C4][A4][A0].{wait}{sound(116)}{pause(1)}" eob
+	"[1D 03 FF][1B 02 {e(l_0xc6fab4)}]{store_registers}[1D 0E 00 00]{load_registers}{swap}"
+	"@[1C 02 00] [99][91][92][A2][91][9D]{swap}{call(data_gender.l_gendersuffix)} [C4][A4][A0].{wait}{sound(116)}{pause(1)}" eob
 
 l_0xc6fa68:
 //	"@(Ключ согнут и не входит в отверстие замка!){wait}{set(flag 605)}" eob
@@ -867,10 +879,10 @@ l_0xc6fa93:
 l_0xc6fab4:
 	/*
 	"@Однако, вы уже и так несёте слишком много вещей." next
-	"[19 10 01]{swap}@[1C 02 00]{swap} оставил{user_gender}{call(RUS_ref.l_gendersuffix)} это в шкафчике." end
+	"[19 10 01]{swap}@[1C 02 00] оставил{swap}{call(data_gender.l_gendersuffix)} это в шкафчике." end
 	*/
 	"@[80][95][9F][91][9C][A0], [93][C2] [A5][98][96] [9A] [A4][91][9C] [9F][96][A3][97][A4][96] [A3][9D][9A][AA][9C][A0][9E] [9E][9F][A0][94][A0] [93][96][C0][96][9B]." next
-	"[19 10 01]{swap}@[1C 02 00]{swap} [A0][A3][A4][91][93][9A][9D]{user_gender}{call(RUS_ref.l_gendersuffix)} [C4][A4][A0] [93] [AA][9C][91][A6][A9][9A][9C][96]." end
+	"[19 10 01]{swap}@[1C 02 00] [A0][A3][A4][91][93][9A][9D]{swap}{call(data_gender.l_gendersuffix)} [C4][A4][A0] [93] [AA][9C][91][A6][A9][9A][9C][96]." end
 
 l_0xc6fae5:
 	"[06 1D 02 {e(data_55.l_0xc9992f)}]" call(l_0xc6fb20) "[06 0E 00 {e(data_55.l_0xc9992f)}]{window_closeall}{pause(1)}" call(data_34.l_0xc79e55) eob
@@ -879,17 +891,18 @@ l_0xc6fb02:
 	"{store_registers}[19 19 00 00]{swap}{result_is(172)}[1B 02 {e(l_0xc6fb5d)}]" call(l_0xc6fb33) "[1F 1E DF 01 06]{set(flag 541)}" eob
 
 l_0xc6fb20:
-//	"{window_open(1)}@Дверь закрыта.{wait}{window_closeall}" eob
-	"{window_open(1)}@[75][93][96][A2][C3] [99][91][9C][A2][C2][A4][91].{wait}{window_closeall}" eob
+//	"{window_open(1)}@Дверь заперта.{wait}{window_closeall}" eob
+	"{window_open(1)}@[75][93][96][A2][C3] [99][91][A1][96][A2][A4][91].{wait}{window_closeall}" eob
 
 l_0xc6fb33:
 	/*
-	"{load_registers}[19 19 00 00]{swap}@[1C 02 00]{swap} использует" linebreak
-	"  [1C 05 00]." next
+	"@{name(FROM_MEMORY)}{swap} использовал{call(data_gender.l_gendersuffix)}" linebreak
+	"  {itemname(FROM_MEMORY)}." next
 	"@Дверь открылась.{wait}{sound(119)}" eob
 	*/
-	"{load_registers}[19 19 00 00]{swap}@[1C 02 00]{swap} [9A][A3][A1][A0][9D][C3][99][A5][96][A4]" linebreak
-	"  [1C 05 00]." next
+	"{load_registers}[19 19 00 00]{swap}"
+	"@{name(FROM_MEMORY)}{swap} [9A][A3][A1][A0][9D][C3][99][A0][93][91][9D]{call(data_gender.l_gendersuffix)}" linebreak
+	"  {itemname(FROM_MEMORY)}." next
 	"@[75][93][96][A2][C3] [A0][A4][9C][A2][C2][9D][91][A3][C3].{wait}{sound(119)}" eob
 
 l_0xc6fb5d:

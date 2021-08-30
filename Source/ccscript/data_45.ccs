@@ -4,8 +4,8 @@
  * Generated using CCScriptWriter.
  */
 
-import ebpp
-import ebpp_std
+import defines
+import commands
 import RUS_ref
 
 // Text Data

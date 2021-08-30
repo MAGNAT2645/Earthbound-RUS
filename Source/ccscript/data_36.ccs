@@ -4,6 +4,7 @@
  * Generated using CCScriptWriter.
  */
 
+import commands
 import RUS_ref
 
 // Text Data
@@ -20,8 +21,8 @@ l_0xc7d9cf: // Проверяет, какой тип контейнера игр
 	"[06 E2 00 {e(l_0xc7d9fd)}][06 E3 00 {e(l_0xc7da33)}][06 E4 00 {e(l_0xc7da7c)}][06 E5 00 {e(l_0xc7dab6)}]" eob
 
 l_0xc7d9ec:
-//	"@[1C 02 00] открыл{char_slot(1)}{call(data_gender.l_gendersuffix)} подарок." eob
-	"@[1C 02 00] [A0][A4][9C][A2][C2][9D]{char_slot(1)}{call(data_gender.l_gendersuffix)} [A1][A0][95][91][A2][A0][9C]." eob
+//	"@[1C 02 00] открыл{char_num(1)}{call(data_gender.l_gendersuffix)} подарок." eob
+	"@[1C 02 00] [A0][A4][9C][A2][C2][9D]{char_num(1)}{call(data_gender.l_gendersuffix)} [A1][A0][95][91][A2][A0][9C]." eob
 
 l_0xc7d9fc:
 	eob
@@ -46,8 +47,8 @@ l_0xc7da33:
 	"@[73] [9E][A5][A3][A0][A2][9C][96] [A0][9C][91][99][91][9D][A3][C6] [A3][91][9E][C2][9B] [A0][92][C2][A9][9F][C2][9B] [9E][A5][A3][A0][A2]." end
 
 l_0xc7da58:
-//	"@[1C 02 00] открыл{char_slot(1)}{call(data_gender.l_gendersuffix)} сундук." eob
-	"@[1C 02 00] [A0][A4][9C][A2][C2][9D]{char_slot(1)}{call(data_gender.l_gendersuffix)} [A3][A5][9F][95][A5][9C]." eob
+//	"@[1C 02 00] открыл{char_num(1)}{call(data_gender.l_gendersuffix)} сундук." eob
+	"@[1C 02 00] [A0][A4][9C][A2][C2][9D]{char_num(1)}{call(data_gender.l_gendersuffix)} [A3][A5][9F][95][A5][9C]." eob
 
 l_0xc7da68:
 //	"{pause(20)}@ВААААААААААААУ![03]" eob
@@ -59,8 +60,8 @@ l_0xc7da7c:
 	"@[7F][A0] [A3][A5][9F][95][A5][9C] [A0][9C][91][99][91][9D][A3][C6] [A1][A5][A3][A4][C2][9E]." end
 
 l_0xc7da8f:
-//	"@[1C 02 00] открыл{char_slot(1)}{call(data_gender.l_gendersuffix)} гроб." eob
-	"@[1C 02 00] [A0][A4][9C][A2][C2][9D]{char_slot(1)}{call(data_gender.l_gendersuffix)} [94][A2][A0][92]." eob
+//	"@[1C 02 00] открыл{char_num(1)}{call(data_gender.l_gendersuffix)} гроб." eob
+	"@[1C 02 00] [A0][A4][9C][A2][C2][9D]{char_num(1)}{call(data_gender.l_gendersuffix)} [94][A2][A0][92]." eob
 
 l_0xc7daa1:
 //	"{pause(20)}@ТАААААА-ДАААААА![03]" eob
@@ -214,7 +215,17 @@ l_0xc7dd85:
 	call(l_0xc7dd74) "{music_resume}" eob
 
 l_0xc7dd8d:
-	"{isset(flag 180)}[1B 03 {e(l_0xc7dde7)}]{isset(flag 181)}[1B 03 {e(l_0xc7dde7)}]{isset(flag 645)}[1B 03 {e(l_0xc7dde7)}]{isset(flag 446)}[1B 03 {e(l_0xc7dde7)}]{isset(flag 646)}[1B 03 {e(l_0xc7dde7)}]{isset(flag 647)}[1B 03 {e(l_0xc7dde7)}]{isset(flag 648)}[1B 03 {e(l_0xc7dde7)}]{isset(flag 675)}[1B 03 {e(l_0xc7dde7)}]{isset(flag 694)}[1B 03 {e(l_0xc7dde7)}]{isset(flag 695)}[1B 03 {e(l_0xc7dde7)}]" goto(l_0xc7dde7)
+	"{isset(flag 180)}[1B 03 {e(l_0xc7dde7)}]" // ожидание доставки небольшой пиццы
+	"{isset(flag 181)}[1B 03 {e(l_0xc7dde7)}]" // ожидание курьера Эскарго Экспресс (Забрать)
+	"{isset(flag 645)}[1B 03 {e(l_0xc7dde7)}]" // ожидание курьера Эскарго Экспресс (Хранить)
+	"{isset(flag 446)}[1B 03 {e(l_0xc7dde7)}]" // ожидание покупателя (парень в синей шапке)
+	"{isset(flag 646)}[1B 03 {e(l_0xc7dde7)}]" // ожидание покупателя (леди с большой улыбкой)
+	"{isset(flag 647)}[1B 03 {e(l_0xc7dde7)}]" // ожидание покупателя (блондин)
+	"{isset(flag 648)}[1B 03 {e(l_0xc7dde7)}]" // ожидание покупателя (панк)
+	"{isset(flag 675)}[1B 03 {e(l_0xc7dde7)}]" // ожидание курьера Эскарго Экспресс (доставка Липучки от зомби)
+	"{isset(flag 694)}[1B 03 {e(l_0xc7dde7)}]" // ожидание курьера Эскарго Экспресс (доставка Ластика)?
+	"{isset(flag 695)}[1B 03 {e(l_0xc7dde7)}]" // ожидание курьера Эскарго Экспресс (доставка Соколиного Глаза)?
+	goto(l_0xc7dde7)
 
 l_0xc7dde7:
 	eob
@@ -436,13 +447,13 @@ l_0xc7e4c3:
 
 l_0xc7e4e9:
 	/*
-	"[19 19 00 00]{swap}{store_registers}{char_slot(1)}{swap}@[1C 02 00] прив{swap}{call(data_gender.l_gender_rearrange)} вещи" linebreak
+	"[19 19 00 00]{swap}{store_registers}{char_num(1)}{swap}@[1C 02 00] прив{swap}{call(data_gender.l_gender_rearrange)} вещи" linebreak
 	"  персонажа {load_registers}[1C 02 00]{store_registers} в порядок" linebreak
-	"  и поместил{char_slot(1)}{call(data_gender.l_gendersuffix)} {load_registers}{swap}[1C 05 00] в конец." end
+	"  и поместил{char_num(1)}{call(data_gender.l_gendersuffix)} {load_registers}{swap}[1C 05 00] в конец." end
 	*/
-	"[19 19 00 00]{swap}{store_registers}{char_slot(1)}{swap}@[1C 02 00] [A1][A2][9A][93]{swap}{call(data_gender.l_gender_rearrange)} [93][96][C0][9A]" linebreak
+	"[19 19 00 00]{swap}{store_registers}{char_num(1)}{swap}@[1C 02 00] [A1][A2][9A][93]{swap}{call(data_gender.l_gender_rearrange)} [93][96][C0][9A]" linebreak
 	"  [A1][96][A2][A3][A0][9F][91][98][91] {load_registers}[1C 02 00]{store_registers} [93] [A1][A0][A2][C6][95][A0][9C]" linebreak
-	"  [9A] [A1][A0][9E][96][A3][A4][9A][9D]{char_slot(1)}{call(data_gender.l_gendersuffix)} {load_registers}{swap}[1C 05 00] [93] [9C][A0][9F][96][A8]." end
+	"  [9A] [A1][A0][9E][96][A3][A4][9A][9D]{char_num(1)}{call(data_gender.l_gendersuffix)} {load_registers}{swap}[1C 05 00] [93] [9C][A0][9F][96][A8]." end
 
 l_0xc7e51c:
 	/*

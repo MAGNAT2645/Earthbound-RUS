@@ -407,13 +407,3 @@ command MText (text) {
 	STA_d	(0x10)
 	JSL	(0xC186B1)
 }
-
-// Preset title commands for retrieving character names without EB++
-//command title_ness(window)	{ "[18 0B {byte[0] window} 01 05]" clearline }
-//command title_paula(window)	{ "[18 0B {byte[0] window} 02 05]" clearline }
-//command title_jeff(window)	{ "[18 0B {byte[0] window} 03 05]" clearline }
-//command title_poo(window)		{ "[18 0B {byte[0] window} 04 05]" clearline }
-//command title_dog(window)		{ "[18 0B {byte[0] window} 05 06]" clearline }
-
-// Preset title commands for strings
-//command title(window, label)	{ "[18 0C {byte[0] window} {byte[0] label} {byte[1] label} {byte[2] label} 00]" clearline }

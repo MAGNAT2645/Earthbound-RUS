@@ -4,8 +4,8 @@
  * Generated using CCScriptWriter.
  */
 
-command e(label) "{long label}"
-import ebpp
+import defines
+import commands
 
 // Text Data
 l_0xc53b76:
