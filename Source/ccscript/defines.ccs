@@ -374,9 +374,10 @@ define ITEM_POPSICLE = 0xFB
 define ITEM_CUP_LIFENOODLES = 0xFC
 define ITEM_KEY_CARROT = 0xFD
 
-// Флаги событий (не полный список)
+// Флаги событий (неполный список)
 define FLAG_SPECIAL_0A = flag 10 // сбрасывается при перезагрузке карты? (кажется, предотвращает путешествие на автобусе)
 define FLAG_PEOPLE_FREED_FROM_TUBES = flag 52 // когда установлен, люди освобождены из капсул в Базе под Стоунхенджем (флаг победы над Старменом Делюкс?)
+define FLAG_GIYGAS_DEFEATED = flag 73 // когда установлен, везде играет трек "Because I Love You"
 define FLAG_MANI_MANI_DEFEATED = flag 75 // + сломанный Фазовый Искажатель в Пещере Прошлого (в настоящем времени)
 define FLAG_PORKY_NOT_IN_FOURSIDE = flag 143 // когда установлен, Порки нет в Монотоли Билдинг
 define FLAG_TELEPORT_DEST_SUMMERS = flag 215

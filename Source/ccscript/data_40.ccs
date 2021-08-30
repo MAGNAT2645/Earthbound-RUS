@@ -4,6 +4,7 @@
  * Generated using CCScriptWriter.
  */
 
+import defines
 import commands
 import RUS_ref
 
@@ -867,10 +868,10 @@ l_0xc83faf:
 	"  [7F][91][9E] [A4][91][9C] [9D][96][94][9C][A0] [98][9A][93][96][A4][A3][C6]..." end
 
 l_0xc83fcf:
-//	"@О, [1C 01 08]"
-	"@[80], [1C 01 08]"
+//	"@О, {stat(NESS_NAME)}"
+	"@[80], {stat(NESS_NAME)}"
 	goto_if_flag(flag 638, l_0xc83fe6) "," next
-	"@[1C 01 1E].."
+	"@{stat(PAULA_NAME)}.."
 	goto(l_0xc83fe6)
 
 l_0xc83fe6:

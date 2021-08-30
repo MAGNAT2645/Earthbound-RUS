@@ -784,7 +784,9 @@ l_0xc63229:
 	"@Ох, что ж.  Это неважно." next
 	"@Полагаю, тебе нужно чувство юмора в такое время." next
 	*/
-	"[06 04 03 {e(data_31.l_0xc75929)}][06 49 00 {e(data_19.l_0xc635bd)}]{ctoarg}[1B 05]" newline
+	"[06 04 03 {e(data_31.l_0xc75929)}]"
+	goto_if_flag(FLAG_GIYGAS_DEFEATED, data_19.l_0xc635bd)
+	"{ctoarg}[1B 05]" newline
 	title(1, Dad)
 	"[19 10 01]{result_is(1)}[1B 03 {e(l_0xc632c7)}]"
 	"@[71][9D][9D][A0]?" next

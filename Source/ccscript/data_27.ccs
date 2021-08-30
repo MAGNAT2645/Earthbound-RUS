@@ -47,7 +47,7 @@ l_0xc6dfe7:
 	"  Мр. Монотоли." end
 	*/
 	title(1, Unknown)
-	goto_if_flag(flag 73, l_0xc6e05a)
+	goto_if_flag(FLAG_GIYGAS_DEFEATED, l_0xc6e05a)
 	goto_if_flag(FLAG_PORKY_NOT_IN_FOURSIDE, l_0xc6e018)
 	"@[B6] [C4][9D][9A][A4][9F][C2][9B] [92][9A][99][9F][96][A3][9E][96][9F], [A2][91][92][A0][A4][91][C5][C0][9A][9B] [93] [A0][A6][9A][A3][96]" linebreak
 	"  [7E][A2]. [7E][A0][9F][A0][A4][A0][9D][9A]." end
@@ -76,7 +76,7 @@ l_0xc6e088:
 	"@Что привело тебя к Монотоли Билдинг?" end
 	*/
 	title(1, Unknown)
-	goto_if_flag(flag 73, l_0xc6e0b4)
+	goto_if_flag(FLAG_GIYGAS_DEFEATED, l_0xc6e0b4)
 	"@[81][A2][9A][93][96][A4], [9E][91][9D][C2][AA]." next
 	"@[89][A4][A0] [A1][A2][9A][93][96][9D][A0] [A4][96][92][C6] [9C] [7E][A0][9F][A0][A4][A0][9D][9A] [72][9A][9D][95][9A][9F][94]?" end
 

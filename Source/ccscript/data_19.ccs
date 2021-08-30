@@ -4,6 +4,7 @@
  * Generated using CCScriptWriter.
  */
 
+import defines
 import commands
 import RUS_ref
 
@@ -133,7 +134,7 @@ l_0xc635bd:
 l_0xc636e5: // центральный диалог при звонке в Эскарго Экспресс
 	"[06 02 03 {e(data_31.l_0xc75929)}]" // отображает "Биииип..." (не позволяя в конце игры звонить в Эскарго Экспресс), активируется в l_0xc639ca
 	title(1, Escargo)
-	"[06 49 00 {e(l_0xc639ca)}]" // в конце игры, после победы над Гийгасом
+	goto_if_flag(FLAG_GIYGAS_DEFEATED, l_0xc639ca) // в конце игры, после победы над Гийгасом
 	"[06 B5 00 {e(l_0xc63958)}]" // ожидание курьера Эскарго Экспресс (Забрать)
 	"[06 85 02 {e(l_0xc63958)}]" // ожидание курьера Эскарго Экспресс (Хранить)
 	"[06 B6 02 {e(l_0xc63958)}]" // ожидание курьера Эскарго Экспресс (доставка Ластика)?
@@ -308,9 +309,10 @@ l_0xc639ca:
 	"{sound(11)}  ([B0][97][9D][9C]!){wait}{set(flag 770)}" eob
 
 l_0xc63ba1:
-//	"[06 49 00 {e(l_0xc63bb7)}]@Что я могу для тебя сделать?" linebreak
+//	"@Что я могу для тебя сделать?" linebreak
 	newline
-	"[06 49 00 {e(l_0xc63bb7)}]@[89][A4][A0] [C6] [9E][A0][94][A5] [95][9D][C6] [A4][96][92][C6] [A3][95][96][9D][91][A4][C3]?" linebreak
+	goto_if_flag(FLAG_GIYGAS_DEFEATED, l_0xc63bb7)
+	"@[89][A4][A0] [C6] [9E][A0][94][A5] [95][9D][C6] [A4][96][92][C6] [A3][95][96][9D][91][A4][C3]?" linebreak
 	eob
 
 l_0xc63bb7:
@@ -400,21 +402,21 @@ l_0xc63d40:
 
 l_0xc63d54:
 	/*
-	"@Привет, старший брат [1C 01 08]," linebreak
+	"@Эй, старший брат {stat(NESS_NAME)}," linebreak
 	"  в данный момент у нас нет ни одной твоей вещи на складе." next
 	*/
 	"[06 49 00 {e(l_0xc63dc8)}]{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc63d93)}]"
-	"@[81][A2][9A][93][96][A4], [A3][A4][91][A2][AA][9A][9B] [92][A2][91][A4] [1C 01 08]," linebreak
+	"@[B4][9B], [A3][A4][91][A2][AA][9A][9B] [92][A2][91][A4] {stat(NESS_NAME)}," linebreak
 	"  [93] [95][91][9F][9F][C2][9B] [9E][A0][9E][96][9F][A4] [A5] [9F][91][A3] [9F][96][A4] [9F][9A] [A0][95][9F][A0][9B] [A4][93][A0][96][9B] [93][96][C0][9A] [9F][91] [A3][9C][9D][91][95][96]." next
 	eob
 
 l_0xc63d93:
 	/*
 	"[19 10 01]@{call(data_37.l_0xc7e6c5)}, у нас ничего не хранится для кого-то" next
-	"[19 10 01]{swap}@по имени [1C 02 00]." next
+	"[19 10 01]{swap}@по имени {name(FROM_MEMORY)}." next
 	*/
 	"[19 10 01]@{call(data_37.l_0xc7e6c5)}, [A5] [9F][91][A3] [9F][9A][A9][96][94][A0] [9F][96] [A7][A2][91][9F][9A][A4][A3][C6] [95][9D][C6] [9C][A0][94][A0]-[A4][A0]" next
-	"[19 10 01]{swap}@[A1][A0] [9A][9E][96][9F][9A] [1C 02 00]." next
+	"[19 10 01]{swap}@[A1][A0] [9A][9E][96][9F][9A] {name(FROM_MEMORY)}." next
 	eob
 
 l_0xc63dc8:
@@ -536,12 +538,9 @@ l_0xc640f1:
 	call(data_36.l_0xc7dd4f) "[11]{clearline}[09 02 {e(l_0xc64116)} {e(l_0xc64155)}]" goto(l_0xc64155)
 
 l_0xc64116:
-	/*
-	"[1D 09 12 00]{isset(flag 73)}[1F C0 01 {e(l_0xc6462e)}]{open_wallet}{sound(118)}" call(l_0xc64650) "@Хорошо," linebreak
-	"  большое спасибо!{wait}{window_closeall}" call(data_36.l_0xc7dde8) call(data_21.l_0xc659c8) eob
-	*/
-	"[1D 09 12 00]{isset(flag 73)}[1F C0 01 {e(l_0xc6462e)}]{open_wallet}{sound(118)}" call(l_0xc64650) "@[87][A0][A2][A0][AA][A0]," linebreak
-	"  [92][A0][9D][C3][AA][A0][96] [A3][A1][91][A3][9A][92][A0]!{wait}{window_closeall}" call(data_36.l_0xc7dde8) call(data_21.l_0xc659c8) eob
+//	"@Хорошо, большое спасибо!{wait}{window_closeall}" call(data_36.l_0xc7dde8) call(data_21.l_0xc659c8) eob
+	"[1D 09 12 00]{isset(FLAG_GIYGAS_DEFEATED)}[1F C0 01 {e(l_0xc6462e)}]{open_wallet}{sound(118)}" call(l_0xc64650)
+	"@[87][A0][A2][A0][AA][A0], [92][A0][9D][C3][AA][A0][96] [A3][A1][91][A3][9A][92][A0]!{wait}{window_closeall}" call(data_36.l_0xc7dde8) call(data_21.l_0xc659c8) eob
 
 l_0xc64155:
 	"[19 1D 01 01][1D 0E 00 00][19 1D 02 01][1B 02 {e(l_0xc64179)}][1D 0E 00 00][19 1D 03 01][1B 02 {e(l_0xc64179)}][1D 0E 00 00]" goto(l_0xc64179)
@@ -721,10 +720,11 @@ l_0xc645f2:
 
 l_0xc64600:
 	/*
-	"{isset(flag 73)}[1F C0 01 {e(l_0xc6462e)}]{open_wallet}{sound(118)}@Хорошо, вот и всё." linebreak
+	"@Хорошо, вот и всё." linebreak
 	"  Спасибо!{wait}{window_closeall}" call(data_36.l_0xc7dde8) call(data_21.l_0xc659c8) eob
 	*/
-	"{isset(flag 73)}[1F C0 01 {e(l_0xc6462e)}]{open_wallet}{sound(118)}@[87][A0][A2][A0][AA][A0], [93][A0][A4] [9A] [93][A3][97]." linebreak
+	"{isset(FLAG_GIYGAS_DEFEATED)}[1F C0 01 {e(l_0xc6462e)}]{open_wallet}{sound(118)}"
+	"@[87][A0][A2][A0][AA][A0], [93][A0][A4] [9A] [93][A3][97]." linebreak
 	"  [83][A1][91][A3][9A][92][A0]!{wait}{window_closeall}" call(data_36.l_0xc7dde8) call(data_21.l_0xc659c8) eob
 
 l_0xc6462e:
