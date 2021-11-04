@@ -14,9 +14,23 @@ BTLACT_SPY: {
 
     BText(BTLACT_SPY_STATUS_TEXT)
 
+    LDX_a(0xA972) // Загружаем CURRENT_TARGET (2-байтовый указатель на цель в BATTLERS_TABLE) из RAM в индексный регистр X
+    LDA_x(0x0000) // Загружаем из регистра X в аккумулятор ID выбранной цели
+    // Сравниваем ID цели и если совпадает с некоторыми врагами/боссами, отображаем неизвестное кол-во ОЗ и ОП
+    CMP_i(0x005D) // Мастер Бэлч (1-я фаза)
+    BEQ_a(BTLACT_SPY_UNKNOWN_HP_PP)
+    CMP_i(0x00C0) // Мастер Бэлч (2-я фаза)
+    BEQ_a(BTLACT_SPY_UNKNOWN_HP_PP)
+    CMP_i(0x00DA) // Гийгас (в Машине Дьявола)
+    BEQ_a(BTLACT_SPY_UNKNOWN_HP_PP)
+    CMP_i(0x00DD) // Гийгас (3-я фаза - с этого момента игроку нужно использовать "Молитву")
+    BEQ_a(BTLACT_SPY_UNKNOWN_HP_PP)
+    CMP_i(0x00E5) // Гийгас (когда его Защита нестабильна)
+    BEQ_a(BTLACT_SPY_UNKNOWN_HP_PP)
+
     // ОЗ
     ASMLoadAddress0E(BTLACT_SPY_HP_TEXT)
-    LDX_a(0xA972) // Загружаем CURRENT_TARGET (2-байтовый указатель на цель в BATTLERS_TABLE) из RAM в индексный регистр X
+//  LDX_a(0xA972) // Загружаем CURRENT_TARGET из RAM в индексный регистр X
     LDA_x(0x0011) // Загружаем из регистра X в аккумулятор кол-во текущих ОЗ (смещение на 17 байтов от адреса из CURRENT_TARGET) выбранной цели
     STA_d(0x06)
     STZ_d(0x08)
@@ -62,6 +76,12 @@ BTLACT_SPY: {
     STA_d(0x14)
     JSL(0xC1DC66) // Выводим текст игроку
 
+    JMP(BTLACT_SPY_AFTER_HP_PP)
+
+BTLACT_SPY_UNKNOWN_HP_PP:
+    BText(BTLACT_SPY_UNKNOWN_HP_PP_TEXT)
+
+BTLACT_SPY_AFTER_HP_PP:
     // АТАКА
     ASMLoadAddress0E(data_61.l_0xef69ea)
     LDX_a(0xA972) // Загружаем CURRENT_TARGET из RAM в индексный регистр X
@@ -135,6 +155,14 @@ BTLACT_SPY_RESISTANCES_TEXT:
     newline
     "@--- [85][C6][99][93][9A][9E][A0][A3][A4][9A]: ---[03]" eob
 
+BTLACT_SPY_UNKNOWN_HP_PP_TEXT:
+    /*   
+    "@ОЗ: ???? [5F] ????![03]" linebreak
+    "@ОП: ???? [5F] ????![03]" eob
+    */
+    newline
+    "@[80][79]: ???? [5F] ????![03]" linebreak
+    "@[80][81]: ???? [5F] ????![03]" eob
 BTLACT_SPY_HP_TEXT:
 //  "@ОЗ: {delta}" eob
     newline
