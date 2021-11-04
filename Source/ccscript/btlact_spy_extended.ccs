@@ -1,0 +1,160 @@
+// By MAGNAT2645
+
+import asm65816
+
+ROM[0xC28772] = JML(BTLACT_SPY)
+
+BTLACT_SPY: {
+// ОРИГИНАЛЬНАЯ EARTHBOUND
+    PHD
+    TDC
+    ADC_i(0xFFEA)
+    TCD
+// КОНЕЦ
+
+    BText(BTLACT_SPY_STATUS_TEXT)
+
+    // ОЗ
+    ASMLoadAddress0E(BTLACT_SPY_HP_TEXT)
+    LDX_a(0xA972) // Загружаем CURRENT_TARGET (2-байтовый указатель на цель в BATTLERS_TABLE) из RAM в индексный регистр X
+    LDA_x(0x0011) // Загружаем из регистра X в аккумулятор кол-во текущих ОЗ (смещение на 17 байтов от адреса из CURRENT_TARGET) выбранной цели
+    STA_d(0x06)
+    STZ_d(0x08)
+    LDA_d(0x06)
+    STA_d(0x12)
+    LDA_d(0x08)
+    STA_d(0x14)
+    JSL(0xC1DC66) // Выводим текст игроку
+
+    // МАКС. ОЗ
+    ASMLoadAddress0E(BTLACT_SPY_HP_PP_TEXT_END)
+    LDX_a(0xA972) // Загружаем CURRENT_TARGET из RAM в индексный регистр X
+    LDA_x(0x0015) // Загружаем из регистра X в аккумулятор кол-во макс. ОЗ (смещение на 21 байт от адреса из CURRENT_TARGET) выбранной цели
+    STA_d(0x06)
+    STZ_d(0x08)
+    LDA_d(0x06)
+    STA_d(0x12)
+    LDA_d(0x08)
+    STA_d(0x14)
+    JSL(0xC1DC66) // Выводим текст игроку
+
+    // ОП
+    ASMLoadAddress0E(BTLACT_SPY_PP_TEXT)
+    LDX_a(0xA972) // Загружаем CURRENT_TARGET из RAM в индексный регистр X
+    LDA_x(0x0017) // Загружаем из регистра X в аккумулятор кол-во текущих ОП (смещение на 23 байта от адреса из CURRENT_TARGET) выбранной цели
+    STA_d(0x06)
+    STZ_d(0x08)
+    LDA_d(0x06)
+    STA_d(0x12)
+    LDA_d(0x08)
+    STA_d(0x14)
+    JSL(0xC1DC66) // Выводим текст игроку
+
+    // МАКС. ОП
+    ASMLoadAddress0E(BTLACT_SPY_HP_PP_TEXT_END)
+    LDX_a(0xA972) // Загружаем CURRENT_TARGET из RAM в индексный регистр X
+    LDA_x(0x001B) // Загружаем из регистра X в аккумулятор кол-во макс. ОП (смещение на 27 байтов от адреса из CURRENT_TARGET) выбранной цели
+    STA_d(0x06)
+    STZ_d(0x08)
+    LDA_d(0x06)
+    STA_d(0x12)
+    LDA_d(0x08)
+    STA_d(0x14)
+    JSL(0xC1DC66) // Выводим текст игроку
+
+    // АТАКА
+    ASMLoadAddress0E(data_61.l_0xef69ea)
+    LDX_a(0xA972) // Загружаем CURRENT_TARGET из RAM в индексный регистр X
+    LDA_x(0x0026) // Загружаем из регистра X в аккумулятор кол-во Атаки (смещение на 38 байтов от адреса из CURRENT_TARGET) выбранной цели
+    STA_d(0x06)
+    STZ_d(0x08)
+    LDA_d(0x06)
+    STA_d(0x12)
+    LDA_d(0x08)
+    STA_d(0x14)
+    JSL(0xC1DC66) // Выводим текст игроку
+
+    // ЗАЩИТА
+    ASMLoadAddress0E(data_61.l_0xef69ff)
+    LDX_a(0xA972) // Загружаем CURRENT_TARGET из RAM в индексный регистр X
+    LDA_x(0x0028) // Загружаем из регистра X в аккумулятор кол-во Защиты (смещение на 40 байтов от адреса из CURRENT_TARGET) выбранной цели
+    STA_d(0x06)
+    STZ_d(0x08)
+    LDA_d(0x06)
+    STA_d(0x12)
+    LDA_d(0x08)
+    STA_d(0x14)
+    JSL(0xC1DC66) // Выводим текст игроку
+
+    // СКОРОСТЬ
+    ASMLoadAddress0E(BTLACT_SPY_SPEED_TEXT)
+    LDX_a(0xA972) // Загружаем CURRENT_TARGET из RAM в индексный регистр X
+    LDA_x(0x002A) // Загружаем из регистра X в аккумулятор кол-во Скорости (смещение на 42 байта от адреса из CURRENT_TARGET) выбранной цели
+    STA_d(0x06)
+    STZ_d(0x08)
+    LDA_d(0x06)
+    STA_d(0x12)
+    LDA_d(0x08)
+    STA_d(0x14)
+    JSL(0xC1DC66) // Выводим текст игроку
+
+    // ВОЛЯ
+    ASMLoadAddress0E(BTLACT_SPY_GUTS_TEXT)
+    LDX_a(0xA972) // Загружаем CURRENT_TARGET из RAM в индексный регистр X
+    LDA_x(0x002C) // Загружаем из регистра X в аккумулятор кол-во Воли (смещение на 44 байта от адреса из CURRENT_TARGET) выбранной цели
+    STA_d(0x06)
+    STZ_d(0x08)
+    LDA_d(0x06)
+    STA_d(0x12)
+    LDA_d(0x08)
+    STA_d(0x14)
+    JSL(0xC1DC66) // Выводим текст игроку
+
+    // УДАЧА
+    ASMLoadAddress0E(BTLACT_SPY_LUCK_TEXT)
+    LDX_a(0xA972) // Загружаем CURRENT_TARGET из RAM в индексный регистр X
+    LDA_x(0x002E) // Загружаем из регистра X в аккумулятор кол-во Удачи (смещение на 46 байтов от адреса из CURRENT_TARGET) выбранной цели
+    STA_d(0x06)
+    STZ_d(0x08)
+    LDA_d(0x06)
+    STA_d(0x12)
+    LDA_d(0x08)
+    STA_d(0x14)
+    JSL(0xC1DC66) // Выводим текст игроку
+
+    BText(BTLACT_SPY_RESISTANCES_TEXT)
+    JML(0xC287B8) // Возвращаемся к оригинальному коду игры, на момент определения и отображения уязвимостей цели
+}
+
+BTLACT_SPY_STATUS_TEXT:
+//  "@--- Статус: ---[03]" eob
+    newline
+    "@--- [83][A4][91][A4][A5][A3]: ---[03]" eob
+BTLACT_SPY_RESISTANCES_TEXT:
+//  "@--- Уязвимости: ---[03]" eob
+    newline
+    "@--- [85][C6][99][93][9A][9E][A0][A3][A4][9A]: ---[03]" eob
+
+BTLACT_SPY_HP_TEXT:
+//  "@ОЗ: {delta}" eob
+    newline
+    "@[80][79]: {delta}" eob
+BTLACT_SPY_PP_TEXT:
+//  "@ОП: {delta}" eob
+    newline
+    "@[80][81]: {delta}" eob
+BTLACT_SPY_HP_PP_TEXT_END:
+    " [5F] {delta}![03]" eob
+
+BTLACT_SPY_SPEED_TEXT:
+//  "@Скорость: {delta}![03]" eob
+    newline
+    "@[83][9C][A0][A2][A0][A3][A4][C3]: {delta}![03]" eob
+BTLACT_SPY_GUTS_TEXT:
+//  "@Воля: {delta}![03]" eob
+    newline
+    "@[73][A0][9D][C6]: {delta}![03]" eob
+BTLACT_SPY_LUCK_TEXT:
+//  "@Удача: {delta}![03]" eob
+    newline
+    "@[85][95][91][A9][91]: {delta}![03]" eob

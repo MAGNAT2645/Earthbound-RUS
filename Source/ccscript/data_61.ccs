@@ -685,12 +685,10 @@ l_0xef69d2:
 
 l_0xef69ea:
 	/*
-	"@Атака персонажа" linebreak
-	"  {target}: {delta}![03]" eob
+	"@Атака: {delta}![03]" eob
 	*/
 	newline
-	"@[71][A4][91][9C][91] [A1][96][A2][A3][A0][9F][91][98][91]" linebreak
-	"  {target}: {delta}![03]" eob
+	"@[71][A4][91][9C][91]: {delta}![03]" eob
 
 l_0xef69ff:
 //	"@Защита: {delta}![03]" eob

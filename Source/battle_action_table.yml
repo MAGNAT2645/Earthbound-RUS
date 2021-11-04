@@ -26,14 +26,14 @@
   PP Cost: 0
   Target: none
   Text Address: data_32.l_0xc77eb6
-4:
+4: # Бить
   Action type: physical (affected by shields and defending)
   Code Address: $c2859f
   Direction: enemy
   PP Cost: 0
   Target: one
   Text Address: data_64.l_0xef848c
-5:
+5: # Стрелять
   Action type: physical (unaffected by shields and defending)
   Code Address: $c28740
   Direction: enemy

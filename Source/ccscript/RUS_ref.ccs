@@ -7,439 +7,439 @@ import commands
 // Проверка на гендер (применяется после user_gender и target_gender)
 // Например, проверил : проверила : проверило
 l_gendersuffix:
-	"[09 03 {e(l_gendersuffix_male)} {e(l_gendersuffix_female)} {e(l_gendersuffix_neutral)}]" goto(l_gendersuffix_male)
+    "[09 03 {e(l_gendersuffix_male)} {e(l_gendersuffix_female)} {e(l_gendersuffix_neutral)}]" goto(l_gendersuffix_male)
 l_gendersuffix_male:
-	eob
+    eob
 l_gendersuffix_female:
-	"[91]" eob // "а"
+    "[91]" eob // "а"
 l_gendersuffix_neutral:
-	"[A0]" eob // "о"
+    "[A0]" eob // "о"
 
 
 // ся/ась/ось
 l_gendersuffix2:
-	"[09 03 {e(l_gendersuffix2_male)} {e(l_gendersuffix2_female)} {e(l_gendersuffix2_neutral)}]" goto(l_gendersuffix2_male)
+    "[09 03 {e(l_gendersuffix2_male)} {e(l_gendersuffix2_female)} {e(l_gendersuffix2_neutral)}]" goto(l_gendersuffix2_male)
 l_gendersuffix2_male:
-	"[A3][C6]" eob // "ся"
+    "[A3][C6]" eob // "ся"
 l_gendersuffix2_female:
-	"[91][A3][C3]" eob // "ась"
+    "[91][A3][C3]" eob // "ась"
 l_gendersuffix2_neutral:
-	"[A0][A3][C3]" eob // "ось"
+    "[A0][A3][C3]" eob // "ось"
 
 // ёл/ла/ло
 l_gendersuffix3:
-	"[09 03 {e(l_gendersuffix3_male)} {e(l_gendersuffix3_female)} {e(l_gendersuffix3_neutral)}]" goto(l_gendersuffix3_male)
+    "[09 03 {e(l_gendersuffix3_male)} {e(l_gendersuffix3_female)} {e(l_gendersuffix3_neutral)}]" goto(l_gendersuffix3_male)
 l_gendersuffix3_male:
-	"[97][9D]" eob // "ёл"
+    "[97][9D]" eob // "ёл"
 l_gendersuffix3_female:
-	"[9D][91]" eob // "ла"
+    "[9D][91]" eob // "ла"
 l_gendersuffix3_neutral:
-	"[9D][A0]" eob // "ло"
+    "[9D][A0]" eob // "ло"
 
 // ёс/есла/есло
 l_gendersuffix4:
-	"[09 03 {e(l_gendersuffix4_male)} {e(l_gendersuffix4_female)} {e(l_gendersuffix4_neutral)}]" goto(l_gendersuffix4_male)
+    "[09 03 {e(l_gendersuffix4_male)} {e(l_gendersuffix4_female)} {e(l_gendersuffix4_neutral)}]" goto(l_gendersuffix4_male)
 l_gendersuffix4_male:
-	"[97][A3]" eob // "ёс"
+    "[97][A3]" eob // "ёс"
 l_gendersuffix4_female:
-	"[96][A3][9D][91]" eob // "есла"
+    "[96][A3][9D][91]" eob // "есла"
 l_gendersuffix4_neutral:
-	"[96][A3][9D][A0]" eob // "есло"
+    "[96][A3][9D][A0]" eob // "есло"
 
 // -/ла/ло
 l_gendersuffix5:
-	"[09 03 {e(l_gendersuffix_male)} {e(l_gendersuffix5_female)} {e(l_gendersuffix5_neutral)}]" goto(l_gendersuffix_male)
+    "[09 03 {e(l_gendersuffix_male)} {e(l_gendersuffix5_female)} {e(l_gendersuffix5_neutral)}]" goto(l_gendersuffix_male)
 //l_gendersuffix5_male:
 //  eob
 l_gendersuffix5_female:
-	"[9D][91]" eob // "ла"
+    "[9D][91]" eob // "ла"
 l_gendersuffix5_neutral:
-	"[9D][A0]" eob // "ло"
+    "[9D][A0]" eob // "ло"
 
 // ен/на/но
 l_gendersuffix6:
-	"[09 03 {e(l_gendersuffix6_male)} {e(l_gendersuffix6_female)} {e(l_gendersuffix6_neutral)}]" goto(l_gendersuffix6_male)
+    "[09 03 {e(l_gendersuffix6_male)} {e(l_gendersuffix6_female)} {e(l_gendersuffix6_neutral)}]" goto(l_gendersuffix6_male)
 l_gendersuffix6_male:
-	"[96][9F]" eob // "ен"
+    "[96][9F]" eob // "ен"
 l_gendersuffix6_female:
-	"[9F][91]" eob // "на" eob
+    "[9F][91]" eob // "на" eob
 l_gendersuffix6_neutral:
-	"[9F][A0]" eob // "но" eob
+    "[9F][A0]" eob // "но" eob
 
 // ён/ена/ено
 l_gendersuffix7:
-	"[09 03 {e(l_gendersuffix7_male)} {e(l_gendersuffix7_female)} {e(l_gendersuffix7_neutral)}]" goto(l_gendersuffix7_male)
+    "[09 03 {e(l_gendersuffix7_male)} {e(l_gendersuffix7_female)} {e(l_gendersuffix7_neutral)}]" goto(l_gendersuffix7_male)
 l_gendersuffix7_male:
-	"[97][9F]" eob // "ён"
+    "[97][9F]" eob // "ён"
 l_gendersuffix7_female:
-	"[96][9F][91]" eob // "ена"
+    "[96][9F][91]" eob // "ена"
 l_gendersuffix7_neutral:
-	"[96][9F][A0]" eob // "ено"
+    "[96][9F][A0]" eob // "ено"
 
 // ен/ьна/ьно
 l_gendersuffix8:
-	"[09 03 {e(l_gendersuffix8_male)} {e(l_gendersuffix8_female)} {e(l_gendersuffix8_neutral)}]" goto(l_gendersuffix8_male)
+    "[09 03 {e(l_gendersuffix8_male)} {e(l_gendersuffix8_female)} {e(l_gendersuffix8_neutral)}]" goto(l_gendersuffix8_male)
 l_gendersuffix8_male:
-	"[96][9F]" eob // "ен"
+    "[96][9F]" eob // "ен"
 l_gendersuffix8_female:
-	"[C3][9F][91]" eob // "ьна"
+    "[C3][9F][91]" eob // "ьна"
 l_gendersuffix8_neutral:
-	"[C3][9F][A0]" eob // "ьно"
+    "[C3][9F][A0]" eob // "ьно"
 
 // ым/ой/ым
 l_gendersuffix9:
-	"[09 03 {e(l_gendersuffix9_male)} {e(l_gendersuffix9_female)} {e(l_gendersuffix9_male)}]" goto(l_gendersuffix9_male)
+    "[09 03 {e(l_gendersuffix9_male)} {e(l_gendersuffix9_female)} {e(l_gendersuffix9_male)}]" goto(l_gendersuffix9_male)
 l_gendersuffix9_male:
-	"[C2][9E]" eob // "ым"
+    "[C2][9E]" eob // "ым"
 l_gendersuffix9_female:
-	"[A0][9B]" eob // "ой"
+    "[A0][9B]" eob // "ой"
 
 // ёл/ела/ело
 l_gendersuffix10:
-	"[09 03 {e(l_gendersuffix3_male)} {e(l_gendersuffix10_female)} {e(l_gendersuffix10_neutral)}]" goto(l_gendersuffix3_male)
+    "[09 03 {e(l_gendersuffix3_male)} {e(l_gendersuffix10_female)} {e(l_gendersuffix10_neutral)}]" goto(l_gendersuffix3_male)
 l_gendersuffix10_female:
-	"[96][9D][91]" eob // "ела"
+    "[96][9D][91]" eob // "ела"
 l_gendersuffix10_neutral:
-	"[96][9D][A0]" eob // "ело"
+    "[96][9D][A0]" eob // "ело"
 
 l_gender:
-	"[09 03 {e(l_gender_male)} {e(l_gender_female)} {e(l_gender_male)}]" eob
+    "[09 03 {e(l_gender_male)} {e(l_gender_female)} {e(l_gender_male)}]" eob
 l_gender_male:
-	"[96][94][A0]" eob  // "его" eob
+    "[96][94][A0]" eob  // "его" eob
 l_gender_female:
-	"[96][97]" eob  // "её" eob
+    "[96][97]" eob  // "её" eob
 
 l_gender2:
-	"[09 03 {e(l_gender2_male)} {e(l_gender2_female)} {e(l_gender2_male)}]" eob
+    "[09 03 {e(l_gender2_male)} {e(l_gender2_female)} {e(l_gender2_male)}]" eob
 l_gender2_male:
-	"[96][9E][A5]" eob  // "ему" eob
+    "[96][9E][A5]" eob  // "ему" eob
 l_gender2_female:
-	"[96][9B]" eob  // "ей" eob
+    "[96][9B]" eob  // "ей" eob
 
 l_gender3:
-	"[09 03 {e(l_gender3_male)} {e(l_gender3_female)} {e(l_gender3_male)}]" eob
+    "[09 03 {e(l_gender3_male)} {e(l_gender3_female)} {e(l_gender3_male)}]" eob
 l_gender3_male:
-	"[9F][96][94][A0]" eob  // "него"
+    "[9F][96][94][A0]" eob  // "него"
 l_gender3_female:
-	"[9F][96][97]" eob  // "неё"
+    "[9F][96][97]" eob  // "неё"
 
 // -ый/-ая
 l_gender_end_outside:
 //  "{char_num(1)}{result_is(2)}[1B 03 {e(l_female_end_outside)}]ый" eob
-	"{char_num(1)}{result_is(2)}[1B 03 {e(l_female_end_outside)}][C2][9B]" eob
+    "{char_num(1)}{result_is(2)}[1B 03 {e(l_female_end_outside)}][C2][9B]" eob
 l_female_end_outside:
-	"[91][C6]" eob // "ая"
+    "[91][C6]" eob // "ая"
 
 
 l_gender_interwine:
-	"[09 03 {e(l_gender_interwine_male)} {e(l_gender_interwine_female)} {e(l_gender_interwine_neutral)}]" goto(l_gender_interwine_male)
+    "[09 03 {e(l_gender_interwine_male)} {e(l_gender_interwine_female)} {e(l_gender_interwine_neutral)}]" goto(l_gender_interwine_male)
 l_gender_interwine_male:
-	"[97][9D][A3][C6]" eob // "ёлся"
+    "[97][9D][A3][C6]" eob // "ёлся"
 l_gender_interwine_female:
-	"[96][9D][91][A3][C3]" eob // "елась"
+    "[96][9D][91][A3][C3]" eob // "елась"
 l_gender_interwine_neutral:
-	"[96][9D][A0][A3][C3]" eob // "елось"
+    "[96][9D][A0][A3][C3]" eob // "елось"
 
 // Для data_63.l_0xef79ef и data_63.l_0xef7a28
 gain_exp_multi:
-//	"[1D 19 02][1B 03 {e(gain_exp_single)}]{char_num(2)}[1D 0D 00 01 02][1B 03 {e(gain_exp_single)}]получили" eob
-	"[1D 19 02][1B 03 {e(gain_exp_single)}]{char_num(2)}[1D 0D 00 01 02][1B 03 {e(gain_exp_single)}][A1][A0][9D][A5][A9][9A][9D][9A]" eob
+//  "[1D 19 02][1B 03 {e(gain_exp_single)}]{char_num(2)}[1D 0D 00 01 02][1B 03 {e(gain_exp_single)}]получили" eob
+    "[1D 19 02][1B 03 {e(gain_exp_single)}]{char_num(2)}[1D 0D 00 01 02][1B 03 {e(gain_exp_single)}][A1][A0][9D][A5][A9][9A][9D][9A]" eob
 gain_exp_single:
-//	"получил{char_num(1)}{call(data_gender.l_gendersuffix)}" eob
-	"[A1][A0][9D][A5][A9][9A][9D]{char_num(1)}{call(data_gender.l_gendersuffix)}" eob
+//  "получил{char_num(1)}{call(data_gender.l_gendersuffix)}" eob
+    "[A1][A0][9D][A5][A9][9A][9D]{char_num(1)}{call(data_gender.l_gendersuffix)}" eob
 
 used_multi:
-//	"[1D 19 02][1B 03 {e(used_single)}]{char_num(2)}[1D 0D 00 01 02][1B 03 {e(used_single)}]использовали" eob
-	"[1D 19 02][1B 03 {e(used_single)}]{char_num(2)}[1D 0D 00 01 02][1B 03 {e(used_single)}][9A][A3][A1][A0][9D][C3][99][A0][93][91][9D][9A]" eob
+//  "[1D 19 02][1B 03 {e(used_single)}]{char_num(2)}[1D 0D 00 01 02][1B 03 {e(used_single)}]использовали" eob
+    "[1D 19 02][1B 03 {e(used_single)}]{char_num(2)}[1D 0D 00 01 02][1B 03 {e(used_single)}][9A][A3][A1][A0][9D][C3][99][A0][93][91][9D][9A]" eob
 used_single:
-//	"использовал{user_gender}{call(l_gendersuffix)}" eob
-	"[9A][A3][A1][A0][9D][C3][99][A0][93][91][9D]{user_gender}{call(l_gendersuffix)}" eob
+//  "использовал{user_gender}{call(l_gendersuffix)}" eob
+    "[9A][A3][A1][A0][9D][C3][99][A0][93][91][9D]{user_gender}{call(l_gendersuffix)}" eob
 
 can_multi:
-//	"[1D 19 02][1B 03 {e(can_single)}]{char_num(2)}[1D 0D 00 01 02][1B 03 {e(can_single)}]могут" eob
-	"[1D 19 02][1B 03 {e(can_single)}]{char_num(2)}[1D 0D 00 01 02][1B 03 {e(can_single)}][9E][A0][94][A5][A4]" eob
+//  "[1D 19 02][1B 03 {e(can_single)}]{char_num(2)}[1D 0D 00 01 02][1B 03 {e(can_single)}]могут" eob
+    "[1D 19 02][1B 03 {e(can_single)}]{char_num(2)}[1D 0D 00 01 02][1B 03 {e(can_single)}][9E][A0][94][A5][A4]" eob
 can_single:
-	"[9E][A0][98][96][A4]" eob // "может"
+    "[9E][A0][98][96][A4]" eob // "может"
 
 // Для data_64.l_0xef84f3 и data_64.l_0xef8511
 trying_multi:
-//	"[1D 19 02][1B 03 {e(trying_single)}]{char_num(2)}[1D 0D 00 01 02][1B 03 {e(trying_single)}]пытаются" eob
-	"[1D 19 02][1B 03 {e(trying_single)}]{char_num(2)}[1D 0D 00 01 02][1B 03 {e(trying_single)}][A1][C2][A4][91][C5][A4][A3][C6]" eob
+//  "[1D 19 02][1B 03 {e(trying_single)}]{char_num(2)}[1D 0D 00 01 02][1B 03 {e(trying_single)}]пытаются" eob
+    "[1D 19 02][1B 03 {e(trying_single)}]{char_num(2)}[1D 0D 00 01 02][1B 03 {e(trying_single)}][A1][C2][A4][91][C5][A4][A3][C6]" eob
 trying_single:
-	"[A1][C2][A4][91][96][A4][A3][C6]" eob // "пытается"
+    "[A1][C2][A4][91][96][A4][A3][C6]" eob // "пытается"
 
 // Для data_59.l_0xc9e843 и data_63.l_0xef7cf8
 abandoned_multi:
-//	"[1D 19 02][1B 03 {e(abandoned_single)}]{char_num(2)}[1D 0D 00 01 02][1B 03 {e(abandoned_single)}]отказались" eob
-	"[1D 19 02][1B 03 {e(abandoned_single)}]{char_num(2)}[1D 0D 00 01 02][1B 03 {e(abandoned_single)}][A0][A4][9C][91][99][91][9D][9A][A3][C3]" eob
+//  "[1D 19 02][1B 03 {e(abandoned_single)}]{char_num(2)}[1D 0D 00 01 02][1B 03 {e(abandoned_single)}]отказались" eob
+    "[1D 19 02][1B 03 {e(abandoned_single)}]{char_num(2)}[1D 0D 00 01 02][1B 03 {e(abandoned_single)}][A0][A4][9C][91][99][91][9D][9A][A3][C3]" eob
 abandoned_single:
-//	"отказал{char_num(1)}{call(data_gender.l_gendersuffix2)}" eob
-	"[A0][A4][9C][91][99][91][9D]{char_num(1)}{call(data_gender.l_gendersuffix2)}" eob
+//  "отказал{char_num(1)}{call(data_gender.l_gendersuffix2)}" eob
+    "[A0][A4][9C][91][99][91][9D]{char_num(1)}{call(data_gender.l_gendersuffix2)}" eob
 
 // Для data_63.l_0xef7a4d
 lost_battle_multi:
-	"[1D 19 02]"
-	goto_if_true(lost_battle_single)
-	char_num(2)
-	"[1D 0D 00 01 02]"
-	goto_if_true(lost_battle_single)
-	"[A1][A2][A0][9A][94][A2][91][9D][9A]" eob // "проиграли"
+    "[1D 19 02]"
+    goto_if_true(lost_battle_single)
+    char_num(2)
+    "[1D 0D 00 01 02]"
+    goto_if_true(lost_battle_single)
+    "[A1][A2][A0][9A][94][A2][91][9D][9A]" eob // "проиграли"
 lost_battle_single:
-//	"проиграл{char_num(1)}{call(data_gender.l_gendersuffix)}" eob
-	"[A1][A2][A0][9A][94][A2][91][9D]{char_num(1)}{call(data_gender.l_gendersuffix)}" eob
+//  "проиграл{char_num(1)}{call(data_gender.l_gendersuffix)}" eob
+    "[A1][A2][A0][9A][94][A2][91][9D]{char_num(1)}{call(data_gender.l_gendersuffix)}" eob
 
 // Для data_47.l_0xc8fa7b
 lost_pp_multi:
-	"[1D 19 02]"
-	goto_if_true(lost_pp_single)
-	char_num(2)
-	"[1D 0D 00 01 02]"
-	goto_if_true(lost_pp_single)
-	"[A1][A0][A4][96][A2][C6][9D][9A]" eob // "потеряли"
+    "[1D 19 02]"
+    goto_if_true(lost_pp_single)
+    char_num(2)
+    "[1D 0D 00 01 02]"
+    goto_if_true(lost_pp_single)
+    "[A1][A0][A4][96][A2][C6][9D][9A]" eob // "потеряли"
 lost_pp_single:
-//	"потерял{char_num(1)}{call(data_gender.l_gendersuffix)}" eob
-	"[A1][A0][A4][96][A2][C6][9D]{char_num(1)}{call(data_gender.l_gendersuffix)}" eob
+//  "потерял{char_num(1)}{call(data_gender.l_gendersuffix)}" eob
+    "[A1][A0][A4][96][A2][C6][9D]{char_num(1)}{call(data_gender.l_gendersuffix)}" eob
 
 
 recovered_multi:
-//	"[1D 19 02][1B 03 {e(recovered_single)}]{char_num(2)}[1D 0D 00 01 02][1B 03 {e(recovered_single)}]восстановлены" eob
-	"[1D 19 02][1B 03 {e(recovered_single)}]{char_num(2)}[1D 0D 00 01 02][1B 03 {e(recovered_single)}][93][A0][A3][A3][A4][91][9F][A0][93][9D][96][9F][C2]" eob
+//  "[1D 19 02][1B 03 {e(recovered_single)}]{char_num(2)}[1D 0D 00 01 02][1B 03 {e(recovered_single)}]восстановлены" eob
+    "[1D 19 02][1B 03 {e(recovered_single)}]{char_num(2)}[1D 0D 00 01 02][1B 03 {e(recovered_single)}][93][A0][A3][A3][A4][91][9F][A0][93][9D][96][9F][C2]" eob
 recovered_single:
-//	"восстановлен{user_gender}{call(l_gendersuffix)}" eob
-	"[93][A0][A3][A3][A4][91][9F][A0][93][9D][96][9F]{user_gender}{call(l_gendersuffix)}" eob
+//  "восстановлен{user_gender}{call(l_gendersuffix)}" eob
+    "[93][A0][A3][A3][A4][91][9F][A0][93][9D][96][9F]{user_gender}{call(l_gendersuffix)}" eob
 
 // Для data_17.l_0xc6090b; data_17.l_0xc60985; data_17.l_0xc60a0d; data_17.l_0xc60a97
 won_multi:
-//	"[1D 19 02][1B 03 {e(won_single)}]{char_num(2)}[1D 0D 00 01 02][1B 03 {e(won_single)}]выиграли" eob
-	"[1D 19 02][1B 03 {e(won_single)}]{char_num(2)}[1D 0D 00 01 02][1B 03 {e(won_single)}][93][C2][9A][94][A2][91][9D][9A]" eob
+//  "[1D 19 02][1B 03 {e(won_single)}]{char_num(2)}[1D 0D 00 01 02][1B 03 {e(won_single)}]выиграли" eob
+    "[1D 19 02][1B 03 {e(won_single)}]{char_num(2)}[1D 0D 00 01 02][1B 03 {e(won_single)}][93][C2][9A][94][A2][91][9D][9A]" eob
 won_single:
-//	"выиграл{char_num(1)}{call(data_gender.l_gendersuffix)}" eob
-	"[93][C2][9A][94][A2][91][9D]{char_num(1)}{call(data_gender.l_gendersuffix)}" eob
+//  "выиграл{char_num(1)}{call(data_gender.l_gendersuffix)}" eob
+    "[93][C2][9A][94][A2][91][9D]{char_num(1)}{call(data_gender.l_gendersuffix)}" eob
 
 l_encounter_end:
-//	"{user_number}[09 03 {e(l_enc_end2)} {e(l_enc_end3)} {e(l_enc_end3)}]ют" eob
-	"{user_number}[09 03 {e(l_enc_end2)} {e(l_enc_end3)} {e(l_enc_end3)}][C5][A4]" eob
+//  "{user_number}[09 03 {e(l_enc_end2)} {e(l_enc_end3)} {e(l_enc_end3)}]ют" eob
+    "{user_number}[09 03 {e(l_enc_end2)} {e(l_enc_end3)} {e(l_enc_end3)}][C5][A4]" eob
 l_enc_end2:
-	"[96][A4]" eob // "ет"
+    "[96][A4]" eob // "ет"
 l_enc_end3:
-	"[C5][A4]" eob // "ют"
+    "[C5][A4]" eob // "ют"
 
 l_encounter_end2:
-//	"{user_number}[09 03 {e(l_enc_end2_2)} {e(l_enc_end2_3)} {e(l_enc_end2_3)}]ят" eob
-	"{user_number}[09 03 {e(l_enc_end2_2)} {e(l_enc_end2_3)} {e(l_enc_end2_3)}][C6][A4]" eob
+//  "{user_number}[09 03 {e(l_enc_end2_2)} {e(l_enc_end2_3)} {e(l_enc_end2_3)}]ят" eob
+    "{user_number}[09 03 {e(l_enc_end2_2)} {e(l_enc_end2_3)} {e(l_enc_end2_3)}][C6][A4]" eob
 l_enc_end2_2:
-	"[9A][A4]" eob // "ит"
+    "[9A][A4]" eob // "ит"
 l_enc_end2_3:
-	"[C6][A4]" eob // "ят"
+    "[C6][A4]" eob // "ят"
 
 l_encounter_came:
-//	"{user_number}[09 03 {e(l_enc_came2)} {e(l_enc_came3)} {e(l_enc_came3)}]пришли" eob
-	"{user_number}[09 03 {e(l_enc_came2)} {e(l_enc_came3)} {e(l_enc_came3)}][A1][A2][9A][AA][9D][9A]" eob
+//  "{user_number}[09 03 {e(l_enc_came2)} {e(l_enc_came3)} {e(l_enc_came3)}]пришли" eob
+    "{user_number}[09 03 {e(l_enc_came2)} {e(l_enc_came3)} {e(l_enc_came3)}][A1][A2][9A][AA][9D][9A]" eob
 l_enc_came2:
-	call(data_gender.l_gender_came) eob
+    call(data_gender.l_gender_came) eob
 l_enc_came3:
-	"[A1][A2][9A][AA][9D][9A]" eob // "пришли"
+    "[A1][A2][9A][AA][9D][9A]" eob // "пришли"
 
 // Вывод имён персонажей, например "Волшебная бабочка расслабила персонажа Несс и его друзей"
 // Используется вне боя
 l_print_players:
-	"{char_num(1)}{swap}[1C 02 00]{counter(1)}" goto(l_print_players_loop)
+    "{char_num(1)}{swap}[1C 02 00]{counter(1)}" goto(l_print_players_loop)
 l_print_players_loop:
-	"{inc}{ctoarg}[1D 19 00][1B 03 {e(l_print_players_check)}]{char_num(0)}[1D 0D 00 01 02][1B 03 {e(l_print_players_check)}]{char_num(0)}[1D 0D 00 01 03][1B 03 {e(l_print_players_check)}]" goto(l_print_players_loop)
+    "{inc}{ctoarg}[1D 19 00][1B 03 {e(l_print_players_check)}]{char_num(0)}[1D 0D 00 01 02][1B 03 {e(l_print_players_check)}]{char_num(0)}[1D 0D 00 01 03][1B 03 {e(l_print_players_check)}]" goto(l_print_players_loop)
 l_print_players_check:
-	"{ctoarg}{swap}[09 05 {e(l_print_players_nil)} {e(l_print_players_nil)} {e(l_print_players_and)} {e(l_print_players_his_friends)} {e(l_print_players_his_friends)}]" eob
+    "{ctoarg}{swap}[09 05 {e(l_print_players_nil)} {e(l_print_players_nil)} {e(l_print_players_and)} {e(l_print_players_his_friends)} {e(l_print_players_his_friends)}]" eob
 l_print_players_nil:
-	eob
+    eob
 l_print_players_and:
-//	"{char_num(2)}{swap} и [1C 02 00]" eob
-	"{char_num(2)}{swap} [9A] [1C 02 00]" eob
+//  "{char_num(2)}{swap} и [1C 02 00]" eob
+    "{char_num(2)}{swap} [9A] [1C 02 00]" eob
 l_print_players_his_friends:
-//	" и {char_num(1)}{result_is(PAULA)}[1B 03 {e(l_print_players_her_friends)}]его друзей" eob
-	" [9A] {char_num(1)}{result_is(PAULA)}[1B 03 {e(l_print_players_her_friends)}][96][94][A0] [95][A2][A5][99][96][9B]" eob
+//  " и {char_num(1)}{result_is(PAULA)}[1B 03 {e(l_print_players_her_friends)}]его друзей" eob
+    " [9A] {char_num(1)}{result_is(PAULA)}[1B 03 {e(l_print_players_her_friends)}][96][94][A0] [95][A2][A5][99][96][9B]" eob
 l_print_players_her_friends:
-//	"её друзей" eob
-	"[96][97] [95][A2][A5][99][96][9B]" eob
+//  "её друзей" eob
+    "[96][97] [95][A2][A5][99][96][9B]" eob
 
 LC_you_multi:
-//	"{char_num(2)}[1D 0D 00 01 02][1B 03 {e(LC_you_single)}]{char_num(2)}[1D 0D 00 01 03][1B 03 {e(LC_you_single)}]вы" eob
-	"{char_num(2)}[1D 0D 00 01 02][1B 03 {e(LC_you_single)}]{char_num(2)}[1D 0D 00 01 03][1B 03 {e(LC_you_single)}][93][C2]" eob
+//  "{char_num(2)}[1D 0D 00 01 02][1B 03 {e(LC_you_single)}]{char_num(2)}[1D 0D 00 01 03][1B 03 {e(LC_you_single)}]вы" eob
+    "{char_num(2)}[1D 0D 00 01 02][1B 03 {e(LC_you_single)}]{char_num(2)}[1D 0D 00 01 03][1B 03 {e(LC_you_single)}][93][C2]" eob
 LC_you_single:
-	"[A4][C2]" eob // "ты"
+    "[A4][C2]" eob // "ты"
 
 UC_you_multi:
-//	"{char_num(2)}[1D 0D 00 01 02][1B 03 {e(UC_you_multi)}]{char_num(2)}[1D 0D 00 01 03][1B 03 {e(UC_you_multi)}]Вы" eob
-	"{char_num(2)}[1D 0D 00 01 02][1B 03 {e(UC_you_multi)}]{char_num(2)}[1D 0D 00 01 03][1B 03 {e(UC_you_multi)}][73][C2]" eob
+//  "{char_num(2)}[1D 0D 00 01 02][1B 03 {e(UC_you_multi)}]{char_num(2)}[1D 0D 00 01 03][1B 03 {e(UC_you_multi)}]Вы" eob
+    "{char_num(2)}[1D 0D 00 01 02][1B 03 {e(UC_you_multi)}]{char_num(2)}[1D 0D 00 01 03][1B 03 {e(UC_you_multi)}][73][C2]" eob
 UC_you_single:
-	"[84][C2]" eob // "Ты"
+    "[84][C2]" eob // "Ты"
 
 l_kid_suffix_number_check:
-	"{inc}{ctoarg}[1D 19 00][1B 03 {e(l_kid_suffix_number_load)}][19 10 00][1D 0D 00 01 02][1B 03 {e(l_kid_suffix_number_load)}][19 10 00][1D 0D 00 01 03][1B 03 {e(l_kid_suffix_number_load)}]" goto(l_kid_suffix_number_check)
+    "{inc}{ctoarg}[1D 19 00][1B 03 {e(l_kid_suffix_number_load)}][19 10 00][1D 0D 00 01 02][1B 03 {e(l_kid_suffix_number_load)}][19 10 00][1D 0D 00 01 03][1B 03 {e(l_kid_suffix_number_load)}]" goto(l_kid_suffix_number_check)
 l_kid_suffix_number_load:
-	"{ctoarg}{swap}[09 05 {e(l_kid_suffix_number_male)} {e(l_kid_suffix_number_male)} {e(l_kid_suffix_number_multi)} {e(l_kid_suffix_number_multi)} {e(l_kid_suffix_number_multi)}]" eob
+    "{ctoarg}{swap}[09 05 {e(l_kid_suffix_number_male)} {e(l_kid_suffix_number_male)} {e(l_kid_suffix_number_multi)} {e(l_kid_suffix_number_multi)} {e(l_kid_suffix_number_multi)}]" eob
 l_kid_suffix_number_male:
-//	"{char_num(1)}{result_is(2)}[1B 03 {e(l_kid_suffix_number_female)}]Сын" eob
-	"{char_num(1)}{result_is(2)}[1B 03 {e(l_kid_suffix_number_female)}][83][C2][9F]" eob
+//  "{char_num(1)}{result_is(2)}[1B 03 {e(l_kid_suffix_number_female)}]Сын" eob
+    "{char_num(1)}{result_is(2)}[1B 03 {e(l_kid_suffix_number_female)}][83][C2][9F]" eob
 l_kid_suffix_number_female:
-	"[75][A0][A9][C3]" eob  // "Дочь"
+    "[75][A0][A9][C3]" eob  // "Дочь"
 l_kid_suffix_number_multi:
-	"[75][96][A4][9A]" eob  // "Дети"
+    "[75][96][A4][9A]" eob  // "Дети"
 
 // -и (во множ. числе) или -а (в ед. числе)
 l_suffix_multi:
-//	"{char_num(2)}[1D 0D 00 01 02][1B 03 {e(l_suffix_single)}]{char_num(2)}[1D 0D 00 01 03][1B 03 {e(l_suffix_single)}]и" eob
-	"{char_num(2)}[1D 0D 00 01 02][1B 03 {e(l_suffix_single)}]{char_num(2)}[1D 0D 00 01 03][1B 03 {e(l_suffix_single)}][9A]" eob
+//  "{char_num(2)}[1D 0D 00 01 02][1B 03 {e(l_suffix_single)}]{char_num(2)}[1D 0D 00 01 03][1B 03 {e(l_suffix_single)}]и" eob
+    "{char_num(2)}[1D 0D 00 01 02][1B 03 {e(l_suffix_single)}]{char_num(2)}[1D 0D 00 01 03][1B 03 {e(l_suffix_single)}][9A]" eob
 l_suffix_single:
-	char_num(1) goto(data_gender.l_gendersuffix)
+    char_num(1) goto(data_gender.l_gendersuffix)
 
 // -те (во множ. числе) или -шь (в ед. числе)
 l_suffix2_multi:
-//	"{char_num(2)}[1D 0D 00 01 02][1B 03 {e(l_suffix2_single)}]{char_num(2)}[1D 0D 00 01 03][1B 03 {e(l_suffix2_single)}]те" eob
-	"{char_num(2)}[1D 0D 00 01 02][1B 03 {e(l_suffix2_single)}]{char_num(2)}[1D 0D 00 01 03][1B 03 {e(l_suffix2_single)}][A4][96]" eob
+//  "{char_num(2)}[1D 0D 00 01 02][1B 03 {e(l_suffix2_single)}]{char_num(2)}[1D 0D 00 01 03][1B 03 {e(l_suffix2_single)}]те" eob
+    "{char_num(2)}[1D 0D 00 01 02][1B 03 {e(l_suffix2_single)}]{char_num(2)}[1D 0D 00 01 03][1B 03 {e(l_suffix2_single)}][A4][96]" eob
 l_suffix2_single:
-	"[AA][C3]" eob // "шь"
+    "[AA][C3]" eob // "шь"
 
 // Только -те (во множ. числе)
 l_suffix3_multi:
-//	"{char_num(2)}[1D 0D 00 01 02][1B 03 {e(l_suffix3_single)}]{char_num(2)}[1D 0D 00 01 03][1B 03 {e(l_suffix3_single)}]те" eob
-	"{char_num(2)}[1D 0D 00 01 02][1B 03 {e(l_suffix3_single)}]{char_num(2)}[1D 0D 00 01 03][1B 03 {e(l_suffix3_single)}][A4][96]" eob
+//  "{char_num(2)}[1D 0D 00 01 02][1B 03 {e(l_suffix3_single)}]{char_num(2)}[1D 0D 00 01 03][1B 03 {e(l_suffix3_single)}]те" eob
+    "{char_num(2)}[1D 0D 00 01 02][1B 03 {e(l_suffix3_single)}]{char_num(2)}[1D 0D 00 01 03][1B 03 {e(l_suffix3_single)}][A4][96]" eob
 l_suffix3_single:
-	eob
+    eob
 
 // -ны (во множ. числе) или -ен/-на/-но (в ед. числе)
 l_suffix4_multi:
-//	"{char_num(2)}[1D 0D 00 01 02][1B 03 {e(l_suffix4_single)}]{char_num(2)}[1D 0D 00 01 03][1B 03 {e(l_suffix4_single)}]ны" eob
-	"{char_num(2)}[1D 0D 00 01 02][1B 03 {e(l_suffix4_single)}]{char_num(2)}[1D 0D 00 01 03][1B 03 {e(l_suffix4_single)}][9F][C2]" eob
+//  "{char_num(2)}[1D 0D 00 01 02][1B 03 {e(l_suffix4_single)}]{char_num(2)}[1D 0D 00 01 03][1B 03 {e(l_suffix4_single)}]ны" eob
+    "{char_num(2)}[1D 0D 00 01 02][1B 03 {e(l_suffix4_single)}]{char_num(2)}[1D 0D 00 01 03][1B 03 {e(l_suffix4_single)}][9F][C2]" eob
 l_suffix4_single:
-	char_num(1) goto(l_gendersuffix6)
+    char_num(1) goto(l_gendersuffix6)
 
 // -ены (во множ. числе) или -ён/-ена/-ено (в ед. числе)
 l_suffix5_multi:
-//	"{char_num(2)}[1D 0D 00 01 02][1B 03 {e(l_suffix5_single)}]{char_num(2)}[1D 0D 00 01 03][1B 03 {e(l_suffix5_single)}]ены" eob
-	"{char_num(2)}[1D 0D 00 01 02][1B 03 {e(l_suffix5_single)}]{char_num(2)}[1D 0D 00 01 03][1B 03 {e(l_suffix5_single)}][96][9F][C2]" eob
+//  "{char_num(2)}[1D 0D 00 01 02][1B 03 {e(l_suffix5_single)}]{char_num(2)}[1D 0D 00 01 03][1B 03 {e(l_suffix5_single)}]ены" eob
+    "{char_num(2)}[1D 0D 00 01 02][1B 03 {e(l_suffix5_single)}]{char_num(2)}[1D 0D 00 01 03][1B 03 {e(l_suffix5_single)}][96][9F][C2]" eob
 l_suffix5_single:
-	user_gender goto(l_gendersuffix7)
+    user_gender goto(l_gendersuffix7)
 
 // -ись (во множ. числе) или -ся/-ась/-ось (в ед. числе)
 l_suffix6_multi:
-//	"{char_num(2)}[1D 0D 00 01 02][1B 03 {e(l_suffix6_single)}]{char_num(2)}[1D 0D 00 01 03][1B 03 {e(l_suffix6_single)}]ись" eob
-	"{char_num(2)}[1D 0D 00 01 02][1B 03 {e(l_suffix6_single)}]{char_num(2)}[1D 0D 00 01 03][1B 03 {e(l_suffix6_single)}][9A][A3][C3]" eob
+//  "{char_num(2)}[1D 0D 00 01 02][1B 03 {e(l_suffix6_single)}]{char_num(2)}[1D 0D 00 01 03][1B 03 {e(l_suffix6_single)}]ись" eob
+    "{char_num(2)}[1D 0D 00 01 02][1B 03 {e(l_suffix6_single)}]{char_num(2)}[1D 0D 00 01 03][1B 03 {e(l_suffix6_single)}][9A][A3][C3]" eob
 l_suffix6_single:
-	char_num(1) call(data_gender.l_gendersuffix2) eob
+    char_num(1) call(data_gender.l_gendersuffix2) eob
 
 // Другие способы вставки окончания (через проверку кол-ва членов команды)
 // -а (в ед. ч. и ж.р.) | -и (во множ.ч.)
 l_suffix_number_check:
-	"{inc}{ctoarg}[1D 19 00][1B 03 {e(l_suffix_number_load)}][19 10 00][1D 0D 00 01 02][1B 03 {e(l_suffix_number_load)}][19 10 00][1D 0D 00 01 03][1B 03 {e(l_suffix_number_load)}]" goto(l_suffix_number_check)
+    "{inc}{ctoarg}[1D 19 00][1B 03 {e(l_suffix_number_load)}][19 10 00][1D 0D 00 01 02][1B 03 {e(l_suffix_number_load)}][19 10 00][1D 0D 00 01 03][1B 03 {e(l_suffix_number_load)}]" goto(l_suffix_number_check)
 l_suffix_number_load:
-	"{ctoarg}{swap}[09 05 {e(l_suffix_single)} {e(l_suffix_single)} {e(l_suffix_number_multi)} {e(l_suffix_number_multi)} {e(l_suffix_number_multi)}]" eob
+    "{ctoarg}{swap}[09 05 {e(l_suffix_single)} {e(l_suffix_single)} {e(l_suffix_number_multi)} {e(l_suffix_number_multi)} {e(l_suffix_number_multi)}]" eob
 l_suffix_number_multi:
-	"[9A]" eob // "и"
+    "[9A]" eob // "и"
 
 // -ён (в ед.ч. и м.р.) | -ена (в ед.ч. и ж.р.) | -ены (во множ.ч.)
 l_suffix7_number_check:
-	"{inc}{ctoarg}[1D 19 00][1B 03 {e(l_suffix7_number_load)}][19 10 00][1D 0D 00 01 02][1B 03 {e(l_suffix7_number_load)}][19 10 00][1D 0D 00 01 03][1B 03 {e(l_suffix7_number_load)}]" goto(l_suffix7_number_check)
+    "{inc}{ctoarg}[1D 19 00][1B 03 {e(l_suffix7_number_load)}][19 10 00][1D 0D 00 01 02][1B 03 {e(l_suffix7_number_load)}][19 10 00][1D 0D 00 01 03][1B 03 {e(l_suffix7_number_load)}]" goto(l_suffix7_number_check)
 l_suffix7_number_load:
-	"{ctoarg}{swap}[09 05 {e(l_suffix7_number_single)} {e(l_suffix7_number_single)} {e(l_suffix7_number_multi)} {e(l_suffix7_number_multi)} {e(l_suffix7_number_multi)}]" eob
+    "{ctoarg}{swap}[09 05 {e(l_suffix7_number_single)} {e(l_suffix7_number_single)} {e(l_suffix7_number_multi)} {e(l_suffix7_number_multi)} {e(l_suffix7_number_multi)}]" eob
 l_suffix7_number_single:
-	char_num(1) goto(data_gender.l_gendersuffix7)
+    char_num(1) goto(data_gender.l_gendersuffix7)
 l_suffix7_number_multi:
-	"[96][9F][C2]" eob // "ены"
+    "[96][9F][C2]" eob // "ены"
 
 
 // Заголовки для отображения над диалоговыми окнами (каждый заголовок должен заканчиваться NULL-символом!!!)
-Unknown:		"???[00]"
-Mom:			"[7E][91][9E][91][00]" // "Мама[00]"
-Dad:			"[81][91][A1][91][00]" // "Папа[00]"
-Tracy:			"[84][A2][C4][9B][A3][9A][00]" // "Трэйси[00]"
-Escargo:		"[B4][A3][9C][91][A2][94][A0] [B4][9C][A3][A1][A2][96][A3][A3][00]" // "Эскарго Экспресс[00]"
-Careless:		"[B4][A3][9C][91][A2][94][A0] [B4][9C][A3][A1][A2][96][A3][A3][00]" // "Эскарго Экспресс[00]"
-Porky:			"[81][A0][A2][9C][9A][00]" // "Порки[00]"
-Picky:			"[81][9A][9C][9A][00]" // "Пики[00]"
-Buzz:			"[73][98][98] [73][98][98][00]" // "Вжж Вжж[00]"
-Aloysius:		"[71][9D][A0][9B][99][9A][A5][A3] [7E][9A][9F][A9][00]" // "Алойзиус Минч[00]"
-Lardna:			"[7D][91][A2][95][9F][91] [7E][9A][9F][A9][00]" // "Лардна Минч[00]"
-Photographer:	"[74][96][9F][9A][91][9D][C3][9F][C2][9B] [A6][A0][A4][A0][94][A2][91][A6][00]" // "Гениальный фотограф[00]"
-Hint:			"[83][A0][93][96][A4][A9][9A][9C][00]" // "Советчик[00]"
-ExitMouse:		"[81][A5][A4][96][93][A0][95][9F][91][C6] [7E][C2][AA][C3][00]" // "Путеводная Мышь[00]"
-Bellhop:		"[7C][A0][A2][9A][95][A0][A2][9F][C2][9B][00]" // "Коридорный[00]"
-Ruffini:		"[74][91][A6][A6][9A][9F][9A][00]" // "Гаффини[00]"
-Lier:			"[72][A0][92] [7E][91][9F][C0][9A][9C][00]" // "Боб Манщик[00]"
-Pirkle:			"[7D].[74]. [81][9A][A2][9C][9D][00]" // "Л.Г. Пиркл[00]"
-Shark:			"[71][9C][A5][9D][91][00]" // "Акула[00]"
-Frank:			"[86][A2][C4][9F][9C][00]" // "Фрэнк[00]"
-Prettyman:		"[7E][A2].[7C][A2][91][A3][91][93][A9][9A][9C][00]" // "Мр.Красавчик[00]"
-Cop:			"[81][A0][9D][9A][A8][96][9B][A3][9C][9A][9B][00]" // "Полицейский[00]"
-Strong:			"[7C][91][A1][9A][A4][91][9F] [83][A4][A2][A0][9F][94][00]" // "Капитан Стронг[00]"
-Mach:			"[7E][91][A7] [81][9A][A8][A8][91][00]" // "Мах Пицца[00]"
-Gonzales:		"[74][A0][9F][A3][91][9D][96][A3][00]" // "Гонсалес[00]"
-RunawayFive:	"[72][96][94][9D][91][C6] [81][C6][A4][97][A2][9C][91][00]" // "Беглая Пятёрка[00]"
-MrJones:		"[81][A0][9D] [75][98][A0][9F][A3][00]" // "Пол Джонс[00]"
-MsJones:		"[7E][9A][A3][A3].[75][98][A0][9F][A3][00]" // "Мисс.Джонс[00]"
-Everdred:		"[B4][93][96][A2][95][A2][96][95][00]" // "Эвердред[00]"
-Mouse:			"[7E][C2][AA][C3][00]" // "Мышь[00]"
-Apple:			"[B4][A1][9D] [7C][9A][95][00]" // "Эпл Кид[00]"
-Orange:			"[80][A2][C4][9F][98] [7C][9A][95][00]" // "Орэнж Кид[00]"
-Poochyfud:		"[7E][A2].[81][A5][A9][9A][A6][C5][95][00]" // "Мр.Пучифюд[00]"
-MrSaturn:		"[7E][A2].[83][91][A4][A5][A2][9F][00]" // "Мр.Сатурн[00]"
-DrSaturn:		"[75][A2].[83][91][A4][A5][A2][9F][00]" // "Др.Сатурн[00]"
-Nice:			"[83][9D][91][93][9F][C2][9B][00]" // "Славный[00]"
-Lucky:			"[73][96][99][A5][A9][9A][9B][00]" // "Везучий[00]"
-Gorgeous:		"[75][9A][93][9F][C2][9B][00]" // "Дивный[00]"
-Okay:			"[7D][91][95][9F][C2][9B][00]" // "Ладный[00]"
-Groovy:			"[7C][A2][A5][A4][A0][9B][00]" // "Крутой[00]"
-BlueBlue:		"[83][9A][9F][9A][9B] [9C][A5][9D][C3][A4][9A][A3][A4][00]" // "Синий культист[00]"
-Carpainter:		"[7E][A2].[7C][91][A2][A1][C4][9B][9F][A4][96][A2][00]" // "Мр.Карпэйнтер[00]"
-BSesameSeed:	"[89][97][A2][9F][C2][9B] [9C][A5][9F][98][A5][A4][00]" // "Чёрный кунжут[00]"
-WSesameSeed:	"[72][96][9D][C2][9B] [9C][A5][9F][98][A5][A4][00]" // "Белый кунжут[00]"
-Pettenella:		"[81][96][A4][A4][96][9F][96][9D][9D][91] [75][98][A0][93][91][9F][9F][9A][00]" // "Петтенелла Джованни[00]"
-Gerardo:		"[74][96][A2][91][A2][95][A0] [7E][A0][9F][A4][96][94][C5][00]" // "Герардо Монтегю[00]"
-George:			"[75][98][A0][A2][95][98] [7E][A0][9F][A4][96][94][C5][00]" // "Джордж Монтегю[00]"
-Tomas:			"[84][A0][9E][91][A3] [75][98][96][A6][A6][96][A2][A3][A0][9F][00]" // "Томас Джефферсон[00]"
-Pancho:			"[81][91][9F][A9][A0] [83][91][9F][A9][96][A3][00]" // "Панчо Санчес[00]"
-Pincho:			"[81][9A][9F][A9][A0] [83][91][9F][A9][96][A3][00]" // "Пинчо Санчес[00]"
-// Monkey:			"[80][92][96][99][C3][C6][9F][91][00]" // "Обезьяна[00]"
-Talah:			"[84][91][9D][91] [82][91][9E][91][00]" // "Тала Рама[00]"
-Monkonna:		"[7E][91][9C][91][9C][A0][9F][9F][91][00]" // "Макаконна[00]"
-Mankman:		"[7E][91][9C][91] [7C]. [7E][C4][9F][00]" // "Мака К. Мэн[00]"
-Bubble:			"[72][A5][92][9D][C3]-[94][A5][9E][C2][A9][00]" // "Бубль-гумыч[00]"
-Andonuts:		"[75][A2].[71][9F][95][A0][9F][91][A4][A3][00]" // "Др.Андонатс[00]"
-Tony:			"[84][A0][9F][9A][00]" // "Тони[00]"
-Gauss:			"[74][91][A5][A3][A3][00]" // "Гаусс[00]"
-Brickroad:		"[72][A2][9A][9C] [82][A0][95][00]" // "Брик Род[00]"
-Sebastian:		"[83][96][92][91][A3][A4][C3][C6][9F][00]" // "Себастьян[00]"
-Monyeki:		"[80][92][96][99][C6][9B][9C][91][00]" // "Обезяйка[00]"
-Enrich:			"[B4][9F][A2][9A][A9] [86][9D][91][93][A0][A2][00]" // "Энрич Флавор[00]"
-Fork:			"[7E][A2].[73][9A][9D][9C][9A][9F][00]" // "Мр.Вилкин[00]"
-Spoon:			"[7E][A2].[7D][A0][98][9C][9A][9F][00]" // "Мр.Ложкин[00]"
-Fake:			"[7E][9A][A3][A3] [86][91][9D][C3][AA][00]" // "Мисс Фальш[00]"
-Venus:			"[73][96][9F][96][A2][91][00]" // "Венера[00]"
-Borges:			"[72][A0][A2][A7][96][A3][00]" // "Борхес[00]"
-Electra:		"[B4][9D][96][9C][A4][A2][91][00]" // "Электра[00]"
-Richmond:		"[7C][A5][A2]'[A9][91][A2] [82][9A][A9][9E][A0][9F][95][00]" // "Кур'чар Ричмонд[00]"
-Monotoly:		"[74][96][9D][C3][95][96][94][91][A2][95][C4] [7E][A0][9F][A0][A4][A0][9D][9A][00]" // "Гельдегардэ Монотоли[00]"
-Stoic:			"[7C][9D][A5][92] [83][A4][A0][9A][9C][00]" // "Клуб Стоик[00]"
-Lunatics:		"[73][96][A9][9F][C2][96] [7D][A5][9F][91][A4][9A][9C][9A][00]" // "Вечные Лунатики[00]"
-Gil:			"[74][9A][9D][00]" // "Гил[00]"
-Dungeon:		"[89][96][9D][A0][93][96][9C]-[75][91][9F][98][00]" // "Человек-Данж[00]"
-Star:			"[79][93][97][99][95][9F][C2][9B] [7E][91][A3][A4][96][A2][00]" // "Звёздный Мастер[00]"
-Warrior:		"[72][9D][91][94][A0][A2][A0][95][9F][C2][9B] [73][A0][9A][9F][00]" // "Благородный Воин[00]"
-Yisuchi:		"[7A]-[83][A5]-[89][9A][00]" // "И-Су-Чи[00]"
-Mu:				"[75][A5][A7] [7E][A5][00]" // "Дух Му[00]"
-Snake:			"[7C][A2][91][A3][9F][C2][9B] [79][9E][96][9B][00]" // "Красный Змей[00]"
-Charlie:		"[89][91][A2][9D][9A][00]" // "Чарли[00]"
-Rock:			"[79][91][94][91][95][A0][A9][9F][91][C6] [83][9C][91][9D][91][00]" // "Загадочная Скала[00]"
-Angrez:			"[89][A5][95][91][9F][94][9D][00]" // "Чудангл[00]"
-Tenda:			"[84][96][9F][95][91][00]" // "Тенда[00]"
-Nico:			"[7F][9A][9C][A0][00]" // "Нико[00]" (имя дочки Маркуса Линдблума - одного из директоров по английской локализации)
-Flying:			"[7D][96][A4][A5][9F][00]" // "Летун[00]"
-Flying2:		"[7D][96][A4][A5][9F] 2[00]" // "Летун 2[00]"
-Flying3:		"[7D][96][A4][A5][9F] 3[00]" // "Летун 3[00]"
-ReturnFL:		"[73][A0][99][93][A2][91][C0][96][9F][9A][96] [7D][96][A4][A5][9F][91][00]" // "Возвращение Летуна[00]"
-FinalFL:		"[86][9A][9F][91][9D][C3][9F][C2][9B] [7D][96][A4][A5][9F][00]" // "Финальный Летун[00]"
-Belch:			"[7E][91][A3][A4][96][A2] [72][C4][9D][A9][00]" // "Мастер Бэлч[00]"
-Belch2:			"[7F][A0][93][C2][9B] [72][C4][9D][A9][00]" // "Новый Бэлч[00]"
-Barf:			"[7E][91][A3][A4][96][A2] [72][91][A2][A6][00]" // "Мастер Барф[00]"
-Spook:			"[81][A2][9A][99][A2][91][9C] [85][9F][9A][93][96][A2][9E][91][94][91][00]" // "Призрак Универмага[00]"
-StarmanDX:		"[83][A4][91][A2][9E][96][9F] [75][96][9D][C5][9C][A3][00]" // "Стармен Делюкс[00]"
-Giygas:			"[74][9A][9B][94][91][A3][00]" // "Гийгас[00]"
-Kindergartens:	"[75][96][A4][A3][91][95][A0][93][A8][C2][00]" // "Детсадовцы[00]"
+Unknown:        "???[00]"
+Mom:            "[7E][91][9E][91][00]" // "Мама[00]"
+Dad:            "[81][91][A1][91][00]" // "Папа[00]"
+Tracy:          "[84][A2][C4][9B][A3][9A][00]" // "Трэйси[00]"
+Escargo:        "[B4][A3][9C][91][A2][94][A0] [B4][9C][A3][A1][A2][96][A3][A3][00]" // "Эскарго Экспресс[00]"
+Careless:       "[B4][A3][9C][91][A2][94][A0] [B4][9C][A3][A1][A2][96][A3][A3][00]" // "Эскарго Экспресс[00]"
+Porky:          "[81][A0][A2][9C][9A][00]" // "Порки[00]"
+Picky:          "[81][9A][9C][9A][00]" // "Пики[00]"
+Buzz:           "[73][98][98] [73][98][98][00]" // "Вжж Вжж[00]"
+Aloysius:       "[71][9D][A0][9B][99][9A][A5][A3] [7E][9A][9F][A9][00]" // "Алойзиус Минч[00]"
+Lardna:         "[7D][91][A2][95][9F][91] [7E][9A][9F][A9][00]" // "Лардна Минч[00]"
+Photographer:   "[74][96][9F][9A][91][9D][C3][9F][C2][9B] [A6][A0][A4][A0][94][A2][91][A6][00]" // "Гениальный фотограф[00]"
+Hint:           "[83][A0][93][96][A4][A9][9A][9C][00]" // "Советчик[00]"
+ExitMouse:      "[81][A5][A4][96][93][A0][95][9F][91][C6] [7E][C2][AA][C3][00]" // "Путеводная Мышь[00]"
+Bellhop:        "[7C][A0][A2][9A][95][A0][A2][9F][C2][9B][00]" // "Коридорный[00]"
+Ruffini:        "[74][91][A6][A6][9A][9F][9A][00]" // "Гаффини[00]"
+Lier:           "[72][A0][92] [7E][91][9F][C0][9A][9C][00]" // "Боб Манщик[00]"
+Pirkle:         "[7D].[74]. [81][9A][A2][9C][9D][00]" // "Л.Г. Пиркл[00]"
+Shark:          "[71][9C][A5][9D][91][00]" // "Акула[00]"
+Frank:          "[86][A2][C4][9F][9C][00]" // "Фрэнк[00]"
+Prettyman:      "[7E][A2].[7C][A2][91][A3][91][93][A9][9A][9C][00]" // "Мр.Красавчик[00]"
+Cop:            "[81][A0][9D][9A][A8][96][9B][A3][9C][9A][9B][00]" // "Полицейский[00]"
+Strong:         "[7C][91][A1][9A][A4][91][9F] [83][A4][A2][A0][9F][94][00]" // "Капитан Стронг[00]"
+Mach:           "[7E][91][A7] [81][9A][A8][A8][91][00]" // "Мах Пицца[00]"
+Gonzales:       "[74][A0][9F][A3][91][9D][96][A3][00]" // "Гонсалес[00]"
+RunawayFive:    "[72][96][94][9D][91][C6] [81][C6][A4][97][A2][9C][91][00]" // "Беглая Пятёрка[00]"
+MrJones:        "[81][A0][9D] [75][98][A0][9F][A3][00]" // "Пол Джонс[00]"
+MsJones:        "[7E][9A][A3][A3].[75][98][A0][9F][A3][00]" // "Мисс.Джонс[00]"
+Everdred:       "[B4][93][96][A2][95][A2][96][95][00]" // "Эвердред[00]"
+Mouse:          "[7E][C2][AA][C3][00]" // "Мышь[00]"
+Apple:          "[B4][A1][9D] [7C][9A][95][00]" // "Эпл Кид[00]"
+Orange:         "[80][A2][C4][9F][98] [7C][9A][95][00]" // "Орэнж Кид[00]"
+Poochyfud:      "[7E][A2].[81][A5][A9][9A][A6][C5][95][00]" // "Мр.Пучифюд[00]"
+MrSaturn:       "[7E][A2].[83][91][A4][A5][A2][9F][00]" // "Мр.Сатурн[00]"
+DrSaturn:       "[75][A2].[83][91][A4][A5][A2][9F][00]" // "Др.Сатурн[00]"
+Nice:           "[83][9D][91][93][9F][C2][9B][00]" // "Славный[00]"
+Lucky:          "[73][96][99][A5][A9][9A][9B][00]" // "Везучий[00]"
+Gorgeous:       "[75][9A][93][9F][C2][9B][00]" // "Дивный[00]"
+Okay:           "[7D][91][95][9F][C2][9B][00]" // "Ладный[00]"
+Groovy:         "[7C][A2][A5][A4][A0][9B][00]" // "Крутой[00]"
+BlueBlue:       "[83][9A][9F][9A][9B] [9C][A5][9D][C3][A4][9A][A3][A4][00]" // "Синий культист[00]"
+Carpainter:     "[7E][A2].[7C][91][A2][A1][C4][9B][9F][A4][96][A2][00]" // "Мр.Карпэйнтер[00]"
+BSesameSeed:    "[89][97][A2][9F][C2][9B] [9C][A5][9F][98][A5][A4][00]" // "Чёрный кунжут[00]"
+WSesameSeed:    "[72][96][9D][C2][9B] [9C][A5][9F][98][A5][A4][00]" // "Белый кунжут[00]"
+Pettenella:     "[81][96][A4][A4][96][9F][96][9D][9D][91] [75][98][A0][93][91][9F][9F][9A][00]" // "Петтенелла Джованни[00]"
+Gerardo:        "[74][96][A2][91][A2][95][A0] [7E][A0][9F][A4][96][94][C5][00]" // "Герардо Монтегю[00]"
+George:         "[75][98][A0][A2][95][98] [7E][A0][9F][A4][96][94][C5][00]" // "Джордж Монтегю[00]"
+Tomas:          "[84][A0][9E][91][A3] [75][98][96][A6][A6][96][A2][A3][A0][9F][00]" // "Томас Джефферсон[00]"
+Pancho:         "[81][91][9F][A9][A0] [83][91][9F][A9][96][A3][00]" // "Панчо Санчес[00]"
+Pincho:         "[81][9A][9F][A9][A0] [83][91][9F][A9][96][A3][00]" // "Пинчо Санчес[00]"
+// Monkey:      "[80][92][96][99][C3][C6][9F][91][00]" // "Обезьяна[00]"
+Talah:          "[84][91][9D][91] [82][91][9E][91][00]" // "Тала Рама[00]"
+Monkonna:       "[7E][91][9C][91][9C][A0][9F][9F][91][00]" // "Макаконна[00]"
+Mankman:        "[7E][91][9C][91] [7C]. [7E][C4][9F][00]" // "Мака К. Мэн[00]"
+Bubble:         "[72][A5][92][9D][C3]-[94][A5][9E][C2][A9][00]" // "Бубль-гумыч[00]"
+Andonuts:       "[75][A2].[71][9F][95][A0][9F][91][A4][A3][00]" // "Др.Андонатс[00]"
+Tony:           "[84][A0][9F][9A][00]" // "Тони[00]"
+Gauss:          "[74][91][A5][A3][A3][00]" // "Гаусс[00]"
+Brickroad:      "[72][A2][9A][9C] [82][A0][95][00]" // "Брик Род[00]"
+Sebastian:      "[83][96][92][91][A3][A4][C3][C6][9F][00]" // "Себастьян[00]"
+Monyeki:        "[80][92][96][99][C6][9B][9C][91][00]" // "Обезяйка[00]"
+Enrich:         "[B4][9F][A2][9A][A9] [86][9D][91][93][A0][A2][00]" // "Энрич Флавор[00]"
+Fork:           "[7E][A2].[73][9A][9D][9C][9A][9F][00]" // "Мр.Вилкин[00]"
+Spoon:          "[7E][A2].[7D][A0][98][9C][9A][9F][00]" // "Мр.Ложкин[00]"
+Fake:           "[7E][9A][A3][A3] [86][91][9D][C3][AA][00]" // "Мисс Фальш[00]"
+Venus:          "[73][96][9F][96][A2][91][00]" // "Венера[00]"
+Borges:         "[72][A0][A2][A7][96][A3][00]" // "Борхес[00]"
+Electra:        "[B4][9D][96][9C][A4][A2][91][00]" // "Электра[00]"
+Richmond:       "[7C][A5][A2]'[A9][91][A2] [82][9A][A9][9E][A0][9F][95][00]" // "Кур'чар Ричмонд[00]"
+Monotoly:       "[74][96][9D][C3][95][96][94][91][A2][95][C4] [7E][A0][9F][A0][A4][A0][9D][9A][00]" // "Гельдегардэ Монотоли[00]"
+Stoic:          "[7C][9D][A5][92] [83][A4][A0][9A][9C][00]" // "Клуб Стоик[00]"
+Lunatics:       "[73][96][A9][9F][C2][96] [7D][A5][9F][91][A4][9A][9C][9A][00]" // "Вечные Лунатики[00]"
+Gil:            "[74][9A][9D][00]" // "Гил[00]"
+Dungeon:        "[89][96][9D][A0][93][96][9C]-[75][91][9F][98][00]" // "Человек-Данж[00]"
+Star:           "[79][93][97][99][95][9F][C2][9B] [7E][91][A3][A4][96][A2][00]" // "Звёздный Мастер[00]"
+Warrior:        "[72][9D][91][94][A0][A2][A0][95][9F][C2][9B] [73][A0][9A][9F][00]" // "Благородный Воин[00]"
+Yisuchi:        "[7A]-[83][A5]-[89][9A][00]" // "И-Су-Чи[00]"
+Mu:             "[75][A5][A7] [7E][A5][00]" // "Дух Му[00]"
+Snake:          "[7C][A2][91][A3][9F][C2][9B] [79][9E][96][9B][00]" // "Красный Змей[00]"
+Charlie:        "[89][91][A2][9D][9A][00]" // "Чарли[00]"
+Rock:           "[79][91][94][91][95][A0][A9][9F][91][C6] [83][9C][91][9D][91][00]" // "Загадочная Скала[00]"
+Angrez:         "[89][A5][95][91][9F][94][9D][00]" // "Чудангл[00]"
+Tenda:          "[84][96][9F][95][91][00]" // "Тенда[00]"
+Nico:           "[7F][9A][9C][A0][00]" // "Нико[00]" (имя дочки Маркуса Линдблума - одного из директоров по английской локализации)
+Flying:         "[7D][96][A4][A5][9F][00]" // "Летун[00]"
+Flying2:        "[7D][96][A4][A5][9F] 2[00]" // "Летун 2[00]"
+Flying3:        "[7D][96][A4][A5][9F] 3[00]" // "Летун 3[00]"
+ReturnFL:       "[73][A0][99][93][A2][91][C0][96][9F][9A][96] [7D][96][A4][A5][9F][91][00]" // "Возвращение Летуна[00]"
+FinalFL:        "[86][9A][9F][91][9D][C3][9F][C2][9B] [7D][96][A4][A5][9F][00]" // "Финальный Летун[00]"
+Belch:          "[7E][91][A3][A4][96][A2] [72][C4][9D][A9][00]" // "Мастер Бэлч[00]"
+Belch2:         "[7F][A0][93][C2][9B] [72][C4][9D][A9][00]" // "Новый Бэлч[00]"
+Barf:           "[7E][91][A3][A4][96][A2] [72][91][A2][A6][00]" // "Мастер Барф[00]"
+Spook:          "[81][A2][9A][99][A2][91][9C] [85][9F][9A][93][96][A2][9E][91][94][91][00]" // "Призрак Универмага[00]"
+StarmanDX:      "[83][A4][91][A2][9E][96][9F] [75][96][9D][C5][9C][A3][00]" // "Стармен Делюкс[00]"
+Giygas:         "[74][9A][9B][94][91][A3][00]" // "Гийгас[00]"
+Kindergartens:  "[75][96][A4][A3][91][95][A0][93][A8][C2][00]" // "Детсадовцы[00]"

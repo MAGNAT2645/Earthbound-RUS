@@ -98,3 +98,6 @@ IncMissRate:
 // Honestly there's surprisingly few of these in this game. You should see the
 // average Final Fantasy, woah nelly.
 ROM[0xC27F96] = LDX_a(0xA972) // меняем указатель на защищающегося (CURRENT_TARGET в RAM)
+
+// Заменяем индекс спрайта с #$0178 (376) на #$01B8 (440) для правильного определения местоположения Магических трюфелей (с помощью Свиного пятачка)
+ROM[0xC490F6] = LDA_i(0x01B8)
