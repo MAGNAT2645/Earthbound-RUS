@@ -70,8 +70,8 @@
   Y Offset: 1
 14: # Окно сообщений в бою
   Height: 6
-  Width: 24
-  X Offset: 4
+  Width: 30 # 24
+  X Offset: 1 # 4
   Y Offset: 1
 15: # Среднее окно команд в бою
   Height: 6
