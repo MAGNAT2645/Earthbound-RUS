@@ -5,6 +5,7 @@
 /MSU-1/*
 *.smc
 *.ips
+*.ebp
 *.zip
 *.rar
 *.exe

@@ -1,0 +1,97 @@
+import asm65816
+import asmref
+
+/*
+	This modifies the CC_1F control code tree, this will add [1F 32], [1F 33], and [1F 34] so that you can switch fonts. This will mirror what you will see in the Font folder so that:
+	[1F 30] = Normal Font
+	[1F 31] = Saturn Font
+	[1F 32] = Big Font
+	[1F 33] = Battle Font
+	[1F 34] = Small Font
+*/
+
+//+-+-+-+-+- CUSTOM COMMANDS -+-+-+-+-+
+/*
+	You can call on these instead of just typing in the control code. This should be similar to how CCScript does its fonts like "font_normal" and "font_saturn".
+	
+	REMEMBER TO IMPORT THE FILE FIRST, THEN YOU CAN USE THE COMMANDS
+	Alternatively, you can use the control codes, but for the commands, import the file.
+*/
+
+//+-+-+-+-+- ROM OVERWRITES -+-+-+-+-+
+ROM[0xC1829E] = {
+	JMP_l (Font_Selection)
+	NOP
+}
+
+ROM[0xC10FC2] = {
+	JSL (Determine_Font)
+	JMP_l (0xC10FD3)
+	NOP
+	NOP
+	NOP
+	NOP
+}
+
+//+-+-+-+-+- ROUTINES -+-+-+-+-+
+
+Font_Selection:{
+	BNE_a (Not_Saturn_Font)
+	JMP_l (0xC184C2) // If saturn font, print saturn font
+	
+Not_Saturn_Font:
+	CMP_i (0x0032)
+	BNE_a (Not_Big_Font)
+	JMP_l (0xC184C2) // If Big font, print Big font
+	
+Not_Big_Font:
+	CMP_i (0x0033)
+	BNE_a (Not_Battle_Font)
+	JMP_l (0xC184C2) // If Battle font, print Battle font
+	
+Not_Battle_Font:
+	CMP_i (0x0034)
+	BNE_a (Not_A_Font) // return to the main CC_1F tree
+	JMP_l (0xC184C2) // If Small font, print Small font
+	
+Not_A_Font:
+	JMP_l (0xC182A3) // Jump back to the main CC_1F Tree
+}
+
+Determine_Font:{
+	AND_i (0x000F)
+	CMP_i (0x0000)
+	BEQ_a (Normal_Font)
+	CMP_i (0x0001)
+	BEQ_a (Saturn_Font)
+	CMP_i (0x0002)
+	BEQ_a (Big_Font)
+	CMP_i (0x0003)
+	BEQ_a (Battle_Font)
+	BRA_a (Small_Font)
+	
+Normal_Font:
+	STA_d (0x0E)
+	BRA_a (Return)
+	
+Saturn_Font:
+	STA_d (0x0E)
+	BRA_a (Return)
+	
+Big_Font:
+	LDA_i (0x0004)
+	STA_d (0x0E)
+	BRA_a (Return)
+	
+Battle_Font:
+	LDA_i (0x0002)
+	STA_d (0x0E)
+	BRA_a (Return)
+	
+Small_Font:
+	LDA_i (0x0003)
+	STA_d (0x0E)
+	
+Return:
+	RTL
+}

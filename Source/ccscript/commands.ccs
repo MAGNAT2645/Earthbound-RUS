@@ -59,6 +59,11 @@ command init_party_number_check(label) { // инициализирует арг�
 	call(label)
 }
 
+// Font_Changer.ccs: Дополнительные коды управления для смены шрифта текста в окнах
+command font_big    "[1F 32]"
+command font_battle "[1F 33]"
+command font_small  "[1F 34]"
+
 // Title_Window.ccs: Добавляют над окном window заголовки с именами персонажей (без использования EB++)
 command title_ness(window)  { "[18 0B {byte[0] window} 01 05]" clearline }
 command title_paula(window) { "[18 0B {byte[0] window} 02 05]" clearline }
