@@ -34,15 +34,15 @@ l_0xc588cd:
 		"[02][19 02]"
 	"[84][A5][A3][A0][9F]"								//	"Тусон"
 		"[02][19 02]"
-	"[75][96][A2][96][93][9F][C6] [83].[83]."				//	"Деревня С.С."
+	"[75][96][A2][96][93][9F][C6] [83].[83]."           //	"Деревня С.С."
 		"[02][19 02]"
-	"[7C][91][92][9A][9F][91] [7C][A5][9D][C3][A4]."		//	"Кабина Культ."
+	"[7C][91][92][9A][9F][91] [7C][A5][9D][C3][A4]."    //	"Кабина Культ."
 		"[02][19 02]"
 	"[84][A2][9A][95]"									//	"Трид"
 		"[02][19 02]"
 	"[85][9A][9F][A4][96][A2][A3]"						//	"Уинтерс"
 		"[02][19 02]"
-	"[75][A0][9D][9A][9F]. [83][91][A4][A5][A2][9F]"		//	"Долин. Сатурн"
+	"[75][A0][9D][9A][9F]. [83][91][A4][A5][A2][9F]"    //	"Долин. Сатурн"
 		"[02][19 02]"
 	"[72][91][99][91] [72][C4][9D][A9][91]"				//	"База Бэлча"
 		"[02][19 02]"
@@ -60,7 +60,7 @@ l_0xc588cd:
 		"[02][19 02]"
 	"[72][96][99][95][9F][91]"							//	"Бездна"
 		"[02][19 02]"
-	"[75][96][A2][96][93][9F]. [84][96][9F][95][91]"		//	"Деревн. Тенда"
+	"[75][96][A2][96][93][9F]. [84][96][9F][95][91]"    //	"Деревн. Тенда"
 		"[02][19 02]"
 	"[81][A0][95][99][96][9E][96][9D][C3][96]"			//	"Подземелье"
 		"[02][19 02]"
@@ -592,3 +592,250 @@ l_0xc58e13:
 	"{diam}[7C][91][9C][A5][C5] [A3][A4][A2][91][9F][9A][A8][A5] [93][C2] [A7][A0][A4][9A][A4][96] [A1][A2][A0][A9][9A][A4][91][A4][C3]?" linebreak
 	goto(data_09.l_0xc58e31)
 
+debug_enemyDescription:
+//  "{diam}Про какого врага вы хотите узнать?" linebreak
+    window_open(14)
+    "{diam}[81][A2][A0] [9C][91][9C][A0][94][A0] [93][A2][91][94][91] [93][C2] [A7][A0][A4][9A][A4][96] [A5][99][9F][91][A4][C3]?" linebreak
+    goto(debug_enemyDescription_1)
+
+debug_enemyDescription_1:
+	"     {input(3)}"
+    clearline
+    goto_if_true(debug_enemyDescription_2)
+    window_close(14)
+	goto(data_06.l_0xc58000)
+
+debug_enemyDescription_2:
+    window_clear
+    "[1F C0 E6 \
+    {e(btlact_spy_expanded.ENEMY_DESC_INSANE_CULTIST)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_DEPT_STORE_SPOOK)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_ARMORED_FROG)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_BAD_BUFFALO)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_BLACK_ANTOID)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_RED_ANTOID)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_RAMBLIN_EVIL_MUSHROOM)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_STRUTTIN_EVIL_MUSHROOM)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_MOBILE_SPROUT)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_TOUGH_MOBILE_SPROUT)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_ENRAGED_FIRE_PLUG)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_MYSTICAL_RECORD)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_ATOMIC_POWER_ROBOT)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NUCLEAR_REACTOR_ROBOT)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_GUARDIAN_HIEROGLYPH)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_LETHAL_ASP_HIEROGLYPH)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_ELECTRO_SWOOSH)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_CONDUCTING_MENACE)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_CONDUCTING_SPIRIT)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_EVIL_ELEMENTAL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_YOUR_NIGHTMARE)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_ANNOYING_OLD_PARTY_MAN)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_ANNOYING_REVELER)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_UNASSUMING_LOCAL_GUY)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NEW_AGE_RETRO_HIPPIE)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_MR_CARPAINTER)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_CARBON_DOG)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_MIGHTY_BEAR)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_MIGHTY_BEAR_SEVEN)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_PUTRID_MOLDYMAN)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_THUNDER_MITE)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_CRANKY_LADY)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_EXTRA_CRANKY_LADY)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_WETNOSAUR)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_CHOMPOSAUR)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_TITANIC_ANT)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_GIGANTIC_ANT)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_SHROOOM)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_PLAGUE_RAT_OF_DOOM)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_MONDO_MOLE)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_GUARDIAN_DIGGER_1)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_SCALDING_COFFEE_CUP)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_LOADED_DICE)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_SLIMY_LIL_PILE)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_EVEN_SLIMIER_LITTLE_PILE)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_ARACHNID)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_ARACHNID2)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_KRAKEN)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_BIONIC_KRAKEN)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_SPINNING_ROBO)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_WHIRLING_ROBO)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_HYPER_SPINNING_ROBO)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_COP)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_BEAUTIFUL_UFO)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_HIGH_CLASS_UFO)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_INSANE_CULTIST)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_DEPT_STORE_SPOOK)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_YOUR_NIGHTMARE)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_MR_CARPAINTER)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_CARBON_DOG)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_CHOMPOSAUR)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_TITANIC_ANT)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_GIGANTIC_ANT)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_SHROOOM)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_PLAGUE_RAT_OF_DOOM)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_MONDO_MOLE)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_GUARDIAN_DIGGER_1)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_KRAKEN)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_BIONIC_KRAKEN)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_LOADED_DICE)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_STRUTTIN_EVIL_MUSHROOM)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)} \
+    {e(btlact_spy_expanded.ENEMY_DESC_NULL)}]"
+    goto(debug_enemyDescription)

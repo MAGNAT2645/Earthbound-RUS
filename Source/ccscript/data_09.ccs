@@ -413,8 +413,8 @@ l_0xc5a05b: //42
 	"{wait}{window_closeall}{counter(43)}" call(data_10.l_0xc5a4ec) "[1F 11 03][1D 0E 01 8B][1F 21 A9]" eob
 
 l_0xc5a07e: //43
-//	"{diam}Перед выдачей банана Мр. Спуну"
-	"{diam}[81][96][A2][96][95] [93][C2][95][91][A9][96][9B] [92][91][9F][91][9F][91] [7E][A2]. [83][A1][A5][9F][A5]"
+//	"{diam}Перед выдачей банана Мр. Ложкину"
+	"{diam}[81][96][A2][96][95] [93][C2][95][91][A9][96][9B] [92][91][9F][91][9F][91] [7E][A2]. [7D][A0][98][9C][9A][9F][A5]"
 	"{wait}{window_closeall}{counter(50)}" call(data_10.l_0xc5a4ec) call(data_10.l_0xc5a526) "[1D 0E 01 B7]{set(flag 150)}{set(flag 273)}{set(flag 16)}{set(flag 140)}{set(flag 91)}[1F 21 AA]" eob
 
 l_0xc5a0b3: //44

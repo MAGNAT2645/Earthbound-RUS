@@ -40,9 +40,9 @@
   PP Cost: 0
   Target: one
   Text Address: data_64.l_0xef84b6
-6:
+6: # Изучить
   Action type: other
-  Code Address: $c28770
+  Code Address: btlact_spy_expanded.BTLACT_SPY
   Direction: enemy
   PP Cost: 0
   Target: one
