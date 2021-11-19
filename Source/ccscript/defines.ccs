@@ -385,6 +385,8 @@ define FLAG_WHITE_SESAME_SEED = flag 138
 define FLAG_PORKY_NOT_IN_FOURSIDE = flag 143 // когда установлен, Порки нет в Монотоли Билдинг
 define FLAG_TELEPORT_DEST_SUMMERS = flag 215
 define FLAG_TELEPORT_ALPHA_LEARNED = flag 275 // установлен, когда Обезьяна из пустыни научила игрока Телепорту Альфа
+define FLAG_SHATTERED_MAN_1_DEFEATED = flag 601 // когда установлен, мумия #1 не появляется в Музее в Саммерс
+define FLAG_SHATTERED_MAN_2_DEFEATED = flag 602 // когда установлен, мумия #2 не появляется в Музее в Саммерс
 
 // Состояния
 define AFFLICTION_NORMAL = 0x0101

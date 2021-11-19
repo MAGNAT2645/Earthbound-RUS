@@ -427,10 +427,10 @@ l_0xef94a5:
 	"[06 B6 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 D3 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 438)}{pause(1)}[1F F1 4C 05 7B 02]" eob
 
 l_0xef94c4:
-	"[06 59 02 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BA 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 601)}{pause(1)}[1F F1 0F 04 7B 02]" eob
+	"[06 59 02 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BA 01][1B 03 {e(data_32.l_0xc77eff)}]{set(FLAG_SHATTERED_MAN_1_DEFEATED)}{pause(1)}[1F F1 0F 04 7B 02]" eob
 
 l_0xef94e3:
-	"[06 5A 02 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BA 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 602)}{pause(1)}[1F F1 10 04 7B 02]" eob
+	"[06 5A 02 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BA 01][1B 03 {e(data_32.l_0xc77eff)}]{set(FLAG_SHATTERED_MAN_2_DEFEATED)}{pause(1)}[1F F1 10 04 7B 02]" eob
 
 l_0xef9502:
 	"[06 5B 02 {e(data_35.l_0xc7c588)}]{window_open(1)}" call(data_61.l_0xef681a) "{window_closeall}[1F 23 E2 01][1B 03 {e(data_32.l_0xc77eff)}]" call(data_61.l_0xef68d7) "{set(flag 603)}{pause(1)}[1F F1 4E 02 7B 02]" eob
