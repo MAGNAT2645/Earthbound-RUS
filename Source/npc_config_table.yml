@@ -1996,7 +1996,7 @@
   Text Pointer 1: data_39.l_0xc81676
   Text Pointer 2: $0
   Type: person
-222: # TODO: ЗДЕСЬ
+222:
   Direction: down
   Event Flag: 0x153
   Movement: 14
@@ -2338,7 +2338,7 @@
   Text Pointer 1: data_22.l_0xc680a6
   Text Pointer 2: data_22.l_0xc680c2
   Type: object
-260:
+260: # ЗДЕСЬ
   Direction: right
   Event Flag: 0x17f
   Movement: 605

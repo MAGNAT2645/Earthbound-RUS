@@ -136,7 +136,7 @@ define OFFENSE_ARROW_Y_POS     = 0x0000
 DefenseEquip_Text:
 	"[79][91][C0][9A][A4][91]:[00]" // "Защита:[00]"
 define DEFENSE_TEXT_LENGTH     = 0x0007
-define DEFENSE_TEXT_X_POS      = 0x0005
+define DEFENSE_TEXT_X_POS      = 0x0004
 define DEFENSE_TEXT_Y_POS      = 0x0001
 define DEFENSE_NUM_X_POS       = 0x0031
 define DEFENSE_NUM_Y_POS       = 0x0001

@@ -641,7 +641,7 @@ debug_enemyDescription_2:
     {e(enemy_description.THUNDER_MITE)} \
     {e(enemy_description.CRANKY_LADY)} \
     {e(enemy_description.EXTRA_CRANKY_LADY)} \
-    {e(enemy_description.NULL)} \
+    {e(enemy_description.GIYGAS_1)} \
     {e(enemy_description.WETNOSAUR)} \
     {e(enemy_description.CHOMPOSAUR)} \
     {e(enemy_description.TITANIC_ANT)} \
@@ -745,37 +745,37 @@ debug_enemyDescription_2:
     {e(enemy_description.TOUGH_GUY)} \
     {e(enemy_description.MAD_TAXI)} \
     {e(enemy_description.EVIL_MANI_MANI)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
+    {e(enemy_description.MR_MOLECULE)} \
+    {e(enemy_description.WORTHLESS_PROTOPLASM)} \
+    {e(enemy_description.SENTRY_ROBOT)} \
+    {e(enemy_description.HEAVILY_ARMED_POKEY)} \
+    {e(enemy_description.PSYCHIC_PSYCHO)} \
+    {e(enemy_description.MAJOR_PSYCHIC_PSYCHO)} \
+    {e(enemy_description.MOLE_PLAYING_ROUGH)} \
+    {e(enemy_description.GRUFF_GOAT)} \
+    {e(enemy_description.CLUMSY_ROBOT)} \
+    {e(enemy_description.SOUL_CONSUMING_FLAME)} \
+    {e(enemy_description.DEMONIC_PETUNIA)} \
+    {e(enemy_description.RANBOOB)} \
+    {e(enemy_description.LIL_UFO)} \
     {e(enemy_description.HIGH_CLASS_UFO)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
+    {e(enemy_description.NOOSE_MAN)} \
+    {e(enemy_description.ROBO_PUMP)} \
+    {e(enemy_description.PLAIN_CROCODILE)} \
+    {e(enemy_description.STRONG_CROCODILE)} \
+    {e(enemy_description.HARD_CROCODILE)} \
+    {e(enemy_description.NO_GOOD_FLY)} \
+    {e(enemy_description.MOSTLY_BAD_FLY)} \
+    {e(enemy_description.SPITEFUL_CROW)} \
+    {e(enemy_description.MY_PET)} \
+    {e(enemy_description.PORKY)} \
+    {e(enemy_description.PICKY)} \
+    {e(enemy_description.TONY)} \
+    {e(enemy_description.BUBBLE_MONKEY)} \
+    {e(enemy_description.DUNGEON_MAN)} \
+    {e(enemy_description.FLYING_MAN)} \
+    {e(enemy_description.TEDDY_BEAR)} \
+    {e(enemy_description.SUPER_PLUSH_BEAR)} \
     {e(enemy_description.MASTER_BELCH_2)} \
     {e(enemy_description.INSANE_CULTIST)} \
     {e(enemy_description.DEPT_STORE_SPOOK)} \
@@ -811,31 +811,31 @@ debug_enemyDescription_2:
     {e(enemy_description.THUNDER_AND_STORM)} \
     {e(enemy_description.FRANKYSTEIN_MARK_II)} \
     {e(enemy_description.EVIL_MANI_MANI)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
+    {e(enemy_description.HEAVILY_ARMED_POKEY)} \
+    {e(enemy_description.CLUMSY_ROBOT)} \
+    {e(enemy_description.ROBO_PUMP)} \
     {e(enemy_description.FOPPY)} \
     {e(enemy_description.GUARDIAN_GENERAL)} \
-    {e(enemy_description.NULL)} \
+    {e(enemy_description.BLACK_ANTOID)} \
     {e(enemy_description.STRUTTIN_EVIL_MUSHROOM)} \
     {e(enemy_description.RUNAWAY_DOG)} \
     {e(enemy_description.CAVE_BOY)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)} \
-    {e(enemy_description.NULL)}]"
+    {e(enemy_description.TINY_LIL_GHOST)} \
+    {e(enemy_description.STARMAN_JR)} \
+    {e(enemy_description.BUZZ_BUZZ)} \
+    {e(enemy_description.HEAVILY_ARMED_POKEY)} \
+    {e(enemy_description.HEAVILY_ARMED_POKEY)} \
+    {e(enemy_description.GIYGAS_2)} \
+    {e(enemy_description.GIYGAS_3)} \
+    {e(enemy_description.GIYGAS_4)} \
+    {e(enemy_description.GIYGAS_5)} \
+    {e(enemy_description.FARM_ZOMBIE)} \
+    {e(enemy_description.CRIMINAL_CATERPILLAR)} \
+    {e(enemy_description.EVIL_EYE)} \
+    {e(enemy_description.MAGIC_BUTTERFLY)} \
+    {e(enemy_description.MINI_BARF)} \
+    {e(enemy_description.MASTER_CRIMINAL_WORM)} \
+    {e(enemy_description.CAPTAIN_STRONG)} \
+    {e(enemy_description.GIYGAS_6)} \
+    {e(enemy_description.CLUMSY_ROBOT)}]"
     goto(debug_enemyDescription)

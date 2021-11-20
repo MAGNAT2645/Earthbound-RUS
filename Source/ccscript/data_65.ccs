@@ -4,6 +4,7 @@
  * Generated using CCScriptWriter.
  */
 
+import defines
 import commands
 import RUS_ref
 
