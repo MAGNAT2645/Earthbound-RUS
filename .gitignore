@@ -1,4 +1,5 @@
 /Source/ccscript/summary.txt
+/Release Stuff/*
 /Tools/*
 !/Tools/CyrillicToCode.py
 !/Tools/CCScriptWriter.py
