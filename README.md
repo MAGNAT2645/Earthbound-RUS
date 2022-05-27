@@ -1,12 +1,9 @@
 [![Новая форма QIWI](https://i.imgur.com/DXbNi1L.png)](https://my.qiwi.com/Yvan-ZjZkejXn2O) [![Группа ВК](https://i.imgur.com/xmwABcp.png)](https://vk.com/mother123) [![Steam Group](https://i.imgur.com/BQMjWqb.png)](https://steamcommunity.com/groups/earthbound-mother-ru)
 
-# ВНИМАНИЕ!
-Игра переведена **полностью**, сейчас мы занимаемся вычиткой перевода.
-Если Вы нашли ошибку в переводе (или любой другой баг) или хотите помочь с вычиткой (например, предложениями по улучшению), обращайтесь [сюда](https://vk.com/topic-75212704_40416271).
-
 # О проекте
 Полноценная русская локализация игры Earthbound.
 Не забудьте прочитать [статью по установке патча](https://github.com/MAGNAT2645/Earthbound-RUS/wiki/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0).
+Если Вы нашли ошибку в переводе (или любой другой баг) или хотите помочь улучшить качество перевода, обращайтесь [сюда](https://vk.com/topic-75212704_40416271).
 
 **[ОСНОВА ПЕРЕВОДА И ИНСТРУМЕНТЫ ДЛЯ ЛОКАЛИЗАЦИИ ВЗЯТЫ ОТСЮДА](https://github.com/Crystalwarrior/EarthBound-Russian-Translation)**
 
