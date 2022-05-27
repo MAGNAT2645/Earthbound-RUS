@@ -330,18 +330,18 @@ l_0xc8f8a2:
 	"@[79][91][C0][9A][A4][91] [A1][96][A2][A3][A0][9F][91][98][91] {target}" linebreak
 	"  [A3][9F][9A][99][9A][9D][91][A3][C3] [9F][91] {delta}!{sound(41)}[03]" eob
 
-l_0xc8f8c0: // [1D 01 FF 69] удаляет Мушиный Мёд (69) у всех персонажей (FF). Странно, что в оригинальной игре это не исправили.
+l_0xc8f8c0:
 	/*
 	"@{user} открыл{user_gender}{call(RUS_ref.l_gendersuffix)}" linebreak
 	"  банку <Мушиного Мёда>!" next
 	"@Мастер Бэлч схватил" linebreak
-	"  <Мушиный Мёд>![1D 01 FF 69][03]" eob
+	"  <Мушиный Мёд>![03]" eob
 	*/
 	newline
 	"@{user} [A0][A4][9C][A2][C2][9D]{user_gender}{call(RUS_ref.l_gendersuffix)}" linebreak
 	"  [92][91][9F][9C][A5] <[7E][A5][AA][9A][9F][A0][94][A0] [7E][97][95][91]>!" next
 	"@[7E][91][A3][A4][96][A2] [72][C4][9D][A9] [A3][A7][93][91][A4][9A][9D]" linebreak
-	"  <[7E][A5][AA][9A][9F][C2][9B] [7E][97][95]>![1D 01 FF 69][03]" eob
+	"  <[7E][A5][AA][9A][9F][C2][9B] [7E][97][95]>![03]" eob
 
 l_0xc8f8fd:
 	/*
