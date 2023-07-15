@@ -12,10 +12,15 @@ ROM[0xEFD8B5] = "[4D 4F 54 48 45 52 32 20 52 4F 4D 20 20 31 39 39 34 2F 30 37 2F
 
 // Фиксы текста в Debug menu
 ROM[0xC454BF] = ASMLoadAddress0E(tx6)
+ROM[0xC13D47] = ASMLoadAddress06(ON)
+ROM[0xC13D53] = ASMLoadAddress06(OFF)
 
 tx6: // ROM[0xC3E44C]
 	"[83][9D][96][95].[00]" // "След.[00]"
-
+ON: // ROM[0xC3E970]
+    "[73][7C][7D].[00]" // "ВКЛ.[00]"
+OFF: // ROM[0xC3E973]
+    "[73][B2][7C][7D].[00]" // "ВЫКЛ.[00]"
 
 ROM[0xC12EBA] = ASMLoadAddress0A(debug_text)
 
