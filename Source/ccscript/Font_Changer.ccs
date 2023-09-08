@@ -1,5 +1,5 @@
 import asm65816
-import asmref
+import ASMRef
 
 /*
 	This modifies the CC_1F control code tree, this will add [1F 32], [1F 33], and [1F 34] so that you can switch fonts. This will mirror what you will see in the Font folder so that:
